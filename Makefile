@@ -28,6 +28,11 @@
 #
 ######################################################################
 # $Log: Makefile,v $
+# Revision 1.2  2002/03/30 21:24:00  fbarriere
+# Modified to build the HTML directory locally (when launched from
+# a sub-directory), corrected the image filter (this one should
+# work in all cases).
+#
 # Revision 1.1  2002/03/20 21:17:00  fbarriere
 # New and unique Makefile for all the docs.
 #
@@ -72,13 +77,18 @@ CAT           := /bin/cat
 #  and allows their definition on the make command line
 #  to override the values defined in this file.
 #
-TODAY         := $(shell date "+%d%b%Y")
+TODAY         := $(shell date "+%d%m%Y")
 
 HERE          := $(shell pwd)
 ROOT_DIR      := $(HERE)
 PACKAGE_DIR   := $(ROOT_DIR)/../packages
-HTML_DIR      := ./HTML
+HTML_DIR      := $(ROOT_DIR)/HTML/$(DOC_TYPE)
 SHOTS_DIR     := snapshots
+
+#
+#  Sed command file used to filter the images:
+#
+SED_CMD_FILE  := $(ROOT_DIR)/tools/filter_images.sed
 
 #
 #  Defines the list of languages to process.
@@ -118,6 +128,7 @@ ifneq ($(SOURCE_FILES), )
          index=$$[$$index + 1];\
       done;\
    )
+   html_doc_TARGETS := $(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml $(addprefix $(HTML_DIR)/, $(SCREENSHOTS))
 endif
 
 #
@@ -125,7 +136,7 @@ endif
 #  while generating the complete SGML file.
 #
 ifneq ($(FILTER_IMAGES), )
-   FILTER := /bin/sed '/<figure /,/<\/figure>/d'
+   FILTER := /bin/sed -f $(SED_CMD_FILE) | /bin/sed -e '/<REMOVE_ME>/,/<\/REMOVE_ME>/d'
 else
    FILTER := /usr/bin/tee 
 endif
@@ -160,14 +171,14 @@ all_langs:
 			html_doc;\
 	done;
 
-html_doc: $(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml $(addprefix $(HTML_DIR)/, $(SCREENSHOTS))
+html_doc: $(html_doc_TARGETS)
 
 $(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml: $(SOURCE_FILES)
-	@ echo "######### Building $(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml"
+	@ echo "######### Building $(HTML_DIR)$(LANG1)/$(DOC_TYPE).sgml"
 	@ $(MAKEDIR) $(HTML_DIR)/$(LANG1)
 	@ $(CAT) $(SOURCE_FILES) | $(FILTER) > $(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml
 	@ echo "######### Building html file..."
-	@ cd $(HTML_DIR)/$(LANG1); $(SGML_TOOL) $(SGML_TOOL_OPT) $(HERE)/$@; cd $(HERE)
+	@ cd $(HTML_DIR)/$(LANG1); $(SGML_TOOL) $(SGML_TOOL_OPT) $@; cd $(HERE)
 
 $(addprefix $(HTML_DIR)/, $(SCREENSHOTS)): $(HTML_DIR)/$(LANG1)/$(SHOTS_DIR)/%.png: $(LANG1)/$(SHOTS_DIR)/%.png
 	@ if [ ! -d $(HTML_DIR)/$(LANG1)/$(SHOTS_DIR) ];\
@@ -178,7 +189,6 @@ $(addprefix $(HTML_DIR)/, $(SCREENSHOTS)): $(HTML_DIR)/$(LANG1)/$(SHOTS_DIR)/%.p
 	@ echo "######### Importing: $<"
 	@ $(COPY) $< $@
 	
-
 #
 #  Usual clean target:
 #
