@@ -1,0 +1,23 @@
+
+<sect>Conversión de Otros Formatos de Correo a Sylpheed (Formato MH)
+<!-- mramos -->
+<sect1>Importando Mensajes de Formato mbox<p>
+Sylpheed te permite importar mensajes de formato Mbox desde el menú Fichero.
+Primero creas la carpeta de correo donde quieres que los mensajes se
+almacenen, luego seleccionas Fichero --> Importar fichero mbox. Utiliza la
+función "Seleccionar" para seleccionar el fichero Mbox y la carpeta de correo
+de Sylpheed y pulsa Aceptar. Y voila, allí está tu correo, importado.<p>
+Fué fácil, ¿no?
+</sect1>
+
+<sect1>Importando desde Clientes de correo de Windows (Becky!, AL-Mail, Outlook Express4, etc.)<p>
+Para posibilitar la importación de las carpetas de correo de estos y otro
+programas de correo puedes descargar el programa mbx2mbox en sourceforge.net.
+El proyecto está ubicado en http://mbx2mbox.sourceforge.net.
+</sect1>
+<sect1>Importando el Formato dbx de Outlook Express 5<p>
+Para posibilitar la importación de las carpetas de correo de estos y otro
+programas de correo puedes descargar el programa mbx2mbox en sourceforge.net.
+El proyecto está ubicado en http://mbx2mbox.sourceforge.net.
+</sect1>
+</sect>

@@ -1,0 +1,141 @@
+
+<sect>Diálogos y vistas<p>
+<!-- mramos -->
+<sect1>La vista de carpetas<p>
+La vista de carpetas te muestra todas las carpetas que has creado, en una
+estructura de árbol. Si quieres ver las cabeceras de los mensajes en una
+carpeta específica, simplemente pulsa en el nombre de la carpeta una vez, y en
+la vista de resumen podrás ver los mensajes en la carpeta de correo
+seleccionada.<p>
+Cuando veas un signo + frente al nombre de una carpeta, eso significa que la
+rama de esa parte del árbol de carpetas está "colapsado". Puedes expandir ésa
+parte pulsando el signo +. Del mismo modo puedes colapsar una rama expandida
+del árbol de carpetas pulsando el signo - frente a ésa rama.<p>
+Carpetas especiales:<p>
+Borrador: aquí almacenas los mensajes que envías más a menudo, o en los cuales
+trabajas más. Utilizando la opción 'reeditar' en el menú mensaje, puedes
+editar el mensaje posteriormente.<p>
+Papelera: aquí terminan todos los mensajes que has borrado. Dependiendo de las
+opciones en preferencias comunes, éste buzón está o no vacía cuando tu cierras
+Sylpheed.
+</sect1>
+
+<sect1>Vista resumen <p>
+El cuadro resumen te puede mostrar muchas cosas. En el menú Resumen puedes
+seleccionar que es lo quieres ver, seleccionando la opción "Elementos
+visibles". Una lista de todas las opciones es:
+<itemize>
+<item>Marca: muestra si el mensaje está marcado.
+<item>No leído: muestra si el mensaje ya fué leído o no
+<item>MIME: muestra adjuntos MIME
+<item>Número: muestra el númbero MH del mensaje
+<item>Tamaño: el tamaño del mensaje entero incluyendo adjuntos
+<item>Fecha: la fecha de envío por el remitente
+<item>Desde: quien envió el mensaje
+<item>Asunto: acerca de que es el mensaje
+</itemize>
+Puedes ordenar la vista resumen de muchas formas, pulsando el botón que está
+arriba de la columna. Pulsa una vez para ordenar en forma decreciente (a-z),
+pulsa una vez más para ordenar en forma decreciente (z-a).<p>
+Si piensas que el tamaño de una columna no es correcta, puedes ajustarla
+colocando el cursor del ratón cerca del botón de la columna que quieras
+ajustar, presiona el botón1 (botón izquierdo) y arrastra la columna hasta que
+tenga el ancho que tu quieres.<p>
+Selecciona un mensaje pulsando sobre él con el ratón. Una vez el cuadro
+resumen tenga el foco del programa, podrás también desplazarte hacia arriba o
+hacia abajo en la lista mediante las teclas de cursor, o presionando "p"
+(anterior) y "n" (siguiente) como en Pine.
+</sect1>
+
+<sect1>Vista de mensaje <p>
+En la vista de mensjae puedes leer el mensaje que has seleccionado en el
+cuadro resumen. Si has ingresado al cuadro resumen sin seleccionar un mensaje,
+la vista de mensaje estará vacía. En la parte superior de la vista de mensaje
+se presenta alguna información respecto al mensaje que estás leyendo, así
+también estadísticas sobre la carpeta seleccionada.<p>
+Puedes desplazarte hacia arriba y abajo en el mensaje utilizando las teclas de
+movimiento (flechas) (después de pulsar dentro del mensaje), o utilizando la
+barra de desplazamiento.
+</sect1>
+
+<sect1>Preferencias comunes<p>
+Las Preferencias Comunes, que se encuentra en el menú Configuración, te
+muestra las siguientes pestañas:
+<sect2>Pestaña Recibir<p>
+Aquí puedes definir como recibir los mensajes.
+<itemize>
+<item>Puedes definir un programa especial para recoger los mensajes del buzón
+unix por defecto. En general ésto no se utiliza, pero puedes utilizarlo. En
+realidad, ésta información puede ser errónea. Si alguien lo sabe mejor, por
+favor hágamelo saber.
+<item>Almacenamiento local te permite definir donde se ubica tu buzón local.
+También puedes decirle a Sylpheed si debe filtrar o no los mensajes entrantes
+desde ese fichero de correo.
+<item>Comprobar correo nuevo. Cuando activas ésta opción, Sylpheed comprobará
+si existe correo nuevo con la frecuencia especificada.
+<item>Comprobar correo nuevo al inicio significa que Sylpheed inmediatamente
+comprobará correo nuevo para todas las cuentas seleccionadas cuando él se
+inicie.
+<item>En la sección Noticias puedes especificar cuantos artículos serán
+descargados al abrir un grupo de noticias.
+</itemize>
+</sect2>
+</sect1>
+
+<sect1>Creando una cuenta/modificando una cuenta<p>
+Para crear una cuenta en Sylpheed, en el menú Configuración seleccionas
+"Crear nueva cuenta". Si quieres modificar las opciones de una cuenta
+existente, seleccionas la opción "Editar cuentas..." desde el menú
+Configuración, y allí seleccionas la cuenta que quieres modificar. Después que
+presionas "Editar", un diálogo aparece en el cual puedes ingresar o actualizar
+en las siguientes áreas:
+<p>
+<sect2>Pestaña Básicas<p>
+En la pestaña "Básicas" le pones un nombre a la cuenta. Ésto es para hacer más
+fácil la identificación de la cuenta.<p>
+Elige un nombre que describa algo respecto a la cuenta, como el nombre del
+proveedor de internet, buzón de correo o servidor de noticias que estás
+configurando. Puedes seleccionar ésta cuenta como la cuenta por defecto ("Uso
+habitual").<p>
+Ingresa tu nombre y tu dirección de correo; y si tienes una, la organización
+para la cual usas Sylpheed.
+En la casilla Protocolo seleccionas el tipo de servicio que utilizará ésta
+cuenta. Los sabores que puedes elegir son: POP3 normal, POP3 (autorz. APOP),
+IMAP4, News (NNTP) o Ninguna (local).
+En el campo "Entrada" puedes ingresar la carpeta de correo donde los mensajes
+de ésta cuenta serán almacenados. Ésta opción está deshabilitada cuando
+configuras un cuenta News NNTP.<p>
+Para los servicios POP3 e IMAP puedes especificar el servidor donde tu correo
+es almacenado. Detalles respecto a éste nombre y también el nombre que va en
+el campo "Servidor SMPT (enviar)" deberían ser provistos por tu ISP.<p>
+Para un buzón local unix, el "Servidor de recepción" está deshabilitado ya que
+el correo será recibido para tí.<p>
+Los campos Usuario y Contraseña también estarán deshabilitadas para las
+cuentas que no utilizan los servicios POP3 e IMAP. En otro caso puedes
+ingresar el nombre de login y la contraseña para el servidor de correo aquí.
+Habitualmente, éstos son los mismos que tu nombre de login y contraseña para
+acceder al servicio de conección a internet, pero ésto no es estándar. En caso
+de duda, contácta el soporte técnico de tu proveedor de internet. <p>
+</sect2>
+<sect2>Pestaña Recibir<p>
+<p>
+La pestaña "Recibir" sólo es utilizada para cuentas POP3, Aquí especificas si
+los mensajes que fueron exitosamente descargados deben ser eliminados del
+servidor. También puedes decirle a Sylpheed que descarga todos los mensajes
+, no sólo los que ya recibiste (en el caso de que hayas dejado mensajes en tu
+servidor). La tercera opción habilita a ésta cuenta a ser incluída cuando el
+correo es comprobado con "Traer todo" (ver el menú Mensaje); y si los mensajes
+entrantes deben ser filtrados inmediatamente cuando son recibidos.
+</sect2>
+<sect2>Pestaña Enviar <p>
+En la pestaña "Enviar" puedes definir algunas opciones mas.
+</sect2>
+<sect2>Pestaña componer <p>
+En la pestaña "Componer" puedes definir tu archivo de firma.
+</sect2>
+<sect2>Pestaña Avanzadas<p>
+En la pestaña "Avanzadas" puedes editar los números de puerto para los
+servidores que utilizarás. Ésto habitualmente no necesitará ningún cambio.
+</sect2>
+</sect1>
+</sect>

@@ -1,0 +1,41 @@
+
+<sect>Libro de Direcciones
+<!-- mramos -->
+<p>
+En el libro de direcciones, accesible mediante Alt-A, el botón "Libro de
+direcciones" o mediante el menú de herramientas, almacenas direcciones de
+correo de la gente y los lugares a los que quieras escribir con frecuencia.<p>
+
+<sect1>Añadiendo o Borrando Direcciones<p>
+Agregar una dirección al libro de direcciones es bastante fácil también. Pulsa
+con el botón derecho la carpeta o grupo al cual quieras añadir la dirección,
+selecciona "Nueva dirección" e ingresa los datos en diálogo que aparece.
+También puedes directamente pulsar el botón "Añadir" en la ventana del libro de
+direcciones y el diálogo aparecerá. En éste caso la dirección es colocada en
+la carpeta/grupo que está seleccionado al momento de añadir y el diálogo
+aparecerá. En éste caso la dirección es colocada en la carpeta/grupo que está
+seleccionado al momento de añadir.<p>
+Borrar una dirección es igual de simple. Encuentra la dirección, pulsa sobre
+ella una vez, y pulsa el botón Borrar.<p>
+</sect1>
+
+<sect1>Carpetas y Grupos<p>
+El libro de direcciones, como las carpetas de correo, puede ser expandido en
+árbol entero de secciones. Para ésto pulsa con el botón derecho sobre la
+carpeta donde quieras añadir una nueva carpeta y selecciona "Nueva carpeta".
+Luego puedes ingresar un nombre descriptivo para la carpeta, pulsa Aceptar y
+tu carpeta es creada.<p>
+De la misma forma puedes crear un grupo en una carpeta. Pulsa con el botón
+derecho sobre la carpeta, selecciona "Nuevo grupo, ingresa un nombre para él y
+listo.<p>
+</sect1>
+<sect1>Combinación con la Ventana de Composición de Mensajes<p>
+Abre el libro de direcciones mediante una las formas disponibles (barra de
+herramientas, atajo de teclado). Encontrar una dirección de correo: ingresa
+parte del comienzo del nombre o la dirección que estás buscando y presiona la
+tecla TAB. Una lista aparecerá con las selecciones que han concordado.
+Selecciona una y presiona enter. Después de ésto podrás usar los botones 
+Para:, Cc: o Bcc: para añadir la dirección a un mensaje, si estás escribiendo
+uno. En otro caso éstos botones están deshabilitados y no funcionales.
+</sect1>
+</sect>

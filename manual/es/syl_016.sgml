@@ -1,0 +1,95 @@
+
+<sect>Referencia<p>
+<!-- mones -->
+En esta sección encontrará alguna información que podría ser de ayuda para
+hacer más claro el uso de Sylpheed respecto a los atajos del teclado
+utilizados, así como una visión del formato del libro de direcciones.
+<sect1>Lista de atajos de teclado<p>
+<sect2>Atajos de una sola tecla:<p>
+<itemize>
+<item>a: crea un mensaje nuevo
+<item>d: borra el mensaje seleccionado
+<item>f: reenvia el mensaje seleccionado
+<item>g: ir a una carpeta específica mediante el diálogo de selección de carpetas
+<item>n: ir al siguiente mensaje o parte de un mensaje multipartes
+<item>p: ir al mensaje previo o a la seccion previa de un mensaje multipartes
+<item>v: aparecer o desaparecer la vista de mensaje <!-- switch on/off the message view -->
+<item>w: lo mismo que a
+<item>y: abre el diálogo "Salvar como..."
+</itemize>
+</sect2>
+<sect2>Atajos para el menú Fichero:<p>
+<itemize>
+<item>Alt-F: abrir el menu Fichero <!-- open FILE menu -->
+<item>Alt-P: imprimir
+<item>Alt-W: cerrar
+<item>Alt-Q: salir
+</itemize>
+</sect2>
+<sect2>Atajos para el menú Editar:<p>
+<itemize>
+<item>Alt-E: abrir el menu Editar <!-- open EDIT menu -->
+<item>Ctrl-C: copiar
+<item>Ctrl-A: seleccionar todo
+<item>Ctrl-S: buscar
+</itemize>
+</sect2>
+<sect2>Atajos para el menú Ver:<p>
+<itemize>
+<item>Alt-V: abrir el menú Ver <!-- open VIEW menu -->
+</itemize>
+<sect2>Atajos para el menú Mensaje:<p>
+<itemize>
+<item>Alt-M: abrir el menu Mensaje <!-- open MESSAGE menu -->
+<item>Alt-I: comprobar el correo en la cuenta actual
+<item>Shift-Alt-I: comprobar el correo en todas las cuentas
+<item>Alt-N: componer un mensaje nuevo
+<item>Alt-R: responder al mensaje 
+<item>Ctrl-Alt-R: responder al remitente (lo contrario de responder a p.ej. a una lista de correo).
+<item>Shift-Alt-R: responder a todos (incluyendo todas las direcciones en Desde: y Cc:)
+<item>Ctrl-F: reenviar el mensaje
+<item>Shift-Ctrl-F: reenviar el mensaje como adjunto
+<item>Alt-O: mover el mensaje
+<item>Alt-D: borrar el message
+<item>Shift-Ctrl-N: abrir el mensaje en una nueva ventana
+<item>Ctrl-U: ver el mensaje en formato fuente
+<item>Ctrl-H: ver todas las cabeceras del mensaje
+</itemize>
+</sect2>
+<sect2>Atajos al menú Resumen<p>
+<itemize>
+<item>Alt-S: abrir el menú Resumen <!-- open SUMMARY menu -->
+<item>Alt-X: ejecutar (comandos pendientes, solo es útil cuando los comandos no se ejecutan inmediatamente)
+<item>Alt-U: actualizar vista
+<item>Alt-G: ir a otra carpeta 
+<item>Ctrl-T: activar vista jerárquica
+<item>Shift-Ctrl-T: vista plana (desactiva la vista jerárquica)
+</itemize>
+</sect2>
+<sect2>Atajos al menu Herramientas<p>
+<itemize>
+<item>Alt-T: abrir el menu Herramientas <!-- open tool menu -->
+<item>Alt-A: abrir el libro de direcciones
+<item>Alt-L: abrir el fichero de traza
+</itemize>
+</sect2>
+</sect1>
+
+<sect1>Formato de datos del libro de direcciones<p>
+El libro de direcciones es un fichero localizado en el directorio
+~/.sylpheed, cuyo nombre es addressbook.xml.
+El formato general del libro de direcciones es el siguiente:<p>
+&lt addressbook &gt<p>
+ &lt common_address &gt<p>
+    &lt group name="Direcciones comunes" &gt<p>
+    &lt item &gt<p>
+     &lt name &gt Paul &lt /name &gt<p>
+     &lt address &gt paul@nlpagan.net &lt /address &gt<p>
+     &lt remarks &gt Escribe el manual de Sylpheed &lt /remarks &gt<p>
+	&lt /item &gt<p>
+    &lt /group &gt<p>
+ &lt /common_address &gt<p>
+&lt /addressbook &gt
+
+</sect1>
+</sect>

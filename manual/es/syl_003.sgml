@@ -1,0 +1,26 @@
+
+<sect>Guía rápida para la configuración de las noticias<p>
+<!-- mones -->
+<sect1>Obteniendo noticias rápidamente.<p>
+<p>
+En el menú de configuración, seleccionar "Crear nueva cuenta".
+<p>
+En la pestaña "Básicas" introducir los datos necesarios, el nombre de la cuenta, su propio nombre y su dirección de correo, etc.
+Para conectarse a las noticias seleccione "Noticias (NNTP)" de la lista desplegable de protocolos.
+<p>
+Introduzca la información relativa al servidor de noticias.
+<p>
+Sáltese la pestaña de "Recibir".
+<p>
+En la pestaña de "Enviar" se pueden configurar elementos adicionales.
+<p>
+En la pestaña de "Componer" se puede definir un fichero de firma.
+<p>
+En la pestaña "Avanzadas" se pueden editar los números de puerto asignados a los servidores que este usando, aunque normalmente
+no necesitara cambiarlos.
+<p>
+Cierre los diálogos y pulse con el botón derecho en la carpeta de Noticias del árbol de carpetas. 
+En el menú que aparecerá seleccione "Suscribirse a un grupo". Si no está hecho previamente se descargará
+la lista de grupos del servidor. Desde aquí deberá encontrar su propio camino, así que ¡buena suerte!
+</sect1>
+</sect>

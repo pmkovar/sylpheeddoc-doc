@@ -1,0 +1,86 @@
+<!doctype linuxdoc system>
+<article>
+    <title>Manual del Usuario de Sylpheed 
+    <author>Ricardo Mones Lastra (mones@aic.uniovi.es) y Marcelo Ramos (mramos@montevideo.com.uy)
+    <abstract>
+       Manual del Usuario de Sylpheed para la versión 0.5.3, basado en la versión original en inglés
+       de Paul Kater (paul@nlpagan.net) y Jens Oberender (j.obi@troja.net)
+    </abstract>
+
+<toc>
+
+<sect>¿Qué es Sylpheed?
+<!-- mones -->
+<sect1>Introducción a Sylpheed.
+<p>
+Sylpheed es un cliente de correo electrónico y noticias. Se ejecuta en casi cualquier Linux o
+sistema compatible con Unix.
+<p>
+La potencia de Sylpheed radica principalmente en
+<itemize>
+<item>el uso eficaz de los recursos
+<item>su rapidez
+<item>es intuitivo para la gran mayoría de los usuarios
+<item>es fácil trabajar con él
+<item>una gran capacidad de configuración
+<item>un interfaz agradable y sofisticado
+</itemize>
+</sect1>
+
+<sect1>Interfaz
+<p>
+La apariencia y el interfaz son similares a los de otros conocidos clientes de correo
+de Windows, tales como Outlook Express, Becky! y Datula. El interfaz esta también diseñado
+para emular los clientes de correo bajo Emacs, y la práctica totalidad de los comandos son
+accesibles mediante el teclado.
+<p>
+Los mensajes se manejan en el formato MH, por lo que debería ser capaz de usarlo junto con
+cualquier otro programa de correo basado en el formato MH (como Mew). También se puede utilizar
+con fetchmail y/o procmail, así como con programas externos para recibir correo (como inc o imget).
+</sect1>
+
+<sect1>Características principales
+<p>
+Las características implementadas actualmente incluyen:
+<itemize>
+<item>Manejo ilimitado de múltiples cuentas
+<item>Presentación jerárquica
+<item>Filtrado
+<item>MIME (adjuntos) 
+<item>Visor incorporado de imágenes 
+<item>Soporte para X-Face
+<item>Soporte para editores externos 
+<item>Cola de mensajes 
+<item>Función de mensaje provisional 
+<item>Formateo de líneas 
+<item>URI activos 
+<item>Agenda de direcciones basada en XML 
+<item>Manejo de mensajes nuevos y no leídos 
+<item>Soporte de múltiples carpetas MH 
+<item>Asociaciones de teclas compatibles con Mew/Wanderlust 
+<item>Función de lectura de noticias 
+<item>Impresión 
+<item>Soporte de UIDL 
+<item>Autentificación APOP 
+<item>Soporte de SMTP AUTH
+<item>Soporte para IPv6 
+<item>Soporte para autoconf y automake 
+<item>Soporte de internacionalización de mensajes usando gettext 
+<item>Soporte para muchas localizaciones, incluyendo UTF-8 (Unicode), cuando se usa libjconv 
+<item>Compatible con IMAP4
+</itemize>
+Esta lista no esta completa, pero al menos refleja las características más comunes que se pueden
+encontrar en Sylpheed.
+</sect1>
+
+<sect1>Métodos para manejo de mensajes
+<p>
+Esta sección aún no ha sido escrita en el original.
+</sect1>
+
+<sect1>Características futuras
+<p>
+Esta sección aún no ha sido escrita en el original.
+</sect1>
+
+</sect>

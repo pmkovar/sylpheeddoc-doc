@@ -1,0 +1,60 @@
+
+
+<sect>Guía rápida para la configuración del correo.
+<!-- mramos -->
+<sect1>Configuración rápida para leer tu buzón Unix 
+<p>
+En el menú Configuración, selecciona "Crear nueva cuenta"
+<p>
+En la pestaña "Básicas", ingresa los datos relevantes. Dale un nombre a la
+cuenta, ingresa tu nombre y dirección de correo, etc. Puedes seleccionar ésta
+cuenta para que sea la cuenta por defecto ("Uso habitual"). Para seleccionar
+tu buzón Unix local, en la casilla Protocolo selecciona "Ninguna (local)".
+<p>
+Cuando selecciones ésta opción, el "Servidor de recepción" se pondrá gris, ya
+ésta no es relevante. Puedes ingresar el servidor para enviar (SMTP) en ésa
+pestaña.
+<p>
+La pestaña "Recibir" no es utilizada en esta configuración, ya que no estás
+consultando un servidor, tu correo es enviado a ti.
+<p>
+En la pestaña "Enviar" puedes definir algunas opciones mas.
+<p>
+En la pestaña "Componer" puedes definir tu archivo de firma.
+<p>
+En la pestaña "Avanzadas" puedes editar los números de puerto para los
+servidores que utilizarás. Ésto en general no necesitará ningún cambio.
+<p>
+Ésto es basicamente todo lo que necesitas para comenzar a utilizar Sylpheed
+para buzones locales. Puedes presionar Alt-I o seleccionar "Mensaje --> Traer
+correo nuevo" y ver si hay correo nuevo!
+</sect1>
+
+<sect1>Configuración rápida para leer correo POP3 
+<p>
+En el menú Configuración selecciona "Crear nueva cuenta"
+<p>
+En la pestaña "Básicas", ingresa los datos relevantes. Dale un nombre a la
+cuenta, ingresa tu nombre y dirección de correo, etc. Puedes seleccionar ésta
+cuenta para que sea la cuenta por defecto ("Uso habitual"). Como es una cuenta
+POP3, en la casilla Procolo selecciona "POP3 (normal)". 
+
+<p>
+Ingresa la información del servidor en "Servidor de recepción". Puedes
+entonces ingresar el servidor para enviar (SMTP) en ésta pestaña.
+<p>
+En la pestaña "Recibir" puedes definir algunas selecciones o preferencias que
+quieras usar.
+<p>
+En la pestaña "Enviar" puedes definir algunas opciones.
+<p>
+En la pestaña "Componer" puedes definir tu archivo de firma.
+<p>
+En la pestaña "Avanzadas" puedes editar los números de puerto de los
+servidores que utilizarás. Ésto en general no necesitará ningún cambio.
+<p>
+Ésto es basicamente todo lo que necesitas para comenzar a utilizar Sylpheed
+para sistemas de correo POP3. Puedes presionar Alt-I o seleccionar "Mensaje
+--> Traer correo nuevo" y ver si hay correo nuevo!
+</sect1>
+</sect>
