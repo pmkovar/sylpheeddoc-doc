@@ -14,12 +14,12 @@ Pour désactiver la vue par fil de conversation et revenir à une vue simple, désa
 </sect1>
 <sect1>Opérations sur les message (déplacer, supprimer, etc.)
 <p>
-Sylpheed permet d'arranger vos messages de plusieurs façons.  Ils peuvent être déplacés vers de nouvelles boîtes aux lettres ou bien être effacés.  Ces fonctions sont accessibles à partir du menu <bf>Message</bf> (voir cette section pour plus de détails). L'avantage de déplacer les messages vers différentes boîtes aux lettres est de permettre une meilleure organisation des votre correspondance. Supposez que vous recevez régulièrement des courriers concernant huit thèmes différents, et que vous en cherchez un à propos d'un thème particulier. Cela ne serait pas aisé car les messages peuvent traiter d'un même thème sans pour autant avoir le même texte dans le champ du sujet. Il faut donc un minimum d'organisation.  Il suffit de créer un nouveau dossier pour chaque thème et y déplacer les messages au fur et à mesure qu'ils arrivent (ce qui peut aussi se faire de manière automatique, voir l'option de <bf>Filtrage</bf> décrite dans la section du menu de <bf>Configuration</bf>). Cela vous permettra d'économiser beaucoup de temps après coup.
+Sylpheed permet d'arranger vos messages de plusieurs façons.  Ils peuvent être déplacés vers de nouvelles boîtes aux lettres ou bien être effacés.  Ces fonctions sont accessibles à partir du menu <bf>Message</bf> (voir cette section pour plus de détails). L'avantage de déplacer les messages vers différentes boîtes aux lettres est de permettre une meilleure organisation de votre correspondance. Supposez que vous recevez régulièrement des courriers concernant huit thèmes différents, et que vous en cherchez un à propos d'un thème particulier. Cela ne serait pas aisé car les messages peuvent traiter d'un même thème sans pour autant avoir le même texte dans le champ du sujet. Il faut donc un minimum d'organisation.  Il suffit de créer un nouveau dossier pour chaque thème et y déplacer les messages au fur et à mesure qu'ils arrivent (ce qui peut aussi se faire de manière automatique, voir l'option de <bf>Filtrage</bf> décrite dans la section du menu de <bf>Configuration</bf>). Cela vous permettra d'économiser beaucoup de temps après coup.
 </sect1>
 <sect1>URL dans un Message
 <p>
-Dans certains messages, il arrive que l'auteur mentionne un URL.
-Un URL est un lien vers un site web. Habituellement, il est affiché sous la forme <tt>http://www.quelquepart.quelquechose</tt>.<p>
+Dans certains messages, il arrive que l'auteur mentionne une URL.
+Une URL est un lien vers un site web. Habituellement, il est affiché sous la forme <tt>http://www.quelquepart.quelquechose</tt>.<p>
 Pour visiter ce site web, il suffit de double-cliquer ou cliquer avec le bouton 2 (droit) sur l'URL et le navigateur par défaut que vous avez configuré (habituellement Netscape) sera lancé et chargera le site web.<p>
 Dans les options de configuration, Sylpheed permet de choisir la couleur à utiliser pour les URL pour qu'ils soient facilement reconnaissables dans le message.
 </sect1>

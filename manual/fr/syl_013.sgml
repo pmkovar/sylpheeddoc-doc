@@ -16,14 +16,14 @@ Dans l'onglet BASE, dans le bloc « informations personnelles », vous pouvez
 aussi entrer votre propre nom, votre adresse de courrier (pour que vous 
 puissiez répondre aux messages de nouvelles par courrier), optionnellement 
 votre organisation (si vous êtes dans une organisation).<p>
-Dans le block « information de serveur », vous sélectionnez le protocole 
-« News (NNTP) ». Oubliez « Inbox », qui n'importe pas dans cette 
+Dans le bloc « information de serveur », vous sélectionnez le protocole 
+« News (NNTP) ». Oubliez « Inbox », qui ne nous intéresse pas pour cette 
 configuration. Ensuite, vous entrez le nom du serveur de nouvelles auquel 
 vous voulez vous connecter. Vous pouvez obtenir le nom de votre ISP, si vous 
 n'en avez pas encore.<p>
 Si vous avez besoin de vous connecter au serveur de nouvelles, validez la 
-boîte à « Ce serveur nécessite une authentification » et remplissez alors les 
-champs pour ID d'utilisateur et mot de passe.<p>
+boîte « Ce serveur nécessite une authentification » et remplissez alors les 
+champs ID d'utilisateur et mot de passe.<p>
 L'étape suivante est d'aller dans l'onglet Envoi. Comme Recevoir est seulement 
 pour les courriers, il n'y a pas de besoin de faire quelque chose d'autre. 
 Vous ne pouvez même pas faire quoi que ce soit dans l'onglet Recevoir, dans 
@@ -44,7 +44,7 @@ groupe de discussion.<p>
 Finalement, dans l'onglet « Avancé », vous pouvez spécifier le port sur lequel 
 Sylpheed doit se connecter sur le serveur de nouvelles. C'est par défaut sur 
 119 et seulement dans de rares cas, vous aurez à le changer.<p>
-Maintenant, vous cliquez sur « OK » et le compte est créé ! Vous pouvez le 
+Maintenant, cliquez sur « OK » et le compte est créé ! Vous pouvez le 
 vérifier en surveilllant la fenêtre de répertoire dans Sylpheed. Vous y verrez 
 un nouveau répertoire créé avec le nom du compte que vous avez entré et des 
 nouvelles derrière.<p>
@@ -54,10 +54,10 @@ Effacer un serveur de nouvelles.<p>
 Si vous voulez effacer un compte de nouvelles, cliquez-droit sur le répertoire 
 de nouvelles et sélectionnez « Enlever le compte de nouvelles ». Après avoir 
 confirmé que vous voulez que ce soit fait, le compte et tous les fichiers liés 
-doivent être enlevés.
+seront enlevés.
 </sect2>
 </sect1>
-<sect1>Souscrire et se déssouscrire d'un groupe de discussion<p>
+<sect1>S'abonner et se désabonner d'un groupe de discussion<p>
 Ok. C'est ici que le travail réel démarre. Vous devez d'abord laisser Sylpheed 
 charger la liste du groupe de discussion qui est dans le système de nouvelles. 
 Cliquez droit sur le nouveau répertoire de NOUVELLES et sélectionnez 
@@ -72,9 +72,9 @@ Maintenant, vous pouvez chercher un groupe qui est intéressant, par exemple
 comp.os.linux.networking. Cliquez sur le nom et sélectionnez OK. Le groupe 
 sera ajouté dans le répertoire de nouvelles comme un sous-répertoire. Ensuite, 
 lorsque vous cliquez sur le nom du nouveau sous-répertoire, Sylpheed se 
-connectera à un serveur de nouvelles et téléchargera les en-têtes (lignes de 
+connectera à un serveur de nouvelles et téléchargera les en-têtes (ligne du 
 sujet, dans le vocabulaire de courrier), pour votre ordinateur. Quelques 
-groupes ont des -grands- nombre d'articles, donc ceci peut prendre du temps !
+groupes ont des -grands- nombres d'articles, donc ceci peut prendre du temps !
 <p>
 </sect1>
 <sect1>Lire les nouvelles<p>
@@ -97,7 +97,7 @@ Ce sont des programmes, images, etc. Souvent, ils sont postés comme des
 fichiers UUencode. Sylpheed ne décodera pas les fichiers UUencode au-dela de 
 la version 0.5.1. Vous avez besoin de sauvegarder ces articles sur le disques 
 comme fichiers séparés et utiliser un programme de décodage séparé comme juju, 
-pour décoder le texte. Un fichier UUencode regarde habituellement quelquechose 
+pour décoder le texte. Un fichier UUencode ressemble habituellement à quelquechose 
 comme ceci :<p>
 begin 666 sundown.jpg<p>
 après lequel vous trouverez des blocs de caractères bien formatés qui ne 

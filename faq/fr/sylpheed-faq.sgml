@@ -19,7 +19,7 @@ Q01 Existent-ils des FAQ dans d'autres langues~?<p>
 A. Oui, voici les liens vers les différentes traductions~:
 <itemize>
 <item>La version de référence en anglais à~: 
-	<url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm">
+	<url url="http://nlpagan.net/sylpheed-faq.html" name="http://nlpagan.net/sylpheed-faq.html">
 <item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">~: 
 	SYLPHEED FAQ en japonais, traduit par WAKAI «~SilverRain~» Kazunao
 <item><url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html">~: 
@@ -56,7 +56,7 @@ basé sur la bibliothèque Gtk+, fonctionnant sur X-window et
 conçu pour être~:
  <itemize>
  <item>rapide~;
- <item>avec un interface agréable et simple à utiliser~;
+ <item>avec une interface agréable et simple à utiliser~;
  <item>de configuration simple et intuitive~;
  <item>avec de nombreuses fonctionnalités.
  </itemize>
@@ -118,7 +118,7 @@ A. Oui, IPv6 est complètement supporté par Sylpheed.
 </sect1>
 
 <sect1>
-Q12 Est-ce que Sylpheed supporte l'encryption, comme le GPG~?<p>
+Q12 Est-ce que Sylpheed supporte le cryptage, comme le GPG~?<p>
 A. Oui. GPG est supporté et fonctionne correctement.
 Voir la question Q14 dans la section 'installation' pour
 savoir comment activer cette fonction.
@@ -221,7 +221,7 @@ finalement obtenir un message bien formaté.
 
 <sect1>
 Q22 Où puis-je trouver la dernière version de la FAQ Sylpheed~?<p>
-A.   Sur <url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm"> vous trouverez
+A.   Sur <url url="http://nlpagan.net/sylpheed-faq.html" name="http://nlpagan.net/sylpheed-faq.html"> vous trouverez
 la version anglaise (version de référence) dans laquelle vous trouverez
 des liens vers les différentes traductions.
 <p>
@@ -232,7 +232,7 @@ traductions de ces documents.
 </sect1>
 
 <sect1>
-Q23  Puis-je importer une bal mbox dans une dossier Sylpheed (MH)~?<p>
+Q23  Puis-je importer une bal mbox dans un dossier Sylpheed (MH)~?<p>
 A.   Oui. Vous devez juste créer ou sélectionner le dossier dans lequel
 vous souhaitez insérer vos messages, puis sélectionner dans le menu
 «~Fichier~», l'entrée «~Importer un fichier mbox...~».
@@ -293,12 +293,12 @@ ou similaire, par exemple Linux, FreeBSD ou Solaris.
 La bibliothèque GTK+ 1.2.6 ou plus récente.
 Un compilateur ANSI C récent (gcc 2.7.2.3 devrait aussi fonctionner)
 Note~: le compilateur Sun C ne peut pas être utilisé pour compiler Sylpheed.
-De façon optionelle~:
+De façon optionnelle~:
 <itemize>
 <item>la bibliothèque Imlib ou gdk-pixbuf (pour la visualisation des images)
 <item>la bibliothèque libcompface (pour les icônes X-Face)
 <item>la bibliothèque libjconv (pour I18N)
-<item>la bibliothèque GPGME (pour l'encryption et la signature avec GnuPG)
+<item>la bibliothèque GPGME (pour le cryptage et la signature avec GnuPG)
 <item>les équivalents des paquetages GTK+-devel et Xfree86-devel.
 </itemize>
 Sans cela la configuration avec <tt>./configure</tt> échouera.
@@ -489,7 +489,7 @@ dé-cocher la boite «~Sauvegarder les messages envoyés dans la boîte d'envoi~».
 Q07  Comment changer les raccourcis de Sylpheed~?<p>
 A.   C'est très simple. Imaginons que vous souhaitez assigner
 le raccourci Ctrl-Y à la fonction «~Envoyer les messages en file d'attente~».
-Cliquer sur le menu «~Messages~», déplacez le curseur sur la fonction
+Cliquez sur le menu «~Messages~», déplacez le curseur sur la fonction
 «~Envoyer les messages en file d'attente~», et maintenant appuyez sur Ctrl-Y.
 Immédiatement, le texte du menu est mis à jour et contient le
 raccourci que vous venez de définir. Notez que la fonction
@@ -537,7 +537,7 @@ Q12  Pourquoi aucun navigateur n'est lancé lorsque je clique sur un URL~?<p>
 A.   Il faut double-cliquer (deux fois rapidement).
 </sect1>
 
-<sect1>Q13 Les pièces jointes dont le nom contient une espace ne peuvent être ouvertes~!<p>
+<sect1>Q13 Les pièces jointes dont le nom contient un espace ne peuvent être ouvertes~!<p>
 A.   Lorsque vous lancez une application, telle que le visualiseur d'images,
 avec une pièce jointe dont le nom contient des espaces, ajoutez des apostrophes
 autour du paramètre %s. Par exemple~: gedit '%s'

@@ -1,8 +1,8 @@
-<sect>Reference<p>
+<sect>Référence<p>
 <!-- Added 2001/07/21 -->
 Dans cette section, vous allez trouvez quelques informations sur raccourcis 
 clavier utilisables dans Sylpheed et sur le format interne du fichier du carnet
-d'addresses.
+d'adresses.
 <sect1>Liste des raccourcis clavier<label id="raccourci clavier"><p>
 <sect2>Raccourcis à une touche<p>
 <itemize>
@@ -20,7 +20,7 @@ contenant plusieurs parties~;
 <item><bf>y</bf>~: sauvegarde le message dans un fichier.
 </itemize>
 </sect2>
-<sect2>Raccourcis au menu <bf>Fichier</bf><p>
+<sect2>Raccourcis du menu <bf>Fichier</bf><p>
 <itemize>
 <item><bf>Alt-F</bf>~: ouvre le menu <bf>Fichier</bf>~;
 <item><bf>Alt-P</bf>~: imprimer~;
@@ -28,27 +28,27 @@ contenant plusieurs parties~;
 <item><bf>Alt-Q</bf>~: quitter.
 </itemize>
 </sect2>
-<sect2>raccourcis au menu <bf>Éditer</bf><p>
+<sect2>raccourcis du menu <bf>Éditer</bf><p>
 <itemize>
 <item><bf>Alt-E</bf>~: ouvre le menu <bf>Éditer</bf>~;
 <item><bf>Ctrl-C</bf>~: copier~;
 <item><bf>Ctrl-A</bf>~: tout sélectionner~;
-<item><bf>Ctrl-S</bf>~: checher.
+<item><bf>Ctrl-S</bf>~: chercher.
 </itemize>
 </sect2>
-<sect2>Raccourcis au menu <bf>Vue</bf><p>
+<sect2>Raccourcis du menu <bf>Vue</bf><p>
 <itemize>
 <item><bf>Alt-V</bf>~: ouvre le menu <bf>Vue</bf>.
 </itemize>
-<sect2>Raccourcis au menu <bf>Message</bf><p>
+<sect2>Raccourcis du menu <bf>Message</bf><p>
 <itemize>
 <item><bf>Alt-M</bf>~: ouvre le menu <bf>Message</bf>~;
-<item><bf>Alt-I</bf>~: relève le courrier du compte actuellement utilisé~;
-<item><bf>Shift-Alt-I</bf>~: relève le courrier de tous les comptes~;
-<item><bf>Alt-N</bf>~: compose un nouveau message~;
+<item><bf>Alt-I</bf>~: relever le courrier du compte actuellement utilisé~;
+<item><bf>Shift-Alt-I</bf>~: relever le courrier de tous les comptes~;
+<item><bf>Alt-N</bf>~: composer un nouveau message~;
 <item><bf>Alt-R</bf>~: répondre au message sélectionné~;
 <item><bf>Ctrl-Alt-R</bf>~: répondre à l'expéditeur (contrairement au 
-<bf>Répondre</bf> &lsqb;au message&rsqb décrit précédemment qui peut répondre
+<bf>Répondre</bf> &lsqb;au message&rsqb décrit précédemment qui lui, peut répondre
 à une liste de diffusion, par exemple)~;
 <item><bf>Shift-Alt-R</bf>~: répondre à tous (à toutes les adresses situées dans les en-têtes «~À~:~» et «~Cc~:~»)~;
 <item><bf>Ctrl-F</bf>~: faire suivre le message sélectionné~;
@@ -73,11 +73,11 @@ immédiatement~;
 <item><bf>Shift-Ctrl-T</bf>~: désactive la vue par fils de conversation.
 </itemize>
 </sect2>
-<sect2>Raccourcis au menu <bf>Outils</bf><p>
+<sect2>Raccourcis du menu <bf>Outils</bf><p>
 <itemize>
-<item><bf>Alt-T</bf>~: ouvrir le menu <bf>Outils</bf>~;
-<item><bf>Alt-A</bf>~: ouvrir le carnet d'adresses~;
-<item><bf>Alt-L</bf>~: ouvrir un journal de connexion (<em>log</em>).
+<item><bf>Alt-T</bf>~: ouvre le menu <bf>Outils</bf>~;
+<item><bf>Alt-A</bf>~: ouvre le carnet d'adresses~;
+<item><bf>Alt-L</bf>~: ouvre le journal de connexion (<em>log</em>).
 </itemize>
 </sect2>
 </sect1>

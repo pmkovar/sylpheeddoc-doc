@@ -4,7 +4,7 @@
 Copyright (C) 2001 Hiroyuki Yamamoto<p>
 Ce programme est sous la licence GPL (voir <url url="http://www.gnu.org/home.fr.html" name="http://www.gnu.org/home.fr.html">).
 </sect1>
-<sect1>Licence publique générale GNU<p>
+<sect1>Licence Publique Générale GNU<p>
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 <!-- add 2001/07/21 -->
 <sect1>Obtenir la dernière version de ce document<p>
 Vous pouvez trouver la dernière version de ce document à la page officieuse des 
-manuels de Sylpheed située à <url url="http://nlpagan.net/sylman/index.html" name="http://nlpagan.net/sylman/index.html">.<p>
+manuels de Sylpheed située à <url url="http://nlpagan.net/sylpheed.htm" name="http://nlpagan.net/sylpheed.htm">.<p>
 Les manuels y sont chargés sous format HTML. À partir de cette page, 
 vous pouvez télécharger le manuel comme un fichier tar.gz pour pouvoir les 
 consulter localement (hors ligne) sur votre propre ordinateur.<p>
@@ -31,7 +31,7 @@ SGML, vous aurez besoin des outils SGML pour pouvoir les transformer en HTML.
 </sect1>
 <sect1>Remarques finales<p>
 Je voudrais remercier toutes les personnes prenant part dans le projet Sylpheed. En particulier~:<p>
-Hiroyuki Yamamoto et tous les autres développeurs de ce  fabuleux programme 
+Hiroyuki Yamamoto et tous les autres développeurs de ce fabuleux programme 
 qu'ils ont créé.<p>
 François Barrière qui m'a aidé à devenir ami avec le système CVS.<p>
 Les personnes de la liste de diffusion de Sylpheed, pour leur aide lorsque

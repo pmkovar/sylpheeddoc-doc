@@ -29,7 +29,7 @@ le corps du message le texte suivant~:<p>
 Le serveur de la liste de diffusion vous retournera le courrier une
 fois pour le premier enregistrement de la requête vous demandant une
 confirmation disant à peu-près~: «~Puis-je vous mettre sur la liste de
-diffusion ?~».  Il inclut le texte suivante (le nombre et le nom sont
+diffusion ?~».  Il inclut le texte suivant (le nombre et le nom sont
 un exemple)~:<p>
 <tt>confirm 84682771 Anne Shirley</tt><p>
 C'est une précaution pour éviter que vous soyez inscrit à votre insu.<p>
@@ -40,13 +40,13 @@ inclut la ligne de précédente~:<p>
 Une fois cette confirmation envoyée, vous serez inscrit dans la liste
 de diffusion.<p>
 L'adresse pour poster dans la liste est différente de celle pour
-l'enregistrement et l'envoi de commandes. En effet, elle est 
+l'enregistrement et l'envoi de commandes. En effet, il s'agit de 
 <tt>sylpheed@good-day.net</tt>.<p>
 Notez que si vous perdez le courrier contenant la demande de confirmation,
 envoyez simplement de nouveau une demande d'inscription~:<p>
 <tt>subscribe Votre nom</tt><p>
 à <tt>sylpheed-ctl@good-day.net</tt>.<p>
-<sect2>Comment se annuler son inscription~?<p>
+<sect2>Comment annuler son inscription~?<p>
 Envoyez simplement un courrier à l'adresse
 <tt>sylpheed-ctl@good-day.net</tt> contenant uniquement la ligne
 suivante~:<p>

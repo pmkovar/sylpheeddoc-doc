@@ -28,7 +28,7 @@ différentes que celles utilisées par Sylpheed, ou si celles de Sylpheed ne
 vous conviennent pas la modification est très simple. Supposons que vous
 voulez changer la combinaison de touches utilisée pour la relève du courrier
 (dans le menu <bf>Message</bf>) de <bf>Alt-I</bf> en <bf>Ctrl-M</bf>. Voici
-les étapes à suivres~:
+les étapes à suivre~:
 <p>
 <itemize>
 <item>Ouvrez le menu <bf>Message</bf> avec la souris ou en pressant <bf>Alt-M</bf>~;

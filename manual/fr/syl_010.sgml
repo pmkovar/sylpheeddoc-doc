@@ -18,7 +18,7 @@ Le carnet d'adresses, tout comme les courriers, peut être organisé en arborescen
 De la même manière, vous pouvez créer un nouveau groupe dans un dossier. Cliquez avec le bouton 2 (droit) de la souris sur le dossier voulu, sélectionnez <bf>Nouveau groupe</bf>, entrez un nom, cliquez sur <bf>Ok</bf> et c'est fait.<p>
 </sect1>
 <sect1>Interaction avec la fenêtre de composition de messages<p>
-Dans la fenêtre de composition de message est ouverte, accédez au carnet d'adresse par un des moyens disponibles (barre d'outils, raccourcis claviers, menu).
+Dans la fenêtre de composition de message ouverte, accédez au carnet d'adresse par un des moyens disponibles (barre d'outils, raccourcis claviers, menu).
 Pour trouver une adresse~: allez dans le champ <bf>Nom~:</bf>, entrez le début du nom ou de l'adresse que vous cherchez et pressez la touche de tabulation «~TAB~». Une liste déroulante apparaîtra avec les addresses correspondantes trouvées. Sélectionnez-en une et pressez «~Entrée~». Ensuite, utilisez les boutons <bf>À~:</bf>, <bf>Cc~:</bf> ou <bf>Cci~:</bf> pour ajouter l'adresse à la liste adéquate des destinataires du courrier édité. Si vous n'êtes pas en train de composer un message, ces boutons seront désactivés.
 
 </sect1>
