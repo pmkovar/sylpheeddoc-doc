@@ -443,6 +443,15 @@ R.:  Deberá hacer <tt>touch .xmhcache</tt> en todas y cada una de las cada carpe
 </p>
 </sect1>
 
+<!-- ic.Q16 -->
+<sect1>Sylpheed provoca una violación de segmento cuando veo un fichero GIF
+<p>
+R.: Si sucede esto se puede solucionar fácilmente añadiendo lo siguiente al
+fichero /etc/mime.types :
+<tt>image/gif		gif</tt>
+</p>
+</sect1>
+
 </sect>
 
 <!--  Interface -->
