@@ -91,7 +91,7 @@ or want it, you should upgrade.
 
 <sect1>
 Q08 Does Sylpheed have mail filtering?<p>
-A. Yes. You can find it in Configuration -> filtering tab.<p>
+A. Yes. You can find it in Configuration -&gt; filtering tab.<p>
  Please note that filtering is not yet implemented for IMAP accounts.
 </sect1>
 
@@ -311,7 +311,7 @@ your computer stops responding.
 Q06 Why does Sylpheed not delete my mails when I press "delete"? I set a filter, and Sylpheed does not filter. I moved a mail to a different mailbox and it did not move.<p>
 A.   You have to click the "execute" button.
 The other solution: in the configuration settings
-(common preferences -> interface tab) you have to
+(common preferences -&gt; interface tab) you have to
 check the "execute commands immediately" box.
 </sect1>
 
@@ -411,13 +411,13 @@ A.   You have to set some environment variables such as
 
 <sect1>
 Q02  I don't like the default font. Can I change that?<p>
-A.   Yes. In Configuration->common preferences under the
+A.   Yes. In Configuration-&gt;common preferences under the
      "Display" tab.
 </sect1>
 
 <sect1>
 Q03  There are too many columns in the message list!!<p>
-A.   In Configuration->common preferences under the
+A.   In Configuration-&gt;common preferences under the
      "Display" tab you can press the button "Set display
      item of summary". That pops up a screen with all the
      options you can show or leave out of the message
@@ -426,7 +426,7 @@ A.   In Configuration->common preferences under the
 
 <sect1>
 Q04  Can I use a different editor to write my mails?<p>
-A.   You can. In Configuration->common preferences under
+A.   You can. In Configuration-&gt;common preferences under
      the "Other" tab you can define your editor of choice.
      Remember, if you want to use a command line editor
      like vi or emacs, to write the name of the shell
@@ -452,7 +452,7 @@ A.   You can set the GTK+ font by <tt>~/.gtkrc</tt>, or
 
 <sect1>
 Q06  Sylpheed saves my outgoing mail (in Outbox). Can I make it stop doing that?<p>
-A.   In Configuration->common preferences there's a
+A.   In Configuration-&gt;common preferences there's a
      checkbox "Save sent message to outbox". Uncheck it,
      and it's solved.
 </sect1>
@@ -476,7 +476,7 @@ A.   That is very simple. Suppose you want to assign a
 Q08  Can I close windows without the mouse?<p>
 A.   Of course!! Not all windows, but by pressing ESCape,
      you can close the addressbook, the window of viewing
-     a mail-source (message->view source), the window of
+     a mail-source (message-&gt;view source), the window of
      viewing the headers, and several others. Just give
      it a try and you will find all of them.
 </sect1>

@@ -98,7 +98,7 @@ songez à mettre à jour votre installation de Sylpheed.
 
 <sect1>
 Q08 Sylpheed peut-il filtrer les messages~?<p>
-A. Oui. Vous trouverez cela dans le menu Configuration-> Filtres.
+A. Oui. Vous trouverez cela dans le menu Configuration-&gt; Filtres.
 Le filtrage n'est pas possible pour les comptes IMAP, pour le moment.
 </sect1>
 
