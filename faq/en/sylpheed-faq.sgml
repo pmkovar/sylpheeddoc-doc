@@ -364,6 +364,10 @@ When that completes successfully, there is a "privacy" section in the Common pre
 A. For this to work you need to use the "touch" command in every MH folder. "touch" the file .xmhcache and Mutt should do just fine.
 </sect1>
 
+<sect1>Q16 Viewing a GIF file within Sylpheed causes a segmentation fault.<p>
+A. In case this happens, you can easily fix that by adding the following to /etc/mime.types:<p>
+<tt>image/gif              gif</tt>
+</sect1>
 </sect>
 
 <sect>
