@@ -1,0 +1,95 @@
+<!doctype linuxdoc system>
+<article>
+    <title>Guide de l'utilisateur Sylpheed
+    <author>
+	    Paul Kater (paul@nlpagan.net)
+	    Nick Selby
+       Francois Barriere (traduction)
+    <abstract>
+       Guide de l'utilisateur basé sur Sylpheed-0.5.3
+    </abstract>
+
+<toc>
+
+<sect>Qu'est ce que Sylpheed?
+
+<sect1>Introduction a Sylpheed.
+<p>
+Sylpheed est un client de messagerie et de news (interface utilisateur
+pour la gestion, la lecture et l'ecriture de news et de courriels).
+Il fonctionne sur n'importe quelle distribution Linux, ou system
+compatible Unix.
+<p>
+Les points forts de Sylpheed sont
+<itemize>
+<item>necessite peu de ressources system
+<item>est tres rapide
+<item>intuitif
+<item>simple a utiliser
+<item>tres complet
+<item>avec un interface agreable et sophistique
+</itemize>
+</sect1>
+
+<sect1>L'interface
+<p>
+L'apparence et l'interface sont semblables a la plupart des clients
+de messagerie pour Windows, tel que Outlook Express, Becky!, et Datula.
+L'interface est aussi concue pour simuler les messageries de Emacsen,
+et la plupart des commandes sont accesibles au clavier.
+<p>
+Les messages sont stockes au format MH, et vous serez capable de l'utiliser
+avec n'importe quel autre outil de messagerie base sur le format MH 5tel
+que Mew). Vous pouvez aussi utiliser fetchmail et/ou procmail ainsi que
+des programes exterieurs a Sylpheed pour recevoir et trier vos messages
+(comme inc ou imget).
+</sect1>
+
+<sect1>Principales caracteristiques
+<p>
+Sont actuellement inclus:
+<itemize>
+<item>Nombre de comptes de messagerie illimite
+<item>Affichage par fil de discussion
+<item>Filtrage des messages
+<item>MIME (pieces jointes) 
+<item>Affichage integre des images
+<item>Support de X-Face 
+<item>Possibilite d'utiliser un editeur externe
+<item>Mise en attente des messages (envoi)
+<item>###FIXME###Draft message function 
+<item>Retour a la ligne (formattage des messages)
+<item>URI clickable
+<item>Carnet d'adresses base sur le format XML
+<item>Gestion des nouveaux messages, des message non lu
+<item>Support de plusieurs classeurs MH
+<item>Racourcis claviers compatibles avec Mew/Wanderlust
+<item>Function de lecture des news
+<item>Impression
+<item>Support UIDL
+<item>Authentification APOP
+<item>Support SMTP AUTH
+<item>Support de IPv6
+<item>Utilise Autoconf, automake (compilation et installation simple) 
+<item>Message localises via gettext (affichage des messages dans votre langue)
+<item>Supporte de nombreuses langues et jeux de characteres, y compris UTF-8 (Unicode), via libjconv 
+<!-- added 2001/07/19 -->
+<item>Compatible IMAP4
+</itemize>
+Cette liste n'est pas complete, mais vous donne un apercu des possibilitees
+principales de Sylpheed.
+</sect1>
+
+<sect1>Methodes de gestion des messages
+<p>
+Cette section n'a pas encore ete ecrite (soyez patient).
+</sect1>
+
+<sect1>Fututres developements
+<p>
+Cette section n'a pas encore ete ecrite (soyez patient).
+</sect1>
+
+</sect>
+</article>
+
