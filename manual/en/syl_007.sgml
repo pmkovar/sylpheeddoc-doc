@@ -23,7 +23,7 @@ The summary pane can show you many things. You can select what you want to see f
 <item>Subject: what the message is about
 </itemize>
 You can sort the summary view in many ways, by clicking the button that is above the column. Click once to sort going up (a-z), click once more to sort going down (z-a).<p>
-If you think the size of a column is not right, you can adjust that by placing the mouse cursor next to the button of the column you want to adjust, press mouebutton1 (left button) and drag the column to the width you want it to have.<p>
+If you think the size of a column is not right, you can adjust that by placing the mouse cursor next to the button of the column you want to adjust, press mousebutton1 (left button) and drag the column to the width you want it to have.<p>
 Select a message by clicking on it with the mouse. Once the summary pane has the focus of the program, you can also move up and down in the list through the cursor keys, or pressing "p"(revious) and "n"(ext) as in Pine.
 </sect1>
 
@@ -156,7 +156,7 @@ choose to always copy your boss, or yourself), and define the
 Reply-To field for the current account.
 </sect2>
 
-<sect2>Privacy<label id="Privacy">
+<sect2>Privacy tab<label id="Privacy">
 <p>
 This tab is only available when Sylpheed has been compiled
 with GPGME and GNUPG (for signature and encryption).

@@ -482,7 +482,7 @@ coller les informations de la fenêtre de <em>log</em> dans un courrier et l'envo
 dans la liste de diffusion.
 </sect1>
 
-<sect1>Menu de <bf>Configuration</bf>
+<sect1>Menu <bf>Configuration</bf>
 <p>
 Dans le menu <bf>Configuration</bf>, clairement, vous pouvez configurer Sylpheed de la manière 
 dont vous voulez qu'il travaille et réagisse.
@@ -599,9 +599,9 @@ dont vous voulez qu'il travaille et réagisse.
 </itemize>
 </sect1>
 
-<sect1>Menu d'<bf>Aide</bf>
+<sect1>Menu <bf>Aide</bf>
 <p>
-Ce menu vous permet d'accéder au manuelet à la FAQ de Sylpheed. Vous pouvez 
+Ce menu vous permet d'accéder au manuel et à la FAQ de Sylpheed. Vous pouvez 
 aussi voir des informations sur l'auteur et la version de Sylpheed dans le 
 menu <bf>À propos</bf>.
 <p>
