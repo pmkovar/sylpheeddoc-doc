@@ -4,7 +4,7 @@
     <author>Paul Kater (paul@nlpagan.net)
     and Jens Oberender (j.obi@troja.net)
     <abstract>
-       Sylpheed FAQ (for version 0.6.4)
+       Sylpheed FAQ (for version 0.6.6)
     </abstract>
 <toc>
 <p>
@@ -235,6 +235,12 @@ Upgrade to 0.4.65: some menu items have been moved
 <sect1>
 Q26  How can I quickly update the views in Sylpheed?<p>
 A.   Just press Alt-U or select "update" from the summary menu.
+</sect1>
+
+<sect1>
+Q27  Why can't I use gvim as external editor?<p>
+A.   If one wishes to use gvim as an external editor it's necessary to start it with the no-fork option -f, i.e. in the configuration dialog box you need to enter  "gvim -f %s". If not the editor forks and open up a separate file and when one quits the editor the changes are lost and don't show up in the composer window.<p>
+(Thanks, Ed Collins!)
 </sect1>
 </sect>
 
