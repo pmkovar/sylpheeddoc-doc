@@ -1,22 +1,21 @@
 
 TODO:
 
+	* In syl_017.sgml, update the addressbook format description,
+	  it's now a little bit more complicated.
+
+	* In syl_009.sgml, update the attachment/message window
+	  description (now uses tabs).
+
+	* In syl_009.sgml, update the 'moving messages'.
+
+	* In syl_009.sgml, deal with HTML messages.
+
    * In syl_013.sgml explain the 'regex' radio button
 	  in the filter setting window.
 
    * In syl_008.sgml, in the note regarding the X-face,
      add more details.
-
-   * In syl_008.sgml, in account settings, remove the
-	  privacy tab and add a link to the GnuPG section.
-
-   * Fully explain the common preferences (new section 8).
-
-   * Fully xplain accounts (new section 8).
-
-	* In section 9, add filtering and actions.
-
-	* In section 10, add draft, templates.
 
 	* In section 7, explain the folder properties. Complete
 	  the list of the special folders.
@@ -25,8 +24,6 @@ TODO:
 	  view column headers and using the menu.
 
 	* The shortcut section is outdated (17).
-
-   * Explain the use of the address book with a PDA( in 11).
 
    * Explain the use GnuPG with Sylpheed.
 

@@ -1,3 +1,19 @@
+2004-03-22
+
+	* In syl_001.sgml, included the changes submitted by 
+	  Paul Nassar.
+
+	* In syl_012.sgml, included the LDAP section from Tom Hollins.
+
+2003-03-04
+
+   * In syl_014.sgml, completed the documentation of
+     the MIME types handling, documented the use of
+     metamail.
+
+   * In syl_001.sgml, corrected the version of Sylpheed,
+     the manual has been updated for 0.8.10.
+
 2003-02-28
 
    * In syl_013.sgml, documented the templates.
