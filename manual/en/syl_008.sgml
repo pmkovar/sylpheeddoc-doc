@@ -1,18 +1,603 @@
-<sect>Recieving Messages
+<sect>Sylpheed configuration
+<p>
+All the configuration settings of Sylpheed are accessible from
+the <it>Configuration</it> menu and consist of common settings
+(<it>Common preferences</it>, <it>Filter settings</it>, 
+<it>Template</it> and <it>actions</it>) and account specific
+settings.
+<p>
+With Sylpheed, there is no limit to the number of accounts
+you can create. You can create new accounts for each of your
+mail account, but also to change the default behaviour of 
+Sylpheed. As folders can be attached to accounts, the account
+specific part of the configuration automatically change based
+on the current folder (you can have a different signature when
+replying to messages from different folders).
 
-<sect1>Using POP Reception Function in Sylpheed<p>
-<!-- added 2001/07/19 -->
-Receiving messages from a POP server is very easy, once you set up Sylpheed the proper way. You can refer to the section "Setting up an account" on how to do this.<p>
-Once you are connected to the internet, or by another network that gives you access to the POP server, simply press the "Get new mail" button (or press Alt-I) and Sylpheed will connect to the server to fetch your new mail. Once this is retrieved, any filters you may have set up will be executed and then the folder pane will show you, marked in bold, which folder/mailbox contains new messages.
-<!-- end addition 2001/07/19 -->
-</sect1>
-<sect1>Using Other Programs such as fetchmail<p>
-<!-- added 2001/07/19 -->
-Although it is not within the scope of this manual, a bit of information on fetchmail or getmail.<p>
-You need to have either of these programs installed, and configured correctly. See the man pages/README files of the appropriate program on doing this.<p>
-After setting the program up, you can invoke it, either by hand or through CRON, to get your mail. The mail will usually be downloaded into /var/spool/mail/your_user_id. You can then tell Sylpheed, through an account that looks in your local unix mailbox, to get mail from there. For this you press the "Get mail" button, or press "Alt-I".
-<!-- end addition 2001/07/19 -->
+<sect1>Common preferences
+<p>
+The Common Preferences, found in the Configuration menu, controls
+the window layout and the different options of the graphical
+interface of Sylpheed. Depending on some compile time switches
+(and on the availability of some extra libraries), some tabs
+may be included (or not) in your version of Sylpheed. These tabs
+are not listed here but are described (or will be described) in
+the sections covering the optional features they control (like the
+<it>Privacy</it> tab for the GnuPG interface).
+
+<sect2>Receive tab
+<p>
+In here you can set up how to receive messages.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_receive.png">
+</figure>
+
+<itemize>
+	<item>
+		You can define a special program to pick up messages from 
+		the default unix mailbox. Usually this is not used, but 
+		you can use it. Actually, this information may be wrong. 
+		If someone knows better, please let me know.
+	</item>
+	<item>
+		<it>Local spool</it> lets you define where your local mailbox is 
+		located. You can also tell Sylpheed whether or not to 
+		filter the incoming messages from that mail spool file.
+		The spool directory defined here is used by all the accounts
+		of the <it>local</it> type, by default it is set to the
+		standard UNIX mailbox location.
+	</item>
+	<item>
+		<it>Autocheck new mail</it>. When you check this option, Sylpheed 
+		will check if there is new mail on the set interval.
+	</item>
+	<item>
+		<it>Check new mail on startup</it> means that Sylpheed will 
+		immediately look for new mail on all the selected accounts 
+		when it loads.
+	</item>
+	<item>
+		<it>Update all local folders after incorporation</it>
+		Well, if you know the use of this option, feel free to
+		write this part...
+	</item>
+	<item>
+		In the news section you can specify how many articles 
+		should be downloaded when opening a newsgroup.
+	</item>
+</itemize>
+</sect2>
+
+<sect2>Send tab
+<p>
+In here you can set up how to send messages.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_send.png">
+</figure>
+
+<itemize>
+	<item>
+		You can choose to use an external program (like sendmail) for
+		sending mail. By default no external program is necessary
+		and Sylpheed can directly send the outgoing messages to a
+		SMTP server.
+	</item>
+	<item>
+		The sent messages can be saved in the outbox (<it>Sent</it> 
+		folder), the name of the outbox folder can be specified
+		for each account (see the account setting section).
+	</item>
+	<item>
+		The outgoing codeset selection can be changed to force
+		the definition of the character set used in sent mails.
+		The default and recommended value is <it>automatic</it>,
+		so Sylpheed determines the codeset when sending each
+		message.
+	</item>
+</itemize>
+</sect2>
+
+<sect2>Compose tab
+<p>
+Controls the composition window's behaviour..
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_compose.png">
+</figure>
+
+<itemize>
+	<item>
+		You can change the signature separator and choose to insert
+		it automatically (unless your signature file already contains
+		this separator). Leave it as it is by default (unless you really
+		need to change it, and are ready to face a religion war), a lot
+		of mail clients rely on this separator to cut the signature when
+		quoting mails, and this one is accepted as the standard one.
+	</item>
+	<item>
+		If you hate the editor that comes with Sylpheed, you can choose
+		to automatically start an editor of your choice when composing
+		new messages (the editor can be defined in the <it>Other</it> tab).
+	</item>
+	<item>
+		The <it>wrap</it> settings defines how Sylpheed will wrap long
+		lines. You can choose to wrap quoted messages, wrap as you type,
+		or wrap when sending. You can also change the maximum line length.
+	</item>
+	<item>
+		The <it>reply</it> settings let you control the way you will reply
+		to mails. If <it>Automatically select account(...)</it> is set,
+		the account used when replying to a message is automatically
+		selected based on the folder the original message is in (as you
+		where already told, accounts can be attached to folders).
+		If <it>Quote message when replying</it> is selected, when hiting
+		the <it>Reply</it> button, the composition window pops up and is
+		filled with either the complete message you are replying to (if
+		nothing is selected in the body of this message) or the selected
+		part of its body. When this option is not selected, the composition
+		window is always empty, and you must cut-and-paste the parts of
+		the original message you want to quote manually.
+	</item>
+</itemize>
+</sect2>
+
+<sect2>Quote tab
+<p>
+In here you can control the quotation of your replies and forwarded
+messages.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_quote.png">
+</figure>
+
+<itemize>
+	<item>
+		You can individually define the quotation mark that appears
+		at the beginning of each quoted line when replying and forwarding
+		a message.
+	</item>
+	<item>
+		You can also define the text that appears before and after the 
+		quotation. The format of the quotation contains placeholders for
+		parts of the original message that are explains in the window
+		that appears when hiting the <it>Description of symbols</it>
+		button.
+	</item>
+</itemize>
+</sect2>
+
+<sect2>Display tab
+<p>
+In here you can control the display options of Sylpheed.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_display.png">
+</figure>
+
+<itemize>
+	<item>
+		You can change the font used to display the messages. Pressing
+		the button next to the font name field will open the font selection
+		window, then you can select among all the available fonts.
+	</item>
+	<item>
+		Turning on the translation of the header fields will change the
+		content of the header summary (between the summary and the message
+		pane), and use the localized header fields name based on the
+		selected language (selected by the 'LANG' environment variable).
+		This setting will only take effect the next time you will start
+		Sylpheed.
+	</item>
+	<item>
+		Selecting <it>Display unread next to folder name</it> will add
+		the number of unread messages next to the folder name in the
+		folder pane (so you can minimize the width of the folder pane
+		and hide the unread column).
+	</item>
+	<item>
+		You can also control the content of the summary pane. If you choose
+		to display the recipient name for the mail you send, in the <it>From</it>
+		column, for any mail you have sent, the name of the recipient will
+		appear preceded by an arrow (the characters sequence: -->).
+		The <it>Expand threads</it> controls the initial state of the message
+		threads when opening a folder (expanded of collapsed).
+		The <it>Set display item of summary</it> button opens a selection
+		window that contains all the available items to display in the
+		left column, the currently selected items in the right column.
+		Items can be added or removed using the two arrows that appears
+		between the columns. Using the <it>up</it> and <it>down</it> buttons
+		on the right side of the window, you can change the display order
+		of the selected item in the summary window (from left to right).
+	</item>
+</itemize>
+</sect2>
+
+<sect2>Message tab
+<p>
+The message tab controls the message window options.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_message.png">
+</figure>
+
+<itemize>
+	<item>
+		The message text can use colours to highlight the different levels
+		of quotation and URIs. The colours can be changed by using the
+		colours selection dialog that pops up when pressing the <it>Edit</it>
+		button next to the <it>Enable coloration of messages</it> toggle.
+	</item>
+	<item>
+		The dispaly of the header summary between the summary and message
+		panes can also be turned on and off (<it>Display header pane above message 
+		view</it> dialog).
+	</item>
+	<item>
+		<it>Display short header on message view</it> and the <it>Edit</it>
+		button next to it, control the inclusion of some header fields
+		in the message view. If the message coloration has been turned on,
+		the addresses that appear in the header part of the message view
+		are highlighted as URIs.
+	</item>
+	<item>
+		The <it>Line space</it> setting controls the lines spacing of the
+		message view.
+	</item>
+	<item>
+		<it>Leave space on head</it>. Checking this box will make the 
+		start of new lines (unwrapped, where the writer has pressed 
+		the Enter/Return key) indent a few pixels. This can be useful 
+		to read larger e-mails.
+	</item>
+	<item>
+		<it>Scroll half page</it>. When enabled, the text in the message 
+		view will only scroll half a page instead of a whole page when 
+		pressing the space bar.
+	</item>
+	<item>
+		<it>Smooth scroll</it>. Enabling this box will make the text 
+		in the message view scroll in a smooth, sliding way. For the 
+		eye this can be pleasing, it is a personal preference.
+	</item>
+	<item>
+		Select the <it>Resize attached image</it> if you wnat all the
+		images (attachment) to be resized to fit in the message window.
+	</item>
+</itemize>
+</sect2>
+
+<sect2>Interface tab
+<p>
+The interface tab controls the Sylpheed's Graphical User Interface
+behaviour.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_interface.png">
+</figure>
+
+<itemize>
+	<item>
+		The <it>Open message when cursor keys are pressed</it> toggles controls
+		the opening of the messages while you go through them in the summary
+		pane using the cursor (up and down arrows) keys. If this toggle is on,
+		each time you press the <it>down</it> (or <it>up</it>) key in the the
+		summary window, the current message changes and the content of the
+		message view changes to the content of the newly selected message.
+		Otherwise, the content of the message view does not change unless you
+		press enter (then the message view contains the content of the selected
+		message).
+		This does not change the behaviour of the left mouse button (always selects
+		and open the pointed message).
+	</item>
+	<item>
+		<it>Open first unread message when entering a folder</it> if selected,
+		when opening a folder, the message view will contain the first unread
+		message of this folder (or the latest message in the order the folder
+		uses for sorting messages). If not selected, the message view remains
+		empty until a message is selected (by changing the current message with
+		the cursor keys or with the left mouse button).
+	</item>
+	<item>
+		<it>Only marks message  read when open in new window</it> leaves the
+		selected message unread (but display it in the message view) until you
+		open it in a new window (double click the left mouse button).
+	</item>
+	<item>
+		If <it>Execute immediately when moving or deleting messages</it> is not
+		selected, a new button appears in the button bar marked <it>Execute</it>.
+		When deleting or moving messages, they are first marked as deleted or
+		moved but Sylpheed does not move or delete them until you press the 
+		<it>Execute</it> button (or the <it>Execute</it> entry of the 
+		<it>Tools</it> menu).
+	</item>
+	<item>
+		The <it>Receive dialog</it> settings controls the dialog that pops
+		up (if you have set <it>Show receive dialog</it> to <it>always</it>)
+		when receiving new mails.
+		The default is to open a pop up window upon reception error unless
+		you select the <it>Dont't pop up error dialog (...)</it> toggle.
+	</item>
+	<item>
+		 <it>The Set key bindings</it> button when pressed, opens a selection
+		 window that contains a list of pre-defined key bindings (<it>Mew</it>, 
+		 <it>Mutt</it>, <it>Old Sylpheed</it>) to change all the key bindings
+		 at once. The key bindings can also be changed one by one as described in
+	</item>
+</itemize>
+</sect2>
+
+<sect2>Other tab
+<p>
+The other tab contains the settings that does not fit the
+previous categories.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_other.png">
+</figure>
+
+<itemize>
+	<item>
+		<it>Web browser</it>. Here you can enter the name of your favorite 
+		web browser (Netscape, Opera, Mozilla, Lynx etc.). Add the %s parameter 
+		to the command so Sylpheed knows it has to provide the text you clicked 
+		on as the URL that the browser has to visit.
+		The arrow next to the text field can be used to display a scrolling
+		list of predefined URL browsing command lines.
+	</item>
+	<item>
+		<it>Printing</it>. Here you can define the program that should be used 
+		to print. Default is lpr, and the %s is the name of the temporary file 
+		that Sylpheed creates for lpr to print.
+		When using the <it>File->Print</it> menu entry to print the selected
+		message, a text window pops up to allow you to change the command
+		used to print.
+	</item>
+	<item>
+		<it>External editor</it>. You can select an external editor to write 
+		your e-mails with, for example vi, emacs or gedit. Note that for 
+		text-based editors like vi, you need to define a terminal window, 
+		e.g. <tt>xterm -e vi %s</tt>. Otherwise there is no place that the 
+		editor will be able to show up. Here too, the %s parameter is the 
+		name of a temporary file that is created by Sylpheed.
+	</item>
+	<item>
+		<it>Add address to destination (...)</it> when selected,
+		double clicking an e-mail address (in the address book,
+		when the composition window is opened) can be used to add 
+		this address to the <it>To:</it> field.
+	</item>
+	<item>
+		Confirming if you want to exit Sylpheed (or just exit quietly).
+	</item>
+	<item>
+		Cleaning the trashbox when exiting Sylpheed.
+	</item>
+	<item>
+		Have Sylpheed ask you to clean the trash before it is done.
+	</item>
+	<item>
+		Warn you when exiting Sylpheed when there are still messages 
+		queued to be sent.
+	</item>
+</itemize>
+</sect2>
+
 </sect1>
 
+<sect1>Setting up an account/changing an account
+<p>
+In order to set up an account in Sylpheed, in the <it>Configuration</it>
+menu you select <it>Create new account</it>. If you want to change the 
+settings of an existing account and this account is the current
+one, in the <it>Configuration</it> menu select <it>Preferences for 
+current account</it>, otherwise select <it>Edit accounts...</it>.
+There you select the account you want to change. After that you press 
+<it>edit</it>. Then a dialog appears in which you can enter or update 
+the following areas:
+<p>
+
+<sect2>Basic tab<label id="Basic">
+<p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_basic.png"></figure>
+
+In the "Basic" tab you name the account. This is to make identifying 
+the account easier. The name is then used in the <it>Change current account</it>
+part of the <it>Configuration</it> menu, or in menu found in the lower 
+right corner of the main window (used to quickly switch to another account).
+<p>
+Choose a name that tells something about the account, like the 
+name of the ISP, mailbox or news-server you are setting up.  
+You can select this account to be the default account ("Usually used").
+The default account can also be defined from the <it>Edit accounts</it>
+window (toggle the <it>D</it> column next to the account name).
+<p>
+Enter your name and e-mail address, and if you have one, the 
+organization that you use Sylpheed for.
+In the Protocol box you select the type of service that this 
+account will be using. The flavors you can choose are: <it>POP3 normal</it>, 
+<it>POP3 APOP auth</it>, <it>IMAP4</it>, <it>NNTP news</it> or <it>None (local)</it>.
+<p>
+For POP3 and IMAP services you can then specify the server where 
+your mail is stored. Details about this name, and also the name 
+that goes into the field for <it>SMTP server (send)</it> should be given 
+to you by your ISP.
+<p>
+For a local unix mailbox, the <it>Server for receiving</it> is disabled, 
+since the mail will be received for you.
+<p>
+The fields for <it>User ID</it> and <it>Password</it> will also be
+disabled for accounts that do no deal with POP3 or IMAP services.
+Otherwise you can enter the login name and password for the e-mail
+server with your ISP here. Usually these are the same as your login 
+name and password to access the dial-in service, but this is 
+not standard. If in doubt, contact the helpdesk of your ISP.
+
+<sect3>Passwords:
+<p>
+The password is not printed in the entry field (replaced by stars) but
+is stored in plaintext in the Sylpheed configuration files. The Sylpheed
+configuration directory (~/.sylpheed) is only readable by 'owner', and
+not by 'group' and 'other', do not change these access rights.
+</sect3>
+
+</sect2>
+
+<sect2>Receive tab<label id="Receive">
+<p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_pop_receive.png"></figure>
+
+The <it>Receive</it> tab is only used for POP3 accounts. Here you
+specify if the mails that were successfully retrieved should be removed 
+from the server. You can also tell Sylpheed to get all the 
+messages there, not only the ones you already received (in case 
+you leave your messages on the server).
+You can choose to leave the messages on the server during a selectable
+number of days (then remove them).
+<p>
+You can also define a limit for the size of the messages to
+download. Any message bigger than this limit will not be
+downloaded.
+<p>
+You can also choose to filter messages on receiving, if not
+set, the messages are only filtered when you use the filter
+entry of the Tools menu.
+<p>
+The default inbox defines the folder that receives the incoming
+(and not filtered) messages for this account.
+You can define a different folder as inbox for each of your
+accounts.
+<p>
+If the <it>Get all checks for messages on this account</it> is turned
+off, when using the <it>Get all</it> menu entry (or toolbar button)
+this account will not be checked. To check for new mails for
+this account, you must select the account, then use the <it>Get</it>
+toolbar button (or menu entry).
+</sect2>
+
+<sect2>Send tab<label id="Send">
+<p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_send.png"></figure>
+
+In the <it>Send</it> tab you can define the settings that apply 
+to sending mails.
+<p>
+You can choose to add the date field to the messages you send,
+generate a unique message identifier, or add custom header
+fields.
+
+<sect3>X-face pictures:
+<p>
+The user defined header field should be set up to contain your
+X-face picture.
+Thanks to Jeff Dairiki, you can have a complete online course in this. 
+Visit <url url="http://www.dairiki.org/xface/" name="this page"> for the details.
+</sect3>
+
+<p>
+If your SMTP server needs authentication, define the user ID and
+password to use in this tab. You can also choose to first authenticate with
+POP3 before sending.
+
+</sect2>
+
+<sect2>Compose tab<label id="Compose"><p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_compose.png"></figure>
+
+In the <it>Compose</it> tab you can define your signature file, 
+choose to always copy someone when sending mails (you can
+choose to always copy your boss, or yourself), and define the
+Reply-To field for the current account.
+</sect2>
+
+<sect2>Privacy tab<label id="Privacy">
+<p>
+This tab is only available when Sylpheed has been compiled
+with GPGME and GNUPG (for signature and encryption).
+
+<p>
+With this tab you can choose the keys to use when signing
+or encrypting mails for this account.
+</sect2>
+
+<sect2>Advanced tab<label id="Advanced">
+
+<p>
+The Advanced tab contains some settings you normally do
+not need to change (unless you really know what you are
+doing).
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_advanced.png"></figure>
+
+<p>
+You can change the default SMTP or POP3 ports used when
+connecting to your mail server, define a domain name to
+use when sending a mail. Some ISP (or mail relays) reject
+mails without a valid domain name.
+<p>
+The default folders for the sent messages, drafts and
+trash can be defined here. If not changed the current account
+will use the default folders.
+</sect2>
+
+<sect2>Attaching accounts to folders
+<p>
+Pressing the right mouse button over a folder (in the folder pane), 
+and selecting the <it>Properties</it> entry will open the folder properties
+form. In this form, in the <it>General</it> tab you can see (but not modify)
+the folder name and the corresponding directory path (relative to the mail
+directory). In the <it>Compose</it> tab:
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/folder_prop_compose.png"></figure>
+
+you can select the account, choose to apply this setting also to
+the sub-folders.
+You can also force the address used when sending mail (to force a mailing
+list address, for example), choose to send a copy of the sent mails
+to a list of addresses different from the default one defined for the
+selected account.
+</sect2>
+
+<sect2>Using accounts in the real life
+<p>
+Accounts can, of course be used to retrieve mails from different ISPs,
+separate your personal and professional messages, but also to make your
+life easier.
+You can define different accounts just to change your address (as sender),
+your signature, change the sent folder, etc...
+Here is a summary of the account specific settings, feel free to
+find your own use for them:
+
+<itemize>
+	<item>
+		Sender name, address and organization. Signature, extra header
+		fields.
+	</item>
+	<item>
+		Leave or remove message from server (usefull for debug).
+	</item>
+	<item>
+		Incoming mails filtering and size limit.
+	</item>
+	<item>
+		Default field (<it>Reply-To</it>:, <it>Cc:</it>, <it>Bcc:</it>).
+	</item>
+	<item>
+		<it>Draft</it>, <it>Trash</it> and <it>Sent</it> folders.
+	</item>
+</itemize>
+
+By attaching accounts to folders, you can control all these settings
+on a folder basis, but you can also change the <it>To:</it>, <it>Cc:</it>, 
+<it>Bcc:</it>, and <it>Reply-To:</it> for each folder (overrides the account
+settings).
+
+</sect2>
+
+</sect1>
 </sect>
-
