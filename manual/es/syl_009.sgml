@@ -1,28 +1,17 @@
 
 <sect>Recibiendo Mensajes
 <!-- mramos -->
+<!-- mones 2002/03/19 -->
+
 <sect1>Usando la Función de Recepción POP en Sylpheed<p>
-Recibir mensajes desde un servidor POP es muy fácil, una vez configures
-Sylpheed de forma adecuada. Puedes referirte a la sección "Creando una cuenta"
-para ver como hacerlo.<p>
-Una vez te hayas conectado a internet, o a otro red que te brinde acceso al
-servidor POP, simplemente pulsa el botón "Incorporar correo nuevo" (o presiona
-Alt-I) y Sylpheed se conectará con el servidor para descargar tu correo nuevo.
-Una vez éste sea descargado todo filtro que hayas definidio será ejecutado y
-luego el cuadro de carpetas te mostrará, marcados en negrita, cuales
-carpetas/buzones contienen mensajes nuevos.
+Recibir mensajes desde un servidor POP es muy fácil, una vez configures Sylpheed de forma adecuada. Puedes referirte a la sección "Creando una cuenta" para ver como hacerlo.<p>
+Una vez te hayas conectado a internet, o a otra red que te brinde acceso al servidor POP, simplemente pulsa el botón "Incorporar correo nuevo" (o presiona Alt-I) y Sylpheed se conectará con el servidor para descargar tu correo nuevo. Una vez éste sea descargado todo filtro que hayas definidio será ejecutado y luego el cuadro de carpetas te mostrará, marcados en negrita, que carpetas/buzones contienen mensajes nuevos.
 </sect1>
+
 <sect1>Usando Otros Programas tales como fetchmail<p>
-Aunque no está dentro del alcance de éste manual, un poco de información sobre
-fetchmail o getmail.<p>
-Necesitas tener alguno de estos programas instalado y configurado
-correctamente. Consulta las páginas manual/archivos README sobre como
-hacerlo.<p>
-Después de configurar el programa, puedes invocarlo, ya sea a mano o mediante
-CRON para obtener tu correo. El correo es a menudo descargado en
-/var/spool/mail/tu_login. Puedes decirle a Sylpheed, mediante una cuenta que
-inspeccione tu buzón unix local, que obtenga el correo desde allí. Para ésto
-pulsa el botón "Incorporar correo nuevo" o presiona "Alt-I".
+Aunque no está dentro del alcance de éste manual, un poco de información sobre fetchmail o getmail.<p>
+Necesitas tener alguno de estos programas instalado y configurado correctamente. Consulta las páginas manual/archivos README sobre como hacerlo.<p>
+Después de configurar el programa, puedes invocarlo, ya sea a mano o mediante CRON para obtener tu correo. El correo es a menudo descargado en /var/spool/mail/tu_login. Puedes decirle a Sylpheed, mediante una cuenta que inspeccione tu buzón unix local, que obtenga el correo desde allí. Para ésto pulsa el botón "Incorporar correo nuevo" o presiona "Alt-I".
 </sect1>
 
 </sect>

@@ -41,186 +41,99 @@ El menú ver te permite cambiar la apariencia Sylpheed. Puedes separar las difere
 <item>Separar árbol de carpetas: selecciona entre tener el árbol de carpetas adherido a la ventana principal, o flotando separadamente.
 <item>Separar vista de mensajes: selecciona entre tener el mensaje seleccionado en el cuadro de mensajes adherido a la ventana principal o flotando separadamente.
 <item>Expandir vista resumen: expande el resumen de cabeceras para ocupar toda la altura de la ventana, ocultando la vista del mensaje. Atajo: V
-<item>Ordenar: permite seleccionar el criterio para ordenar las cabeceras de los mensajes (por número, tamaño, fecha, remitente, asunto, color de la etiqueta, marca, no leído o por adjunto) o si se utilizará el asunto para agrupar los mensajes.
-<item>Vista jerárquica: Permite alternar entre la vista jerárquica o plana de las cabeceras de mensajes. Atajo: Ctrl-T
+<item>Ordenar: ésta opción te permitirá ordenar la vista de mensajes de muchas formas. Puedes ordenar por fecha, por asunto, por número (aquí nos referimos al número de mensaje interno MH) etc. Observa que "Atrer por asunto"es diferente de ordenar por asunto. Atraer por asunto pasa por alto las referencias "Re:" en el asunto. De esta forma los mensajes son ordenados de forma más lógica.
+<item>Vista jerárquica: los mensajes se asocian juntos en una vista de árbol en base a sus referencias. Cuando se contesta un mensaje, por ejemplo, el nuevo mensaje contiene referencias al anterior y a los mensajes a los que se refería el anterior, esta información se utiliza para construir la vista jerárquica, por eso es importante no iniciar un tema nuevo en una lista de correo respondiendo a un mensaje sobre otro tema. Atajo: Ctrl-T 
+<item>Elementos visibles: muestra un cuadro de diálogo en el cual puedes elegir los elementos que quieras ver en el cuadro resumen.
+<item>Vista jerárquica: Permite alternar entre la vista jerárquica o plana de las cabeceras de mensajes. 
 <item>Elementos visibles...: Ofrece una ventana donde se pueden seleccionar los elementos del mensaje que se mostrarán en la vista resumen.
 <item>Conjunto de códigos: te permite seleccionar que conjunto de códigos quieres utilizar para tus mensajes.
-<item>Ir a: permite moverse por los mensajes con diversos criterios (mensajes no leídos, marcados, etc.).
-<item>Abrir en ventana nueva: muestra el mensaje seleccionado en una nueva ventana. Atajo: Ctrl-Alt-N
-<item>Ver fuente: Muestra el mensaje en completo incluyendo todas las cabeceras sin formatear. Atajo: Ctrl-U
-<item>Mostrar todas las cabeceras: Muestra todas las cabeceras del mensaje en la vista del mensaje. Atajo: Ctrl-H
+<item>Ir a: permite moverse por los mensajes con diversos criterios. En el submenú aparecen comandos para:
+ <itemize>
+ <item>Mensaje anterior: selecciona el mensaje anterior. Los ex-usuarios de Pine también pueden usar "p".
+ <item>Mensaje siguiente: slecciona el mensaje siguiente. Los ex-usuarios de Pine también pueden usar "n".
+ <item>Anterior sin leer: salta al anterior mensaje no leído en la carpeta. Atajo: Mays-P
+ <item>Siguiente sin leer: salta al siguiente mensaje no leído en la carpeta. Atajo: Mays-N
+ <item>Mensaje marcado anterior: salta al mensaje con marca anterior al actual.
+ <item>Siguiente mensaje marcado: salta al mensaje con marca siguiente al actual.
+ <item>Mensaje etiquetado anterior: salta al mensaje con etiqueta anterior al actual.
+ <item>Siguiente mensaje etiquetado: salta al mensaje con etiqueta siguiente al actual.
+ <item>Ir a otra carpeta: te permite abrir otra carpeta, utilizando una ventana de navegación para ésto. Atajo: G
+ </itemize>
+<item>Abrir en ventana nueva: Ésta abrirá el mensaje del cuadro resumen en una ventana nueva, permitiéndote ver más texto de una vez. Puedes cerrar esta ventana pulsando el botón cerrar o presionando Escape. Atajo: Ctrl-Alt-N
+<item>Ver fuente: abre una ventana nueva con el mensaje dentro, incluyendo todas las cabeceras del mensajes. Puedes cerrar esta ventana pulsando el botón cerrar o presionando Escape. Atajo: Ctrl-U
+<item>Mostrar todas las cabeceras: abre una ventana nueva con solamente las cabeceras del mensaje. Puedes cerrar esta ventana pulsando el botón cerrar o presionando Escape. Atajo: Ctrl-H
 <item>Actualizar: Permite releer el contenido del buzón seleccionado y actualizar las vistas de mensaje y resumen. Normalmente no será necesario a menos que otros programas modifiquen el contenido de las carpetas o en el caso de carpetas de noticias. Atajo: Ctrl-Alt-U
 </itemize>
 </sect2>
 
-<!-- actualizado hasta aqui -->
-
 <sect2>Menú Mensaje<p>
 Aquí encuentras las siguientes opciones:
 <itemize>
-<item>Traer correo nuevo: éste descargará todo el correo nuevo de tu cuenta
-de correo por defecto.
-<item>Traer de todas las cuentas: Sylpheed consultará todas las cuentas de
-correo definidas para ver si hay correo nuevo.
-<item>Enviar mensajes en cola: todos los mensajes que pusiste en la carpeta
-"Cola" serán enviados ahora.
+<item>Recibir correo nuevo: éste descargará todo el correo nuevo de tu cuenta de correo por defecto.
+<item>Recibir de todas las cuentas: Sylpheed consultará todas las cuentas de correo definidas para ver si hay correo nuevo.
+<item>Cancelar recepcion: cancela la recuperación de mensajes en curso.
+<item>Enviar mensajes en cola: todos los mensajes que pusiste en la carpeta "Cola" serán enviados ahora.
 <item>Componer nuevo mensaje: te permite escribir un mensaje nuevo.
-<item>Responder: será creado un mensaje de correo con el remitente del mensaje
-seleccionado en el cuadro resumen como destinatario. Dependiendo de la
-configuración, tu firma será añadida al mensaje, y el texto del mensaje
-original será citado.
-<item>Responder a todos: igual que Responder, pero los destinatarios serán
-todas las direcciones de correo en el mensaje original (incluyendo las que
-estén en la cabecera cc:).
-<item>Redirigir: será creado un mensaje con el mensaje original en el cuadro
-resumen como texto. Puedes ingresar un dirección de correo destinataria,
-editar el texto si quieres, y enviarlo.
-<item>Redirigir como fichero adjunto: igual que Redirigir, pero el texto del
-mensaje será enviado como un fichero de texto aparte.
-<item>Mover: te permite mover el mensaje a una carpeta diferente. Puedes
-seleccionar la carpeta destino en una ventana de navegación.
-<item>Copiar: igual que Mover, solo que el mensaje es copiado a la nueva
-carpeta, en lugar de ser movido.
+<item>Responder: será creado un mensaje de correo con el remitente del mensaje seleccionado en el cuadro resumen como destinatario. Dependiendo de la configuración, tu firma será añadida al mensaje, y el texto completo o la parte que hayas seleccionado con el ratón del mensaje original será citado.
+<item>Responder a todos: igual que Responder, pero los destinatarios serán todas las direcciones de correo en el mensaje original (incluyendo las que estén en la cabecera cc:).
+<item>Redirigir: será creado un mensaje con el mensaje original en el cuadro resumen como texto. Puedes introducir una dirección de correo de destino, editar el texto si quieres y enviarlo.
+<item>Reenviar como fichero adjunto: igual que Redirigir, pero el mensaje será enviado como un fichero de texto aparte.
+<item>Mover: te permite mover el mensaje a una carpeta diferente. Puedes seleccionar la carpeta destino en una ventana de navegación.
+<item>Copiar: igual que Mover, salvo que el mensaje es copiado a la nueva carpeta, en lugar de ser movido.
 <item>Borrar: te permite borrar el mensaje seleccionado en el cuadro resumen.
-<item>Marcar: provee un submenú: Marcar/Desmarcar/Marcar como leído/Marcar
-como no leído. Cuando marques un mensaje, puedes realizar una acción
-específica (por ejemplo mover, borrar) en todos los mensajes marcados. Puedes
-desmarcar los mensajes que marcaste por error. Las otras opciones hacen lo que
-dicen, marcan un mensaje como leído o como no leído.
-<item>Abrir en ventana nueva: Ésta abrirá el mensaje del cuadro resumen en una
-ventana nueva, permitiéndote ver más texto de una vez. Puedes cerrar esta
-ventana pulsando el botón cerrar o presionando Escape.
-<item>Ver fuente: abre una ventana nueva con el mensaje dentro, incluyendo
-todas las cabeceras del mensajes. Puedes cerrar esta ventana pulsando el botón
-cerrar o presionando Escape.
-<item>Mostrar todas las cabeceras: abre una ventana nueva con solamente las
-cabeceras del mensaje. Puedes cerrar esta ventana pulsando el botón cerrar o
-presionando Escape.
-<item>Reeditar: ésta opción está disponible solamente cuando seleccionas un
-mensaje de la carpeta Borrador. Puedes luego editar el mensaje borrador.
-his option is only available when you select a message in the Draft folder. You can then edit the draft message.
+<item>Borrar los mensajes repetidos: borrará los mensajes de la carpeta activa que te fueron enviados dos o más veces. Por ejemplo cuando recibes un mensaje directamente y a través de una lista de correo simultáneamente.
+<item>Marcar: provee un submenú: Marcar, Desmarcar, Marcar como leído, Marcar como no leído y Marcar todo como leído. Cuando marques un mensaje, puedes realizar una acción específica (por ejemplo mover, borrar) en todos los mensajes marcados. Puedes desmarcar los mensajes que marcaste por error. Las otras opciones hacen lo que dicen, marcan un mensaje como leído o como no leído y marcar todos los mensajes de la carpeta como ya leídos.
+<!-- <item>Reeditar: ésta opción está disponible solamente cuando seleccionas un mensaje de la carpeta Borrador. Puedes luego editar el mensaje borrador. -->
 </itemize>
-Un aviso sobre las funciones como Mover, Copiar y Borrar: si no especificaste
-que se ejecuten los comandos inmediatamente (en Configuración), tendrás que
-seleccionar el comando "Ejecutar". Éste es un botón en la barra de
-herramientas, y puedes encontrarlo también en el menú Resumen.
+Un aviso sobre las funciones como Mover, Copiar y Borrar: si no especificaste que se ejecuten los comandos inmediatamente (en Configuración), tendrás que seleccionar el comando "Ejecutar" que puedes encontrar en el menú Resumen. 
 </sect2>
-<sect2>Menú Resumen<p>
-En el menú Resumen puedes realizar todo tipo de acciones que están
-relacionadas a la manipulación de mensajes. Las acciones son realizadas en el
-cuadro de resumen de mensajes.
-<itemize>
-<item>Borrar mensjes duplicados: Ésta borrará los mensajes de la carpeta
-activa que te fueron enviados dos veces. Por ejemplo cuando recibes un mensaje
-directamente y a través de una lista de correo simultáneamente.
-<item>Filtrar mensajes: puedes utilizar ésta opción si quieres filtrar los
-mensajes existentes a través de un filtro nuevo que has definido.
-<item>Ejecutar: ésta opción es necesaria si no seleccionaste "ejecutar
-inmediatamente" en las preferencias. "Ejecutar" realizará entonces todas las
-acciones que quieras (por ejemplo Copiar, Mover, Filtrar etc.)
-<item>Actualizar: actualiza el cuadro de mensajes para reflejar cualquier
-cambio.
-<item>Mensaje anterior: selecciona el mensaje anterior. Los ex-usuarios de
-Pine también pueden usar "p".
-<item>Mensaje siguiente: slecciona el mensaje siguiente. Los ex-usuarios de
-Pine también pueden usar "n".
-<item>Siguiente no leído: salta al siguiente mensaje no leído en la carpeta.
-<item>Ir a otra carpeta: te permite abrir otra carpeta. Puede utilizar una
-ventana de navegación para ésto.
-<item>Ordenar: ésta opción te permitirá ordenar la vista de mensajes de muchas
-formas. Puedes ordenar por fecha, por asunto, por número (aquí nos referimos al
-número de mensaje interno MH) etc. Observa que "Atrer por asunto"es diferente
-de ordenar por asunto. Atraer por asunto pasa por alto las referencias "Re:"
-en el asunto. De esta forma los mensajes son ordenados de forma más lógica.
-<item>Vista jerárquica: los mensajes son asociados juntos en una vista de
-árbol respecto al asunto.
-<item>Vista plana: deshace el item anterior.
-<item>Elementos visibles: muestra un cuadro de diálogo en el cual puedes
-elegir los elementos que quieras ver en el cuadro resumen.
-</itemize>
-</sect2>
+
+
+
 <sect2>Menú Herramientas<p>
-En el menú Herramientas encontrarás 2 opciones (a partir de la versión
-0.4.66). Éstas son Libro de direcciones y Ventana de traza.<p>
-En el libro de direcciones, como esperas, puedes almacenar las direcciones de
-corrreo que quieras salvar. Puedes crear carpetas dentro del libro de
-direcciones para mantener las direcciones juntas.<p>
-En la ventana de traza, puedes ver lo que Sylpheed está haciendo. Estar al
-tanto de las cosas de ésta manera es muy bueno cuando sospechas que algo anda
-mal. Puedes pegar la información de la ventana de traza en un mensaje de
-correo y enviarlo al desarrollador o a la lista de correo.
+En el menú Herramientas encontrarás 2 opciones (hasta la versión 0.6.4). Éstas son Libro de direcciones y Ventana de traza. En la versión 0.7.4 puedes encontrar las siguientes opciones<p>
+<itemize>
+<item>Agenda de direcciones: puedes almacenar las direcciones de corrreo que quieras guardar. Puedes crear carpetas dentro de la agenda de direcciones para mantener las direcciones juntas.<p>
+<item>Añadir remitente a la agenda: te permite añadir el remitente del mensaje seleccionado a alguna de las carpetas de la agenda. Aparecerá una ventana que te permitirá seleccionar en que carpeta deseas guardar la dirección.
+<item>Filtrar mensajes: puedes utilizar ésta opción si quieres filtrar los mensajes existentes a través de un filtro nuevo que has definido.
+<item>Crear regla de filtrado: permite crear rápidamente reglas de filtrado según la información del mensaje seleccionado actualmente. La creación puede ser automática, basada en el remitente, en el destinatario o en el asunto del mensaje.
+<item>Ejecutar: ésta opción es necesaria si no seleccionaste "ejecutar inmediatamente" en las preferencias. "Ejecutar" realizará entonces todas las acciones que quieras (por ejemplo Copiar, Mover, Filtrar etc.) Atajo X
+<item>Ventana de traza: aquí puedes ver lo que Sylpheed está haciendo. Estar al tanto de las cosas de ésta manera es muy interesante cuando sospechas que algo anda mal. Puedes pegar la información de la ventana de traza en un mensaje de correo y enviarlo al desarrollador o a la lista de correo.
+</itemize>
 </sect2>
 
-<sect2>Menú Configuración menu<p>
-En el menú Configuración, claramente, puedes configurar Sylpheed en la forma
-que quieras que funcione y reaccione.
+<sect2>Menú Configuración<p>
+En el menú Configuración, claramente, puedes configurar Sylpheed en la forma que quieras que funcione y reaccione.
 <itemize>
-
-<item>Preferencias comunes: en ésta opción se te mostrará un diálogo en el
-cual puedes seleccionar algunas pestañas. Cada pestaña representa un conjunto
-específico de opciones en Sylpheed. En el capítulo siguiente, estas opciones
-son explicadas en más detalle.
-<item>Preferencias de filtrado: ésta opción te muestra un diálogo donde puedes
-definir las reglas de filtrado que quieres que Sylpheed procese al recibir
-nuevos mensajes. Primero especificas en que parte(s) del mensaje Sylpheed tiene
-que inspeccionar, y luego le dices a Sylpheed qué hacer. Puedes mover el
-mensaje a un directorio diferente (incluyendo la Papelera para eliminar el
-correo spam). Seleccionando la carpeta destino es posible a través de una
-ventana de navegación que aparece cuando presionas "Seleccionar..."<p>
-Puedes elegir no recibir el correo. Observa que ésto dejará el mensaje en el
-servidor de correo de tu proveedro, el mensaje no será eliminado!<p>
-Cuando presionas el botón "Registrar", la regla de filtrado es añadida a la
-lista de reglas. Si seleccionas "Sustituir" la regla seleccionada es
-reemplazada por la información ingresada. Por último, "Borrar" borrará la regla
+<item>Preferencias comunes: en ésta opción se mostrará un diálogo en el cual puedes seleccionar algunas pestañas. Cada pestaña representa un conjunto específico de opciones en Sylpheed. En el capítulo siguiente, estas opciones son explicadas con más detalle.
+<item>Preferencias de filtrado: ésta opción te muestra un diálogo donde puedes definir las reglas de filtrado que quieres que Sylpheed procese al recibir nuevos mensajes. Primero especificas en que parte(s) del mensaje Sylpheed tiene que inspeccionar, y luego le dices a Sylpheed qué hacer. Puedes mover el mensaje a un directorio diferente (incluyendo la Papelera para eliminar el correo spam). Seleccionando la carpeta destino es posible a través de una ventana de navegación que aparece cuando presionas "Seleccionar..."<p>
+Puedes elegir no recibir el correo. Observa que ésto dejará el mensaje en el servidor de correo de tu proveedor, el mensaje no será eliminado!<p>
+Cuando presionas el botón "Registrar", la regla de filtrado es añadida a la lista de reglas. Si seleccionas "Sustituir" la regla seleccionada es reemplazada por la información introducida. Por último, "Borrar" borrará la regla
 de filtrado seleccionada.<p>
-Por favor observa que puedes configurar 2 palabras para una regla, las
-cuales ser manejadas con "OR" o "AND". OR significa que una de las 2
-palabras tendrán que ocurrir para que la regla sea ejecutada. AND significa
-que ambas palabras tienen que ocurrir antes de que la acción sea realizada.<p>
-A la derecha de las reglas registradas ves unos botones llamadas ARRIBA Y
-ABAJO. Puedes mover las reglas hacia arriba o abajo en la lista. Ésto a menudo
-disparará diferentes comportamientos en las selecciones, así que considera el
-orden con el cual defines las reglas.
-<item>Preferencias para cada cuenta: aquí puedes definir cosas específicas
-para la cuenta que estás utilizando actualmente. Por ejemplo si se debe
-eliminar los mensajes después de recibir, de cual servidor provienen los
-mensajes, etc. Básicamente es el mismo diálogo que se muestra al configurar un
-cuenta nueva.
-<item>Crear nueva cuenta: aquí le pones nombre a la cuenta (cada cuenta tiene
-un nombre reconocible), ingresas tu nombre y dirección de correo, etc. Defines
-el tipo de servidor al que estás accediendo (POP4, IMAP4, buzón local,
-servidor News) y a donde tienen que ir los mensajes descargados (la carpeta
-por defecto es la carpeta Entrada). En la pestaña RECIBIR activas o desactivas
-opciones, en ENVIAR puedes definir como enviar tus mensajes. En COMPONER
-puedes especificar un archivo de firma, y en AVANZADAS puedes definir puertos
-alternativos para el servidor, si existen. (No te molestes con ésto a menos
-que estés seguro que tienes que hacerlo!!)
-<item>Editar cuentas: aquí puedes seleccionar una de las cuentas que has
-creado, a partir de una lista, y editar su información. Observa que no puedes
-editar una cuenta con la cual has escrito un mensaje simultáneamente. Ésto es
-para asegurar la integridad de los datos.
-<item>Cambiar cuenta actual: aquí puedes seleccionar que cuenta quieres
-utilizar para escribir un mensaje.
+Por favor observa que puedes configurar 2 condiciones para una regla, las cuales ser manejadas con "OR" o "AND". OR significa que una de las 2 condiciones tendrá que ocurrir para que la regla sea ejecutada. AND significa
+que ambas condiciones tienen que ocurrir antes de que la acción sea realizada.<p>
+A la derecha de las reglas registradas ves unos botones llamadas Arriba y Abajo. Puedes mover las reglas hacia arriba o abajo en la lista. Ésto a menudo disparará diferentes comportamientos en las selecciones, así que considera el orden con el cual defines las reglas.
+<!-- <item>Platillas: aquí podrás definir distintas plantillas de correo para utilizar posteriormente. -->
+<item>Preferencias de la cuenta actual: aquí puedes definir cosas específicas para la cuenta que estás utilizando actualmente. Por ejemplo si se debe eliminar los mensajes después de recibir, de que servidor provienen los mensajes, etc. Básicamente es el mismo diálogo que se muestra al configurar un cuenta nueva.
+<item>Crear nueva cuenta: aquí le pones nombre a la cuenta (cada cuenta tiene un nombre asociado), introduces tu nombre y dirección de correo, etc. Defines el tipo de servidor al que estás accediendo (POP4, IMAP4, buzón local,
+servidor News) y a donde tienen que ir los mensajes descargados (la carpeta por defecto es la carpeta Entrada). En la pestaña Recibir activas o desactivas opciones, en Enviar puedes definir como enviar tus mensajes. En Componer puedes especificar un archivo de firma, y en Avanzadas puedes definir puertos alternativos para el servidor, si existen. (¡No te lies con ésto a menos que estés seguro que tienes que hacerlo!)
+<item>Editar cuentas: aquí puedes seleccionar una de las cuentas que has creado, a partir de una lista, y editar su información. Observa que no puedes editar una cuenta con la cual a su vez estés escribiendo un mensaje al tiempo. Ésto es para asegurar la integridad de los datos.
+<item>Cambiar cuenta actual: aquí puedes seleccionar que cuenta quieres utilizar para escribir un mensaje.
 </itemize>
 </sect2>
 
 <sect2>Menú Ayuda<p>
-Éste menú te permite consultar manual en japónes e inglés, y puedes también
-ver la información "Acerca de" además de quien escribió Sylpheed.
+Éste menú te permite consultar manual en Japónes e Inglés, el FAQ o preguntas más frecuentes en Inglés, Francés y Español, y puedes también ver la información "Acerca de" además de quien escribió Sylpheed y un enlace que podrás pulsar para ir a la página web del mismo.
 </sect2>
 
 </sect1>
 
 <sect1>Menú Contextual
 <p>
-Puedes desplegar los menúes contextuales (pulsando el botón2) para el árbol de
-carpetas y el cuadro de resumen. (Usuarios de windows: botón2 es el botón
-derecho del ratón.)
+Puedes desplegar los menúes contextuales (pulsando el botón2) para el árbol de carpetas y el cuadro de resumen. (Usuarios de windows: botón2 es el botón derecho del ratón.)
 <p>
-En la vista de carpetas puede añadir, renombrar y borrar carpetas a través el
-menú contextual.<p>
-En el resumen de mensajes puedes realizar unas cuantas cosas desde el menú
-contextual, como ver las cabeceras del mensaje, abrir un mensaje en una nueva
-ventana (también posible pulsando dos veces en el mensaje) etc.
+En la vista de carpetas puede añadir, renombrar y borrar carpetas a través el menú contextual.<p>
+En el resumen de mensajes puedes realizar unas cuantas cosas desde el menú contextual, como ver las cabeceras del mensaje, abrir un mensaje en una nueva ventana (también posible pulsando dos veces en el mensaje) etc.
 </sect1>
+
 </sect>
