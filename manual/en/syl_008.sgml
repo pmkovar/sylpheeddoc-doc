@@ -131,7 +131,7 @@ Controls the composition window's behaviour..
 		to mails. If <it>Automatically select account(...)</it> is set,
 		the account used when replying to a message is automatically
 		selected based on the folder the original message is in (as you
-		were already told, accounts can be attached to folders).
+		where already told, accounts can be attached to folders).
 		If <it>Quote message when replying</it> is selected, when hiting
 		the <it>Reply</it> button, the composition window pops up and is
 		filled with either the complete message you are replying to (if
@@ -490,6 +490,11 @@ You can choose to add the date field to the messages you send,
 generate a unique message identifier, or add custom header
 fields.
 
+<p>
+If your SMTP server needs authentication, define the user ID and
+password to use in this tab. You can also choose to first authenticate with
+POP3 before sending.
+
 <sect3>X-face pictures:
 <p>
 The user defined header field should be set up to contain your
@@ -497,11 +502,6 @@ X-face picture.
 Thanks to Jeff Dairiki, you can have a complete online course in this. 
 Visit <url url="http://www.dairiki.org/xface/" name="this page"> for the details.
 </sect3>
-
-<p>
-If your SMTP server needs authentication, define the user ID and
-password to use in this tab. You can also choose to first authenticate with
-POP3 before sending.
 
 </sect2>
 
