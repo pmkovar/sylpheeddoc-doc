@@ -4,7 +4,7 @@ Was sind Newsgroups?
 Newsgroups sind Diskussionsforen, deren Beiträge (&quot;Postings&quot;) sich in der Regel delokalisiert auf einer Reihe von &quot;Newsservern&quot; befinden. Diese bilden das sogenannte &quot;Usenet&quot;.
 Diskutiert wird hierbei über fast jede menschenerdenkliche Thematik. Über Weinbau, Gebrauchtwagen, Quantendynamik oder Lokalpolitik.
 
-Will man sich diese Informationsquelle erschließen, sollte man sich bewußt sein daß sich das Konzept sehr von persönlichen Emails unterscheidet, und eher Mailinglisten ähnelt.
+Will man sich diese Informationsquelle erschließen, sollte man sich bewußt sein daß sich das Konzept sehr von persönlichen E-Mails unterscheidet, und eher Mailinglisten ähnelt.
 
 Wichtige Links für das deutschsprachige Usenet:
 
@@ -29,7 +29,7 @@ Schweizer Newsgroups (ch.*)
 Um einen Newsserver hinzuzufügen, wählt man in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot;.
 Dem Newsaccount kann man einen beliebigen Namen geben. Unter diesem Namen wird der Account wie eine Mailbox in der Ablagenübersicht angezeigt.
 
-Im &quot;Einfach&quot; Reiter, im Bereich &quot;Persönliche Information&quot;, gibt man seinen Namen, Email-Adresse, und falls gewünscht Organisation an.
+Im &quot;Einfach&quot; Reiter, im Bereich &quot;Persönliche Information&quot;, gibt man seinen Namen, E-Mail-Adresse, und falls gewünscht Organisation an.
 
 Im Bereich &quot;Serverdaten&quot; wählt man &quot;News (NNTP)&quot; als Protokoll. Als nächstes benötigt man die Adresse des Newsservers. Das ist meist entweder ein lokaler Newsserver wie leafnode, der Newsserver des Providers, ein frei zugänglicher Newsserver, oder ein Newsserver einer Firma oder Organisation die ihre eigenen, lokalen Newsgroups anbietet.
 
