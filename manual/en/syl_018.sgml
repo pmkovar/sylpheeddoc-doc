@@ -16,17 +16,12 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 </sect1>
 <!-- add 2001/07/21 -->
-<sect1>Where to Get the Latest Version of This Document
-<p>
-You can find the latest version of this document on the sort of official Sylpheed 
-manual pages at <url url="http://nlpagan.net/sylman/index.html" name="http://nlpagan.net/sylman/index.html">.
-<p>
-Here the manual is uploaded as HTML pages. From this page you can download these 
-pages as a tar.gz file for offline browsing on your own computer.
-<p>
-You can also tap into the CVS repository at 
-<url url="http://sourceforge.net" name="http://sourceforge.net"> and look for 
-the project "sylpheeddoc". The document is stored there as an SGML file, you will need the SGML tools for this!
+<sect1>Where to Get the Latest Version of This Document<p>
+You can find the latest version of this document on the site of the Sylpheed documentation project at
+
+<url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
+
+Here FAQ and manual are uploaded as HTML pages, and in form of SGML files within the CVS repository.
 </sect1>
 <sect1>Ending Remark<p>
 I wish to thank everyone involved in the Sylpheed project.<p>
