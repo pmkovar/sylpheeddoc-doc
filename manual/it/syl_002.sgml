@@ -1,0 +1,80 @@
+<sect>Guida rapida per la configurazione della posta
+
+<sect1>Primo avvio di Sylpheed
+
+<p>
+Al primo avvio di Sylpheed verrete guidati 
+passo-passo alla configurazione.
+All'inizio comparirà una finestra che chiederà di 
+definire una directory in cui Sylpheed andrà a salvare 
+i messaggi e le cartelle. Questa directory sarà creata 
+nella vostra cartella <em>home</em> (oppure per Windows 
+in C:\windows\Application Data\Sylpheed per windows).
+Il nome predefinito di tale directory è "Mail".
+
+<figure loc="here">
+	<ph vspace="1cm">
+	<img src="snapshots/wizard_1.png">
+</figure>
+
+Successivamente comparirà la finestra per l'impostazione 
+dell'account di posta. In base alla vostra configurazione 
+(mailbox UNIX locale o account POP), leggere la sezione 
+seguente corrispondente per proseguire nella configurazione.
+
+<sect1>Configurazione rapida per leggere la vostra mailbox UNIX locale<p>
+<itemize>
+<item>Nel menu di configurazione selezionare "Aggiungi nuovo account".
+<item>Alla voce <ref id="Essenziale">, inserire il nome per l'account. E' possibile impostare l'account come predefinito ("Configurare come predefinito").
+<item>Inserire il vostro nome e l'indirizzo e-mail.
+<item>Per selezionare la vostra mailbox UNIX locale selezionare la voce "Nessuno (locale)" nella casella "Protocollo".
+<item>Una volta selezionata questa opzione la voce "Server per la ricezione" è disabilitata, in quanto irrilevante. E' possibile inserire il server per l'invio (SMTP).
+</itemize>
+Le impostazioni alle voci successive possono solitamente essere lasciate ai loro valori predefiniti.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_basic.png"></figure>
+
+La voce <ref id="Ricevi"> non è utilizzata in questa configurazione, poichè non server richiedere la posta ad un server, i messaggi vengono consegnati direttamente nella mailbox UNIX locale.
+
+Alla voce <ref id="Spedisci"> è possibile definire l'intestazione e l'autenticazione SMTP.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_send.png"></figure>
+
+Alla voce <ref id="Componi"> è possibile definire il file contenente la firma.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
+
+Alla voce <ref id="Avanzato"> si possono modificare i numeri di porta per le connessioni ai server. Solitamente non è necessario modificarli.
+
+Questo è tutto il necessario per usare Sylpheed con le mailbox UNIX locali. Per vedere se c'è posta si può selezionare "Messaggio - Ricevi la nuova posta" oppure premere "CTRL + I".
+</sect1>
+<sect1>Configurazione rapida per leggere la posta mediante POP3<p>
+<itemize>
+<item>Nel menu di configurazione selezionare "Aggiungi nuovo account".
+<item>lla voce <ref id="Essenziale">, inserire il nome per l'account. E' possibile impostare l'account come predefinito ("C
+onfigurare come predefinito").
+<item>Inserire il vostro nome e l'indirizzo e-mail.
+<item>Selezionare la voce "POP3 (normale) nella casella "Protocollo".
+<item>Inserire i dati per il "Server per la ricezione" e quelli per il "Server SMTP (spedisce)".
+</itemize>
+Le impostazioni alle voci successive possono solitamente essere lasciate ai loro valori predefiniti.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_pop_basic.png"></figure>
+
+La voce <ref id="Ricevi"> offre le opzioni avanzate per POP3.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_pop_receive.png"></figure>
+
+Alla voce <ref id="Spedisci"> è possibile definire l'intestazione e l'autenticazione SMTP.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_send.png"></figure>
+
+Alla voce <ref id="Componi"> è possibile definire il file contenente la firma.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
+
+Alla voce <ref id="Avanzato"> si possono modificare i numeri di porta per le connessioni ai server. Solitamente non è necessario modificarli.
+
+Questo è tutto il necessario per usare Sylpheed con il protocollo POP3. Per vedere se c'è posta si può selezionare "Messaggio - Ricevi la nuova posta" oppure premere "CTRL + I".
+</sect1>
+</sect>

@@ -1,0 +1,33 @@
+<!-- added 2001/07/20 -->
+<sect>Guida rapida per l'impostazione di un account per i newsgroup<p>
+<sect1>Ottenere le news rapidamente<p>
+<p>
+Nel menu di configurazione selezionare "Crea nuovo account"
+<p>
+Alla voce "Essenziale" inserire i dati necessari: un nome per l'account, il proprio nome, il proprio indirizzo e-mail, ecc. Nella casella Protocollo selezionare la voce "News (NNTP).
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_news_basic.png">
+</figure>
+
+<p>
+Inserire le informazioni del server di news.
+<p>
+Saltare la voce "Ricevi".
+<p>
+Alla voce "Spedisci" è possibile definire altre impostazioni.
+<p>
+Alla voce "Componi" è possibile indicare il file contenente la firma.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_compose.png">
+</figure>
+
+<p>
+Alla voce "Avanzato" si possono modificare i numeri di porta per le connessioni ai server. Solitamente non è necessario modificarli.
+<p>
+Chiudere la finestra, cliccare con il tasto destro del mouse sulla cartella "News" e selezionare "Iscrizione al newsgroup". Se non è già stato fatto, verrà scaricata dal server la lista dei gruppi disponibili. Da questo punto in poi sapete cosa fare!
+<!-- end added 2001/07/20 -->
+</sect1>
+</sect>
