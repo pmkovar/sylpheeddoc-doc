@@ -1,26 +1,34 @@
-<sect>Carnet d'adresses
-<p>
+<sect>Recevoir des Messages
 
-<figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/address_book.png">
-</figure>
+<sect1>Utilisation de la fonction de réception POP de Sylpheed<p>
+<!-- added 2001/07/19 -->
+Il est très facile de recevoir des messages à partir d'un serveur POP, une fois
+ que Sylpheed est configuré correctement. Vous pouvez vous référer à la section
+ «~Configurer un compte~» sur la manière de le faire.<p>
+Une fois que vous êtes connecté sur internet ou sur un autre réseau vous donnant 
+accès au serveur POP, pressez simplement le bouton <bf>Relever</bf> (ou pressez 
+«~Alt-I~») et Sylpheed se connectera au serveur pour vérifier votre courrier. 
+Une fois que vos messages sont récupérés, tous les filtres que vous avez 
+configuré sont exécutés et la fenêtre des dossiers vous montrera, en gras et en 
+couleur, quels dossiers contiennent de nouveaux messages.
+<!-- end addition 2001/07/19 -->
+</sect1>
+<sect1>Utilisation d'autres programmes tels que fetchmail<p>
+<!-- added 2001/07/19 -->
+Vous devez avoir ces programmes installés et configurés correctement. Pour cela, 
+veuillez vous reférer aux pages <tt>man</tt> ou au fichier <tt>README</tt> du 
+programme approprié.<p>
 
-Le carnet d'adresses permet de stocker les adresses des personnes et les endroits avec qui vous correspondez le plus souvent. Il est accessible par le raccourci «~Alt-A~», le bouton <bf>Adresse</bf> ou par le menu <bf>Outils -> Carnet d'adresses</bf>.<p>
-
-<sect1>Ajouter et supprimer des adresses<p>
-L'ajout d'une adresse au carnet d'adresses est simple. Cliquez avec le bouton 2 (droit) de la souris sur le carnet, dossier ou groupe dans lequel vous voulez ajouter l'adresse, sélectionnez <bf>Nouvelle adresse</bf> et remplissez les champs de la fenêtre qui se présente.  Une autre façon consiste à d'abord sélectionner le carnet, le dossier ou le groupe désiré et puis cliquer sur le bouton <bf>Ajouter</bf>.<p>
-La suppression d'une adresse est également simple. Sélectionnez l'adresse en cliquant dessus, puis pressez le bouton <bf>Supprimer</bf>.<p>
+Après avoir configuré le programme, vous pouvez l'invoquer soit à la main, soit 
+par le biais de <tt>cron</tt>, pour obtenir votre courrier. Celui-ci sera 
+habituellement téléchargé dans le fichier 
+<tt>/var/spool/mail/votre_nom_d_utilisateur</tt>. Vous pouvez ensuite indiquer 
+à Sylpheed de vérifier dans votre boîte aux lettres Unix locale si vous y avez 
+du courrier. Pour cela, pressez le bouton <bf>Relever</bf> ou pressez 
+«~Alt-I~». Vous devez pour cela avoir sélectionné un compte utilisant une boîte 
+aux lettres Unix locale.
+<!-- end addition 2001/07/19 -->
 </sect1>
 
-<sect1>Dossiers et Groupes<p>
-Le carnet d'adresses, tout comme les courriers, peut être organisé en arborescence. Pour cela, cliquez avec le bouton 2 (droit) de la souris sur le carnet d'adresses ou dossier dans lequel vous voulez ajouter un nouveau dossier et sélectionnez <bf>Nouveau dossier</bf>. Entrez ensuite un nom descriptif, puis cliquez sur <bf>Ok</bf> et votre nouveau dossier est créé.<p>
-De la même manière, vous pouvez créer un nouveau groupe dans un dossier. Cliquez avec le bouton 2 (droit) de la souris sur le dossier voulu, sélectionnez <bf>Nouveau groupe</bf>, entrez un nom, cliquez sur <bf>Ok</bf> et c'est fait.<p>
-</sect1>
-<sect1>Interaction avec la fenêtre de composition de messages<p>
-Dans la fenêtre de composition de message ouverte, accédez au carnet d'adresse par un des moyens disponibles (barre d'outils, raccourcis claviers, menu).
-Pour trouver une adresse~: allez dans le champ <bf>Nom~:</bf>, entrez le début du nom ou de l'adresse que vous cherchez et pressez la touche de tabulation «~TAB~». Une liste déroulante apparaîtra avec les addresses correspondantes trouvées. Sélectionnez-en une et pressez «~Entrée~». Ensuite, utilisez les boutons <bf>À~:</bf>, <bf>Cc~:</bf> ou <bf>Cci~:</bf> pour ajouter l'adresse à la liste adéquate des destinataires du courrier édité. Si vous n'êtes pas en train de composer un message, ces boutons seront désactivés.
-
-</sect1>
 </sect>
 

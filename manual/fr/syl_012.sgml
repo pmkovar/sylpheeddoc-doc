@@ -1,62 +1,26 @@
-<sect>Support des types MIME
-
-<sect1>Comment Sylpheed gère les types MIME<p>
-
-(Merci à Adriaan Penning)<p>
-
-Deux fichiers, <tt>mime.types</tt> et <tt>mailcap</tt> sont utilisés pour
-déterminer le type MIME d'une pièce jointe ainsi que l'application associée
-à ce type.  Le fichier <tt>mime.types</tt> est utilisé pour déterminer le type MIME d'une pièce jointe que vous ajoutez lors de la composition d'un message.
-Le fichier <tt>mime.types</tt> contient des lignes telles que:
-
-<code>
-application/pdf                    pdf
-</code>
-
+<sect>Carnet d'adresses
 <p>
 
-Sylpheed recherche ce fichier dans le répertoire défini par la variable <tt>SYSCONFDIR</tt> (définie à la compilation), dans <tt>/etc</tt> et enfin dans <tt>$HOME/.sylpheed/</tt>.
-Si ce fichier n'existe pas ou n'est pas dans le bon format, toutes les pièces jointes auront le type <tt>application/octet-stream</tt> et le destinataire du message ne saura pas quelle application utiliser pour voir ces pièces jointes.
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/address_book.png">
+</figure>
 
-Pour définir l'application à utiliser pour visualiser une pièce jointe, il suffit d'éditer le fichier mailcap (<tt>/etc/mailcap</tt> ou <tt>$HOME/.mailcap</tt>).
+Le carnet d'adresses permet de stocker les adresses des personnes et les endroits avec qui vous correspondez le plus souvent. Il est accessible par le raccourci «~Alt-A~», le bouton <bf>Adresse</bf> ou par le menu <bf>Outils -> Carnet d'adresses</bf>.<p>
 
-Par example, vous devez ajouter les lignes suivantes dans le fichier
-<tt>$HOME/.mailcap</tt> pour utiliser xpdf pour visualiser les fichiers au
-format PDF~:
-
-<code>
-
-application/pdf ; xpdf %s
-
-</code>
-
-</sect1>
-</sect>
-
-<sect>Importation et exportation de courriers
-
-<sect1>Importer des messages au format MBOX<p>
-<!-- added 2001/07/20 -->
-Sylpheed vous permet d'importer des messages au format MBOX à partir du menu 
-<bf>Fichier</bf>. Mais d'abord, vous devez créer un dossier dans lequel vous souhaitez que les messages soient installés. Ensuite, sélectionnez <bf>Fichier -> Importer un fichier mbox...</bf>. Utilisez la fonction de navigation pour sélectionner le 
-fichier MBOX et le dossier destinataire et pressez <bf>Ok</bf>. Et 
-voilà, vos courriers sont importés.<p>
-C'était facile, n'est ce pas ?
+<sect1>Ajouter et supprimer des adresses<p>
+L'ajout d'une adresse au carnet d'adresses est simple. Cliquez avec le bouton 2 (droit) de la souris sur le carnet, dossier ou groupe dans lequel vous voulez ajouter l'adresse, sélectionnez <bf>Nouvelle adresse</bf> et remplissez les champs de la fenêtre qui se présente.  Une autre façon consiste à d'abord sélectionner le carnet, le dossier ou le groupe désiré et puis cliquer sur le bouton <bf>Ajouter</bf>.<p>
+La suppression d'une adresse est également simple. Sélectionnez l'adresse en cliquant dessus, puis pressez le bouton <bf>Supprimer</bf>.<p>
 </sect1>
 
-<sect1>Importer depuis les clients de messageries sous Windows (Becky!, AL-Mail, 
-Outlook Express4, etc.)<p>
-Pour pouvoir importer des répertoires de courriers
-de certains clients de messageries fonctionnant sous Windows, vous pouvez utiliser le programme mbx2mbox situé à l'adresse
-<url url="http://mbx2mbox.sourceforge.net" name="http://mbx2mbox.sourceforge.net">.
+<sect1>Dossiers et Groupes<p>
+Le carnet d'adresses, tout comme les courriers, peut être organisé en arborescence. Pour cela, cliquez avec le bouton 2 (droit) de la souris sur le carnet d'adresses ou dossier dans lequel vous voulez ajouter un nouveau dossier et sélectionnez <bf>Nouveau dossier</bf>. Entrez ensuite un nom descriptif, puis cliquez sur <bf>Ok</bf> et votre nouveau dossier est créé.<p>
+De la même manière, vous pouvez créer un nouveau groupe dans un dossier. Cliquez avec le bouton 2 (droit) de la souris sur le dossier voulu, sélectionnez <bf>Nouveau groupe</bf>, entrez un nom, cliquez sur <bf>Ok</bf> et c'est fait.<p>
 </sect1>
+<sect1>Interaction avec la fenêtre de composition de messages<p>
+Dans la fenêtre de composition de message ouverte, accédez au carnet d'adresse par un des moyens disponibles (barre d'outils, raccourcis claviers, menu).
+Pour trouver une adresse~: allez dans le champ <bf>Nom~:</bf>, entrez le début du nom ou de l'adresse que vous cherchez et pressez la touche de tabulation «~TAB~». Une liste déroulante apparaîtra avec les addresses correspondantes trouvées. Sélectionnez-en une et pressez «~Entrée~». Ensuite, utilisez les boutons <bf>À~:</bf>, <bf>Cc~:</bf> ou <bf>Cci~:</bf> pour ajouter l'adresse à la liste adéquate des destinataires du courrier édité. Si vous n'êtes pas en train de composer un message, ces boutons seront désactivés.
 
-<!-- End added 2001/07/21 -->
-<!-- start add 2001/09/04 -->
-<sect1>Exporter le format MH de Sylpheed vers un fichier MBOX<p>
-Sylpheed offre la possibilité d'exporter un de ses dossiers vers le format standard MBOX. Sélectionnez pour cela le menu <bf>Fichier -> Exporter vers un 
-fichier mbox...</bf>, puis sélectionnez le dossier à exporter 
-et enfin choisissez le nom du fichier à générer.
-<!-- end add 2001/09/04 -->
+</sect1>
 </sect>
 

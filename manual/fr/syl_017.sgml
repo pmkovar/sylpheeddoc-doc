@@ -1,69 +1,106 @@
-<sect>Information
-
-<sect1>Sites web concernant Sylpheed<p>
-Vous trouverez ici quelques liens vers la FAQ de Sylpheed dans d'autres langues~:<p>
+<sect>Référence<p>
+<!-- Added 2001/07/21 -->
+Dans cette section, vous allez trouvez quelques informations sur raccourcis 
+clavier utilisables dans Sylpheed et sur le format interne du fichier du carnet
+d'adresses.
+<sect1>Liste des raccourcis clavier<label id="raccourci clavier"><p>
+<sect2>Raccourcis à une touche<p>
 <itemize>
-<item>FAQ en français traduite par François Barrière~: <url url="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html" name="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html">
-<item>FAQ en japonais par WAKAI "SilverRain" Kazunao~: <url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">
-<item>FAQ en italien par Maurizio Codogno~: <url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html">
-<item>FAQ en allemand (HTML) par Ralf Schiffers~: <url url="http://www.synconet.de/privhome/rs/sylpheed_faq.html" name="http://www.synconet.de/privhome/rs/sylpheed_faq.html">
-<item>FAQ en allemand (texte) par Ralf Schiffers~: <url url="http://www.synconet.de/privhome/rs/sylpheed_faq.txt" name="http://www.synconet.de/privhome/rs/sylpheed_faq.txt">
-<item>FAQ en grec par  Theofilos Intzoglou~: <url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">
-<item>FAQ en polonais par Przemyslaw Sulek~: <url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl">
-<item>FAQ en espagnol (HTML) par Marcelo Ramos~: <url url="http://www.geocities.com/hackpando/sylpheedfaq.html" name="http://www.geocities.com/hackpando/sylpheedfaq.html">
-<item>FAQ en espagnol (texte) par Marcelo Ramos~: <url url="http://www.geocities.com/hackpando/sylpheedfaq.txt" name="http://www.geocities.com/hackpando/sylpheedfaq.txt">
-<item>FAQ en espagnol (HTML) par Ricardo Mones Lastra~: <url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es/" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es/">
-<item>FAQ en espagnol (DVI) par Ricardo Mones Lastra~:<url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi">
-<item>FAQ en espagnol (PostScript) par Ricardo Mones Lastra~:<url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps">
-<item>FAQ en turc par Doruk Fisek~: <url url="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html" name="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html">
-<item>FAQ en suédois par Mattias Stergren~: <url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="http://hem.passagen.se/webplats/sylpheed-faq-se.html">
+<item><bf>a</bf>~: crée un nouveau message~;
+<item><bf>d</bf>~: supprime le message sélectionné~;
+<item><bf>f</bf>~: fait suivre le message sélectionné~;
+<item><bf>g</bf>~: aller dans un dossier spécifique sélectionné par le biais d'une
+fenêtre dialogue~;
+<item><bf>n</bf>~: aller au message suivant / à la partie suivante d'un message 
+contenant plusieurs parties~;
+<item><bf>p</bf>~: aller au message précédent / à la partie précédente d'un message 
+contenant plusieurs parties~;
+<item><bf>v</bf>~: active / désactive la vue de message~;
+<item><bf>w</bf>~: crée un nouveau message (pareil que <bf>a</bf>)~;
+<item><bf>y</bf>~: sauvegarde le message dans un fichier.
 </itemize>
-</sect1>
-<sect1>Liste de diffusion<p>
-Si vous voulez garder Sylpheed à jour et que vous voulez discuter du programme 
-avec d'autres utilisateurs, vous pouvez rejoindre la liste de diffusion de 
-Sylpheed.<p>
-Envoyez un message à <tt>sylpheed-ctl@good-day.net</tt> contenant dans
-le corps du message le texte suivant~:<p>
-<tt>subscribe Votre nom</tt><p>
-Le serveur de la liste de diffusion vous retournera le courrier une
-fois pour le premier enregistrement de la requête vous demandant une
-confirmation disant à peu-près~: «~Puis-je vous mettre sur la liste de
-diffusion ?~».  Il inclut le texte suivant (le nombre et le nom sont
-un exemple)~:<p>
-<tt>confirm 84682771 Anne Shirley</tt><p>
-C'est une précaution pour éviter que vous soyez inscrit à votre insu.<p>
-Lorsque vous recevez ce courrier de confirmation, envoyez un courrier qui 
-inclut la ligne de précédente~:<p>
-<tt>confirm MotDePasse(le nombre) Votre nom</tt><p>
-à la même adresse que précédemment (<tt>sylpheed-ctl@good-day.net</tt>). 
-Une fois cette confirmation envoyée, vous serez inscrit dans la liste
-de diffusion.<p>
-L'adresse pour poster dans la liste est différente de celle pour
-l'enregistrement et l'envoi de commandes. En effet, il s'agit de 
-<tt>sylpheed@good-day.net</tt>.<p>
-Notez que si vous perdez le courrier contenant la demande de confirmation,
-envoyez simplement de nouveau une demande d'inscription~:<p>
-<tt>subscribe Votre nom</tt><p>
-à <tt>sylpheed-ctl@good-day.net</tt>.<p>
-<sect2>Comment annuler son inscription~?<p>
-Envoyez simplement un courrier à l'adresse
-<tt>sylpheed-ctl@good-day.net</tt> contenant uniquement la ligne
-suivante~:<p>
-<tt>unsubscribe</tt><p>
 </sect2>
-<!-- added aug. 13, 2001 -->
-</sect1>
-<sect1>Accès anonyme au CVS<p>
-Cette section n'a pas encore été écrite.
+<sect2>Raccourcis du menu <bf>Fichier</bf><p>
+<itemize>
+<item><bf>Alt-F</bf>~: ouvre le menu <bf>Fichier</bf>~;
+<item><bf>Alt-P</bf>~: imprimer~;
+<item><bf>Alt-W</bf>~: fermer~;
+<item><bf>Alt-Q</bf>~: quitter.
+</itemize>
+</sect2>
+<sect2>raccourcis du menu <bf>Éditer</bf><p>
+<itemize>
+<item><bf>Alt-E</bf>~: ouvre le menu <bf>Éditer</bf>~;
+<item><bf>Ctrl-C</bf>~: copier~;
+<item><bf>Ctrl-A</bf>~: tout sélectionner~;
+<item><bf>Ctrl-S</bf>~: chercher.
+</itemize>
+</sect2>
+<sect2>Raccourcis du menu <bf>Vue</bf><p>
+<itemize>
+<item><bf>Alt-V</bf>~: ouvre le menu <bf>Vue</bf>.
+</itemize>
+<sect2>Raccourcis du menu <bf>Message</bf><p>
+<itemize>
+<item><bf>Alt-M</bf>~: ouvre le menu <bf>Message</bf>~;
+<item><bf>Alt-I</bf>~: relever le courrier du compte actuellement utilisé~;
+<item><bf>Shift-Alt-I</bf>~: relever le courrier de tous les comptes~;
+<item><bf>Alt-N</bf>~: composer un nouveau message~;
+<item><bf>Alt-R</bf>~: répondre au message sélectionné~;
+<item><bf>Ctrl-Alt-R</bf>~: répondre à l'expéditeur (contrairement au 
+<bf>Répondre</bf> &lsqb;au message&rsqb décrit précédemment qui lui, peut répondre
+à une liste de diffusion, par exemple)~;
+<item><bf>Shift-Alt-R</bf>~: répondre à tous (à toutes les adresses situées dans les en-têtes «~À~:~» et «~Cc~:~»)~;
+<item><bf>Ctrl-F</bf>~: faire suivre le message sélectionné~;
+<item><bf>Shift-Ctrl-F</bf>~: faire suivre le message sélectionné comme pièce 
+jointe~;
+<item><bf>Alt-O</bf>~: déplacer le message dans un autre dossier~;
+<item><bf>Alt-D</bf>~: supprimer le message~;
+<item><bf>Shift-Ctrl-N</bf>~: ouvrir le message dans une nouvelle fenêtre~;
+<item><bf>Ctrl-U</bf>~: voir le source du message~;
+<item><bf>Ctrl-H</bf>~: montrer tous les en-têtes du message.
+</itemize>
+</sect2>
+<sect2>Raccourcis du menu <bf>Sommaire</bf><p>
+<itemize>
+<item><bf>Alt-S</bf>~: ouvre le menu <bf>Sommaire</bf>~;
+<item><bf>Alt-X</bf>~: exécute les commandes en attente, uniquement utile lorsque 
+les commandes «~supprimer~», «~déplacer~» et «~copier~» ne sont pas exécutées 
+immédiatement~;
+<item><bf>Alt-U</bf>~: met à jour des vues du sommaire et du message~;
+<item><bf>Alt-G</bf>~: va dans un autre dossier~;
+<item><bf>Ctrl-T</bf>~: active la vue par fils de conversation~;
+<item><bf>Shift-Ctrl-T</bf>~: désactive la vue par fils de conversation.
+</itemize>
+</sect2>
+<sect2>Raccourcis du menu <bf>Outils</bf><p>
+<itemize>
+<item><bf>Alt-T</bf>~: ouvre le menu <bf>Outils</bf>~;
+<item><bf>Alt-A</bf>~: ouvre le carnet d'adresses~;
+<item><bf>Alt-L</bf>~: ouvre le journal de connexion (<em>log</em>).
+</itemize>
+</sect2>
 </sect1>
 
-<!-- added 2001/09/05 -->
-<sect1>Comment indiquer à un autre programme d'utiliser Sylpheed comme 
-programme de gestion de courriers~?<p>
-Si vous souhaitez utiliser Sylpheed depuis Netscape ou Opera, 
-ouvrez la fenêtre <bf>Preferences</bf> du navigateur, puis
-choisissez <bf>Applications</bf>. Dans la partie <bf>Email client</bf>
-entrez <tt>sylpheed --compose</tt>.
+<sect1>Format de données du carnet d'adresses<p>
+Le carnet d'adresses est situé dans le répertoire <tt>~/.sylpheed</tt>. 
+Il est nommé <tt>addressbook.xml</tt>. Le format général du carnet d'adresses est
+le suivant~:<p>
+
+<code>
+&lt addressbook &gt<p>
+ &lt common_address &gt<p>
+    &lt group name="Common addresses" &gt<p>
+    &lt item &gt<p>
+     &lt name &gt Paul &lt /name &gt<p>
+     &lt address &gt paul@nlpagan.net &lt /address &gt<p>
+     &lt remarks &gt Écrit le manuel de Sylpheed &lt /remarks &gt<p>
+	&lt /item &gt<p>
+    &lt /group &gt<p>
+ &lt /common_address &gt<p>
+&lt /addressbook &gt
+</code>
+
 </sect1>
+<!-- end add 2001/07/21 -->
 </sect>

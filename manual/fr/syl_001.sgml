@@ -8,18 +8,22 @@
             François Barrière, 
             Olivier Delhomme
     <abstract>
-       Guide de l'utilisateur pour Sylpheed-0.8.1
+       Guide de l'utilisateur pour Sylpheed-0.8.10
     </abstract>
 
 <toc>
 
 <p>
-Copyright (c)  2002 François Barrière.
+Copyright (c)  2002 <it>L'équipe de documentation de Sylpheed</it>.
 Permission est donnée de copier, distribuer, et/ou modifier ce document
 selon les termes de la Licence de Documentation Libre GNU (<em>GNU Free Documentation License</em>), Version 1.1
 ou toute version ultérieurement publiée par la Free Software Foundation; sans section invariantes, sans textes de couverture.
 Une copie de la licence est comprise dans la section nommée "GNU Free Documentation License".
 </p>
+
+<p>
+La liste des membres de <it>l'équipe de documentation de Sylpheed</it> est
+détaillée dans <ref id="The Sylpheed documentation team" name="appendix">.
 
 <sect>Qu'est-ce que Sylpheed~?
 

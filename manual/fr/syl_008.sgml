@@ -1,18 +1,212 @@
-<sect>Recevoir des Messages
+<sect>Configuration de Sylpheed
+<p>
+Toutes les options de configuration sont accessibles a partir du menu
+<bf>Configuration</bf>, il s'agit d'une part des préférences générales, 
+des options de filtres, des modèles et des actions, et d'autre part, des 
+options spécifiques aux comptes. 
+<p>
+Sylpheed n'impose aucune limite sur le nombre de comptes que vous pouvez créer.
+Vous pouvez non seulement créer un compte pour chacun de vos email mais aussi 
+définir différents comportements pour chacun de ces comptes. Comme les dossiers
+peuvent être attachés à des comptes, la configuration change automatiquement
+(ainsi vous pouvez avoir différentes signatures lorsque vous répondez à des 
+messages de différents dossiers). 
 
-<sect1>Utilisation de la fonction de réception POP de Sylpheed<p>
-<!-- added 2001/07/19 -->
-Il est très facile de recevoir des messages à partir d'un serveur POP, une fois que Sylpheed est configuré correctement. Vous pouvez vous référer à la section «~Configurer un compte~» sur la manière de le faire.<p>
-Une fois que vous êtes connecté sur internet ou sur un autre réseau vous donnant accès au serveur POP, pressez simplement le bouton <bf>Relever</bf> (ou pressez «~Alt-I~») et Sylpheed se connectera au serveur pour vérifier votre courrier. Une fois que vos messages sont récupérés, tous les filtres que vous avez configuré sont exécutés et la fenêtre des dossiers vous montrera, en gras et en couleur, quels dossiers contiennent de nouveaux messages.
-<!-- end addition 2001/07/19 -->
+<sect1>Préférences générales
+<p>
+La fenêtre des préférences générales, que vous trouverez dans le menu 
+<bf>Configuration</bf> contrôle l'affichage de la fenêtre principale et 
+différentes options de l'interface graphique de Sylpheed. Selon les options
+de compilations utilisées (et des librairies externes disponibles) certains
+onglets seront (ou non) inclus dans votre version de Sylpheed. Ces onglets sont
+décrits dans les sections couvrant les paramêtres optionels qu'ils contôlent
+(Comme par exemple l'onglet <bf>Confidentialité</bf> pour l'interface avec 
+GnuPG).
+
+ <sect2>Onglet Réception
+ <p>
+ Dans cet onglet vous configurez la façon dont vous devez recevoir vos messages.
+
+ <figure loc="h"><ph vspace="479px"><img src="snapshots/pref_receive.png"></figure>
+
+  <itemize>
+	    <item>  
+		    Programme externe~:
+		    Vous pouvez spécifier un programme particulier pour aller
+                    chercher les messages de votre boite aux lettres électronique
+                    unix par défaut. Habituellement cette option n'est pas 
+                    utilisée, mais vous pouvez le faire.
+	    </item>
+	    <item>
+		    Spool local~:
+		    Vous pouvez spécifier où se trouve la file d'attente de vos 
+                    mails. Vous pouvez aussi indiquer à Sylpheed si il doit ou 
+                    non filtrer les messages arrivant de cette boite aux lettres
+		    électronique particulière.
+            </item>
+	    <item>
+		    Relève automatique~: 
+		    Effectue ou non la relève du courrier de manière automatique
+		    à intervalle régulier (celui que vous avez fixé).
+	    </item>
+	    <item>
+		    Relever le courier au démarrage~:
+                    Relève le courier au démarrage, c'est à dire que lorsque  
+		    Sylpheed démarre il va immédiatement chercher les nouveaux
+                    messages des comptes pour lequels il est paramêtré pour le
+	    </item>
+	    <item>
+		    Article~: 
+		    Vous pouvez indiquer le nombre maximum d'articles qui 
+		    doivent être téléchargés à l'ouverture d'un groupe de
+                    nouvelles (newsgroup).
+	    </item>
+  </itemize>
+ </sect2>
 </sect1>
-<sect1>Utilisation d'autres programmes tels que fetchmail<p>
-<!-- added 2001/07/19 -->
-Vous devez avoir ces programmes installés et configurés correctement. Pour cela, veuillez vous reférer aux pages <tt>man</tt> ou au fichier <tt>README</tt> du programme approprié.<p>
 
-Après avoir configuré le programme, vous pouvez l'invoquer soit à la main, soit par le biais de <tt>cron</tt>, pour obtenir votre courrier. Celui-ci sera habituellement téléchargé dans le fichier <tt>/var/spool/mail/votre_nom_d_utilisateur</tt>. Vous pouvez ensuite indiquer à Sylpheed de vérifier dans votre boîte aux lettres Unix locale si vous y avez du courrier. Pour cela, pressez le bouton <bf>Relever</bf> ou pressez «~Alt-I~». Vous devez pour cela avoir sélectionné un compte utilisant une boîte aux lettres Unix locale.
-<!-- end addition 2001/07/19 -->
+<! Note il manque les onglets Send à Other !>
+
+<sect1>Configurer ou changer la configuration d'un compte
+<p>
+Pour configurer un nouveau compte dans Sylpheed, cliquez sur l'option 
+<bf>Création d'un nouveau compte...</bf> du menu <bf>Configuration</bf>.
+Si vous désirez changer la configuration d'un compte existant, sélectionnez
+l'option <bf>Edition des comptes...</bf> du menu <bf>Configuration</bf> puis,
+choisissez le compte que vous désirez modifier et cliquez sur le bouton 
+"Editer". Une nouvelle boîte de dialogue s'ouvre dans laquelle vous pouvez
+éditer les informations suivantes~:
+<p>
+
+<sect2>Onglet Général<label id="Générale">
+<p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_basic.png"></figure>
+
+Dans l'onglet "Général" vous pouvez donner un nom à votre compte de manière à
+l'identifier aisément par la suite.
+<p>
+Choisissez un nom qui veux dire quelque chose, comme par exemple le nom de votre
+fournisseur d'accès internet (FAI), de votre boîte aux lettres ou de votre 
+serveur de nouvelles que vous êtes en train de configurer. Vous pouvez définir 
+ce compte comme étant celui par défaut, il s'agit de l'option "Définir comme 
+compte par défaut".
+<p>
+Entrez votre nom, votre adresse e-mail et, si vous en avez une, votre 
+organisation.
+Dans la liste de choix des protocoles "Protocole" sélectionnez le type de
+services à utiliser pour ce compte. Vous pouvez choisir entre les options 
+suivantes~: "POP3 (normal)", "POP3 (APOP auth)", "IMAP4", "News (NNTP)" ou bien
+"Aucun (local)".
+<p>
+Pour les services POP3 et IMAP4 vous devez spécifier le serveur où sont stockés
+vos messages. Les détails nécessaires pour remplir les différents champs 
+("Serveur de réception", "Serveur SMTP (envoi)", "Nom de l'utilisateur" et "mot
+de passe") vous ont été donnés par votre FAI ou votre hébergeur. Le plus souvent
+ses informations sont les mêmes que celle de votre connexion, mais ce n'est pas
+standard. Dans le doute consultez les pages d'aides de votre FAI.
+<p>
+Pour un compte unix local, le champ "Serveur de réception" est désactivé, 
+puisque vos e-mails sont reçus pour vous, localement, par un autre moyen.
+<p>
+Les Champs "Nom de l'utilisateur" et "mot de passe" sont désactivés lorsque le
+service choisi n'est ni POP3 ni IMAP4 (NDT~: il s'agit donc des services "News 
+(NNTP)" et "Aucun (local)".
+</sect2>
+
+<sect2>Onglet Réception<label id="Réception">
+<p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_pop_receive.png"></figure>
+
+L'onglet réception est utilisé uniquement pour les comptes utilisant le service
+POP3. Vous pouvez alors spécifier si les mails qui ont été correctement 
+réceptionnés doivent ou non êtres supprimés du serveur. Vous pouvez aussi dire
+à Sylpheed de rappatrier tous les messages, et pas seulement ceux que vous 
+n'avez pas encore réceptionnés (dans le cas où vous ne supprimez pas les 
+messages du serveur).
+<p>
+Vous pouvez également définir une limite à la taille des messages que vous 
+voulez télécharger, ainsi, tous les messages upérieurs à cette taille ne seront
+pas téléchargés.
+<p>
+Vous pouvez aussi filtrer les messages dès la réception. Lorsque cette option 
+n'est pas activée, le filtrage des messages ne s'effectue que lorsque vous 
+utilsez l'option <bf>Filtrer les messages</bf> du menu <bf>Outils</bf>.
+<p>
+Le "Dossier de réception par défaut" est celui qui reçoit les messages entrant
+non filtrés de ce compte. Vous pouvez définir un dossier de réception par défaut
+différent par compte.
+<p>
+Si le bouton "'Tous' relève le courrier pour ce compte" est désactivé, le
+courrier ne sera pas relevé lorsque que vous utiliserez l'option <bf>Relever le
+courrier de tous les comptes</bf> du menu <bf>Message</bf> ou le bouton "Tous"
+de la barre d'outils. Pour vérifier et télécharger les nouveaux messages de ce
+compte, vous devez sélectionner le compte et ensuite utiliser l'option 
+<bf>Relever le courrier</bf> du menu <bf>Message</bf> ou le bouton "Relever" de
+la barre d'outils.
+</sect2>
+
+<sect2>Onglet Envoyer<label id="Envoyer">
+<p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_send.png"></figure>
+
+Dans l'onglet Envoyer vous définissez les paramètres qui s'appliquent aux 
+messages que vous envoyez.
+<p>
+Vous pouvez choisir d'ajouter la date, un identifiant unique ou bien une en-tête
+personnalisée dans les messages que vous envoyez.
+<p>
+L'en-tête personnalisée devrait être configurée pour contenir votre image 
+X-face.
+<p>
+Si votre serveur SMTP à besoin d'authentification définissez votre nom 
+d'utilisateur ainsi que votre mot de passe dans cet onglet.
+</sect2>
+
+<sect2>Onglet Composition<label id="Composition"><p>
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_compose.png"></figure>
+
+Dans l'onglet composition vous pouvez définir votre fichier de signature, vous
+pouvez choisir de remplir (ou non) les définitions automatique d'adresses, qui 
+vous permettrons de copier le message à quelqu'un (vous, votre patron, ...), 
+vous pouvez également remplir le champ "Répondre à" dans le cas où vous voudriez
+que les réponses aux messages de ce compte vous soient envoyées sur une autre
+adresse.
+</sect2>
+
+<sect2>Onglet Confidentialité<label id="Confidentialité">
+<p>
+Cet onglet est disponible seulement lorsque Sylpheed à été compilé avec GPGME
+et GNUPG pour les fonctionnalités de signature et de cryptographie.
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_privacy.png"></figure>
+
+<p>
+Avec cet onglet vous pouvez choisir les clés à utiliser lorsque vous signez
+et/ou cryptez un message avec ce compte.
+</sect2>
+
+<sect2>Onglet "Avancée"<label id="Avancée">
+
+<p>
+L'onglet "avancée" contient des paramètres que vous n'avez pas à changer pour une
+utilisation courante (A moins que vous ne sachiez exactement ce que vous 
+faites).
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/account_advanced.png"></figure>
+
+<p>
+Vous pouvez changer les ports par défaut des services SMTP et POP3 utilisés 
+lors de la connexion au serveur, vous pouvez aussi définir un nom de domaine à 
+utiliser lors de l'envoi de vos messages.
+<p>
+Vous pouvez également définir ici les dossiers par défaut pour les messages
+envoyés, les brouillons, la poubelle. Si rien n'est changé, le compte courant
+utilisera les dossiers par défaut.
+
+</sect2>
 </sect1>
-
 </sect>
-

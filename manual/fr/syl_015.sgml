@@ -1,106 +1,33 @@
-<sect>Référence<p>
-<!-- Added 2001/07/21 -->
-Dans cette section, vous allez trouvez quelques informations sur raccourcis 
-clavier utilisables dans Sylpheed et sur le format interne du fichier du carnet
-d'adresses.
-<sect1>Liste des raccourcis clavier<label id="raccourci clavier"><p>
-<sect2>Raccourcis à une touche<p>
-<itemize>
-<item><bf>a</bf>~: crée un nouveau message~;
-<item><bf>d</bf>~: supprime le message sélectionné~;
-<item><bf>f</bf>~: fait suivre le message sélectionné~;
-<item><bf>g</bf>~: aller dans un dossier spécifique sélectionné par le biais d'une
-fenêtre dialogue~;
-<item><bf>n</bf>~: aller au message suivant / à la partie suivante d'un message 
-contenant plusieurs parties~;
-<item><bf>p</bf>~: aller au message précédent / à la partie précédente d'un message 
-contenant plusieurs parties~;
-<item><bf>v</bf>~: active / désactive la vue de message~;
-<item><bf>w</bf>~: crée un nouveau message (pareil que <bf>a</bf>)~;
-<item><bf>y</bf>~: sauvegarde le message dans un fichier.
-</itemize>
-</sect2>
-<sect2>Raccourcis du menu <bf>Fichier</bf><p>
-<itemize>
-<item><bf>Alt-F</bf>~: ouvre le menu <bf>Fichier</bf>~;
-<item><bf>Alt-P</bf>~: imprimer~;
-<item><bf>Alt-W</bf>~: fermer~;
-<item><bf>Alt-Q</bf>~: quitter.
-</itemize>
-</sect2>
-<sect2>raccourcis du menu <bf>Éditer</bf><p>
-<itemize>
-<item><bf>Alt-E</bf>~: ouvre le menu <bf>Éditer</bf>~;
-<item><bf>Ctrl-C</bf>~: copier~;
-<item><bf>Ctrl-A</bf>~: tout sélectionner~;
-<item><bf>Ctrl-S</bf>~: chercher.
-</itemize>
-</sect2>
-<sect2>Raccourcis du menu <bf>Vue</bf><p>
-<itemize>
-<item><bf>Alt-V</bf>~: ouvre le menu <bf>Vue</bf>.
-</itemize>
-<sect2>Raccourcis du menu <bf>Message</bf><p>
-<itemize>
-<item><bf>Alt-M</bf>~: ouvre le menu <bf>Message</bf>~;
-<item><bf>Alt-I</bf>~: relever le courrier du compte actuellement utilisé~;
-<item><bf>Shift-Alt-I</bf>~: relever le courrier de tous les comptes~;
-<item><bf>Alt-N</bf>~: composer un nouveau message~;
-<item><bf>Alt-R</bf>~: répondre au message sélectionné~;
-<item><bf>Ctrl-Alt-R</bf>~: répondre à l'expéditeur (contrairement au 
-<bf>Répondre</bf> &lsqb;au message&rsqb décrit précédemment qui lui, peut répondre
-à une liste de diffusion, par exemple)~;
-<item><bf>Shift-Alt-R</bf>~: répondre à tous (à toutes les adresses situées dans les en-têtes «~À~:~» et «~Cc~:~»)~;
-<item><bf>Ctrl-F</bf>~: faire suivre le message sélectionné~;
-<item><bf>Shift-Ctrl-F</bf>~: faire suivre le message sélectionné comme pièce 
-jointe~;
-<item><bf>Alt-O</bf>~: déplacer le message dans un autre dossier~;
-<item><bf>Alt-D</bf>~: supprimer le message~;
-<item><bf>Shift-Ctrl-N</bf>~: ouvrir le message dans une nouvelle fenêtre~;
-<item><bf>Ctrl-U</bf>~: voir le source du message~;
-<item><bf>Ctrl-H</bf>~: montrer tous les en-têtes du message.
-</itemize>
-</sect2>
-<sect2>Raccourcis du menu <bf>Sommaire</bf><p>
-<itemize>
-<item><bf>Alt-S</bf>~: ouvre le menu <bf>Sommaire</bf>~;
-<item><bf>Alt-X</bf>~: exécute les commandes en attente, uniquement utile lorsque 
-les commandes «~supprimer~», «~déplacer~» et «~copier~» ne sont pas exécutées 
-immédiatement~;
-<item><bf>Alt-U</bf>~: met à jour des vues du sommaire et du message~;
-<item><bf>Alt-G</bf>~: va dans un autre dossier~;
-<item><bf>Ctrl-T</bf>~: active la vue par fils de conversation~;
-<item><bf>Shift-Ctrl-T</bf>~: désactive la vue par fils de conversation.
-</itemize>
-</sect2>
-<sect2>Raccourcis du menu <bf>Outils</bf><p>
-<itemize>
-<item><bf>Alt-T</bf>~: ouvre le menu <bf>Outils</bf>~;
-<item><bf>Alt-A</bf>~: ouvre le carnet d'adresses~;
-<item><bf>Alt-L</bf>~: ouvre le journal de connexion (<em>log</em>).
-</itemize>
-</sect2>
+<sect>Conversion of Other Mail Format into Sylpheed (MH Format)
+
+<sect1>Importing Messages of mbox Format<p>
+<!-- added 2001/07/20 -->
+Sylpheed lets you import messages of the Mbox format from the File menu. First you create 
+the mail folder where you want the messages to end up in, then you select File->import 
+Mbox file. Use the browse function to select the Mbox file and the Sylpheed mail folder, 
+and press Ok. And voila, there is your mail, imported.
+<p>
+That was easy, wasn't it?
 </sect1>
 
-<sect1>Format de données du carnet d'adresses<p>
-Le carnet d'adresses est situé dans le répertoire <tt>~/.sylpheed</tt>. 
-Il est nommé <tt>addressbook.xml</tt>. Le format général du carnet d'adresses est
-le suivant~:<p>
-
-<code>
-&lt addressbook &gt<p>
- &lt common_address &gt<p>
-    &lt group name="Common addresses" &gt<p>
-    &lt item &gt<p>
-     &lt name &gt Paul &lt /name &gt<p>
-     &lt address &gt paul@nlpagan.net &lt /address &gt<p>
-     &lt remarks &gt Écrit le manuel de Sylpheed &lt /remarks &gt<p>
-	&lt /item &gt<p>
-    &lt /group &gt<p>
- &lt /common_address &gt<p>
-&lt /addressbook &gt
-</code>
-
+<sect1>Importing from Windows Mailers (Becky!, AL-Mail, Outlook Express4, etc.)
+<p>
+For import possibilities of the mail folders of these and more mail programs you 
+can download the program mbx2mbox at sourceforge.net. The project is located at 
+<url url="http://mbx2mbox.sourceforge.net" name ="http://mbx2mbox.sourceforge.net.">
 </sect1>
-<!-- end add 2001/07/21 -->
+<sect1>Importing dbx Format of Outlook Express 5<p>
+For import possibilities of the mail folders of these and more mail programs you 
+can download the program mbx2mbox at sourceforge.net. The project is located at 
+<url url="http://mbx2mbox.sourceforge.net" name="http://mbx2mbox.sourceforge.net.">
+</sect1>
+<!-- End added 2001/07/21 -->
+<!-- start add 2001/09/04 -->
+<sect1>Exporting from Sylpheed MH format to mbox<p>
+Sylpheed offers a way to export a mailbox to the standard mbox format through the 
+File menu. Just select the "Export to mbox file..." option and you can select the 
+folder to export (assisted by a browse dialog) and also select or enter the name 
+of the mbox file you wish to generate.
+<!-- end add 2001/09/04 -->
 </sect>
+

@@ -1,55 +1,109 @@
-<sect>FAQ<p>
-Vous pouvez trouver la dernière version des FAQ (Foire Aux Questions, qui est une
-liste des questions les plus fréquemment posées) sur 
-<url url="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html/" name="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html/">.
-
-<sect1>Articles de groupes de discussions non lus
-</sect1>
-<sect1>Utilisation des comptes de courriers MSN
-</sect1>
-<sect1>Comment changer la police des menus, etc.<p>
-La police utilisée par Sylpheer pour ses menus et son interface en général
-est contrôlée par le gestionnaire de fenêtres (<em>Desktop manager</em>)
-que vous utilisez (KDE, Gnome, XFCE). Utilisez son programme de configuration  
-et changez-y la police.<p>
-Par contre, pour changer la police utilisée dans les différentes vues de Sylpheed
-(dossiers, sommaire, message), utilisez le menu <bf>Configuration -> 
-Préférences générales...</bf> et  sélectionnez l'onglet <bf>Affichage</bf>.
-Dans la première section de la fenêtre vous pouvez soit spécifier directement
-la police si vous en connaissez le nom, soit la choisir parmi la liste des polices
-disponibles sur votre ordinateur en utilisant le bouton <bf>&lsqb;...&rsqb;</bf>.
-</sect1>
-<sect1>Changer les combinaisons de touches pour les raccourcis-clavier<p>
-L'interface graphique de Sylpheed est basée sur GTK. Ceci signifie qu'il est 
-très facile de changer les combinaisons des touches raccourcis clavier (ou 
-simplement les touches de fonctions) pour les différents choix dans les menus. 
-Si vous êtiez habitués dans un autre programme à une combinaison de touches 
-différentes que celles utilisées par Sylpheed, ou si celles de Sylpheed ne
-vous conviennent pas la modification est très simple. Supposons que vous
-voulez changer la combinaison de touches utilisée pour la relève du courrier
-(dans le menu <bf>Message</bf>) de <bf>Alt-I</bf> en <bf>Ctrl-M</bf>. Voici
-les étapes à suivre~:
-<p>
+<sect>NetNews<p>
+Qu'est ce que netnews~?<p>
+Netnews, aussi appelé Usenet, est un ensemble de serveurs de nouvelles. Les netnews sont généralement appelés les news pour faire plus court, et sont un lieu de discussion sur un nombre quasi infini de thèmes.
+Par exemple, un groupe de discussion peut porter sur la manière de faire votre propre vin, et tel autre sur les vieilles voitures et les radios.  Pensez à un thème et il y a probablement un groupe de discussion le concernant.<p>
+C'est ce que nous allons configurer ici~: l'accès aux groupes de discussions. 
+Notez que c'est différent des courriers. Nous pourrions aussi les comparer aux
+listes de diffusion mais le concept est encore légèrement différent.
+<!-- added 2001/07/20 -->
+<sect1>Ajouter et enlever des serveurs de news<p>
+<sect2>
+Ajouter un nouveau serveur de news<p>
+L'ajout  d'un nouveau serveur de groupes de discussions (de news) se fait par le menu <bf>Configuration -> Création d'un nouveau compte...</bf>.
+Ici, vous pouvez nommer les nouveaux comptes sur ce que vous aimez. C'est 
+important car vous pourrez identifier le compte plus tard.<p>
+Dans l'onglet BASE, dans le bloc « informations personnelles », vous pouvez 
+aussi entrer votre propre nom, votre adresse de courrier (pour que vous 
+puissiez répondre aux messages de nouvelles par courrier), optionnellement 
+votre organisation (si vous êtes dans une organisation).<p>
+Dans le bloc « information de serveur », vous sélectionnez le protocole 
+« News (NNTP) ». Oubliez « Inbox », qui ne nous intéresse pas pour cette 
+configuration. Ensuite, vous entrez le nom du serveur de nouvelles auquel 
+vous voulez vous connecter. Vous pouvez obtenir le nom de votre ISP, si vous 
+n'en avez pas encore.<p>
+Si vous avez besoin de vous connecter au serveur de nouvelles, validez la 
+boîte « Ce serveur nécessite une authentification » et remplissez alors les 
+champs ID d'utilisateur et mot de passe.<p>
+L'étape suivante est d'aller dans l'onglet Envoi. Comme Recevoir est seulement 
+pour les courriers, il n'y a pas de besoin de faire quelque chose d'autre. 
+Vous ne pouvez même pas faire quoi que ce soit dans l'onglet Recevoir, dans 
+ce but. Donc, dans Envoi, vous pouvez sélectionner quelques options :
 <itemize>
-<item>Ouvrez le menu <bf>Message</bf> avec la souris ou en pressant <bf>Alt-M</bf>~;
-<item>Sélectionnez l'option <bf>Relever le courrier</bf> sans cliquer dessus 
-(sinon cela activera la fonction~!)~: si vous utilisez la souris, déplacez 
-simplement le curseur de la souris sur l'option~;
-<item>Pressez maintenant <bf>Ctrl-M</bf>. Vous verrez immédiatement la nouvelle 
-combinaison apparaître dans le menu et remplacer l'ancienne.
+<item>Si vous voulez un champ d'en-tête de date ajouté aux envois
+<item>Si Sylpheed doit générer un ID de message
+<item>Si vous voulez ajouter des en-têtes définies par les utilisateurs
 </itemize>
-Félicitations, vous venez juste de changer une combinaison de touches. De 
-cette manière, vous pouvez changer les raccourcis de toutes les options que
-vous voulez. Notez qu'il est préférable  d'utiliser les combinaisons de touches
-avec <bf>Alt</bf>, <bf>Shift</bf> ou <bf>Ctrl</bf> et une touche du clavier.
-Les touches de fonctions <bf>F1</bf>...<bf>F12</bf> n'ont pas besoin
-d'être associées à ces dernières et peuvent être utilisées seules.<p>
-Si vous souhaitez supprimer une combinaison de touches, procédez comme
-décrit plus haut mais pressez plutôt la touche <bf>Suppr</bf> ou la
-touche d'éffacement.<p>
-Certaines fonctions de Sylpheed sont activables par un raccourci à une
-seule touche. Celles-ci sont pré-programmées et ne sont pas modifiables
-aussi facilement.
+L'objet suivant ne s'applique que lorsque vous répondez aux messages de 
+nouvelles par des courriers. Vous pouvez initialiser ici une adresse en CC, 
+BCC ou Répondre à automatiquement. Dans le cas où votre ISP nécessite une 
+authentification SMTP, vous pouvez sélectionner la boîte de contrôle ici, 
+ci-dessous.<p>
+L'onglet suivant, Composition, vous permet de sélectionner un fichier de 
+signature par défaut. Celui-ci sera ajouté à chaque envoi que vous faites au 
+groupe de discussion.<p>
+Finalement, dans l'onglet « Avancé », vous pouvez spécifier le port sur lequel 
+Sylpheed doit se connecter sur le serveur de nouvelles. C'est par défaut sur 
+119 et seulement dans de rares cas, vous aurez à le changer.<p>
+Maintenant, cliquez sur « OK » et le compte est créé ! Vous pouvez le 
+vérifier en surveilllant la fenêtre de répertoire dans Sylpheed. Vous y verrez 
+un nouveau répertoire créé avec le nom du compte que vous avez entré et des 
+nouvelles derrière.<p>
+</sect2>
+<sect2>
+Effacer un serveur de nouvelles.<p>
+Si vous voulez effacer un compte de nouvelles, cliquez-droit sur le répertoire 
+de nouvelles et sélectionnez « Enlever le compte de nouvelles ». Après avoir 
+confirmé que vous voulez que ce soit fait, le compte et tous les fichiers liés 
+seront enlevés.
+</sect2>
 </sect1>
-
+<sect1>S'abonner et se désabonner d'un groupe de discussion<p>
+Ok. C'est ici que le travail réel démarre. Vous devez d'abord laisser Sylpheed 
+charger la liste du groupe de discussion qui est dans le système de nouvelles. 
+Cliquez droit sur le nouveau répertoire de NOUVELLES et sélectionnez 
+« Souscrire aux groupes de discussions ». Sylpheed vous indiquera que le 
+groupe doit être téléchargé, prenez donc votre mal en patience et attendez. 
+Bien sûr, pendant ce temps, de nouveaux groupes sont ajoutés et des groupes 
+éteints sont enlevés. Pour ceci, vous pouvez cliquer sur le bouton 
+« rafraîchir » dans le dialogue du groupe de discussion, donc, une nouvelle 
+liste est téléchargée et vous êtes à jour<p>
+Après un moment, les groupes sont chargés et affichés dans une fenêtre. 
+Maintenant, vous pouvez chercher un groupe qui est intéressant, par exemple 
+comp.os.linux.networking. Cliquez sur le nom et sélectionnez OK. Le groupe 
+sera ajouté dans le répertoire de nouvelles comme un sous-répertoire. Ensuite, 
+lorsque vous cliquez sur le nom du nouveau sous-répertoire, Sylpheed se 
+connectera à un serveur de nouvelles et téléchargera les en-têtes (ligne du 
+sujet, dans le vocabulaire de courrier), pour votre ordinateur. Quelques 
+groupes ont des -grands- nombres d'articles, donc ceci peut prendre du temps !
+<p>
+</sect1>
+<sect1>Lire les nouvelles<p>
+Lorsque les articles sont affichés, dans la vue de résumé, vous pouvez cliquer 
+sur l'un d'eux pour le télécharger pour que vous puissiez les lire. Ceci ira 
+habituellement très vite dans les groupes de dicussion.<p>
+Si vous voulez répondre à un message, pressez Alt-R (ou pressez « Répondre ») 
+et une fenêtre de message se déroulera, avec le nom du groupe de discussion 
+déjà dans le champ « À ». Selon si vous avez sélectionné ou non la citation du 
+message, le message original sera déjà dans le corps du message. Écrivez puis 
+envoyez et bientôt le monde entier sera capable de lire ce que vous avez écrit 
+sur le sujet.<p>
+Démarrer un nouveau message dans un groupe de discussion est également 
+simple : pressez sur Alt-N (ou cliquez sur « Nouvelle »), le nom du groupe de 
+discussion est dans le champ « À » et vous pouvez écrire vos questions ou 
+votre réponse.
+<sect2>Une note sur les fichiers binaires<p>
+Dans les groupes de discussion, vous pouvez télécharger des fichiers binaires. 
+Ce sont des programmes, images, etc. Souvent, ils sont postés comme des 
+fichiers UUencode. Sylpheed ne décodera pas les fichiers UUencode au-dela de 
+la version 0.5.1. Vous avez besoin de sauvegarder ces articles sur le disques 
+comme fichiers séparés et utiliser un programme de décodage séparé comme juju, 
+pour décoder le texte. Un fichier UUencode ressemble habituellement à quelquechose 
+comme ceci :<p>
+begin 666 sundown.jpg<p>
+après lequel vous trouverez des blocs de caractères bien formatés qui ne 
+semblent rien dire.
+</sect2>
+</sect1>
+<!-- end add 2001/07/20 -->
 </sect>
+

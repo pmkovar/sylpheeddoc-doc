@@ -1,4 +1,3 @@
-
 <sect>Installation
 
 <sect1>Environnement nécessaire
@@ -115,7 +114,7 @@ Note~: Sylpheed peut être instable suivant l'environnement. Dans la mesure du po
 <item>HP-UX 10.20, 11.00, 11i
 <item>Tru64 Unix 5.0 (OSF1 v5.0)
 <item>SCO UnixWare 7
-<item>Mac OS X (Darwin 5.3) + XDarwin (sans le support Xlocale) + libxpg4
+<item>Mac OS X 10.1.3 (Darwin 5.3) + XDarwin (sans le support Xlocale) + libxpg4
 </itemize>
 
 <itemize>
