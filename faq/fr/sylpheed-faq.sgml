@@ -1,10 +1,12 @@
 <!doctype linuxdoc system>
 <article>
     <title>FAQ Sylpheed
-    <author>Paul Kater (paul@nlpagan.net)
-    and Jens Oberender (j.obi@troja.net)
+    <author>François Barriere (barriere.francois@libertysurf.fr)
     <abstract>
-       FAQ Sylpheed (basé sur la version 0.6.4)
+		FAQ Sylpheed basé sur la version anglaise de
+		Paul Kater (paul@nlpagan.net)
+		et Jens Oberender (j.obi@troja.net).
+		Mis a jours pour la version 0.6.6.
     </abstract>
 <toc>
 <p>
@@ -16,6 +18,8 @@ FAQ Sylpheed - Informations générales
 Q01 Existent-ils des FAQ dans d'autres langues?<p>
 A. Oui, voici les liens vers les différentes trductions:
 <itemize>
+<item>La version de référence en anglais, sur ce site, ou a: 
+	http://nlpagan.net/sylpheedfaq.htm
 <item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm: 
 	SYLPHEED FAQ en japonais, traduit par WAKAI "SilverRain" Kazunao
 <item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html: 
@@ -261,6 +265,21 @@ Mise a jours vers 0.4.65: certaines entrée de menu ont été déplacées.
 <sect1>
 Q26  Comment mettre a jours rapidement les différentes vues dans Sylpheed?<p>
 A.   Utilisez Alt-U ou sélectionnez "mettre a jours" dans le menu "Résumé".
+</sect1>
+
+<sect1>
+ 
+Q27  Pourquoi ne puis-je pas utiliser gvim comme editeur?<p>
+
+A.   Pour utiliser gvim comme editeur il est necessaire de le lancer avec
+l'option -f (no-fork). Dans la fenetre de configuration, vous devez saisir:
+"gvim -f %s". Sans cela l'editeur demarre un nouveau process, ouvre un
+fichier et lorsque vous sortez de l'editeur les changements sont perdus et
+ne sont pas intégrés dans la fenetre de composition.
+<p>
+
+(Merci a Ed Collins!)
+
 </sect1>
 </sect>
 
