@@ -146,7 +146,7 @@ hier umgebrochen.
 Antwort: Auf <url url="http://sylpheeddoc.sourceforge.net" name="sylpheeddoc.sourceforge.net"> befinden sich FAQ und Handbuch des Sylpheeddoc Projektes. Beide Dokumente stehen in aktueller Version und mehreren Sprachen zur Verfügung.
 </sect1>
 <sect1>Frage 23: Kann ich Mbox-Dateien in Sylpheed's MH Ablagen importieren?<p>
-Antwort: Ja, man muß nur zuerst eine Ablage erstellen, in der Ablagenübersicht auswählen und "Datei -> Importiere Mbox-Datei..." wählen.
+Antwort: Ja, man muß nur zuerst eine Ablage erstellen, in der Ablagenübersicht auswählen und "Datei -&gt; Importiere Mbox-Datei..." wählen.
 </sect1>
 
 <sect1>Frage 24: Kann ich procmail benutzen, um meine Nachrichten in MH Ablagen zu sortieren?<p>
@@ -221,7 +221,7 @@ Antwort: Man muß auf &quot;Ausführen&quot; klicken, oder in &quot;Einstellungen 
 Antwort: Ja, das geht. In den Accounteinstellungen können im Reiter "Einfach" die Adresse, und im Reiter "Speziell" die genauen Ports angegeben werden.
 </sect1>
 <sect1>Frage 08: Kann Sylpheed Nachrichten in Threads darstellen?<p>
-Antwort: Ja. Man kann diese Option in "Ansicht -> Threads einschalten" ein- und ausschalten.
+Antwort: Ja. Man kann diese Option in "Ansicht -&gt; Threads einschalten" ein- und ausschalten.
 </sect1>
 <sect1>Frage 09: Kann ich meine E-Mails in mehreren Ebenen von Unterablagen verwalten?<p>
 Antwort: Sicher. Das ist kein Problem.
