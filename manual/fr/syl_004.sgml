@@ -1,0 +1,144 @@
+
+<sect>Installation.
+
+<sect1>Environnement nécessaire
+<p>
+Pour réussir la compilation de Sylpheed, vous avez au moins besoin de :
+<itemize>
+<item>Tout Unix compatible POSIX UNIX ou des OS similaires i.e. Linux, FreeBSD, Solaris
+<item>Un compilateur ANSI C récent (gcc 2.7.2.3 devrait aussi fonctionner). Note : le C Sun ne compilera pas Sylpheed.
+</itemize>
+Optionellement, vous avez besoin de :
+<itemize>
+<item>Imlib ou gdk-pixbuf (pour la visualisation des image intégrée)
+<item>libcompface (pour X-Face)
+<item>libjconv (pour I18N)
+<item>GPGME (pour GnuPG)
+<item>l'équivalent de GTK+-devel et Xfree86-devel. (Sinon ./configure échouera.)
+</itemize>
+Note: Sylpheed peut être instable en fonction de l'environnement. Veuillez utiliser les versions les plus récentes des bibliothèques dans la mesure du possible.
+</sect1>
+
+<sect1>Environnements reconnus comme valides pour Sylpheed
+<p>
+<itemize>
+<item>Debian GNU/Linux unstable (sid) (glibc 2.2) (environment de développement) 
+<item>Debian GNU/Linux 2.2 (potato) (glibc 2.1.3) 
+<item>Kondara MNU/Linux (glibc 2.1.x) 
+<item>Vine Linux 1.1 (glibc 2.0.x + libwcsmbs) 
+<item>Vine Linux 2.0 (glibc 2.1.x) (Intel, PPC) 
+<item>Vine Linux 2.1 
+<item>Laser5 Linux 6.0 (glibc 2.1.x) , 6.2, 6.4
+<item>TurboLinux 4.0 (glibc 2.0.7 + libwcsmbs) 
+<item>TurboLinux 6.0 (glibc 2.1.2) 
+<item>Miracle Linux Standard Edition Version1.0 
+<item>Miracle Linux for PostgreSQL Version1.0 
+<item>Miracle Linux for Samba Version1.0 
+<item>RedHat Linux 5.2 (glibc 2.0.7) 
+<item>RedHat Linux 6.0 
+<item>RedHat Linux 6.1 + Helix GNOME (glibc 2.1.x) 
+<item>RedHat Linux 6.2 / 6.2J (glibc 2.1.x) 
+<item>RedHat Linux 7.0 / 7.0J 
+<item>RedHat Linux 7.1
+<item>RedHat Linux 7.2 (beta 'Roswell')
+<item>LinuxPPC2000 + Yukikaze(kit de Japonisation) 
+<item>Linux2000G (Intel, PowerPC) 
+<item>HOLON Linux 2.0 (Intel / PPC) 
+<item>Linux pour PPC Édition Japonaise 2.0 et 3.0 (glibc 2.1.x)
+<item>Linux MLD4
+<item>Linux MLD5 
+<item>Plamo Linux 2.0 
+<item>Slackware 7.1 
+<item>Linux Mandrake 7.0 through 8.0
+<item>SuSE Linux 6.3 (glibc 2.1.2) 
+<item>SuSE Linux 6.4, 7.0, 7.1
+<item>OpenLinux 2.3 (glibc 2.1.1 -> 2.1.3) 
+<item>Caldera OpenDesktop 2.4 
+<item>Conectiva Linux 4.0 and 5.0
+<item>Vector Linux 1.5 
+<item>FreeBSD releases 3.2, 3.4, 4.0, 4.1, 4.2 et 5.0
+<item>NetBSD 1.4.2 
+<item>NetBSD 1.5 + XPG4DL 
+<item>OpenBSD 2.7 
+<item>OpenBSD 2.8 (i386) 
+<item>BSD/OS 4.0.1 
+<item>Solaris 2.5, 2.5.2., 2.6, 7, 8
+<item>IRIX 6.3 et 6.5, 6.5.8m 
+<item>HP-UX 10.20 
+<item>Mac OS X (Darwin 1.3) + Xtools (has locale problem) 
+<item>Windows (cygwin + GTK+ for win32) (unstable) 
+</itemize>
+</sect1>
+
+<sect1>Éléments et points clés de l'installation
+<p>
+<itemize>
+<item>Untar les fichiers sources dans un nouveau répertoire
+<item>tar -xvfz sylpheed-.tar.gz (pour tar.gz)
+<item>tar -xvfI sylpheed-.tar.bz2 (pour tar.bz2) 
+<item>cd vers le nouveau répertoire sylpheed 
+<item>Lancez ./configure pour contrôler votre environnement et créer les Makefiles d'installation
+<item>Lancez le programme 'make' qui compilera les sources. Ne faites pas cette étape s'il existe des erreurs fatales dans la précédente. FLes erreurs fatales indiquent que des éléments manquent de manière à compiler Sylpheed correctement. 
+</itemize>
+<p>
+Si le processus make est terminé, lancez "make install" (en tant que root), pour installer le programme et les fichiers de support
+</sect1>
+
+<sect1>Installation sur Linux en utilisant RPM
+<p>
+Comme root, lancez la commande "rpm -ivh " sur le fichier RPM que vous avez téléchargé. Dès que ce procéssus est effectué, vous pouvez lancer Sylpheed comme utilisateur.
+</sect1>
+
+<sect1>Installation sur Debian Linux
+<p>
+Avec une connexion internet :
+<p>
+apt-get installe sylpheed (pour l'installer avec une connexion internet)
+<p>
+Sans connexion internet, récupérez le paquet debian, par exemple sur http://packages.debian.org/unstable/mail/sylpheed.html
+<p>
+dpkg -i sylpheedx.x.x-1i386.deb
+<p>
+dpkg --install sylpheedx.x.x-1i386.deb
+</sect1>
+
+<sect1>Installation sur FreeBSD
+<p>
+utilisant l'outil /stand/sysinstall (c'est une interface basée sur les menus) :
+<p>
+lancez "/stand/sysinstall" en tant que root
+<p>
+dans le menu principal, choisissez "Configure" -> "Packages" -> "mail", puis "sylpheed" puis retournez vers la liste des "Packages", choisissez "Install"
+<p>
+Utiliser les portages
+<p>
+Allez chercher le portage de sylpheed sur :
+<p>
+ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail
+<p>
+puis, en tant que root : pkg-add sylpheed-0.x.x.tgz
+<p>
+en utilisant les portages avec compilation :
+<p>
+mettez d'abord votre portage à jour, traitez-le sur http://www.freebsd.org/ports/mail.html
+<p>
+cd /usr/ports/mail/sylpheed
+<p>
+make
+<p>
+Si cela réussit, saisissez "make install"
+<p>
+dans le cas où cela échoue, demandez le paquet requis, si nécessaire, (sur la même page), mettez le fichier du paquet dans /usr/ports/distfiles/
+puis :
+<itemize>
+<item>cd /usr/ports/mail/sylpheed
+<item>make
+<item>make install
+</itemize>
+<p>
+Vous avez besoin d'une version plus à jour ?
+<p>
+Utilisez simplement la méthode standard d'Unix (veuillez voir "Éléments et points clés de l'installation")
+</sect1>
+
+</sect>

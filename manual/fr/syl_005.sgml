@@ -1,0 +1,24 @@
+
+<sect>Démarrer et quitter Sylpheed
+
+<sect1>Démarrer Sylpheed
+<p>
+Démarrer Sylpheed peut être fait en saisissant "sylpheed" avec le prompt d'une terminal et en pressant Entrée. Vous pouvez aussi ajouter Sylpheed à un menu dans KDE ou Gnome, ou lui créer un raccourci sur le bureau si votre gestionnaire de fenêtres le permet.
+<p>
+Lorsque vous démarrez Sylpheed, le programme vous demandera où vous souhaitez stocker les courriers que vous avez téléchargés. Vous pouvez accepter la valeur par défaut ($HOME/Mail) ou configurer votre propre répertoire de courriers.
+<p>
+Sylpheed chargera alors ces configurations par défaut. La manière de les changer est décrite plus loin dans ce manuel.
+</sect1>
+
+<sect1>Quitter Sylpheed
+<p>
+Terminer avec Sylpheed peut être effectué de différentes manières :
+<itemize>
+<item>Sélectionnez "quit" dans le menu Fichier
+<item>Pressez Ctrl-Q
+<item>Clickez sur le bouton "program close" dans la barre de titre.
+</itemize>
+</sect1>
+
+</sect>
+

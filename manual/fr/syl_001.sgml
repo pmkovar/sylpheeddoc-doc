@@ -13,81 +13,82 @@
 
 <sect>Qu'est ce que Sylpheed?
 
-<sect1>Introduction a Sylpheed.
+<sect1>Introduction à Sylpheed.
 <p>
-Sylpheed est un client de messagerie et de news (interface utilisateur
-pour la gestion, la lecture et l'ecriture de news et de courriels).
-Il fonctionne sur n'importe quelle distribution Linux, ou system
+Sylpheed est un client de messagerie et de nouvelles (interface 
+utilisateur pour la gestion, la lecture et l'écriture de nouvelles et 
+de courriels).
+Il fonctionne sur n'importe quelle distribution Linux, ou système
 compatible Unix.
 <p>
-Les points forts de Sylpheed sont
+La puissance de Sylpheed provient du fait qu'il
 <itemize>
-<item>necessite peu de ressources system
-<item>est tres rapide
+<item>neécessite peu de ressources système
+<item>est très rapide
 <item>intuitif
 <item>simple a utiliser
-<item>tres complet
-<item>avec un interface agreable et sophistique
+<item>très complet
+<item>avec un interface agrèable et sophistiquée
 </itemize>
 </sect1>
 
 <sect1>L'interface
 <p>
-L'apparence et l'interface sont semblables a la plupart des clients
+L'apparence et l'interface sont semblables à celle de la plupart des clients
 de messagerie pour Windows, tel que Outlook Express, Becky!, et Datula.
 L'interface est aussi concue pour simuler les messageries de Emacsen,
-et la plupart des commandes sont accesibles au clavier.
+et la plupart des commandes sont accessibles au clavier.
 <p>
-Les messages sont stockes au format MH, et vous serez capable de l'utiliser
-avec n'importe quel autre outil de messagerie base sur le format MH 5tel
+Les messages sont stockés au format MH, et vous serez capable de l'utiliser
+avec n'importe quel autre outil de messagerie basé sur le format MH 5 tel
 que Mew). Vous pouvez aussi utiliser fetchmail et/ou procmail ainsi que
-des programes exterieurs a Sylpheed pour recevoir et trier vos messages
+des programmes extérieurs à Sylpheed pour recevoir et trier vos messages
 (comme inc ou imget).
 </sect1>
 
-<sect1>Principales caracteristiques
+<sect1>Principales caractéristiques
 <p>
 Sont actuellement inclus:
 <itemize>
-<item>Nombre de comptes de messagerie illimite
-<item>Affichage par fil de discussion
-<item>Filtrage des messages
-<item>MIME (pieces jointes) 
-<item>Affichage integre des images
-<item>Support de X-Face 
-<item>Possibilite d'utiliser un editeur externe
-<item>Mise en attente des messages (envoi)
-<item>###FIXME###Draft message function 
-<item>Retour a la ligne (formattage des messages)
-<item>URI clickable
-<item>Carnet d'adresses base sur le format XML
-<item>Gestion des nouveaux messages, des message non lu
-<item>Support de plusieurs classeurs MH
-<item>Racourcis claviers compatibles avec Mew/Wanderlust
-<item>Function de lecture des news
-<item>Impression
-<item>Support UIDL
-<item>Authentification APOP
-<item>Support SMTP AUTH
-<item>Support de IPv6
-<item>Utilise Autoconf, automake (compilation et installation simple) 
-<item>Message localises via gettext (affichage des messages dans votre langue)
-<item>Supporte de nombreuses langues et jeux de characteres, y compris UTF-8 (Unicode), via libjconv 
+<item>un nombre de comptes de messagerie illimité
+<item>l'affichage par fil de discussion
+<item>le filtrage des messages
+<item>MIME (pièces jointes) 
+<item>l'affichage intégré des images
+<item>le support de X-Face 
+<item>la possibilité d'utiliser un éditeur externe
+<item>la mise en attente des messages (envoi)
+<item>La fonction de brouillon 
+<item>La césure de ligne
+<item>Les URL exécutables
+<item>Un carnet d'adresse XML
+<item>La gestion des nouveaux messages, des message non lu
+<item>Le support de répertoires MH multiple
+<item>Des racourcis claviers compatibles Mew/Wanderlust
+<item>Les fonctions de lecteur de nouvelles
+<item>L'impression
+<item>Le support UIDL
+<item>L'authentification APOP
+<item>Le support AUTH SMTP
+<item>Le support IPv6
+<item>Le support Autoconf, automake 
+<item>Le support i18n de messages par gettext (affichage des messages dans votre langue)
+<item>le support de nombreuses langues et jeux de characteres, y compris UTF-8 (Unicode), via libjconv 
 <!-- added 2001/07/19 -->
-<item>Compatible IMAP4
+<item>La compatibilité IMAP4
 </itemize>
-Cette liste n'est pas complete, mais vous donne un apercu des possibilitees
+Cette liste n'est pas complete, mais vous donne un aperçu des possibilitees
 principales de Sylpheed.
 </sect1>
 
-<sect1>Methodes de gestion des messages
+<sect1>Méthodes de gestion des messages
 <p>
-Cette section n'a pas encore ete ecrite (soyez patient).
+Cette section n'a pas encore été écrite (soyez patient).
 </sect1>
 
 <sect1>Fututres developements
 <p>
-Cette section n'a pas encore ete ecrite (soyez patient).
+Cette section n'a pas encore été écrite (soyez patient).
 </sect1>
 
 </sect>

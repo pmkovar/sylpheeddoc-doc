@@ -1,0 +1,22 @@
+<!-- added 2001/07/20 -->
+<sect>Guide rapide pour de nouvelles configurations<p>
+<sect1>Obtenir les nouvelles dans l'urgence.<p>
+<p>
+Dans le menu de configuration, sélectionnez "Create new account"
+<p>
+Dans l'onglet "Basic", entrez les données nécessaires. Vous devez nommer le compte, entrer votre nom et votre adresse e-mail, etc. Pour se connecter aux nouvelles, veuillez sélectionner "News (NNTP)" dans la boîte Protocol.
+<p>
+Entrez les informations sur le serveur de nouvelles.
+<p>
+Passez l'onglet "Receive".
+<p>
+Dans l'onglet "Send", vous pouvez configurer quelques informations supplémentaires.
+<p>
+Dans l'onglet "Compose", vous pouvez définir votre fichier de signature.
+<p>
+Dans l'onglet "Advanced", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Ceci ne nécessitera pas normalement de changement.
+<p>
+Fermez les boîtes de dialogue, cliquez avec le bouton droit de la souris sur le nouveau répertoire de Nouvelles dans le panneau des répertoires et sélectionnez "Subscribe to newsgroups". Si cela n'est pas déjà fait, une liste de groupes sera téléchargée du serveur. À ce moment, cela irait tout seul, bonne chance donc !
+<!-- end added 2001/07/20 -->
+</sect1>
+</sect>
