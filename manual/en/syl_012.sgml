@@ -173,9 +173,125 @@ from Sylpheed.
 </sect1>
 
 <sect1>LDAP server connection
+<p>Contributed by Tom Hollins.
 <p>
-
-### FIXME: write this part.
+In order to add an LDAP server to the sylpheed program, you will click 
+on the <tt>Tools</tt> menu item, then click on <tt>Address book</tt>.
+Sylpheed will open the address book window.
+Select (click once) the <tt>LDAP Server</tt> line located in the left window 
+pane of the address book.
+Now Click on the <tt>File</tt> menu item.
+Click on the <tt>New server</tt> menu item.
+Sylpheed opens a dialog box with standard LDAP text entry boxes.
+<p>
+We'll assume you work for <it>Spacely Sprockets Corporation</it>. This will be 
+used in the examples below.
+<p>
+The <tt>NAME</tt> line is the name you want to give to the LDAP server. It can 
+be anything but you should select, roughly the one that helps you to 
+identify it quickly. If you are doing this at a company, just enter 
+"Spacely LDAP" without the quotation marks.
+<p>
+The <tt>HOSTNAME</tt> line is the human name of the server from the DNS lookup 
+entry, OR the IP address of the LDAP server (important if the LDAP 
+server is used for authentication). So your company may have a server 
+called <it>ldap.spacely.com</it>. Your company may use something like 10.0.0.200. 
+Either of these should work. 
+NOTE: if you are a home user, you can specify "localhost" (no quotes) 
+or 127.0.0.1 as your hostname if your LDAP server runs on the same 
+machine as your mail client. Sylpheed automatically assumes a local 
+configuration and does this for you. I include this in case your 
+configuration is changing back to a local.
+<p>
+The <tt>PORT</tt> entry shouldn't have to be modified unless your IT department 
+has changed this. The normal port for LDAP is 389. 
+<p>
+The <tt>SEARCH BASE</tt> text entry need not concern you since you can click 
+the <tt>Check Server</tt> button on this dialog box. After clicking this 
+button the <tt>SEARCH BASE</tt> will be automatically filled in.
+The following paragraph gets technical and can be skipped for the 
+faint of heart.
+<p>
+For the sake of clarity, this is the DN (distinguished name) of the 
+LDAP server with only the DC entries. So for our example the LDAP 
+server has been setup with a DN = dc=spacely, dc=com. We would type 
+into the <tt>SEARCH BASE</tt> line (without quotes) "dc=spacely, dc=com". 
+I hope this is clear for the technically minded.
+<p>
+If your LDAP server allows anonymous binding and you do not have "virtual" 
+LDAP domains then you should be able to click on the <tt>OK</tt> button.
+Now click once on the entry for your server so that it becomes highlighted.
+Click once in the <tt>NAME</tt> text entry field below the right pane.
+Enter someone's first name.
+Click once on the <tt>Lookup</tt> button. It should work. Below the lookup 
+button is a status line which will tell you whether you have an error 
+or not. Also, while it is searching it will blink (a good sign because 
+this means the login to the server worked).
+If it does work you can skip the rest of this discussion.
+<p>
+If your LDAP server does not allow anonymous binding then you will 
+need to look at the top of the dialog box and find the "tab" marked 
+<tt>Extended</tt> and click it once.
+You may need to enter the top level DN because you may have an LDAP 
+server which is setup with multiple virtual domains. Your IT guy 
+needs to get involved here by telling you what the DN really is 
+along with, maybe, its password. It really depends upon how it is 
+setup. Maybe the DN includes a CN (common name). 
+So for our example (and in the OpenLDAP examples) you have entered 
+a DN = cn=manager, dc=spacely, dc=com. 
+In the <tt>BIND DN</tt> text entry box enter (without quotes) 
+"cn=manager, dc=spacely, dc=com". 
+In the <tt>PASSWORD</tt> text entry box enter just the password itself no 
+equals sign or anything.
+Click the <tt>OK</tt> and try the test lookup above.
+<p>
+If you are still experiencing a problem, then it may be the 
+search criteria you are using or the attributes used by your 
+LDAP server.
+<p>
+The attributes" of the server are "field names" that are being 
+searched. The acceptable fields are automatically entered for 
+the Sylpheed defaults, and they are <tt>(&amp;(mail=*)(cn=%s*))</tt>. I will 
+use words to now describe that line, just in case it is hard for 
+you to figure out what is entered here: left open parenthesis, 
+ampersand, left open parenthesis, the word mail (or any attribute 
+in LDAP speak or called field in database speak), an equal sign, 
+an asterisk (means search all), right closing parenthesis, left 
+open parenthesis, the letters "cn", an equal sign,a percent sign, 
+the letter "s", an asterisk, right closing parenthesis, right 
+closing parenthesis.
+While not necessarily the best criteria it should work, but only 
+if your IT department has formatted the Common Name (CN) the way 
+you are searching for it. 
+The entry essentially states "search on ALL email addresses, and 
+the common name starts with" (whatever you have typed into the 
+lookup field). 
+Another way to test this is to work through the alphabet and enter 
+one character only, and see if this retrieves some entries. Once 
+you see some entries you will understand how to effectively search.
+If this doesn't work then you will need to get someone from your 
+IT department involved. The "mail" or "cn" either isn't used in a 
+normal way, doesn't exist, or it is stored some way that can not 
+be debugged in a document like this one.
+<p>
+Additional searching for people who get some results but not exactly 
+what they want:
+Try using and asterisk before your search criteria. This will say 
+to the LDAP server "I want you to return all entries where this 
+text exists anywhere in the CN field".
+By now you should realize that if you are entering this asterisk 
+all the time then you right click your LDAP server entry in the 
+left pane and choose <tt>Edit</tt> from the pop-up menu. Click on the 
+<tt>Extended</tt> tab and change that first line to have an asterisk 
+before the percent sign. I use this since I don't always know 
+whether the name was entered as a formal name like Thomas or 
+informal like Tom.
+<p>
+If you still can't do anything with LDAP then there is a proxy 
+between you and the LDAP server that your IT department has to 
+address, or there is something about the "attributes" (fields) 
+of your LDAP database you will need to enter into that extended 
+tab of the LDAP server edit dialog box.
 
 </sect1>
 
