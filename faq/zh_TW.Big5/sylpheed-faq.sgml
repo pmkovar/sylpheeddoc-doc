@@ -223,13 +223,44 @@ Sylpheed 會自動將標頭標記為 US-ASCII。
 </sect1>
 
 <sect1>
-1.27 問：我為何無法使用 gvim 當做外部編輯器？
+1.27 問：我為何無法使用 gvim 當做外部編輯器？<p>
 答：如果你要用 gvim 當外部編輯器，你必須使用 -f 參數。也就是說， 
 在設定時你的命令必須是：gvim -f %s 如果不這樣用，你在
 離開編輯器之後，原先編的東西並不會加入到信件中來。
 <P>（感謝 Ed Collins 提供這個答案！）
 
 </sect1>
+
+<sect1>
+1.28 問：我能不能在回覆時只引入部份的原信件內容？<p>
+答：可以。在觀看信件時，將您要回覆的部份標記起來然後選擇「回覆」。<p>
+</sect1>
+
+<sect1>
+1.29 問：我可以在回覆信件時選擇不引入原信件內容嗎？<p>
+答：可以。在「回覆」鍵上按右鍵，選擇「不引用原文」（「轉寄」鍵上也可使用）。<p>
+提示：您也可以用熱鍵設定來完成這個功能。<p>
+</sect1>
+
+<sect1>
+1.30 問：「選擇下載」要怎麼用？<p>
+答：有兩種作法：<p>
+1. 手動：選擇「工具/選擇下載」，並選擇「抓取」來取得信件標頭。接著，選擇要刪除的信件按下「刪除」。<p>
+2.  自動：產生一個整體的過濾規則，從伺服器上刪除不要的信件。接著如果您選擇「選擇下載」，所有符合這個規則的郵件都會被刪除。<p>
+注意：「選擇下載」預設只針對新的（未讀的）郵件。如果您要對已讀的郵件運作，您要選擇「取回所有郵件」。<p>
+</sect1>
+
+<sect1>
+1.31 問：為什麼會有兩個過濾的選項？<p>
+答：「信件過濾設定」是以前的，選項較少。另外新的過濾設定是 sylpheed-claws 中新增的，比較強力，將來可能會取代舊的功能。<p>
+提示：要將您舊的過濾規則應用到新的格式，您可以用 "filter_conv.pl" 這個小程式。這支程式可以在 sylpheed-claws 中的 tools 子目錄中找到。<p>
+</sect1>
+
+<sect1>
+1.32 問：我可以同時使用兩種過濾機制嗎？<p>
+答：不行，如果您使用了新的過濾機制，舊的就會被忽略。<p>
+</sect1>
+
 </sect>
 
 <sect>
@@ -361,14 +392,127 @@ Sylpheed FAQ - 安裝與設定
 </sect1>
 
 <sect1>
-2.19 我可以在 Sylpheed 中使用拼字檢查程式嗎？<p>
+2.19 問：我可以在 Sylpheed 中使用拼字檢查程式嗎？<p>
 答：可以。你可以用 ispell。在「一般設定」中，如果你沒有使用外部編輯器的習慣，你可以把外部編輯器設定成 <tt>xterm -e ispell %s</tt>。這樣子你可以寫好郵件後，點選「編輯器」這個按鈕，它就會自動幫你檢查拼字。<p>
 你也可以使用 wterm，eterm 或 aterm 來取代 xterm。
 </sect1>
 
 <sect1>
-2.20 我要怎麼在郵件中送出我的 compface 圖樣？
+2.20 問：我要怎麼在郵件中送出我的 compface 圖樣？
 答：在「設定」目錄中的「目前帳號設定」，「送出」裡有一個「加入使用者定義的標頭」。核取它以後按下「編輯」，從「信件標頭設定」中選擇「X-Face」並在「值」這一欄中填入你的資料。注意如果你是從螢幕上直接剪貼的話，有可能會被加入一些換行符號之類的，要小心。</sect1>
+
+<sect1>
+2.21 問：我從 cvs 中將程式碼下載，但是找不到 configure 這支程式。<p>
+答：CVS 中的版本是給開發者用的，所以一般使用者使用正式發布的版本即可。<p>
+不過如果您真的很想用 CVS 中的版本，您要執行 "autogen.sh" 這支程式來產生
+configure 這支程式。在此之前，請確定您有安裝 autoconf 與 automake。<p>
+</sect1>
+
+<sect1>
+2.22 問：我在執行 "autogen.sh" 時發生了錯誤，它告訴我 "AM_PATH_GDK_PIXBUF" 或 "AM_PATH_xxx" 找不到。<p>
+答：有些 .m4 檔放在 "ac/missing" 目錄中。試著把它們拷貝到 ac 目錄下再執行一次看看。<p>
+如果還是一樣，試著執行：<p>
+<verb>
+     &percnt;&nbsp;locate m4&nbsp;&verbar;&nbsp;less
+</verb>
+或者<p>
+<verb>
+     &percnt&nbsp;locate aclocal&nbsp;&verbar;&nbsp;less
+</verb>
+來找出其他包含那些巨集的目錄。例如，如果您找到一個 "gtk.m4" 放在 /opt/gnome/share/aclocal"，那麼，將 autogen.sh 程式中的下面這一行：<p>
+<verb>
+     aclocal -I ac \
+</verb>
+換成：<p>
+<verb>
+     aclocal -I ac -I /opt/gnome/share/aclocal \
+</verb>
+再重新執行一次。<p>
+</sect1>
+
+<sect1>
+2.23 問：我想拿掉一些支援選項。但是我在執行 configure 後，還是沒有拿掉。<p>
+答：先把 config.cache 檔拿掉再執行一次 configure。另外在重編譯之前也應該先 make
+clean 一次。<p>
+</sect1>
+
+<sect1>
+2.24 問：我要怎麼選用其他的應用程式來開啟特定的 MIME 格式郵件？<p>
+答：MIME 格式與應用程式間的關聯是定義在 /etc/mailcap 中。<p>
+</sect1>
+
+<sect1>
+2.25 問：我要怎麼換掉附加檔的 MIME 格式？<p>
+答：檔案的 MIME 格式是定義在 /etc/mime.types 檔中。<p>
+</sect1>
+
+<sect1>
+2.26 問：我手動搬移/拷貝信件夾目錄後，在信件列表中並沒有更新。<p>
+答：您需要更新 Sylhpeed 的快取。在信件夾上按右鍵，選擇「重建資料夾結構」。<p>
+</sect1>
+
+<sect1>
+2.27 問：我要怎麼將設定變回最開始的預設值？<p>
+答：Sylpheed 將它的設定檔都放在 $HOME/.sylpheed 目錄中，如果沒有的話就會自動產生預設值。所以最簡單的方法就是離開 sylpheed，暫時將您的 $HOME/.sylpheed 目錄換個名字，然後重新啟動 sylpheed。<p>
+</sect1>
+
+<sect1>
+2.28 問：有哪些環境變數會影響 Sylpheed?<p>
+答：最常見的變數有：<p>
+<itemize>
+<item>HOME - .sylpheed (設定檔存放的目錄) 和預設的郵件信箱存放的地方。<p>
+<item>LANG
+<item>LC_ALL
+<item>LC_CTYPE
+<item>LC_MESSAGES - 地域化設定，如語言與資料格式等。<p>
+</itemize>
+</sect1>
+
+<sect1>
+2.29 問：特殊字元無法正確顯示。<p>
+答：大部份情況都是因為字型設定使用了不正確的編碼的關係。標準的 Sylpheed 在字型設定視窗中，目前並沒有提供所有的字型讓您設定。所以您若是檢視您的 $HOME/.sylpheed/sylpheedrc，您會到到一些字型設定：<p>
+<verb>
+     bold_font=-unknown-Helvetica-bold-r-normal-*-*-110-*-*-p-*-iso8859-1
+</verb>
+最後兩個 ("iso8859" 跟 "1") 就是編碼的設定。您可以試著用 * 或者指定特別的編碼。<p>
+<verb>
+     bold_font=-unknown-Helvetica-bold-r-normal-*-*-110-*-*-p-*-*-*
+</verb>
+您也要確定您的地域化設定環境變數是正確的。<p>
+</sect1>
+
+<sect1>
+2.30 問：我要怎麼把我舊的信箱跟位址簿(從別的郵件程式)轉換過來？<p>
+答：若您下載程式碼，您可以在 "tools" 目錄中找到一些程式，或許支援您使用的應用程式。您也可以試著將您舊的信箱轉換成 MH 或 MBOX 格式。<p>
+提示：看看「工具」目錄裡的 "harvest address" 功能，它可以用於您匯入舊的資料時，適當地變更或新增。<p>
+</sect1>
+
+<sect1>
+2.31 問：有哪些設定檔？它們又都是做什麼用途？<p>
+答：Sylpheed 設定檔都放在 $HOME/.sylpheed 中。大都是一般文字檔格式，很容易閱讀。所以您可以直接用文字編輯器去檢視它們。<p>
+<p>
+<itemize>
+<item>sylpheedrc: 主要設定檔。大部份的選項都放在這裡。
+<item>accountrc: 設定 pop/imap/nntp 帳號。
+<item>actionsrc: 設定使用者定義的動作。
+<item>customheaderrc: 設定使用者自定的標頭。
+<item>dispheaderrc: 設定顯示在郵件之前的標頭。
+<item>filterrc: (舊的)過濾設定檔。
+<item>folderitemrc: 資料夾特別設定。如預設的送出資料夾。
+<item>matcherrc: 新的過濾與紀錄設定。
+<item>menurc: 熱鍵設定。
+<item>addrbook-*.xml: 位址簿內容。
+<item>folderlist.xml: 資料夾特殊設定。如隱藏閱讀過的信件、排序法等等。
+</itemize>
+<p>
+</sect1>
+
+<sect1>
+2.32 問：如果列印郵件印了好幾頁怎麼辦？<p>
+答：您可以用 enscript。用 enscript %s 來把所有東西印在一頁，或 enscript -U2 %s
+來將兩頁印成一頁。
+</sect1>
+
 </sect>
 
 <sect>
@@ -467,6 +611,13 @@ Ctrl-Y 也就被設定為這個功能了。不過要注意，如果之前有任何功能
 <P>答：你設定開啟檔案的軟體時，如 gedit，要將 %s 參數的前後加上單引號。例如：
 gedit '%s'
 </sect1>
+
+<sect1>
+3.14 問：我撰寫郵件時怎麼找不到密件副本呢？<p>
+答：從目錄中「設定」->「目前帳號設定」->「撰寫郵件」，按下「密件副本」即可。後面也可以加上郵件地址。
+</sect1>
+
+</sect>
 
 <appendix>
 
