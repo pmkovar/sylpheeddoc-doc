@@ -3,7 +3,7 @@
 <sect1>Premier démarrage de Sylpheed
 
 <p>
-Lorsque vous démarrez sylpheed pour la première fois, vous serez
+Lorsque vous démarrez sylpheed pour la première fois, vous êtes
 guidé à travers les étapes de configuration basiques.
 Tout d'abord, une fenêtre vous demande de définir le répertoire
 que Sylpheed utilisera pour ranger les messages et les dossiers.
@@ -17,7 +17,7 @@ défaut de ce répertoire est "Mail".
 </figure>
 
 Ensuite, la fenêtre de configuration des comptes apparaît.
-Selon votre configuration (Boite aux lettres UNIX locale ou
+Selon votre configuration (Boîte aux lettres UNIX locale ou
 compte POP), lisez les sections correspondantes qui suivent
 pour continuer la configuration. 
 
@@ -27,7 +27,8 @@ pour continuer la configuration.
 <itemize>
 <item>Dans le menu de configuration, sélectionnez 
 <bf>Création d'un nouveau compte...</bf>~;
-<item>Dans l'onglet de configuration <bf><ref id="Générale"></bf>, donnez un nom au compte. Vous pouvez rendre ce compte celui utilisé par défaut en cochant la case <bf>Définir comme compte par défaut</bf>~;
+<item>Dans l'onglet de configuration <bf><ref id="Générale"></bf>,
+donnez un nom au compte. Vous pouvez définir ce compte comme celui utilisé par défaut en cochant la case <bf>Définir comme compte par défaut</bf>~;
 <item>Entrez ensuite votre nom et votre adresse email~;
 <item>Pour sélectionner votre boîte aux lettres locale UNIX, sélectionnez <bf>Aucun (local)</bf> dans le menu <bf>Protocole</bf>~;
 <item>Lorsque vous sélectionnez cette option, l'option <bf>Serveur de réception</bf> devient indisponible (grisée) car elle n'est plus utile. Vous pouvez ensuite entrer le serveur SMTP à utiliser pour l'envoi dans cet onglet.
@@ -39,7 +40,9 @@ Les autres options dans cet onglet peuvent garder leur valeur par défaut.
 <img src="snapshots/account_basic.png">
 </figure>
 
-L'onglet pour la <bf><ref id="Réception"></bf> n'est pas utilisé dans cette configuration car vous ne récupérez pas votre courrier d'un serveur, mais vos courriers vous sont plutôt directement envoyés.
+L'onglet pour la <bf><ref id="Réception"></bf> n'est pas utilisé dans
+cette configuration car vous ne récupérez pas votre courrier d'un
+serveur, ils vous est directement envoyé.
 <p>
 Dans l'onglet <bf><ref id="Envoyer"></bf>, vous pouvez configurer quelques nouveaux éléments.
 
@@ -66,12 +69,13 @@ accéder à votre boîte aux lettres UNIX locale. Vous pouvez désormais presser «~A
 <p>
 <itemize>
 <item>Dans le menu de configuration, sélectionnez <bf>Création d'un nouveau compte...</bf>
-<item>Dans l'onglet de configuration <bf><ref id="Générale"></bf>, donnez un nom au compte. Vous pouvez rendre ce compte celui utilisé par défaut en cochant la case <bf>Définir comme compte par défaut</bf>~;
+<item>Dans l'onglet de configuration <bf><ref id="Générale"></bf>,
+donnez un nom au compte. Vous pouvez définir ce compte comme celui utilisé par défaut en cochant la case <bf>Définir comme compte par défaut</bf>~;
 <item>Entrez ensuite votre nom et votre adresse email~;
-<item>Sélectionner ensuite <bf>POP3 (normal)</bf> dans le menu <bf>Protocole</bf>~;
+<item>Sélectionnez ensuite <bf>POP3 (normal)</bf> dans le menu <bf>Protocole</bf>~;
 <item>Puis, entrez le nom du serveur de réception dans le champ <bf>Serveur de réception</bf>. Faites de même pour le serveur d'envoi dans le champ <bf>Serveur SMTP (envoi)</bf>.
 </itemize>
-Les autres des options de cet onglet peuvent garder leur valeur par défaut.
+Les autres options de cet onglet peuvent garder leur valeur par défaut.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -106,6 +110,6 @@ Dans l'onglet <bf><ref id="Composition"></bf>, vous pouvez définir votre fichier
 Dans l'onglet de configuration <bf><ref id ="Avancée"></bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Ce changement n'est généralement pas nécessaire.
 <p>
 C'est cette configuration qui sera nécessaire à Sylpheed pour 
-accéder à votre boîte aux lettres via POP3. Vous pouvez utiliser le <ref id="raccourci clavier">, appuyer sur le bouton <bf>Relever</bf> ou encore sélectionner <bf>Message -> Relever le courrier</bf> pour voir si vous avez de nouveaux courriers~!
+accéder à votre boîte aux lettres <em>via</em> POP3. Vous pouvez utiliser le <ref id="raccourci clavier">, appuyer sur le bouton <bf>Relever</bf> ou encore sélectionner <bf>Message -> Relever le courrier</bf> pour voir si vous avez de nouveaux courriers~!
 </sect1>
 </sect>

@@ -50,8 +50,8 @@ Sylpheed est
 <item>peu gourmand en ressources système~;
 <item>très rapide~;
 <item>intuitif et simple à utiliser grâce à son interface agréable et 
-      sophistiquée.~;
-<item>doté de nombreuses de fonctionnalités~;
+      sophistiquée~;
+<item>doté de nombreuses fonctionnalités~;
 </itemize>
 </sect1>
 
@@ -62,8 +62,8 @@ clients de messagerie pour Windows, tels que Outlook Express, Becky!
 et Datula.  L'interface est aussi conçue pour simuler les clients de
 messagerie des différents Emacs.
 <p>
-Les messages sont stockés au format MH, et vous serez capable de
-l'utiliser avec n'importe quel autre outil de messagerie basé sur ce
+Les messages sont stockés au format MH, et vous serez capable
+d'utiliser le fichier correspondant avec n'importe quel autre outil de messagerie basé sur ce
 format (comme Mew par exemple). Vous pouvez aussi utiliser fetchmail
 et/ou procmail ainsi que des programmes extérieurs à Sylpheed pour
 recevoir et trier vos messages (comme inc ou imget).
@@ -98,12 +98,12 @@ Les caractéristiques majeures de Sylpheed sont les suivantes (cette
 <item>l'authentification APOP pour le protocole POP3
 <item>le support AUTH SMTP
 <item>le support IPv6
-<item>la confidentialité et la sécurité via GPG pour encrypter et signer
+<item>la confidentialité et la sécurité <em>via</em> GPG pour encrypter et signer
 <item>le support autoconf, automake 
 <item>le support i18n de messages par gettext (affichage des messages 
 dans votre langue)
 <item>le support de nombreuses langues et plusieurs jeux de caractères,
-y compris UTF-8 (Unicode), via libjconv 
+y compris UTF-8 (Unicode), <em>via</em> libjconv 
 <item>la compatibilité IMAP4
 </itemize>
 </sect1>
@@ -115,11 +115,11 @@ Il y a plusieurs façons de gérer les messages. La plus connue est
 celle qui consiste à <em>ne pas les gérer</em>.<p> Beaucoup de
 personnes reçoivent un grand nombre de messages et les laissent dans
 le dossier <bf>Réception</bf>, ignorés et oubliés par la suite.  Si
-vous êtes l'une ces personnes, vous êtes constamment à la recherche de
-ce mail que vous avez reçu il y a 5 jours et qui est dans la boite de
+vous êtes l'une de ces personnes, vous êtes constamment à la recherche de
+ce mail que vous avez reçu il y a 5 jours et qui est dans la boîte de
 réception qui contient plus de 5000 messages. Localiser un courriel
-parmi des milliers de messages non triés est toujours une tâche
-frustrante qui prends toujours beaucoup trop de temps.
+parmi des milliers de messages non triés est une tâche
+frustrante qui prend toujours beaucoup trop de temps.
 <p>
 
 Sylpheed vous aide avec ses <bf><it>dossiers</it></bf> et ses
@@ -159,9 +159,9 @@ Dans le cas de Sylpheed, vous créez une boîte aux lettres dans
 laquelle vous pouvez placer d'autres boîtes aux lettres qui doivent
 être groupées. Par exemple, vous pouvez créer une boîte aux lettres
 qui contienne toutes les boîtes aux lettres pour toutes les listes de
-diffusion auquelles vous êtes abonné.
+diffusion auxquelles vous êtes abonné.
 <p>
-Il est peut-être nécessaire de clarifier les choses un peu. Pour
+Il est peut-être nécessaire de clarifier un peu les choses. Pour
 Sylpheed une boîte aux lettres n'est rien d'autre qu'un répertoire, et
 dans ce répertoire vous pouvez créer d'autres répertoires, mais aussi
 des fichiers, et Sylpheed place chaque message dans un fichier
@@ -187,11 +187,10 @@ est pas une meilleure~!
 <sect1>Orientation du développement
 <p>
 Ceci est un chapitre spécial. Comme tous les programmes ayant ouvert
-leur code source, vous, utilisateur de Sylpheed, pouvez demander
-vous-même les fonctionnalités dont vous avez besoin.  La meilleure
+leur code source, vous, utilisateur de Sylpheed, pouvez demander des fonctionnalités dont vous avez besoin.  La meilleure
 méthode consiste à rejoindre une des nombreuses listes de diffusion
 (<em>mailing lists</em>) concernant Sylpheed.  Vous trouverez dans la
-section «~Information~» de ce manuel comment vous pouvez vous
+section «~Sources d'informations~» de ce manuel comment vous pouvez vous
 inscrire.
 </sect1>
 

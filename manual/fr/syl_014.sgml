@@ -37,7 +37,7 @@ application/pdf ; xpdf %s
 
 <sect1>Importer des messages au format MBOX<p>
 <!-- added 2001/07/20 -->
-Sylpheed vous permet d'importer des messages au format MBOX à partir du menu 
+Sylpheed permet d'importer des messages au format MBOX à partir du menu 
 <bf>Fichier</bf>. Mais d'abord, vous devez créer un dossier dans lequel vous souhaitez que les messages soient installés. Ensuite, sélectionnez <bf>Fichier -> Importer un fichier mbox...</bf>. Utilisez la fonction de navigation pour sélectionner le 
 fichier MBOX et le dossier destinataire et pressez <bf>Ok</bf>. Et 
 voilà, vos courriers sont importés.<p>

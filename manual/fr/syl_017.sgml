@@ -1,23 +1,23 @@
 <sect>Référence<p>
 <!-- Added 2001/07/21 -->
-Dans cette section, vous allez trouvez quelques informations sur raccourcis 
+Dans cette section, vous trouverez quelques informations sur les raccourcis 
 clavier utilisables dans Sylpheed et sur le format interne du fichier du carnet
 d'adresses.
 <sect1>Liste des raccourcis clavier<label id="raccourci clavier"><p>
 <sect2>Raccourcis à une touche<p>
 <itemize>
-<item><bf>a</bf>~: crée un nouveau message~;
-<item><bf>d</bf>~: supprime le message sélectionné~;
-<item><bf>f</bf>~: fait suivre le message sélectionné~;
+<item><bf>a</bf>~: créer un nouveau message~;
+<item><bf>d</bf>~: supprimer le message sélectionné~;
+<item><bf>f</bf>~: faire suivre le message sélectionné~;
 <item><bf>g</bf>~: aller dans un dossier spécifique sélectionné par le biais d'une
 fenêtre dialogue~;
 <item><bf>n</bf>~: aller au message suivant / à la partie suivante d'un message 
 contenant plusieurs parties~;
 <item><bf>p</bf>~: aller au message précédent / à la partie précédente d'un message 
 contenant plusieurs parties~;
-<item><bf>v</bf>~: active / désactive la vue de message~;
-<item><bf>w</bf>~: crée un nouveau message (pareil que <bf>a</bf>)~;
-<item><bf>y</bf>~: sauvegarde le message dans un fichier.
+<item><bf>v</bf>~: activer / désactiver la vue de message~;
+<item><bf>w</bf>~: créer un nouveau message (pareil que <bf>a</bf>)~;
+<item><bf>y</bf>~: sauvegarder le message dans un fichier.
 </itemize>
 </sect2>
 <sect2>Raccourcis du menu <bf>Fichier</bf><p>
@@ -36,7 +36,7 @@ contenant plusieurs parties~;
 <item><bf>Ctrl-S</bf>~: chercher.
 </itemize>
 </sect2>
-<sect2>Raccourcis du menu <bf>Vue</bf><p>
+<sect2>Raccourci du menu <bf>Vue</bf><p>
 <itemize>
 <item><bf>Alt-V</bf>~: ouvre le menu <bf>Vue</bf>.
 </itemize>
@@ -69,8 +69,8 @@ les commandes «~supprimer~», «~déplacer~» et «~copier~» ne sont pas exécutées
 immédiatement~;
 <item><bf>Alt-U</bf>~: met à jour des vues du sommaire et du message~;
 <item><bf>Alt-G</bf>~: va dans un autre dossier~;
-<item><bf>Ctrl-T</bf>~: active la vue par fils de conversation~;
-<item><bf>Shift-Ctrl-T</bf>~: désactive la vue par fils de conversation.
+<item><bf>Ctrl-T</bf>~: active la vue par fil de conversation~;
+<item><bf>Shift-Ctrl-T</bf>~: désactive la vue par fil de conversation.
 </itemize>
 </sect2>
 <sect2>Raccourcis du menu <bf>Outils</bf><p>
@@ -83,7 +83,7 @@ immédiatement~;
 </sect1>
 
 <sect1>Comment changer la police des menus, etc.<p>
-La police utilisée par Sylpheer pour ses menus et son interface en général
+La police utilisée par Sylpheed pour ses menus et son interface en général
 est contrôlée par le gestionnaire de fenêtres (<em>Desktop manager</em>)
 que vous utilisez (KDE, Gnome, XFCE). Utilisez son programme de configuration  
 et changez-y la police.<p>
@@ -95,13 +95,13 @@ la police si vous en connaissez le nom, soit la choisir parmi la liste des polic
 disponibles sur votre ordinateur en utilisant le bouton <bf>&lsqb;...&rsqb;</bf>.
 </sect1>
 
-<sect1>Changer les combinaisons de touches pour les raccourcis-clavier<p>
+<sect1>Changer les combinaisons de touches pour les raccourcis clavier<p>
 L'interface graphique de Sylpheed est basée sur GTK. Ceci signifie qu'il est 
 très facile de changer les combinaisons des touches raccourcis clavier (ou 
 simplement les touches de fonctions) pour les différents choix dans les menus. 
-Si vous êtiez habitués dans un autre programme à une combinaison de touches 
-différentes que celles utilisées par Sylpheed, ou si celles de Sylpheed ne
-vous conviennent pas la modification est très simple. Supposons que vous
+Si vous êtiez habitués, dans un autre programme, à une combinaison de touches 
+différentes de celles utilisées par Sylpheed ou si celles de Sylpheed ne
+vous conviennent pas, la modification est très simple. Supposons que vous
 voulez changer la combinaison de touches utilisée pour la relève du courrier
 (dans le menu <bf>Message</bf>) de <bf>Alt-I</bf> en <bf>Ctrl-M</bf>. Voici
 les étapes à suivre~:
@@ -122,7 +122,7 @@ Les touches de fonctions <bf>F1</bf>...<bf>F12</bf> n'ont pas besoin
 d'être associées à ces dernières et peuvent être utilisées seules.<p>
 Si vous souhaitez supprimer une combinaison de touches, procédez comme
 décrit plus haut mais pressez plutôt la touche <bf>Suppr</bf> ou la
-touche d'éffacement.<p>
+touche d'effacement.<p>
 Certaines fonctions de Sylpheed sont activables par un raccourci à une
 seule touche. Celles-ci sont pré-programmées et ne sont pas modifiables
 aussi facilement.

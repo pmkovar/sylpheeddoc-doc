@@ -1,37 +1,44 @@
 <sect>NetNews<p>
 Qu'est ce que netnews~?<p>
-Netnews, aussi appelé Usenet, est un ensemble de serveurs de nouvelles. Les netnews sont généralement appelés les news pour faire plus court, et sont un lieu de discussion sur un nombre quasi infini de thèmes.
-Par exemple, un groupe de discussion peut porter sur la manière de faire votre propre vin, et tel autre sur les vieilles voitures et les radios.  Pensez à un thème et il y a probablement un groupe de discussion le concernant.<p>
-C'est ce que nous allons configurer ici~: l'accès aux groupes de discussions. 
-Notez que c'est différent des courriers. Nous pourrions aussi les comparer aux
-listes de diffusion mais le concept est encore légèrement différent.
+Netnews, aussi appelé Usenet, est un ensemble de serveurs de
+nouvelles. Les netnews sont généralement appelés les news pour faire
+plus court, et sont un lieu de discussion sur un nombre quasi infini
+de thèmes.  Par exemple, un groupe de discussion peut porter sur la
+manière de faire votre propre vin, et tel autre sur les vieilles
+voitures et les radios.  Pensez à un thème et il y a probablement un
+groupe de discussion le concernant.<p>
+C'est ce que nous allons configurer ici~: l'accès aux groupes de
+discussions.  Notez que c'est différent des courriers. Nous pourrions
+aussi les comparer aux listes de diffusion mais le concept est encore
+légèrement différent.
 <!-- added 2001/07/20 -->
 <sect1>Ajouter et enlever des serveurs de news<p>
 <sect2>
 Ajouter un nouveau serveur de news<p>
-L'ajout  d'un nouveau serveur de groupes de discussions (de news) se fait par le menu <bf>Configuration -> Création d'un nouveau compte...</bf>.
+L'ajout  d'un nouveau serveur de groupes de discussions (de news) se
+fait par le menu <bf>Configuration -> Création d'un nouveau compte...</bf>.
 Ici, vous pouvez nommer les nouveaux comptes sur ce que vous aimez. C'est 
 important car vous pourrez identifier le compte plus tard.<p>
 Dans l'onglet BASE, dans le bloc « informations personnelles », vous pouvez 
 aussi entrer votre propre nom, votre adresse de courrier (pour que vous 
 puissiez répondre aux messages de nouvelles par courrier), optionnellement 
 votre organisation (si vous êtes dans une organisation).<p>
-Dans le bloc « information de serveur », vous sélectionnez le protocole 
-« News (NNTP) ». Oubliez « Inbox », qui ne nous intéresse pas pour cette 
+Dans le bloc «~information de serveur~», vous sélectionnez le protocole 
+«~News (NNTP)~». Oubliez «~Inbox~», qui ne nous intéresse pas pour cette 
 configuration. Ensuite, vous entrez le nom du serveur de nouvelles auquel 
 vous voulez vous connecter. Vous pouvez obtenir le nom de votre ISP, si vous 
 n'en avez pas encore.<p>
 Si vous avez besoin de vous connecter au serveur de nouvelles, validez la 
-boîte « Ce serveur nécessite une authentification » et remplissez alors les 
+boîte «~Ce serveur nécessite une authentification~» et remplissez alors les 
 champs ID d'utilisateur et mot de passe.<p>
 L'étape suivante est d'aller dans l'onglet Envoi. Comme Recevoir est seulement 
-pour les courriers, il n'y a pas de besoin de faire quelque chose d'autre. 
+pour les courriers, il n'est pas nécessaire de faire quelque chose d'autre. 
 Vous ne pouvez même pas faire quoi que ce soit dans l'onglet Recevoir, dans 
-ce but. Donc, dans Envoi, vous pouvez sélectionner quelques options :
+ce but. Donc, dans Envoi, vous pouvez sélectionner quelques options~:
 <itemize>
-<item>Si vous voulez un champ d'en-tête de date ajouté aux envois
-<item>Si Sylpheed doit générer un ID de message
-<item>Si vous voulez ajouter des en-têtes définies par les utilisateurs
+<item>si vous voulez un champ d'en-tête de date ajouté aux envois~;
+<item>si Sylpheed doit générer un ID de message~;
+<item>si vous voulez ajouter des en-têtes définies par les utilisateurs.
 </itemize>
 L'objet suivant ne s'applique que lorsque vous répondez aux messages de 
 nouvelles par des courriers. Vous pouvez initialiser ici une adresse en CC, 
@@ -41,10 +48,10 @@ ci-dessous.<p>
 L'onglet suivant, Composition, vous permet de sélectionner un fichier de 
 signature par défaut. Celui-ci sera ajouté à chaque envoi que vous faites au 
 groupe de discussion.<p>
-Finalement, dans l'onglet « Avancé », vous pouvez spécifier le port sur lequel 
+Finalement, dans l'onglet «~Avancée~», vous pouvez spécifier le port sur lequel 
 Sylpheed doit se connecter sur le serveur de nouvelles. C'est par défaut sur 
 119 et seulement dans de rares cas, vous aurez à le changer.<p>
-Maintenant, cliquez sur « OK » et le compte est créé ! Vous pouvez le 
+Maintenant, cliquez sur «~OK~» et le compte est créé ! Vous pouvez le 
 vérifier en surveilllant la fenêtre de répertoire dans Sylpheed. Vous y verrez 
 un nouveau répertoire créé avec le nom du compte que vous avez entré et des 
 nouvelles derrière.<p>
@@ -52,12 +59,12 @@ nouvelles derrière.<p>
 <sect2>
 Effacer un serveur de nouvelles.<p>
 Si vous voulez effacer un compte de nouvelles, cliquez-droit sur le répertoire 
-de nouvelles et sélectionnez « Enlever le compte de nouvelles ». Après avoir 
+de nouvelles et sélectionnez «~Enlever le compte de nouvelles~». Après avoir 
 confirmé que vous voulez que ce soit fait, le compte et tous les fichiers liés 
 seront enlevés.
 </sect2>
 </sect1>
-<sect1>S'abonner et se désabonner d'un groupe de discussion<p>
+<sect1>S'abonner à (et se désabonner d'un) groupe de discussion<p>
 Ok. C'est ici que le travail réel démarre. Vous devez d'abord laisser Sylpheed 
 charger la liste du groupe de discussion qui est dans le système de nouvelles. 
 Cliquez droit sur le nouveau répertoire de NOUVELLES et sélectionnez 
@@ -65,7 +72,7 @@ Cliquez droit sur le nouveau répertoire de NOUVELLES et sélectionnez
 groupe doit être téléchargé, prenez donc votre mal en patience et attendez. 
 Bien sûr, pendant ce temps, de nouveaux groupes sont ajoutés et des groupes 
 éteints sont enlevés. Pour ceci, vous pouvez cliquer sur le bouton 
-« rafraîchir » dans le dialogue du groupe de discussion, donc, une nouvelle 
+«~rafraîchir~» dans le dialogue du groupe de discussion, donc, une nouvelle 
 liste est téléchargée et vous êtes à jour<p>
 Après un moment, les groupes sont chargés et affichés dans une fenêtre. 
 Maintenant, vous pouvez chercher un groupe qui est intéressant, par exemple 
@@ -74,13 +81,13 @@ sera ajouté dans le répertoire de nouvelles comme un sous-répertoire. Ensuite,
 lorsque vous cliquez sur le nom du nouveau sous-répertoire, Sylpheed se 
 connectera à un serveur de nouvelles et téléchargera les en-têtes (ligne du 
 sujet, dans le vocabulaire de courrier), pour votre ordinateur. Quelques 
-groupes ont des -grands- nombres d'articles, donc ceci peut prendre du temps !
+groupes ont de -grands- nombres d'articles, donc ceci peut prendre du temps !
 <p>
 </sect1>
 <sect1>Lire les nouvelles<p>
 Lorsque les articles sont affichés, dans la vue de résumé, vous pouvez cliquer 
 sur l'un d'eux pour le télécharger pour que vous puissiez les lire. Ceci ira 
-habituellement très vite dans les groupes de dicussion.<p>
+habituellement très vite dans les groupes de discussion.<p>
 Si vous voulez répondre à un message, pressez Alt-R (ou pressez « Répondre ») 
 et une fenêtre de message se déroulera, avec le nom du groupe de discussion 
 déjà dans le champ « À ». Selon si vous avez sélectionné ou non la citation du 
@@ -94,11 +101,11 @@ votre réponse.
 <sect2>Une note sur les fichiers binaires<p>
 Dans les groupes de discussion, vous pouvez télécharger des fichiers binaires. 
 Ce sont des programmes, images, etc. Souvent, ils sont postés comme des 
-fichiers UUencode. Sylpheed ne décodera pas les fichiers UUencode au-dela de 
-la version 0.5.1. Vous avez besoin de sauvegarder ces articles sur le disques 
-comme fichiers séparés et utiliser un programme de décodage séparé comme juju, 
-pour décoder le texte. Un fichier UUencode ressemble habituellement à quelquechose 
-comme ceci :<p>
+fichiers UUencode. Sylpheed ne décodera pas les fichiers UUencode au-delà de 
+la version 0.5.1. Vous avez besoin de sauvegarder ces articles sur le disque 
+comme fichiers séparés et d'utiliser un programme de décodage séparé comme juju, 
+pour décoder le texte. Un fichier UUencode ressemble habituellement à
+quelque chose comme ceci :<p>
 begin 666 sundown.jpg<p>
 après lequel vous trouverez des blocs de caractères bien formatés qui ne 
 semblent rien dire.

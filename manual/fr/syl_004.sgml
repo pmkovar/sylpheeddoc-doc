@@ -184,7 +184,7 @@ mettez d'abord votre portage à jour, traitez-le sur http://www.freebsd.org/ports
 <p>
 <tt>make</tt>
 <p>
-Si cela réussit, executez <tt>make install</tt>
+Si cela réussit, exécutez <tt>make install</tt>
 <p>
 dans le cas où cela échoue, demandez le paquet requis, si nécessaire, (sur la même page), mettez le fichier du paquet dans <tt>/usr/ports/distfiles/</tt>
 puis~:

@@ -78,7 +78,7 @@ La première option permet de placer le message dans un dossier existant.  Pour c
 cochez la case <bf>Destination</bf>. Notez
 que le dossier doit exister.  Cliquez ensuite sur le bouton <bf>Choisir...</bf>
 pour ouvrir une fenêtre contenant tous les dossiers actuellement
-actifs.  Sélectionnez le dossier désiré soit en-double cliquant sur son nom, soit en cliquant une fois sur nom puis en cliquant sur <bf>Ok</bf>.  
+actifs.  Sélectionnez le dossier désiré soit en double-cliquant sur son nom, soit en cliquant une fois sur nom puis en cliquant sur <bf>Ok</bf>.  
 <p>
 La seconde option, activée en cochant la case <bf>Ne pas recevoir</bf>, demandera à
 Sylpheed de ne pas télécharger les messages concernés. Notez qu'avec cette
@@ -93,8 +93,8 @@ Si vous oubliez cette étape, le filtrage ne fonctionnera pas.  <p>
 La liste des règles est gérée par l'intermédiaire de trois boutons permettant 
 d'<bf>Enregistrer</bf>, de <bf>Remplacer</bf> et de <bf>Supprimer</bf>. 
 <itemize>
-<item><bf>Enregistrer</bf>~: permet d'enregistrer la règle de filtrage et de l'ajouter à la liste des filtres.
-<item><bf>Remplacer</bf>~: permet de remplacer la règle sélectionnée dans la liste des filtres par celle qui vient d'être créée.
+<item><bf>Enregistrer</bf>~: permet d'enregistrer la règle de filtrage et de l'ajouter à la liste des filtres~;
+<item><bf>Remplacer</bf>~: permet de remplacer la règle sélectionnée dans la liste des filtres par celle qui vient d'être créée~;
 <item><bf>Supprimer</bf>~: permet d'effacer la règle de filtrage sélectionnée dans la liste des filtres. 
 </itemize>
 Exemple d'enregistrement d'une règle de filtrage~: créez une règle de filtrage 
@@ -102,14 +102,14 @@ qui déplace tous les courriers dont le sujet contient «~manuel de Sylpheed~» dan
 dossier des courriers (préalablement créé) «~Courrier du manuel de Sylpheed~».
 <itemize>
 <item>Étape 1. Dans la liste déroulante <bf>En-tête</bf>, sélectionnez
-<bf>Subject</bf> (sujet).
+<bf>Subject</bf> (sujet)~;
 <item>Étape 2. Dans le champ <bf>Mot-clé</bf>, saisissez <tt>manuel de Sylpheed</tt>
-(insensible à la casse).
+(insensible à la casse)~;
 <item>Étape 3. Laissez le <bf>Prédicat</bf> par défaut (<bf>contient</bf>). 
- Laissez la seconde condition vide.
+ Laissez la seconde condition vide~;
 <item>Étape 4. Cliquez sur le bouton radio <bf>Destination</bf> et sélectionnez le 
-dossier «~Courrier du manuel de Sylpheed~».
-<item>Étape 5. Cliquez sur <bf>Enregistrer</bf>.
+dossier «~Courrier du manuel de Sylpheed~»~;
+<item>Étape 5. Cliquez sur <bf>Enregistrer</bf>~;
 <item>Étape 6. Cliquez sur <bf>Fermer</bf>.
 </itemize> 
 Exemple de remplacement d'une règle de filtrage~: modifiez la règle de filtrage 
@@ -119,24 +119,24 @@ Sylpheed~» pour qu'elle trie les courriers non plus vers le dossier
 «~Questions sur Sylpheed~»  
 <itemize>
 <item>Étape 1. Dans la liste déroulante <bf>En-tête</bf>, 
-sélectionnez <bf>Subjet</bf>.
+sélectionnez <bf>Sujet</bf>~;
 <item>Étape 2. Dans le champ <bf>Mot-clé</bf>, saisissez <tt>manuel de
-sylpheed</tt> (insensible à la casse).
+sylpheed</tt> (insensible à la casse)~;
 <item>Étape 3. Gardez le <bf>Prédicat</bf> par défaut (<bf>contient</bf>).
-Laissez la seconde condition vide.
+Laissez la seconde condition vide~;
 <item>Étape 4. Cliquez sur le bouton radio <bf>Destination</bf> et sélectionnez le 
-dossier <tt>questions sur Sylpheed</tt>.
-<item>Étape 5. Cliquez sur <bf>Remplacer</bf>.
+dossier <tt>questions sur Sylpheed</tt>~;
+<item>Étape 5. Cliquez sur <bf>Remplacer</bf>~;
 <item>Étape 6. Cliquez sur <bf>Fermer</bf>.
 </itemize>
 Exemple de suppression de règles de filtrage~: supprimez la règle de filtrage 
 précédement créée qui déplace certains courriers vers «~questions sur Sylpheed~».
 <itemize>
 <item>Étape 1. Dans la liste des règles de filtrages créées, 
-sélectionnez le filtre intitulé «~Subjet:manuel de Sylpheed: :::questions sur
-Sylpheed:1:1:m~».
-<item>Étape 2. Cliquez sur le bouton <bf>Suppression</bf>.
-<item>Étape 3. Confirmez la suppression en cliquant <bf>Oui</bf> dans la fenêtre qui vous demande confirmation.
+sélectionnez le filtre intitulé «~Sujet:manuel de Sylpheed: :::questions sur
+Sylpheed:1:1:m~»~;
+<item>Étape 2. Cliquez sur le bouton <bf>Suppression</bf>~;
+<item>Étape 3. Confirmez la suppression en cliquant <bf>Oui</bf> dans la fenêtre qui vous demande confirmation~;
 <item>Étape 4. Cliquez <bf>Fermer</bf>.
 </itemize>
 </sect2>

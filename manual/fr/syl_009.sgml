@@ -17,7 +17,7 @@ bouton 'close'.
 <p>
 Quand un message contient une pièce attachée, vous avez plusieurs
 choix pour la voir.  Sylpheed est capable, lorsque cette option a été
-compilée, afficher les images, c'est à dire, quand vous cliquez sur le
+compilée, d'afficher les images, c'est à dire, quand vous cliquez sur le
 nom de l'image vous pouvez la voir s'afficher dans le panneau du
 message.
 
@@ -36,17 +36,17 @@ pouvez toujours utiliser l'option du menu contextuel "Sauvegarder sous
 bon programme.
 </sect1>
 
-<sect1>Déployer et compacter les fils de de discussion
+<sect1>Déployer et compacter les fils de discussion
 <p>
-Syplheed propose de voir les message dans des fils de discussion. Ce
-ne sont ni plus ni moins qu'une série de courriels organisés dans un
+Sylpheed propose de voir les message dans des fils de discussion. Ce
+ne sont ni plus ni moins qu'une série de courriels organisés dans une
 séquence logique. Supposons que 15 personnes vous envoient un message
 "Re: Bannanes".  Vous ne pouvez pas dire lequel est le premier et
-lequel est le dernier dans cette sequence.
+lequel est le dernier dans cette séquence.
 <p>
-En activant la vue par fils de discussion (dans le menu <tt>Vue</tt>)
-Sypheed essaye de vous présenter la séquence de courriels que vous
-avez reçue de la manière dont ils ont été écrit et vous ont été
+En activant la vue par fil de discussion (dans le menu <tt>Vue</tt>)
+Sylpheed essaye de vous présenter la séquence de courriels que vous
+avez reçue de la manière dont ils ont été écrits et vous ont été
 ensuite envoyés, du premier au dernier.
 <p>
 Pour ne plus avoir se comportement, sélectionnez simplement la même
@@ -58,36 +58,36 @@ standard (l'ordre de réception).
 <sect1>Opérations sur les messages (Déplacer, détruire, etc...)
 <p>
 Sylpheed offre plusieurs façon de gérer les messages. Vous pouvez les
-déplacer vers de nouvelles boites aux lettres ou les détruire. Dans le
+déplacer vers de nouvelles boîtes aux lettres ou les détruire. Dans le
 menu <tt>Message</tt>(voyez ce chapitre pour plus de détail) vous
 trouverez beaucoup d'options pour faire ce que vous voulez avec vos
-messages. L'avantage de déplacer les messages vers différentes boites
-aux lettres tiens dans le fait que vous garder une vue complète sur
-votre boite de réception (voyez aussi le chapitre <it>Filtrage</it>
+messages. L'avantage de déplacer les messages vers différentes boîtes
+aux lettres tient dans le fait que vous gardez une vue complète sur
+votre boîte de réception (voyez aussi le chapitre <it>Filtrage</it>
 pour plus de détails sur la façon de le faire
 automatiquement). Supposons que vous avez reçu des messages dans la
-boite de réception sur 8 sujets différents et que vous en recherchez
+boîte de réception sur 8 sujets différents et que vous en recherchez
 un en particulier sur un sujet précis. Cela va vous donner beaucoup de
 travail pour essayer de retrouver le bon message. En revanche, si vous
 créez un nouveau dossier pour chaque sujet et que vous y déplacez les
 messages qui le concerne dans ce dossier, cela vous facilitera la
-tâche par la suite. (NDT~: d'autant plus si vous le faîtes pour chaque
+tâche par la suite. (NDT~: d'autant plus si vous le faites pour chaque
 nouveau message et de manière automatique).
 </sect1>
 
 <sect1>URL dans un message
 <p>
 Parfois vous trouverez une URL dans un message, il s'agit d'un lien
-vers un site web. Souvent cela se présente de la forme suiavnte :
+vers un site web. Souvent cela se présente de la forme suivante~:
 "http://www.quelquepart.quelquechose".
 <p>
 Si vous voulez aller visiter ce site web, vous devez seulement double
-cliquer sur l'URL et votre navigateur par défaut se lancera (Le plus
+cliquer sur l'URL et votre navigateur par défaut se lancera (le plus
 souvent Netscape) et chargera le site web en question.
 <p>
 Vous pouvez définir dans les options de configuration une couleur
 spécifique que Sylpheed utilisera pour vous afficher les URL de façon
-à ce que vous les voyez plus facilement.
+à ce que vous les voyiez plus facilement.
 </sect1>
 
 </sect>

@@ -6,12 +6,12 @@
 L'apparence de la fenêtre de Sylpheed est contrôlée par un thème Gtk+
 (Sylpheed est basé sur l'ensemble d'outils Gtk+). Lisez la documentation
 de Gtk+ ou celle de votre distribution pour trouver comment changer le 
-theme de Gtk+ utilisé.
+thème de Gtk+ utilisé.
 
 
 <sect1>Fenêtre des dossiers
 <p>
-La fenêtre des dossier vous montre tous les dossiers que vous avez créés sous 
+La fenêtre des dossiers vous montre tous les dossiers que vous avez créés sous 
 forme d'une arborescence. Si vous voulez voir les en-têtes des messages d'un
 dossier en particulier, il vous suffit de cliquer dessus une seule fois, et la 
 fenêtre de sommaire affichera alors tous les messages contenus dans ce dossier.
@@ -24,13 +24,13 @@ développée.
 <p>
 Il est possible de modifier la taille de la fenêtre des dossiers en cliquant
 avec le bouton gauche sur le petit bouton (carré) qui se trouve sur la gauche
-en bas de la fenêtre (gardez le bouton de la souris enfoncé et déplacer vous).
+en bas de la fenêtre (gardez le bouton de la souris enfoncé et déplacez vous).
 <p>
 La fenêtre des dossiers peut être détachée de la fenêtre principale de Sylpheed
-en selectionnant le menu : <tt>Vue -> Séparer la vue des dossiers</tt>. Lorsque
+en sélectionnant le menu : <tt>Vue -> Séparer la vue des dossiers</tt>. Lorsque
 vous quittez Sylpheed l'état dans lequel se trouve la fenêtre des dossiers est
 sauvegardé. Cet état est restoré lors du redémarrage de Sylpheed. Pour attacher
-à nouveau la fenêtre des dossiers, déselectionnez l'entrée dans le menu.
+à nouveau la fenêtre des dossiers, désélectionnez l'entrée dans le menu.
 <p>
 <sect2>Dossier spéciaux~:
 <p>
@@ -47,7 +47,7 @@ Sylpheed.
 préférences du compte)
 <p>
 <it>File d'attente~:</it> Ce dossier contient les messages que vous avez écrits
-et qui attendent d'être envoyés ultérieurement (Avec Sylpheed il est possible de
+et qui attendent d'être envoyés ultérieurement (avec Sylpheed il est possible de
 remettre à plus tard l'envoi de messages).
 
 </sect2>
@@ -56,7 +56,7 @@ remettre à plus tard l'envoi de messages).
 <sect1>Fenêtre de sommaire
 <p>
 la fenêtre de sommaire vous résume un cetain nombre d'informations. Vous pouvez
-choisir les informartions que vous voulez voir affichées dans la fenêtre de
+choisir les informations que vous voulez voir affichées dans la fenêtre de
 sommaire en sélectionnant l'option <bf>Choix des éléments affichés...</bf> du 
 menu <bf>Vue</bf>. Voici la liste des options disponibles : 
   <itemize>
@@ -67,7 +67,7 @@ menu <bf>Vue</bf>. Voici la liste des options disponibles :
                     Non lu~: Indique si le message est lu ou non.
             </item>
 	    <item>
-	            Pièces Jointes~: Indique si il y a une ou plusieurs pièces 
+	            Pièces jointes~: Indique si il y a une ou plusieurs pièces 
                     jointes.
             </item>
 	    <item>
@@ -89,7 +89,7 @@ menu <bf>Vue</bf>. Voici la liste des options disponibles :
   </itemize>
 <p>
 Vous pouvez trier la fenêtre de sommaire de plusieurs façons, en cliquant sur le 
-titre de la colonne désirée.. Cliquez une première fois pour obtenir l'ordre 
+titre de la colonne désirée. Cliquez une première fois pour obtenir l'ordre 
 alphabétique (a-z) et une seconde fois pour obtenir l'ordre inverse (z-a).
 <p>
 Si vous pensez que la taille d'une colonne n'est pas correcte, vous pouvez 
@@ -100,7 +100,7 @@ la largeur de la colonne.
 <p>
 Sélectionnez un message en cliquant dessus avec la souris. Lorsque que vous avez
 sélectionné un message dans la fenêtre du sommaire, vous pouvez alors bouger 
-vers le bas ou le haut en vous aidant des flêches du clavier, ou des touches
+vers le bas ou le haut en vous aidant des flèches du clavier, ou des touches
 "p" (précédent NDT~: previous en anglais) et "n" (suivant NDT~: next en anglais)
 comme dans Pine.
 </sect1>
@@ -110,20 +110,20 @@ comme dans Pine.
 Dans la fenêtre du message vous pouvez lire le message que vous avez sélectionné
 dans la fenêtre du sommaire. Si vous ne sélectionnez pas de message
 explicitement, la fenêtre du message reste vide. Au dessus de la fenêtre du
-message, quelques informations a propos du message que vous êtes en train de
+message, quelques informations à propos du message que vous êtes en train de
 lire sont affichées avec quelques statistiques du dossier que vous avez
 sélectionné.
 <p>
-Vous pouvez monter et descendre dans le message en utilisant les flêches du 
+Vous pouvez monter et descendre dans le message en utilisant les flèches du 
 clavier ou la barre de défilement.
 
 La taille des fenêtres de message et de sommaire peut être ajustée en glissant
 (avec le bouton gauche de la souris) la barre qui apparaît entre les deux 
 fenêtres.
 <p>
-On peux utiliser la petite flêche qui se trouve juste dessous la fenêtre de 
+On peut utiliser la petite flèche qui se trouve juste dessous la fenêtre de 
 sommaire pour agrandir au maximum la fenêtre de sommaire. En utilisant cette
-flêche à nouveau, la fenêtre de sommaire retrouve sa taille initiale.
+flèche à nouveau, la fenêtre de sommaire retrouve sa taille initiale.
 Cet état n'est pas sauvegardé lorsque vous quittez Sylpheed.
 <p>
 Lorsque le message en cours contient des fichiers attachés la fenêtre de 
