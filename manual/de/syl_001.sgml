@@ -1,0 +1,102 @@
+<!doctype linuxdoc system>
+<article>
+ <title>Das Sylpheed-Handbuch
+ <author>Paul Kater (paul@nlpagan.net)
+  <newline>Nick Selby
+  <newline>Nicolas Kaiser (nikai@nikai.net)
+ <abstract>
+  Handbuch für Sylpheed version 0.7.4
+ </abstract>
+
+<toc>
+
+<sect>Was ist Sylpheed?<p>
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/full_split.png"></figure>
+
+<sect1>Sylpheed - eine Einführung<p>
+Sylpheed ist ein schneller E-Mail- und Newsclient. Es läuft auf so ziemlich jedem Linux oder Unixsystem.
+
+Ziele bei der Entwicklung von Sylpheed sind
+<itemize>
+<item>Effizienz und Ressourcenschonung
+<item>Schnelligkeit
+<item>intuitive Bedienung
+<item>einfache Anpassbarkeit
+<item>eine Fülle von Features und Optionen
+<item>unter einer eleganten Oberfläche
+</itemize>
+</sect1>
+<sect1>Oberfläche<p>
+Das Erscheinungsbild und die Oberfläche ähneln verschiedenen beliebten E-Mailprogrammen für Windows, wie Outlook Express, Becky!, und Datula. Verschiedene Sets von Tastaturkürzelvorgaben erlauben zusätzlich die Mailprogramme der Emacse zu emulieren, fast alle deren Tastaturkürzel sind enthalten.
+
+E-Mails werden in Mailboxen im MH-Format verwaltet, um eine gemeinsame Benutzung mit anderen MH-basierten E-Mailprogrammen, zum Beispiel Mew, zu ermöglichen. Weiters werden auch fetchmail und/oder procmail unterstützt, und andere externe Empfangsprogramme wie inc oder imget.
+</sect1>
+<sect1>Grundfunktionen<p>
+Zu den bereits integrierten Funktionen gehören: 
+<itemize>
+<item>Verwaltung mehrerer Accounts
+<item>Ansicht der Nachrichten in Threads
+<item>Filtern von Nachrichten
+<item>MIME (Anhänge)
+<item>Eingebauter Bildbetrachter
+<item>X-Face Anzeige 
+<item>Unterstützung externer Editoren
+<item>Warteschlange für E-Mails und News
+<item>Entwurfablage
+<item>Intelligenter Zeilenumbruch
+<item>Klickbare URI
+<item>XML-basiertes Adressbuch
+<item>LDAP-basiertes Adressbuch
+<item>Jpilot Adressbuch (für Palm Handhelds)
+<item>Verwaltung neuer und ungelesener Nachrichten
+<item>Unterstützung mehrerer MH-Boxen
+<item>Mew/Wanderlust-kompatible Tastaturkürzel
+<item>Newsclient Funktionalität
+<item>Druckunterstützung
+<item>UIDL Unterstützung
+<item>APOP Authentifizierung
+<item>SMTP AUTH Unterstützung
+<item>IPv6 Unterstützung
+<item>GPG Verschlüsselung und Signatur
+<item>Autoconf, automake Unterstützung
+<item>i18n Unterstützung von Nachrichten mit gettext
+<item>Unterstützt verschiedene Locale, unter anderem UTF-8 (Unicode) in Verbindung mit libjconv
+<item>IMAP4 Unterstützung
+</itemize>
+Diese Liste ist nicht vollständig, sondern beschränkt sich auf die wichtigsten Eigenschaften Sylpheeds.
+</sect1>
+<sect1>Methoden der Nachrichtenverwaltung<p>
+Es gibt verschiedene Arten, Nachrichten zu verwalten. Die einfachste ist <em>gar nicht</em>.
+
+Viele Leute erhalten täglich viele E-Mails die alle in der &quot;Inbox&quot; landen. Nach einer Weile ist diese Ablage so voll, daß man nichts wiederfindet. Aber wie soll man in einer Ablage mit 5000 Nachrichten die eine Nachricht über ein wichtiges Ereignis finden, die vor einer Woche kam? Selbst wenn man nach Datum sortiert, ist der Aufwand sehr hoch.
+
+Aber dafür gibt es <em>Ablagen und Mailboxen</em>.
+
+Im weiteren Verlauf dieses Handbuches werden wir sehen wie man Mailboxen erstellt, und Ablagen, die weitere Ablagen enthalten können. Was bringt uns das?
+
+Übersichtlichkeit. In verschiedenen Mailboxen kann man verschiedene Arten von Nachrichten speichern. Nehmen wir an, es kämen jeden Tag etwa 20 E-Mails von unserer Kaffeemaschine (vgl. auch <url url="http://coffee.sf.net" name="http://coffee.sf.net">). &quot;Bin leer - bitte Wasser und Kaffee einfüllen&quot;, &quot;Ich koche jetzt&quot;, und &quot;Der Kaffee ist fertig&quot;. Diese Nachrichten sind im Moment informativ, aber spätestens in wenigen Stunden nur noch für die Statistik interessant. Deshalb wäre es unklug sie in einem Ordner mit den E-Mails unserer Geschäftspartner, oder unserer Freunde aus dem Bridge-Club aufzubewahren. Was man nun machen kann ist eine eigene Mailbox für diese Art von E-Mails anzulegen. Wenn nun ein E-Mail von unserer Kaffeemaschine kommt, können wir es in diese Mailbox verschieben.
+
+Das sei umständlich? 20 E-Mails am Tag von Hand aus der "Inbox" in eine andere Mailbox zu verschieben? Genau, das ist nicht nur umständlich, sondern auch fehlerträchtig, weil man mit Sicherheit irgendwann die falsche E-Mail auswählt, und eine wichtige Geschäftsnachricht bei den E-Mails unserer Kaffeemaschine landet.
+
+Aber auch für dieses Problem gibt es eine Lösung. Sie heißt <em>Filter</em>.
+
+Filter können das Verschieben von Nachrichten in andere Ablagen automatisieren. Im weiteren Verlauf dieses Handbuches werden wir sehen, wie man Filter definiert und anwendet, um uns die Arbeit des händischen Sortierens abzunehmen.
+
+<sect2>Gut, was ist nun der Unterschied zwischen einer Mailbox und einer Ablage?<p>
+Mailboxen und Ablagen dienen dem Zweck, uns in einer hierarchischen Baumstruktur unsere Nachrichten verwalten zu lassen. Mailboxen bilden hierbei die Wurzel, sie enthalten automatisch die Ablagen &quot;Inbox&quot;, &quot;Outbox&quot;, &quot;Entwurf&quot;, &quot;Queue&quot; (Warteschlange) und &quot;Trash&quot; (Mülleimer).
+
+Nun könnten wir zum Beispiel eine eigene Mailbox für alle unsere Mailinglisten anlegen. In dieser Mailbox legen wir für jede unserer Mailinglisten eine eigene Ablage an. Weil uns ein Gebiet besonders interessiert, und wir hier vier verschiedene Mailinglisten abonniert haben, erstellen wir für diese vier Listen eine einzelne Ablage mit vier Unterablagen.
+
+Eine Ablage kann allerdings auch E-Mails UND weitere Ablagen enthalten. So könnten wir, um beim vorigen Beispiel zu bleiben, statt einer Ablage mit vier Unterablagen auch eine Ablage mit nur drei Unterablagen erstellen, und eine Mailingliste in der Stammablage verwalten.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/folder_tree.png"></figure>
+
+Wie man sieht hat man bei der Gestaltung seiner Mailbox- und Ablagenstruktur freie Hand. Solange noch Platz auf der Festplatte ist, kann man beliebig viele neue Mailboxen und Ablagen hinzufügen.
+
+Allerdings sinkt die Übersichtlichkeit bei einer zu großen Anzahl von Ablagen auch wieder. So sollte man ein Mittelmaß finden, den eigenen Bedürftnissen entsprechend.
+</sect2>
+</sect1>
+<sect1>Zukünftige Features<p>
+Ein besonderes Kapitel. Wie alle Open Source Projekte richtet sich die Entwicklung vor allem nach den Bedürftnissen der Benutzer. Die beste Möglichkeit selbst an der weiteren Entwicklung teilzuhaben, ist eine von Sylpheeds Mailinglisten zu abonnieren. Wie man das macht wird im Kapitel &quot;Weitere Informationen&quot;, Abschnitt &quot;Mailinglisten&quot; beschrieben.
+</sect1>
+</sect>

@@ -1,0 +1,15 @@
+<sect>Empfangen von Nachrichten
+<sect1>Abfrage eines POP-Servers mit Sylpheed<p>
+Ist ein POP-Server erst einmal eingerichtet, ist die Abfrage nicht schwer. Vergleiche hierzu den Abschnitt &quot;Schnellinstallation von POP3-Accounts&quot;.
+
+Ist man mit dem Internet verbunden, oder mit einem anderen Netzzugang zu einem POP3-Server, und der POP-Server ist im aktuellen Account eingetragen, drückt man einfach den &quot;Holen&quot;-Knopf, oder das entsprechende Tastaturkürzel, und Sylpheed fragt beim Server die E-Mails ab.
+Sobald diese ankommen, werden etwaige Filter auf sie angewandt, und im Ablagenbaum erkennt man an der fetten, farbigen Schrift Ablagen, die ungelesene und neue Nachrichten enthalten.
+</sect1>
+<sect1>Abfrage mit anderen Programmen, wie fetchmail<p>
+Obwohl es nicht Zweck dieses Handbuches ist, ein paar Worte zu fetchmail und getmail.
+
+Ist eines dieser beiden Programme korrekt installiert, und konfiguriert, so kann es entweder manuell oder von CRON aufgerufen werden, um E-Mails abzuholen. Diese werden üblicherweise in der lokalen UNIX Mailbox /var/spool/mail/benutzername abgespeichert.
+
+Um die lokale Mailbox abzurufen, kann man sich einen eigenen Account erstellen, den man wie gewohnt mit &quot;Holen&quot; abfragen kann.
+</sect1>
+</sect>

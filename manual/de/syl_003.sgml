@@ -1,0 +1,21 @@
+<sect>Kurzanleitung News einrichten
+<sect1>Schnellinstallation von News Accounts<p>
+Wähle in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen&quot;
+
+Im &quot;Einfach&quot;-Reiter werden die relevanten Daten angegeben. Name des Accounts, Name und Emailadresse, etc. Um einen News Account zu benutzen, wählt man in der Protokollbox &quot;News (NNTP)&quot;, und gibt die Zugangsdaten des Servers an.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_news_basic.png"></figure>
+
+Überspringe den &quot;Empfangen&quot;-Reiter.
+
+Im &quot;Senden&quot;-Reiter kann man einige weitere Einstellungen wählen.
+
+Im &quot;Verfassen&quot;-Reiter kann man eine Signaturdatei wählen.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
+
+Im &quot;Speziell&quot;-Reiter kann man die Portnummern der verwendeten Server anpassen. Das ist aber in den allermeisten Fällen nicht notwendig.
+
+Nach dem Schließen des Dialogfensters abonniert man Newsgroups durch Rechtsklicken auf den neuen Newsaccount und &quot;Newsgroup abonnieren&quot;. Zunächst wird die Gruppenliste vom Server geladen. Dann wählt man die gewünschten Gruppen.
+</sect1>
+</sect>

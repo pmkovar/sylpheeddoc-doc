@@ -1,0 +1,17 @@
+<sect>Starten und Beenden von Sylpheed
+<sect1>Starten von Sylpheed<p>
+Sylpheed kann durch Eingabe von &quot;sylpheed&quot; in einem Terminal und Drücken der Eingabetaste gestartet werden. Ebenso kann man Sylpheed zu einem Menü in KDE oder Gnome hinzufügen, oder ein Icon am Desktop erstellen wenn der Window Manager dies erlaubt.
+
+Wenn man Sylpheed zum ersten Mal startet, fragt das Programm in welchem Ordner man seine Emails aufbewahren möchte. Man kann bei der Voreinstellung ($HOME/Mail) bleiben oder einen eigenen Ordner erstellen.
+
+Sylpheed wird dann mit seinen Voreinstellungen geladen. Wie man diese den eigenen Bedürftnissen anpasst wird in den folgenden Abschnitten beschrieben.
+</sect1>
+<sect1>Beenden von Sylpheed<p>
+Sylpheed kann auf verschiedene Arten beendet werden:
+<itemize>
+<item>Durch &quot;Datei&quot; -&gt; &quot;Beenden&quot;
+<item>Durch Strg-Q
+<item>Mit dem &quot;program close&quot; Knopf in der Titelleiste.
+</itemize>
+</sect1>
+</sect>

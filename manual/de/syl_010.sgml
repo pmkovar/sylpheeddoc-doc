@@ -1,0 +1,21 @@
+<sect>Adressbuch<p>
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/address_book.png"></figure>
+
+Im Adressbuch kann man Email-Adressen speichern, die man öfter benutzt. Man öffnet es mit dem &quot;Addressbuch&quot;-Knopf, über "Werkzeug" -> "Adressbuch", oder das entsprechende Tastaturkürzel.
+
+<sect1>Hinzufügen und Löschen von Adressen<p>
+Adressen in das Adressbuch aufzunehmen ist einfach. Ein Rechtsklick auf den Ordner oder die Gruppe im Adressbuch, in der man die Adresse eintragen will,  dann auf &quot;Neue Adresse&quot; und im Dialog die Adressdaten eintragen. Man kann diesen Dialog auch direkt über den &quot;Hinzufügen&quot;-Knopf im Adressbuch starten. In diesem Fall wird die Adresse in dem Ordner eingetragen, der im Moment ausgewählt ist.
+
+Eine Adresse wieder zu löschen ist genauso einfach. Einmal auf die Adresse klicken, und den &quot;Löschen&quot;-Knopf drücken.
+</sect1>
+<sect1>Ordner und Gruppen<p>
+Das Adressbuch kann zu einem ganzen Baum von Ablagen erweitert werden, genau wie Mail-Ablagen. Das erreicht man mit einem Rechtsklick auf die Ablage, in der man eine neue Ablage erstellen möchte, und &quot;Neue Ablage&quot;. Nun gibt man der neuen Ablage einen Namen, und drückt &quot;OK&quot;.
+
+Genauso kann man auch eine neue Gruppe in einer Ablage erstellen. Also mit Rechtsklick auf die Ablage, in der man die neue Gruppe erstellen möchte, und &quot;Neue Gruppe&quot;.
+</sect1>
+<sect1>Adressbuch kombiniert mit Eingabefenster<p>
+Zunächst öffnet man das Adressbuch.
+
+Um eine E-Mail-Adresse zu finden, gibt man die ersten Buchstaben des Namens, oder der Adresse ein, und drückt die TAB-Taste. Eine Liste mit passenden Adressen klappt auf, man wählt eine davon mit der Eingabetaste. Nun kann man, wenn man eine Nachricht schreibt, die Adresse mit den Knöpfen &quot;An:&quot;, &quot;Cc:&quot; (Carbon copy) und &quot;Bcc:&quot; (Blind carbon copy) in die Nachricht übernehmen. Andernfalls sind diese Knöpfe deaktiviert.
+</sect1>
+</sect>

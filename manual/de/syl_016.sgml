@@ -1,0 +1,35 @@
+<sect>FAQ
+<p>
+Die aktuelle Version der FAQ (&quot;Frequently Asked Questions&quot;, Liste häufig gestellter Fragen mit Antworten) befindet sich auf
+<url url="http://nlpagan.net/sylpheed-faq.html" name="http://nlpagan.net/sylpheed-faq.html.">
+
+<!--
+<sect1>Ungelesene Postings
+</sect1>
+
+<sect1>MSN Mail Accounts
+</sect1>
+-->
+
+<sect1>Ändern der verwendeten Schriftarten
+<p>
+Will man die Schriftart der Menüs von Sylpheed ändern, so muß man das über die Konfiguration des verwendeten Window Managers (KDE, Gnome, XFCE, etc) machen.
+<p>
+Die Schriftart der anderen Ansichten kann unter &quot;Einstellungen&quot; -&gt; &quot;Allgemeine Einstellungen&quot; geändert werden. Im Reiter &quot;Anzeige&quot; läßt sich die Schriftart mit Voranzeige einstellen.
+</sect1>
+
+<sect1>Ändern der Tastaturkürzel
+<p>
+Da Sylpheeds grafische Oberfläche auf dem &quot;GIMP tool kit&quot; GTK+ beruht, lassen sich die Tastaturkürzel der Menüleiste sehr einfach verändern. Wenn man von anderen Programmen bestimmte Tastenkombinationen gewohnt ist, kann man Sylpheed entsprechend anpassen.
+<p>
+Die Vorgangsweise ist einfach. Als Beispiel wollen wir das Tastaturkürzel für &quot;Nachricht&quot; -&gt; &quot;Empfange neue E-Mail&quot; von Alt+I auf Strg+M verändern.
+<p>
+<itemize>
+<item>Wir öffnen das Menü &quot;Nachricht&quot; mit einem Mausklick, oder mit Alt+M
+<item>Wir wählen &quot;Empfange neue E-Mail&quot; aus, aber ohne Mausklick, da das die Funktion aktivieren würde
+<item>Nun drücken wir Strg+M. Augenblicklich wird das neue Tastaturkürzel angezeigt.
+</itemize>
+Glückwunsch! Wir haben ein neues Tastaturkürzel. Auf diese Weise können alle Menüfunktionen mit Kürzeln belegt werden. Am Besten nimmt man Kombinationen mit Alt, Shft und/oder Strg. Einige Funktionen in Sylpheed können mit fest eingebauten Eintasten-Kürzeln aufgerufen werden.
+</sect1>
+
+</sect>

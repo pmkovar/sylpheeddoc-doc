@@ -1,0 +1,221 @@
+<sect>Tour durch Sylpheed
+<sect1>Menüleiste<p>
+Die Menüleiste von Sylpheed ist der zentrale Zugang zu den Funktionen von Sylpheed. Die Menüstruktur gliedert sich in folgende Bereiche:
+<sect2>Datei<p>
+<itemize>
+<item>Mailbox hinzufügen: legt eine neue MH-Mailbox an, mit den Ablagen Inbox, Outbox, Queue, Entwurf und Trash
+<item>Ablagebaum erneut durchsuchen: Erneuert die Anzeige aller vorhandenen Mailboxen. Praktisch für lokale Mailboxen
+<item>Ablage: Hinzufügen, Umbenennen oder Löschen einer Ablage
+<item>Importiere Mbox-Datei...: importiert eine Mbox-Datei (wie etwa von Pine) als MH-Mailbox
+<item>Exportiere in Mbox-Datei: exportiert eine MH-Mailbox als Mbox-Datei
+<item>Papierkorb leeren: leert die Trash-Ablagen
+<item>Speichern als: speichert die ausgewählte Nachricht als Textdatei
+<item>Drucken: druckt die ausgewählte Nachricht auf einem Drucker oder in eine Datei
+<item>Beenden: beendet Sylpheed
+</itemize>
+</sect2>
+<sect2>Bearbeiten<p>
+<itemize>
+<item>Kopieren: kopiert den ausgewählten Text in einen Zwischenspeicher, von wo aus er anderswo wieder eingefügt werden kann.
+<item>Alle auswählen: wählt den gesamten Text des aktiven Fensters.
+<item>Aktuelle Nachricht durchsuchen...: durchsucht das aktive Fenster nach einem Text.
+<item>Suche Nachrichten...: durchsucht die ausgewählte Ablage nach einem Text.
+</itemize>
+</sect2>
+<sect2>Ansicht<p>
+Hier wird das Erscheinungsbild von Sylpheed angepasst. Man kann verschiedene Fenster ausgliedern, ausblenden, die Werkzeugleiste anpassen, die Statusleiste an- und ausschalten, etc
+
+<itemize>
+<item>Ablagebaum: noch nicht implementiert
+<item>Nachrichtenansicht: noch nicht implementiert
+<item>Werkzeugleiste: Anzeige mit Bildern und Text, nur Bildern, nur Text, oder gar nicht
+<item>Statuszeile: zeigen oder verstecken
+<item>Einzelner Ablagebaum: Ablagebaum im Hauptfenster, oder in eigenem Fenster
+<item>Getrennte Nachrichtenansicht: Nachrichtenansicht im Hauptfenster, oder in eigenem Fenster
+<item>Ablageninhaltsansicht ändern: erlaubt das Unterdrücken der Nachrichtenanzeige
+<item>Sortieren: sortiert die Ablage nach Nummer, Größe, Datum, Absender, Betreff, Farbetikett, Markierung, Ungelesen oder Anhang, oder Betreff ohne &quot;Re:&quot;
+<item>Threads einschalten: ordnet die Ablage in Threads (&quot;Diskussionsfäden&quot;), eine Baumstruktur die den Diskussionsverlauf widerspiegelt
+<item>Setze Anzeige Informationen...: erlaubt die Auswahl der in der Nachrichtenübersicht angezeigten Informationen
+<item>Zeichensatz: wählt den Zeichensatz. Um aber zB das Eurosymbol darzustellen, muß das Zeichen auch in der verwendeten Schriftart enthalten sein!
+<item>Gehe zu...: Anzeige der vorherigen Nachricht, nächsten Nachricht, vorherigen ungelesenen Nachricht, nächsten ungelesenen Nachricht, vorherigen markierten Nachricht, nächsten markierten Nachricht, vorherigen etikettierten Nachricht, nächsten etikettierten Nachricht, oder einer anderen Ablage
+<item>Öffne in neuem Fenster: Öffnet die markierte Nachricht in eigenem Fenster. Dieses kann mit ESC geschlossen werden
+<item>Zeige Quellen: Öffnet die markierte Nachricht in eigenem Fenster in Textansicht. Dieses kann mit ESC geschlossen werden
+<item>Zeige Kopfzeilen: Anzeige der Kopfzeilen der markierten Nachricht in Textansicht
+<item>Aktualisieren: aktualisiert die Ansicht
+</itemize>
+</sect2>
+<sect2>Nachricht<p>
+<itemize>
+<item>Empfange neue E-Mail: ruft E-Mail vom Standardaccount ab
+<item>Empfange von allen Accounts: ruft E-Mail von allen gekennzeichneten E-Mail-Accounts ab
+<item>Sende wartende Nachrichten: alle Nachrichten in der &quot;Queue&quot;-Ablage (Warteschlange) werden versandt
+<item>Verfasse neue Nachricht: eine neue Nachricht schreiben
+<item>Antwort: eine Nachricht schreiben mit dem Sender der ausgewählten Nachricht als Empfänger. Je nach Einstellungen wird die ursprüngliche Nachricht zitiert, und eine Signatur angefügt.
+<item>Antwort an alle: wie Antwort, nur werden als Empfänger alle E-Mail-Adressen der ausgewählten Nachrichten eingetragen, auch die &quot;carbon copies&quot;
+<item>Weiterleiten: eine Nachricht schreiben die die ausgewählte Nachricht mit Kopfzeilen je nach Einstellung als Text enthält.
+<item>Weiterleiten als Anhang: wie Weiterleiten, nur als Anhang statt Text.
+<item>Wiederbearbeiten: Bearbeiten von Nachrichten aus der Entwurfablage, oder in der Warteschlange.
+<item>Verschieben: verschiebt Nachrichten in eine andere Ablage, die man in einem Dialogfenster auswählt.
+<item>Kopieren: wie Verschieben, mit dem Unterschied daß die Nachricht kopiert statt verschoben wird
+<item>Löschen: verschiebt Nachrichten in die Trash-Ablage. Nachrichten, die dort gelöscht werden, werden endgültig entfernt.
+<item>Lösche mehrfach vorhandene Nachrichten: Löscht mehrfach vorhandene Nachrichten aus der ausgewählten Ablage.
+<item>Markieren: Markieren, Markierung enfernen, Markieren als ungelesen, Markieren als gelesen, Alle als gelesen markieren. Nach dem Markieren von Nachrichten kann man bestimmte Funktionen (verschieben, löschen, etc) auf alle markierten Nachrichten ausführen. Von irrtümlich markierten Nachrichten können die Markierungen entfernt werden. Die anderen Optionen ändern die Markierung von Nachrichten als gelesen oder ungelesen.
+</itemize>
+Markieren: Markieren, Markierung enfernen, Markieren als ungelesen, Markieren als gelesen, Alle als gelesen markieren. Nach dem Markieren von Nachrichten kann man bestimmte Funktionen (verschieben, löschen, etc) auf alle markierten Nachrichten ausführen. Von irrtümlich markierten Nachrichten können die Markierungen entfernt werden. Die anderen Optionen ändern die Markierung von Nachrichten als gelesen oder ungelesen.
+</sect2>
+<sect2>Werkzeug<p>
+<itemize>
+<item>Adressbuch: im Adressbuch kann man E-Mail-Adressen speichern, und diese in Gruppen und in einem Verzeichnisbaum verwalten
+<item>Absender in Adressbuch eintragen: der Absender der ausgewählten Nachricht wird in das Adressbuch aufgenommen
+<item>Nachrichten filtern: die Nachrichten in der aktuellen Ablage werden nach den Filterregeln gefiltert
+<item>Filter erstellen: Automatisch, nach Von, nach An, nach Betreff. Hier können schnell Filter für Absender, Empfänger oder Betreff der ausgewählte Nachricht definiert werden
+<item>Ausführen: wird benötigt wenn in den Einstellungen &quot;Sofort Ausführen&quot; nicht ausgewählt ist. &quot;Ausführen&quot; führt dann die Aktion aus (zB. kopieren, bewegen, filtern etc.)
+<item>Logbuch Fenster: Anzeige der Kommunikation zwischen Sylpheed und Servern. Eignet sich gut für Fehleranalyse. Das Fenster läßt sich mit ESC schließen
+</itemize>
+</sect2>
+<sect2>Einstellungen<p>
+In den Einstellungen kann Sylpheed nach Bedarf konfiguriert werden.
+
+<itemize>
+<item>Allgemeine Einstellungen...:
+Hier kann man in einem Dialog in mehreren Reitern Sylpheeds Einstellungen anpassen. Im nächsten Abschnitt werden die Optionen im Detail erklärt
+<item>Filtereinstellungen...:
+In diesem Dialog kann man Filtereinstellungen definieren und verändern. Damit können Nachrichten auf verschiedene Weise verarbeitet werden sobald Sylpheed sie empfängt.
+Zunächst bestimmt man eine Gemeinsamkeit der Nachrichten, die man filtern möchte, und dann, was Sylpheed mit diesen Nachrichten machen soll.
+Zum Beispiel kann man diese Nachrichten in eine bestimmte Ablage verschieben (auch in den Papierkorb, um sie schnell los zu werden).
+
+Die Ziel-Ablage wird über den &quot;Auswählen&quot;-Knopf festgelegt.
+
+Man kann sich auch dafür entscheiden, die Nachricht nicht zu empfangen. In diesem Fall wird die Nachricht auf dem Mailserver belassen, aber nicht gelöscht!
+
+Mit dem &quot;Registrieren&quot;-Knopf wird die Filterregel zur Liste der Regeln hinzugefügt. Mit &quot;Ersetzen&quot; kann die in der Liste ausgewählte Regel mit einer neuen Regel ersetzt werden. &quot;Löschen&quot; entfernt die ausgewählte Regel aus der Liste.
+
+Für jede Regel können zwei Bedingungen festgelegt werden, die mit &quot;or&quot; oder &quot;and&quot; verknüpft sing. &quot;or&quot; bedeutet, daß von den beiden Bedingungen nur eine zutreffen muß, bei &quot;and&quot; müssen beide Bedingungen erfüllt sein.
+
+Auf der rechten Seite der Filterregeln befinden sich die Knöpfe &quot;Auf&quot; und &quot;Ab&quot;. Mit ihnen kann man Regeln nach oben oder unten verschieben, und so die Reihenfolge ihrer Abarbeitung festgelegt.
+
+<item>Schablone:
+<item>Einstellungen für den aktuellen Account...: 
+Hier können die Einstellungen des aktuellen Accounts angepasst werden. Ob Nachrichten beim Empfang auf dem Server gelöscht werden sollen, die Adresse des Servers, etc. Entspricht dem Dialog beim Erstellen des Accounts.
+<item>Neuen Account erstellen...:
+In diesem Dialog wird ein neuer Account erstellt. Man gibt dem Account einen Namen, trägt seine persönlichen Daten ein und wählt die Art des Servers (POP3, IMAP4, lokale Mailbox, Newsserver).
+Man kann wählen, in welcher Ablage neue Nachrichten erscheinen sollen, voreingestellt ist die &quot;Inbox&quot;.
+Im &quot;Empfangen&quot;-Reiter und im &quot;Senden&quot;-Reiter stehen weitere Einstellungen zur Auswahl. Im &quot;Verfassen&quot;-Reiter kann man eine Signaturdatei angeben, und im &quot;Speziell&quot;-Reiter die verwendeten Ports anpassen, was aber nur in Ausnahmefällen erforderlich ist.
+<item>Accounts bearbeiten:
+Hier wählt man einen bestehenden Account, dessen Einstellungen man verändern möchte. Während man eine Nachricht schreibt, ist es nicht möglich den aktuellen Account zu verändern.
+<item>Aktuellen Account wechseln...:
+Hier wählt man den aktuellen Account, um Nachrichten zu schreiben, oder zu empfangen. Dieser wird in der Statuszeile rechts angezeigt.
+</itemize>
+</sect2>
+<sect2>Hilfe<p>
+Hier findet man Handbücher in mehreren Sprachen, und Antworten auf häufig gestellte Fragen
+
+&quot;Über&quot; zeigt Informationen über Sylpheed und seine Entwickler an.
+</sect2>
+</sect1>
+<sect1>Kontextmenü<p>
+Ins Kontextmenü gelangt man mit einem Rechtsklick in Ablagebaum oder Ablageübersicht.
+
+In der Ablageübersicht kann man über das Kontextmenü Ablagen hinzufügen, umbenennen oder löschen.
+
+In der Ablagenübersicht stehen über das Kontextmenü viele Funktionen der Menüleiste zu Verfügung, man kann sich beispielsweise die Kopfzeilen von Nachrichten anzeigen lassen, eine Nachricht in einem eigenen Fenster öffnen.
+</sect1>
+</sect>
+<sect>Dialoge und Ansichten<p>
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/all_with_image.png"></figure>
+
+<sect1>Ablagebaum<p>
+Der Ablagebaum zeigt alle Mailboxen, Ablagen und Newsaccounts die man angelegt hat, in Baumstruktur. Um zu sehen welche Nachrichten sich in einer Ablage befinden, klickt man einmal auf deren Namen, und bekommt sie als Liste in der Ablagenübersicht angezeigt.
+
+Sieht man ein + Zeichen vor einer Ablage, so bedeutet das, daß diese Ablage eine oder mehrere weitere Ablagen enthält, die momentan nicht angezeigt werden. Klickt man auf das + Zeichen, so wird es zu einem - Zeichen und die enthaltenen Ablagen werden angezeigt. Genauso kann dies auch wieder rückgängig gemacht werden.
+
+Spezielle Ablagen:
+
+Entwurf: Hier kann man Nachrichten ablegen, die man öfter versenden will, oder an denen man noch arbeiten möchte. Mit &quot;Wiederbearbeiten&quot; aus dem Kontextmenü kann man diese Nachrichten weiter bearbeiten.
+
+Trash (Papierkorb): hierhin werden alle gelöschten Nachrichten verschoben. Werden Nachrichten hier gelöscht, verschwinden sie endgültig. In den Allgemeinen Einstellungen kann angegeben werden, ob Sylpheed diese Ablage beim Beenden leeren soll.
+</sect1>
+
+<sect1>Ablageübersicht<p>
+In der Ablageübersicht kann man sich verschiedene Informationen über die in einer Ablage enthaltenen Nachrichten anzeigen lassen. Welche das im Einzelnen sind, kann man über &quot;Ansicht&quot; -&gt; &quot;Setze Anzeige Informationen&quot; auswählen. Zur Auswahl stehen:
+<itemize>
+<item>Markiert: zeigt ob die Nachricht markiert wurde
+<item>Ungelesen: zeigt ob die Nachricht gelesen wurde, oder nicht
+<item>Anhang: zeigt MIME Anhänge
+<item>Nummer: zeigt die MH-Nummer der Nachricht
+<item>Größe: die Dateigröße der Nachricht, inklusive Anhänge
+<item>Datum: das Datum, an dem die Nachricht vom Absender abgeschickt wurde
+<item>Von: der Absender
+<item>Betreff: der Betreff der Nachricht
+</itemize>
+Man kann die Ablageübersicht auf verschiedene Weisen sortieren, indem man auf die Knöpfe über den Spalten klickt. 
+
+Will man die Breite einer Spalte verändern, so bewegt man den Mauszeiger zwischen die Knöpfe, bis er seine Form verändert, drückt die linke Maustaste und zieht die Begrenzung nach links oder rechts.
+
+Man wählt eine Nachricht aus, indem man einmal auf sie klickt. Sobald sich die Ablageübersicht im Fokus befindet, kann man sich auch mit den Pfeiltasten in der Liste auf- und abbewegen, oder mit den entsprechenden Tastaturkürzeln.
+</sect1>
+
+<sect1>Nachrichtenansicht<p>
+In der Nachrichtenansicht kann man den Inhalt einer Nachricht lesen. Solange in der Ablageübersicht keine Nachricht ausgewählt ist, ist die Nachrichtenansicht leer.
+
+Über der Nachricht werden Informationen aus den Kopfzeilen angezeigt, eine Statistik über die Ablage, und das eventuell in den Kopfzeilen enthaltene X-Face, sofern Sylpheed mit X-Face-Unterstützung kompiliert wurde.
+
+Innerhalb der Nachricht kann man sich mit den Pfeiltasten, oder der Laufleiste auf- und abbewegen.
+</sect1>
+<sect1>Allgemeine Einstellungen<p>
+In &quot;Einstellungen&quot; -&gt; &quot;Allgemeine Einstellungen&quot; befinden sich die folgenden Reiter:
+
+<sect2>Empfangen<p>
+Hier kann man Einstellungen für den Nachrichtenempfang anpassen.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_receive.png"></figure>
+
+<itemize>
+<item>Man kann ein spezielles Programm angeben, um Nachrichten aus der voreingestellten UNIX Mailbox zu empfangen. Normalerweise ist das nicht notwendig.
+<item>&quot;Lokales Mailboxverzeichnis&quot; gibt an, wo sich die lokale Mailbox befindet. Hier kann man auch wählen ob man diese Nachrichten beim Empfang filtern möchte.
+<item>&quot;Automatische Aktualisierung&quot; gibt an ob und in welchem Abstand neue E-Mails abgefragt werden.
+<item>Mit &quot;Hole neue E-Mail beim Programmstart&quot; kann man Sylpheed schon beim Start neue Nachrichten aller ausgewählten Accounts abfragen lassen.
+<item>Im &quot;News&quot;-Abschnitt kann man angeben wieviele Postings beim Öffnen einer Newsgroup heruntergeladen werden sollen.
+</itemize>
+</sect2>
+</sect1>
+
+<sect1>Einen Account einrichten/Ändern eines Accounts<p>
+Um einen neuen Account einzurichten, wählt man &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot;. Will man die Einstellungen eines bereits vorhandenen Accounts ändern, wählt man &quot;Einstellungen&quot; -&gt; &quot;Accounts bearbeiten...&quot;. Dann wählt man den zu ändernden Account, und drückt den &quot;Bearbeiten&quot;-Knopf. Im folgenden Dialog kann man die Einstellungen über folgende Reiter anpassen:
+
+<sect2>Reiter &quot;Einfach&quot;<p>
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_basic.png"></figure>
+
+Im &quot;Einfach&quot;-Reiter gibt man dem Account einen Namen. Damit kann man ihn in der Statuszeile besser wiedererkennen. Deshalb empfiehlt es sich einen prägnanten Namen zu benutzen, zum Beispiel den des Providers. Man kann den Account auch zum Standardaccount machen, mit &quot;Standardaccount&quot;.
+
+Man gibt Name und E-Mail-Adresse an, und gegebenenfalls die Organisation. In der "Protokoll"-Box gibt man die Art des Servers an: POP3 normal, POP3 APOP auth, IMAP4, NNTP news, oder Keiner (lokal). 
+
+Bei POP3 und IMAP kann man die Adresse des Servers angeben, Benutzernamen und Passwort, und Angaben für den SMTP-Server. 
+
+Bei einer lokalen UNIX Mailbox wird kein Server für den Empfang benötigt.
+</sect2>
+<sect2>Reiter &quot;Empfangen&quot;<p>
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_pop_receive.png"></figure>
+
+Der &quot;Empfangen&quot;-Reiter wird vorwiegend für POP3-Accounts benutzt. Hier gibt man an, ob empfangene Nachrichten vom Server gelöscht werden sollen. Man kann auch alle vorhandenen Nachrichten vom Server holen, auch solche, die bereits abgeholt, aber nicht gelöscht wurden.
+&quot;Hole alle&quot; gibt an, ob dieser Server abgefragt werden soll, wenn &quot;Nachricht&quot; -&gt; &quot;Empfange von allen Accounts&quot; durchgeführt wird.
+</sect2>
+
+<sect2>Reiter &quot;Senden&quot;<p>
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_send.png"></figure>
+
+Der "Senden"-Reiter enthält weitere Optionen.
+</sect2>
+
+<sect2>Reiter &quot;Empfangen&quot;<p>
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
+
+Im &quot;Empfangen&quot;-Reiter kann eine Signatur-Datei gewählt werden.
+</sect2>
+
+<sect2>Reiter &quot;Speziell&quot;<p>
+Im &quot;Speziell&quot;-Reiter können die Ports der Server angepasst werden. Normalerweise ist das nicht notwendig.
+</sect2>
+</sect1>
+</sect>

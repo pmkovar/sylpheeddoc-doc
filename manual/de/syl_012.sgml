@@ -1,0 +1,38 @@
+<sect>Umgang mit MIME-Typen
+<sect1>Wie Sylpheed MIME-Typen erkennt<p>
+(Wir danken Adriaan Penning f&uuml;r diesen Abschnitt!)
+
+Zwei Dateien, &quot;mime.types&quot; und &quot;mailcap&quot;, sind daf&uuml;r zust&auml;ndig den MIME-Typ eines Anhangs zu erkennen, und die daf&uuml;r zust&auml;ndige Anwendung.
+Die Datei "mime.types" entscheidet auch &uuml;ber den MIME-Typ eines Anhangs, den man beim Verfassen einer Nachricht anheftet. Die Datei besteht aus Zeilen wie:
+
+application/pdf pdf
+
+Sylpheed sucht nach dieser Datei in SYSCONFDIR (wird beim Kompilieren bestimmt), und $HOME/.sylpheed/
+
+Wenn diese Datei nicht existiert, oder im falschen Format, so verwendet Sylpheed &quot;application/octet-stream&quot; als MIME-Typ, was es dem Empfänger erschweren kann zu entscheiden, mit welcher Anwendung er den Anhang öffnen soll.
+
+Um die voreingestellte Anwendung zu ändern, die von Sylpheed zum Öffnen des Anhangs verwendet wird, sucht und editiert man die mailcap Datei, /etc/mailcap oder $HOME/.mailcap
+
+Wenn man zum Beispiel pdf-Dateien mit xpdf öffnen möchte, fügt man folgende Zeile /$HOME/.mailcap hinzu:
+
+application/pdf ; xpdf %s
+</sect1>
+</sect>
+<sect>Konvertieren anderer Mailordnerformate in Sylpheeds MH-Format
+<sect1>Importieren von Mbox-Ordnern<p>
+Sylpheed kann Nachrichten im Mbox-Format aus dem Dateimen&uuml; heraus importieren. Zun&auml;chst erzeugt man einen Ordner in den die Nachrichten kommen sollen, dann w&auml;hlt man &quot;Datei&quot; -&gt; &quot;Importiere Mbox Datei&quot;. &Uuml;ber &quot;Ausw&auml;hlen...&quot; w&auml;hlt man nun den Ordner in Sylpheed, und dr&uuml;ckt &quot;OK&quot;. Und schon werden die Nachrichten importiert.
+
+Das war einfach, nicht wahr?
+</sect1>
+<sect1>Importieren von Ordnern aus Windowsprogrammen (Becky!, AL-Mail, Outlook Express4, etc.)<p>
+Eine gute Hilfe f&uuml;r das Importieren von Nachrichten dieser und &auml;hnlicher Mailprogramme ist das Programm mbx2mbox auf sourceforge.net. Das Projekt befindet sich auf 
+<url url="http://mbx2mbox.sourceforge.net" name ="http://mbx2mbox.sourceforge.net.">
+</sect1>
+<sect1>Importieren von dbx-Ordnern aus Outlook Express 5<p>
+Eine gute Hilfe f&uuml;r das Importieren von Nachrichten dieses und &auml;hnlicher Mailprogramme ist das Programm mbx2mbox auf sourceforge.net. Das Projekt befindet sich auf 
+<url url="http://mbx2mbox.sourceforge.net" name="http://mbx2mbox.sourceforge.net.">
+</sect1>
+<sect1>Exportieren von Sylpheeds Mailablagen in eine Mbox-Datei<p>
+Sylpheed kann Mailablagen im Mbox-Format direkt mit &quot;Datei&quot; -&gt; &quot;Exportiere in Mbox-Datei...&quot; exportieren, wobei man den Namen der Mbox-Datei w&auml;hlen oder eingeben kann.
+</sect1>
+</sect>
