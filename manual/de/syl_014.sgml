@@ -1,0 +1,81 @@
+<sect>Anpassung<p>
+Sylpheed bietet eine Vielzahl von Möglichkeiten, die Oberfläche den eigenen Bedürftnissen entsprechend anzupassen.
+<sect1>Allgemeine Einstellungen<p>
+Über &quot;Einstellungen&quot; -&gt; &quot;Allgemeine Einstellungen...&quot; gelangt man in einen Dialog, in welchem man in mehreren Reitern folgende Optionen verändern kann:
+
+</sect1>
+<sect1>Beschreibung der Optionen<p>
+Im Reiter &quot;Verfassen&quot; können folgende Einstellungen angepasst werden:
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_compose.png"></figure>
+
+<itemize>
+<item>Unterschriftentrenner (Signaturtrennzeichen): Viele Anwendungen setzen hier &quot;-- &quot; voraus. Das automatische Einfügen kann ein-, oder ausgeschalten werden.
+<item>Starte externen Editor automatisch: Hier kann man einen externen Editor, den man im Reiter &quot;Weiteres&quot; angibt, beim Schreiben von Nachrichten automatisch starten lassen. Beim Verlassen des Editors wird der Nachrichtentext übernommen.
+<item>Stufen der Rückgängigmachung: gibt an, wieviele Arbeitsschritte Sylpheed sich für &quot;Bearbeiten&quot; -&gt; &quot;Rückgängig&quot; merken soll.
+<item>Zeilenumbruch nach x Zeichen: In vielen Anwendungen werden zwischen 75 und 80 Zeichen pro Zeile dargestellt, bei längeren Zeilen erfolgt unkontrolliertes Umbrechen ("Kamm"). 72 ist ein guter Wert.
+<item>Zitat umbrechen: passt die Formatierung des zitierten Textes dem Zeilenumbruch an.
+<item>Zeilenumbruch vor dem Senden: Verhindert Überlängen automatisch.
+<item>Wähle automatisch den Account für die Antworten: erkennt den Account anhand der E-Mail-Adresse.
+<item>Zitiere Nachricht in der Antwort: fügt Text der ursprünglichen Nachricht mit Zitatzeichen in die Antwort ein.
+</itemize>
+
+Im Reiter &quot;Anzeige&quot; können folgende Einstellungen angepasst werden:
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_display.png"></figure>
+
+<itemize>
+<item>Schriftart: Hier kann die Schriftart für die Nachrichtenansicht gewählt werden.
+<item>Übersetze Kopfzeilennamen: Passt die Namen der Kopfzeilen der Sprache an.
+<item>Zeige Anzahl der ungelesenen E-Mails: Erlaubt die Anzeige der Anzahl ungelesener Nachrichten direkt hinter dem Namen der Ablage.
+<item>Zeige Empfänger in "Von:"-Zeile: Um bei Nachrichten, die man selbst geschrieben hat, den Empfänger in der Ablagenübersicht anzuzeigen.
+<item>Benutze horizontalen Scrollbar: Schaltet die horizontale Laufleiste unterhalb der Ablageninhaltsansicht an, oder aus. Wenn ausgeschaltet, kann man nicht nach rechts scrollen um überlange Betreff-Zeilen zu lesen.
+<item>Threads entfalten: Wenn diese Option gewählt ist, und Ansicht in Threads aktiviert ist, werden sie zusammengefaltet dargestellt, mit einem vorangestellten "+"-Zeichen. Andernfalls wird der gesamte Baum angezeigt.
+<item>Zeige ungelesene Nachrichten mit dicker Schrift: Mit dieser Option werden ungelesene Nachrichten in der Ablageninhaltsansicht mit dicker Schrift dargestellt.
+<item>Datumsformat: Hier kann man das Datumsformat anpassen. Mit dem "..."-Knopf kann man sich eine Liste der möglichen Symbole anzeigen lassen, inklusive Vorschau.
+<item>Setze Einträge der Ablageninhaltsansicht...: Mit diesem Knopf kann man die in den Spalten der Ablagenübersicht angezeigten Informationen auswählen.
+</itemize>
+
+Der Reiter &quot;Nachricht&quot; bietet folgende Einstellungen:
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_message.png"></figure>
+
+<itemize>
+<item>Benutze Farben für Nachrichten: Für Nachrichtentext, verschiedene Ebenen zitierten Textes und URIs können Farben gewählt werden.
+<item>Stelle 2-byte Alphabet und Zahlen mit 1-byte Zeichen dar: Wird benötigt für 2-byte Sprachen wie Japanisch oder Chinesisch.
+<item>Zeige Kopfzeilenleiste über Nachrichtenansicht: Mit dieser Option werden die Kopfzeilen &quot;Von:&quot;, &quot;An:&quot; und &quot;Betreff:&quot; in einem eigenen Bereich oberhalb der Nachricht angezeigt.
+<item>Zeige kurze Kopfzeilen in der Nachrichtenansicht: Hier kann man die Kopfzeilen angeben, die in der Nachrichtenansicht angezeigt werden sollen. Über den &quot;Bearbeiten&quot;-Knopf gelangt man in einen Dialog, in welchem man sich eine Liste der gewünschten Kopfzeilen erstellen kann. 
+<item>Zeilenabstand: Hier gibt man an, wieviele Pixel Abstand Sylpheed zwischen zwei Textzeilen in der Nachrichtenansicht verwenden soll.
+<item>Halte Abstand vom Anfang: Rückt am Anfang einer neuen Zeile in der Nachrichtenansicht etwas ein. Kann bei langen E-Mails nützlich sein.
+<item>Scroll: Halbe Seite: Normalerweise bewirkt die Leertaste das Weiterblättern um eine Seite. Hier kann man einstellen, daß nur eine halbe Seite weitergescrollt werden soll.
+<item>Fließendes Scrollen: Hier kann angegeben werden, daß die Leertaste statt zu blättern fließend scrollt. Kann hübsch aussehen, ist aber langsamer.
+</itemize>
+
+Der Reiter &quot;Benutzerschnittstelle&quot; bietet folgende Einstellungen:
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_interface.png"></figure>
+
+<itemize>
+<item>Erste Nachricht anzeigen beim Öffnen einer Ablage
+<item>Wechsle zu Inbox nach dem Empfang neuer E-Mail
+<item>Sofort ausführen beim Bewegen oder Löschen von Nachrichten
+<item>Zeige Empfangen-Dialog: Immer, nur wenn ein Fenster aktiv ist, oder nie
+<item>Adresse ins Ziel einfügen bei Doppelklick
+<item>Tastenkombinationen wählen: Wechselt zwischen Vorgabesets der Tastaturkürzel
+</itemize>
+
+Schließlich gibt es noch den Reiter &quot;Weiteres&quot;. Hier können Hilfsanwendungen für Sylpheed angegeben werden.
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_other.png"></figure>
+
+<itemize>
+<item>&quot;Internet-Browser&quot;: Hier kann man seinen Lieblings-Internet-Browser eintragen (galeon, konqueror, skipstone, lynx, mozilla, opera, netscape, etc). Mit dem %s Parameter wird die URL an den Browser weitergegeben.
+<item>&quot;Drucken&quot;: Hier wird das für den Druck zuständige Programm angegeben. Voreingestellt ist lpr, und %s ist der Name der temporären Datei, die Sylpheed für den Druck verwendet.
+<item>&quot;Editor&quot;: Hier kann man einen externen Editor angeben, mit welchem man seine E-Mails schreibt, zum Beispiel vi, emacs oder gedit. Für textbasierte Editoren wie vi muß ein Terminalfenster angegeben werden, wie <tt>xterm -e vi %s</tt>. Auch hier ist %s der Name der temporären Datei, die Sylpheed für die Eingabe anlegt.
+<item>Nachfrage beim Beenden: Öffnet beim Beenden ein Dialogfeld zur Bestätigung.
+<item>Leere Papierkorb beim Beenden: Entleert den Papierkorb automatisch.
+<item>Frage vor dem Leeren: Öffnet beim Leeren des Papierkorbs ein Dialogfeld zur Bestätigung.
+<item>Warnen, wenn wartende Nachrichten vorhanden: Öffnet beim Beenden ein Dialogfeld zur Bestätigung, falls noch Nachrichten in der Queue-Ablage sind.
+</itemize>
+</sect1>
+</sect>
