@@ -1,0 +1,613 @@
+<!--  -->
+<!--  Spanish translation for Sylpheed FAQ (http://nlpagan.net/sylpheedfaq.htm) -->
+<!--  This translation is (C) 2001 by Ricardo Mones Lastra   -->
+<!--  -->
+<!doctype linuxdoc system>
+<article>
+
+
+<title>
+Preguntas Más Frecuentes (FAQ) de Sylpheed versión 0.5.3
+</title>
+
+<author>
+Ricardo Mones Lastra <tt>&lt;mones@aic.uniovi.es&gt;</tt>
+</author>
+
+<!--  General information -->
+<sect>
+Información general
+
+<!-- gi.Q01 -->
+<sect1>¿Están disponibles los FAQs en otros idiomas?
+<p>
+R.: Si, al final de este documento encontrará los
+enlaces a varias traducciones ya disponibles, entre las
+que se incluye Inglés, Francés, Italiano y Japonés.
+</p>
+</sect1>
+
+<!-- gi.Q02 -->
+<sect1>¿Qué es Sylpheed?
+<p>
+R.: Sylpheed es un cliente de correo (y lector de noticias)
+basado en GTK+, que corre bajo el X Window System, y
+buscando:
+<itemize>
+<item> Rápida respuesta
+<item> Interfaz sofisticado y agradable
+<item> Fácil configuración y manejo intuitivo
+<item> Múltiples características
+</itemize>
+</p>
+</sect1>
+   
+<!-- gi.Q03 -->
+<sect1>¿Dónde puedo obtener Sylpheed?
+<p>
+R.:  Se puede bajar de <tt>http://sylpheed.good-day.net</tt>
+Hay enlaces para descargar las fuentes completas y               
+también enlaces a sitios donde se pueden
+descargar RPM's (para RedHat y Mandrake), paquetes
+DEB para Debian, así como instalaciones para Solaris y    
+FreeBSD.
+</p>
+</sect1>
+
+<!-- gi.Q04 -->
+<sect1>¿Quién ha realizado Sylpheed?
+<p>
+R.: Hiroyuki Yamamoto <tt>&lt;hiro-y@kcn.ne.jp&gt;</tt>
+</p>
+</sect1>
+
+<!-- gi.Q05 -->
+<sect1>¿Qué significa el nombre Sylpheed?
+<p>
+R.: Significa de peso ligero, como el aire. Viene del nombre
+de los espíritus del viento, las sílfides (Sylphs en inglés).
+</p>
+</sect1>
+
+<!-- gi.Q06 -->
+<sect1>¿Cómo almacena Sylpheed los correos?
+<p>
+R.: Los correos son almacenados en el formato MH, usado por                   
+el propio MH y EMH. Los formatos <tt>maildir</tt> y <tt>mbox</tt> no     
+están (aún) soportados, aunque es posible                        
+importar un fichero <tt>mbox</tt> en Sylpheed.
+</p>
+</sect1>
+
+<!-- gi.Q07 -->
+<sect1>¿Por qué no funciona la recolección automática de correo?
+<p>
+R.: La recolección automática funciona desde esta versión. Si la
+necesita o la quiere deberá actualizarse.
+</p>
+</sect1>
+
+<!-- gi.Q08 -->
+<sect1>¿Tiene Sylpheed filtros para el correo?
+<p>
+R.: Si. Los puedes encontar en la pestaña Configuración->Preferencias comunes->Filtrado
+</p><p>
+NOTA: el filtrado aún no está implementado para cuentas IMAP
+</p></sect1>
+
+
+<!-- gi.Q09 -->
+<sect1>¿Puede Sylpheed manejar correo IMAP?
+<p>
+R.: Si. Desde la versión 0.4.99 IMAP esta soportado.
+</p>
+</sect1>
+
+<!-- gi.Q10 -->
+<sect1>¿Puede Sylpheed manejar buzones locales de UNIX?
+<p>
+R.: Si.
+</p>
+</sect1>
+
+<!-- gi.Q11 -->
+<sect1>¿Puede Sylpheed manejar IPv6?
+<p>
+R.: Si, IPv6 está completamente soportado en Sylpheed.
+</p>
+</sect1>
+
+<!-- gi.Q12 -->
+<sect1>¿Soporta Sylpheed encriptación como GPG?
+<p>
+R.: Si. GPG está implementado y funciona correctamente.
+</p>
+</sect1>
+
+<!-- gi.Q13 -->
+<sect1>¿Cómo comprueba Sylpheed los tipos MIME?
+<p>
+R.: Sylpheed usa la comprobación de tipos MIME al estilo del Mutt.
+</p>
+</sect1>
+
+<!-- gi.Q14 -->
+<sect1>¿Me permite Sylpheed escribir mensajes en HTML?
+<p>
+R.: No. Se discutió ampliamente este tema y el resultado fue
+que los mensajes HTML no son deseables. Si realmente necesita
+enviar HTML siempre puede adjuntar una página web al
+correo. Se han realizado varios parches para facilitar un mejor
+manejo del HTML en Sylpheed. Los podrá encontrar en la        
+Página de Parches de Sylpheed (ver más adelante en este mismo documento).
+</p>
+</sect1>
+
+<!-- gi.Q15 -->
+<sect1>
+¿Tiene Sylpheed autocompletado de nombres en los campos de dirección?
+<p>
+R.: Si. Cuando busque un nombre que empieze por ``don'', teclee
+``don'' (sin las comillas) y pulse el tabulador. Esto le    
+mostrará el nombre correcto si solamente existe un ``don''
+en su libro de direcciones, si no aparecerá una lista
+desplegable que le permitirá seleccionar el nombre   
+deseado, p.ej. Donald Duck, Don Jonhson, pero también las
+direcciones de correo que empiecen por ``don'' aparecerán en
+la lista, como ``don.giovanni@maffia.org''.
+</p>
+</sect1>
+
+<!-- gi.Q16 -->
+<sect1>Bien, pero cuando pulso el tabulador aparece un mensaje de error.
+<p>
+R.: Cuando quiera usar el autocompletado de nombres asegúrese
+de que hay algún nombre en el libro de direcciones. Si no 
+hay nombres hasta Sylpheed tiene dificultades para completar algo.
+</p>
+</sect1>
+
+<!-- gi.Q17 -->
+<sect1>¿Por qué es tan rápido Sylpheed?
+<p>
+R.: ¡Es para lo que se ha diseñado!
+</p>
+</sect1>
+
+<!-- gi.Q18 -->
+<sect1>¿Dónde puedo conseguir los parches actuales para Sylpheed?
+<p>
+R.: En la Página de Parches de Sylpheed:
+<tt>http://www.teledix.net/sylpheed/</tt>    
+(Visite tambien la sección de instalación sobre como
+instalar un parche)
+</p>
+</sect1>
+
+<!-- gi.Q19 -->
+<sect1>¿Cómo puedo enviar parches, informar de errores, hablar con otros sobre Sylpheed?
+<p>
+R.: Para hablar con otros debería unirse a la lista de
+correo de Sylpheed en <tt>http://sylpheed.good-day.net</tt>. Hay una
+lista japonesa y otra en inglés, ¡elija la correcta!        
+Si tiene algún parche que quiera dar a conocer al
+mundo póngase en contacto con el encargado de la página de
+parches de Sylpheed en <tt>sylpheed@thewildbeast.co.uk</tt>.
+</p>
+</sect1>
+
+<!-- gi.Q20 -->
+<sect1>Cuando envio un correo la cabecera <tt>Content-Type</tt> dice que el
+correo esta en <tt>US-ASCII</tt>, incluso si he especificado <tt>ISO-8859-1</tt>
+<p>
+R.: Si no se usan caracteres <tt>ISO-8859-1</tt> (&gt;= 0x80) en el cuerpo del
+mensaje, Sylpheed automáticamente pondrá el valor             
+del conjunto de caracteres en la cabecera <tt>Content-Type</tt> como <tt>US-ASCII</tt>.
+</p>
+</sect1>
+
+<!-- gi.Q21 -->
+<sect1>¿Por qué parece que el partido de líneas no funciona?
+<p>
+R.: El partido de líneas es quizás algo peculiar. Se pueden teclear
+las líneas tan largas como se deseen. Cuando se envía o se pone en cola
+un correo con líneas largas, Sylpheed primero partirá las líneas 
+a la longitud que haya sido establecida, y luedo encolará el    
+mensaje. Esto es más conveniente de lo que se pueda pensar, ya
+que una vez una línea es partida (se insertan saltos de línea 
+en el texto) y cuando añades algo a esa línea, la siguiente  
+se moverá a una nueva, dejando una o dos palabras de la anterior
+``colgando'' solas. Por ejemplo:
+
+<tt>
+<p>     Esta es una línea larga</p>
+<p>     es partida.</p>
+</tt>
+
+Si ahora se añade una palabra en la primera línea:
+
+<tt>
+<p>     Esta es una línea muy larga</p>
+<p>     que</p>
+<p>     es partida.</p>
+</tt>
+                
+Esto provocaría un monton de trabajo manual para reformatear 
+y dejar presentable el correo de nuevo.
+</sect1>
+
+<!-- gi.Q22 -->
+<sect1>¿Dónde puedo encontrar el último FAQ de Sylpheed?
+<p>
+R.: En <tt>http://nlpagan.net/sylpheedfaq.htm</tt> que es donde se
+mantiene el FAQ en inglés. También podrás
+encontrar enlaces al FAQ en otros idiomas. En la sección de créditos
+de este mismo documento también podrá encontrar estos enlaces.
+</p>
+</sect1>
+
+<!-- gi.Q23 -->
+<sect1>¿Se puede importar un mbox en las carpetas de correo MH de Sylpheed?
+<p>
+R.: Si, simplemente selecciona o crea la carpeta donde quieras los
+correos y selecciona ``Importar de fichero mbox`` en el menú    
+``Fichero``.
+</p>
+</sect1>
+
+<!-- gi.Q24 -->
+<sect1>¿Se puede usar procmail para ordenar los correos con el manejo de correo MH?
+<p>
+R.: Si, comprueba la página de man del procmail para los detalles.
+</p>
+</sect1>
+
+<!-- gi.Q25 -->
+<sect1>¿Hay cosas que debería tener en cuenta cuando actualize Sylpheed?
+<p>
+R.: Si! Al actualizar a 
+<itemize>
+<item> 0.4.50: deberías reconfigurar las preferencias de los grupos de noticias.
+<item> 0.4.63: deberías establecer los colores para las URL en el menú de configuración.
+<item> 0.4.65: algunos elementos de menú han sido reubicados.
+</itemize>
+</p>
+</sect1>
+
+<!-- gi.Q26   -->
+<sect1>¿Cómo puedo actualizar rápidamente las vistas en Sylpheed?
+<p>
+R.: Simplemente pulse "Alt+U" o seleccione ``Actualizar`` del menú ``Resumen``.
+</p>
+</sect1>
+
+</sect>
+
+<!--  Installation & configuration -->
+
+<sect>Instalación y Configuración
+
+<!-- ic.Q01 -->
+<sect1>¿Qué es necesario para compilar Sylpheed?
+<p>
+R.: Cualquier UNIX que siga el estandar POSIX o similar,
+(por ejemplo: Linux, FreeBSD, Solaris),
+GTK+ 1.2.6 o posterior y un compilador ANSI C reciente 
+(gcc 2.7.2.3 debería servir)
+</p>
+<p>     
+Nota: se sabe que Sun C no sirve para compilar Sylpheed.
+</p>     
+<p>
+Opcionalmente:
+<itemize>    
+<item> Imlib o gdk-pixbuf (para el visor de imágenes interno)
+<item> libcompface (para X-Face)
+<item> libjconv (para I18N)
+<item> GPGME (para GnuPG)
+<item> el equivalente de GTK+-devel y Xfree86-devel si no <tt>./configure</tt> fallará.
+</itemize>
+</p>       
+</sect1>
+
+<!-- ic.Q02 -->
+<sect1>¿Cómo configuro Sylpheed?
+<p>
+R.: Cuando ejecute Sylpheed por primera vez le preguntará donde quiere almacenar
+sus buzones de correo. El directorio por defecto es <tt>~/Mail</tt>, pero puede cambiarlo
+a cualquier otro que desee mientras sea un nombre de directorio válido.
+</p>
+</sect1>
+     
+<!-- ic.Q03 -->
+<sect1>¿Cómo configuro una cuenta?
+<p>
+R.: Después de cargar Sylpheed la primera vez se puede añadir una cuenta de correo
+pulsando en el menú de ``Configuración``, seleccionando la opción 
+``Crear nueva cuenta...``
+y rellenando los campos del cuadro de diálogo con los valores adecuados.
+</p>
+</sect1>
+
+<!-- ic.Q04 -->
+<sect1>¿Cuántas cuentas puedo configurar en Sylpheed?
+<p>
+R.: El número es ilimitado. El límite se alcanza cuando su ordenador deje de responder.
+</p>
+</sect1>
+
+<!-- ic.Q05 -->
+<sect1>¿Por qué Sylpheed no borra mis correos cuando pulso ``Borrar``? ¿O cuando establezco
+un filtro y Sylpheed no filtra? ¿O muevo correo a una carpeta diferente y no se mueve?
+<p>
+R.: Tienes que pulsar el botón ``Ejecutar``. Otra solución consiste en marcar la casilla
+``Ejecutar comandos inmediatamente`` en las preferencias de configuración 
+(``Preferencias comunes -> Interfaz``).
+</p>
+</sect1>
+
+<!-- ic.Q06 -->
+<sect1>¿Puedo establecer direcciones o puertos especiales para mi servidor de correo/noticias?
+<p>
+R.: Si, puede. En la configuración de cada cuenta se pueden especificar los puertos concretos
+que desee utilizar.
+</p>
+</sect1>
+
+
+<!-- ic.Q07 -->
+<sect1>¿Tiene Sylpheed opciones para separar en hilos los mensajes?
+<p>
+R.: Si. Se puede activar o desactivar en el menú ``Resumen`` seleccionando 
+``Vista jerárquica`` o pulsando "Ctrl+T".
+</p>
+</sect1>
+
+<!-- ic.Q08 -->
+<sect1>¿Puedo crear varios niveles de subcarpetas para almacenar el correo?
+<p>
+R.: Si, no hay ningún problema.
+</p>
+</sect1>
+
+<!-- ic.Q09 -->
+<sect1>¿Por qué no esta Sylpheed enviando mis correos?
+<p>
+R.: Necesita crear al menos una cuenta para poder enviar correo.
+<!--  (This is a wonderful gotcha on LAN installs with only a local mailbox feed). -->
+</p>
+</sect1>
+
+<!-- ic.Q10 -->
+<sect1>¿Cómo aplico un parche después de haberlo descargado? 
+<p>
+R.: Copie el parche al directorio de Sylpheed. Aplíquelo con la orden:
+</p>
+<tt>&percnt; patch -p0 &lt; nombre-del-parche.patch</tt>
+<p>
+O, si el parche esta comprimido con gzip:
+</p>
+<tt>&percnt;  gzip -dc nombre-del-parche.patch.gz &verbar; patch -p0</tt>
+<p>
+Después de esto deberá ejecutar <tt>./autogen.sh</tt> y eliminar el fichero
+<tt>./config.cache</tt> generado (a menos que quiera instalar el programa bajo
+<tt>/usr/local</tt>). Ejecute <tt>./configure</tt> con las opciones deseadas y
+una vez finalizado, ejecute <tt>make</tt>. (Estas instrucciones son las que se
+encuentran en la Página de Parches de Sylpheed).
+</p>
+</sect1>
+
+<!-- ic.Q11 -->
+<sect1>¿Cómo puedo compilar el soporte para los dibujos compface?
+<p>
+R.: Deberá tener instalado el paquete en el que esté incluido <tt>libcompface</tt>
+(normalmente denominado <tt>faces</tt>), de manera que esté disponible para compilar con Sylpheed.
+</p>
+</sect1>
+
+<!-- ic.Q12 -->
+<sect1>¿Cómo puedo crear mi propia imagen compface?
+<p>
+R.: Dentro del paquete <tt>faces</tt> existe el programa <tt>xmb2icon</tt> (un guión de shell)
+que convierte un fichero xbm de 48x48 pixels al formato adecuado para compface. Para conseguir una
+imagen en formato xbm puede utilizar un programa gráfico como el Gimp.
+</p>
+</sect1>
+
+<!-- ic.Q13 -->
+<sect1>¿Cómo le puedo indicar a mi navegador, cliente de noticias u otro programa que
+utilize Sylpheed como cliente de correo?
+<p>
+R.: En la sección de configuración del programa correspondiente escriba:
+<tt> sylpheed --compose</tt>
+</p>
+</sect1>
+
+</sect>
+
+<!--  Interface -->
+
+<sect>Interface
+
+<!-- if.Q01 -->
+<sect1>¿Cómo puedo hacer que Sylpheed muestre mi idioma?
+<p>
+R.: Deberá establecer el valor de algunas variables de entorno como 
+<tt>LANG</tt>, <tt>LC_CTYPE</tt> o <tt>LC_MESSAGES</tt> al idioma deseado.
+ Normalmente <tt>LANG</tt> (o <tt>LC_ALL</tt>) son suficientes.
+</p>
+</sect1>
+
+<!-- if.Q02 -->
+<sect1>No me gusta la fuente por defecto, ¿puedo cambiarla?
+<p>
+R.: Si. En el menú ``Configuración->Preferencias comunes`` bajo
+la pestaña ``Visualización``.
+</p>
+</sect1>
+
+<!-- if.Q03 -->
+<sect1>¡Hay demasiadas columnas el la lista de mensajes!
+<p>
+R.: En el menú ``Configuración->Preferencias comunes`` bajo
+la pestaña ``Visualización`` puede pulsar el botón ``Cabeceras en 
+la vista resumen``. Aparecerá una ventana con todas las opciones
+que puede mostrar o quitar de la lista de mensajes.
+</p>
+</sect1>
+
+
+<!-- if.Q04 -->
+<sect1>¿Puedo utilizar un editor diferente para escribir mis correos?
+<p>
+R.: Puede. En el menú ``Configuración->Preferencias comunes`` bajo
+la pestaña ``Otras`` se puede especificar el editor deseado. Recuerde que
+si quiere usar un editor en linea de comandos, como <tt>vi</tt> o <tt>emacs</tt>,
+deberá escribir el nombre del shell (<tt>term</tt>, <tt>xterm</tt>, <tt>rxvt</tt>) 
+con el parámetro <tt>-e</tt> delante del editor. Por ejemplo: <tt>rxvt -e vi &percnt;s</tt>
+</p>
+
+<!-- if.Q05 -->
+<sect1>¿Cómo puedo cambiar el tamaño de la fuente en el interfaz de Sylpheed?
+<p>
+R.: Puede establecer la fuente GTK+ en <tt>~/.gtkrc</tt> o <tt>~/.gtkrc.mine</tt>
+(que es incluido por el primero). Por ejemplo:
+
+<tt>
+<p>  style "default"</p>
+<p>  { </p> 
+<p>  font = "-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1"</p>
+<p>  } </p>
+<p>  widget_class "*"        style "default"</p>
+</tt>
+</p>
+</sect1>
+
+<!-- if.Q06 -->
+<sect1>Sylpheed guarda mi correo saliente (en Salida). ¿Puedo evitar que haga esto?
+<p>
+R.: En ``Configuración->Preferencias comunes`` hay una casilla denominada
+``Guardar mensajes salientes en Salida``. Déjela en blanco y estará solucionado.
+</p>
+</sect1>
+
+<!-- if.Q07 -->
+<sect1>¿Cómo puedo cambiar las asociaciones de teclas (teclas calientes) en Sylpheed?
+<p>
+R.: Esto es muy sencillo. Supongamos que quiere asignar una combinación
+de teclas a una función, por ejemplo enviar todo el correo cuando se pulse ``Ctrl+Y''.
+Pulse en el menú ``Mensajes`` y mueva el ratón sobre ``Enviar todo``. 
+Ahora pulse ``Ctrl+Y''. Inmediatamente verá que el texto del menú se actualiza para 
+reflejar la nueva combinación. Hay que hacer notar que la función a la que estaba asignada 
+previamente ``Ctrl+Y'' ya no tendrá ninguna combinación de teclas asociada. En caso de 
+que quiera eliminar la combinación asociada a alguna función el procedimiento es el mismo, 
+pero pulsando la tecla ``Supr'' sobre el elemento del menú.
+</p>
+</sect1>
+
+<!-- if.Q08 -->
+<sect1>¿Puedo cerrar las ventanas sin utilizar el ratón?
+<p>
+R.: ¡Por supuesto! No todas las ventanas, pero pulsando la tecla de escape ("Esc")
+puede cerrar la agenda, la ventana en la que se ve la fuente del correo 
+(``Mensaje->Ver fuente``),
+la ventana de las cabeceras y varias más. Inténtelo y las encontrará todas.
+</p>
+</sect1>
+
+<!-- if.Q09 -->
+<sect1>¿Puedo cambiar la manera en la que aparece mostrada la fecha en la 
+lista resumen de mensajes?
+<p>
+R.: Desde la versión 0.4.65 se puede. Las opciones son las siguientes:
+
+<itemize>
+<item><tt>&percnt;y</tt> año en número
+<item><tt>&percnt;m</tt> mes en número
+<item><tt>&percnt;d</tt> día en número             
+<item><tt>&percnt;c</tt> fecha/hora local
+<item><tt>&percnt;A</tt> día de la semana completo
+<item><tt>&percnt;a</tt> nombre del día corto
+<item><tt>&percnt;B</tt> día del mes completo      
+<item><tt>&percnt;b</tt> nombre del mes corto
+<item><tt>&percnt;H</tt> hora (0-23)
+<item><tt>&percnt;I</tt> hora (0-12)
+</itemize>
+
+Para más información vaya al menú de ``Configuración``, seleccione 
+``Preferencias comunes``, ``Visualizar``,
+y mueva el puntero del ratón sobre el recuadro de ``Formato de fecha``.
+</p>
+</sect1>
+
+<!-- if.Q10 -->
+<sect1>¿Por qué no puedo ver las imágenes compface?
+<p>
+R.: Necesita habilitar la visualización del panel de cabeceras en 
+las ``Preferencias generales``.
+</p>
+</sect1>
+
+<!-- if.Q11 -->
+<sect1>Todavía no puedo ver las imágenes. ¿Por qué?
+<p>
+R.: Quizás no haya compilado el soporte para Compface. Vea la pregunta 
+relativa a faces en la sección de Instalación/Configuración.
+</p>
+</sect1>
+
+</sect>
+
+<!-- Other resources -->
+
+<sect>Créditos
+<p>
+Algunos enlaces al FAQ de Sylpheed en otros idiomas:
+
+<itemize>             
+<item> <p>Sylpheed FAQ en Inglés original traducido en este documento cortesía de 
+       Paul Kater y Jens Oberender
+       <tt>http://nlpagan.net/sylpheedfaq.htm</tt> </p>
+
+<item> <p>Sylpheed FAQ en Francés cortesía de DINH V. Hoa
+       <tt>http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html</tt> </p>
+
+<item> <p>Sylpheed FAQ en Japonés cortesía de WAKAI "SilverRain" Kazunao
+       <tt>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm</tt> </p>
+
+<item> <p>Sylpheed FAQ en Italiano cortesía de Maurizio Codogno
+       <tt>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html</tt> </p>
+
+<item> <p>Sylpheed FAQ en Alemán (versión HTML)
+       <tt>http://www.synconet.de/privhome/rs/sylpheed_faq.html</tt> </p>
+       <p>o la versión alemana (solo texto),
+       <tt>http://www.synconet.de/privhome/rs/sylpheed_faq.txt</tt> </p>
+       <p>ambos cortesía de Ralf Schiffers. </p>
+                      
+<item> <p>Sylpheed FAQ en Griego cortesía de Theofilos Intzoglou.
+       <tt>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html</tt> </p>
+
+<item> <p>Sylpheed FAQ en Polaco cortesía de Przemyslaw Sulek 
+       <tt>http://sylpheed.republika.pl/sylpheedplfaq.txt</tt> </p>
+
+<item> <p>Sylpheed FAQ en Turco cortesía de Doruk Fisek
+       <tt>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html</tt> </p>
+
+<item> <p>Sylpheed FAQ en Sueco cortesía de Mattias Östergren
+       <tt>http://hem.passagen.se/webplats/sylpheed-faq-se.html</tt> </p>
+
+<item> <p>Sylpheed FAQ en Serbio cortesía de Garret
+       <tt>http://www.ckrew.f2s.com/garret/sylpheedfaq-sr.html</tt> </p>
+</itemize>
+</p>
+<p>
+La traducción de este FAQ ha sido realizada por Ricardo Mones Lastra <tt>&lt;mones@aic.uniovi.es&gt;</tt>,
+y puede encontrar la versión en línea más reciente del mismo en 
+<tt>http://www.aic.uniovi.es/mones/sylpheed/faq-es</tt>. 
+También hay enlaces a otros formatos y más recursos en mi página dedicada a Sylpheed 
+<tt>http://www.aic.uniovi.es/mones/sylpheed</tt>
+</p>
+
+</sect>
+
+</article>
