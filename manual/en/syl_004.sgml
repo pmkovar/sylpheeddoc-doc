@@ -30,7 +30,7 @@ Optionally you need:
 </item>
 <item>
 	<url name="libjconv" url="http://www.kondara.org/libjconv/">
-	(for I18N)
+	(for non latin character sets)
 </item>
 <item>
 	<url name="GPGME" url="http://www.gnupg.org/gpgme.html">
@@ -39,8 +39,15 @@ Optionally you need:
 	(for encryption and signature)
 </item>
 <item>
+	<url name="OpenSSL" url="http://www.openssl.org/">
+	(for SSL support)
+</item>
+<item>
 	<url name="OpenLDAP" url="http://www.openldap.org/">
 	(for LDAP connection)
+</item>
+<item>
+	IPv6 support can be turned on (if your system supports it)
 </item>
 <item>
 	<url name="Jpilot" url="http://www.jpilot.org/">
@@ -48,6 +55,7 @@ Optionally you need:
 </item>
 <item>the equivalent of GTK+-devel and Xfree86-devel. (Otherwise ./configure will fail.)
 </itemize>
+<p>
 Notice: Sylpheed may be unstable depending on the environment. Please use the newest version of libraries if possible.
 </sect1>
 
@@ -69,6 +77,7 @@ Notice: Sylpheed may be unstable depending on the environment. Please use the ne
 <item>Laser5 Linux 6.4 (glibc 2.1.x)
 <item>TurboLinux 4.0 (glibc 2.0.7 + libwcsmbs) 
 <item>TurboLinux 6.0 (glibc 2.1.2) 
+<item>TurboLinux 7.0 (glibc 2.2.x) 
 <item>Miracle Linux Standard Edition Version1.0 
 <item>Miracle Linux for PostgreSQL Version1.0 
 <item>Miracle Linux for Samba Version1.0 
