@@ -671,13 +671,57 @@ already installed.
 
 <sect1>Templates
 <p>
+With Sylpheed you can define mail templates to use when replying
+to messages. A template can contain raw text (that will be inserted
+in the composed mail without any change), and placeholders that are
+replaced at composition time by the actual value of the selected
+fields from the original message.
+<p>
+A typical use of the template could be to define the legal notice
+to be appended to your messages (the usual notice that contains a
+text like: "here are my own words and not those of my company, my
+boss is not liable for them, bla, bla, bla").
+<p>
+To define a new template, in the <it>Configuration</it> menu select
+the <it>Templates</it> entry and fill the form:
 
 <figure loc="here">
 <ph vspace="1cm">
 <img src="snapshots/template.png">
 </figure>
 
-### FIXME: write this section.
+<p>
+The name parameter is used to identify each template, this name
+will then appear in the <it>Tools/Templates</it> menu in the
+composition window.
+The content of the <it>To</it> field will be appended to the original
+content of the corresponding field in the message you are composing.
+The content of the <it>Subject</it> field will replace the orignal subject
+of the message you are composing.
+<p>
+In the upper pane, type in the text you want to put in the template,
+use the <it>Symbols</it> button to open a help window that contains
+the description of all the placeholders you can use in a template
+(there is one for the sender, one for the date, one for the message
+ID, ...), then use the <it>Register</it> button to  validate the
+template. If you do not register the template, when leaving the form
+the template will be canceled. To modify an existing template, select
+it in the lower pane, modify its text, then use the <it>Substitute</it>
+button. As you may guess, the <it>Delete</it> button removes the selected
+template. Finally validate your changes with the <it>OK</it> button.
+If you use the <it>Cancel</it> button, the form is closed and your changes
+are lost (deleted templates are back, added templates are lost).
+
+<p>
+To use a template, open the composition window and select the template
+from the <it>Tools/Templates</it> menu. You can then choose to insert
+the template into your message or to completely replace the text of the
+message by the template. This only affects the body of the message.
+If you choose to insert the template, its text will be inserted at the
+cursor location.
+<p>
+The placeholders are taken from the source message when replying, so
+they have no meaning when composing a new message.
 
 </sect1>
 
