@@ -36,7 +36,7 @@ rm $doc/manual/HTML/par*.tmp
 cd $doc/manual/$lang/snapshots/
 for x in *.png
 do
- echo $x $(($(hexdump -o -s 22 -n 1 $x | sed -e 's/[0-9][0-9][0-9][0-9][0-9][0-9][0-9]//g') * 256 + $(hexdump -o -s 23 -n 1 $x | sed -e 's/[0-9][0-9][0-9][0-9][0-9][0-9][0-9]//g'))) >> $doc/manual/HTML/par1.tmp
+ echo $x $(($(hexdump -o -s 22 -n 1 $x | sed -e 's/[0-9]\{7\}//g') * 256 + $(hexdump -o -s 23 -n 1 $x | sed -e 's/[0-9]\{7\}//g'))) >> $doc/manual/HTML/par1.tmp
 done
 sed -e 's/[.]png//g' $doc/manual/HTML/par1.tmp >> $doc/manual/HTML/par.tmp
 cd $doc/manual/HTML/$lang/
