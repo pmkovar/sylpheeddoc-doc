@@ -1,12 +1,9 @@
-<sect>Referenz
-<p>
+<sect>Referenz<p>
 In diesem Abschnitt werden die voreingestellten Tastaturkürzel beschrieben, und das Datenformat des Adressbuches.
-<sect1>Liste der Tastaturkürzel
-<p>
+<sect1>Liste der Tastaturkürzel<label id="Tastaturkürzel"><p>
 Die Sets der Vorgaben können unter &quot;Einstellungen&quot; -&gt; &quot;Allgemeine Einstellungen&quot;, im Reiter &quot;Benutzerschnittstelle&quot;, Knopf &quot;Tastaturkürzel&quot; geändert werden.
 
-<sect2>Tastaturkürzel im Menü &quot;Datei&quot;
-<p>
+<sect2>Tastaturkürzel im Menü &quot;Datei&quot;<p>
 <table loc="ht"><tabular ca="lcr">Standard|Mew/Wanderlust|Mutt|Altes Sylpheed|@
 |Shft+D|||Papierkorb leeren@
 Strg+S|Y|S||Speichern als...@
@@ -15,8 +12,7 @@ Strg+Q|Shft+Q|Q|Alt+Q|Beenden
 </tabular></table>
 </sect2>
 
-<sect2>Tastaturkürzel im Menü &quot;Bearbeiten&quot;
-<p>
+<sect2>Tastaturkürzel im Menü &quot;Bearbeiten&quot;<p>
 <table loc="ht"><tabular ca="lcr">Standard|Mew/Wanderlust|Mutt|Altes Sylpheed|@
 Strg+C|Strg+C|Strg+C|Strg+C|Kopieren@
 Strg+A|Strg+A|Strg+A|Strg+A|Alle auswählen@
@@ -25,8 +21,7 @@ Shft+Strg+F|Strg+S|/|Strg+S|Suche Nachrichten...
 </tabular></table>
 </sect2>
 
-<sect2>Tastaturkürzel im Menü &quot;Ansicht&quot;
-<p>
+<sect2>Tastaturkürzel im Menü &quot;Ansicht&quot;<p>
 <table loc="ht"><tabular ca="lcr">Standard|Mew/Wanderlust|Mutt|Altes Sylpheed|@
 V|V|V|V|Ablageninhaltsansicht ändern@
 Strg+T|Shft+T|Strg+T|Strg+T|Threads einschalten@
@@ -42,10 +37,9 @@ Strg+Alt+U|Shft+S|Strg+Alt+U|Alt+U|Aktualisieren
 </tabular></table>
 </sect2>
 
-<sect2>Tastaturkürzel im Menü &quot;Nachricht&quot;
-<p>
+<sect2>Tastaturkürzel im Menü &quot;Nachricht&quot;<p>
 <table loc="ht"><tabular ca="lcr">Standard|Mew/Wanderlust|Mutt|Altes Sylpheed|@
-Strg+I|Strg+I|Strg+I|ALt+I|Empfange neue E-Mail@
+Strg+I|Strg+I|Strg+I|Alt+I|Empfange neue E-Mail@
 Shft+Strg+I|Shft+Strg+I|Shft+Strg+I|Shft+Alt+I|Empfange von allen Accounts@
 Strg+M|W|M||Verfasse neue Nachricht@
 Strg+R|Strg+Shft+R|R|Alt+R|Antwort@
@@ -63,8 +57,7 @@ Shft+!|Shft+!|Shft+N|Shft+!|Als ungelesen markieren@
 </tabular></table>
 </sect2>
 
-<sect2>Tastaturkürzel im Menü &quot;Werkzeug&quot;
-<p>
+<sect2>Tastaturkürzel im Menü &quot;Werkzeug&quot;<p>
 <table loc="ht"><tabular ca="lcr">Standard|Mew/Wanderlust|Mutt|Altes Sylpheed|@
 Shft+Strg+A|Shft+Strg+A|Shft+Strg+A||Adressbuch@
 X|X|X|Alt+X|Ausführen@
@@ -72,8 +65,7 @@ Shft+L|Strg+L|Strg+L|Alt+L|Logbuch-Fenster@
 </tabular></table>
 </sect2>
 
-<sect2>Tastaturkürzel in den Menüs &quot;Einstellungen&quot; und &quot;Hilfe&quot;
-<p>
+<sect2>Tastaturkürzel in den Menüs &quot;Einstellungen&quot; und &quot;Hilfe&quot;<p>
 Die Menüs &quot;Einstellungen&quot; und &quot;Hilfe&quot; beinhalten keine voreingestellten Tastaturkürzel.
 </sect2>
 </sect1>
