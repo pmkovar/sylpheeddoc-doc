@@ -37,6 +37,9 @@
 ######################################################################
 #
 # $Log: Makefile,v $
+# Revision 1.4  2003/03/12 20:10:26  fbarriere
+# Added the use of the zh-sgmltools for the chinese doc.
+#
 # Revision 1.3  2002/08/27 19:35:36  fbarriere
 # Changed FILTER_IMAGE, added the TARGET_TYPE switch, added packages generation part.
 #
@@ -50,9 +53,15 @@
 #
 ######################################################################
 
-SGML_TOOL     := /usr/bin/sgml2html
-SGML_TOOL_OPT := --language=$(LANG1)
-#SGML_TOOL_OPT := --imagebuttons
+ifeq ($(LANG1), zh_TW.Big5)
+	SGML_TOOL     := /usr/local/bin/bg5sgml2html
+	SGML_TOOL_OPT := 
+	#SGML_TOOL_OPT := --imagebuttons
+else
+	SGML_TOOL     := /usr/bin/sgml2html
+	SGML_TOOL_OPT := --language=$(LANG1)
+	#SGML_TOOL_OPT := --imagebuttons
+endif
 
 #
 #  Final result type: WEB (with images and original names),
@@ -260,7 +269,7 @@ all_package:
 
 package:
 	@ echo "######### Building package"
-	@ $(TAR_CREATE) $(PACKAGE_DIR)/$(DOC_TYPE)_$(LANG1)_$(TODAY).$(TAR_SUFFIX) -C $(HERE) .
+	@ $(TAR_CREATE) $(PACKAGE_DIR)/sylpheeddoc_$(DOC_TYPE)_$(LANG1)_$(TODAY).$(TAR_SUFFIX) -C $(HERE) .
 
 
 # ####################################################
