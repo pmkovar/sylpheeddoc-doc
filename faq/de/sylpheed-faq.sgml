@@ -267,7 +267,7 @@ Antwort: Das kann durch folgenden Eintrag in /etc/mime.types behoben werden:<p>
 Antwort: Dafür gibt es verschiedene Möglichkeiten:
 <itemize>
 <item>Es gibt einen Patch für Sylpheed auf <url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/"> um neue Nachrichten anzuzeigen.
-<item>Es gibt spezielle Anwendungen wie Gkrellm oder Kob, die neue Nachrichten anzeigen können. Gkrellm findet man auf <url url="http://www.gkrellm.net" name="http://www.gkrellm.net">.
+<item>Es gibt spezielle Anwendungen wie Gkrellm, KBiff oder KOrn, die neue Nachrichten anzeigen können. Gkrellm findet man auf <url url="http://www.gkrellm.net" name="http://www.gkrellm.net">, KBiff unter <url url="http://www.granroth.org/kbiff/" name="http://www.granroth.org/kbiff/">.
 </itemize>
 </sect>
 <sect>Sylpheed FAQ - Oberfläche
