@@ -166,8 +166,8 @@ A.   Parce qu'il a été conçu pour cela~!
 
 <sect1>
 Q18  Où puis-je trouver les derniers patches pour Sylpheed~?<p>
-A.   La page web des patches pour Sylpheed se trouve à l'adresse~: 
-<url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/">
+A.   La page web des patches pour Sylpheed se trouve à l'adresse~:
+<url url="http://www.thewildbeast.co.uk/sylpheed/" name="http://www.thewildbeast.co.uk/sylpheed/">
 (Voir aussi la section concernant l'installation pour plus de
 détails sur l'installation des patches)
 </sect1>
@@ -419,7 +419,7 @@ vide dans chaque dossier. Pour cela, utilisez la commande <tt>touch</tt>.
 A. Pour cela vous pouvez faire:
 <p>
 * Consulter la page des correctifs pour Sylpheed a 
-<url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/">
+<url url="http://www.thewildbeast.co.uk/sylpheed/" name="http://www.thewildbeast.co.uk/sylpheed/">
 pour y trouver le correctif nécessaire.
 <p>
 * Télécharger Gkrellm ou un programme similaire qui signalera l'arrivée

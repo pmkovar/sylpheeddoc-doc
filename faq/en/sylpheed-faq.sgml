@@ -159,7 +159,7 @@ A.   That's what it is designed for!
 <sect1>
 Q18  Where can I get the current patches for Sylpheed?<p>
 A.   The Sylpheed Patch homepage:
-<tt><url url="http://www.teledix.net/sylpheed/" name="The sylpheed patch homepage"></tt>
+<tt><url url="http://www.thewildbeast.co.uk/sylpheed/" name="http://www.thewildbeast.co.uk/sylpheed/"></tt>
 (Also see section on Installation on how to install a
 patch)
 </sect1>
@@ -394,7 +394,7 @@ A. In case this happens, you can easily fix that by adding the following to /etc
 
 <sect1>Q18 How can I make Sylpheed notify me when new mail arrives?<p>
 A. For this you can do several things:<p>
-* Look at the Sylpheed patch page at <url url="http://www.teledix.net/sylpheed/" name="Teledix.net"> for a new mail patch.<p>
+* Look at the Sylpheed patch page at <url url="http://www.thewildbeast.co.uk/sylpheed/" name="http://www.thewildbeast.co.uk/sylpheed/"> for a new mail patch.<p>
 * Download Gkrellm or a similar program that is able to notify you of new incoming mail. Gkrellm is available at <url url="http://www.gkrellm.net" name="the Gkrellm page">
 
 </sect>
