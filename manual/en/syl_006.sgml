@@ -8,51 +8,52 @@ options:
 <p>
 <itemize>
 	<item>
-		Add mailbox: this option lets you add a new MH mail-directory. 
+		<it>Add mailbox:</it> this option lets you add a new MH mail-directory. 
 		It will generate IN, OUT, QUEUE, DRAFT and TRASH mailfolders 
 		inside the new mailbox.
 	</item>
 	<item>
-		Rescan folder tree: rescans the entire tree of existing mailboxes 
-		to reflect the correct state (usually won't be necessary).
+		<it>Check for new messages in all folders:</it> rescans the entire tree 
+		of existing mailboxes to reflect the correct state (usually 
+		won't be necessary).
 	</item>
 	<item>
-		Folder: lets you add, rename or delete a mailfolder.
+		<it>Folder:</it> lets you add, rename or delete a mailfolder.
 		<itemize>
 			<item>
-				Create new folder: to create a new folder. You must select
+				<it>Create new folder:</it> to create a new folder. You must select
 				the top level node of the folder tree of a sub folder before
 				using this menu entry, in order to define the location of the
 				new folder to create.
 			</item>
 			<item>
-				Rename folder: change the name of the selected folder.
+				<it>Rename folder:</it> change the name of the selected folder.
 			</item>
 			<item>
-				Delete folder: delete the selected folder (also delete the
+				<it>Delete folder:</it> delete the selected folder (also delete the
 				messages contained in the selected folder).
 			</item>
 		</itemize>
 	</item>
 	<item>
-		Import mbox file...: lets you import an mbox file 
+		<it>Import mbox file...:</it> lets you import an mbox file 
 		(like created by Pine) into an MH mailbox.
 	</item>
 	<item>
-		Export to mbox file: lets you export an MH mailbox to an mbox file.
+		<it>Export to mbox file:</it> lets you export an MH mailbox to an mbox file.
 	</item>
 	<item>
-		Empty trash: obviously, this will empty the trash folder.
+		<it>Empty trash:</it> obviously, this will empty the trash folder.
 	</item>
 	<item>
-		Save as: lets you save the selected e-mail to a plain textfile 
+		<it>Save as:</it> lets you save the selected e-mail to a plain textfile 
 		on disk.
 	</item>
 	<item>
-		Print: lets you print the selected e-mail to a printer.
+		<it>Print:</it> lets you print the selected e-mail to a printer.
 	</item>
 	<item>
-		Exit: ends Sylpheed.
+		<it>Exit:</it> ends Sylpheed.
 	</item>
 </itemize>
 </sect1>
@@ -61,20 +62,23 @@ options:
 <p>
 <itemize>
 	<item>
-		copy: lets you copy the selected text to a buffer, 
+		<it>copy:</it> lets you copy the selected text to a buffer, 
 		from where you can paste it into a different place. 
 		Shortcut: Ctrl-C
 	</item>
 	<item>
-		select all: selects all the text in the current window. 
+		<it>select all:</it> selects all the text in the current window. 
 		Shortcut: Ctrl-A
 	</item>
 	<item>
-		Find in current message: searches a string in the current message.
+		<it>select thread:</it> selects all the messages of the current thread.
+	</item>
+	<item>
+		<it>Find in current message:</it> searches a string in the current message.
 		Shortcut: Ctrl-F
 	</item>
 	<item>
-		search messages: searches a message based on its  To, From, Subject
+		<it>search messages:</it> searches a message based on its  To, From, Subject
 		header fields or body content. Start searching from the selected
 		message, in the selected folder. 
 		Shortcut: Shift-Ctrl-F
@@ -93,116 +97,115 @@ based on different attributes.
 <p>
 <itemize>
 	<item>
-		Show or hide: let you control the parts of the Sylpheed user interface 
+		<it>Show or hide:</it> let you control the parts of the Sylpheed user interface 
 		you want to display.
 		<itemize>
 			<item>
-				Folder tree: not implemented yet
+				<it>Folder tree:</it> not implemented yet
 			</item>
 			<item>
-				Message view: show or hide the message pane. When hidden, the
+				<it>Message view:</it> show or hide the message pane. When hidden, the
 				messages are displayed in a separate window. To read a message
 				double click in the summary pane. The message is then opened in
 				a new window. You can close this new window by pressing the escape
 				key.
 			</item>
 			<item>
-				Toolbar: sets how you want to see the toolbar. Icons and text, 
+				<it>Toolbar:</it> sets how you want to see the toolbar. Icons and text, 
 				or one of these.
 				<itemize>
 					<item>
-						Icon and Text: show icons and text in the toolbar.
+						<it>Icon and Text:</it> show icons and text in the toolbar.
 					</item>
 					<item>
-						Icon: only display the icons, do not display the text
+						<it>Icon:</it> only display the icons, do not display the text
 						below them.
 					</item>
 					<item>
-						Text: only the text, hide the icons.
+						<it>Text:</it> only the text, hide the icons.
 					</item>
 					<item>
-						None: hide the toolbar.
+						<it>None:</it> hide the toolbar.
 					</item>
 				</itemize>
 			</item>
 			<item>
-				Status bar: show it or hide it.
+				<it>Status bar:</it> show it or hide it.
 			</item>
 		</itemize>
 	</item>
 	<item>
-		Separate folder tree: selects between having the folder tree 
+		<it>Separate folder tree:</it> selects between having the folder tree 
 		attached to the main window, or floating separately.
 	</item>
 	<item>
-		Separate message view: selects between having the selected 
+		<it>Separate message view:</it> selects between having the selected 
 		message in the summary pane attached to the main window, or 
 		floating separately.
 	</item>
 	<item>
-		Toggle summary view: show or hide the message pane by expanding the
-		summary view down to the bottom of the Sylpheed window.
-		Shortcut: v
-	</item>
-	<item>
-		Sort: controls the way the messages are sorted in the selected
+		<it>Sort:</it> controls the way the messages are sorted in the selected
 		folder. Each option sorts the messages in descending order (the
 		bigger one being on the top of the summary pane), and can be
 		reversed by selecting the same menu entry a second time (each
 		time you select the same menu entry the order is reversed).
 		<itemize>
 			<item>
-				Sort by number: sort the message based on their MH number.
+				<it>Sort by number:</it> sort the message based on their MH number.
 			</item>
 			<item>
-				Sort by size: sort the message on their size.
+				<it>Sort by size:</it> sort the message on their size.
 			</item>
 			<item>
-				Sort by date: sort the messages based on their date.
+				<it>Sort by date:</it> sort the messages based on their date.
 			</item>
 			<item>
-				Sort by from: the messages are sorted by their sender address
+				<it>Sort by from:</it> the messages are sorted by their sender address
 				(From field, sorted alphabetically).
 			</item>
 			<item>
-				Sort by subject: the messages are sorted by their subject
+				<it>Sort by recipient:</it> the messages are sorted by their recipient
 				(sorted alphabetically).
 			</item>
 			<item>
-				Sort by color label: sort the messages based on their color.
+				<it>Sort by subject:</it> the messages are sorted by their subject
+				(sorted alphabetically).
+			</item>
+			<item>
+				<it>Sort by color label:</it> sort the messages based on their color.
 				Read the context menu description below to find how to assign
 				colors to messages.
 			</item>
 			<item>
-				Sort by mark: separate marked and unmarked messages. Read the 
+				<it>Sort by mark:</it> separate marked and unmarked messages. Read the 
 				context menu description below to find how to mark messages.
 			</item>
 			<item>
-				Sort by unread: separate read and unread messages.
+				<it>Sort by unread:</it> separate read and unread messages.
 			</item>
 			<item>
-				Sort by attachment: separate messages with and without attachment.
+				<it>Sort by attachment:</it> separate messages with and without attachment.
 			</item>
 			<item>
-				Don't sort: do not sort the messages.
+				<it>Don't sort:</it> do not sort the messages.
 			</item>
 			<item>
-				Ascending: sort the messages in ascending order. If the field used
+				<it>Ascending:</it> sort the messages in ascending order. If the field used
 				to sort the messages is displayed in the summary view, a little
 				arrow on the right side of the corresponding summay column header
 				reflects the sort order you select from the menu.
 			</item>
 			<item>
-				Descending: sort the messages in descending order.
+				<it>Descending:</it> sort the messages in descending order.
 			</item>
 			<item>
-				Attract by subject: move close to each other the messages
+				<it>Attract by subject:</it> move close to each other the messages
 				having the same subject (or a close subject).
 			</item>
 		</itemize>
 	</item>
 	<item>
-		Thread view: turn the threaded view on or off. When turned on the
+		<it>Thread view:</it> turn the threaded view on or off. When turned on the
 		messages of the same thread (the same discussion generated by replying
 		to each other mail) are grouped as a tree representing the discussion
 		flow. Each reply being linked to its orignal message. Each branch can
@@ -213,66 +216,66 @@ based on different attributes.
 		Shortcut: Ctrl-T
 	</item>
 	<item>
-		Expand all threads: if the threaded view is selected, expand all the
+		<it>Expand all threads:</it> if the threaded view is selected, expand all the
 		threads in the opened folder.
 	</item>
 	<item>
-		Collapse all threads: if the threaded view is selected, collapse all the
+		<it>Collapse all threads:</it> if the threaded view is selected, collapse all the
 		threads in the opened folder.
 	</item>
 	<item>
-		Set display item: use it to change the list of items to display
+		<it>Set display item:</it> use it to change the list of items to display
 		in the summary view. This setting can also be changed through
 		the common preferences.
 	</item>
 	<item>
-		Go to: use it to navigate from message to message based on the
+		<it>Go to:</it> use it to navigate from message to message based on the
 		sub-menu criterias.
 		<itemize>
 			<item>
-				Prev. message: go to the previous message in the current
+				<it>Prev. message:</it> go to the previous message in the current
 				folder.
 				Shortcut: P
 			</item>
 			<item>
-				Next message: go to the next message in the current
+				<it>Next message:</it> go to the next message in the current
 				folder.
 				Shortcut: N
 			</item>
 			<item>
-				Prev. unread: go to the previous unread message.
+				<it>Prev. unread:</it> go to the previous unread message.
 				Shortcut: Shift-P
 			</item>
 			<item>
-				Next unread: go to the next unread message.
+				<it>Next unread:</it> go to the next unread message.
 				Shortcut: Shift-N
 			</item>
 			<item>
-				Prev. new: go to the previous new message.
+				<it>Prev. new:</it> go to the previous new message.
 			</item>
 			<item>
-				Next new: go to the next new message.
+				<it>Next new:</it> go to the next new message.
 			</item>
 			<item>
-				Prev. marked: go to the previous marked message.
+				<it>Prev. marked:</it> go to the previous marked message.
 			</item>
 			<item>
-				Next marked: go to the next marked message.
+				<it>Next marked:</it> go to the next marked message.
 			</item>
 			<item>
-				Prev. labeled: go to the previous labeled message.
+				<it>Prev. labeled:</it> go to the previous labeled message.
 			</item>
 			<item>
-				Next labeled: go to the next labeled message.
+				<it>Next labeled:</it> go to the next labeled message.
 			</item>
 			<item>
-				Other folder: change the current folder. Opens a new window
+				<it>Other folder:</it> change the current folder. Opens a new window
 				with the folder tree, and open the selected folder.
 			</item>
 		</itemize>
 	</item>
 	<item>
-		Code set: allows you to select what codeset you want to use 
+		<it>Code set:</it> allows you to select what codeset you want to use 
 		for your e-mails. This codeset will be used when sending
 		mails. Note Sylpheed will always try to use the more compatible
 		codeset based on the characters used in your message, so unless
@@ -283,23 +286,23 @@ based on different attributes.
 		character set based on the content of the messages.
 	</item>
 	<item>
-		Open in new window: open the selected message in a new window.
+		<it>Open in new window:</it> open the selected message in a new window.
 		This new window can be closed by pressing the escape key.
 		Shortcut: Ctrl-Alt-N
 	</item>
 	<item>
-		Message source: opens a new window and display the complete
+		<it>Message source:</it> opens a new window and display the complete
 		source of the message in it (without any formatting and with
 		all the header fields).
 		Shortcut: Ctrl-U
 	</item>
 	<item>
-		Show all header: toggles on and off the display of the complete
+		<it>Show all header:</it> toggles on and off the display of the complete
 		message header.
 		Shortcut: Ctrl-H
 	</item>
 	<item>
-		Update summary: update the Sylpheed window.
+		<it>Update summary:</it> update the Sylpheed window.
 		Shortcut: Ctrl-Alt-U
 	</item>
 </itemize>
@@ -311,29 +314,29 @@ Here you find the following options:
 
 <itemize>
 	<item>
-		Get new mail: this will collect all new mail for your 
+		<it>Get new mail:</it> this will collect all new mail for your 
 		default mail-identity.
 		Shortcut: Ctrl-I
 	</item>
 	<item>
-		Get from all accounts: Sylpheed will poll all defined 
+		<it>Get from all accounts:</it> Sylpheed will poll all defined 
 		mail-identities for new mail.
 		Shortcut: Shift-Ctrl-I
 	</item>
 	<item>
-		Cancel receiving: stop the new mails reception.
+		<it>Cancel receiving:</it> stop the new mails reception.
 	</item>
 	<item>
-		Send queued messages: all the messages that you put into 
+		<it>Send queued messages:</it> all the messages that you put into 
 		the "Queue" folder will now be sent off.
 	</item>
 	<item>
-		Compose new message: allows you to write a new e-mail 
+		<it>Compose new message:</it> allows you to write a new e-mail 
 		message.
 		Shortcut: Ctrl-M
 	</item>
 	<item>
-		Reply: an e-mail message will be created with the sender 
+		<it>Reply:</it> an e-mail message will be created with the sender 
 		of the selected message in the summary pane as recipient. 
 		Depending on the settings, your signature will be added 
 		to the mail, and the original mail text will be quoted.
@@ -342,53 +345,67 @@ Here you find the following options:
 		Shortcut: Ctrl-R
 	</item>
 	<item>
-		Reply to all: as Reply, but the recipients will be all 
-		e-mail addresses in the original messages (including 
-		the ones in the cc: part).
-		Shortcut: Shift-Ctrl-R
+		<it>Reply to</it> 
+		<itemize>
+			<item>
+				<it>all:</it> as Reply, but the recipients will be all 
+				e-mail addresses in the original messages (including 
+				the ones in the cc: part).
+				Shortcut: Shift-Ctrl-R
+			</item>
+			<item>
+				<it>sender:</it> as Reply.
+			</item>
+			<item>
+				<it>Mailing list:</it> reply to the mailing list. To use
+				when replying to a mailing list (unless you want to reply
+				only to the poster of the message).
+				Shortcut: Ctrl-L
+			</item>
+		</itemize>
 	</item>
 	<item>
 		Reply to sender: as Reply, but the recipient is the address
 		defined in the Sender header field (not the Reply-To address).
 	</item>
 	<item>
-		Forward: a message will be created with the original 
+		<it>Forward:</it> a message will be created with the original 
 		message in the summary pane as text. You can then 
 		enter a recipient e-mail address, edit the text if 
 		you want, and send it.
 		Shortcut: Ctrl-Alt-F
 	</item>
 	<item>
-		Forward as attachment: as Forward, but the message 
+		<it>Forward as attachment:</it> as Forward, but the message 
 		text will sent along as a separate textfile.
 		Shortcut: Shift-Ctrl-Alt-F
 	</item>
 	<item>
-		Redirect: re-send the selected message to someone else. Compared
+		<it>Redirect:</it> re-send the selected message to someone else. Compared
 		to a forward, the message is not marked as forwarded, and the sender
 		is the original mail sender.
 	</item>
 	<item>
-		Re-edit: lets you open all already sent message in
+		<it>Re-edit:</it> lets you open all already sent message in
 		edition mode to re-send it.
 	</item>
 	<item>
-		Move: lets you move the message to a different folder. 
+		<it>Move:</it> lets you move the message to a different folder. 
 		You can select the destination folder from a browse-window.
 	</item>
 	<item>
-		Copy: as Move, only that the message is copied to the 
+		<it>Copy:</it> as Move, only that the message is copied to the 
 		new folder, instead of moved.
 		Shortcut: Shift-Ctrl-O
 	</item>
 	<item>
-		Delete: lets you delete the message that is selected 
+		<it>Delete:</it> lets you delete the message that is selected 
 		in the summary pane.
 		Shortcut: Ctrl-D
 	</item>
 	<item>
-		Mark: Gives a submenu: Mark/Unmark/Mark as read/Unmark 
-		as read. When you mark messages, you can do a specific 
+		<it>Mark:</it> Gives a submenu: <it>Mark/Unmark/Mark as read/Unmark 
+		as read</it>. When you mark messages, you can do a specific 
 		action (e.g. move, delete) on all of the marked messages. 
 		You can unmark messages that you mistakenly marked. 
 		The other options do as they say, they mark or unmark 
@@ -399,7 +416,7 @@ Here you find the following options:
 
 A note on functions like Move, Copy and Delete: if you did not 
 specify to execute the commands immediately (in the configuration), 
-you will have to select the "Execute" command. This is a button 
+you will have to select the <it>Execute</it> command. This is a button 
 in the toolbar, and can also be found in the Summary menu.
 </sect1>
 
@@ -410,64 +427,65 @@ access and log window control.
 
 <itemize>
 	<item>
-		Address book: opens the address book window.
+		<it>Address book:</it> opens the address book window.
 		Shortcut: Shift-Ctrl-A
 	</item>
 	<item>
-		Add sender to address book: adds the sender of the selected
+		<it>Add sender to address book:</it> adds the sender of the selected
 		message to one of your address books. When selected a window
 		opens to let you select the target address book.
 	</item>
 	<item>
-		Filter messages: apply the filter rules to the messages
+		<it>Filter messages:</it> apply the filter rules to the messages
 		of the inbox.
 	</item>
 	<item>
-		Create filter rule: create a new filter rule based on the
+		<it>Create filter rule:</it> create a new filter rule based on the
 		selected message.
 		<itemize>
 			<item>
-				Automatically: open the filter rules creation window
+				<it>Automatically:</it> open the filter rules creation window
 				to define a new rule.
 			</item>
 			<item>
-				By From: opens the filter rules creation window and
+				<it>By From:</it> opens the filter rules creation window and
 				fills the filter settings fields to build a filter based
 				on the sender of the selected message.
 			</item>
 			<item>
-				By To: opens the filter rules creation window and
+				<it>By To:</it> opens the filter rules creation window and
 				fills the filter settings fields to build a filter based
 				on the receiver of the selected message.
 			</item>
 			<item>
-				By Subject: opens the filter rules creation window and
+				<it>By Subject:</it> opens the filter rules creation window and
 				fills the filter settings fields to build a filter based
 				on the subject of the selected message.
 			</item>
 		</itemize>
 	</item>
 	<item>
-		Delete duplicated messages: This will remove messages from the 
+		<it>Actions:</it> this menu is empty until you define some actions (see the
+		configuration menu description).
+	</item>
+	<item>
+		<it>Delete duplicated messages:</it> This will remove messages from the 
 		active folder that were sent twice to you. For example you 
 		received a message directly and through a mailing list at 
 		the same time.
 	</item>
 	<item>
-		Actions: this menu is empty until you define some actions (see the
-		configuration menu description).
-	</item>
-	<item>
-		Execute: execute all the pending move, delete, and copy commands.
+		<it>Execute:</it> execute all the pending move, delete, and copy commands.
 		Only if execute immediately is off in the common preferences.
 		Shortcut: X
 	</item>
 	<item>
-		Log window: opens the log window. In the log window, you 
+		<it>Log window:</it> opens the log window. In the log window, you 
 		can see what Sylpheed is doing. Keeping track of things 
 		in that way is very good when you suspect there is something 
 		wrong. You can paste the info of the log window into an 
 		e-mail and send it to the developer or the mailing list.
+		Shortcut: Shift-Ctrl-L
 	</item>
 </itemize>
 
@@ -485,14 +503,14 @@ the way you want it to work and react.
 
 <itemize>
 	<item>
-		Common preferences: in this option you will be 
+		<it>Common preferences:</it> in this option you will be 
 		presented a dialog in which you can select a number 
 		of tabs. Each tab represents a specific set of settings 
 		in Sylpheed. In the next chapter, these dialog options 
 		are explained in more detail.
 	</item>
 	<item>
-		Filter setting: this option shows you a dialog in which you 
+		<it>Filter setting:</it> this option shows you a dialog in which you 
 		can set up the filtering rules that you want Sylpheed 
 		to process on receiving new e-mails. You first specify 
 		on which part(s) of the e-mail Sylpheed has to check, 
@@ -525,7 +543,7 @@ the way you want it to work and react.
 		you set the rules.
 	</item>
 	<item>
-		Template: let your create a new message template.
+		<it>Template:</it> let your create a new message template.
 		When composing a new message you can then used one
 		of the defined templates and insert it (or use it to
 		completely replace the content of your mail).
@@ -536,21 +554,21 @@ the way you want it to work and react.
 		the available symbols.
 	</item>
 	<item>
-		Actions: let your create new commands to be added to the
+		<it>Actions:</it> let your create new commands to be added to the
 		'Tools/Actions' menu. An action is a command that processes
 		the select part of a message, the message body or the complete
 		message file. It can be a background process, used as a filter
 		(reads, modifies and replaces a message),...
 	</item>
 	<item>
-		Preferences for current account: here you can set the 
+		<it>Preferences for current account:</it> here you can set the 
 		specifics for the account you are currently using. 
 		Should mail be deleted after fetching, what is the 
 		server it comes from, etc. Basically it is the same 
 		dialog form as shown in setting up a new account.
 	</item>
 	<item>
-		Create new account: here you name the account (each 
+		<it>Create new account:</it> here you name the account (each 
 		account has a recognizable name), you set up your name 
 		and e-mail address etc. You set up the type of server 
 		you access (POP4, IMAP4, local mailbox, newsserver) 
@@ -563,14 +581,14 @@ the way you want it to work and react.
 		with these unless you are sure you have to!!)
 	</item>
 	<item>
-		Edit accounts: here you can select one of the accounts 
+		<it>Edit accounts:</it> here you can select one of the accounts 
 		you created, from a list, and edit the information about 
 		them. Note that you cannot edit an account for which 
 		you are writing a message at the same time. This to 
 		ensure data integrity.
 	</item>
 	<item>
-		Change current account: here you can select what 
+		<it>Change current account:</it> here you can select what 
 		account you want to use, to write a message.
 		If you have enabled the status bar (in the view menu),
 		the name of the current account is shown in the bottom
