@@ -717,6 +717,11 @@ A.   When you try to launch a helper application, like an image viewer, with an 
 parameter. Example: gedit '%s'
 </sect1>
 
+<sect1>
+Q13. Where is the Bcc when I compose a mail?<p>
+A.   Open Configuration -> Preferences for current account -> Compose. There you can check the Bcc checkbox and optionally enter an e-mail address.
+</sect1>
+
 <appendix>
 
 <!-- - GNU Project - Free Software Foundation (FSF) -->
