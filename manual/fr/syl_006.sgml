@@ -1,0 +1,399 @@
+<sect>Les différentes parties de Sylpheed.
+
+<sect1>Le menu d'options de Sylpheed:
+<p>
+Le menu dans Sylpheed est le point d'entrée principal pour tout ce vous pourrez faire
+avec Sylpheed. La structure du menu vous offre les options suivantes:
+<sect2>Menu Fichier
+<p>
+<itemize>
+<item>Ajouter une boite mail: cette option vous permettre d'ajouter un 
+nouveau répertoire de type MH. Les dossiers "Réception", "Envoyés", "File d'attente",
+"Brouillons" et "Poubelle" seront créés dans ce répertoire.
+<item>Mise a jours de l'arbre des dossiers: relit l'arborescence complètes des dossiers
+existants, afin de mettre a jours l'affichage (ce n'est normalement pas nécessaire).
+<item>Dossier: vous permet d'ajouter, renommer, ou suppimer un dosier.
+<item>Importer un fichier mbox: vous permet d'importer un fichier au format
+mbox (tel que ceux créés par Pine) dans un dossier MH.
+<item>Exporter vers un fichier mbox: vous permet d'exporter un dossier dans un
+fichier au format mbox.
+<item>Vider la poubelle: cela va, bien sur vider le dossier "Poubelle".
+<item>Enregistrer sous: vous permet de sauvegarder vos messages dans un fichier, sur votre disque dur.
+<item>Imprime: vous permet d'imprimer le message selectionné.
+<item>Fermeture: termine Sylpheed.
+<item>Quitter: termine aussi Sylpheed.
+</itemize>
+</sect2>
+<sect2>Les menu Edition<p>
+<itemize>
+<item>Copier: vous permet de copier le texte sélectionné dans un buffer, a partir
+duquel vous pouvez le replacer a un endroit différent. Racourci: Ctrl-C
+<item>Tout sélectionner: sélectionne tout le txte de la fenetre courante. Racourci: Ctrl-A
+<item>Chercher: recherche dans la fenetre courante le texte que
+vous tapez. Racourci: Ctrl-S
+</itemize>
+</sect2>
+<sect2>Le menu vue
+<p>
+Le menu Vue, vous permet de changer l'apparence de Sylpheed. Vous pouvez
+séparer les fenetres (fenetre des dossiers, des messages, etc...), ajouter
+ou retirer la barre d'état, ainsi que d'autres options.
+<p>
+<itemize>
+<item>Arbre des dossiers: not implemented yet
+<item>Fenetre message: not implemented yet
+<item>Barre d'outils: définit la façon dont la barre d'outils sera affichée.
+Texte et icones, ou seulement l'un (ou l'autre).
+<item>Barre d'état: afficher ou supprimer la barre d'état.
+<item>Séparation de l'arbre des dossiers: définit la position de la fenetre contenant
+l'arbre des dossiers, attachée a la fenetre principale ou séparée.
+<item>Séparation de la fenetre des messages: définit la position de la fenetre contenant
+le message courrant, attachée a la fenetre principale ou séparée.
+<item>Jeu de charactères: vous permet de sélectionner le jeu de charactères que
+vous souhaitez utiliser pour vos messages.
+</itemize>
+</sect2>
+<sect2>Le menu Message
+<p>
+Dans ce menu vous trouverez les options suivantes:
+<itemize>
+<item>Récupérer les nouveaux messages: 
+cela récupére tous les messages de votre compte principal.
+<item>Récupérer pour tous les comptes: 
+Sylpheed intérogera tous vos comptes de messagerie pour récupérer tous les
+nouveaux messages.
+<item>Envoyer les messages en attente: 
+tous les messages que vous avez laissés dans le dossier "file d'attente"
+seront envoyés.
+<item>Créer un nouveau message: 
+pour composer un nouveau message.
+<item>Répondre : 
+un nouveau message sera créé ayant pour destinataire l'expéditeur du message
+sélectionné dans la fenetre de résumé.
+En fonction des parametres généraux, votre signature sera ajoutée au message
+et le message original sera inclus.
+<item>Répondre a tous: 
+comme pour "Répondre", mais les destinataire du nouveau message seront toutes
+les adresses contenues dans le message d'origine (incluses celles se trouvant
+dans la partie Cc:).
+<item>Transférer: 
+un message sera créé incluant le message original, sélectionné dans la
+fenetre de résumé. Vous pouvez definir le destinataire et modifier le
+texte, si vous le souhaitez, puis l'envoyer.
+<item>Transférer en pièce jointe: 
+comme pour "Transférer", mais le message original sera contenue dans une piece jointe.
+<item>Déplacer: vous permet de déplacer le message sélectionné dans un dossier
+différent. Le dossier de destination est sélectionné a partir d'une fenetre de navigation.
+<item>Copier: comme 'Déplacer', le message est copier, et non déplacé vers le dossier
+de destination.
+<item>Supprimer: vous permet de supprimer les messages sélectionnés dans la fenetre
+de résumé.
+<item>Merque: donne accès a un sous-menu contenant 'Marquer', 'Démarquer', 
+'Marquer comme lu', 'Marquer comme non-lu'. Lorsque vous marquez des messages,
+vous pouvez appliquer une action spécifique (déplacer, supprimer,...) a tous les
+messages marqués. Vous pouvez aussi dé-marquer les messages marqué de façon incorrect.
+Les dernieres options, comme leurs titre l'indiquent, marque les message comme 'lu'
+ou comme 'non-lu'.
+<item>Ouvrir dans une nouvelle fenetre: cela ouvrira le message dans une nouvelle fenetre,
+vous permettant de voir plusieurs messages dans différentes fenetre en meme temps.
+Pour fermer cette nouvelle fenetre, utilisez la touche 'échap'.
+<item>Voir le source du message: ouvre une nouvelle fenetre afichant le message
+sélectionné en incluant l'entète complete du message.
+Pour fermer cette nouvelle fenetre, utilisez la touche 'échap'.
+<item>Affichr tous les entetes: ouvre une nouvelle fenetre contenant seulement
+l'entete du message sélectionné. 
+Pour fermer cette nouvelle fenetre, utilisez la touche 'échap'.
+<item>Ré-éditer: cette option est seulement valable quand vous sélectionnez un
+message du dossier 'Brouillon' et permet d'ouvrir en édition un message existant.
+</itemize>
+Note sur les fonctions Déplacer, Copier et effacer: si vous ne specifiez pas 
+vouloir exécuter les commandes immédiatement (dans la configuration), vous
+devrez selectionner la commande 'Exécution'. Ce boutton se trouve dans la
+barre d'outils, mais peut aussi etre ateint par le menu 'Résumé'.
+</sect2>
+<sect2>Menu Résumé
+<p>
+A partir du menu 'Résumé' vous effectuerez toute sorte d'actions
+relatives a la gestion des messages. Ces actions seront appliquées sur
+la fenetre de résumé.
+<itemize>
+<item>Suppression des messages en double: cela supprime les message que vous
+auriez reçu plusieurs fois. Par example, si vous avez reçu un message
+directement mais aussi au travers d'une liste de diffusion.
+<item>Tri des messages: utilisez cette commande si vous souhaitez filtrer les
+messages du dossier courant en utilisant un nouveau filtre que vous venez de
+définir.
+<item>Exécution: cette commande est nécessaire si vous n'avez pas autorisé
+l'exécution immédiate des commande dans les préférences. Cette commande
+exécutera l'action que vous avez définit précédemment (déplacer, supprimer,...).
+<item>Mettre a jours: rafraichit la fenetre de message pour intégrer les dernier
+changements.
+<item>Précédent: sélectionne le message précédent, vous pouvez utiliser le racourci 'p'.
+<item>Suivant: selectionne le message suivant, vous pouvez utiliser le racourci 'n'.
+<item>Suivant non-lu: passe au prochain message non-lu du dossier courant.
+<item>Autre dossier: vous permet d'ouvrir un autre dossier en utilisant une 
+fenetre de sélection.
+<item>Tri: cette commande vous permet de trier les message de différentes
+façons. Ce tri peut etre par date, par sujet, par numéro (le numéro de message
+du format MH est utilisé, ici), etc.
+Notez que 'Attraction par sujet' est différent de 'Tri par sujet'.
+La commande 'Attraction par sujet' recherche les références de type 'Re:' dans
+les sujets. de cette façon les messages sont triés d'une façon plus logique.
+<item>Vue par thread: les messages sont reliés ensemble sous la forme d'un arbre,
+selon le sujet.
+<item>Vue non-threadé: l'inverse du précédent.
+<item>Choix des éléments affichés: affiche une boite de dialogue dans laquelle
+vous pouvez valider ou invalider les éléments que vous souhaitez voir dans
+la fenetre de résumé.
+</itemize>
+</sect2>
+<sect2>Menu Outils
+<p>
+dans le menu 'Outils', vous trouverez deux entrées, qui sont le carnet d'adresse
+et la fenetre de log.
+<p>
+Dans le carnet d'adresse, comme vous l'aviez deviné, vous pouvez stocker
+les adresse de messagerie que vous voulez sauvegarder.
+Vous pouvez créer des dossiers dans le carnet d'adresse afin de grouper
+certaines adresses.
+<p>
+Dans la fenetre de log, vous pouvez voir ce que Sylpheed est en train de faire.
+Il est bon de suivre les choses de cette façon lorsque vous suspectez un
+probleme. Vous pourrez ensuite copier le contenu de cette fenetre dans un
+message envoyé aux developeurs ou a la liste de diffusion.
+</sect2>
+
+<sect2>Menu Configuration
+<p>
+Dans le menu 'Configuration', vous pouvez ajuster Sylpheed pour qu'il
+agisse selon vos préférences.
+<itemize>
+
+<item>Préférences communes: cette entrée affichera une boite de dialogue
+dans laquelle vous pourrez selectionner un certain nombre d'onglets. Chaque
+onglet représente un groupe spécifique d'option de Sylpheed. Dans le chapitre
+suivant, ces options seront expliquées en détails.
+
+<item>Initialisation des filtres: 
+Cette option vous permet de définir les règles de filtrage que vous
+souhaitez voir Sylpheed utiliser pour trier vos nouveaux messages.
+Spécifiez en premier lieu la partie du message sur laquelle Sylpheed
+devra chercher, puis ce qu'il faut faire. Vous pouvez déplacer le message
+vers un dossier différent (ceci inclus la poubelle, pour vous débarrasser
+des messages inutiles). La sélection du dossier de destination est possible au
+travers d'une fenetre de sélection qui apparait si vous appuyez sur 'Selectionner'.
+<p>
+Vous pouvez choisir de ne pas recevoir le message. Notez que cela
+laissera le message sur le serveur de votre fournisseur d'accès, 
+le message ne sera pas supprimé!
+<p>
+Lorsque vous appuyez sur le boutton 'Enregistrer', la règle de filtrage,
+est ajoutée a la liste des  règles. Si vous sélectionnez 'Remplacer'
+alors, la règle sélectionnée est remplacée par les informations que vous
+venez d'entrer.
+Le boutton 'Supprimer' permet de supprimer une règle de filtrage.
+<p>
+Notez que vous pouvez définir deux sélections pour une règles, celles-ci
+pouvant etre combinées par la fonction OR ou AND.
+OR (ou) signifie qu'une des deux sélections  doit etre trouvée pour
+que la règle soit appliquée. AND (et) signifie que les deux sélections
+doivent etre trouvées pour que l'action définie soit déclenchée.
+<p>
+Sur le coté droit des sélection se trouvent deux bouttons nommés
+'haut' et 'bas'. Vous pouvez  déplacer une règle dans la liste en
+utilisant ces bouttons. Ceci peut modifier le comportement du filtrage, 
+il faut donc faire attention a l'ordre de définition des filtres.
+
+<item>Préférences par compte: ici vous pouvez définir les préférences pour
+compte de messagerie que vous utilisez. A savoir, si les messages doivent
+etre supprimés après avoir été téléchargés, quel est le serveur de messagerie
+a utiliser, etc. C'est la meme fenetre de dialogue que celle qui apparait
+a la création d'un nouveau compte de messagerie.
+
+<item>Création d'un nouveau compte: ici vous pouvez créer un nouveau compte,
+le nommer (avec un nom reconnaissable), 
+
+here you name the account (each account has a 
+recognizable name), you set up your name and e-mail address etc. You set 
+up the type of server you access (POP4, IMAP4, local mailbox, newsserver) 
+and where the downloaded messages have to go (default folder is the inbox). 
+In the RECEIVE tab you select or unselect options, in SEND you can set up 
+how to send your messages. In COMPOSE you can point to a specific signature 
+file, and in ADVANCED you can set up alternate ports for the server, 
+if these exist. (Do not mess with these unless you are sure you have to!!)
+<item>Edit accounts: here you can select one of the accounts you created, 
+from a list, and edit the information about them. Note that you cannot edit 
+an account for which you are writing a message at the same time. This to 
+ensure data integrity.
+<item>Change current account: here you can select what account you want 
+to use, to write a message.
+</itemize>
+</sect2>
+
+<sect2>Help menu<p>
+This menu lets you look at the (japanese for now) manual, and you can 
+also see the "about" info, who wrote Sylpheed.
+</sect2>
+
+</sect1>
+
+<sect1>Context menu
+<p>
+You can pull up context menus (through clicking button2) for the folder 
+tree and the summary pane. (windows users: button2 is the right mouse button.)
+<p>
+In the folder view you can add, rename and remove folders through the context menu.
+<p>
+In the message summary you can do a host of things from the context menu, like 
+viewing message headers, opening a message in a separate window (also possible 
+by double clicking on a message) etc.
+</sect1>
+
+<sect>Dialogs and views
+<p>
+<sect1>Folder view
+<p>
+The folder view shows you all the mail folders that you have created, in a 
+tree-like structure. If you want to see the headers of the messages in a 
+specific folder, just click the name of the folder once, and in the summary 
+view you can see the messages in the selected mail folder.
+<p>
+When you see a + sign in front of a folder name, that means the folder 
+branch of that part of the tree is 'collapsed'. You can expand that part 
+by clicking the + sign. In that same manner you can also collapse the - sign in 
+front of an expanded branch of the folder tree.
+<p>
+Special folders:
+<p>
+Draft: here you store messages that you want to send out more often, or you 
+want to work on some more. Using the 'reedit' option from the message menu,
+ you can edit the message further.<p>
+Trash: in here all your deleted messages go. Depending on the common preferences
+ setting, this box is or is not emptied when you end Sylpheed.
+</sect1>
+
+<sect1>Summary view 
+<p>
+The summary pane can show you many things. You can select what you want to 
+see from the Summary menu, selecting the option "Set display item". A list 
+of all options is:
+<itemize>
+<item>Mark: shows if the message is marked.
+<item>Unread: shows if the message is read or not
+<item>MIME: shows MIME attachments
+<item>Number: shows the MH number of the message
+<item>Size: the size of the entire message including attachments
+<item>Date: the date of sending by the sender
+<item>From: who sent the message
+<item>Subject: what the message is about
+</itemize>
+You can sort the summary view in many ways, by clicking the button that 
+is above the column. Click once to sort going up (a-z), click once more 
+to sort going down (z-a).<p>
+If you think the size of a column is not right, you can adjust that by 
+placing the mouse cursor next to the button of the column you want to 
+adjust, press mouebutton1 (left button) and drag the column to the width 
+you want it to have.<p>
+Select a message by clicking on it with the mouse. Once the summary pane 
+has the focus of the program, you can also move up and down in the list 
+through the cursor keys, or pressing "p"(revious) and "n"(ext) as in Pine.
+</sect1>
+
+<sect1>Message view <p>
+In the message view you can read the message that you selected in the 
+summary pane. If you entered the summary pane without selecting a message, 
+the message view will be empty. At the top of the message view some info 
+is presented about the message you are reading, as well as some statistics 
+on the selected folder.<p>
+You can scroll up and down in the message by using the arrow keys (after 
+clicking inside the message), or by using the scrollbar.
+</sect1>
+
+<sect1>Common preferences
+<p>
+The Common Preferences, found in the Configuration menu, shows you the following tabs:
+<sect2>Receive tab
+<p>
+In here you can set up how to receive messages.
+<itemize>
+<item>You can define a special program to pick up messages from the default 
+unix mailbox. Usually this is not used, but you can use it. Actually, this 
+information may be wrong. If someone knows better, please let me know.
+<item>Local spool lets you define where your local mailbox is located. 
+You can also tell Sylpheed whether or not to filter the incoming messages 
+from that mail spool file.
+<item>Autocheck new mail. When you check this option, Sylpheed will check 
+if there is new mail on the set interval.
+<item>Check new mail on startup means that Sylpheed will immediately look 
+for new mail on all the selected accounts when it loads.
+<item>In the news section you can specify how many articles should be downloaded 
+when opening a newsgroup.
+</itemize>
+</sect2>
+</sect1>
+
+<sect1>Setting up an account/changing an account<p>
+In order to set up an account in Sylpheed, in the configuration menu you 
+select "Create new account". If you want to change the settings of an 
+existing account, you select the "Edit accounts..." option from the 
+configuration menu, and there you select the account you want to change. 
+After that you press "edit". Then a dialog appears in which you can enter 
+or update the following areas:
+<p>
+<sect2>Basic tab
+<p>
+In the "Basic" tab you name the account. This is to make identifying the 
+account easier.
+<p>
+Choose a name that tells something about the account, like the name of the 
+ISP, mailbox or news-server you are setting up.  You can select this account
+to be the default account ("Usually used").
+<p>
+Enter your name and e-mail address, and if you have one, the organization 
+that you use Sylpheed for.
+In the Protocol box you select the type of service that this account will 
+be using. The flavors you can choose are: POP3 normal, POP3 APOP auth, 
+IMAP4, NNTP news or None (local).
+In the "inbox" field you can enter the mail folder where the mail for 
+this account will be stored in. This option is disabled when you set up 
+an NNTP News account.<p>
+For POP3 and IMAP services you can then specify the server where your 
+mail is stored. Details about this name, and also the name that goes 
+into the field for "SMPT server (send)" should be given to you by your ISP.
+<p>
+For a local unix mailbox, the "Server for receiving" is disabled, since 
+the mail will be received for you.
+<p>
+The fields for User ID and Password will also be disabled for accounts 
+that do no deal with POP3 or IMAP services. Otherwise you can enter the login 
+name and password for the e-mail server with your ISP here. Usually these 
+are the same as your login name and password to access the dial-in service, 
+but this is not standard. If in doubt, contact the helpdesk of your ISP.  
+<p>
+</sect2>
+<sect2>Receive tab
+<p>
+<p>
+The "Receive" tab is only used for POP3 accounts. Here you specify if the mails 
+that were successfully retrieved should be removed from the server. You can 
+also tell Sylpheed to get all the messages there, not only the ones you 
+already received (in case you leave your messages on the server). 
+The third option enables this account to be included when mail is checked 
+for "all accounts" (see the message menu for this), and if the incoming
+ messages should immediately be filtered when received.
+</sect2>
+<sect2>Send tab 
+<p>
+In the "Send" tab you can set up some more settings.
+</sect2>
+<sect2>Compose tab 
+<p>
+In the "Compose" tab you can define your signature file.
+</sect2>
+<sect2>Advanced tab
+<p>
+In the "Advanced" tab you can edit the portnumbers for the servers you will 
+be using. This normally will need no change.
+</sect2>
+</sect1>
+</sect>

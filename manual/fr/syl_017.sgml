@@ -1,0 +1,79 @@
+<sect>Information
+
+<sect1>Sites web sur Sylpheed<p>
+Vous avez ici quelques liens vers la FAQ de Sylpheed dans d'autres langues :<p>
+<itemize>
+<item>FAQ Sylpheed en français : 
+http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html, courtoisie de 
+DINH V. Hoa
+<item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm, FAQ 
+SYLPHEED  en japonais, courtoisie de WAKAI "SilverRain" Kazunao
+<item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html, FAQ SYLPHEED 
+en italien, courtoisie de Maurizio Codogno
+<item>http://www.synconet.de/privhome/rs/sylpheed_faq.html, FAQ SYLPHEED 
+en allemand (version HTML)
+<item>http://www.synconet.de/privhome/rs/sylpheed_faq.txt, la version texte 
+allemande, courtoisie de Ralf Schiffers.
+<item>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html, FAQ SYLPHEED en grec, 
+courtoisie de Theofilos Intzoglou.
+<item>http://sylpheed.republika.pl, FAQ SYLPHEED en polonais, courtoisie de 
+Przemyslaw Sulek.
+<item>Une version espagnole de la FAQ est écrite par Marcelo Ramos :
+http://www.geocities.com/hackpando/sylpheedfaq.html, version HTML,
+http://www.geocities.com/hackpando/sylpheedfaq.txt, version texte.
+<item>De plus, la FAQ espagnole est aussi disponible par Ricardo Mones Lastra :
+http://www.aic.uniovi.es/mones/sylpheed/faq-es/, HTML lié
+http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi,  (indépendant du 
+périphérique),
+http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps, la FAQ espagnole en 
+fichier Postscript.
+<item>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html, la FAQ turque pour 
+Sylpheed est disponible, grâce à la traduction de Doruk Fisek.
+<item>http://hem.passagen.se/webplats/sylpheed-faq-se.html, la FAQ suédoise, 
+courtoisie de Mattias Stergren
+</itemize>
+</sect1>
+<sect1>Liste de diffusion<p>
+Si vous voulez garder Sylpheed à jour et que vous voulez parler du programme 
+avec d'autres utilisateurs, vous pouvez rejoindre la liste de diffusion.<p>
+Send a mail to sylpheed-ctl@good-day.net that says<p>
+<tt>subscribe Votre nom</tt><p>
+dans le corps.<p>
+Le serveur retourne le courrier une fois pour le premier enregistrement de la 
+requête qui demande la confirmation : « Puis-je vous mettre sur la liste de 
+diffusion ? » qui inclut la phrase suivante (le nombre est un exemple).<p>
+<tt>confirm 84682771 Anne Shirley</tt><p>
+C'est une précaution pour éviter de vous inscrire contre votre volonté.<p>
+Si vous recevez un courrier de confirmation d'entrée, envoyez un courrier qui 
+inclut la phrase :<p>
+<tt>confirm Password(a number) Votre nom</tt><p>
+de l'adresse pour l'enregistrement : sylpheed-ctl@good-day.net encore. Puis, 
+il est considéré que vous avez confirmé l'enregistrement et vous êtes inscrit 
+dans le serveur.<p>
+L'adresse pour poster dans la liste est sylpheed@good-day.net.<p>
+Notez : si vous perdez le courrier qui dit<p>
+confirm Password(a number) Votre nom<p>
+ou que vous êtes perdus et vous voulez, en d'autres mots, redémarrer depuis le 
+début, envoyez à nouveau<p>
+<tt>subscribe Anne Shirley</tt><p>
+à sylpheed-ctl@good-day.net.<p>
+<sect2>Comment déssouscrire.<p>
+Envoyez un courrier sur sylpheed-ctl@good-day.net qui indique<p>
+<tt>unsubscribe</tt><p>
+dans le corps.<p>
+</sect2>
+<!-- added aug. 13, 2001 -->
+</sect1>
+<sect1>CVS anonyme<p>
+Cette section n'a pas encore été écrite.
+</sect1>
+
+<!-- added 2001/09/05 -->
+<sect1>Comment indiquez à un autre programme d'utiliser Sylpheed comme 
+programme de gestion de courriers ?<p>
+Si vous souhaitez utiliser Sylpheed depuis Netscape ou Opera, par exemple 
+alors, vous avez besoin d'aller dans la section « préférences » puis choisir 
+« applications » et dans la partie client de courrier, vous aurez besoin 
+d'entrer <tt>sylpheed --compose</tt>.
+</sect1>
+</sect>

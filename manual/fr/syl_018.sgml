@@ -1,0 +1,47 @@
+<sect>À propos de ce document
+
+<sect1>Note de Copyright<p>
+Copyright (C) 2001 Hiroyuki Yamamoto<p>
+Ce programme a été placé sous GPL.
+</sect1>
+<sect1>Licence publique générale GNU<p>
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version. This program is 
+distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. You should have received a 
+copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+</sect1>
+<!-- add 2001/07/21 -->
+<sect1>Où obtenir la dernière version de ce document<p>
+Vous pouvez trouver la dernière version de ce document sur le tri des pages de 
+manuel Sylpheed officiel sur http://nlpagan.net/sylman/index.html.<p>
+À cet endroit, le manuel est chargé comme pages HTML. À partir de cette page, 
+vous pouvez télécharger ces pages comme un fichier tar.gz pour la navigation 
+hors ligne sur votre propre ordinateur.<p>
+Vous pouvez aussi piocher dans le dépôt CVS sur http://sourceforge.net et 
+chercher le projet « sylpheeddoc ». Le document est y stocké comme un fichier 
+SGML, vous aurez besoin des outils SGML pour celui-ci !
+</sect1>
+<sect1>Fin des remarques<p>
+Je voudrais remercier quiconque a été impliqué dans le projet Sylpheed.<p>
+Hiroyuki Yamamoto et tous les autres développeurs pour le programme fabuleux 
+qu'ils ont créés.<p>
+Francois Barriere qui m'a aidé à devenir ami avec le système CVS.<p>
+Pour toute l'aide que j'ai reçu de tout le monde dans la liste de diffusion 
+de Sylpheed lorsque j'écrivais cette FAQ et ce manuel.<p>
+Nick Selby, pour avoir offert une assistance très appréciée pendant le 
+processus d'écriture de ce manuel.<p>
+Toutes les personnes autour du monde qui travaillent dur pour maintenir le 
+manuel et la FAQ mis à jour<p>
+Et Linus Torvald, qui nous a donné un fabuleux système d'exploitation ! ;-)
+<!-- end add 2001/07/21 -->
+</sect1>
+</sect>
+
+</article>

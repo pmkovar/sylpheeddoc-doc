@@ -1,0 +1,100 @@
+<sect>Reference<p>
+<!-- Added 2001/07/21 -->
+Dans cette section, vous allez trouvez quelques informations sur ce qui peut 
+être utile pour vous rendre Sylpheed plus clair pour ce qui concerne les 
+raccourcis claviers et une structure du format du carnet d'adresse.
+<sect1>Liste des raccourcis clavier<p>
+<sect2>Raccourcis à une touche :<p>
+<itemize>
+<item>a : crée un nouveau message ;
+<item>d : efface le message sélectionné ;
+<item>f : fait suivre le message sélectionné ;
+<item>g : va dans un répertoire spécifique par le biais d'un dialogue de 
+navigation ;
+<item>n : saute au message suivant/à la partie suivante d'un message 
+multipartie ;
+<item>p : saute au message précédent/à la partie précédente d'un message 
+multipartie ;
+<item>v : commute la vue de message on/off ;
+<item>w : même que un (((((((((((((()))))))))))))))
+<item>y : Dialogue Ouvre sauvegarde comme...
+</itemize>
+</sect2>
+<sect2>Raccourcis au menu Fichier :<p>
+<itemize>
+<item>Alt-F : ouvre le menu FICHIER ;
+<item>Alt-P : imprimer ;
+<item>Alt-W : fermer ;
+<item>Alt-Q : quitter.
+</itemize>
+</sect2>
+<sect2>raccourcis au menu Editer<p>
+<itemize>
+<item>Alt-E : ouvre le menu EDITER ;
+<item>Ctrl-C : copier ;
+<item>Ctrl-A : sélectionner tout ;
+<item>Ctrl-S : checher.
+</itemize>
+</sect2>
+<sect2>Raccourcis au menu Vue<p>
+<itemize>
+<item>Alt-V : ouvre le menu VUE.
+</itemize>
+<sect2>Raccourcis au menu Message<p>
+<itemize>
+<item>Alt-M : ouvre le menu MESSAGE ;
+<item>Alt-I : contrôle le courrier pour tous les comptes courants ;
+<item>Shift-Alt-I : Contrôle les courriers pour tous les comptes ;
+<item>Alt-N : compose des nouveaux messages ;
+<item>Alt-R : répondre au message ;
+<item>Ctrl-Alt-R : répondre à l'émetteur (contrairement à répondre à i.e. une 
+liste de diffusion) ;
+<item>Shift-Alt-R : répondre à tous (inclut toutes les adresses dans À : et 
+Cc :) ;
+<item>Ctrl-F : faire suivre le message ;
+<item>Shift-Ctrl-F : faire suivre le message en attachement ;
+<item>Alt-O : déplacer le message ;
+<item>Alt-D : effacer le message ;
+<item>Shift-Ctrl-N : ouvrir le message dans une nouvelle fenêtre ;
+<item>Ctrl-U : voir le source du message ;
+<item>Ctrl-H : montrer tous les en-têtes du message ;
+</itemize>
+</sect2>
+<sect2>Raccourcis du menu résumé<p>
+<itemize>
+<item>Alt-S : ouvre le menu Résumé<p>
+<item>Alt-X : exécute (commandes en instance, c'est seulement utile lorsque 
+les commandes ne sont pas exécutées immédiatement) ;
+<item>Alt-U : mise à jour des la vue ;
+<item>Alt-G : aller dans les autres répertoires ;
+<item>Ctrl-T : vue en file ;
+<item>Shift-Ctrl-T : enlever la vue en file.
+</itemize>
+</sect2>
+<sect2>Raccourcis au menu OUTILS<p>
+<itemize>
+<item>Alt-T : ouvrir le menu outil ;
+<item>Alt-A : ouvrir le carnet d'adresse ;
+<item>Alt-L : ouvrir un journal de connexion.
+</itemize>
+</sect2>
+</sect1>
+
+<sect1>Format de donnée du carnet d'adresse<p>
+Le carnet d'adresse est situé dans ~/.sylpheed. Il est nommé addressbook.xml.
+Le format général du carnet d'adresse est :<p>
+&lt addressbook &gt<p>
+ &lt common_address &gt<p>
+    &lt group name="Common addresses" &gt<p>
+    &lt item &gt<p>
+     &lt name &gt Paul &lt /name &gt<p>
+     &lt address &gt paul@nlpagan.net &lt /address &gt<p>
+     &lt remarks &gt Writes Sylph. manual &lt /remarks &gt<p>
+	&lt /item &gt<p>
+    &lt /group &gt<p>
+ &lt /common_address &gt<p>
+&lt /addressbook &gt
+
+</sect1>
+<!-- end add 2001/07/21 -->
+</sect>

@@ -1,0 +1,43 @@
+<sect>FAQ<p>
+Vous pouvez trouver la dernière FAQ (liste des questions les plus fréquement 
+posées) mise à jour sur http://nlpagan.net/sylpheed-faq.html.
+
+<sect1>Messages de Nouvelles non lus
+</sect1>
+<sect1>En utilisant les comptes de courriers MSN
+</sect1>
+<sect1>Changer les Polices dans Menu, etc.<p>
+Si vous voulez changer la police qui montre le menu de Sylpheed, c'est 
+contrôlé par le gestionnaire de fenêtres que vous utilisez. Vous devez aller 
+dans la configuration du gestionnaire de fenêtres (KDE, Gnome, XFCE) et 
+changer la police avec celle que vous souhaitez.<p>
+Changer la police de vues de Sylpheed est faite en sélectionnant 
+« préférences communes » dans le menu de configuration. Ici, vous sélectionnez 
+l'onglet « Affichage » et dans la première section de la fenêtre, vous pouvez 
+naviguer dans les polices disponibles sur votre ordinateur.
+</sect1>
+<sect1>Changer les liaisons de touches pour les raccourcis<p>
+L'interface graphique de Sylpheed est basée sur GTK. Ceci signifie qu'il est 
+très facile de changer les liaisons de touches (raccourcis clavier, touches de 
+fonctions) pour les objets des menus. Si vous utilisez une combinaison de 
+touches spécifique dans un autre programme, vous pouvez indiquer à Sylpheed 
+d'utiliser la même combination de touches.<p>
+La procédure est très simple. Supposons que vous voulez changer la liaison de 
+touches pour obtenir de nouveaux courriers (menu message) de Alt-I vers Ctrl-M.
+<p>
+<itemize>
+<item>Ouvrez le menu de message avec la souris ou en pressant Alt-M
+<item>Sélectionnez l'option « Obtenir de nouveaux messages x (ne cliquez pas 
+dessus, cela activera la fonction !). Si vous utilisez la souris, déplacez 
+simplement le curseur de la souris sur l'option.
+<item>Vous pressez maintenant Ctrl-M. Vous verrez immédiatement la nouvelle 
+combinaison apparaître dans le menu.
+</itemize>
+Félicitations, vous venez juste de changer une combinaison de touches. De 
+cette manière, vous pouvez changer toutes les options que vous voulez. Notez 
+qu'il est mieux d'utiliser les combinaisons de touches alt, shift et ctrl. 
+Plusieurs fonctions dans Sylpheed sont appelées par une action à une touche 
+qui sont programmés.
+</sect1>
+
+</sect>
