@@ -2,25 +2,94 @@
 <p>
 
 <figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/address_book.png">
+        <ph vspace="1cm">
+        <img src="snapshots/address_book.png">
 </figure>
 
-Le carnet d'adresses permet de stocker les adresses des personnes et les endroits avec qui vous correspondez le plus souvent. Il est accessible par le raccourci «~Alt-A~», le bouton <bf>Adresse</bf> ou par le menu <bf>Outils -> Carnet d'adresses</bf>.<p>
+<p>
+Le carnet d'adresses permet de stocker les adresses des personnes et
+les endroits avec qui vous correspondez le plus souvent. Il est
+accessible par le raccourci «~Alt-A~», le bouton <bf>Adresse</bf> ou
+par le menu <bf>Outils -> Carnet d'adresses</bf>.
 
-<sect1>Ajouter et supprimer des adresses<p>
-L'ajout d'une adresse au carnet d'adresses est simple. Cliquez avec le bouton 2 (droit) de la souris sur le carnet, dossier ou groupe dans lequel vous voulez ajouter l'adresse, sélectionnez <bf>Nouvelle adresse</bf> et remplissez les champs de la fenêtre qui se présente.  Une autre façon consiste à d'abord sélectionner le carnet, le dossier ou le groupe désiré et puis cliquer sur le bouton <bf>Ajouter</bf>.<p>
-La suppression d'une adresse est également simple. Sélectionnez l'adresse en cliquant dessus, puis pressez le bouton <bf>Supprimer</bf>.<p>
+<p>
+Si les options ont été compilées dans Sylpheed le carnet d'adresse
+peut se connecter à un serveur LDAP pour rechercher des adresses et
+vous pouvez utiliser le carnet d'adresse de votre Palm PDA.
+
+<sect1>Ajouter et supprimer des adresses
+<p> 
+L'ajout d'une adresse au carnet d'adresses est simple. Cliquez
+avec le droit de la souris sur le carnet, le dossier ou le groupe
+dans lequel vous voulez ajouter l'adresse, sélectionnez <bf>Nouvelle
+adresse</bf> et remplissez les champs de la fenêtre qui se présente.
+Une autre façon consiste à d'abord sélectionner le carnet, le dossier
+ou le groupe désiré et puis cliquer sur le bouton <bf>Ajouter</bf>.
+
+<p>
+<figure loc="here">
+	<ph vspace="1cm">
+	<img src="snapshots/address_book_basic.png">
+</figure>
+
+<p>
+Dans l'onglet <bf>Général</bf> vous pouvez remplir le nom, le prénom
+et fournir un surnom. Le <bf>Nom Affiché</bf> sera utilisé dans la
+colonne <bf>Nom</bf> de la fenêtre du carnet d'adresse.
+
+<p>
+<figure loc="here">
+	<ph vspace="1cm">
+	<img src="snapshots/address_book_address.png">
+</figure>
+
+<p>
+Dans l'onglet <bf>Adresse Email</bf> remplissez le champ d'adresse
+email et utilisez le bouton <bf>Ajouter</bf> pour l'ajouter à la
+liste. Il est aussi possible d'ajouter un alias à cette adresse et de
+l'utiliser lors de vos recherches.  Il est possible d'attribuer
+plusieurs adresses à une même personne en répétant l'opération décrite
+ci dessus. Les adresses peuvent être triées en utilisant les boutons
+<bf>Plus Bas</bf> et <bf>Plus Haut</bf>. L'adresse sur le haut sera la
+première listée dans la fenêtre principale du carnet d'adresse.
+
+<p>
+La suppression d'une adresse est également simple. Sélectionnez
+l'adresse en cliquant dessus, puis pressez le bouton
+<bf>Supprimer</bf>.<p>
 </sect1>
 
-<sect1>Dossiers et Groupes<p>
-Le carnet d'adresses, tout comme les courriers, peut être organisé en arborescence. Pour cela, cliquez avec le bouton 2 (droit) de la souris sur le carnet d'adresses ou dossier dans lequel vous voulez ajouter un nouveau dossier et sélectionnez <bf>Nouveau dossier</bf>. Entrez ensuite un nom descriptif, puis cliquez sur <bf>Ok</bf> et votre nouveau dossier est créé.<p>
-De la même manière, vous pouvez créer un nouveau groupe dans un dossier. Cliquez avec le bouton 2 (droit) de la souris sur le dossier voulu, sélectionnez <bf>Nouveau groupe</bf>, entrez un nom, cliquez sur <bf>Ok</bf> et c'est fait.<p>
-</sect1>
-<sect1>Interaction avec la fenêtre de composition de messages<p>
-Dans la fenêtre de composition de message ouverte, accédez au carnet d'adresse par un des moyens disponibles (barre d'outils, raccourcis claviers, menu).
-Pour trouver une adresse~: allez dans le champ <bf>Nom~:</bf>, entrez le début du nom ou de l'adresse que vous cherchez et pressez la touche de tabulation «~TAB~». Une liste déroulante apparaîtra avec les addresses correspondantes trouvées. Sélectionnez-en une et pressez «~Entrée~». Ensuite, utilisez les boutons <bf>À~:</bf>, <bf>Cc~:</bf> ou <bf>Cci~:</bf> pour ajouter l'adresse à la liste adéquate des destinataires du courrier édité. Si vous n'êtes pas en train de composer un message, ces boutons seront désactivés.
+<sect1>Dossiers et Groupes
+<p> 
+Le carnet d'adresses, tout comme les courriers, peut être organisé
+en arborescence. Pour cela, cliquez avec le bouton 2 (droit) de la
+souris sur le carnet d'adresses ou dossier dans lequel vous voulez
+ajouter un nouveau dossier et sélectionnez <bf>Nouveau
+dossier</bf>. Entrez ensuite un nom descriptif, puis cliquez sur
+<bf>Ok</bf> et votre nouveau dossier est créé.
 
+<p> 
+De la même manière, vous pouvez créer un nouveau groupe dans un
+dossier. Cliquez avec le bouton 2 (droit) de la souris sur le dossier
+voulu, sélectionnez <bf>Nouveau groupe</bf>, entrez un nom, cliquez
+sur <bf>Ok</bf> et c'est fait.<p>
 </sect1>
+
+<sect1>Interaction avec la fenêtre de composition de messages
+
+<p> 
+Dans la fenêtre de composition de message ouverte, accédez au
+carnet d'adresse par un des moyens disponibles (barre d'outils,
+raccourcis claviers, menu).  Pour trouver une adresse~: allez dans le
+champ <bf>Nom~:</bf>, entrez le début du nom ou de l'adresse que vous
+cherchez et pressez la touche de tabulation «~TAB~». Une liste
+déroulante apparaîtra avec les addresses correspondantes
+trouvées. Sélectionnez-en une et pressez «~Entrée~». Ensuite, utilisez
+les boutons <bf>À~:</bf>, <bf>Cc~:</bf> ou <bf>Cci~:</bf> pour ajouter
+l'adresse à la liste adéquate des destinataires du courrier édité. Si
+vous n'êtes pas en train de composer un message, ces boutons seront
+désactivés.
+</sect1>
+
 </sect>
 

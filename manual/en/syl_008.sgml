@@ -202,7 +202,7 @@ In here you can control the display options of Sylpheed.
 		column, for any mail you have sent, the name of the recipient will
 		appear preceded by an arrow (the characters sequence: -->).
 		The <it>Expand threads</it> controls the initial state of the message
-		threads when opening a folder (expanded of collapsed).
+		threads when opening a folder (expanded or collapsed).
 		The <it>Set display item of summary</it> button opens a selection
 		window that contains all the available items to display in the
 		left column, the currently selected items in the right column.
@@ -230,7 +230,7 @@ The message tab controls the message window options.
 		button next to the <it>Enable coloration of messages</it> toggle.
 	</item>
 	<item>
-		The dispaly of the header summary between the summary and message
+		The display of the header summary between the summary and message
 		panes can also be turned on and off (<it>Display header pane above message 
 		view</it> dialog).
 	</item>
@@ -262,7 +262,7 @@ The message tab controls the message window options.
 		eye this can be pleasing, it is a personal preference.
 	</item>
 	<item>
-		Select the <it>Resize attached image</it> if you wnat all the
+		Select the <it>Resize attached image</it> if you want all the
 		images (attachment) to be resized to fit in the message window.
 	</item>
 </itemize>
@@ -282,7 +282,7 @@ behaviour.
 		The <it>Open message when cursor keys are pressed</it> toggles controls
 		the opening of the messages while you go through them in the summary
 		pane using the cursor (up and down arrows) keys. If this toggle is on,
-		each time you press the <it>down</it> (or <it>up</it>) key in the the
+		each time you press the <it>down</it> (or <it>up</it>) key in the
 		summary window, the current message changes and the content of the
 		message view changes to the content of the newly selected message.
 		Otherwise, the content of the message view does not change unless you

@@ -1,99 +1,109 @@
 <sect>Configuration de Sylpheed
 <p>
 Toutes les options de configuration sont accessibles a partir du menu
-<bf>Configuration</bf>, il s'agit d'une part des préférences générales, 
-des options de filtres, des modèles et des actions, et d'autre part, des 
-options spécifiques aux comptes. 
+<bf>Configuration</bf>, il s'agit d'une part des préférences
+générales, des options de filtres, des modèles et des actions, et
+d'autre part, des options spécifiques aux comptes.
 <p>
-Sylpheed n'impose aucune limite sur le nombre de comptes que vous pouvez créer.
-Vous pouvez non seulement créer un compte pour chacun de vos email mais aussi 
-définir différents comportements pour chacun de ces comptes. Comme les dossiers
-peuvent être attachés à des comptes, la configuration change automatiquement
-(ainsi vous pouvez avoir différentes signatures lorsque vous répondez à des 
-messages de différents dossiers). 
+Sylpheed n'impose aucune limite sur le nombre de comptes que vous
+pouvez créer.  Vous pouvez non seulement créer un compte pour chacun
+de vos email mais aussi définir différents comportements pour chacun
+de ces comptes. Comme les dossiers peuvent être attachés à des
+comptes, la configuration change automatiquement (ainsi vous pouvez
+avoir différentes signatures lorsque vous répondez à des messages de
+différents dossiers).
 
 <sect1>Préférences générales
 <p>
-La fenêtre des préférences générales, que vous trouverez dans le menu 
-<bf>Configuration</bf> contrôle l'affichage de la fenêtre principale et 
-différentes options de l'interface graphique de Sylpheed. Selon les options
-de compilations utilisées (et des librairies externes disponibles) certains
-onglets seront (ou non) inclus dans votre version de Sylpheed. Ces onglets sont
-décrits dans les sections couvrant les paramêtres optionels qu'ils contôlent
-(Comme par exemple l'onglet <bf>Confidentialité</bf> pour l'interface avec 
-GnuPG).
+La fenêtre des préférences générales, que vous trouverez dans le menu
+<bf>Configuration</bf> contrôle l'affichage de la fenêtre principale
+et différentes options de l'interface graphique de Sylpheed. Selon les
+options de compilations utilisées (et des librairies externes
+disponibles) certains onglets seront (ou non) inclus dans votre
+version de Sylpheed. Ces onglets sont décrits dans les sections
+couvrant les paramêtres optionels qu'ils contrôlent (Comme par exemple
+l'onglet <bf>Confidentialité</bf> pour l'interface avec GnuPG).
 
- <sect2>Onglet Réception
- <p>
- Dans cet onglet vous configurez la façon dont vous devez recevoir vos messages.
+<sect2>Onglet Réception
+<p>
+Dans cet onglet vous configurez la façon dont vous allez recevoir vos
+messages.
 
- <figure loc="h"><ph vspace="479px"><img src="snapshots/pref_receive.png"></figure>
+<figure loc="h"><ph vspace="479px">
+  <img src="snapshots/pref_receive.png">
+</figure>
 
   <itemize>
-	    <item>  
-		    Programme externe~:
-		    Vous pouvez spécifier un programme particulier pour aller
-                    chercher les messages de votre boite aux lettres électronique
-                    unix par défaut. Habituellement cette option n'est pas 
-                    utilisée, mais vous pouvez le faire.
-	    </item>
-	    <item>
-		    Spool local~:
-		    Vous pouvez spécifier où se trouve la file d'attente de vos 
-                    mails. Vous pouvez aussi indiquer à Sylpheed si il doit ou 
-                    non filtrer les messages arrivant de cette boite aux lettres
-		    électronique particulière.
-            </item>
-	    <item>
-		    Relève automatique~: 
-		    Effectue ou non la relève du courrier de manière automatique
-		    à intervalle régulier (celui que vous avez fixé).
-	    </item>
-	    <item>
-		    Relever le courier au démarrage~:
-                    Relève le courier au démarrage, c'est à dire que lorsque  
-		    Sylpheed démarre il va immédiatement chercher les nouveaux
-                    messages des comptes pour lequels il est paramêtré pour le
-	    </item>
-	    <item>
-		    Article~: 
-		    Vous pouvez indiquer le nombre maximum d'articles qui 
-		    doivent être téléchargés à l'ouverture d'un groupe de
-                    nouvelles (newsgroup).
-	    </item>
+    <item>  
+	  Programme externe~:
+	  Vous pouvez spécifier un programme particulier pour aller
+	  chercher les messages de votre boite aux lettres électronique
+	  unix par défaut. Habituellement cette option n'est pas 
+	  utilisée, mais vous pouvez le faire.
+    </item>
+    <item>
+          Spool local~:
+	  Vous pouvez spécifier où se trouve la file d'attente de vos 
+          mails. Vous pouvez aussi indiquer à Sylpheed si il doit ou 
+          non filtrer les messages arrivant de cette boite aux lettres
+          électronique particulière.
+    </item>
+    <item>
+	  Relève automatique~: 
+	  Effectue ou non la relève du courrier de manière automatique
+	  à intervalle régulier (celui que vous avez fixé).
+    </item>
+    <item>
+	  Relever le courier au démarrage~:
+          Relève le courier au démarrage, c'est à dire que lorsque  
+	  Sylpheed démarre il va immédiatement chercher les nouveaux
+          messages des comptes pour lequels il est paramêtré pour le
+    </item>
+    <item>
+          Mettre à jour tous les dossiers locaux après incorporation~:
+          Si vous connaissez l'utilisation de cette option, ayez le
+          bon goût d'écrire cette section...
+    </item>
+    <item>
+          Article~: 
+	  Vous pouvez indiquer le nombre maximum d'articles qui 
+	  doivent être téléchargés à l'ouverture d'un groupe de
+          nouvelles (newsgroup).
+    </item>
   </itemize>
  </sect2>
 
 <sect2>Onglet Envoyer
 <p>
-Dans cet onglet vous pouvez configurer la manière dont sont envoyés vos 
-messages.
+Dans cet onglet vous pouvez configurer la manière dont seront envoyés
+vos messages.
 
 <figure loc="h"><ph vspace="479px">
 	<img src="snapshots/pref_send.png">
 </figure>
 
 <itemize>
-	<item>
-		Vous pouvez choisir d'utiliser un programme externe (comme
-		sendmail) pour envoyer vos messages. Par défaut, aucun 
-		programme externe n'est nécessaire et Sylpheed peut se charger
-                de les envoyer directement vers un serveur SMTP.
-	</item>
-	<item>
-		Les messages que vous envoyez peuvent être sauvegardés dans
-                la boîte aux lettres <it>Envoyés</it>. Le dossier peut être
-                spécifié pour chaque compte dans les options de la 
-		configuration d'un compte.
-	</item>
-	<item>
-	        Vous pouvez choisir le jeu de caractère pour l'envoi de vos
-                message. Vous pouvez forcer ce choix ou mieux, utiliser le
-                mode <it>automatique</it> par défaut. (NDT le jeu de 
-                caractères pour les européens contenant l'euro se nomme
-                iso-8859-15). Le mode par défaut détermine le jeu de 
-                caractères optimal à utiliser lors de l'envoi de vos messages.
-	</item>
+    <item>
+         Vous pouvez choisir d'utiliser un programme externe (comme
+	 sendmail) pour envoyer vos messages. Par défaut, aucun 
+	 programme externe n'est nécessaire et Sylpheed peut se charger
+         de les envoyer directement vers un serveur SMTP.
+    </item>
+    <item>
+	 Les messages que vous envoyez peuvent être sauvegardés dans
+         la boîte aux lettres <it>Envoyés</it>. Le dossier peut être
+         spécifié pour chaque compte dans les options de la 
+	 configuration d'un compte.
+    </item>
+    <item>
+	 Vous pouvez choisir le jeu de caractère pour l'envoi de vos
+	 message. Vous pouvez forcer ce choix ou mieux, utiliser le
+	 mode <it>automatique</it> par défaut. (NDT le jeu de
+	 caractères pour les européens contenant l'euro se nomme
+	 iso-8859-15). Le mode par défaut détermine le jeu de
+	 caractères optimal à utiliser lors de l'envoi de chacun des
+	 messages.
+    </item>
 </itemize>
 </sect2>
 
@@ -107,50 +117,49 @@ Contrôle le comportement de la fenêtre de composition.
 </figure>
 
 <itemize>
-	<item>
-		Vous pouvez changer le séprateur de signature et choisir 
-		de l'insérer automiquement (a moins que votre fichier de 
-		signature le contienne déjà). Laissez ce paramètre tel qu'il
-                est par défaut (a moins que vous en ayez réellement besoin et 
-                soyez préparer à affronter une guerre de religion). En effet,
-                un grand nombre de logiciels de mesagerie utilisent ce 
-		séparateur pour couper la signature lors des inclusions 
-		automatiques de citiations et celui qui vous est proposé est 
-		celui du standard.
-	</item>
-	<item>
-		Si vous détestez l'éditeur de Sylpheed, vous pouvez choisir 
-		d'utiliser automatiquement un autre éditeur de votre choix 
-                pour composer un nouveau message. (l'éditeur peut être défini
-		dans l'onglet <it>Autres</it>.
-	</item>
-	<item>
-		Les paramètres de césure déterminent comment Sylpheed doit
-                couper les longues lignes. Vous pouvez choisir d'opérer des 
-                césures  sur les citations, lorsque vous écrivez ou bien encore
-                lorsque vous envoyez vos messages. Vous pouvez aussi changer le
-                nombre maximal de caractères par lignes.
-	</item>
-	<item>
-		Les options de réponse vous permettent de contrôler la manière 
-                dont vous répondrez à vos mails. Lorsque vous utilisez l'option 
-                <it>Sélection Automatique de compte</it>, le compte utilisé pour
-                répondre à un message est automatiquement sélectionné en 
-                fonction du dossier où se trouve le message originel (comme il
-                vous l'a déjà été dit, les comptes peuvent être attachés aux 
-                dossiers).
-                Si l'option <it>Répondre en citant</it> est selectionnée, 
-                lorsque vous cliquez sur le bouton <it>Répondre</it> la fenêtre
-		de composition apparaît, soit, avec l'ensemble du message auquel
-                vous voulez répondre (si vous n'aviez rien sélectionné dans ce 
-                message), soit avec la partie que vous aviez sélectionnée.
-		Lorsque cette option n'est pas sélectionnée, la fenêtre de 
-                composition apparaît systématiquement vide, et vous devrez faire
-                des copier-coller manuels du message originel pour le citer.
-	</item>
+    <item>
+	Vous pouvez changer le séprateur de signature et choisir 
+	de l'insérer automiquement (a moins que votre fichier de 
+	signature le contienne déjà). Laissez ce paramètre tel qu'il
+        est par défaut (a moins que vous en ayez réellement besoin et 
+        soyez préparer à affronter une guerre de religion). En effet,
+        un grand nombre de logiciels de mesagerie utilisent ce 
+	séparateur pour couper la signature lors des inclusions 
+	automatiques de citiations et celui qui vous est proposé est 
+	celui du standard.
+    </item>
+    <item>
+	Si vous détestez l'éditeur de Sylpheed, vous pouvez choisir 
+	d'utiliser automatiquement un autre éditeur de votre choix 
+        pour composer un nouveau message. (l'éditeur peut être défini
+        dans l'onglet <it>Autres</it>.
+    </item>
+    <item>
+	Les paramètres de césure déterminent comment Sylpheed doit
+        couper les longues lignes. Vous pouvez choisir d'opérer des 
+        césures  sur les citations, lorsque vous écrivez ou bien encore
+        lorsque vous envoyez vos messages. Vous pouvez aussi changer le
+        nombre maximal de caractères par lignes.
+    </item>
+    <item>
+	Les options de réponse vous permettent de contrôler la manière 
+        dont vous répondrez à vos mails. Lorsque vous utilisez l'option 
+        <it>Sélection Automatique de compte</it>, le compte utilisé pour
+        répondre à un message est automatiquement sélectionné en 
+        fonction du dossier où se trouve le message originel (comme il
+        vous l'a déjà été dit, les comptes peuvent être attachés aux 
+        dossiers).
+        Si l'option <it>Répondre en citant</it> est selectionnée, 
+        lorsque vous cliquez sur le bouton <it>Répondre</it> la fenêtre
+	de composition apparaît, soit, avec l'ensemble du message auquel
+        vous voulez répondre (si vous n'aviez rien sélectionné dans ce 
+        message), soit avec la partie que vous aviez sélectionnée.
+        Lorsque cette option n'est pas sélectionnée, la fenêtre de 
+        composition apparaît systématiquement vide, et vous devrez faire
+        des copier-coller manuels du message originel pour le citer.
+    </item>
 </itemize>
 </sect2>
-
 
 <sect2>Onglet Citation
 <p>
@@ -171,26 +180,285 @@ dans vos réponses et les messages que vous transférez.
 		Vous pouvez aussi définir le texte qui sera introduit avant 
 		et après la citation. L'ensemble des symboles que vous pouvez
                 utiliser pour personnaliser vos citations sont expliqués dans 
-		la fenêtre qui apparît lorsque vous cliquez sur le bouton
+		la fenêtre qui apparaît lorsque vous cliquez sur le bouton
 		<it>Description des symboles</it>.
 	</item>
 </itemize>
 </sect2>
 
+<sect2>Onglet Affichage
+<p>
+Ici vous pouvez fixer les options d'affichage de Sylpheed
 
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_display.png">
+</figure>
+
+<itemize>
+	<item>
+		Vous pouvez changer les fontes utilisées pour afficher
+		les messages. Le bouton se trouvant à coté du champ
+		contenant le nom de la fonte permet d'ouvrir une
+		fenêtre de sélection des fontes où vous pouvez alors
+		choisir la votre parmi toutes celles proposées. 
+	</item>
+	<item>
+		Activer la traduction des en-têtes permet de changer
+		l'affichage de celles ci dans le résumé des en-têtes
+		(entre le panneau du message et le panneau sommaire)
+		et de les avoir dans la langue choisie dans le système
+		(sélectionnée par la variable d'environnement 'LANG').
+		Ces options prendrons effet la prochaine fois que vous
+		démarrerez Sylpheed.
+	</item>
+	<item>
+		<it>Afficher le nombre de message non lus près du nom
+		de dossier</it> ajoutera, dans le panneau des
+		dossiers, à coté du nom du dossier, le nombre de
+		messages non lus de ce dossier (De cette façon vous
+		pouvez minimiser la largeur du panneau des dossiers et
+		cacher la colonne des messages non lus).
+	</item>
+	<item>
+		Vous pouvez aussi contrôler le contenu du panneau
+		sommaire. Si vous choisissez d'afficher le nom du
+		destinataire pour les messages que vous envoyez, dans
+		la colonne <it>De</it>, tous les mails que vous avez
+		envoyés seront précédé, dans ce champ, par une flèche
+		(la séquence de caractère~: -->).  La <it>vue par fil
+		de discution</it> contrôle la manière dont sont
+		affichés les messages à l'ouverture d'un dossier
+		(developpé ou reduit).  Le bouton <it>Eléments
+		affichés dans le sommaire</it> ouvre une fenêtre de
+		sélection qui vous permet de choisir parmi les
+		éléments disponibles (colonne de gauche) ceux qui
+		seront affichés (colonne de droite).  Les éléments
+		peuvent être ajoutés ou enlevés en utilisant les deux
+		flèches qui apparaissent entre ces deux colonnes. En
+		utilisant les boutons <it>Plus haut</it> et <it>Plus
+		bas</it> qui se trouvent sur la droite de la fenêtre,
+		vous pouvez modifier l'ordre dans lequel seront
+		affichés les éléments dans le panneau sommaire (de
+		gauche à droite).
+	</item>
+</itemize>
+</sect2>
+
+
+<sect2>Onglet Message
+<p>
+l'onglet message contrôle les options de la fenêtre des messages.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_message.png">
+</figure>
+
+<itemize>
+   <item>
+        Le texte des messages peut être colorisé pour surligner les
+        différents niveaux d'indentation du texte et des URIs. Les
+        couleurs utilisées peuvent être changées en utilisant la boîte
+        de sélection qui apparaît lorsque vous cliquez sur le bouton
+        <it>Modifier...</it> qui se trouve juste en façe de l'option
+        <it>Coloration des messages</it>
+   </item>
+   <item>
+        Il est possible d'activer ou de désactiver l'affichage des
+        en-têtes du message entre le panneau sommaire et le panneau
+        des messages (Utilisez l'option <it>Afficher un panneau
+        d'en-têtes au dessus du messages<it>).
+   </item>
+   <item>
+        L'option <it>Afficher certains en-têtes dans la fenêtre des
+        messages</it> et le bouton <it>Modifier...<it> qui se trouve
+        juste en façe contrôlent l'inclusion de certains champs
+        d'en-têtes dans le panneau des messages. Si la coloration des
+        messages a été choisie alors les adresses de courriel
+        apparaissant dans les en-têtes sont surlignées comme des URIs.
+   </item>
+   <item>
+        La valeur de l'<it>Espacement des lignes</it> permet de
+        contrôler l'espace alloué entre chaque ligne du panneau des
+        messages.
+   </item>
+   <item>
+        L'option <it>Laisser un espace en tête</it> permet
+	de laisser un léger espace au début des nouvelles
+	lignes (celles où l'écrivain n'a pas presser la
+	touche Entrée et celles où il 'y a pas eu de retour
+	à la ligne automatique). Ceci est particulièrement
+	utile pour lire les longs courriels.
+   </item>
+   <item>
+	Le défilement par <it>Demi-page</it> permet de faire défiler
+	le texte dans le panneau des messages par demi-page au lieu
+	d'une page complète lorsque vous appuyez sur la barre espace.
+   </item>
+   <item>
+	Vous pouvez aussi utiliser l'option <it>Défilement
+	continu</it> qui permet de faire défiler le message en
+	douceur. C'est plus plaisant pour les yeux, c'est un choix
+	personnel.
+   </item>
+   <item>
+       Sélectionnez l'option <it>Redimensionner l'image attachée</it>
+       si vous voulez que toutes les images attachées soient
+       redimensionnées à la taille de la fenêtre des messages.
+   </item>
+</itemize>
+</sect2>
+
+<sect2>Onglet Interface
+<p>
+L'onglet interface contrôle le comportement de l'interface graphique
+de l'utilisateur de Sylpheed.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_interface.png">
+</figure>
+
+<itemize>
+    <item>
+        <it>Toujours ouvrir les messages lorsqu'ils sont
+        sélectionnés</it> bascule le contrôle de l'ouverture des
+        messages lorsque vous les parcourrez avec les flèches du
+        curseur (les flèches haut et bas). Lorsque cette option est
+        activée à chaque fois que vous pressez la flèche bas (ou haut)
+        pour naviguer dans le panneau sommaire, le contenu du panneau
+        du message change pour afficher le message courant que vous
+        venez de sélectionner. Autrement, le contenu du panneau du
+        message ne change pas à moins que vous n'appuyez sur la touche
+        entrée (le panneau du message affiche alors le contenu du
+        message sélectionner). Cette option ne change pas le
+        comportement du bouton gauche de la souris qui sélectionne et
+        ouvre toujours le message pointé).
+    </item>
+    <item>
+	L'utilisation de l'option <it>ouvrir le premier message non lu
+	en ouvrant un dossier</it> permet lorsqu'elle est activée
+	d'afficher le premier message non lu du dossier sélectionné
+	dans le panneau des messages (ou le dernier message dans
+	l'ordre utilisé pour trier les messages dans le dossier). Si
+	cette option est desactivée le panneau des messages reste vide
+	jusqu'à ce qu'un message soit sélectionné (en changeant le
+	message courant avec les flèches du curseur ou avec le bouton
+	gauche de la souris).
+    </item>
+    <item>
+        L'option <it>marquer le message comme lu seulement si ouvert
+        dans une fenêtre séparée</it> laisse le message comme non lu
+        (même si il a été affiché dans le panneau des messages) à
+        moins de l'ouvrir dans une nouvelle fenêtre en double cliquant
+        dessus avec le bouton gauche de la souris.
+    </item>
+    <item>
+        Si l'option <it>exécuter immédiatement la suppression ou le
+        déplacement de messages</it> n'est pas activée, un nouveau
+        bouton <it>Exécuter</it> apparaît dans la barre de
+        boutons. Les messages ainsi supprimés ou déplacés sont marqués
+        comme supprimés ou déplacés mais aucune opération n'est
+        effectuée tant que le bouton <it>Exécuter</it> n'a pas été
+        préssé (ou l'entrée <it>Exécuter</it> du menu <it>Outils</it>
+        choisie).
+    </item>
+    <item>
+        L'option <it>Fenêtre de réception</it> contrôle l'affichage de
+        la boîte de dialogue lorsque de nouveaux courriels arrivent
+        (en choisissant l'option <it>toujours</it> pour
+        l'<it>affichage de la boîte de réception</it>.  Le
+        comportement par défaut est d'ouvrir une fenêtre lorsqu'une
+        erreur survient à moins que vous n'ayez sélectionné l'option
+        <it>Ne pas afficher de boite de dialogue d'erreur</it>.
+    </item>
+    <item>
+        Le bouton <it>Choisir les raccourcis claviers...</it> ouvre
+        une fenêtre de dialogue qui contient une liste de raccourcis
+        claviers prédéfinis (<it>Mew</it>, <it>Mutt</it>, <it>Ancien
+        Sylpheed</it>) afin de changer tous les raccourcis d'un seul
+        coup (NDT~: comme un thème).
+    </item>
+</itemize>
+</sect2>
+
+<sect2>Onglet Autre
+<p>
+Cet Onglet contient toutes les options qui ne correspondaient pas aux
+onglets précédents
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_other.png">
+</figure>
+
+<itemize>
+	<item>
+		<it>Navigateur web</it>. Ici vous pouvez entrer le nom
+		de votre navigateur web favori (Netscape, Opera,
+		Mozilla, Lynx etc...). Ajoutez le paramètre %s pour que
+		Sylpheed fournisse au navigateur l'URL sur laquelle
+		vous avez cliqué.  La flèche à coté du champ de texte
+		peut être utilisée pour afficher une liste déroulante
+		des commandes prédéfinies pour traiter les URL.
+	</item>
+	<item>
+		<it>Imprimer</it>. Ici vous pouvez définir le
+		programme à utiliser pour imprimer. Par défaut il
+		s'agit de lpr et le paramètre %s est le nom du fichier
+		temporaire que Sylpheed crée pour que lpr l'imprime.
+		Lorsque vous utilisez le menu
+		<bf>Fichier->Imprimer</bf> pour imprimer le message
+		sélectionné, une fenêtre de dialogue s'ouvre vous
+		autorisant à changer la commande utilisée pour
+		imprimer.
+	</item>
+	<item>
+		<it>Editeur externe</it>. Sélectionnez ici un éditeur
+		externe qui sera utilisé pour écrire les mails (par
+		exemple vi, emacs ou gedit). Attention, les éditeurs
+		en mode texte ont besoin que leur soit défini une
+		fenêtre de terminal pour s'exécuter (cad~: <tt>xterm
+		-e vi %s</tt>). Sinon il n'y aura aucune fenêtre où
+		l'éditeur pour se lancer. Ici aussi le paramètre %s
+		fait référence au nom du fichier temporaire utilisé
+		par Sylpheed.
+	</item>
+	<item>
+		<it>Ajouter l'adresse à la destination (...)</it> est
+		une option, qui, lorsqu'elle est activée, permet
+		d'ajouter une adresse du carnet d'adresse au champ
+		<it>De~:</it> de la fenêtre de composition ouverte, en
+		double cliquant dessus.
+	</item>
+	<item>
+		Confirmer lorsque vous voulez quitter Sylpheed (ou
+		quitter silencieusement).
+	</item>
+	<item>
+		Supprimer les éléments contenus dans la corbeille en
+		quittant Sylpheed.
+	</item>
+	<item>
+		Faire en sorte que Sylpheed vous demande si il faut
+		vider la corbeille avant de quitter.
+	</item>
+	<item>
+		Faire en sorte que Sylpheed vous prévienne lorsque
+		vous le quitter et qu'il reste des messages non
+		envoyés dans la file d'attente.
+	</item>
+</itemize>
+</sect2>
 </sect1>
-
-<! Note il manque les onglets Display à Other !>
 
 <sect1>Configurer ou changer la configuration d'un compte
 <p>
-Pour configurer un nouveau compte dans Sylpheed, cliquez sur l'option 
-<bf>Création d'un nouveau compte...</bf> du menu <bf>Configuration</bf>.
-Si vous désirez changer la configuration d'un compte existant, sélectionnez
-l'option <bf>Edition des comptes...</bf> du menu <bf>Configuration</bf> puis,
-choisissez le compte que vous désirez modifier et cliquez sur le bouton 
-"Editer". Une nouvelle boîte de dialogue s'ouvre dans laquelle vous pouvez
-éditer les informations suivantes~:
+Pour configurer un nouveau compte dans Sylpheed, cliquez sur l'option
+<bf>Création d'un nouveau compte...</bf> du menu
+<bf>Configuration</bf>.  Si vous désirez changer la configuration d'un
+compte existant, sélectionnez l'option <bf>Edition des comptes...</bf>
+du menu <bf>Configuration</bf> puis, choisissez le compte que vous
+désirez modifier et cliquez sur le bouton "Editer". Une nouvelle boîte
+de dialogue s'ouvre dans laquelle vous pouvez éditer les informations
+suivantes~:
 <p>
 
 <sect2>Onglet Général<label id="Générale">
@@ -198,35 +466,53 @@ choisissez le compte que vous désirez modifier et cliquez sur le bouton
 
 <figure loc="h"><ph vspace="479px"><img src="snapshots/account_basic.png"></figure>
 
-Dans l'onglet "Général" vous pouvez donner un nom à votre compte de manière à
-l'identifier aisément par la suite.
+Dans l'onglet "Général" vous pouvez donner un nom à votre compte de
+manière à l'identifier aisément par la suite. Le nom est alors utilisé
+par la suite dans le sous menu <bf>Choisir un autre compte</bf> du
+menu <bf>Configuration</bf> ou bien encore dans le menu se trouvant
+sur le coté droit de la fenêtre principale et utilisé pour basculer
+rapidement d'un compte à l'autre.
 <p>
-Choisissez un nom qui veux dire quelque chose, comme par exemple le nom de votre
-fournisseur d'accès internet (FAI), de votre boîte aux lettres ou de votre 
-serveur de nouvelles que vous êtes en train de configurer. Vous pouvez définir 
-ce compte comme étant celui par défaut, il s'agit de l'option "Définir comme 
-compte par défaut".
+Choisissez un nom qui veux dire quelque chose, comme par exemple le
+nom de votre fournisseur d'accès internet (FAI), de votre boîte aux
+lettres ou de votre serveur de nouvelles que vous êtes en train de
+configurer. Vous pouvez définir ce compte comme étant celui par
+défaut, il s'agit de l'option "Définir comme compte par défaut".
 <p>
-Entrez votre nom, votre adresse e-mail et, si vous en avez une, votre 
-organisation.
-Dans la liste de choix des protocoles "Protocole" sélectionnez le type de
-services à utiliser pour ce compte. Vous pouvez choisir entre les options 
-suivantes~: "POP3 (normal)", "POP3 (APOP auth)", "IMAP4", "News (NNTP)" ou bien
-"Aucun (local)".
+Entrez votre nom, votre adresse e-mail et, si vous en avez une, votre
+organisation.  Dans la liste de choix des protocoles "Protocole"
+sélectionnez le type de services à utiliser pour ce compte. Vous
+pouvez choisir entre les options suivantes~: "POP3 (normal)", "POP3
+(APOP auth)", "IMAP4", "News (NNTP)" ou bien "Aucun (local)".
 <p>
-Pour les services POP3 et IMAP4 vous devez spécifier le serveur où sont stockés
-vos messages. Les détails nécessaires pour remplir les différents champs 
-("Serveur de réception", "Serveur SMTP (envoi)", "Nom de l'utilisateur" et "mot
-de passe") vous ont été donnés par votre FAI ou votre hébergeur. Le plus souvent
-ses informations sont les mêmes que celle de votre connexion, mais ce n'est pas
+Pour les services POP3 et IMAP4 vous devez spécifier le serveur où
+sont stockés vos messages. Les détails nécessaires pour remplir les
+différents champs ("Serveur de réception", "Serveur SMTP (envoi)",
+"Nom de l'utilisateur" et "mot de passe") vous ont été donnés par
+votre FAI ou votre hébergeur. Le plus souvent ses informations sont
+les mêmes que celle de votre connexion, mais ce n'est pas
 standard. Dans le doute consultez les pages d'aides de votre FAI.
 <p>
-Pour un compte unix local, le champ "Serveur de réception" est désactivé, 
-puisque vos e-mails sont reçus pour vous, localement, par un autre moyen.
+Pour un compte unix local, le champ "Serveur de réception" est
+désactivé, puisque vos e-mails sont reçus pour vous, localement, par
+un autre moyen.
 <p>
-Les Champs "Nom de l'utilisateur" et "mot de passe" sont désactivés lorsque le
-service choisi n'est ni POP3 ni IMAP4 (NDT~: il s'agit donc des services "News 
-(NNTP)" et "Aucun (local)".
+Les Champs "Nom de l'utilisateur" et "mot de passe" sont désactivés
+lorsque le service choisi n'est ni POP3 ni IMAP4 (NDT~: il s'agit donc
+des services "News (NNTP)" et "Aucun (local)".
+
+<sect3>Mot de passe~:
+<p>
+Le mot de passe n'est pas écrit dans le champ, mais remplacé par des
+étoiles. Toutefois il est stocké en clair dans les fichiers de
+configuration de Sylpheed. Le répertoire contenant les fichiers de
+configuration de Sylpheed (~/.sylpheed) est seulement lisible par son
+propriétaire et en aucun cas par les membre du groupe ou le reste du
+monde (NDT~: droits correspondant à 700 en octal). Ne changez pas ces
+droits d'accès !
+</sect3>
+
+
 </sect2>
 
 <sect2>Onglet Réception<label id="Réception">
@@ -234,32 +520,35 @@ service choisi n'est ni POP3 ni IMAP4 (NDT~: il s'agit donc des services "News
 
 <figure loc="h"><ph vspace="479px"><img src="snapshots/account_pop_receive.png"></figure>
 
-L'onglet réception est utilisé uniquement pour les comptes utilisant le service
-POP3. Vous pouvez alors spécifier si les mails qui ont été correctement 
-réceptionnés doivent ou non êtres supprimés du serveur. Vous pouvez aussi dire
-à Sylpheed de rappatrier tous les messages, et pas seulement ceux que vous 
-n'avez pas encore réceptionnés (dans le cas où vous ne supprimez pas les 
-messages du serveur).
+L'onglet réception est utilisé uniquement pour les comptes utilisant
+le service POP3. Vous pouvez alors spécifier si les mails qui ont été
+correctement réceptionnés doivent ou non êtres supprimés du
+serveur. Vous pouvez aussi dire à Sylpheed de rapatrier tous les
+messages, et pas seulement ceux que vous n'avez pas encore
+réceptionnés (dans le cas où vous ne supprimez pas les messages du
+serveur).
 <p>
-Vous pouvez également définir une limite à la taille des messages que vous 
-voulez télécharger, ainsi, tous les messages upérieurs à cette taille ne seront
-pas téléchargés.
+Vous pouvez également définir une limite à la taille des messages que
+vous voulez télécharger, ainsi, tous les messages upérieurs à cette
+taille ne seront pas téléchargés.
 <p>
-Vous pouvez aussi filtrer les messages dès la réception. Lorsque cette option 
-n'est pas activée, le filtrage des messages ne s'effectue que lorsque vous 
-utilsez l'option <bf>Filtrer les messages</bf> du menu <bf>Outils</bf>.
+Vous pouvez aussi filtrer les messages dès la réception. Lorsque cette
+option n'est pas activée, le filtrage des messages ne s'effectue que
+lorsque vous utilsez l'option <bf>Filtrer les messages</bf> du menu
+<bf>Outils</bf>.
 <p>
-Le "Dossier de réception par défaut" est celui qui reçoit les messages entrant
-non filtrés de ce compte. Vous pouvez définir un dossier de réception par défaut
-différent par compte.
+Le "Dossier de réception par défaut" est celui qui reçoit les messages
+entrant non filtrés de ce compte. Vous pouvez définir un dossier de
+réception par défaut différent par compte.
 <p>
-Si le bouton "'Tous' relève le courrier pour ce compte" est désactivé, le
-courrier ne sera pas relevé lorsque que vous utiliserez l'option <bf>Relever le
-courrier de tous les comptes</bf> du menu <bf>Message</bf> ou le bouton "Tous"
-de la barre d'outils. Pour vérifier et télécharger les nouveaux messages de ce
-compte, vous devez sélectionner le compte et ensuite utiliser l'option 
-<bf>Relever le courrier</bf> du menu <bf>Message</bf> ou le bouton "Relever" de
-la barre d'outils.
+Si le bouton "'Tous' relève le courrier pour ce compte" est désactivé,
+le courrier ne sera pas relevé lorsque que vous utiliserez l'option
+<bf>Relever le courrier de tous les comptes</bf> du menu
+<bf>Message</bf> ou le bouton "Tous" de la barre d'outils. Pour
+vérifier et télécharger les nouveaux messages de ce compte, vous devez
+sélectionner le compte et ensuite utiliser l'option <bf>Relever le
+courrier</bf> du menu <bf>Message</bf> ou le bouton "Relever" de la
+barre d'outils.
 </sect2>
 
 <sect2>Onglet Envoyer<label id="Envoyer">
@@ -267,17 +556,25 @@ la barre d'outils.
 
 <figure loc="h"><ph vspace="479px"><img src="snapshots/account_send.png"></figure>
 
-Dans l'onglet Envoyer vous définissez les paramètres qui s'appliquent aux 
-messages que vous envoyez.
+Dans l'onglet Envoyer vous définissez les paramètres qui s'appliquent
+aux messages que vous envoyez.
 <p>
-Vous pouvez choisir d'ajouter la date, un identifiant unique ou bien une en-tête
-personnalisée dans les messages que vous envoyez.
+Vous pouvez choisir d'ajouter la date, un identifiant unique ou bien
+une en-tête personnalisée dans les messages que vous envoyez.
 <p>
-L'en-tête personnalisée devrait être configurée pour contenir votre image 
-X-face.
+Si votre serveur SMTP à besoin d'authentification définissez votre nom
+d'utilisateur ainsi que votre mot de passe dans cet onglet. Vous
+pouvez aussi choisir de vous identifier d'abord avec le serveur POP3
+avant d'envoyer vos messages
+
+<sect3>Images X-face~:
 <p>
-Si votre serveur SMTP à besoin d'authentification définissez votre nom 
-d'utilisateur ainsi que votre mot de passe dans cet onglet.
+Le champ d'en-tête personnalisé peut être configuré pour contenir une
+image de type X-face.  Merci à Jeff Dairiki, qui a un manuel complet
+sur cela. Visitez <url url="http://www.dairiki.org/xface/" name="this
+page"> (NDT~: en anglais) pour les détails.
+</sect3>
+
 </sect2>
 
 <sect2>Onglet Composition<label id="Composition"><p>
@@ -323,5 +620,57 @@ envoyés, les brouillons, la poubelle. Si rien n'est changé, le compte courant
 utilisera les dossiers par défaut.
 
 </sect2>
+
+<sect2>Attacher des comptes aux dossiers
+<p>
+En cliquant avec le bouton droit de la souris sur un dossier (dans le
+panneau des dossiers) et en sélectionnant le menu
+<it>Propriétés...</it>, la boite des propriétés du dossier
+s'ouvre. Dans cette boite, dans l'onglet <it>Général</it> vous pouvez
+voir (mais pas modifier) le nom du dossier et le répertoire
+correspondant (relatif au répertoire principal). Dans l'onglet
+<it>Composition</it>~:
+
+<figure loc="h"><ph vspace="479px"><img src="snapshots/folder_prop_compose.png"></figure>
+
+vous pouvez sélectionner le compte, choisir d'appliquer aussi les
+paramètres aux sous dossier. Vous pouvez aussi forcer l'adresse
+lorsque vous envoyez des courriels (par exemple pour une liste de
+diffusion). Vous pouvez choisir d'envoyer une copie des courriels que
+vous envoyez à une liste d'adresse différente de celle définie par
+défaut pour le compte sélectionné.
+</sect2>
+
+<sect2>Utiliser les comptes dans la vraie vie
+<p>
+Les comptes peuvent bien entendu non seulement être utilisés pour
+récupérer des courriels de différents FAI ou pour séparer vos messages
+personnels et professionnels, mais aussi pour simplifier votre vie.
+Vous pouvez définir différents comptes juste pour changer votre
+adresse d'expéditeur, votre signature, votre dossier des messages
+envoyés, etc ...  Voici un résumé des options spécifiques pour les
+comptes~:
+
+<itemize>
+	<item>
+		Nom de l'expéditeur, adresse et
+		organisation. Signature et en-tête supplémentaires.
+	</item>
+	<item>
+		Laisser ou supprimer les messages du serveur (utile pour debogguer).
+	</item>
+	<item>
+		Filtrage du courrier entrant et taille limite.
+	</item>
+	<item>
+		Champs par défaut (<it>Répondre à</it>~:, <it>Cc</it>~:, <it>Cci</it>~:).
+	</item>
+	<item>
+		Dossiers <it>Brouillon</it>, <it>Corbeille</it> et <it>Envoyés</it>.
+	</item>
+</itemize>
+En attachant les comptes aux dossiers vous pouvez contrôler toutes ces options sur la base d'un dossier mais vous pouvez également le faire pour chacun des dossiers (Qui prennent alors le pas sur les options du compte).
+</sect2>
+
 </sect1>
 </sect>
