@@ -1,7 +1,7 @@
 <sect>Reference<p>
 <!-- Added 2001/07/21 -->
 In this section you will find a few pieces of information that might be handy in making Sylpheed more clear for you in respect to the used shortcut keys, and a layout of the format of the address book.
-<sect1>Short-Cut Key List<p>
+<sect1>Short-Cut Key List<label id="shortcut"><p>
 <sect2>One-key shortcuts:<p>
 <itemize>
 <item>a: create a new message
