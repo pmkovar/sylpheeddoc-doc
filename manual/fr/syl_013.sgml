@@ -1,19 +1,15 @@
 <sect>NetNews<p>
-Qu'est ce que netnews ?<p>
-Netnews, aussi appelé Usenet, est une collection de « serveur de nouvelles » 
-qui contient beaucoup d'informations. News, comme s'est appelé en résumé, 
-peut être sur n'importe quoi. Sur la manière de faire votre propre vin, sur 
-les vieilles voitures et les radios. Vous donnez un nom et il y a probablement 
-un groupe de discussion à ce propos.<p>
-C'est ce que nous allons configurer ici. Accéder aux groupes de discussions. 
-Notez que c'est différent des courriers. Nous pouvons encore le comparer à une 
-liste de diffusion mais le concept est encore légèrement différent.
+Qu'est ce que netnews~?<p>
+Netnews, aussi appelé Usenet, est un ensemble de serveurs de nouvelles. Les netnews sont généralement appelés les news pour faire plus court, et sont un lieu de discussion sur un nombre quasi infini de thèmes.
+Par exemple, un groupe de discussion peut porter sur la manière de faire votre propre vin, et tel autre sur les vieilles voitures et les radios.  Pensez à un thème et il y a probablement un groupe de discussion le concernant.<p>
+C'est ce que nous allons configurer ici~: l'accès aux groupes de discussions. 
+Notez que c'est différent des courriers. Nous pourrions aussi les comparer aux
+listes de diffusion mais le concept est encore légèrement différent.
 <!-- added 2001/07/20 -->
-<sect1>Ajouter et enlever des serveurs<p>
+<sect1>Ajouter et enlever des serveurs de news<p>
 <sect2>
-Ajouter un nouveau serveur<p>
-Pour ajouter un nouveau serveur, aller dans le menu de configuration et 
-sélectionnez l'option « Créer un nouveau compte ».
+Ajouter un nouveau serveur de news<p>
+L'ajout  d'un nouveau serveur de groupes de discussions (de news) se fait par le menu <bf>Configuration -> Création d'un nouveau compte...</bf>.
 Ici, vous pouvez nommer les nouveaux comptes sur ce que vous aimez. C'est 
 important car vous pourrez identifier le compte plus tard.<p>
 Dans l'onglet BASE, dans le bloc « informations personnelles », vous pouvez 

@@ -1,43 +1,55 @@
 <sect>FAQ<p>
-Vous pouvez trouver la dernière FAQ (liste des questions les plus fréquement 
-posées) mise à jour sur <url url="http://nlpagan.net/sylpheed-faq.html" name="http://nlpagan.net/sylpheed-faq.html">.
+Vous pouvez trouver la dernière version des FAQ (Foire Aux Questions, qui est une
+liste des questions les plus fréquemment posées) sur 
+<url url="http://nlpagan.net/sylpheed-faq.html" name="http://nlpagan.net/sylpheed-faq.html">.
 
-<sect1>Messages de Nouvelles non lus
+<sect1>Articles de groupes de discussions non lus
 </sect1>
-<sect1>En utilisant les comptes de courriers MSN
+<sect1>Utilisation des comptes de courriers MSN
 </sect1>
-<sect1>Changer les Polices dans Menu, etc.<p>
-Si vous voulez changer la police qui montre le menu de Sylpheed, c'est 
-contrôlé par le gestionnaire de fenêtres que vous utilisez. Vous devez aller 
-dans la configuration du gestionnaire de fenêtres (KDE, Gnome, XFCE) et 
-changer la police avec celle que vous souhaitez.<p>
-Changer la police de vues de Sylpheed est faite en sélectionnant 
-« préférences communes » dans le menu de configuration. Ici, vous sélectionnez 
-l'onglet « Affichage » et dans la première section de la fenêtre, vous pouvez 
-naviguer dans les polices disponibles sur votre ordinateur.
+<sect1>Comment changer la police des menus, etc.<p>
+La police utilisée par Sylpheer pour ses menus et son interface en général
+est contrôlée par le gestionnaire de fenêtres (<em>Desktop manager</em>)
+que vous utilisez (KDE, Gnome, XFCE). Utilisez son programme de configuration  
+et changez-y la police.<p>
+Par contre, pour changer la police utilisée dans les différentes vues de Sylpheed
+(dossiers, sommaire, message), utilisez le menu <bf>Configuration -> 
+Préférences générales...</bf> et  sélectionnez l'onglet <bf>Affichage</bf>.
+Dans la première section de la fenêtre vous pouvez soit spécifier directement
+la police si vous en connaissez le nom, soit la choisir parmi la liste des polices
+disponibles sur votre ordinateur en utilisant le bouton <bf>&lsqb;...&rsqb;</bf>.
 </sect1>
-<sect1>Changer les liaisons de touches pour les raccourcis<p>
+<sect1>Changer les combinaisons de touches pour les raccourcis-clavier<p>
 L'interface graphique de Sylpheed est basée sur GTK. Ceci signifie qu'il est 
-très facile de changer les liaisons de touches (raccourcis clavier, touches de 
-fonctions) pour les objets des menus. Si vous utilisez une combinaison de 
-touches spécifique dans un autre programme, vous pouvez indiquer à Sylpheed 
-d'utiliser la même combination de touches.<p>
-La procédure est très simple. Supposons que vous voulez changer la liaison de 
-touches pour obtenir de nouveaux courriers (menu message) de Alt-I vers Ctrl-M.
+très facile de changer les combinaisons des touches raccourcis clavier (ou 
+simplement les touches de fonctions) pour les différents choix dans les menus. 
+Si vous êtiez habitués dans un autre programme à une combinaison de touches 
+différentes que celles utilisées par Sylpheed, ou si celles de Sylpheed ne
+vous conviennent pas la modification est très simple. Supposons que vous
+voulez changer la combinaison de touches utilisée pour la relève du courrier
+(dans le menu <bf>Message</bf>) de <bf>Alt-I</bf> en <bf>Ctrl-M</bf>. Voici
+les étapes à suivres~:
 <p>
 <itemize>
-<item>Ouvrez le menu de message avec la souris ou en pressant Alt-M
-<item>Sélectionnez l'option « Obtenir de nouveaux messages x (ne cliquez pas 
-dessus, cela activera la fonction !). Si vous utilisez la souris, déplacez 
-simplement le curseur de la souris sur l'option.
-<item>Vous pressez maintenant Ctrl-M. Vous verrez immédiatement la nouvelle 
-combinaison apparaître dans le menu.
+<item>Ouvrez le menu <bf>Message</bf> avec la souris ou en pressant <bf>Alt-M</bf>~;
+<item>Sélectionnez l'option <bf>Relever le courrier</bf> sans cliquer dessus 
+(sinon cela activera la fonction~!)~: si vous utilisez la souris, déplacez 
+simplement le curseur de la souris sur l'option~;
+<item>Pressez maintenant <bf>Ctrl-M</bf>. Vous verrez immédiatement la nouvelle 
+combinaison apparaître dans le menu et remplacer l'ancienne.
 </itemize>
 Félicitations, vous venez juste de changer une combinaison de touches. De 
-cette manière, vous pouvez changer toutes les options que vous voulez. Notez 
-qu'il est mieux d'utiliser les combinaisons de touches alt, shift et ctrl. 
-Plusieurs fonctions dans Sylpheed sont appelées par une action à une touche 
-qui sont programmés.
+cette manière, vous pouvez changer les raccourcis de toutes les options que
+vous voulez. Notez qu'il est préférable  d'utiliser les combinaisons de touches
+avec <bf>Alt</bf>, <bf>Shift</bf> ou <bf>Ctrl</bf> et une touche du clavier.
+Les touches de fonctions <bf>F1</bf>...<bf>F12</bf> n'ont pas besoin
+d'être associées à ces dernières et peuvent être utilisées seules.<p>
+Si vous souhaitez supprimer une combinaison de touches, procédez comme
+décrit plus haut mais pressez plutôt la touche <bf>Suppr</bf> ou la
+touche d'éffacement.<p>
+Certaines fonctions de Sylpheed sont activables par un raccourci à une
+seule touche. Celles-ci sont pré-programmées et ne sont pas modifiables
+aussi facilement.
 </sect1>
 
 </sect>

@@ -3,21 +3,24 @@
 
 <sect1>Configuration rapide pour la lecture du courrier de votre boîte aux lettres locale UNIX
 <p>
-Dans le menu de configuration, sélectionnez <bf>Création d'un nouveau compte...
-</bf><p>
-Dans l'onglet de configuration <bf>Générale</bf>, veuillez entrer les données nécessaires~: donnez un nom au compte, entrez ensuite votre nom et votre adresse email, etc. Vous pouvez sélectionner ce compte pour qu'il soit celui utilisé par défaut en cochant la case <bf>Définir comme compte par défaut</bf>. Pour sélectionner votre boîte aux lettres locale UNIX, sélectionnez <bf>Aucun (local)</bf> dans le menu <bf>Protocole</bf>.
+<itemize>
+<item>Dans le menu de configuration, sélectionnez 
+<bf>Création d'un nouveau compte...</bf>~;
+<item>Dans l'onglet de configuration <bf><ref id="Générale"></bf>, donnez un nom au compte. Vous pouvez rendre ce compte celui utilisé par défaut en cochant la case <bf>Définir comme compte par défaut</bf>~;
+<item>Entrez ensuite votre nom et votre adresse email~;
+<item>Pour sélectionner votre boîte aux lettres locale UNIX, sélectionnez <bf>Aucun (local)</bf> dans le menu <bf>Protocole</bf>~;
+<item>Lorsque vous sélectionnez cette option, l'option <bf>Serveur de réception</bf> devient indisponible (grisée) car elle n'est plus utile. Vous pouvez ensuite entrer le serveur SMTP à utiliser pour l'envoi dans cet onglet.
+</itemize>
+Les autres options dans cet onglet peuvent garder leur valeur par défaut.
 
 <figure loc="here">
 <ph vspace="1cm">
 <img src="snapshots/account_basic.png">
 </figure>
 
+L'onglet pour la <bf><ref id="Réception"></bf> n'est pas utilisé dans cette configuration car vous ne récupérez pas votre courrier d'un serveur, mais vos courriers vous sont plutôt directement envoyés.
 <p>
-Lorsque vous sélectionnez cette option, l'option <bf>Serveur de réception</bf> devient indisponible (grisée) car elle n'est plus utile. Vous pouvez ensuite entrer le serveur SMTP à utiliser pour l'envoi dans cet onglet.
-<p>
-L'onglet pour la <bf>Réception</bf> n'est pas utilisé dans cette configuration car vous ne récupérez pas votre courrier d'un serveur, mais vos courriers vous sont plutôt directement envoyés.
-<p>
-Dans l'onglet <bf>Envoyer</bf>, vous pouvez configurer quelques nouveaux éléments.
+Dans l'onglet <bf><ref id="Envoyer"></bf>, vous pouvez configurer quelques nouveaux éléments.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -25,7 +28,7 @@ Dans l'onglet <bf>Envoyer</bf>, vous pouvez configurer quelques nouveaux élément
 </figure>
 
 <p>
-Dans l'onglet <bf>Composition</bf>, vous pouvez définir un fichier contenant votre signature.
+Dans l'onglet <bf><ref id="Composition"></bf>, vous pouvez définir un fichier contenant votre signature.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -33,16 +36,21 @@ Dans l'onglet <bf>Composition</bf>, vous pouvez définir un fichier contenant vot
 </figure>
 
 <p>
-Dans l'onglet de configuration <bf>Avancée</bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Vous n'avez normalement pas besoin d'y toucher.
+Dans l'onglet de configuration <bf><ref id="Avancée"></bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Vous n'avez normalement pas besoin d'y toucher.
 <p>
 C'est cette configuration qui sera nécessaire à Sylpheed pour 
 accéder à votre boîte aux lettres UNIX locale. Vous pouvez désormais presser «~Alt-I~» ou cliquer sur le bouton <bf>Relever</bf> ou encore sélectionner <bf>Message -> Relever le courrier</bf> pour voir si vous avez de nouveaux courriers~!
 </sect1>
 <sect1>Configuration rapide pour lire le courrier à partir d'un serveur POP3
 <p>
-Dans le menu de configuration, sélectionnez <bf>Création d'un nouveau compte...</bf>
-<p>
-Dans l'onglet de configuration <bf>Générale</bf>, entrez les données nécessaires~: donnez un nom au compte, entrez ensuite votre nom et votre adresse email, etc. Vous pouvez sélectionner ce compte pour être celui par défaut en cochant la case  <bf>Définir comme compte par défaut</bf>. Sélectionner ensuite <bf>POP3 (normal)</bf> dans le menu <bf>Protocole</bf>.
+<itemize>
+<item>Dans le menu de configuration, sélectionnez <bf>Création d'un nouveau compte...</bf>
+<item>Dans l'onglet de configuration <bf><ref id="Générale"></bf>, donnez un nom au compte. Vous pouvez rendre ce compte celui utilisé par défaut en cochant la case <bf>Définir comme compte par défaut</bf>~;
+<item>Entrez ensuite votre nom et votre adresse email~;
+<item>Sélectionner ensuite <bf>POP3 (normal)</bf> dans le menu <bf>Protocole</bf>~;
+<item>Puis, entrez le nom du serveur de réception dans le champ <bf>Serveur de réception</bf>. Faites de même pour le serveur d'envoi dans le champ <bf>Serveur SMTP (envoi)</bf>.
+</itemize>
+Les autres des options de cet onglet peuvent garder leur valeur par défaut.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -50,9 +58,7 @@ Dans l'onglet de configuration <bf>Générale</bf>, entrez les données nécessaires
 </figure>
 
 <p>
-Puis, entrez le nom du serveur de réception dans le champ <bf>Serveur de réception</bf>. Faites de même pour le serveur d'envoi dans le champ <bf>Serveur SMTP (envoi)</bf>.
-<p>
-Dans l'onglet <bf>Réception</bf>, vous pouvez définir quelques options de réception que vous souhaitez utiliser.
+Dans l'onglet <bf><ref id="Réception"></bf>, vous pouvez définir quelques options avancées de réception POP3.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -60,7 +66,7 @@ Dans l'onglet <bf>Réception</bf>, vous pouvez définir quelques options de récept
 </figure>
 
 <p>
-Dans l'onglet <bf>Envoi</bf>, vous pouvez configurer quelques éléments supplémentaires pour l'envoi du courrier.
+Dans l'onglet <bf><ref id="Envoyer"></bf>, vous pouvez configurer des en-têtes et l'authentification SMTP.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -68,7 +74,7 @@ Dans l'onglet <bf>Envoi</bf>, vous pouvez configurer quelques éléments supplémen
 </figure>
 
 <p>
-Dans l'onglet <bf>Composition</bf>, vous pouvez définir votre fichier de signature.
+Dans l'onglet <bf><ref id="Composition"></bf>, vous pouvez définir votre fichier de signature.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -76,9 +82,9 @@ Dans l'onglet <bf>Composition</bf>, vous pouvez définir votre fichier de signatu
 </figure>
 
 <p>
-Dans l'onglet de configuration <bf>Avancée</bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Ce changement n'est généralement pas nécessaire.
+Dans l'onglet de configuration <bf><ref id ="Avancée"></bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Ce changement n'est généralement pas nécessaire.
 <p>
 C'est cette configuration qui sera nécessaire à Sylpheed pour 
-accéder à votre boîte aux lettres via POP3. Vous pouvez presser «~Alt-I~», appuyer sur le bouton <bf>Relever</bf> ou encore sélectionner <bf>Message -> Relever le courrier</bf> pour voir si vous avez de nouveaux courriers~!
+accéder à votre boîte aux lettres via POP3. Vous pouvez utiliser le <ref id="raccourci clavier">, appuyer sur le bouton <bf>Relever</bf> ou encore sélectionner <bf>Message -> Relever le courrier</bf> pour voir si vous avez de nouveaux courriers~!
 </sect1>
 </sect>

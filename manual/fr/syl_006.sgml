@@ -176,7 +176,7 @@ Ici, vous pouvez configurer comment recevoir les messages.
 <sect1>Configurer un compte/modifier un compte<p>
 Pour créer un nouveau compte dans Sylpheed, sélectionnez le menu <bf>Configuration -> Création d'un nouveau compte...</bf>. Si vous voulez modifier les options d'un compte existant, sélectionnez plutôt l'option <bf>Édition des comptes...</bf> dans le menu <bf>Configuration</bf>. Ensuite, sélectionnez le compte que vous voulez changer et enfin choisissez <bf>Éditer</bf> pour que la fenêtre de configuration du compte apparaîsse. Celle-ci propose des options réparties dans les sections suivantes~:
 <p>
-<sect2>Section <bf>Générale</bf><p>
+<sect2>Section <bf>Générale</bf><label id="Générale"><p>
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -192,7 +192,7 @@ Pour les services POP3 et IMAP, vous pouvez spécifier le serveur dans lequel vot
 Pour une boîte aux lettres Unix locale, le <bf>Serveur pour la réception</bf> est désactivé, car c'est votre machine qui reçoit directement les messages.<p>
 Les champs pour le <bf>Nom d'utilisateur</bf> et le <bf>Mot de passe</bf> seront aussi désactivés pour les comptes qui n'utilisent pas les services POP3 ou IMAP. Pour ces derniers, vous pouvez entrer le nom d'utilisateur et le mot de passe pour le serveur de courrier de votre fournisseur. Habituellement, ce sont les mêmes que votre nom de connexion et votre mot de passe pour accéder aux services de connexion mais cela dépend du fournisseur d'accès. En cas de doute, contactez le service support de clientèle de votre fournisseur.  <p>
 </sect2>
-<sect2>Section de <bf>Réception</bf><p>
+<sect2>Section de <bf>Réception</bf><label id="Réception"><p>
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -202,7 +202,7 @@ Les champs pour le <bf>Nom d'utilisateur</bf> et le <bf>Mot de passe</bf> seront
 <p>
 L'onglet <bf>Réception</bf> n'est utilisé que pour les comptes POP3. Ici, vous pouvez spécifier si les courriers qui ont été récupérés avec succès doivent être supprimés du serveur. L'option <bf>Réception de tous les messages du serveur</bf> vous permet d'obliger Sylpheed de relever non seulement les nouveaux messages mais aussi tous ceux qui ont déjà été lus (récupérés mais pas supprimés)  et qui se trouvent encore sur le serveur. L'option <bf>'Tout relever' relève le courrier pour ce compte</bf> ajoute ce compte à la liste des comptes qui sont vérifiés lorsque le bouton <bf>Tout relever</bf> de la barre d'outils est activé ou si le menu <bf>Message -> Relever le courrier de tous les comptes</bf> est sélectionné.  Vous pouvez aussi spécifier ici si les messages récupérés doivent être immédiatement filtrés lors de la réception.
 </sect2>
-<sect2>Section <bf>Envoi</bf> <p>
+<sect2>Section <bf>Envoyer</bf><label id="Envoyer"> <p>
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -211,7 +211,7 @@ L'onglet <bf>Réception</bf> n'est utilisé que pour les comptes POP3. Ici, vous p
 
 Dans l'onglet <bf>Envoi</bf>, vous pouvez configurer quelques options supplémentaires pour les messages que vous envoyez.
 </sect2>
-<sect2>Section <bf>Composition</bf> <p>
+<sect2>Section <bf>Composition</bf><label id="Composition"> <p>
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -220,7 +220,7 @@ Dans l'onglet <bf>Envoi</bf>, vous pouvez configurer quelques options supplément
 
 Dans l'onglet <bf>Composition</bf>, vous pouvez définir votre fichier de signature, entre autres.
 </sect2>
-<sect2>Section <bf>Avancée</bf><p>
+<sect2>Section <bf>Avancée</bf><label id="Avancée"><p>
 Dans l'onglet de la configuration <bf>Avancée</bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Ceci n'est pas nécessaire, en général.
 </sect2>
 </sect1>
