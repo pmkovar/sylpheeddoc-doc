@@ -1,0 +1,28 @@
+
+<sect>Vue des messages
+<sect1>Lire un message<p>
+Lire un message est tout de même assez simple. Si vous avez une fenêtre message de visible, tout ce dont vous avez besoin de faire est de cliquer une fois sur le message que vous voulez lire et il apparaît dans la vue des messages. Lorsque vous double-cliquez sur le message, une fenêtre séparée sera ouverte, montrant le message. Vous pouvez fermer la fenêtre ouverte en pressant ESCape ou cliquant sur le bouton 'fermer'.
+</sect1>
+<sect1>Vue des MIME Multiparties (Fichiers attachés)<p>
+Lorsqu'un message contient un attachement, vous pouvez avoir plusieurs options pour vusualiser les informations dans ce fichier. Sylpheed peut, lors de la compilation avec les bonnes bibliothèques, afficher des images "en interne". Ceci signifie que vous pouvez cliquer sur le nom de l'image et que vous pouvez la voir dans la partie basse de l'écran du message.<p>
+Comment fait-on pour voir qu'il y a un attachement avec le courrier ?<p>
+Ceci est montré avec une section supplémentaire qui apparaît entre la fenêtre de résumé et la vue du message. Dedans, vous pouvez voir les différentes parties d'un courrier. Qulques fois, vous ne pouvez pas voir le contenu d'un attachement directement. À ce moment, vous cliquer-droit sur le nom du fichier et sélectionnez "OUVRIR" dans le menu qui apparaît. Si cela ne fonctionne pas, cela signifie que l'extension du fichier n'est pas reconnue par les directives dans le fichier mailcap. Dans ce cas, vous pouvez toujours utiliser l'option "Sauvegarder comme..." dans le menu déroullant, sauvegarder le fichier sur le disque et ouvrir lz fichier avec le bon programme.
+</sect1>
+<sect1>Étendre et fermer les files
+<p>
+Sylpheed offre l'option de voir les messages dans des files. Les files ne sont autre chose que des séries de courriers disposés par séquence logique. Supposez que 15 personnes vous ont envoyé un courrier appelé "Re: bananas". Vous ne pouvez pas spécialement savoir quel est le premier ou le dernier de la séquence.<p>
+En activant les files (menu résumé), Sylpheed tentera de montrer la séquence des couriers comme si elle avait été écrite/envoyée de premier au dernier.<p>
+Pour désactiver la vue des files, vous sélectionnez simplement la même option de menu et les courriers sont réaffichés dans l'ordre.
+</sect1>
+<sect1>Opérations de message (Déplacer, Effacer, etc.)
+<p>
+Sylpheed vous offre plusieurs manières de de gérer vos messages. Vous pouvez les déplacer vers de nouvelles boîtes aux lettres ou les effacer. Par le menu de message (allez voir cette section pour plus de détails) beaucoup d'options sont disponibles pour faire de vos courriers ce que vous souhaitez. L'avantage de déplacer les messages vers différentes boîtes aux lettres (allez aussi voir le Filtrage pour ceci, comme c'est décrit dans la section de menu de Configuration) est que vous gardez une vue d'ensemble de votre inbox. Supposez que vous collectionnez les courriers avec 8 sujets différents. Et que vous cherchez en cherchez un avec un sujet spécifique. Cela va vous donner beaucoup de travail pour tenter de trouver le bon message. Créez un nouveau répertoire de courrier pour chaque sujet et déplacez y les messages vous permettra d'économiser beaucoup de travail après coup.
+</sect1>
+<sect1>URL dans un Message
+<p>
+De temps en temps, vous pouvez trouver une URL dans un message. Un URL est un lien vers un site web. Habituellement, il est montré dans la forme "http://www.quelquepart.quelquechose".<p>
+Si vous voulez visiter ce site web, vous avez seulement besoin de double cliquer sur l'URL et le navigateur par défaut que vous avez configuré (habituellement Netscape) activera et chargera le site web.<p>
+Dans les options de configuration, Sylpheed a une initialisation de couleur spécifique pour les URL donc vous pouvez facilement les activer. 
+</sect1>
+</sect>
+
