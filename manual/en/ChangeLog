@@ -1,0 +1,77 @@
+
+2002-08-20
+
+	Updates for Sylpheed 0.8.1
+
+	* syl_006.sgml: removed "also" in the description of the exit
+	  file menu entry (not necessary anymore).
+	  Show/hide message view is now implemented and described.
+	  Sort menu: ascending/descending order added.
+	  Completed the 'go to' menu.
+	  Added 'redirect' in the message menu.
+	  Re-order the tools menu (execute moved), added 'actions'.
+	  Added 'Actions' in the configuration menu.
+
+	* ChangeLog and TODO created.
+
+
+2002-07-??
+
+	* syl_013.sgml
+	  ...
+	  syl_21.sgml: Splitted the syl_013.sgml file 'cause it contains
+	  two top level sections (<sect>). Moved the section
+	  "Conversion of Other Mail Format into Sylpheed" into syl_014.sgml
+	  and moved all the files (from syl_014 to syl_020) one number up 
+	  to keep one top level section per file.
+
+
+2002-06-??
+
+	* syl_001.sgml: Added the copyright notice that points to the 
+	  GNU FDL.
+
+	* syl_004.sgml: Added one missing platform (compared to the 
+	  INSTALL file in the release), corrected the description of
+	  libjconv, added IPv6 and OpenSSL support.
+
+	* syl_006.sgml: Updated against Sylpheed 0.7.5 (file menu and
+	  edit menu).
+
+   * syl_006.sgml
+	  ...
+	  syl_019.sgml: Splitted the section 6 into two sections:
+	
+	   6 => The menu options of Sylpheed.
+		7 => Dialogs and views.
+
+	  Propagated the number change, so the sections are moved one 
+	  number up (8 becomes 9, 9 becomes 10,...).
+
+	* syl_20.sgml: This (new) section contains the GNU FDL.
+
+	* syl_007.sgml: The new section 7 (dialogs and views), has been 
+	  updated with new 0.7.5 snapshots. The "receive" tab description
+	  has been updated.
+	  The send tab description has been completed.
+	  The compose tab description has been completed.
+	  Added the privacy tab description (with snapshot).
+	  The advanced tab description has been completed (added snapshot).
+
+
+2002-05-??
+
+	* syl_001.sgml: Added "Template" in the features list. Corrected
+	  a typo (english version specific).
+
+	* syl_002.sgml: Inserted the first section 
+	   "Starting Sylpheed for the first time", contains the description
+		of the "wizard" that shows up the first time you start Sylpheed
+		(added the corresponding screenshot: wizard_1.png).
+
+	* syl_004.sgml: Updated the supported systems list to reflect the
+	  one from the official Sylpheed page (splitted some lines, added
+	  several platforms). added the URLs for each additional 
+	  library/software to point to their home page or download site.
+
+
