@@ -24,18 +24,18 @@ Información general
 R.: Si, los siguientes enlaces corresponden a distintas traducciones
 disponibles:
 <itemize>
-<item>http://nlpagan.net/sylpheedfaq.htm : FAQ original en Inglés, cortesía de Paul Kater, Jens Oberender y otros
-<item>http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html : FAQ de Sylpheed en Francés, cortesía de Dinh V. Hoa
-<item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm : FAQ de Sylpheed en Japonés, cortesía de Wakai "SilverRain" Kazunao
-<item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html : FAQ de Sylpheed en Italiano, cortesía de Maurizio Codogno
-<item>http://www.synconet.de/privhome/rs/sylpheed_faq.html : FAQ de Sylpheed en Alemán (HTML) y http://www.synconet.de/privhome/rs/sylpheed_faq.txt (solo texto), ambos cortesía de Ralf Schiffers
-<item>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html : FAQ de Sylpheed en Griego, cortesía de Theofilos Intzoglou
-<item>http://sylpheed.republika.pl : FAQ de Sylpheed en Polaco, cortesía de Przemyslaw Sulek
-<item>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html : FAQ de Sylpheed en turco, cortesía de Doruk Fisek
-<item>http://hem.passagen.se/webplats/sylpheed-faq-se.html: FAQ de Sylpheed en Sueco, cortesía de Mattias Stergren
+<item><url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm"> : FAQ original en Inglés, cortesía de Paul Kater, Jens Oberender y otros
+<item><url url="http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html" name="http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html"> : FAQ de Sylpheed en Francés, cortesía de Dinh V. Hoa
+<item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm"> : FAQ de Sylpheed en Japonés, cortesía de Wakai "SilverRain" Kazunao
+<item><url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html"> : FAQ de Sylpheed en Italiano, cortesía de Maurizio Codogno
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.html" name="http://www.synconet.de/privhome/rs/sylpheed_faq.html"> : FAQ de Sylpheed en Alemán (HTML) y <url url="http://www.synconet.de/privhome/rs/sylpheed_faq.txt" name="http://www.synconet.de/privhome/rs/sylpheed_faq.txt"> (solo texto), ambos cortesía de Ralf Schiffers
+<item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html"> : FAQ de Sylpheed en Griego, cortesía de Theofilos Intzoglou
+<item><url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl"> : FAQ de Sylpheed en Polaco, cortesía de Przemyslaw Sulek
+<item><url url="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html" name="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html"> : FAQ de Sylpheed en turco, cortesía de Doruk Fisek
+<item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="http://hem.passagen.se/webplats/sylpheed-faq-se.html"> : FAQ de Sylpheed en Sueco, cortesía de Mattias Stergren
 </itemize>
 
-También puedes encontrar la última versión en línea de este FAQ en http://www.aic.uniovi.es/mones/sylpheed/faq-es/ (hay enlaces a diferentes formatos).
+También puedes encontrar la última versión en línea de este FAQ en <url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es/" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es/"> (hay enlaces a diferentes formatos).
 </p>
 </sect1>
 
@@ -57,7 +57,7 @@ buscando:
 <!-- gi.Q03 -->
 <sect1>¿Dónde puedo obtener Sylpheed?
 <p>
-R.:  Se puede bajar de <tt>http://sylpheed.good-day.net</tt>
+R.:  Se puede bajar de <url url="http://sylpheed.good-day.net" name="http://sylpheed.good-day.net">
 Hay enlaces para descargar las fuentes completas y               
 también enlaces a sitios donde se pueden
 descargar RPM's (para RedHat y Mandrake), paquetes
@@ -193,7 +193,7 @@ R.: ¡Es para lo que se ha diseñado!
 <sect1>¿Dónde puedo conseguir los parches actuales para Sylpheed?
 <p>
 R.: En la Página de Parches de Sylpheed:
-<tt>http://www.teledix.net/sylpheed/</tt>    
+<url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/">    
 (Visite tambien la sección de instalación sobre como
 instalar un parche)
 </p>
@@ -203,7 +203,7 @@ instalar un parche)
 <sect1>¿Cómo puedo enviar parches, informar de errores, hablar con otros sobre Sylpheed?
 <p>
 R.: Para hablar con otros debería unirse a la lista de
-correo de Sylpheed en <tt>http://sylpheed.good-day.net</tt>. Hay una
+correo de Sylpheed en <url url="http://sylpheed.good-day.net" name="http://sylpheed.good-day.net">. Hay una
 lista japonesa y otra en inglés, ¡elija la correcta!        
 Si tiene algún parche que quiera dar a conocer al
 mundo póngase en contacto con el encargado de la página de
@@ -254,12 +254,12 @@ y dejar presentable el correo de nuevo.
 <!-- gi.Q22 -->
 <sect1>¿Dónde puedo encontrar el último FAQ de Sylpheed?
 <p>
-R.: En <tt>http://nlpagan.net/sylpheedfaq.htm</tt> que es donde se
-mantiene el FAQ en inglés. También podrás encontrar enlaces al FAQ en 
+R.: En <url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm">
+que es donde se mantiene el FAQ en inglés. También podrás encontrar enlaces al FAQ en 
 otros idiomas. </p>
 <p>
-También puedes visitar http://www.sourceforge.net y buscar las páginas
-del manual y el FAQ en el proyecto sylpheeddoc. Ambos documentos están
+También puedes visitar <url url="http://www.sourceforge.net" name="http://www.sourceforge.net">
+y buscar las páginas del manual y el FAQ en el proyecto sylpheeddoc. Ambos documentos están
 disponibles en diversos idiomas y habitualmente incluyen las últimas
 actualizaciones.
 </p>
@@ -447,7 +447,8 @@ R.: Deberá tener instalado el paquete en el que esté incluido <tt>libcompface</t
 R.: Dentro del paquete <tt>faces</tt> existe el programa <tt>xmb2icon</tt> (un guión de shell)
 que convierte un fichero xbm de 48x48 pixels al formato adecuado para compface. Para conseguir una
 imagen en formato xbm puede utilizar un programa gráfico como el Gimp.
-Gracias a Jeff Daikiri está disponible un curso completo en línea sobre esto, visite http://www.dairiki.org/xface/ para más detalles.
+Gracias a Jeff Daikiri está disponible un curso completo en línea sobre esto, visite 
+<url url="http://www.dairiki.org/xface/" name="http://www.dairiki.org/xface/"> para más detalles.
 </p>
 </sect1>
 
