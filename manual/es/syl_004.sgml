@@ -1,26 +1,26 @@
 
 <sect>Instalación.
 <!-- mramos -->
+<!-- mones 2002/03/16 -->
 <sect1>Entorno requerido
 <p>
-Para compilar Sylpheed exitosamente, necesitas por lo menos:
+Para compilar Sylpheed con éxito, necesitas por lo menos:
 <itemize>
-<item>Cualquier UNIX o sistema operativo similar que sea compatible con POSIX,
-por ejemplo Linux, FreeBSD, Solaris
+<item>Cualquier UNIX o sistema operativo similar que sea compatible con POSIX, por ejemplo Linux, FreeBSD, Solaris
 <item>GTK+ 1.2.6 o posterior
-<item>Un compilar ANSI C reciente (gcc 2.7.2.3 también debería servir) Nota:
-se ha reportado que el Sun C no compila a Sylpheed.
+<item>Un compilador ANSI C reciente (gcc 2.7.2.3 también debería servir) Nota: se ha reportado que el Sun C no compila Sylpheed.
 </itemize>
 Opcionalmente necesitas:
 <itemize>
 <item>Imlib o gdk-pixbuf (para la vista incorporada de imágenes)
 <item>libcompface (para X-Face)
-<item>libjconv (para I18N)
+<item>libjconv (para internacionalización)
 <item>GPGME (para GnuPG)
+<item>OpenLDAP (para la conexión LDAP)
+<item>Jpilot (para utilizar la agenda de direcciones Palm)
 <item>el equivalente de GTK+-devel y Xfree86-devel. (Sino ./configure fallará.)
 </itemize>
-Aviso: Sylpheed puede ser inestable dependiendo del entorno. Por favor utiliza
-si es posible la versión más reciente de las bibiotecas.
+Aviso: Sylpheed puede ser inestable dependiendo del entorno. Por favor utiliza si es posible la versión más reciente de las librerías.
 </sect1>
 
 <sect1>Entornos que se sabe son válidos para Sylpheed
@@ -42,7 +42,9 @@ si es posible la versión más reciente de las bibiotecas.
 <item>RedHat Linux 6.0 
 <item>RedHat Linux 6.1 + Helix GNOME (glibc 2.1.x) 
 <item>RedHat Linux 6.2 / 6.2J (glibc 2.1.x) 
-<item>RedHat Linux 7.0 / 7.0J 
+<item>RedHat Linux 7.0 / 7.0J
+<item>RedHat Linux 7.1
+<item>RedHat Linux 7.2 (beta 'Roswell') 
 <item>LinuxPPC2000 + Yukikaze(Japanization kit) 
 <item>Linux2000G (Intel, PowerPC) 
 <item>HOLON Linux 2.0 (Intel / PPC) 
@@ -72,38 +74,36 @@ si es posible la versión más reciente de las bibiotecas.
 </itemize>
 </sect1>
 
-<sect1>Tuercas y pernos de la instalación
+<sect1>Detalles de la instalación
 <p>
 <itemize>
-<item>Descomprime los archivos fuentes a un directorio nuevo
+<item>Descargar la última versión de las fuentes de Sylpheed desde
+<url url="http://sylpheed.good-day.net/" name="http://sylpheed.good-day.net/">
+</item>
+<item>Descomprime los ficheros tar con las fuentes a un directorio nuevo
 <item>tar -xvfz sylpheed-.tar.gz (para tar.gz)
 <item>tar -xvfI sylpheed-.tar.bz2 (para tar.bz2) 
-<item>ingresa al nuevo directorio sylpheed-
-<item>Ejecuta ./configure para verificar tu entorno y crear los archivos make
-de la instalación 
-<item>Ejecuta el programa 'make' el cual compilará las fuentes. No procedas
-con este paso si existen errores fatales en el paso anterior. Los errores
-fatales indican que hay cosas que están faltando para compilar Sylpheed
-adecuadamente.
+<item>cd al nuevo directorio creado sylpheed-
+<item>Ejecuta ./configure para verificar tu entorno y crear los archivos make de la instalación 
+<item>Ejecuta el programa 'make' para compilar las fuentes. No realices este paso si existen errores fatales en el paso anterior. Los errores fatales indican que falta cosas para compilar Sylpheed adecuadamente.
 </itemize>
 <p>
-Si el proceso make ha sido completado, ejecuta "make install" (como root)
-para instalar el programa y los archivos de soporte
+Si el proceso make se ha completado sin error, ejecuta "make install" (como root) para instalar el programa y los archivos de soporte adicionales.
 </sect1>
 
 <sect1>Instalación en Linux utilizando RPM
 <p>
-Como root, ejecuta el comando "rpm -ivh" en el archivo RPM que descargaste.
-Tan pronto como éste proceso termine puedes correr Sylpheed como usuario.
+Como root, ejecuta el comando "rpm -ivh" en el archivo RPM que hayas descargado. Tan pronto como éste proceso termine ya puedes ejecutar Sylpheed como usuario.
 </sect1>
 
 <sect1>Instalación en Debian Linux
 <p>
-Con conección a internet:
+Con conexión a internet:
 <p>
-apt-get install sylpheed (para instalarlo con una conección internet)
+apt-get install sylpheed (para instalarlo con conexión internet)
 <p>
-Sin conección a internet, descarga el paquete debian, por ejemplo en http://packages.debian.org/unstable/mail/sylpheed.html
+Sin conexión a internet, descarga el paquete debian, por ejemplo en
+<url url="http://packages.debian.org/unstable/mail/sylpheed.html" name="http://packages.debian.org/unstable/mail/sylpheed.html">
 <p>
 dpkg -i sylpheedx.x.x-1i386.deb
 <p>
@@ -112,23 +112,21 @@ dpkg --install sylpheedx.x.x-1i386.deb
 
 <sect1>Instalación en FreeBSD
 <p>
-utilizando la herramienta /stand/sysinstall tool (está en la interface basada
-en menúes):
+Utilizando la herramienta /stand/sysinstall (interface basada en menúes):
 <p>
 ejecuta "/stand/sysinstall" como root
 <p>
-en el menú principal elige "Configure" -> "Packages" -> "mail", entonces
-"sylpheed", luego de regreso a la lista "Packages" list, elige "Install"
+en el menú principal elige "Configure" -> "Packages" -> "mail", entonces "sylpheed", luego de regreso a la lista "Packages" , elige "Install"
 <p>
-Utilizando los portes
+Utilizando portes
 <p>
-Consigue el porte de sylpheed en :
+Consigue el porte de sylpheed en:
 <p>
-ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail
+<url url="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail" name="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail">
 <p>
 luego, como root: pkg-add sylpheed-0.x.x.tgz
 <p>
-utilizando los portes con compilación:
+utilizando los portes para compilar:
 <p>
 primero, actualiza tu porte, descargalo http://www.freebsd.org/ports/mail.html
 <p>
@@ -136,10 +134,9 @@ cd /usr/ports/mail/sylpheed
 <p>
 make
 <p>
-Si ésto funciona, tipea "make install"
+Si ésto funciona, ejecuta "make install"
 <p>
-En el caso de que falle, descarga el paquete requerido si es necesario (en la
-misma página), coloca el paquete en /usr/ports/distfiles/ 
+En el caso de que falle, descarga el paquete requerido si es necesario (en la misma página), coloca el paquete en /usr/ports/distfiles/ 
 luego :
 <itemize>
 <item>cd /usr/ports/mail/sylpheed
@@ -147,10 +144,9 @@ luego :
 <item>make install
 </itemize>
 <p>
-Necesitas una versión más actualizada ?
+¿Necesitas una versión más actualizada?
 <p>
-Simplemente utiliza el método estándar de Unix (consulta "Tuercas y pernos de
-la instalación")
+Simplemente utiliza el método estándar de Unix (consulta "Detalles de la instalación")
 </sect1>
 
 </sect>

@@ -4,14 +4,11 @@
 <sect1>Comenzando Sylpheed
 <p>
 Para comenzar con Sylpheed se puede simplemente teclear "sylpheed" en una terminal y pulsar la tecla Intro.
-También se puede añadir Sylpheed a los menus del KDE o Gnome, e incluso crear un acceso directo en el escritorio, si
-su gestor de ventanas lo permite.
+También se puede añadir Sylpheed a los menus del KDE o Gnome, e incluso crear un acceso directo en el escritorio, si su gestor de ventanas lo permite.
 <p>
-Cuando inicie Sylpheed por primera vez el programa le preguntará donde quiere almacenar los correos que vaya a descargar.
-Se puede aceptar el directorio por defecto ($HOME/Mail) o hacer que sea otro distinto.
+Cuando inicie Sylpheed por primera vez el programa le preguntará donde quiere almacenar los correos que vaya a descargar. Se puede aceptar el directorio por defecto ($HOME/Mail) o hacer que sea otro distinto.
 <p>
-Sylpheed se cargará entonces con su configuración por defecto. La manera de cambiar está configuración se describe
-más adelante a lo largo de este manual.
+Sylpheed se cargará entonces con su configuración por defecto. La manera de cambiar está configuración se describe más adelante a lo largo de este manual.
 </sect1>
 
 <sect1>Finalizando Sylpheed

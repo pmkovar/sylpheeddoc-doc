@@ -1,15 +1,23 @@
 <!doctype linuxdoc system>
 <article>
     <title>Manual del Usuario de Sylpheed 
-    <author>Ricardo Mones Lastra (mones@aic.uniovi.es) y Marcelo Ramos (mramos@montevideo.com.uy)
+    <author>Ricardo Mones Lastra (mones@aic.uniovi.es) 
+            Marcelo Ramos (mramos@montevideo.com.uy)
     <abstract>
-       Manual del Usuario de Sylpheed para la versión 0.5.3, basado en la versión original en inglés
+       Manual del Usuario de Sylpheed para la versión 0.7.3, basado en la versión original en inglés
        de Paul Kater (paul@nlpagan.net) y Jens Oberender (j.obi@troja.net)
     </abstract>
 
 <toc>
 
 <sect>¿Qué es Sylpheed?
+
+<p>
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/full_split.png">
+</figure>
+
 <!-- mones -->
 <sect1>Introducción a Sylpheed.
 <p>
@@ -54,7 +62,9 @@ Las características implementadas actualmente incluyen:
 <item>Función de mensaje provisional 
 <item>Formateo de líneas 
 <item>URI activos 
-<item>Agenda de direcciones basada en XML 
+<item>Agenda de direcciones basada en XML
+<item>Agenda con acceso a servidores LDAP
+<item>Agenda con interfaz Jpilot (para los ordenadores de mano tipo Palm) 
 <item>Manejo de mensajes nuevos y no leídos 
 <item>Soporte de múltiples carpetas MH 
 <item>Asociaciones de teclas compatibles con Mew/Wanderlust 
@@ -64,9 +74,10 @@ Las características implementadas actualmente incluyen:
 <item>Autentificación APOP 
 <item>Soporte de SMTP AUTH
 <item>Soporte para IPv6 
+<item>Encriptación y firmas GPG 
 <item>Soporte para autoconf y automake 
 <item>Soporte de internacionalización de mensajes usando gettext 
-<item>Soporte para muchas localizaciones, incluyendo UTF-8 (Unicode), cuando se usa libjconv 
+<item>Soporta muchas localizaciones, incluyendo UTF-8 (Unicode), cuando se usa libjconv 
 <item>Compatible con IMAP4
 </itemize>
 Esta lista no esta completa, pero al menos refleja las características más comunes que se pueden
@@ -74,13 +85,49 @@ encontrar en Sylpheed.
 </sect1>
 
 <sect1>Métodos para manejo de mensajes
+<!-- 2002/03/16 -->
 <p>
-Esta sección aún no ha sido escrita en el original.
+Hay varias maneras de manejar los mensajes, ninguna de las cuales es la mejor <tt>en absoluto</tt><p>
+Demasiada gente recibe montones de mensajes y simplemente los deja en la carpeta de Entrada, la cual
+despues de un tiempo se vuelve inmanejable. Intenta localizar un correo sobre algún evento importante de hace
+5 días en una carpeta de correo con más de 5000 mensajes dentro. Incluso ordenados por fecha puedes tardar una
+cantidad de tiempo considerable en localizarlo.<p>
+Para esto están las <tt>carpetas de correo</tt> y los <tt>buzones de correo</tt>.<p>
+A lo largo de este manual podrá aprender a crear buzones y también carpetas que pueden contener más buzones.
+¿Para que son buenos?<p>
+Visión general, tan simple como eso. En diferentes buzones se pueden almacenar diferentes tipos de correos.
+Supongamos que eres miembro de una asociación de cometas y que al menos recibes unos 30 mensajes diarios de la
+asociacion. Una cosa inteligente que se puede hacer es crear un buzón separado para esos mensajes. De esta manera cuando llega un mensaje de la asociación de cometas lo puedes mover al buzón de la asociación. Y también de
+esta manera sabrás que tienes todos los mensajes sobre cometas en el mismo sitio.<p>
+¿Algo tedioso dices? ¿Mover 30 mensajes al día al buzón que llegan al azar? Puedes apostar a que es un trabajo
+tedioso. ¡Y puedes estar seguro que te perderás ese tan importante sobre el transporte al campo de cometas cuando sea el concurso de la cometa mas grande y bonita!<p>
+Bueno, para esto tambien existe una solución. Se denominan <tt>filtros</tt>.<p>
+Los filtros pueden automatizar el proceso de mover mensajes a otros sitios. Más adelante en este manual también podrás aprender como establecer filtros, de manera que no tengas que mover todos esos correos sobre cometas al
+buzón de la asociación de cometas.<p>
+<sect2>Entonces, ¿cuál es la diferencia entre un buzón y una carpeta de correo?<p>
+Actualmente es lo mismo que haces en tu disco duro. Creas directorios en los que puedes almacenar ficheros y
+más directorios.<p>
+En el caso de Sylpheed, puedes crear un buzón dentro del cual puedes poner más buzones que de alguna manera
+están relacionados. Por ejemplo, puedes crear un buzón (carpeta) que contenga todos los buzones para todas las listas de correo a las que estas suscrito.<p>
+Quizas es necesaria alguna aclaración sobre este punto. En Sylpheed un buzón no es nada más que un directorio y
+en un directorio se pueden crear nuevos directorios, pero también ficheros. Y Sylpheed almacena cada mensaje de
+correo en un fichero distinto en el disco.
+Un ejemplo del aspecto que presenta un árbol de buzones podría ser el siguiente<p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/folder_tree.png">
+</figure>
+
+Como podrás ver, no hay límites reales a las maneras en las que puedes organizar los buzones. Mientras tengas
+espacio libre en el disco puedes crear buzones y buzones en los buzones.<p>
+Por supuesdo deberías mantener cierto sentido común cuando crees los buzones. Mantener todo el correo en un mismo sitio no es una buena idea, pero crear un laberinto de buzones tampoco es buena idea.
+</sect2>
 </sect1>
 
 <sect1>Características futuras
 <p>
-Esta sección aún no ha sido escrita en el original.
+Este es un capítulo especial. Como sucede con todos los programas de código abierto, el usuario de Sylpheed puede solicitar muchas características o funcionalidades. La mejor manera de de compartir esto con otros es unirse a una de las listas de correo de Sylpheed. Para ello puedes ir a la seccion de Información de este manual y leer la parte de como unirse a una lista de correo.
 </sect1>
 
 </sect>

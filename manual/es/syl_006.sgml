@@ -1,58 +1,60 @@
 
 <sect>Recorriendo las partes de Sylpheed
 <!-- mramos -->
+<!-- mones 2002/03/17 -->
 <sect1>Las opciones de menú de Sylpheed.
 <p>
-El menú es la entrada principal a todas las cosas que puedes
-realizar en Sylpheed. La estructura del menú te brinda las siguientes
-opciones:
+El menú es la entrada principal a todas las cosas que puedes realizar en Sylpheed. La estructura del menú te brinda las siguientes opciones:
 <sect2>Menú Fichero
 <p>
 <itemize>
-<item>Añadir buzón: esta opción te permite añadir una nueva carpeta de
-correo MH. Generará las carpetas de correo ENTRADA, SALIDA, COLA, BORRADOR y
-PAPELERA dentro del nuevo buzón.
-<item>Actualizar árbol: relee el árbol entero de buzones existentes para
-reflejar el estado correcto (en general no será necesario).
+<item>Añadir buzón: esta opción te permite añadir una nueva carpeta de correo MH. Generará las carpetas de correo Entrada, Salida, Cola, Borrador y Papelera dentro del nuevo buzón.
+<item>Actualizar árbol: relee el árbol entero de buzones existentes para reflejar el su estado correcto (en general no será necesario).
 <item>Carpeta: te permite añadir, renombrar o borrar un buzón.
-<item>Importar fichero mbox...: te permite importar un fichero mbox (como los
-creados por Pine) en un buzón MH.
-<item>Exportar a fichero mbox: te permite exportar un buzón MH a un archivo
-mbox.
+<item>Importar fichero mbox...: te permite importar un fichero mbox (como los creados por Pine) en un buzón MH.
+<item>Exportar a fichero mbox: te permite exportar un buzón MH a un archivo mbox.
 <item>Vaciar papelera: obviamente, éste vaciará la carpeta Papelera.
-<item>Salvar como: te permite salvar el correo seleccionado a un fichero de
-texto plano en el disco.
+<item>Salvar como: te permite salvar el correo seleccionado a un fichero de texto plano en el disco.
 <item>Imprimir: te permite imprimir el correo seleccionado a una impresora.
-<item>Cerrar: termina Sylpheed.
+<!-- <item>Cerrar ya no existe -->
 <item>Salir: también termina Sylpheed.
 </itemize>
 </sect2>
+
 <sect2>Menú Editar<p>
 <itemize>
 <item>Copiar: te permite copiar el texto seleccionado al búfer (memoria
 intermedia), desde donde puedes pegarlo en un lugar diferente. Atajo: Ctrl-C
 <item>Seleccionar todo: selecciona todo el texto en la ventana actual. Atajo: Ctrl-A
-<item>Buscar: busca en la ventana actual el texto que tu ingreses. Atajo: Ctrl-S
+<item>Buscar en el mensaje actual...: busca en la ventana actual el texto introducido. Atajo: Ctrl-F
+<item>Buscar en carpeta...: busca en todos los mensajes de la carpeta seleccionada el texto introducido. Atajo: Mays-Ctrl-F
 </itemize>
 </sect2>
+
 <sect2>Menú Ver<p>
-El menú ver te permite cambiar la forma en que luce Sylpheed. Puedes separar
-diferentes ventanas (vista de carpetas, mensajes, etc.), habilitar o
-deshabilitar la barra de estado y otras cosas.<p>
+El menú ver te permite cambiar la apariencia Sylpheed. Puedes separar las diferentes ventanas (vista de carpetas, mensajes, etc.), habilitar o deshabilitar la barra de estado y otras cosas.<p>
 <itemize>
-<item>Árbol de carpetas: todavía no implementado
-<item>Mensajes: todavía no implementado
-<item>Herramientas: determina como quieres que se vea la barra de
-herramientas. Iconos y texto, o una de ellas.
+<item>Árbol de carpetas: cuando el árbol de carpetas está separado decide si se muestra o no la ventana.
+<item>Mensajes: cuando la vista de mensajes está separada decide si se muestra o no la ventana.
+<item>Herramientas: determina como quieres que se vea la barra de herramientas. Iconos y texto, una de ellas u oculta.
 <item>Barra de estado: mostrarla u ocultarla.
-<item>Árbol de carpetas flotante: selecciona entre tener el árbol de carpetas
-adherida a la ventana principal, o flotando separadamente.
-<item>Mensaje flotante: selecciona entre tener el mensaje seleccionado en el
-cuadro de mensajes adherida a la ventana principal o flotando separadamente.
-<item>Conjunto de códigos: te permite seleccionar que conjunto de códigos
-quieres utilizar para tus mensajes.
+<item>Separar árbol de carpetas: selecciona entre tener el árbol de carpetas adherido a la ventana principal, o flotando separadamente.
+<item>Separar vista de mensajes: selecciona entre tener el mensaje seleccionado en el cuadro de mensajes adherido a la ventana principal o flotando separadamente.
+<item>Expandir vista resumen: expande el resumen de cabeceras para ocupar toda la altura de la ventana, ocultando la vista del mensaje. Atajo: V
+<item>Ordenar: permite seleccionar el criterio para ordenar las cabeceras de los mensajes (por número, tamaño, fecha, remitente, asunto, color de la etiqueta, marca, no leído o por adjunto) o si se utilizará el asunto para agrupar los mensajes.
+<item>Vista jerárquica: Permite alternar entre la vista jerárquica o plana de las cabeceras de mensajes. Atajo: Ctrl-T
+<item>Elementos visibles...: Ofrece una ventana donde se pueden seleccionar los elementos del mensaje que se mostrarán en la vista resumen.
+<item>Conjunto de códigos: te permite seleccionar que conjunto de códigos quieres utilizar para tus mensajes.
+<item>Ir a: permite moverse por los mensajes con diversos criterios (mensajes no leídos, marcados, etc.).
+<item>Abrir en ventana nueva: muestra el mensaje seleccionado en una nueva ventana. Atajo: Ctrl-Alt-N
+<item>Ver fuente: Muestra el mensaje en completo incluyendo todas las cabeceras sin formatear. Atajo: Ctrl-U
+<item>Mostrar todas las cabeceras: Muestra todas las cabeceras del mensaje en la vista del mensaje. Atajo: Ctrl-H
+<item>Actualizar: Permite releer el contenido del buzón seleccionado y actualizar las vistas de mensaje y resumen. Normalmente no será necesario a menos que otros programas modifiquen el contenido de las carpetas o en el caso de carpetas de noticias. Atajo: Ctrl-Alt-U
 </itemize>
 </sect2>
+
+<!-- actualizado hasta aqui -->
+
 <sect2>Menú Mensaje<p>
 Aquí encuentras las siguientes opciones:
 <itemize>
