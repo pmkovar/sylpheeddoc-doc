@@ -383,6 +383,7 @@ Specific options for typical browsers:
 <itemize>
 <item>Opera: <tt>sylpheed --compose [mailto:%t][?subject=%s]
 </tt></item>
+<item>Galeon: <tt>sylpheed --compose "mailto:%t?subject=%s"</tt></item>
 </itemize>
 </sect1>
 
