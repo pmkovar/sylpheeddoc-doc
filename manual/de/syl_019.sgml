@@ -1,0 +1,45 @@
+<sect>Über dieses Dokument
+<sect1>Copyright Hinweis<p>
+Copyright (C) 2001-2002 Hiroyuki Yamamoto
+
+Dieses Programm steht unter dem Schutz der GPL. Eine inoffizielle deutsche Übersetzung der GPL befindet sich auf
+
+<url url="http://agnes.dida.physik.uni-essen.de/~gnu-pascal/gpl-ger.html" name="http://agnes.dida.physik.uni-essen.de/~gnu-pascal/gpl-ger.html">
+</sect1>
+<sect1>GNU General Public License<p>
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+</sect1>
+<sect1>Wo man die aktuelle Version dieses Dokuments erhält<p>
+Die aktuelle Version dieses Dokuments befindet sich auf den Seiten des offiziellen Sylpheed-Dokumentationsprojektes:
+
+<url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
+
+Hier befindet es sich als HTML-Version, und in Form von SGML-Dateien im CVS-Repositorium.
+</sect1>
+<sect1>Schlussbemerkung<p>
+Mein Dank gilt allen Beteiligten des Sylpheed-Projektes.
+
+Hiroyuki Yamamoto und allen anderen Entwicklern, die dieses wunderbare Programm geschaffen haben.
+
+Francois Barriere, der mir geholfen hat mich mit dem CVS anzufreunden.
+
+Allen, die mich in der Sylpheed Mailingliste beim Schreiben der FAQ und des Handbuches mit ihrer Hilfe unterstützt haben.
+
+Nick Selby, für seine willkommene Unterstützung beim Schreiben dieses Handbuches.
+
+All jenen Menschen rund um den Erdball, die hart daran arbeiten das Handbuch und die FAQ aktuell zu halten.
+
+Und Linus Torvalds, für ein großartiges Betriebssystem! ;-)
+</sect1>
+</sect>
+</article>
