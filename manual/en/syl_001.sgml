@@ -10,7 +10,7 @@
 <toc>
 
 <p>
-Copyright (c)  2002 <it>The Sylpheed documentation team</it>.
+Copyright (c)  2002 <it>The sylpheed documentation team</it>.
 Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.1
 or any later version published by the Free Software Foundation;
@@ -37,33 +37,30 @@ detailed in the <ref id="The Sylpheed documentation team" name="appendix">.
 <p>
 Sylpheed is a fast e-mail and news client. It will run on just about any Linux or Unix compliant system.
 <p>
-The power of Sylpheed is that it is
+Sylpheed is
 <itemize>
-<item>light on resources
+<item>light on system resources
 <item>very fast
-<item>intuitive for most people
-<item>easy to work with
+<item>easy to learn and operate, due to its graceful and sophisticated interface
 <item>loaded with features
-<item>graceful and sophisticated in its interface
 </itemize>
 </sect1>
 
 <sect1>Interface
 <p>
-The appearance and interface are similar to some popular e-mail clients for 
-Windows, such as Outlook Express, Becky!, and Datula. The interface is 
-also designed to emulate the mailers on Emacsen, and almost all commands 
-are accessible with the keyboard.
+Sylpheed's appearance and interface are familiar to users of other popular
+e-mail clients for Windows such as Outlook Express, Becky!, and Datula. The
+interface also emulates the mailers on Emacsen.
 <p>
-The messages are managed by MH format, and you'll be able to use it 
-together with another mailer based on MH format (like Mew). You can 
-also utilize fetchmail or/and procmail, and external programs for 
-receiving (like inc or imget).
+Messages are managed by MH format, and Sylpheed can work with other MH
+format -based mailers (like Mew). You can also use fetchmail or/and
+procmail, and external programs for receiving (like inc or imget).
+
 </sect1>
 
 <sect1>Main features
 <p>
-Currently implemented features are: 
+This list is not complete, but the most common features of Sylpheed are:
 <itemize>
 <item>Unlimited multiple account handling
 <item>Thread display
@@ -93,40 +90,79 @@ Currently implemented features are:
 <item>Autoconf, automake support 
 <item>Support of i18n of messages by gettext 
 <item>Supports many locales, including UTF-8 (Unicode), when using libjconv 
-<!-- added 2001/07/19 -->
 <item>IMAP4 compliant
 </itemize>
-This list is not complete, but this will at least show you the most common features in Sylpheed.
+
 </sect1>
 
 <sect1>Methods for managing messages<p>
 <!-- added 2001/09/06 -->
 There are several ways to manage messages. The best known is <tt>not at all.</tt><p>
-Too many people receive lots of e-mails and just let them end up in the INBOX folder. Which after a while becomes unmanageable. Try to locate that one mail about an important event you got 5 days ago, in a mailbox that has over 5000 messages in it. Even when sorted on date, it might take you a tremendous time to locate it.<p>
-For this there are <tt>mailfolders and mailboxes.</tt><p>
-When you read on in this manual, you will learn about creating mailboxes and also folders that can contain more mailboxes. What are these good for?<p>
-Overview. Simple as that. In different mailboxes you can store different kinds of mails. Suppose you are a member of a kiting club. And you get at least 30 e-mails per day from that club. The smart thing to do now is to create a separate mailbox for these mails. So when an e-mail comes in from the kiting club, you can move it to the kiting club mailbox. That way you know that you have all your kiting e-mails in one place.<p>
-Tedious, you say? To move 30 mails a day to that box, when they come in at random moments? You bet that is a tedious job. You can be certain that you will miss that very important one about transport to the kiting ground where you will have the contest of biggest and most beautiful kite!<p>
-Well, also for this there is a solution. Those are called <tt>filters</tt>.<p>
-Filters can automate the process of moving e-mails to new locations. Further on in this manual you will also learn about setting up filters, so you do not have to move these kiting e-mails to the kiting club mailbox.<p>
-<sect2>Okay, so what is the difference between a mailbox and a mailfolder?<p>
-This is actually the exact same thing as you do on your harddisk. You create directories in which you can put files and more directories.<p>
-In the case of Sylpheed, you can create a mailbox in which you can put more mailboxes that somehow belong together. For example, you could create a mailbox (folder) that contains the mailboxes for all the mailing lists you belong to.<p>
-A word of clarification is perhaps in need here. In Sylpheed, a maillbox is nothing more than a directory. And in a directory you can create a new directory. But also files. And Sylpheed stores each e-mail in a separate file on disk.
-An example of how a mailbox tree could look is<p>
+Many people receive an unmanageable amount of e-mail, which usually ends up
+in the INBOX folder, ignored and forgotten.
+If you are one of these people,
+you are constantly trying to locate that one important email you got 5 days
+ago in a inbox that contains more than 5000 messages. Locating one email out
+of very many unsorted messages is always a time-consuming and frustrating
+experience.
+<p>
+Sylpheed helps this situation with its <tt>mailfolders and mailboxes.</tt>.
+<p>
+Different mailboxes can store different kinds of mails. Suppose you are a
+member of a kiting club, and you get at least 30 e-mails per day from that
+club. You can create a separate kiting club mailbox, in which you can move
+any e-mail that comes from this club. You will always have all your kiting
+e-mails in one place.
+<p>
+Tedious, you say, to move 30 mails a day to that box, when email comes in at
+random moments? It is certain that you will miss that very important email
+about transport to the kiting ground where you will have the contest of
+biggest and most beautiful kite!
+<p>
+Well, for this situation there is also a solution- <tt>filters</tt>.
+<p>
+Filters can automate the process of moving e-mails to new mailboxes. Further on in this manual 
+you will also learn about setting up filters, so you do not have to manually move these kiting e-mails 
+to the kiting club mailbox.
+<p>
+<sect2>Okay, so what is the difference between a mailbox and a mailfolder?
+<p>
+This is the same way you organize information on your harddisk. You create
+directories in which you put files or more directories.
+<p>
+In Sylpheed, you can create mailboxes within mailboxes For example, you
+could create a mailbox (folder) that contains the mailboxes for all the
+different mailing lists to which you belong .
+<p>
+A word of clarification- In Sylpheed, a maillbox is nothing more than a
+directory. In a directory you can create either a new directory or files.
+Sylpheed stores each e-mail in a separate file on disk. An example of how a
+mailbox tree could look is
+
+<p>
 
 <figure loc="here">
 <ph vspace="1cm">
 <img src="snapshots/folder_tree.png">
 </figure>
 
-As you can see, there is no real limit to the way you can set up your mailboxes. As long as you have diskspace available, you can create mailboxes and mailboxes within mailboxes.<p>
-Of course, you should observe some common sense when you start creating mailboxes. To keep all mail in one place is not a good idea, but to create a maze of mailboxes is not a good idea either!
+As you can see, there is no real limit to the way you can set up your
+mailboxes. As long as you have diskspace available, you can create mailboxes
+and mailboxes within mailboxes.
+<p>
+Of course, you should observe some common sense when you start creating
+mailboxes. It is not a good idea to keep all mail in one place but to create
+a maze of mailboxes is not a good idea either!
+
 </sect2>
 </sect1>
 
 <sect1>Features for the future<p>
-This is a special chapter. As with all open source programs, many features can be requested by you, the user of Sylpheed. The best way to join in on the talks is to join one of the mailing lists on Sylpheed. For this, you can turn to the Information section of this manual and read up on how to join a mailing list.
+This is a special chapter. As with all open source programs, many features
+can be requested by you, the user of Sylpheed. The best way to join in on
+the talks is to join one of the mailing lists on Sylpheed. For this, you can
+turn to the Information section of this manual and read up on how to join a
+mailing list.
 </sect1>
 
 </sect>
