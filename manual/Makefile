@@ -10,8 +10,13 @@
 #
 ######################################################################
 # $Log: Makefile,v $
+# Revision 1.2  2001/09/01 00:11:12  mones
+# added Spanish to list of generated languages
+#
 # Revision 1.1  2001/08/29 21:31:27  fbarriere
 # Created.
+# Revision 1.2  2001/09/01 02:18:00  mones
+# Added es to LANGS.
 #
 ######################################################################
 
@@ -22,7 +27,7 @@ SGML_TOOL_OPT :=
 #
 #  Defines the list of languages to process.
 #
-LANGS         := en fr
+LANGS         := en fr es
 
 #
 #  Where are the HTML pages:
