@@ -22,9 +22,7 @@ Wenn in &quot;Einstellungen&quot; -&gt; &quot;Allgemeine Einstellungen&quot;, Re
 Es ist empfehlenswert, sich aus Gründen der Lesbarkeit hier nur auf die nötigsten Formatierungen und Informationen zu beschränken.
 Insbesondere für das Zitieren im deutschsprachigen Usenet möchte ich den interessierten Leser auf Kommentare zur dortigen Netiquette aufmerksam machen:
 
-<url url="http://learn.to/attribute" name="http://learn.to/attribute">
-
-<url url="http://learn.to/quote" name="http://learn.to/quote">
+<url url="http://www.afaik.de/usenet/faq/zitieren" name="http://www.afaik.de/usenet/faq/zitieren">
 </sect1>
 <sect1>Weiterleiten einer Nachricht<p>
 Eine Nachricht weiterzuleiten bedeutet, den Inhalt zusammen mit verschiedenen Kopfzeilen (Von:, Datum:, etc.) an jemanden anderen zu senden. Dafür klickt man den "Weiterleiten"-Knopf, oder benutzt das entsprechende Tastaturkürzel. Das neue Eingabefenster enthält den Text der ursprünglichen Nachricht, zusammen mit Kopfzeilen, die wiederum in &quot;Einstellungen&quot; -&gt; &quot;Allgemeine Einstellungen&quot;, Reiter &quot;Zitat&quot; angepasst werden können.

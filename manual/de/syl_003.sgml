@@ -2,7 +2,7 @@
 <sect1>Schnellinstallation von News Accounts<p>
 Wähle in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen&quot;
 
-Im &quot;Einfach&quot;-Reiter werden die relevanten Daten angegeben. Name des Accounts, Name und Emailadresse, etc. Um einen News Account zu benutzen, wählt man in der Protokollbox &quot;News (NNTP)&quot;, und gibt die Zugangsdaten des Servers an.
+Im &quot;Einfach&quot;-Reiter werden die persönlichen Daten angegeben. Name des Accounts, Name und Emailadresse. Um einen News Account zu benutzen, wählt man in der Protokollbox &quot;News (NNTP)&quot;, und gibt die Zugangsdaten des Servers an.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_news_basic.png"></figure>
 
