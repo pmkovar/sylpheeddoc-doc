@@ -16,22 +16,22 @@ Sylpheed FAQ - General information
 Q01 Are there FAQ's in other languages?<p>
 A. Yes. Here are links to several translations:
 <itemize>
-<item>http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html: SYLPHEED FAQ in French courtesy of DINH V. Hoa
-<item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm: SYLPHEED FAQ in Japanese courtesy of WAKAI "SilverRain" Kazunao
-<item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html: SYLPHEED FAQ in Italian courtesy of Maurizio Codogno
-<item>http://www.synconet.de/privhome/rs/sylpheed_faq.html: SYLPHEED FAQ in German (HTML-Version)
-<item>http://www.synconet.de/privhome/rs/sylpheed_faq.txt: the german text-only version, both courtesy of Ralf Schiffers.
-<item>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html: SYLPHEED FAQ in Greek courtesy of Theofilos Intzoglou.
-<item>http://sylpheed.republika.pl: SYLPHEED FAQ in Polish courtesy of Przemyslaw Sulek.
-<item>http://www.geocities.com/hackpando/sylpheedfaq.html: HTML version by Marcelo Ramos, also:
-<item>http://www.geocities.com/hackpando/sylpheedfaq.txt: Text version
-<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es/ : Linked HTML, by Ricardo Mones Lastra, as well as
-<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi: FAQ-es.dvi (Device independent)
-<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps: the spanish FAQ as a Postscript file.
-<item>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html: A turkish FAQ for Sylpheed is available, thanks to the translating of Doruk Fisek.
-<item>http://hem.passagen.se/webplats/sylpheed-faq-se.html: Swedish FAQ, courtesy of Mattias Stergren
+<item><url url="http://sylpheeddoc.sourceforge.net/fr/" name="http://sylpheeddoc.sourceforge.net/fr/">: SYLPHEED FAQ in French courtesy of François Barrière
+<item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">: SYLPHEED FAQ in Japanese courtesy of WAKAI "SilverRain" Kazunao
+<item><url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html">: SYLPHEED FAQ in Italian courtesy of Maurizio Codogno
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.html" name="http://www.synconet.de/privhome/rs/sylpheed_faq.html">: SYLPHEED FAQ in German (HTML-Version)
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.txt" name="http://www.synconet.de/privhome/rs/sylpheed_faq.txt">: the german text-only version, both courtesy of Ralf Schiffers.
+<item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">: SYLPHEED FAQ in Greek courtesy of Theofilos Intzoglou.
+<item><url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl">: SYLPHEED FAQ in Polish courtesy of Przemyslaw Sulek.
+<item><url url="http://www.geocities.com/hackpando/sylpheedfaq.html" name="http://www.geocities.com/hackpando/sylpheedfaq.html">: HTML version by Marcelo Ramos, also:
+<item><url url="http://www.geocities.com/hackpando/sylpheedfaq.txt" name="http://www.geocities.com/hackpando/sylpheedfaq.txt">: Text version
+<item><url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es/" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es/"> : Linked HTML, by Ricardo Mones Lastra, as well as
+<item><url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi">: FAQ-es.dvi (Device independent)
+<item><url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps">: the spanish FAQ as a Postscript file.
+<item><url url="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html" name="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html">: A turkish FAQ for Sylpheed is available, thanks to the translating of Doruk Fisek.
+<item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="http://hem.passagen.se/webplats/sylpheed-faq-se.html">: Swedish FAQ, courtesy of Mattias Stergren
 </itemize>
-You can download this faq in text format from http://nlpagan.net/sylpheedfaq.tar.gz
+You can download this faq in text format from <url url="http://nlpagan.net/sylpheedfaq.tar.gz" name="http://nlpagan.net/sylpheedfaq.tar.gz">
 </sect1>
 
 <sect1>
@@ -48,7 +48,7 @@ GTK+, running on the X Window System, and aiming for
 
 <sect1>
 Q03 Where can I get Sylpheed?<p>
-A. You can download it from <tt>http://sylpheed.good-day.net</tt>
+A. You can download it from <url url="http://sylpheed.good-day.net" name="http://sylpheed.good-day.net">
 There are links to download the tarball sources, and
 also links to sites where you can download RPM's (for
 Redhat and Mandrake), DEB packages for Debian, and
@@ -150,7 +150,7 @@ A.   That's what it is designed for!
 <sect1>
 Q18  Where can I get the current patches for Sylpheed?<p>
 A.   The Sylpheed Patch homepage:
-<tt>http://www.teledix.net/sylpheed/</tt>
+<url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/">
 (Also see section on Installation on how to install a
 patch)
 </sect1>
@@ -158,7 +158,7 @@ patch)
 <sect1>
 Q19  How can I send in patches, report bugs, talk about Sylpheed with others?<p>
 A.   To talk to others, you should join the Sylpheed mailing
-list at <tt>http://sylpheed.good-day.net</tt>. Note that there is
+list at <url url="http://sylpheed.good-day.net" name="http://sylpheed.good-day.net">. Note that there is
 a japanese and an english list, so pick the right one!
 If you have made a patch that you want the world to know
 of, please get in touch with the manager of the Sylpheed
@@ -202,10 +202,10 @@ a presentable mail again.
 
 <sect1>
 Q22 Where can I find the latest FAQ on Sylpheed?<p>
-A.   Go to <tt>http://nlpagan.net/sylpheedfaq.htm</tt> where the
+A.   Go to <url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm"> where the
 english FAQ is available in english. There you can also find
 links to the FAQ in other languages.<p>
-You can also go to http://www.sourceforge.net and check out the faq and manual from the sylpheeddoc project. Both documents are available in multiple languages there and usually contain the latest updates.
+You can also go to <url url="http://www.sourceforge.net" name="http://www.sourceforge.net"> and check out the faq and manual from the sylpheeddoc project. Both documents are available in multiple languages there and usually contain the latest updates.
 </sect1>
 
 <sect1>
@@ -352,7 +352,7 @@ A.   You have to have a package called <tt>libcompface</tt>
 Q12  How do I make my own compface image?<p>
 A.   The faces package contains a program called xbm2ikon script,
  which converts a 48x48 xbm to the format suitable for
- compface. Thanks to Jeff Dairiki, you can have a complete online course in this. Visit http://www.dairiki.org/xface/ for the details.
+ compface. Thanks to Jeff Dairiki, you can have a complete online course in this. Visit <url url="http://www.dairiki.org/xface/" name="http://www.dairiki.org/xface/"> for the details.
 </sect1>
 
 <sect1>
