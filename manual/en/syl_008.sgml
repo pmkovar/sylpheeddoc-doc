@@ -131,7 +131,7 @@ Controls the composition window's behaviour..
 		to mails. If <it>Automatically select account(...)</it> is set,
 		the account used when replying to a message is automatically
 		selected based on the folder the original message is in (as you
-		where already told, accounts can be attached to folders).
+		were already told, accounts can be attached to folders).
 		If <it>Quote message when replying</it> is selected, when hiting
 		the <it>Reply</it> button, the composition window pops up and is
 		filled with either the complete message you are replying to (if

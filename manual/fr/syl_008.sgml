@@ -63,9 +63,124 @@ GnuPG).
 	    </item>
   </itemize>
  </sect2>
+
+<sect2>Onglet Envoyer
+<p>
+Dans cet onglet vous pouvez configurer la manière dont sont envoyés vos 
+messages.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_send.png">
+</figure>
+
+<itemize>
+	<item>
+		Vous pouvez choisir d'utiliser un programme externe (comme
+		sendmail) pour envoyer vos messages. Par défaut, aucun 
+		programme externe n'est nécessaire et Sylpheed peut se charger
+                de les envoyer directement vers un serveur SMTP.
+	</item>
+	<item>
+		Les messages que vous envoyez peuvent être sauvegardés dans
+                la boîte aux lettres <it>Envoyés</it>. Le dossier peut être
+                spécifié pour chaque compte dans les options de la 
+		configuration d'un compte.
+	</item>
+	<item>
+	        Vous pouvez choisir le jeu de caractère pour l'envoi de vos
+                message. Vous pouvez forcer ce choix ou mieux, utiliser le
+                mode <it>automatique</it> par défaut. (NDT le jeu de 
+                caractères pour les européens contenant l'euro se nomme
+                iso-8859-15). Le mode par défaut détermine le jeu de 
+                caractères optimal à utiliser lors de l'envoi de vos messages.
+	</item>
+</itemize>
+</sect2>
+
+
+<sect2>Onglet Composition
+<p>
+Contrôle le comportement de la fenêtre de composition.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_compose.png">
+</figure>
+
+<itemize>
+	<item>
+		Vous pouvez changer le séprateur de signature et choisir 
+		de l'insérer automiquement (a moins que votre fichier de 
+		signature le contienne déjà). Laissez ce paramètre tel qu'il
+                est par défaut (a moins que vous en ayez réellement besoin et 
+                soyez préparer à affronter une guerre de religion). En effet,
+                un grand nombre de logiciels de mesagerie utilisent ce 
+		séparateur pour couper la signature lors des inclusions 
+		automatiques de citiations et celui qui vous est proposé est 
+		celui du standard.
+	</item>
+	<item>
+		Si vous détestez l'éditeur de Sylpheed, vous pouvez choisir 
+		d'utiliser automatiquement un autre éditeur de votre choix 
+                pour composer un nouveau message. (l'éditeur peut être défini
+		dans l'onglet <it>Autres</it>.
+	</item>
+	<item>
+		Les paramètres de césure déterminent comment Sylpheed doit
+                couper les longues lignes. Vous pouvez choisir d'opérer des 
+                césures  sur les citations, lorsque vous écrivez ou bien encore
+                lorsque vous envoyez vos messages. Vous pouvez aussi changer le
+                nombre maximal de caractères par lignes.
+	</item>
+	<item>
+		Les options de réponse vous permettent de contrôler la manière 
+                dont vous répondrez à vos mails. Lorsque vous utilisez l'option 
+                <it>Sélection Automatique de compte</it>, le compte utilisé pour
+                répondre à un message est automatiquement sélectionné en 
+                fonction du dossier où se trouve le message originel (comme il
+                vous l'a déjà été dit, les comptes peuvent être attachés aux 
+                dossiers).
+                Si l'option <it>Répondre en citant</it> est selectionnée, 
+                lorsque vous cliquez sur le bouton <it>Répondre</it> la fenêtre
+		de composition apparaît, soit, avec l'ensemble du message auquel
+                vous voulez répondre (si vous n'aviez rien sélectionné dans ce 
+                message), soit avec la partie que vous aviez sélectionnée.
+		Lorsque cette option n'est pas sélectionnée, la fenêtre de 
+                composition apparaît systématiquement vide, et vous devrez faire
+                des copier-coller manuels du message originel pour le citer.
+	</item>
+</itemize>
+</sect2>
+
+
+<sect2>Onglet Citation
+<p>
+Cet onglet vous permet de contrôler la manière dont s'opèrent les citations 
+dans vos réponses et les messages que vous transférez.
+
+<figure loc="h"><ph vspace="479px">
+	<img src="snapshots/pref_quote.png">
+</figure>
+
+<itemize>
+	<item>
+		Vous pouvez définir la marque de citation qui sera utilisée
+                au début de chacune des lignes citées de vos réponses et de
+		vos messages transférés.
+	</item>
+	<item>
+		Vous pouvez aussi définir le texte qui sera introduit avant 
+		et après la citation. L'ensemble des symboles que vous pouvez
+                utiliser pour personnaliser vos citations sont expliqués dans 
+		la fenêtre qui apparît lorsque vous cliquez sur le bouton
+		<it>Description des symboles</it>.
+	</item>
+</itemize>
+</sect2>
+
+
 </sect1>
 
-<! Note il manque les onglets Send à Other !>
+<! Note il manque les onglets Display à Other !>
 
 <sect1>Configurer ou changer la configuration d'un compte
 <p>
