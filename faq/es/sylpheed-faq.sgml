@@ -9,7 +9,7 @@ Ricardo Mones Lastra <tt>&lt;mones@aic.uniovi.es&gt;</tt>
 </author>
 
 <abstract>
-  Preguntas más frecuentes (FAQ) de Sylpheed para la versión 0.6.6 - 
+  Preguntas más frecuentes (FAQ) de Sylpheed para la versión 0.7.4 - 
   basado en el documento original en inglés de Paul Kater (paul@nlpagan.net)
   y Jens Oberender (j.obi@troja.net)
 </abstract>
@@ -21,8 +21,21 @@ Información general
 <!-- gi.Q01 -->
 <sect1>¿Están disponibles los FAQs en otros idiomas?
 <p>
-R.: Si, al final de este documento, en la sección de créditos
-encontrará los enlaces a varias traducciones disponibles.
+R.: Si, los siguientes enlaces corresponden a distintas traducciones
+disponibles:
+<itemize>
+<item>http://nlpagan.net/sylpheedfaq.htm : FAQ original en Inglés, cortesía de Paul Kater, Jens Oberender y otros
+<item>http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html : FAQ de Sylpheed en Francés, cortesía de Dinh V. Hoa
+<item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm : FAQ de Sylpheed en Japonés, cortesía de Wakai "SilverRain" Kazunao
+<item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html : FAQ de Sylpheed en Italiano, cortesía de Maurizio Codogno
+<item>http://www.synconet.de/privhome/rs/sylpheed_faq.html : FAQ de Sylpheed en Alemán (HTML) y http://www.synconet.de/privhome/rs/sylpheed_faq.txt (solo texto), ambos cortesía de Ralf Schiffers
+<item>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html : FAQ de Sylpheed en Griego, cortesía de Theofilos Intzoglou
+<item>http://sylpheed.republika.pl : FAQ de Sylpheed en Polaco, cortesía de Przemyslaw Sulek
+<item>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html : FAQ de Sylpheed en turco, cortesía de Doruk Fisek
+<item>http://hem.passagen.se/webplats/sylpheed-faq-se.html: FAQ de Sylpheed en Sueco, cortesía de Mattias Stergren
+</itemize>
+
+También puedes encontrar la última versión en línea de este FAQ en http://www.aic.uniovi.es/mones/sylpheed/faq-es/ (hay enlaces a diferentes formatos).
 </p>
 </sect1>
 
@@ -129,7 +142,7 @@ de Instalación.
 <!-- gi.Q13 -->
 <sect1>¿Cómo comprueba Sylpheed los tipos MIME?
 <p>
-R.: Sylpheed usa la comprobación de tipos MIME al estilo del Mutt.
+R.: Sylpheed usa la comprobación de tipos MIME equivalente a la realizada por Mutt.
 </p>
 </sect1>
 
@@ -242,9 +255,13 @@ y dejar presentable el correo de nuevo.
 <sect1>¿Dónde puedo encontrar el último FAQ de Sylpheed?
 <p>
 R.: En <tt>http://nlpagan.net/sylpheedfaq.htm</tt> que es donde se
-mantiene el FAQ en inglés. También podrás
-encontrar enlaces al FAQ en otros idiomas. En la sección de créditos
-de este mismo documento también podrá encontrar estos enlaces.
+mantiene el FAQ en inglés. También podrás encontrar enlaces al FAQ en 
+otros idiomas. </p>
+<p>
+También puedes visitar http://www.sourceforge.net y buscar las páginas
+del manual y el FAQ en el proyecto sylpheeddoc. Ambos documentos están
+disponibles en diversos idiomas y habitualmente incluyen las últimas
+actualizaciones.
 </p>
 </sect1>
 
@@ -430,6 +447,7 @@ R.: Deberá tener instalado el paquete en el que esté incluido <tt>libcompface</t
 R.: Dentro del paquete <tt>faces</tt> existe el programa <tt>xmb2icon</tt> (un guión de shell)
 que convierte un fichero xbm de 48x48 pixels al formato adecuado para compface. Para conseguir una
 imagen en formato xbm puede utilizar un programa gráfico como el Gimp.
+Gracias a Jeff Daikiri está disponible un curso completo en línea sobre esto, visite http://www.dairiki.org/xface/ para más detalles.
 </p>
 </sect1>
 
@@ -577,7 +595,7 @@ R.: Desde la versión 0.4.65 se puede. Las opciones son las siguientes:
 <item><tt>&percnt;I</tt> hora (0-12)
 </itemize>
 
-Para más información vaya al menú de ``Configuración``, seleccione 
+Para más información vaya al menú de ``Configuración``, seleccione 	
 ``Preferencias comunes``, ``Visualizar``,
 y mueva el puntero del ratón sobre el recuadro de ``Formato de fecha``.
 </p>
@@ -614,58 +632,6 @@ espacios en el nombre ponga comillas simples alrededor del parámetro <tt>%s</tt>
 Por ejemplo: <tt>gedit '%s'</tt>
 </p>
 </sect1>
-
-</sect>
-
-<!-- Other resources -->
-
-<sect>Créditos
-<p>
-Algunos enlaces al FAQ de Sylpheed en otros idiomas:
-
-<itemize>             
-<item> <p>Sylpheed FAQ en Inglés original traducido en este documento cortesía de 
-       Paul Kater y Jens Oberender
-       <tt>http://nlpagan.net/sylpheedfaq.htm</tt> </p>
-
-<item> <p>Sylpheed FAQ en Francés cortesía de DINH V. Hoa
-       <tt>http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html</tt> </p>
-
-<item> <p>Sylpheed FAQ en Japonés cortesía de WAKAI "SilverRain" Kazunao
-       <tt>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm</tt> </p>
-
-<item> <p>Sylpheed FAQ en Italiano cortesía de Maurizio Codogno
-       <tt>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html</tt> </p>
-
-<item> <p>Sylpheed FAQ en Alemán (versión HTML)
-       <tt>http://www.synconet.de/privhome/rs/sylpheed_faq.html</tt> </p>
-       <p>o la versión alemana (solo texto),
-       <tt>http://www.synconet.de/privhome/rs/sylpheed_faq.txt</tt> </p>
-       <p>ambos cortesía de Ralf Schiffers. </p>
-                      
-<item> <p>Sylpheed FAQ en Griego cortesía de Theofilos Intzoglou.
-       <tt>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html</tt> </p>
-
-<item> <p>Sylpheed FAQ en Polaco cortesía de Przemyslaw Sulek 
-       <tt>http://sylpheed.republika.pl/sylpheedplfaq.txt</tt> </p>
-
-<item> <p>Sylpheed FAQ en Turco cortesía de Doruk Fisek
-       <tt>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html</tt> </p>
-
-<item> <p>Sylpheed FAQ en Sueco cortesía de Mattias Östergren
-       <tt>http://hem.passagen.se/webplats/sylpheed-faq-se.html</tt> </p>
-
-<item> <p>Sylpheed FAQ en Serbio cortesía de Garret
-       <tt>http://www.ckrew.f2s.com/garret/sylpheedfaq-sr.html</tt> </p>
-</itemize>
-</p>
-<p>
-La traducción de este FAQ ha sido realizada por Ricardo Mones Lastra <tt>&lt;mones@aic.uniovi.es&gt;</tt>,
-y puede encontrar la versión en línea más reciente del mismo en 
-<tt>http://www.aic.uniovi.es/mones/sylpheed/faq-es</tt>. 
-También hay enlaces a otros formatos y más recursos en mi página dedicada a Sylpheed 
-<tt>http://www.aic.uniovi.es/mones/sylpheed</tt>
-</p>
 
 </sect>
 
