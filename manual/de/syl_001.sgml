@@ -21,15 +21,15 @@ Ziele bei der Entwicklung von Sylpheed sind
 <item>Effizienz und Ressourcenschonung
 <item>Schnelligkeit
 <item>intuitive Bedienung
-<item>einfache Anpassbarkeit
+<item>einfache Konfigurierbarkeit
 <item>eine Fülle von Features und Optionen
 <item>unter einer eleganten Oberfläche
 </itemize>
 </sect1>
 <sect1>Oberfläche<p>
-Das Erscheinungsbild und die Oberfläche ähneln verschiedenen beliebten E-Mailprogrammen für Windows, wie Outlook Express, Becky!, und Datula. Verschiedene Sets von Tastaturkürzelvorgaben erlauben zusätzlich die Mailprogramme der Emacse zu emulieren, fast alle deren Tastaturkürzel sind enthalten.
+Das Erscheinungsbild und die Oberfläche ähneln verschiedenen beliebten E-Mailprogrammen für Windows, wie z.B. Outlook Express, Becky! und Datula. Die Benutzerschnittstelle wurde so entworfen, dass alle Emacsen E-Mailprogramme emuliert werden können. Außerdem können fast alle Befehle über die Tastatur aufgerufen werden.
 
-E-Mails werden in Mailboxen im MH-Format verwaltet, um eine gemeinsame Benutzung mit anderen MH-basierten E-Mailprogrammen, zum Beispiel Mew, zu ermöglichen. Weiters werden auch fetchmail und/oder procmail unterstützt, und andere externe Empfangsprogramme wie inc oder imget.
+E-Mails werden in Mailboxen im MH-Format verwaltet, um eine gemeinsame Benutzung mit anderen MH-basierten E-Mailprogrammen, z.B. Mew, zu ermöglichen. Zusätzlich werden auch fetchmail und/oder procmail unterstützt, sowie andere externe Empfangsprogramme wie inc oder imget.
 </sect1>
 <sect1>Grundfunktionen<p>
 Zu den bereits integrierten Funktionen gehören: 
@@ -52,7 +52,7 @@ Zu den bereits integrierten Funktionen gehören:
 <item>Unterstützung mehrerer MH-Boxen
 <item>Mew/Wanderlust-kompatible Tastaturkürzel
 <item>Newsclient Funktionalität
-<item>Druckunterstützung
+<item>Ausdruck der Nachrichten
 <item>UIDL Unterstützung
 <item>APOP Authentifizierung
 <item>SMTP AUTH Unterstützung
@@ -68,15 +68,15 @@ Diese Liste ist nicht vollständig, sondern beschränkt sich auf die wichtigsten E
 <sect1>Methoden der Nachrichtenverwaltung<p>
 Es gibt verschiedene Arten, Nachrichten zu verwalten. Die einfachste ist <em>gar nicht</em>.
 
-Viele Leute erhalten täglich viele E-Mails die alle in der &quot;Inbox&quot; landen. Nach einer Weile ist diese Ablage so voll, daß man nichts wiederfindet. Aber wie soll man in einer Ablage mit 5000 Nachrichten die eine Nachricht über ein wichtiges Ereignis finden, die vor einer Woche kam? Selbst wenn man nach Datum sortiert, ist der Aufwand sehr hoch.
+Viele Leute erhalten täglich viele E-Mails, die alle in der &quot;Inbox&quot; landen. Nach einer Weile ist diese Ablage so voll, dass man nichts wiederfindet. Aber wie soll man in einer Ablage mit 5000 Nachrichten die eine Nachricht über ein wichtiges Ereignis finden, die vor einer Woche kam? Selbst wenn man nach Datum sortiert, ist der Aufwand sehr hoch.
 
 Aber dafür gibt es <em>Ablagen und Mailboxen</em>.
 
-Im weiteren Verlauf dieses Handbuches werden wir sehen wie man Mailboxen erstellt, und Ablagen, die weitere Ablagen enthalten können. Was bringt uns das?
+Im weiteren Verlauf dieses Handbuchs werden wir sehen wie man sowohl Mailboxen, als auch Ablagen erstellt, die weitere Unterablagen enthalten können. Wozu aber soll das gut sein?
 
-Übersichtlichkeit. In verschiedenen Mailboxen kann man verschiedene Arten von Nachrichten speichern. Nehmen wir an, es kämen jeden Tag etwa 20 E-Mails von unserer Kaffeemaschine (vgl. auch <url url="http://coffee.sf.net" name="http://coffee.sf.net">). &quot;Bin leer - bitte Wasser und Kaffee einfüllen&quot;, &quot;Ich koche jetzt&quot;, und &quot;Der Kaffee ist fertig&quot;. Diese Nachrichten sind im Moment informativ, aber spätestens in wenigen Stunden nur noch für die Statistik interessant. Deshalb wäre es unklug sie in einem Ordner mit den E-Mails unserer Geschäftspartner, oder unserer Freunde aus dem Bridge-Club aufzubewahren. Was man nun machen kann ist eine eigene Mailbox für diese Art von E-Mails anzulegen. Wenn nun ein E-Mail von unserer Kaffeemaschine kommt, können wir es in diese Mailbox verschieben.
+Übersichtlichkeit. In verschiedenen Mailboxen kann man verschiedene Arten von Nachrichten speichern. Nehmen wir an, es kämen jeden Tag etwa 20 E-Mails von unserem Kegelclub. Diese Nachrichten sind zwar informativ, unterscheiden sich aber in ihrer Thematik stark von den E-Mails unserer Geschäftspartner, oder dem wöchentlichen Newsletter unserer Buchhandlung. Deshalb wäre es unklug, alle diese Nachrichten in einem Ordner aufzubewahren. Was man nun machen kann, ist eine eigene Mailbox für diese Art von E-Mails anzulegen. Wenn nun eine E-Mail von unserem Kegelclub kommt, können wir sie in diese Mailbox verschieben.
 
-Das sei umständlich? 20 E-Mails am Tag von Hand aus der "Inbox" in eine andere Mailbox zu verschieben? Genau, das ist nicht nur umständlich, sondern auch fehlerträchtig, weil man mit Sicherheit irgendwann die falsche E-Mail auswählt, und eine wichtige Geschäftsnachricht bei den E-Mails unserer Kaffeemaschine landet.
+Wie, das sei umständlich? 20 E-Mails am Tag von Hand aus der "Inbox" in eine andere Mailbox zu verschieben? Genau, das ist nicht nur umständlich, sondern auch fehlerträchtig, weil man mit Sicherheit irgendwann die falsche E-Mail auswählt, und eine wichtige Geschäftsnachricht bei den E-Mails unseres Kegelclubs landet.
 
 Aber auch für dieses Problem gibt es eine Lösung. Sie heißt <em>Filter</em>.
 
@@ -85,7 +85,7 @@ Filter können das Verschieben von Nachrichten in andere Ablagen automatisieren. 
 <sect2>Gut, was ist nun der Unterschied zwischen einer Mailbox und einer Ablage?<p>
 Mailboxen und Ablagen dienen dem Zweck, uns in einer hierarchischen Baumstruktur unsere Nachrichten verwalten zu lassen. Mailboxen bilden hierbei die Wurzel, sie enthalten automatisch die Ablagen &quot;Inbox&quot;, &quot;Outbox&quot;, &quot;Entwurf&quot;, &quot;Queue&quot; (Warteschlange) und &quot;Trash&quot; (Mülleimer).
 
-Nun könnten wir zum Beispiel eine eigene Mailbox für alle unsere Mailinglisten anlegen. In dieser Mailbox legen wir für jede unserer Mailinglisten eine eigene Ablage an. Weil uns ein Gebiet besonders interessiert, und wir hier vier verschiedene Mailinglisten abonniert haben, erstellen wir für diese vier Listen eine einzelne Ablage mit vier Unterablagen.
+Nun könnten wir zum Beispiel eine eigene Mailbox für alle unsere Mailinglisten anlegen. In dieser Mailbox legen wir für jede unserer Mailinglisten eine eigene Ablage an. Weil uns ein Gebiet besonders interessiert, und wir hier vier verschiedene Mailinglisten abonniert haben, erstellen wir für diese vier Listen eine eigene Ablage mit vier Unterablagen.
 
 Eine Ablage kann allerdings auch E-Mails UND weitere Ablagen enthalten. So könnten wir, um beim vorigen Beispiel zu bleiben, statt einer Ablage mit vier Unterablagen auch eine Ablage mit nur drei Unterablagen erstellen, und eine Mailingliste in der Stammablage verwalten.
 
@@ -93,10 +93,10 @@ Eine Ablage kann allerdings auch E-Mails UND weitere Ablagen enthalten. So könnt
 
 Wie man sieht hat man bei der Gestaltung seiner Mailbox- und Ablagenstruktur freie Hand. Solange noch Platz auf der Festplatte ist, kann man beliebig viele neue Mailboxen und Ablagen hinzufügen.
 
-Allerdings sinkt die Übersichtlichkeit bei einer zu großen Anzahl von Ablagen auch wieder. So sollte man ein Mittelmaß finden, den eigenen Bedürftnissen entsprechend.
+Allerdings sinkt die Übersichtlichkeit bei einer zu großen Anzahl von Ablagen auch wieder. So sollte man ein Mittelmaß finden, dass den eigenen Bedürfnissen entspricht.
 </sect2>
 </sect1>
 <sect1>Zukünftige Features<p>
-Ein besonderes Kapitel. Wie alle Open Source Projekte richtet sich die Entwicklung vor allem nach den Bedürftnissen der Benutzer. Die beste Möglichkeit selbst an der weiteren Entwicklung teilzuhaben, ist eine von Sylpheeds Mailinglisten zu abonnieren. Wie man das macht wird im Kapitel &quot;Weitere Informationen&quot;, Abschnitt &quot;Mailinglisten&quot; beschrieben.
+Das ist in besonderes Kapitel. Wie alle Open Source Projekte richtet sich die Entwicklung vor allem nach den Bedürfnissen der Benutzer. Die beste Möglichkeit selbst an der weiteren Entwicklung teilzuhaben, ist, eine von Sylpheeds Mailinglisten zu abonnieren. Wie man das macht wird im Kapitel &quot;Weitere Informationen&quot;, Abschnitt &quot;Mailinglisten&quot; beschrieben.
 </sect1>
 </sect>
