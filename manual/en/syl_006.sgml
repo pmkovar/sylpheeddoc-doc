@@ -52,7 +52,7 @@ options:
 		Print: lets you print the selected e-mail to a printer.
 	</item>
 	<item>
-		Exit: also ends Sylpheed.
+		Exit: ends Sylpheed.
 	</item>
 </itemize>
 </sect1>
@@ -100,7 +100,11 @@ based on different attributes.
 				Folder tree: not implemented yet
 			</item>
 			<item>
-				Message view: not implemented yet
+				Message view: show or hide the message pane. When hidden, the
+				messages are displayed in a separate window. To read a message
+				double click in the summary pane. The message is then opened in
+				a new window. You can close this new window by pressing the escape
+				key.
 			</item>
 			<item>
 				Toolbar: sets how you want to see the toolbar. Icons and text, 
@@ -180,6 +184,18 @@ based on different attributes.
 				Sort by attachment: separate messages with and without attachment.
 			</item>
 			<item>
+				Don't sort: do not sort the messages.
+			</item>
+			<item>
+				Ascending: sort the messages in ascending order. If the field used
+				to sort the messages is displayed in the summary view, a little
+				arrow on the right side of the corresponding summay column header
+				reflects the sort order you select from the menu.
+			</item>
+			<item>
+				Descending: sort the messages in descending order.
+			</item>
+			<item>
 				Attract by subject: move close to each other the messages
 				having the same subject (or a close subject).
 			</item>
@@ -195,6 +211,14 @@ based on different attributes.
 		mail header, so never start a new conversation by replying to an
 		old message, this will add your new mail to the old unrelated thread.
 		Shortcut: Ctrl-T
+	</item>
+	<item>
+		Expand all threads: if the threaded view is selected, expand all the
+		threads in the opened folder.
+	</item>
+	<item>
+		Collapse all threads: if the threaded view is selected, collapse all the
+		threads in the opened folder.
 	</item>
 	<item>
 		Set display item: use it to change the list of items to display
@@ -222,6 +246,28 @@ based on different attributes.
 			<item>
 				Next unread: go to the next unread message.
 				Shortcut: Shift-N
+			</item>
+			<item>
+				Prev. new: go to the previous new message.
+			</item>
+			<item>
+				Next new: go to the next new message.
+			</item>
+			<item>
+				Prev. marked: go to the previous marked message.
+			</item>
+			<item>
+				Next marked: go to the next marked message.
+			</item>
+			<item>
+				Prev. labeled: go to the previous labeled message.
+			</item>
+			<item>
+				Next labeled: go to the next labeled message.
+			</item>
+			<item>
+				Other folder: change the current folder. Opens a new window
+				with the folder tree, and open the selected folder.
 			</item>
 		</itemize>
 	</item>
@@ -253,7 +299,7 @@ based on different attributes.
 		Shortcut: Ctrl-H
 	</item>
 	<item>
-		Update: update the Sylpheed window.
+		Update summary: update the Sylpheed window.
 		Shortcut: Ctrl-Alt-U
 	</item>
 </itemize>
@@ -316,6 +362,11 @@ Here you find the following options:
 		Forward as attachment: as Forward, but the message 
 		text will sent along as a separate textfile.
 		Shortcut: Shift-Ctrl-Alt-F
+	</item>
+	<item>
+		Redirect: re-send the selected message to someone else. Compared
+		to a forward, the message is not marked as forwarded, and the sender
+		is the original mail sender.
 	</item>
 	<item>
 		Re-edit: lets you open all already sent message in
@@ -397,15 +448,19 @@ access and log window control.
 		</itemize>
 	</item>
 	<item>
-		Execute: execute all the pending move, delete, and copy commands.
-		Only if execute immediately is off in the common preferences.
-		Shortcut: X
-	</item>
-	<item>
 		Delete duplicated messages: This will remove messages from the 
 		active folder that were sent twice to you. For example you 
 		received a message directly and through a mailing list at 
 		the same time.
+	</item>
+	<item>
+		Actions: this menu is empty until you define some actions (see the
+		configuration menu description).
+	</item>
+	<item>
+		Execute: execute all the pending move, delete, and copy commands.
+		Only if execute immediately is off in the common preferences.
+		Shortcut: X
 	</item>
 	<item>
 		Log window: opens the log window. In the log window, you 
@@ -479,6 +534,13 @@ the way you want it to work and react.
 		to create a dynamic text. Use the symbols button on
 		the templates definition window to see the list of
 		the available symbols.
+	</item>
+	<item>
+		Actions: let your create new commands to be added to the
+		'Tools/Actions' menu. An action is a command that processes
+		the select part of a message, the message body or the complete
+		message file. It can be a background process, used as a filter
+		(reads, modifies and replaces a message),...
 	</item>
 	<item>
 		Preferences for current account: here you can set the 
