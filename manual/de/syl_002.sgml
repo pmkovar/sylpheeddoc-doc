@@ -1,50 +1,58 @@
 <sect>Kurzanleitung E-Mail einrichten
-<sect1>Schnellinstallation von Unix Mailboxen<p>
-Wähle in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen&quot;
+<sect1>Schnellinstallation einer Unix Mailbox<p>
+<itemize>
+<item>In der Menüleiste &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot; wählen.
+<item>Im Reiter <ref id="Einfach"> den Namen des Accounts angegeben, der Account kann als Standardaccount gewählt werden (&quot;Standardaccount&quot;), um ihn für Senden und Empfangen voreinzustellen.
+<item>Dann folgen die persönlichen Daten: Namen, E-Mail-Adresse, eventuell Organisation.
+<item>Um eine lokale Unix Mailbox zu benutzen, wählt man in der Protokollbox &quot;Keiner (lokal)&quot;.
+<item>Wählt man diese Option, so wird &quot;Server zum Empfangen&quot; deaktiviert, da kein Server benötigt wird. Man kann in diesem Reiter aber den Server für das Senden (SMTP) einstellen.
+</itemize>
 
-Im &quot;Einfach&quot; Reiter werden die persönlichen Daten angegeben. Name des Accounts, Namen und E-Mailadresse. Der Account kann als Standardaccount gewählt werden (&quot;Standardaccount&quot;). Um eine lokale Unix Mailbox zu benutzen, wählt man in der Protokollbox &quot;Keiner (lokal)&quot;.
+Die Einstellungen in den übrigen Reitern können für gewöhnlich bei den Voreinstellungen belassen werden.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_basic.png"></figure>
 
-Wählt man diese Option, so wird &quot;Server zum Empfangen&quot; deaktiviert, da kein Server benötigt wird. Man kann in diesem Reiter aber den Server für das Senden (SMTP) angeben.
+Der Reiter <ref id="Empfangen"> wird hier nicht benötigt, da kein Server für den Empfang abgefragt wird.
 
-Der &quot;Empfangen&quot; Reiter wird hier nicht benötigt, da kein Server für den Empfang abgefragt wird.
-
-Im &quot;Senden&quot; Reiter kann man einige weitere Einstellungen wählen.
+Im Reiter <ref id="Senden"> können Kopfzeilen und SMTP-Beglaubigung konfiguriert werden.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_send.png"></figure>
 
-Im &quot;Verfassen&quot; Reiter kann man eine Signaturdatei wählen.
+Im Reiter <ref id="Verfassen"> kann man eine Signaturdatei wählen.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
 
-Im &quot;Speziell&quot; Reiter kann man die Portnummern der verwendeten Server anpassen. Das ist aber in den allermeisten Fällen nicht notwendig.
+Im Reiter <ref id="Speziell"> kann man die Portnummern der verwendeten Server anpassen. Das ist aber in den allermeisten Fällen nicht nötig.
 
-Mehr ist im Prinzip nicht notwendig, um mit Sylpheed lokale Mailboxen abzufragen. Um zu sehen ob neue Post da ist, drückt man Alt-I, oder wählt &quot;Nachricht&quot; -&gt; &quot;empfange neue E-Mail&quot;.
+Mehr ist im Prinzip nicht notwendig, um mit Sylpheed lokale Mailboxen abzufragen. Um zu sehen ob neue Post da ist, wählt man &quot;Nachricht&quot; -&gt; &quot;Empfange neue E-Mail&quot;, oder das entsprechende <ref id="Tastaturkürzel">.
 </sect1>
-<sect1>Schnellinstallation von POP3 Accounts<p>
-Wähle in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen&quot;
+<sect1>Schnellinstallation eines POP3 Accounts<p>
+<itemize>
+<item>In der Menüleiste &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot; wählen.
+<item>Im Reiter <ref id="Einfach"> den Namen des Accounts angegeben, der Account kann als Standardaccount gewählt werden (&quot;Standardaccount&quot;), um ihn für Senden und Empfangen voreinzustellen.
+<item>Dann folgen die persönlichen Daten: Namen, E-Mail-Adresse, eventuell Organisation.
+<item>Um einen POP3 Account zu benutzen, wählt man in der Protokollbox &quot;POP3 (normal)&quot;.
+<item>Die Angaben für den Serverzugang gibt man unter &quot;Server zum Empfangen&quot; ein. Dann kann man im selben Reiter den Server für das Senden (SMTP) einstellen.
+</itemize>
 
-Im &quot;Einfach&quot; Reiter werden die persönlichen Daten angegeben. Name des Accounts, Namen und E-Mailadresse. Der Account kann als Standardaccount gewählt werden (&quot;Standardaccount&quot;). Um einen POP3 Account zu benutzen, wählt man in der Protokollbox &quot;POP3 (normal)&quot;.
+Die Einstellungen in den übrigen Reitern können für gewöhnlich bei den Voreinstellungen belassen werden.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_pop_basic.png"></figure>
 
-Die Angaben für den Serverzugang gibt man unter &quot;Server zum Empfangen&quot; ein. Dann kann man im selben Reiter den Server für das Senden (SMTP) angeben.
-
-Im &quot;Empfangen&quot; Reiter kann man weitere Einstellungen für den Empfang angeben.
+Der Reiter <ref id="Empfangen"> bietet erweiterte POP3-Optionen.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_pop_receive.png"></figure>
 
-Im &quot;Senden&quot; Reiter kann man einige weitere Einstellungen wählen.
+Im Reiter <ref id="Senden"> können Kopfzeilen und SMTP-Beglaubigung konfiguriert werden.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_send.png"></figure>
 
-Im &quot;Verfassen&quot; Reiter kann man eine Signaturdatei wählen.
+Im Reiter <ref id="Verfassen"> kann man eine Signaturdatei wählen.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
 
-Im &quot;Speziell&quot; Reiter kann man die Portnummern der verwendeten Server anpassen. Das ist aber in den allermeisten Fällen nicht notwendig.
+Im Reiter <ref id="Speziell"> kann man die Portnummern der verwendeten Server anpassen. Das ist aber in den allermeisten Fällen nicht nötig.
 
-Mehr ist im Prinzip nicht notwendig, um mit Sylpheed einen POP3-Server abzufragen. Um zu sehen ob neue Post da ist, drückt man Alt-I, oder wählt &quot;Nachricht&quot; -&gt; &quot;empfange neue E-Mail&quot;.
+Mehr ist im Prinzip nicht notwendig, um mit Sylpheed einen POP3-Server abzufragen. Um zu sehen ob neue Post da ist, wählt man &quot;Nachricht&quot; -&gt; &quot;Empfange neue E-Mail&quot;, oder das entsprechende <ref id="Tastaturkürzel">.
 </sect1>
 </sect>

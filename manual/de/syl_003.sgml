@@ -1,20 +1,26 @@
 <sect>Kurzanleitung News einrichten
-<sect1>Schnellinstallation von News Accounts<p>
-Wähle in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen&quot;
+<sect1>Schnellinstallation eines News Accounts<p>
+<itemize>
+<item>In der Menüleiste &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot; wählen.
+<item>Im Reiter <ref id="Einfach"> den Namen des Accounts angegeben, der Account kann als Standardaccount gewählt werden (&quot;Standardaccount&quot;), um ihn für Senden und Empfangen voreinzustellen.
+<item>Dann folgen die persönlichen Daten: Namen, E-Mail-Adresse, eventuell Organisation.
+<item>Um einen News Account zu benutzen, wählt man in der Protokollbox &quot;News (NNTP)&quot;.
+<item>Die Angaben für den Serverzugang gibt man unter &quot;Newsserver&quot; ein.
+</itemize>
 
-Im &quot;Einfach&quot;-Reiter werden die persönlichen Daten angegeben. Name des Accounts, Name und Emailadresse. Um einen News Account zu benutzen, wählt man in der Protokollbox &quot;News (NNTP)&quot;, und gibt die Zugangsdaten des Servers an.
+Die Einstellungen in den übrigen Reitern können für gewöhnlich bei den Voreinstellungen belassen werden.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_news_basic.png"></figure>
 
-Überspringe den &quot;Empfangen&quot;-Reiter.
+Im Reiter <ref id="Empfangen"> kann eingestellt werden, daß der Newsserver zusammen mit den anderen Accounts abgefragt wird.
 
-Im &quot;Senden&quot;-Reiter kann man einige weitere Einstellungen wählen.
+Im Reiter <ref id="Senden"> können Kopfzeilen und SMTP-Beglaubigung konfiguriert werden.
 
-Im &quot;Verfassen&quot;-Reiter kann man eine Signaturdatei wählen.
+Im Reiter <ref id="Verfassen"> kann man eine Signaturdatei wählen.
 
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
 
-Im &quot;Speziell&quot;-Reiter kann man die Portnummern der verwendeten Server anpassen. Das ist aber in den allermeisten Fällen nicht notwendig.
+Im Reiter <ref id="Speziell"> kann man die Portnummern der verwendeten Server anpassen. Das ist aber in den allermeisten Fällen nicht notwendig.
 
 Nach dem Schließen des Dialogfensters abonniert man Newsgroups durch Rechtsklicken auf den neuen Newsaccount und &quot;Newsgroup abonnieren&quot;. Zunächst wird die Gruppenliste vom Server geladen. Dann wählt man die gewünschten Gruppen.
 </sect1>

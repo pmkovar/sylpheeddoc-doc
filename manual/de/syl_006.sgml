@@ -184,7 +184,7 @@ Hier kann man Einstellungen für den Nachrichtenempfang anpassen.
 <sect1>Einen Account einrichten/Ändern eines Accounts<p>
 Um einen neuen Account einzurichten, wählt man &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot;. Will man die Einstellungen eines bereits vorhandenen Accounts ändern, wählt man &quot;Einstellungen&quot; -&gt; &quot;Accounts bearbeiten...&quot;. Dann wählt man den zu ändernden Account, und drückt den &quot;Bearbeiten&quot;-Knopf. Im folgenden Dialog kann man die Einstellungen über folgende Reiter anpassen:
 
-<sect2>Reiter &quot;Einfach&quot;<p>
+<sect2>Reiter &quot;Einfach&quot;<label id="Einfach"><p>
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_basic.png"></figure>
 
 Im &quot;Einfach&quot;-Reiter gibt man dem Account einen Namen. Damit kann man ihn in der Statuszeile besser wiedererkennen. Deshalb empfiehlt es sich einen prägnanten Namen zu benutzen, zum Beispiel den des Providers. Man kann den Account auch zum Standardaccount machen, mit &quot;Standardaccount&quot;.
@@ -195,26 +195,26 @@ Bei POP3 und IMAP kann man die Adresse des Servers angeben, Benutzernamen und Pa
 
 Bei einer lokalen UNIX Mailbox wird kein Server für den Empfang benötigt.
 </sect2>
-<sect2>Reiter &quot;Empfangen&quot;<p>
+<sect2>Reiter &quot;Empfangen&quot;<label id="Empfangen"><p>
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_pop_receive.png"></figure>
 
 Der &quot;Empfangen&quot;-Reiter wird vorwiegend für POP3-Accounts benutzt. Hier gibt man an, ob empfangene Nachrichten vom Server gelöscht werden sollen. Man kann auch alle vorhandenen Nachrichten vom Server holen, auch solche, die bereits abgeholt, aber nicht gelöscht wurden.
 &quot;Hole alle&quot; gibt an, ob dieser Server abgefragt werden soll, wenn &quot;Nachricht&quot; -&gt; &quot;Empfange von allen Accounts&quot; durchgeführt wird.
 </sect2>
 
-<sect2>Reiter &quot;Senden&quot;<p>
+<sect2>Reiter &quot;Senden&quot;<label id="Senden"><p>
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_send.png"></figure>
 
 Der "Senden"-Reiter enthält weitere Optionen.
 </sect2>
 
-<sect2>Reiter &quot;Empfangen&quot;<p>
+<sect2>Reiter &quot;Verfassen&quot;<label id="Verfassen"><p>
 <figure loc="here"><ph vspace="1cm"><img src="snapshots/account_compose.png"></figure>
 
 Im &quot;Empfangen&quot;-Reiter kann eine Signatur-Datei gewählt werden.
 </sect2>
 
-<sect2>Reiter &quot;Speziell&quot;<p>
+<sect2>Reiter &quot;Speziell&quot;<label id="Speziell"><p>
 Im &quot;Speziell&quot;-Reiter können die Ports der Server angepasst werden. Normalerweise ist das nicht notwendig.
 </sect2>
 </sect1>
