@@ -1,0 +1,606 @@
+<sect>Le voci dei menu di Sylpheed.
+<p>
+Il menu di Sylpheed è il punto di partenza per tutte le operazioni 
+che si possono fare con Sylpheed. La struttura dei menu presenta 
+le seguenti opzioni:
+
+<sect1>Menu <bf>File</bf>
+<p>
+<itemize>
+	<item>
+		<it>Aggiungi una casella di posta:</it> questa voce permette di aggiungere 
+		una nuova directory MH per la posta.
+		Verranno altresì create le cartelle IN ENTRATA, SPEDITA, BOZZE, CODA, CESTINO 
+		all'interno della nuova directory.
+	</item>
+	<item>
+		<it>Controlla per nuovi messaggi in tutte le cartelle:</it> rilegge l'intera 
+		struttura ad albero di tutte le caselle di posta per visualizzarne lo stato 
+		corretto (solitamente non è necessario).
+	</item>
+	<item>
+		<it>Cartella:</it> permette di aggiungere, rinominare o rimuovere una cartella.
+		<itemize>
+			<item>
+				<it>Crea una nuova cartella:</it> prima di procedere, è necessario 
+				selezionare la cartella del livello in corrispondenza del quale 
+				si vuole crearne una nuova.
+			</item>
+			<item>
+				<it>Rinomina la cartella:</it> per modificare il nome della 
+				cartella selezionata.
+			</item>
+			<item>
+				<it>Elimina la cartella:</it> elimina la cartella selezionata, 
+				includendo nell'operazione anche i messaggi ivi contenuti.
+			</item>
+		</itemize>
+	</item>
+	<item>
+		<it>Importa dal file mbox...:</it> consente l'importazione di un file mbox 
+		(come quelli creati da Pine) in una cartella MH.
+	</item>
+	<item>
+		<it>Esporta nel file mbox...:</it> consente di esportare in formato mbox 
+		una cartella in formato MH.
+	</item>
+	<item>
+		<it>Svuota il cestino:</it> elimina tutti i dati contenuti nel cestino.
+	</item>
+	<item>
+		<it>Salva come:</it> salvataggio del messaggio selezionato in un 
+		file di testo.
+	</item>
+	<item>
+		<it>Stampa:</it> esegue la stampa del messaggio selezionato.
+	</item>
+	<item>
+		<it>Uscita:</it> termina l'esecuzione di Sylpheed.
+	</item>
+</itemize>
+</sect1>
+
+<sect1>Menu <bf>Modifica</bf>
+<p>
+<itemize>
+	<item>
+		<it>Copia:</it> copia il testo selezionato nel buffer, dal quale 
+		lo si può incollare successivamente.
+		Scorciatoia: Ctrl-C
+	</item>
+	<item>
+		<it>Seleziona tutto:</it> seleziona tutto il testo della finestra
+		attualmente visualizzata.
+		Scorciatoia: Ctrl-A
+	</item>
+	<item>
+		<it>Seleziona thread:</it> seleziona tutti i messaggi del thread corrente.
+	</item>
+	<item>
+		<it>Trova nel messaggio attuale:</it> ricerca una stringa nel messaggio corrente.
+		Scorciatoia: Ctrl-F
+	</item>
+	<item>
+		<it>Ricerca i messaggi:</it> ricerca un messaggio in base al contenuto dei 
+		campi "A:", "Da:", "Oggetto:" oppure del contenuto del corpo del messaggio.
+		La ricerca parte dal messaggio selezionato, nella cartella selezionata.
+		Scorciatoia: Shift-Ctrl-F
+	</item>
+</itemize>
+</sect1>
+
+<sect1>Menu <bf>Vista</bf>
+<p>
+Questo menu consente di modificare l'aspetto visivo di Sylpheed. 
+E' possibile impostare finestre diverse in modo differente (vista cartelle, messaggi, ecc.), 
+abilitare o disabilitare la barra di stato e molto altro.
+Esso contiene anche i comandi per attivare/disattivare la visualizzazione di determinate parti 
+del messaggio corrente, oppure ordinare i messaggi nella cartella selezionata basandosi 
+su attributi diversi.
+<p>
+<itemize>
+	<item>
+		<it>Mostra o nascondi:</it> consente di selezionare le parti dell'interfaccia di 
+		Sylpheed da visualizzare.
+		<itemize>
+			<item>
+				<it>Albero della cartella:</it> non ancora implementato
+			</item>
+			<item>
+				<it>Vista del messaggio:</it> mostra o nasconde il pannello 
+				dei messaggi. Se nascosto, i messaggi sono visualizzati in una finestra 
+				separata. Per leggere un messaggio fare doppio-click nella vista 
+				collettiva. Il messaggio viene così aperto in una nuova finestra. 
+				Per chiudere la finestra premere il tasto ESC.
+			</item>
+			<item>
+				<it>Barra degli strumenti:</it> seleziona la modalità di visualizzazione 
+				della barra degli strumenti: icone e testi, solo icone o solo testo.
+				<itemize>
+					<item>
+						<it>Icone e testo:</it> mostra le icone con il relativo testo.
+					</item>
+					<item>
+						<it>Icone:</it> mostra solo le icone, senza il testo.
+					</item>
+					<item>
+						<it>Testo:</it> mostra solo il testo, senza icone.
+					</item>
+					<item>
+						<it>Niente:</it> nasconde l'intera barra degli strumenti.
+					</item>
+				</itemize>
+			</item>
+			<item>
+				<it>Barra di stato:</it> mostra o nasconde la barra di stato.
+			</item>
+		</itemize>
+	</item>
+	<item>
+		<it>Albero della cartella separato:</it> consente di scegliere se avere le vista delle cartelle 
+		nella finestra principale o averla come finesrta flottante separata.
+	</item>
+	<item>
+		<it>Vista del messaggio separata:</it> consente di selezionare la visualizzazione del messaggio 
+		nella finestra principale oppure in una finestra flottante separata.
+	</item>
+	<item>
+		<it>Ordina:</it> controlla il modo in cui vengono ordinati i messaggi 
+		nella cartella selezionata. Ogni voce ordina i messaggi in ordine 
+		decrescente (l'elemento maggiore in cima alla lista). Per invertire 
+		l'ordinamento è sufficiente selezionare una seconda volta 
+		la stessa voce di menu (ogni volta che si seleziona la stessa voce 
+		di menu ne si cambia il tipo di ordinamento).
+		<itemize>
+			<item>
+				<it>per numero:</it> ordina i messaggi in base al numero MH.
+			</item>
+			<item>
+				<it>per dimensione:</it> ordina i messaggi in base alla dimensione.
+			</item>
+			<item>
+				<it>per data:</it> ordina i messaggi in base alla data.
+			</item>
+			<item>
+				<it>per mittente:</it> ordina i messaggi in base all'indirizzo
+				del mittente (campo "Da:", ordinato alfabeticamente).
+			</item>
+			<item>
+				<it>per destinatario:</it> ordina i messaggi in base al 
+				destinatario (alfabeticamente).
+			</item>
+			<item>
+				<it>per oggetto:</it> ordina i messaggi in base all'oggetto
+				(alfabeticamente).
+			</item>
+			<item>
+				<it>per colore etichetta:</it> ordina i messaggi in base al loro colore.
+				Nella descrizione dei menu contestuali presentata in seguito è 
+				descritto come colorare i messaggi.
+			</item>
+			<item>
+				<it>per segno:</it> divide i messaggi "segnati" da quelli "non segnati".
+				Nella descrizione dei menu contestuali presentata in seguito è 
+				descritto come marcare i messaggi.
+			</item>
+			<item>
+				<it>per non letti:</it> divide i messaggi letti dai non letti.
+			</item>
+			<item>
+				<it>per allegato:</it> divide i messaggi contenenti allegati 
+				da quelli senza allegati.
+			</item>
+			<item>
+				<it>Non ordinare:</it> nessun'ordinamento dei messaggi.
+			</item>
+			<item>
+				<it>Ascendente:</it> ordina i messaggi in modo ascendente. Se il campo 
+				utilizzato per ordinare i messaggi è visualizzato nella vista sommario 
+				comparirà una piccola freccia sull'intestazione della colonna ad indicare 
+				la direzione di ordinamento selezionata.
+			</item>
+			<item>
+				<it>Discendente:</it> ordina i messaggi in modo discendente.
+			</item>
+			<item>
+				<it>Raggruppa per oggetto:</it> avvicina tra di loro i messaggi che hanno 
+				lo stesso oggetto (o con oggetto molto simile).
+			</item>
+		</itemize>
+	</item>
+	<item>
+		<it>Vista del thread:</it> attiva o disattiva la vista dei thread.
+		Quando è attiva, i messaggi relativi alla stessa discussione (thread) 
+		vengono raggruppati in una struttura ad albero che rappresenta il 
+		flusso della discussione. Ogni risposta viene collegata al messaggio 
+		originale. 
+		I thread si basano sui campi "In-Reply-To" e "Reference" presenti 
+		nelle intestazioni dei messaggi. Perciò si consiglia di evitare di 
+		avviare una nuova conversazione rispondendo ad un messaggio vecchio. 
+		Questo infatti inserirebbe il nuovo messaggio in coda alla discussione 
+		precedente, senza alcuna reale relazione.
+		Scorciatoia: Ctrl-T
+	</item>
+	<item>
+		<it>Espandi i thread:</it> se è selezionata la vista del thread, espande 
+		tutti i thread nella cartella selezionata.
+	</item>
+	<item>
+		<it>Nascondi i threads:</it> se è selezionata la vista del thread, nasconde 
+		i messaggi contenuti nei thread della cartella selezionata.
+	</item>
+	<item>
+		<it>Configura le voci da visualizzare:</it> permette di selezionare gli elementi 
+		da visualizzare nella vista sommario. Queste impostazioni possono essere modificate 
+		anche dalle "Opzioni comuni".
+	</item>
+	<item>
+		<it>Vai a:</it> consente la navigazione dei messaggi in base ai criteri presenti 
+		nel sotto-menu.
+		<itemize>
+			<item>
+				<it>Messaggio precedente:</it> va al messaggio precedente nella cartella.
+				Scorciatoia: P
+			</item>
+			<item>
+				<it>Messaggio successivo:</it> vai al messaggio successivo nella cartella.
+				Scorciatoia: N
+			</item>
+			<item>
+				<it>Messaggio non letto precedente:</it> vai al precedente messaggio non letto.
+				Scorciatoia: Shift-P
+			</item>
+			<item>
+				<it>Messaggio non letto successivo:</it> vai al successivo messaggio non letto.
+				Scorciatoia: Shift-N
+			</item>
+			<item>
+				<it>Messaggio nuovo precedente:</it> vai al precedente messaggio nuovo.
+			</item>
+			<item>
+				<it>Messaggio nuovo successivo:</it> vai al successivo messaggio nuovo.
+			</item>
+			<item>
+				<it>Messaggio segnato precedente:</it> vai al precedente messaggio segnato.
+			</item>
+			<item>
+				<it>Messaggio segnato successivo:</it> vai al successivo messaggio segnato.
+			</item>
+			<item>
+				<it>Messaggio etichettato precedente:</it> vai al precedente messaggio etichettato.
+			</item>
+			<item>
+				<it>Messaggio etichettato successivo:</it> vai al successivo messaggio etichettato.
+			</item>
+			<item>
+				<it>Un'altra cartella:</it> cambia la cartella corrente. Apre una nuova finestra 
+				con la vista dell'albero delle cartelle ed apre la cartella selezionata.
+			</item>
+		</itemize>
+	</item>
+	<item>
+		<it>Codifica:</it> consente di selezionare il tipo di codifica utilizzata
+		per i messaggi. Questo tipo di codifica sarà utilizzata durante l'invio 
+		delle e-mail. Sylpheed tenterà in ogni caso di usare la codifica compatibile 
+		con i caratteri usati nel messaggio, quindi a meno che non si utilizzino 
+		caratteri speciali "latin-1", la codifica sarà sempre "7bit ASCII" anche 
+		se è selezionata la codifica "ISO-8859-1".
+		L'opzione automatica permette a Sylpheed di rilevare automaticamente 
+		il tipo di codifica basandosi sul contenuto dei messaggi.
+	</item>
+	<item>
+		<it>Apri in una nuova finestra:</it> apre il messaggio selezionato in una 
+		nuova finestra. Per chiudere la finestra premere ESC.
+		Scorciatoia: Ctrl-Alt-N
+	</item>
+	<item>
+		<it>Sorgente del messaggio:</it> apre una nuova finestra e visualizza il 
+		messaggio in formato sorgente (senza formattazione e completo di intestazioni).
+		Scorciatoia: Ctrl-U
+	</item>
+	<item>
+		<it>Mostra le intestazioni:</it> attiva/disattiva la visualizzazione delle 
+		intestazioni del messaggio.
+		Scorciatoia: Ctrl-H
+	</item>
+	<item>
+		<it>Aggiorna sommario:</it> aggiorna la finestra diSylpheed.
+		Scorciatoia: Ctrl-Alt-U
+	</item>
+</itemize>
+</sect1>
+
+<sect1>Menu <bf>Messaggio</bf>
+<p>
+Qui si trovano le seguenti voci:
+
+<itemize>
+	<item>
+		<it>Ricevi la nuova posta:</it> avvia la ricezione della posta per 
+		l'identità principale.
+		Scorciatoia: Ctrl-I
+	</item>
+	<item>
+		<it>Ricevi da tutti gli account:</it> Sylpheed avvierà la ricezione 
+		della posta da tutte le identità configurate.
+		Scorciatoia: Shift-Ctrl-I
+	</item>
+	<item>
+		<it>Cancella in ricezione:</it> annulla la ricezione della posta.
+	</item>
+	<item>
+		<it>Spedisci i messaggi accodati:</it> tutti i messaggi presenti nella 
+		cartella "Coda" saranno inviati.
+	</item>
+	<item>
+		<it>Componi un nuovo messaggio:</it> permette di comporre un nuovo 
+		messaggio di posta elettronica.
+		Scorciatoia: Ctrl-M
+	</item>
+	<item>
+		<it>Rispondi:</it> verrà creato un messaggio di posta elettronica in 
+		risposta al mittente originario. In relazione alle impostazioni, sarà 
+		aggiunta la firma ed il testo originale verrà "citato".
+		Se viene selezionata soltanto una parte del testo del messaggio 
+		originale, solo questo testo sarà incluso e "citato" nella risposta.
+		Scorciatoia: Ctrl-R
+	</item>
+	<item>
+		<it>Rispondi a</it> 
+		<itemize>
+			<item>
+				<it>tutti:</it> come nel "Rispondi", ma i destinatari 
+				risulteranno tutti gli indirizzi presenti nel messaggio 
+				originario (compresi quelli del campo CC:).
+				Scorciatoia: Shift-Ctrl-R
+			</item>
+			<item>
+				<it>al mittente:</it> come nel "Rispondi", ma l'indirizzo 
+				di destinazione è recuperato dal campo "From:" e non dal 
+				campo "Reply-To".
+			</item>
+			<item>
+				<it>alla mailing list:</it> risponde alla mailing list. Si 
+				usa quando si intende rispondere ad una maling list (a meno 
+				di non voler rispondere anche/solamente al mittente del messaggio).
+				Scorciatoia: Ctrl-L
+			</item>
+		</itemize>
+	</item>
+	<item>
+		<it>Inoltra:</it> verrà creato un messaggio contenente il 
+		messaggio originale. E' quindi possibile inserire l'indirizzo 
+		del/dei destinatari(o), modificare il testo e poi inviarlo.
+		Scorciatoia: Ctrl-Alt-F
+	</item>
+	<item>
+		<it>Inoltra come allegato:</it> come "Inoltra", ma il messaggio 
+		originario viene salvato in un file di testo ed inviato come 
+		allegato.
+		Scorciatoia: Shift-Ctrl-Alt-F
+	</item>
+	<item>
+		<it>Rispedisci:</it> ri-invia il messaggio ad un altro destinatario.
+		In confronto a "Inoltra", il messaggio non viene marcato come inoltrato 
+		ed il mittente risulta essere il mittente del messaggio originale.
+	</item>
+	<item>
+		<it>Rimodifica:</it> consente di aprire tutti i messaggi inviati 
+		per modificarli e ri-inviarli.
+	</item>
+	<item>
+		<it>Sposta:</it> consente di spostare il messaggio in una cartella 
+		diversa. Questa viene selezionata da una finestra che mostra la 
+		struttura delle cartelle.
+	</item>
+	<item>
+		<it>Copia:</it> come "Sposta", però il messaggio non viene rimosso 
+		dalla posizione originale, ne viene creata una copia.
+		Scorciatoia: Shift-Ctrl-O
+	</item>
+	<item>
+		<it>Elimina:</it> consente di cancellare il messaggio selezionato.
+		Scorciatoia: Ctrl-D
+	</item>
+	<item>
+		<it>Segna:</it> fornisce un sottomenu: 
+		<it>Segna/Togli il segno - segna come non letto/segna come letto/segna come tutti letti</it>. 
+		Quando si segnano dei messaggi è possibile effettuare operazioni 
+		specifiche (p. es.: sposta, elimina) su tutti i messaggi segnati.
+		Si può togliere il segno a messaggi segnati per errore.
+		Tutte le opzioni non necessitano di ulteriori chiarimenti.
+	</item>
+</itemize>
+
+NOTA: per le funzioni "Sposta", "Copia" ed "Elimina" è necessario renderle 
+effettive mediante il bottone <it>Esegui</it>, presente nella barra degli 
+strumenti o nel menu a tendina. In alternativa è possibile specificare 
+l'esecuzione immediata dei comandi nella configurazione generale.
+</sect1>
+
+<sect1>Menu <bf>Struenti</bf>
+<p>
+Nel Menu Strumenti sono raggruppati i controlli mediante filtri, la rubrica e la gestione 
+delle finestre di log.
+
+<itemize>
+	<item>
+		<it>Rubrica:</it> apre la finestra della rubrica.
+		Scorciatoia: Shift-Ctrl-A
+	</item>
+	<item>
+		<it>Aggiungi il mittente alla rubrica:</it> aggiunge il mittente del 
+		messaggio selezionate ad una rubrica. Una finestra permette di selezionare 
+		la rubrica di destinazione.
+	</item>
+	<item>
+		<it>Filtra i messaggi:</it> applica le regole di filtraggio ai messaggi 
+		nella cartella "In entrata".
+	</item>
+	<item>
+		<it>Crea una regola per il filtro:</it> crea una nuova regola di filtraggio 
+		basandosi sul messaggio selezionato.
+		<itemize>
+			<item>
+				<it>Automaticamente:</it> apre la finestra di creazione delle 
+				regole di filtraggio per definire una nuova regola.
+			</item>
+			<item>
+				<it>Con Da:</it> apre la finestra di creazione delle regole 
+				e compila i campi di impostazione in modo da creare una 
+				regola basata sul mittente del messaggio selezionato.
+			</item>
+			<item>
+				<it>Con A:</it> apre la finestra di creazione delle regole 
+				e compila i campi di impostazione in modo da creare una 
+				regola basata sul destinatario del messaggio selezionato.
+			</item>
+			<item>
+				<it>Con l'Oggetto:</it> apre la finestra di creazione delle regole 
+				e compila i campi di impostazione in modo da creare una 
+				regola basata sull'oggetto del messaggio selezionato.
+			</item>
+		</itemize>
+	</item>
+	<item>
+		<it>Azioni:</it> questo menu rimane vuoto fino a che non si definiscono 
+		delle azioni (vedi la descrizione del "Menu Configurazione").
+	</item>
+	<item>
+		<it>Elimina i messaggi duplicati:</it> questo comando eliminerà i messaggi 
+		che sono stati inviati in duplice copia al destinatario dalla cartella corrente.
+	</item>
+	<item>
+		<it>Esegui:</it> esegue tutti i comandi di tipo "Sposta", "Elimina" e "Copia" 
+		accodati. Ha effetto solo se la stessa voce è disabilitata dal menu delle 
+		impostazioni generali.
+		Scorciatoia: X
+	</item>
+	<item>
+		<it>Finestra di log:</it> apre la finestra dei log, dove è possibile vedere 
+		le operazioni che effettua Sylpheed. Verificare l'attività mediante la finestra 
+		di log è utile se si sospetta un funzionamento non corretto del programma.
+		E' possibile quindi copiare ed incollare il testo del log in una e-mail ed 
+		inviarla al team di sviluppo.
+		Scorciatoia: Shift-Ctrl-L
+	</item>
+</itemize>
+
+</sect1>
+
+<sect1>Menu <bf>Configurazione</bf>
+<p>
+Nel Menu Configurazione, ovviamente, è possibile impostare 
+Sylpheed per soddisfare le proprie esigenze.
+
+<itemize>
+	<item>
+		<it>Opzioni comuni:</it> in questa voce sono presenti
+		diverse impostazioni di Sylpheed. Nel capitolo seguente 
+		verrano spiegate nel dettaglio le voci contenute.
+	</item>
+	<item>
+		<it>Configurazione dei filtri:</it> mediante questa voce 
+		è possibile creare ed impostare le regole di filtraggio 
+		che Sylpheed deve utilizzare nella fase di ricezione della 
+		posta. Anzitutto bisogno selezionare la parte/le parti in 
+		cui Sylpheed deve effettuare i controlli, dopodichè si 
+		imposta l'azione da eseguire. E' possibile spostare il 
+		messaggio in un'altra cartella (anche nel Cestino). Per 
+		selezionare la cartella di destinazione viene presentata 
+		un'ulteriore finestra.
+		<p>
+		E' anche possibile scegliere di non ricevere (scaricare) 
+		alcuni messaggi. In questo caso i messaggi non saranno cancellati, 
+		bensì rimarranno sul server di posta!
+		<p>
+		Alla pressione del tasto "Aggiungi", la nuova regola viene 
+		accodata all'elenco di regole esistenti. Selezionando "Sostituisci" 
+		la regola selezionata viene sostituita da quella appena impostata. 
+		"Elimina" (ovviamente) rimuove dall'elenco la regola selezionata.
+		<p>
+		Bisogna tenere presente che per ogni regola è possibile impostare 
+		due selezioni contemporanee che possono essere congiunte da una 
+		funzione booleana di tipo "OR" oppure "AND". La prima indica che 
+		almeno uno dei criteri deve combaciare, mentre la seconda vincola 
+		la presenza di entrambi i criteri specificati.
+		<p>
+		Alla destra dell'elenco delle regole vi sono due freccie chiamate 
+		SU e GIU'. Mediante questi controlli è possibile modificare l'ordine 
+		di esecuzione dei filtri. E' molto importante ricordarsi che l'ordine 
+		di valutazione dei filtri è essenziale per il corretto filtraggio dei 
+		messaggi.
+	</item>
+	<item>
+		<it>Modello:</it> avvia la creazione di un modello 
+		per le e-mail.
+		Quando si compone un messaggio nuovo è poi possibile 
+		utilizzare un modello, che ad esempio può contenere 
+		caratteri speciali che vengono sostituiti dal testo 
+		nel momento della creazione. Il bottone dei simboli 
+		nella finestra di creazione dei modelli permette di 
+		vedere i simboli disponibili.
+	</item>
+	<item>
+		<it>Azioni:</it> permette di creare nuovi comandi da 
+		aggiungere al "Menu Strumenti/Azioni". Un'azione è un 
+		comando che elabora una parte di un messaggio, il corpo 
+		del messaggio o l'intero file. Può trattarsi di un processo 
+		in "background", un filtro (legge, modifica e sostituisce 
+		un messaggio), ecc.
+	</item>
+	<item>
+		<it>Opzioni per l'account attuale:</it> qui è possibile 
+		impostare nel dettaglio l'account corrente.
+		E' la stessa finestra utilizzata per configurare un 
+		nuovo account.
+	</item>
+	<item>
+		<it>Crea un nuovo account:</it> qui si definisce il nome 
+		dell'account (ogni account ha un nome distintivo), si 
+		impostano i parametri per l'invio e la ricezione della 
+		posta e la destinazione dei messaggi nelle cartelle locali.
+	</item>
+	<item>
+		<it>Modifica gli account:</it> da una lista visualizzata 
+		in una nuova finestra è possibile selezionare l'account 
+		che si desidera modificare e procedere di conseguenza.
+		E' impossibile modificare un account dal quale si sta 
+		componendo un messaggio, questo per salvaguardare 
+		l'integrità dei dati.
+	</item>
+	<item>
+		<it>Cambia l'account attuale:</it> qui è possibile selezionare 
+		quale account utilizzare nella composizione di un messaggio.
+		Se la Barra di Stato è abilitata (nel Menu Vista), il nome 
+		dell'account attuale viene mostrato in basso a destra della 
+		finestra di Sylpheed e può essere modificato cliccandovi sopra 
+		con il mouse (compare la lista degli account configurati).
+	</item>
+</itemize>
+
+</sect1>
+
+<sect1>Menu <bf>Aiuto</bf>
+<p>
+Questo menu consente di accedere al manuale ed alla FAQ di 
+Sylpheed, oltre alle informazioni sugli sviluppatori.
+<p>
+
+</sect1>
+
+<sect1>Menu contestuali
+<p>
+Cliccando col tasto destro del mouse sulla vista delle cartelle 
+oppure sul sommario dei messaggi è possibile ottenere la tendina 
+dei menu contestuali.
+<p>
+Nella vista delle cartelle è così possibile aggiungere, rinominare 
+e rimuovere le cartelle, oltre ad impostare le proprietà delle 
+cartelle.
+<p>
+Nel sommario dei messaggi è possibile eseguire molte azioni con 
+il menu contestuale, come visualizzare le intestazioni del messaggio, 
+aprire il messaggio in una finestra nuova, ecc.
+
+</sect1>
