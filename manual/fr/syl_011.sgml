@@ -18,6 +18,12 @@ C'est très intéressant.
 Le dialogue de configuration de filtre est situé dans le menu de 
 Configuration, sous le titre "Configuration des Filtres". Vous pouvez aussi 
 l'utiliser pour établir des raccourcis claviers (voir les Raccourcis Claviers).
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/filters.png">
+</figure>
+
 </sect2>
 
 <sect2>Configurer les filtres<p>

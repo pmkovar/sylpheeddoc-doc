@@ -10,6 +10,12 @@ suivantes pour personnaliser Sylpheed.
 <sect1>Description de chaque entrée<p>
 Dans le troisième onglet, « Composer », les configurations suivantes peuvent 
 être changées :
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_compose.png">
+</figure>
+
 <itemize>
 <item>Citer le texte original du message
 <item>Définir le caractère de citation qui est positionné devant chaque ligne 
@@ -30,6 +36,12 @@ vous choisissez de ne pas sélectionner la césure alors les lignes que vous
 </itemize>
 Dans le quatrième onglet, « Affichage », vous pouvez activer et désactiver 
 les options suivantes :
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_display.png">
+</figure>
+
 <itemize>
 <item><tt>Font.</tt> Vous pouvez configurer la police qui est utilisée pour 
 afficher les messages.
@@ -64,6 +76,12 @@ résumé.
 </itemize>
 À coté de ces options, il y a l'onglet de message, dans lequel vous pouvez 
 initialiser les choix suivants :
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_message.png">
+</figure>
+
 <itemize>
 <item><tt>Valider la colorisation.</tt> Lorsque vous validez cette option, 
 vous pouvez définir avec quelles couleurs le texte de message et les citations 
@@ -94,6 +112,12 @@ dans la vue de message se déroulera régulièrement. Pour les yeux, cela peut
 </itemize>
 L'onglet « Interface » permet encore plus de personnalisation de Sylpheed. 
 Cette fonctionnalité d'onglet :
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_interface.png">
+</figure>
+
 <itemize>
 <item>Ouvrir le premier message non-lu lorsque vous entrez dans un répertoire.
 <item>Déplace automatiquement le point de mire dans inbox après qu'un nouveau 
@@ -113,6 +137,12 @@ dans la file, devant être envoyés.
 </itemize>
 Finalement, il y a l'onglet « Autre ». Ici, vous pouvez définir les programmes 
 que vous voulez comme programmes d'aide pour Sylpheed.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_other.png">
+</figure>
+
 <itemize>
 <item><tt>Le navigateur web.</tt> Ici, vous pouvez entrer le nom de votre 
 navigateur web favori (Netscape, Opera, Mozilla, Lynx, etc.). Ajoutez le 

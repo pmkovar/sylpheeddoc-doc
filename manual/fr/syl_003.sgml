@@ -5,6 +5,12 @@
 Dans le menu de configuration, sélectionnez "Create new account"
 <p>
 Dans l'onglet "Base", entrez les données nécessaires. Vous devez nommer le compte, entrer votre nom et votre adresse e-mail, etc. Pour se connecter aux nouvelles, veuillez sélectionner "News (NNTP)" dans la boîte Protocole.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_news_basic.png">
+</figure>
+
 <p>
 Entrez les informations sur le serveur de nouvelles.
 <p>
@@ -13,6 +19,12 @@ Passez l'onglet "Recevoir".
 Dans l'onglet "Envoi", vous pouvez configurer quelques informations supplémentaires.
 <p>
 Dans l'onglet "Composition", vous pouvez définir votre fichier de signature.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_compose.png">
+</figure>
+
 <p>
 Dans l'onglet "Avancé", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Vous n'avez normalement pas besoin d'y toucher.
 <p>

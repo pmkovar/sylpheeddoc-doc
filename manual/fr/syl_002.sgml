@@ -6,14 +6,32 @@
 Dans le menu de configuration, sélectionnez "Créer un nouveau compte"
 <p>
 Dans l'onglet "Basic", veuillez entrer les données nécessaires. Nommez le compte, entrez votre nom et l'adresse e-mail, etc. Vous pouvez sélectionner ce compte pour être celui par défaut ("Usually used"). Pour sélectionner votre boîte aux lettres locale UNIX, sélectionnez "None (local)" dans la boîte Protocol.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_basic.png">
+</figure>
+
 <p>
 Lorsque vous sélectionnez cette option, le "Server for receiving" est grisé car il n'est plus utile. Vous pouvez aussi entrer le serveur à utiliser pour l'envoi (SMTP) dans cet onglet.
 <p>
 L'onglet "Recevoir" n'est pas utilisé dans cette configuration car vous ne récupérez pas votre courrier sur un serveur, vos courriers vous sont envoyés.
 <p>
 Dans l'onglet "Envoi", vous pouvez configurer quelques nouveaux éléments.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_send.png">
+</figure>
+
 <p>
 Dans l'onglet "Compose", vous pouvez définir votre fichier de signature.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_compose.png">
+</figure>
+
 <p>
 Dans l'onglet "Avancé", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Vous n'avez normalement pas besoin d'y toucher.
 <p>
@@ -25,14 +43,38 @@ accéder à votre boîte aux lettres locale. Vous pouvez presser Alt-I ou sélection
 Dans le menu de configuration, sélectionnez "Create new account"
 <p>
 Dans l'onglet "Base", entrez les données nécessaires. Vous devez nommer le compte, entrer votre nom et votre adresse e-mail, etc. Vous pouvez sélectionner ce compte pour ête celui par défaut avec ("Usually used"). Pour contrôler votre courrier POP3, vous devez sélectionner "POP3 (normal)" dans la boîte Protocol.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_pop_basic.png">
+</figure>
+
 <p>
 Entrer les informations serveur pour "Server for receiving". Vous pouvez alors entrer le serveur pour l'envoi (SMTP) dans cet onglet.
 <p>
 Dans l'onglet "Recevoir", pouvez définir quelques sélections ou préférences que vous souhaiteriez utiliser.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_pop_receive.png">
+</figure>
+
 <p>
 Dans l'onglet "Envoi", vous pouvez configurer quelques éléments supplémentaires.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_send.png">
+</figure>
+
 <p>
 Dans l'onglet "Composition", vous pouvez définir votre fichier de signature.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_compose.png">
+</figure>
+
 <p>
 Dans l'onglet "Avancé", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Ceci ne nécessitera pas normalement de changement.
 <p>

@@ -117,6 +117,12 @@ Dans le résumé de message, vous pouvez faire beaucoup de choses à partir du menu
 </sect1>
 
 <sect>Dialogues et vues<p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/all_with_image.png">
+</figure>
+
 <sect1>Vues des répertoires <p>
 La vue des répertoires vous montre tous les répertoires de courriers que vous avez créés dans une structure en arbre. Si vous voulez voir les en-têtes des messages dans un répertoire spécifique, cliquez simplement sur le nom du répertoire une fois et dans la vue résumée, vous pouvez voir les messages dans le répertoire de courriers sélectionnés.<p>
 Lorsque vous voyez un signe + devant le nom du répertoire, cela signifie que la branche de répertoire de cette partie de l'arbre est 'rentrée'. Vous pouvez l'étendre en pliquant sur le signe + . De la même manière, vous pouvez aussi rentrer le signe - devant une branche étendue de l'arbre du répertoire.<p>
@@ -151,6 +157,12 @@ Vous pouvez dérouler de haut en bas dans le message en utilisant les touches de 
 Les préférences communes, trouvées dans le menu de configuration, vous montrent les onglets suivants :
 <sect2>Onglet de réception<p>
 Ici, vous pouvez configurer comment recevoir les messages.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_receive.png">
+</figure>
+
 <itemize>
 <item>Vous pouvez définir un programme spécial pour récupérer les messages à partir de la boîte aux lettres Unix par défaut. habituellement, ce n'est pas utilisé mais vous pouvez l'utiliser. Actuellement, cette information peut être fausse. Si quelqu'un en sait plus, faites-le moi savoir.
 <item>La file locale vous laisse définir l'endroit où est située votre boîte aux lettres locale. Vous pouvez aussi dire à Sylpheed de filtrer ou non les messages entrants à partir de cette file de messages.
@@ -165,6 +177,12 @@ Ici, vous pouvez configurer comment recevoir les messages.
 De manière à initialiser un compte dans Sylpheed, dans le menu de configuration, vous sélectionnez "Créer un nouveau compte". Si vous voulez changer les éléments d'un compte existant, vous sélectionnez l'option "Éditer les comptes..." dans le menu de configuration et alors vous sélectionnez le compte que vous voulez changer. Après ceci, vous choisissez "éditer". Alors un dialogue apparaît dans lequel vous pouvez entrer ou mettre à jour les zones suivantes :
 <p>
 <sect2>Onglet Basic<p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_basic.png">
+</figure>
+
 Dans l'onglet "Basic", vous nommez le compte. Ceci est pour rendre l'identification du compte plus facile.<p>
 Choisissez un nom qui est représentatif du compte, comme le nom du fournisseur, la boîte aux lettres ou les serveurs de nouvelles que vous êtes en train d'initialiser. Vous pouvez sélectionner ce compte pour être celui par défaut ("Habituellement utilisé").<p>
 Entrez votre nom et l'adresse de courrier et si vous en avez une, l'organisation pour laquelle vous utilisez Sylpheed.
@@ -175,13 +193,31 @@ Pour une boîte aux lettres Unix locale, le "Serveur pour la reception" est désac
 Les champs pour l'ID utilisateur et le mot de passe seront aussi désactivés pour les comptes qui ne traitent pas avec les services POP3 ou IMAP. Sinon, vous pouvez entrer le nom de connexion et le mot de passe pour le serveur de courrier avec votre fournisseur ici. Habituellement, ce sont les même que votre nom de connexion et votre mot de passe pour accéder aux services de connexion mais ce n'est pas standard. En cas de doute, contactez l'aide de votre fournisseur.  <p>
 </sect2>
 <sect2>Onglet de Réception<p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_pop_receive.png">
+</figure>
+
 <p>
 L'onglet "Recevoir" n'est utilisé que pour les comptes POP3. Ici, vous spécifiez si les courriers qui ont été retrouvés avec succès doivent être enlevés du serveur. Vous pouvez aussi indiquer à Sylpheed de mettre tous les messages ici, pas seulement ceux que vous avez déjà reçu (dans le cas où vous laissez vos messages sur le serveur). La troisème option valide ce compte pour qu'il soit inclus lorsques les courriers sont vérifiés pour "tous les comptes" (voir le menu de message pour ceci) et si les messages entrants doivent être immédiatement traités lors de la réception.
 </sect2>
 <sect2>Onglet Envoi <p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_send.png">
+</figure>
+
 Dans l'onglet "envoi", vous pouvez configurer quelques initialisations supplémentaires.
 </sect2>
 <sect2>Onglet Composition <p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/account_compose.png">
+</figure>
+
 Dans l'onglet "Composition", vous pouvez définir votre fichier de signature.
 </sect2>
 <sect2>Onglet avancé<p>

@@ -1,5 +1,11 @@
 <sect>carnet d'adresse
 <p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/address_book.png">
+</figure>
+
 Dans le carnet d'adresses, accessible par Alt-A, le bouton carnet d'adresses ou par le menu des outils, vous stockez les adresses des personnes et les endroits où vous écrivez le plus souvent.<p>
 
 <sect1>Ajouter et effacer des adresses<p>

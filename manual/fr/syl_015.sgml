@@ -83,6 +83,8 @@ les commandes ne sont pas exécutées immédiatement) ;
 <sect1>Format de donnée du carnet d'adresse<p>
 Le carnet d'adresse est situé dans ~/.sylpheed. Il est nommé addressbook.xml.
 Le format général du carnet d'adresse est :<p>
+
+<code>
 &lt addressbook &gt<p>
  &lt common_address &gt<p>
     &lt group name="Common addresses" &gt<p>
@@ -94,6 +96,7 @@ Le format général du carnet d'adresse est :<p>
     &lt /group &gt<p>
  &lt /common_address &gt<p>
 &lt /addressbook &gt
+</code>
 
 </sect1>
 <!-- end add 2001/07/21 -->

@@ -1,3 +1,46 @@
+<sect>Support des types MIME
+
+<sect1>Comment Sylpheed gère les types MIME<p>
+
+(Merci à Adriaan Penning)<p>
+
+Deux fichiers, <tt>mime.types</tt> et <tt>mailcap</tt> sont utilisés pour
+déterminer le type MIME d'une pièce jointe ainsi que l'application associée
+a ce type.
+Le fichier <tt>mime.types</tt> est utilisé pour déterminer le type MIME d'une
+pièce jointe que vous ajoutez lors de la composition d'un message.
+Le fichier <tt>mime.types</tt> contient des lignes telles que:
+
+<code>
+application/pdf                    pdf
+</code>
+
+<p>
+
+Sylpheed recherche ce fichier dans le répertoire définit par la variable
+<tt>SYSCONFDIR</tt> (définit a la compilation), <tt>/etc</tt> et
+<tt>$HOME/.sylpheed/</tt>.
+Si ce fichier n'existe pas ou n'est pas au bon format, toutes les pièces
+jointes auront le type << application/octet-stream >>, et le destinataire
+du message ne saura pas quelle application utiliser pour voir ces pièces
+jointes.
+
+Pour définir l'application a utiliser pour visualiser une pièce jointe,
+éditer le fichier mailcap (<tt>/etc/mailcap</tt> or <tt>$HOME/.mailcap</tt>).
+
+Par example, vous devrez ajouter les lignes suivantes dans le fichier
+<tt>$HOME/.mailcap</tt> pour utiliser xpdf pour visualiser les fichiers au
+format PDF:
+
+<code>
+
+application/pdf ; xpdf %s
+
+</code>
+
+</sect1>
+</sect>
+
 <sect>Conversion des autres formats de courriers dans Sylpheed (format MH)
 
 <sect1>Importer des messages au format mbox<p>
@@ -16,7 +59,7 @@ Outlook Express4, etc.)<p>
 Pour les possibilités d'importation des répertoires de courriers de ces 
 derniers et d'autres programmes de courriers, vous pouvez télécharger le 
 programme mbx2mbox sur sourceforge.net. Le projet est situé sur 
-http://mbx2mbox.sourceforge.net.
+<url url="http://mbx2mbox.sourceforge.net" name="http://mbx2mbox.sourceforge.net">.
 </sect1>
 
 <!-- End added 2001/07/21 -->

@@ -20,12 +20,12 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 <!-- add 2001/07/21 -->
 <sect1>Où obtenir la dernière version de ce document<p>
 Vous pouvez trouver la dernière version de ce document sur le tri des pages de 
-manuel Sylpheed officiel sur http://nlpagan.net/sylman/index.html.<p>
+manuel Sylpheed officiel sur <url url="http://nlpagan.net/sylman/index.html" name="http://nlpagan.net/sylman/index.html">.<p>
 À cet endroit, le manuel est chargé comme pages HTML. À partir de cette page, 
 vous pouvez télécharger ces pages comme un fichier tar.gz pour la navigation 
 hors ligne sur votre propre ordinateur.<p>
-Vous pouvez aussi piocher dans le dépôt CVS sur http://sourceforge.net et 
-chercher le projet « sylpheeddoc ». Le document est y stocké comme un fichier 
+Vous pouvez aussi piocher dans le dépôt CVS sur <url url="http://sourceforge.net" name="http://sourceforge.net"> et 
+chercher le projet « sylpheeddoc ». Le document y est stocké comme un fichier 
 SGML, vous aurez besoin des outils SGML pour celui-ci !
 </sect1>
 <sect1>Fin des remarques<p>

@@ -6,12 +6,19 @@
 	    Nick Selby
        Francois Barriere (traduction)
     <abstract>
-       Guide de l'utilisateur basé sur Sylpheed-0.5.3
+       Guide de l'utilisateur basé sur Sylpheed-0.7.3
     </abstract>
 
 <toc>
 
 <sect>Qu'est ce que Sylpheed?
+
+<p>
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/full_split.png">
+</figure>
+
 
 <sect1>Introduction à Sylpheed.
 <p>
@@ -82,8 +89,77 @@ principales de Sylpheed.
 </sect1>
 
 <sect1>Méthodes de gestion des messages
+
+
+Il y a plusieurs façons de gérer les messages. La plus connue est de <tt>ne pas les gérer</tt><p>
+Beaucoup de personnes recoivent un grand nombre de messages et les laissent dans
+le dossier << Réception >>.
+Ce qui devient, après un certain temps ingérable. Essayez de trouver ce message
+important que vous avez reçu il y a 5 jours, parmis 5000 autres messages.
+Meme triés par date, cela peut vous prendre un temps considérable pour le trouver.
 <p>
-Cette section n'a pas encore été écrite (soyez patient).
+
+Pour cela il y a les <tt>dssiers et boites aux lettres</tt>
+<p>
+
+Tout au long de ce manuel, vous apprendrez a créer des boites aux lettres
+et des dossiers qui peuvent contenir encore d'autres boites aux lettres.
+A quoi cela sert-il?
+<p>
+
+A trier. Vous pourvez stocker dans chaques boite aux lettres différents types
+de messages. Supposons que vous soyez membre d'un club et que vous receviez 
+une trentaine de messages de ce club chaque jours. Il est bon de créer une
+boite aux lettres pour ces messages, de cette façon lorsqu'un nouveau message
+de ce club arrive vous pouvez le classer dans cette boite aux lettres.
+De cette façon vous savez que tous vos message concernant ce club
+se trouvent a un seul endroit.
+<p>
+
+Vous trouvez cela fastidieux? Déplacer 30 messages par jours dans cette
+voite aux lettres alors qu'ils arrivent tout au long de la journée?
+Bien sur que cela est fastidieux, vous pouvez meme etre sur de rater
+le message le plus important!
+<p>
+
+Pour celaaussi il y a une solution, cela s'appelle <tt>les filtres</tt>.
+<p>
+Les filtres permettent d'automatiser le processus de tri des messages.
+Plus loin dans ce manuel vous apprendrez a définir des filtres afin
+de ne plus avoir a déplacer un a un vos messages.
+<p>
+
+<sect2>
+
+Bien, mais quelle est la différence entre une boite aux lettres et un dossier?
+<p>
+C'est comme sur votre disque dur, vous créez des répertoires dans
+lesquels vous placer d'autres répertoires et des fichiers.
+<p>
+Dans le cas de Sylpheed, vous créez une boite aux lettres dans laquelle vous
+pouvez placer d'autres boite aux lettres qui doivent etre groupées. Par example,
+vous pouvez créer une boite aux lettres qui contienne toutes les boites aux lettres
+pour toutes les listes de diffusion auquelles vous etes abonné.
+<p>
+Il est peut-etre nécessaire de clarifier les choses un peu. Pour Sylpheed
+une boite aux lettres n'est rien d'autre qu'un répertoire, et dans ce répertoire vous pouvez
+créer d'autres répertoires, mais qusi des fichiers, et Sylpheed place chaque messqge dans un
+fichier distinct.
+Ci-dessous un example de boites aux lettres:
+<p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/folder_tree.png">
+</figure>
+
+Comme vous pouvez le voir, il n'y a pas vraiment de limite a la façon d'organiser
+vos boites aux lettres. Du moment que vous avez de la place sur votre disque dur,
+cous pouvez créer des boites aux lettres dans d'autres boites aux lettres.
+<p>
+Bien sur vous devez rester sensé lorsque vous créez vos boites aux lettres.
+Garder tous vos messages a un seul endroit n'est pas une bonne idée, mais créer
+un labyrinthe de boites aux lettres n'est pas mieux!
 </sect1>
 
 <sect1>Orientation du dévelopement
@@ -92,5 +168,4 @@ Cette section n'a pas encore été écrite (soyez patient).
 </sect1>
 
 </sect>
-</article>
 
