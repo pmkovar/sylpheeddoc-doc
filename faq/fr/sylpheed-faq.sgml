@@ -312,6 +312,14 @@ Par défaut, il est défini comme &lt;homedir&gt;/Mail (homedir étant votre répert
 de connexion). Vous pouvez changer cette valeur comme bon vous semble,
 à condition qu'il s'agisse d'un répertoire valide (sur lequel vous avez
 les droits d'écriture, entre autres).
+<p>
+Lorsque Sylpheed est démarré pour la première fois, les fichiers
+de configuration sont automatiquement créés dans le répertoire
+<tt>$HOME/.sylpheed/</tt> et il est demandé a l'utilisateur
+de renseigner l'emplacement des boites aux lettres (la valeur
+par défaut est: <tt>$HOME/Mail</tt>. Si ce répertoire contient
+des fichiers qui ne sont pas au format MH, il vous faudra
+spécifier un autre répertoire. 
 </sect1>
 
 <sect1>
