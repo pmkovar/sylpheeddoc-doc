@@ -6,7 +6,7 @@
 		FAQ Sylpheed basée sur la version anglaise de
 		Paul Kater (paul@nlpagan.net)
 		et Jens Oberender (j.obi@troja.net).
-		Mise à jour pour la version 0.6.6.
+		Mise à jour pour la version 0.7.3.
     </abstract>
 <toc>
 <p>
@@ -406,6 +406,16 @@ A.  Lors de la compilation, vérifiez que vous avez ajouté l'option
 A. Pour remédier à ce problème, vous devez créer un fichier <tt>.xmhcache</tt>
 vide dans chaque dossier. Pour cela, utilisez la commande <tt>touch</tt>.
 </sect1>
+
+<sect1>Q17 Comment faire pour que Sylpheed signal l'arrivée de nouveaux messages?<p>
+A. Pour cela vous pouvez faire:
+<p>
+* Consulter la page des correctifs pour Sylpheed a 
+<url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/">
+pour y trouver le correctif nécessaire.
+<p>
+* Télécharger Gkrellm ou un programme similaire qui signalera l'arrivée
+de tout nouveau message. Gkrellm se trouve a <url url="http://www.gkrellm.net" name="http://www.gkrellm.net">
 
 </sect>
 <sect>
