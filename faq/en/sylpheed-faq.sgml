@@ -252,6 +252,49 @@ Q27  Why can't I use gvim as external editor?<p>
 A.   If one wishes to use gvim as an external editor it's necessary to start it with the no-fork option -f, i.e. in the configuration dialog box you need to enter  "gvim -f %s". If not the editor forks and open up a separate file and when one quits the editor the changes are lost and don't show up in the composer window.<p>
 (Thanks, Ed Collins!)
 </sect1>
+
+<sect1>
+Q28  Can I quote just parts of the original message when replying?<p>
+A.   Yes, select the part in the textview and choose "reply".<p>
+</sect1>
+
+<sect1>
+Q29  Can I reply without quoting at all?<p>
+A.   Right click on the "reply" button in the toolbar and choose "reply without
+     quote" (also works with "forward").<p>
+     Tip: You can also assign hotkeys to these menu entries.<p>
+</sect1>
+
+<sect1>
+C30  How does selective download work?<p>
+A.   There are two ways using it.<p>
+     1. Manually: Open "Tools/Selective download" and choose "Fetch" to retrieve
+        the mail headers. Afterwards, select the mails to delete and pres the
+        remove button.<p>
+     2. Automatic: Create a -global- filtering rule to delete mails on server.
+        If you then choose "Selective download", all mails that conform to this
+        rule are marked for deletion.<p>
+     Note: By default, selective download only retrieves new (unread) messages.
+     If you want to process the read mails also, you need to set "retrieve
+     all messages".<p>
+</sect1>
+
+<sect1>
+C31  Why are there two filter options?<p>
+A.   "Filter setting" is the traditional one with less options. The "Filtering"
+     option is new in sylpheed-claws and more powerful and may replace the
+     old option in the future.<p>
+     Tip: To convert your old filter rules into the new format, you can use the
+     "filter_conv.pl" script, that can be found in "tools" subdirectory from
+     sylphed-claws sources.<p>
+</sect1>
+
+<sect1>
+C32  Can I use both filter options?<p>
+A.   No, as soon as you define a new "filtering" rule, the traditional "filter"
+     rules are ignored.<p>
+</sect1>
+
 </sect>
 
 <sect>
@@ -415,6 +458,141 @@ Note that you can enter the xterm type of your choice, so wterm, eterm and aterm
 <sect1>Q20 How can I make Sylpheed send my compface image in the mails?<p>
 A. In the Configuration menu, Preferences for current account, Send tab, check Add user-defined header and press Edit button. A dialog appears, add a header named "X-Face" and fill the value field with your face data. Note that if you paste the data from a terminal into the field some spurious newlines can be added, and these can mangle your face, be careful.</sect1>
 
+<sect1>
+Q19  I checked out the sources using cvs and cant find any configure script.<p>
+A.   The cvs versions are meant to be used by developers rather than "normal"
+     users, so the source (or binary) distributions are easier to use.<p>
+     - Yeah, but the latest features from cvs really look sexy...<p>
+     You need to generate the configure script by running "autgen.sh".
+     Be sure to have autoconf and automake packages installed for this.<p>
+</sect1>
+
+<sect1>
+Q20  Running "autogen.sh" gives errormessages that "AM_PATH_GDK_PIXBUF" or
+     "AM_PATH_(whatever)" is not found.<p>
+A.   There are some *.m4 files in the "ac/missing" directory. Try to copy
+     them into the "ac" directory and run "autogen.sh" again.<p>
+     If there are still some .m4 files not found (e.g. those from Gtk), try
+     to run 
+<verb>
+     &percnt;&nbsp;locate m4&nbsp;&verbar;&nbsp;less
+</verb>
+     or
+<verb>
+     &percnt&nbsp;locate aclocal&nbsp;&verbar;&nbsp;less
+</verb>
+     to find additional directories containing those macros. If you find e.g. a
+     "gtk.m4" in "/opt/gnome/share/aclocal", change following line in
+     "autogen.sh" from<p>
+<verb>
+     aclocal -I ac \
+</verb>
+     to<p>
+<verb>
+     aclocal -I ac -I /opt/gnome/share/aclocal \
+</verb>
+     and run it again.<p>
+</sect1>
+
+<sect1>
+Q21  I dont want to compile in support for ... any longer, but after running
+     "configure", those libraries are still used.<p>
+A.   Remove the "config.cache" file and run "configure" again. You should
+     also use "make clean" to avoid undefined references.<p>
+</sect1>
+
+<sect1>
+Q22  How can I select different applications to open with specific MIME types?<p>
+A.   The MIME-type->application associations are kept in /etc/mailcap.<p>
+</sect1>
+
+<sect1>
+Q23  How can I change the suggested mimetype for attachments?<p>
+A.   The extension->MIME-type associations are kept in /etc/mime.types<p>
+</sect1>
+
+<sect1>
+Q24  The folderlist is not updated after I manually moved/copied folders.<p>
+A.   You need to update Sylpheeds cache. Right click on the mailbox and choose
+     "rescan folder tree".<p>
+</sect1>
+
+<sect1>
+Q25  How can I revert original settings, e.g. for fonts, keybindings, etc.?<p>
+A.   Sylpheed keeps its configuration files in $HOME/.sylpheed and creates default
+     entries, if none are found. So the easiest way is to quit sylpheed,
+     temporarily renaming your $HOME/.sylpheed e.g. to *.bak and restarting
+     sylpheed in order to get default entries.<p>
+</sect1>
+
+<sect1>
+Q26  What environment variables have effect on Sylpheed?<p>
+A.   Here are the most common variables:<p>
+<itemize>
+<item>HOME
+      - location of .sylpheed (config directory) and default folder for Mailboxes.
+<p>
+<item>LANG,
+<item>LC_ALL,
+<item>LC_CTYPE,
+<item>LC_MESSAGES
+      - locale settings, e.g. language and date format.<p>
+</itemize>
+</sect1>
+
+<sect1>
+Q27  Special characters (e.g. umlauts) are not displayed correctly.<p>
+A.   In most cases, this is caused by fonts, that use an unsuitable encoding.<p>
+     Standard Sylpheed currently doesnt offer all font settings in the settings
+     window, so if you take a look into your $HOME/.sylpheedrc, you will find some
+     more font entries in the following form:<p>
+<verb>
+     bold_font=-unknown-Helvetica-bold-r-normal-*-*-110-*-*-p-*-iso8859-1
+</verb>
+     The last two entries ("iso8859" and "1") define the encodig. You can try to
+     use wildcards ("*") or force a specific encoding.<p>
+<verb>
+     bold_font=-unknown-Helvetica-bold-r-normal-*-*-110-*-*-p-*-*-*
+</verb>
+     You should also make sure that your environment variables regarding locale
+     settings have sensible values.<p>
+</sect1>
+
+<sect1>
+Q28  How can I convert my old mailbox / adressbook from (some mailclient).<p>
+A.   In the source distribution, you can find some scripts in the "tools"
+     subdirectory, maybe your application is supported. You can also try to
+     export your old mailbox to MH or MBOX format.<p>
+     Tip: Take a look at the "harvest addresses" function from the "tools"
+     menu, it could be a useful alternative or addition, when importing your old
+     contacts.<p>
+</sect1>
+
+<sect1>
+Q30  What config files are there, and what are they used for?<p>
+A.   Sylpheeds config files can be found in $HOME/.sylpheed. They are in plain
+     text format and quite easy to understand, so dont fear to take a look
+     into them using a texteditor.<p>
+<p>
+<itemize>
+<item>sylpheedrc      - main configuration: nearly all options from the
+                        settings window, e.g. mailbox location, font
+                        entries, etc.
+<item>accountrc       - settings for pop/imap/nntp accounts
+<item>actionsrc       - user defined actions
+<item>customheaderrc  - contains user defined header lines
+<item>dispheaderrc    - headers to display above the mail body
+<item>filterrc        - traditional filter settings
+<item>folderitemrc    - folder specific settings, e.g. default outbox
+<item>matcherrc       - new filtering and scoring settings
+<item>menurc          - Key bindings
+<item>addrbook-*.xml  - contents of your addressbook
+<item>folderlist.xml  - additional folder specific settings, e.g. hiding
+                        read messages, sort order, etc.
+</itemize>
+<p>
+</sect1>
+
 </sect>
 
 <sect>
@@ -454,9 +632,9 @@ A.   You can. In Configuration-&gt;common preferences under
 
 <sect1>
 Q05  How to change the font size in the Sylpheed interface?<p>
-A.   You can set the GTK+ font by <tt>~/.gtkrc</tt>, or
-     <tt>~/.gtkrc.mine</tt>,
-     (which is included by <tt>~/.gtkrc</tt>).
+A.   You can set the GTK+ font by <tt>$HOME/.gtkrc</tt>, or
+     <tt>$HOME/.gtkrc.mine</tt>,
+     (which is included by <tt>$HOME/.gtkrc</tt>).
      For example:
      <tt>style "default"
      {
