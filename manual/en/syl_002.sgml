@@ -8,7 +8,7 @@ guided through the first basic steps of the setup.
 First a pop-up window will show up and you will be asked
 to define the directory Sylpheed will use to store your
 messages and folders. This directory will be created under
-your home directory (or uder C:\windows\Application Data\Sylpheed
+your home directory (or under C:\windows\Application Data\Sylpheed
 on windows). The default name for this directory is "Mail".
 
 <figure loc="here">

@@ -4,12 +4,22 @@
     <author>
 	    Paul Kater (paul@nlpagan.net),
 	    Nick Selby,
-            traduction de François Barrière
+            traduction de 
+            François Barrière, 
+            Olivier Delhomme
     <abstract>
-       Guide de l'utilisateur pour Sylpheed-0.7.3
+       Guide de l'utilisateur pour Sylpheed-0.7.5
     </abstract>
 
 <toc>
+
+<p>
+Copyright (c)  2002 François Barrière.
+Permission est donnée de copier, distribuer, et/ou modifier ce document
+selon les termes de la Licence de Documentation Libre GNU (<em>GNU Free Documentation License</em>), Version 1.1
+ou toute version ultérieurement publiée par la Free Software Foundation; sans section invariantes, sans textes de couverture.
+Une copie de la licence est comprise dans la section nommée "GNU Free Documentation License".
+</p>
 
 <sect>Qu'est-ce que Sylpheed~?
 
@@ -65,6 +75,7 @@ Les caractéristiques suivantes sont actuellement incluses~:
 <item>la possibilité d'utiliser un éditeur externe
 <item>la mise en file d'attente des messages pour l'envoi
 <item>la fonction de brouillon 
+<item>l'utilisation de modèles
 <item>la justification des messages composés
 <item>les liens URI cliquables
 <item>un carnet d'adresses sauvegardé sous un format XML
@@ -166,7 +177,7 @@ un labyrinthe de boîtes aux lettres n'en est pas une meilleure~!
 
 <sect1>Orientation du développement
 <p>
-Ceci est un chapitre spécial. Comme tous les programmes ayant ouvert leur code source, vous, utilisateur de Sylpheed, pouvez demander vous-même les fonctionnalités dont vous avez besoin.  La meilleure méthode consiste à rejoindre une des plusieurs listes de diffusion (<em>mailing lists</em>) concernant Sylpheed.  Vous trouverez dans la section «~Information~» de ce manuel comment vous pouvez vous inscrire.
+Ceci est un chapitre spécial. Comme tous les programmes ayant ouvert leur code source, vous, utilisateur de Sylpheed, pouvez demander vous-même les fonctionnalités dont vous avez besoin.  La meilleure méthode consiste à rejoindre une des nombreuses listes de diffusion (<em>mailing lists</em>) concernant Sylpheed.  Vous trouverez dans la section «~Information~» de ce manuel comment vous pouvez vous inscrire.
 </sect1>
 
 </sect>

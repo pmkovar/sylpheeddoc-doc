@@ -1,6 +1,28 @@
 
 <sect>Guide rapide pour la configuration du courrier
 
+<sect1>Premier démarrage de Sylpheed
+
+<p>
+Lorsque vous démarrez sylpheed pour la première fois, vous serez
+guidé à travers les étapes de configuration basiques.
+Tout d'abord, une fenêtre vous demande de définir le répertoire
+que Sylpheed utilisera pour ranger les messages et les dossiers.
+Ce répertoire sera créé dans votre répertoire </em>home</em> (ou
+sous C:\windows\Application Data\Sylpheed sous windows). Le nom par 
+défaut de ce répertoire est "Mail".
+
+<figure loc="here">
+	<ph vspace="1cm">
+	<img src="snapshots/wizard_1.png">
+</figure>
+
+Ensuite, la fenêtre de configuration des comptes apparaît.
+Selon votre configuration (Boite aux lettres UNIX locale ou
+compte POP), lisez les sections correspondantes qui suivent
+pour continuer la configuration. 
+
+
 <sect1>Configuration rapide pour la lecture du courrier de votre boîte aux lettres locale UNIX
 <p>
 <itemize>
