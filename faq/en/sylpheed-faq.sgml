@@ -593,6 +593,11 @@ A.   Sylpheeds config files can be found in $HOME/.sylpheed. They are in plain
 <p>
 </sect1>
 
+<sect1>
+Q31  What to do when printing an e-mail prints off the paper?<p>
+A.   You can use enscript for this. Use enscript %s to print everything on one page, or enscript -U2 %s for printing two logical pages on one physical page.
+</sect1>
+
 </sect>
 
 <sect>
