@@ -1,43 +1,123 @@
 <sect>Going through the parts of Sylpheed
-
 <sect1>The menu options of Sylpheed.
 <p>
 The menu in Sylpheed is the primary entry to all the things you can do with Sylpheed. The menu structure gives you following options:
 <sect2>File menu
 <p>
 <itemize>
-<item>Add mailbox: this option lets you add a new MH mail-directory. It will generate IN, OUT, QUEUE, DRAFT and TRASH mailfolders inside the new mailbox.
-<item>Update folder tree: rescans the entire tree of existing mailboxes to reflect the correct state (usually won't be necessary).
-<item>Folder: lets you add, rename or delete a mailfolder.
-<item>Import mbox file...: lets you import an mbox file (like created by Pine) into an MH mailbox.
-<item>Export to mbox file: lets you export an MH mailbox to an mbox file.
-<item>Empty trash: obviously, this will empty the trash folder.
-<item>Save as: lets you save the selected e-mail to a plain textfile on disk.
-<item>Print: lets you print the selected e-mail to a printer.
-<item>Close: ends Sylpheed.
-<item>Exit: also ends Sylpheed.
+	<item>
+		Add mailbox: this option lets you add a new MH mail-directory. 
+		It will generate IN, OUT, QUEUE, DRAFT and TRASH mailfolders 
+		inside the new mailbox.
+	</item>
+	<item>
+		Rescan folder tree: rescans the entire tree of existing mailboxes 
+		to reflect the correct state (usually won't be necessary).
+	</item>
+	<item>
+		Folder: lets you add, rename or delete a mailfolder.
+		<itemize>
+			<item>
+				Create new folder: to create a new folder. You must select
+				the top level node of the folder tree of a sub folder before
+				using this menu entry, in order to define the location of the
+				new folder to create.
+			</item>
+			<item>
+				Rename folder: change the name of the selected folder.
+			</item>
+			<item>
+				Delete folder: delete the selected folder (also delete the
+				messages contained in the selected folder).
+			</item>
+		</itemize>
+	</item>
+	<item>
+		Import mbox file...: lets you import an mbox file 
+		(like created by Pine) into an MH mailbox.
+	</item>
+	<item>
+		Export to mbox file: lets you export an MH mailbox to an mbox file.
+	</item>
+	<item>
+		Empty trash: obviously, this will empty the trash folder.
+	</item>
+	<item>
+		Save as: lets you save the selected e-mail to a plain textfile 
+		on disk.
+	</item>
+	<item>
+		Print: lets you print the selected e-mail to a printer.
+	</item>
+	<item>
+		Exit: also ends Sylpheed.
+	</item>
 </itemize>
 </sect2>
-<sect2>Edit menu<p>
+
+<sect2>Edit menu
+<p>
 <itemize>
-<item>copy: lets you copy the selected text to a buffer, from where you can paste it into a different place. Shortcut: Ctrl-C
-<item>select all: selects all the text in the current window. Shortcut: Ctrl-A
-<item>search: searches the current window for text you enter. Shortcut: Ctrl-S
+	<item>
+		copy: lets you copy the selected text to a buffer, 
+		from where you can paste it into a different place. 
+		Shortcut: Ctrl-C
+	</item>
+	<item>
+		select all: selects all the text in the current window. 
+		Shortcut: Ctrl-A
+	</item>
+	<item>
+		Find in current message: searches a string in the current message.
+		Shortcut: Ctrl-F
+	</item>
+	<item>
+		search messages: searches a message based on its  To, From, Subject
+		header fields or body content. Start searching from the selected
+		message, in the selected folder. 
+		Shortcut: Shift-Ctrl-F
+	</item>
 </itemize>
 </sect2>
-<sect2>View menu<p>
-The view menu allows you to change the way that Sylpheed appears. You can set different windows separately (folder view, messages etc.), enable or disable the statusbar and so on.<p>
+
+<sect2>View menu
+<p>
+The view menu allows you to change the way that Sylpheed appears. 
+You can set different windows separately (folder view, messages etc.), 
+enable or disable the statusbar and so on.
+<p>
 <itemize>
-<item>Folder tree: not implemented yet
-<item>Message view: not implemented yet
-<item>Toolbar: sets how you want to see the toolbar. Icons and text, or one of these.
-<item>Status bar: show it or hide it.
-<item>Separate folder tree: selects between having the folder tree attached to the main window, or floating separately.
-<item>Separate message view: selects between having the selected message in the summary pane attached to the main window, or floating separately.
-<item>Code set: allows you to select what codeset you want to use for your e-mails.
+	<item>
+		Folder tree: not implemented yet
+	</item>
+	<item>
+		Message view: not implemented yet
+	</item>
+	<item>
+		Toolbar: sets how you want to see the toolbar. Icons and text, 
+		or one of these.
+	</item>
+	<item>
+		Status bar: show it or hide it.
+	</item>
+	<item>
+		Separate folder tree: selects between having the folder tree 
+		attached to the main window, or floating separately.
+	</item>
+	<item>
+		Separate message view: selects between having the selected 
+		message in the summary pane attached to the main window, or 
+		floating separately.
+	</item>
+	<item>
+		Code set: allows you to select what codeset you want to use 
+		for your e-mails.
+	</item>
 </itemize>
 </sect2>
-<sect2>Message menu<p>
+
+<sect2>Message menu
+<p>
 Here you find the following options:
 <itemize>
 <item>Receive new mail: this will collect all new mail for your default mail-identity.
