@@ -1,32 +1,31 @@
 <sect>Recevoir des Messages
 
-<sect1>Utilisation de la fonction de réception POP de Sylpheed<p>
-<!-- added 2001/07/19 -->
-Il est très facile de recevoir des messages à partir d'un serveur POP, une fois
- que Sylpheed est configuré correctement. Vous pouvez vous référer à la section
- «~Configurer un compte~» sur la manière de le faire.<p>
-Une fois que vous êtes connecté sur internet ou sur un autre réseau vous donnant 
-accès au serveur POP, pressez simplement le bouton <bf>Relever</bf> (ou pressez 
-«~Alt-I~») et Sylpheed se connectera au serveur pour vérifier votre courrier. 
-Une fois que vos messages sont récupérés, tous les filtres que vous avez 
-configuré sont exécutés et la fenêtre des dossiers vous montrera, en gras et en 
-couleur, quels dossiers contiennent de nouveaux messages.
-<!-- end addition 2001/07/19 -->
+<sect1>Utilisation de la fonction de réception POP de Sylpheed<p> <!--
+added 2001/07/19 --> Il est très facile de recevoir des messages à
+partir d'un serveur POP, une fois que Sylpheed est configuré
+correctement. Vous pouvez vous référer à la section «~Configurer un
+compte~» sur la manière de le faire.<p> Une fois que vous êtes
+connecté sur internet ou sur un autre réseau vous donnant accès au
+serveur POP, pressez simplement le bouton <bf>Relever</bf> (ou pressez
+«~Alt-I~») et Sylpheed se connectera au serveur pour vérifier votre
+courrier. Une fois que vos messages sont récupérés, tous les filtres
+que vous avez configuré sont exécutés et la fenêtre des dossiers vous
+montrera, en gras et en couleur, quels dossiers contiennent de
+nouveaux messages.  <!-- end addition 2001/07/19 -->
 </sect1>
-<sect1>Utilisation d'autres programmes tels que fetchmail<p>
-<!-- added 2001/07/19 -->
-Vous devez avoir ces programmes installés et configurés correctement. Pour cela, 
-veuillez vous reférer aux pages <tt>man</tt> ou au fichier <tt>README</tt> du 
-programme approprié.<p>
+<sect1>Utilisation d'autres programmes tels que fetchmail<p> <!--
+added 2001/07/19 --> Vous devez avoir ces programmes installés et
+configurés correctement. Pour cela, veuillez vous reférer aux pages
+<tt>man</tt> ou au fichier <tt>README</tt> du programme approprié.<p>
 
-Après avoir configuré le programme, vous pouvez l'invoquer soit à la main, soit 
-par le biais de <tt>cron</tt>, pour obtenir votre courrier. Celui-ci sera 
-habituellement téléchargé dans le fichier 
-<tt>/var/spool/mail/votre_nom_d_utilisateur</tt>. Vous pouvez ensuite indiquer 
-à Sylpheed de vérifier dans votre boîte aux lettres Unix locale si vous y avez 
-du courrier. Pour cela, pressez le bouton <bf>Relever</bf> ou pressez 
-«~Alt-I~». Vous devez pour cela avoir sélectionné un compte utilisant une boîte 
-aux lettres Unix locale.
+Après avoir configuré le programme, vous pouvez l'invoquer soit à la
+main, soit par le biais de <tt>cron</tt>, pour obtenir votre
+courrier. Celui-ci sera habituellement téléchargé dans le fichier
+<tt>/var/spool/mail/votre_nom_d_utilisateur</tt>. Vous pouvez ensuite
+indiquer à Sylpheed de vérifier dans votre boîte aux lettres Unix
+locale si vous y avez du courrier. Pour cela, pressez le bouton
+<bf>Relever</bf> ou pressez «~Alt-I~». Vous devez pour cela avoir
+sélectionné un compte utilisant une boîte aux lettres Unix locale.
 <!-- end addition 2001/07/19 -->
 </sect1>
 

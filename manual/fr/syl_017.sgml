@@ -82,6 +82,52 @@ immédiatement~;
 </sect2>
 </sect1>
 
+<sect1>Comment changer la police des menus, etc.<p>
+La police utilisée par Sylpheer pour ses menus et son interface en général
+est contrôlée par le gestionnaire de fenêtres (<em>Desktop manager</em>)
+que vous utilisez (KDE, Gnome, XFCE). Utilisez son programme de configuration  
+et changez-y la police.<p>
+Par contre, pour changer la police utilisée dans les différentes vues de Sylpheed
+(dossiers, sommaire, message), utilisez le menu <bf>Configuration -> 
+Préférences générales...</bf> et  sélectionnez l'onglet <bf>Affichage</bf>.
+Dans la première section de la fenêtre vous pouvez soit spécifier directement
+la police si vous en connaissez le nom, soit la choisir parmi la liste des polices
+disponibles sur votre ordinateur en utilisant le bouton <bf>&lsqb;...&rsqb;</bf>.
+</sect1>
+
+<sect1>Changer les combinaisons de touches pour les raccourcis-clavier<p>
+L'interface graphique de Sylpheed est basée sur GTK. Ceci signifie qu'il est 
+très facile de changer les combinaisons des touches raccourcis clavier (ou 
+simplement les touches de fonctions) pour les différents choix dans les menus. 
+Si vous êtiez habitués dans un autre programme à une combinaison de touches 
+différentes que celles utilisées par Sylpheed, ou si celles de Sylpheed ne
+vous conviennent pas la modification est très simple. Supposons que vous
+voulez changer la combinaison de touches utilisée pour la relève du courrier
+(dans le menu <bf>Message</bf>) de <bf>Alt-I</bf> en <bf>Ctrl-M</bf>. Voici
+les étapes à suivre~:
+<p>
+<itemize>
+<item>Ouvrez le menu <bf>Message</bf> avec la souris ou en pressant <bf>Alt-M</bf>~;
+<item>Sélectionnez l'option <bf>Relever le courrier</bf> sans cliquer dessus 
+(sinon cela activera la fonction~!)~: si vous utilisez la souris, déplacez 
+simplement le curseur de la souris sur l'option~;
+<item>Pressez maintenant <bf>Ctrl-M</bf>. Vous verrez immédiatement la nouvelle 
+combinaison apparaître dans le menu et remplacer l'ancienne.
+</itemize>
+Félicitations, vous venez juste de changer une combinaison de touches. De 
+cette manière, vous pouvez changer les raccourcis de toutes les options que
+vous voulez. Notez qu'il est préférable  d'utiliser les combinaisons de touches
+avec <bf>Alt</bf>, <bf>Shift</bf> ou <bf>Ctrl</bf> et une touche du clavier.
+Les touches de fonctions <bf>F1</bf>...<bf>F12</bf> n'ont pas besoin
+d'être associées à ces dernières et peuvent être utilisées seules.<p>
+Si vous souhaitez supprimer une combinaison de touches, procédez comme
+décrit plus haut mais pressez plutôt la touche <bf>Suppr</bf> ou la
+touche d'éffacement.<p>
+Certaines fonctions de Sylpheed sont activables par un raccourci à une
+seule touche. Celles-ci sont pré-programmées et ne sont pas modifiables
+aussi facilement.
+</sect1>
+
 <sect1>Format de données du carnet d'adresses<p>
 Le carnet d'adresses est situé dans le répertoire <tt>~/.sylpheed</tt>. 
 Il est nommé <tt>addressbook.xml</tt>. Le format général du carnet d'adresses est
