@@ -1,4 +1,58 @@
 
+2003-02-13
+
+   * In syl_004.sgml, documented some of the optional
+	  features with their configure switches.
+
+   * In syl_012.sgml, documented the use of the Jpilot 
+	  addressbook, started the LDAP section.
+
+
+2003-02-11
+
+   * In syl_013.sgml, grouped filters, actions and draft.
+	  Use (and abuse) of italics (replace the double quotes
+	  to denote menu or form fields).
+
+
+2003-02-04
+
+   * Removed syl_016.sgml, merged this part with the
+     account settings in syl_008.sgml.
+
+   * Grouped filters, actions and templates in 
+     syl_013.sgml (added actions and templates).
+
+   * In syl_008.sgml, grouped the common preferences
+     and the account setting. Changed the quoted strings
+     used to mark menu or form entries into italic,
+	  updated the pop ups descriptions to fit those
+	  of the v0.8.10, added the missing tabs in the 
+	  common preferences. Added the last two sections
+	  on account setting (folders, and real life use
+	  of accounts).
+
+
+2003-01-13
+
+   Updates for Sylpheed 0.8.8
+
+   * syl_001.sgml: changed the copyright holder from
+     myself to 'the sylpheed documentation team', added
+	  the links to the appendix (team members and the GNU
+	  FDL).
+
+   * syl_021.sgml: added the list of members of
+	  'the sylpheed documentation team'.
+
+   * syl_006.sgml: updated the menu descriptions for v0.8.8
+
+   * syl_007.sgml: in 'Dialogs and Views' explain the Gtk+ theme
+	  use. In 'Folder view', add the window resizing, folder view
+	  detach/attach manipulation, expand the special folders
+	  description.
+
+
 2002-08-20
 
 	Updates for Sylpheed 0.8.1

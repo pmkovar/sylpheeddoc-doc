@@ -1,12 +1,47 @@
 
 TODO:
 
-   * Explain message sorting using the summary view column
-	  headers and using the menu.
+   * In syl_013.sgml explain the 'regex' radio button
+	  in the filter setting window.
 
-	* Check/complete the part covering the use of multiple accounts
-	  (lot of new things since he last update).
+   * In syl_008.sgml, in the note regarding the X-face,
+     add more details.
 
-	* Explain the actions, give examples (see Melvin's page).
+   * In syl_008.sgml, in account settings, remove the
+	  privacy tab and add a link to the GnuPG section.
+
+   * Fully explain the common preferences (new section 8).
+
+   * Fully xplain accounts (new section 8).
+
+	* In section 9, add filtering and actions.
+
+	* In section 10, add draft, templates.
+
+	* In section 7, explain the folder properties. Complete
+	  the list of the special folders.
+
+   * In section 7, explain message sorting using the summary
+	  view column headers and using the menu.
+
+	* The shortcut section is outdated (17).
+
+   * Explain the use of the address book with a PDA( in 11).
+
+   * Explain the use GnuPG with Sylpheed.
+
+   * Either generate an index, or use the FAQ part as a
+	  cross reference with links to the different sections.
 
 	* Add more to the TODO...
+
+
+Things hat are not clear in he doc and/or in my head:
+
+   * The use of "Common prefs/Receive/use external program..."
+
+   * The use of "Common prefs/Receive/Update all local folders after incorporation"
+
+   * The use of "Common prefs/Send/use external program...", only
+	  for 'local' accounts, or also used by POP/IMAP accounts?
+
