@@ -4,7 +4,7 @@
     <author>Paul Kater (paul@nlpagan.net)
     and Jens Oberender (j.obi@troja.net)
     <abstract>
-       Sylpheed FAQ (for version 0.5.3)
+       Sylpheed FAQ (for version 0.6.1)
     </abstract>
 <toc>
 <p>
@@ -14,9 +14,24 @@ Sylpheed FAQ - General information
 
 <sect1>
 Q01 Are there FAQ's in other languages?<p>
-A. Yes, at the bottom of this page there are links to
-several translations already, including french, italian
-and japanese.
+A. Yes. Here are links to several translations:
+<itemize>
+<item>http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html: SYLPHEED FAQ in French courtesy of DINH V. Hoa
+<item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm: SYLPHEED FAQ in Japanese courtesy of WAKAI "SilverRain" Kazunao
+<item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html: SYLPHEED FAQ in Italian courtesy of Maurizio Codogno
+<item>http://www.synconet.de/privhome/rs/sylpheed_faq.html: SYLPHEED FAQ in German (HTML-Version)
+<item>http://www.synconet.de/privhome/rs/sylpheed_faq.txt: the german text-only version, both courtesy of Ralf Schiffers.
+<item>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html: SYLPHEED FAQ in Greek courtesy of Theofilos Intzoglou.
+<item>http://sylpheed.republika.pl: SYLPHEED FAQ in Polish courtesy of Przemyslaw Sulek.
+<item>http://www.geocities.com/hackpando/sylpheedfaq.html: HTML version by Marcelo Ramos, also:
+<item>http://www.geocities.com/hackpando/sylpheedfaq.txt: Text version
+<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es/ : Linked HTML, by Ricardo Mones Lastra, as well as
+<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi: FAQ-es.dvi (Device independent)
+<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps: the spanish FAQ as a Postscript file.
+<item>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html: A turkish FAQ for Sylpheed is available, thanks to the translating of Doruk Fisek.
+<item>http://hem.passagen.se/webplats/sylpheed-faq-se.html: Swedish FAQ, courtesy of Mattias Stergren
+</itemize>
+You can download this faq in text format from http://nlpagan.net/sylpheedfaq.tar.gz
 </sect1>
 
 <sect1>
@@ -61,7 +76,7 @@ file into a Sylpheed mailbox.
 
 <sect1>
 Q07 Why does the auto collection of mail not work?<p>
-A. Autocollection works since this version. If you need it
+A. Autocollection works since version 0.5.1. If you need it
 or want it, you should upgrade.
 </sect1>
 
@@ -88,7 +103,7 @@ A. Yes, IPv6 is fully supported in Sylpheed.
 
 <sect1>
 Q12 Does Sylpheed support encryption like GPG?<p>
-A. Yes. GPG is implemented and works fine.
+A. Yes. GPG is implemented and works fine. For activating it in Sylpheed, see Q14 in the Installation section.
 </sect1>
 
 <sect1>
@@ -335,6 +350,11 @@ Q13 How can I tell my browser/newsclient/other program to use Sylpheed as e-mail
 A.  In the settings part of the program, write
        <tt>sylpheed --compose</tt>
 </sect1>
+
+<sect1>Q14 How do I enable GPG support in Sylpheed?<p>
+A.  When compiling Sylpheed, make sure you add <tt>--enable-gpgme</tt> in the ./configure command.
+</sect1>
+
 </sect>
 
 <sect>
