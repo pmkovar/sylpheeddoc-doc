@@ -1,30 +1,30 @@
 
-<sect>Installation.
+<sect>Installation
 
 <sect1>Environnement nécessaire
 <p>
-Pour réussir la compilation de Sylpheed, vous avez au moins besoin de :
+Pour réussir la compilation de Sylpheed, vous avez au moins besoin~:
 <itemize>
-<item>Tout Unix compatible POSIX UNIX ou des OS similaires i.e. Linux, FreeBSD, Solaris
-<item>Un compilateur ANSI C récent (gcc 2.7.2.3 devrait aussi fonctionner). Note : le compilateur C de Sun ne compilera pas Sylpheed.
+<item>d'un système d'exploitation Unix compatible POSIX UNIX ou un système d'exploitation similaire <em>i.e.</em> Linux, FreeBSD, Solaris...
+<item>d'un compilateur ANSI C récent (gcc 2.7.2.3 devrait aussi fonctionner). Note~: le compilateur C de Sun ne compilera pas Sylpheed.
 </itemize>
-Optionnellement, vous avez besoin de :
+Optionnellement, vous avez besoin~:
 <itemize>
-<item>Imlib ou gdk-pixbuf (pour la visualisation des image intégrée)
-<item>libcompface (pour X-Face)
-<item>libjconv (pour I18N)
-<item>GPGME (pour GnuPG)
-<item>OpenLDAP (pour une connection avec un serveur LDAP)
-<item>Jpilot (pour utiliser un carnet d'adresses Palm)
-<item>l'équivalent de GTK+-devel et Xfree86-devel. (Sinon ./configure échouera.)
+<item>de la bibliothèque Imlib ou gdk-pixbuf (pour la visualisation intégrée des images)
+<item>de la bibliothèque libcompface (pour X-Face)
+<item>de la bibliothèque libjconv (pour I18N)
+<item>de la bibliothèque GPGME (pour GnuPG)
+<item>de la bibliothèque OpenLDAP (pour une connexion avec un serveur LDAP)
+<item>du logiciel Jpilot (pour utiliser un carnet d'adresses Palm)
+<item>de l'équivalent de GTK+-devel et Xfree86-devel. (Sinon ./configure échouera.)
 </itemize>
-Note: Sylpheed peut être instable en fonction de l'environnement. Veuillez utiliser les versions les plus récentes des bibliothèques dans la mesure du possible.
+Note~: Sylpheed peut être instable suivant l'environnement. Dans la mesure du possible, veuillez utiliser les versions les plus récentes des bibliothèques.
 </sect1>
 
 <sect1>Environnements reconnus comme valides pour Sylpheed
 <p>
 <itemize>
-<item>Debian GNU/Linux unstable (sid) (glibc 2.2) (environment de développement) 
+<item>Debian GNU/Linux unstable (sid) (glibc 2.2) (environnement de développement) 
 <item>Debian GNU/Linux 2.2 (potato) (glibc 2.1.3) 
 <item>Kondara MNU/Linux (glibc 2.1.x) 
 <item>Vine Linux 1.1 (glibc 2.0.x + libwcsmbs) 
@@ -51,12 +51,12 @@ Note: Sylpheed peut être instable en fonction de l'environnement. Veuillez utili
 <item>Linux MLD5 
 <item>Plamo Linux 2.0 
 <item>Slackware 7.1 
-<item>Linux Mandrake 7.0 through 8.0
+<item>Linux Mandrake 7.0 à 8.0
 <item>SuSE Linux 6.3 (glibc 2.1.2) 
 <item>SuSE Linux 6.4, 7.0, 7.1
 <item>OpenLinux 2.3 (glibc 2.1.1 -> 2.1.3) 
 <item>Caldera OpenDesktop 2.4 
-<item>Conectiva Linux 4.0 and 5.0
+<item>Conectiva Linux 4.0 et 5.0
 <item>Vector Linux 1.5 
 <item>FreeBSD releases 3.2, 3.4, 4.0, 4.1, 4.2 et 5.0
 <item>NetBSD 1.4.2 
@@ -67,84 +67,86 @@ Note: Sylpheed peut être instable en fonction de l'environnement. Veuillez utili
 <item>Solaris 2.5, 2.5.2., 2.6, 7, 8
 <item>IRIX 6.3 et 6.5, 6.5.8m 
 <item>HP-UX 10.20 
-<item>Mac OS X (Darwin 1.3) + Xtools (has locale problem) 
-<item>Windows (cygwin + GTK+ for win32) (unstable) 
+<item>Mac OS X (Darwin 1.3) + Xtools (a des problèmes de localisation (l10n))
+<item>Windows (cygwin + GTK+ for win32) (instable) 
 </itemize>
 </sect1>
 
 <sect1>Éléments et points clés de l'installation
 <p>
 <itemize>
-<item>Téléchargez la dernière version de SYlpheed a partir de:
+<item>Téléchargez la dernière version de Sylpheed à partir de
 <url url="http://sylpheed.good-day.net/" name="http://sylpheed.good-day.net/">
 </item>
-<item>Décompressez les fichiers sources dans un nouveau répertoire
-<item>tar -xvfz sylpheed-.tar.gz (pour tar.gz)
-<item>tar -xvfI sylpheed-.tar.bz2 (pour tar.bz2) 
+<item>Décompressez les fichiers sources dans un nouveau répertoire~:
+<item><tt>tar -xvfz sylpheed-.tar.gz</tt>(pour tar.gz)
+<item><tt>tar -xvfI sylpheed-.tar.bz2</tt> (pour tar.bz2) 
 <item>cd vers le nouveau répertoire sylpheed 
-<item>Lancez ./configure pour contrôler votre environnement et créer les Makefiles d'installation
-<item>Lancez le programme 'make' qui compilera les sources. Ne passez pas à cette étape s'il existe des erreurs fatales dans la précédente. FLes erreurs fatales indiquent que des éléments manquent de manière à compiler Sylpheed correctement. 
+<item>Lancez <tt>./configure</tt> pour configurer votre environnement et créer les <tt>Makefile</tt>s d'installation
+<item>Lancez le programme <tt>make</tt> qui compilera les sources. Ne passez pas à cette étape si vous rencontrez des erreurs fatales dans l'étape précédente. Les erreurs fatales indiquent que des éléments manquent de manière à pouvoir compiler Sylpheed correctement. 
 </itemize>
 <p>
-Si le processus make est terminé, lancez "make install" (en tant que root), pour installer le programme et les fichiers de support
+Si le processus <tt>make</tt> est terminé, lancez <tt>make install</tt> (en tant que root), pour installer le programme et les fichiers de support.
 </sect1>
 
 <sect1>Installation sur Linux en utilisant RPM
 <p>
-Comme root, lancez la commande "rpm -ivh " sur le fichier RPM que vous avez téléchargé. Dès que ce procéssus est effectué, vous pouvez lancer Sylpheed comme utilisateur.
+En tant que root, lancez la commande <tt>rpm -ivh</tt> sur le fichier RPM que vous avez téléchargé. Dès que ce processus est fini, vous pouvez lancer Sylpheed comme utilisateur.
 </sect1>
 
 <sect1>Installation sur Debian Linux
 <p>
-Avec une connexion internet :
+En ayant une connexion internet~:
 <p>
-apt-get install sylpheed (pour l'installer avec une connexion internet)
+<tt>apt-get install sylpheed</tt> (pour l'installer directement à partir d'internet)
 <p>
 Sans connexion internet, récupérez le paquet debian, par exemple sur 
-<url url="http://packages.debian.org/unstable/mail/sylpheed.html" name="http://packages.debian.org/unstable/mail/sylpheed.html">
+<url url="http://packages.debian.org/unstable/mail/sylpheed.html" name="http://packages.debian.org/unstable/mail/sylpheed.html">, puis
 <p>
-dpkg -i sylpheedx.x.x-1i386.deb
+<tt>dpkg -i sylpheedx.x.x-1i386.deb</tt>
 <p>
-dpkg --install sylpheedx.x.x-1i386.deb
+ou
+<p>
+<tt>dpkg --install sylpheedx.x.x-1i386.deb</tt>
 </sect1>
 
 <sect1>Installation sur FreeBSD
 <p>
-utilisant l'outil /stand/sysinstall (c'est une interface basée sur les menus) :
+En utilisant l'outil <tt>/stand/sysinstall</tt> (c'est une interface basée sur les menus)~:
 <p>
-lancez "/stand/sysinstall" en tant que root
+Lancez <tt>/stand/sysinstall</tt> en tant que root.
 <p>
-dans le menu principal, choisissez "Configure" -> "Packages" -> "mail", puis "sylpheed" puis retournez vers la liste des "Packages", choisissez "Install"
+Dans le menu principal, choisissez <bf>Configure -> Packages -> mail</bf>, puis <bf>sylpheed</bf>, puis retournez vers la liste des <bf>Packages</bf>, choisissez <bf>Install</bf>
 <p>
 Utiliser les portages
 <p>
-Allez chercher le port de sylpheed sur :
+Allez chercher la version de Sylpheed portée sur FreeBSD à~:
 <p>
 <url url="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail" name="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail">
 <p>
-puis, en tant que root : pkg-add sylpheed-0.x.x.tgz
+puis, en tant que root~: <tt>pkg-add sylpheed-0.x.x.tgz</tt>
 <p>
-en utilisant les ports avec compilation :
+En utilisant les portages avec compilation~:
 <p>
 mettez d'abord votre portage à jour, traitez-le sur http://www.freebsd.org/ports/mail.html
 <p>
-cd /usr/ports/mail/sylpheed
+<tt>cd /usr/ports/mail/sylpheed</tt>
 <p>
-make
+<tt>make</tt>
 <p>
-Si cela réussit, saisissez "make install"
+Si cela réussit, executez <tt>make install</tt>
 <p>
-dans le cas où cela échoue, demandez le paquet requis, si nécessaire, (sur la même page), mettez le fichier du paquet dans /usr/ports/distfiles/
-puis :
+dans le cas où cela échoue, demandez le paquet requis, si nécessaire, (sur la même page), mettez le fichier du paquet dans <tt>/usr/ports/distfiles/</tt>
+puis~:
 <itemize>
-<item>cd /usr/ports/mail/sylpheed
-<item>make
-<item>make install
+<item><tt>cd /usr/ports/mail/sylpheed</tt>
+<item><tt>make</tt>
+<item><tt>make install</tt>
 </itemize>
 <p>
-Vous avez besoin d'une version plus à jour ?
+Vous avez besoin d'une version plus à jour~?
 <p>
-Utilisez simplement la méthode standard d'Unix (veuillez voir "Éléments et points clés de l'installation")
+Utilisez simplement la méthode standard d'Unix (veuillez voir «~Éléments et points clés de l'installation~»)
 </sect1>
 
 </sect>

@@ -1,26 +1,27 @@
 <sect>Composer des Messages
 
 <sect1>Composer un nouveau Message<p>
-Lorsque vous démarrez l'écriture dun nouveau message, il vous est présenté une jolie invite dans laquelle vous pouvez entrer tout type d'information. Dans la ligne From:, vous avez une liste déroulante. Dedans, vous pouvez sélectionner le compte de courrier que vous voulez utiliser comme compte d'envoi.<p>
-Dans les parties To: / Cc: / Bcc:, vous écrivez les adresses de courriers des receveurs. Vous pouvez entrer plusieurs adresses, si elles sont séparées par des virgules. Un utilitaire important ici est le bouton "Adresse". Lorsque vous cliquez dessus, vous avez le carnet d'adresses. Vous pouvez pointer sur une adresse, cliquer sur le bouton "To:", "Cc:" ou "Bcc:" et Sylpheed placera l'adresse dans la ligne sélectionnée. Bcc: peut être mis en gris. De manière à le rendre accessible, vous avez besoin d'ajouter la ligne Bcc: vers le message. Vous le faites par une menu de message et validez l'option Bcc.<p>
-Dans la ligne Sujet, vous entrez un court texte descriptif sur le propos de votre message.<p>
-Vous pouvez vous déplacer entre ces lignes en pressant TAB (pour aller directement à la ligne suivante) et SHIFT-TAB (pour revenir). Puis vous pressez TAB dans la dernière ligne et vous serez dans le corps du message.<p>
-Si vous avez sélectionné un fichier de signature dans les configurations des comptes actifs, il sera déjà dans le corps du message. Vous pouvez maintenant écrire votre message. Lorsque c'est fait, vous pouvez cliquer sur Envoi, Envoi plus tard ou Brouillon dans la barre d'outils. Envoi tente d'envoyer le message immédiatement. Envoyer plus tard le placera dans le répertoire Envoi et Brouillon le placera dans le répertoire Brouillon.
+Lorsque vous commencer à composer un nouveau message, une nouvelle fenêtre s'ouvre dans laquelle vous pouvez éditer le texte mais aussi spécifier les informations nécessaires à l'envoi.  D'abord, la ligne <bf>De~:</bf> vous présente une liste déroulante dans laquelle vous pouvez sélectionner le compte que vous voulez utiliser pour l'envoi.<p>
+Dans les parties <bf>À~:</bf>,<bf>Cc~:</bf> et <bf>Cci~:</bf>, vous pouvez spécifier les adresses email respectives des destinataires principaux, de ceux qui recevront une copie et de ceux qui recevront une copie mais dont les adresses ne seront pas visibles pour les autres destinataires. Dans chaque champ, vous pouvez entrer une ou plusieurs adresses séparées par des virgules. Un outil important ici est le bouton <bf>Adresse</bf> qui permet d'accéder au carnet d'adresses. Dans la fenêtre de celui-ci, vous pouvez sélectionner une adresse et cliquer sur le bouton <bf>À~:</bf>, <bf>Cc~:</bf> ou <bf>Cci~:</bf> pour la placer dans le champ destinataire correspondant. Le bouton <bf>Cci~:</bf> peut être désactivé si ce champ n'apparaît pas dans la fenêtre de composition. Pour le rendre accessible, sélectionnez le menu <bf>Message -> Cci</bf> dans cette fenêtre.<p>
+Dans le champ du <bf>Sujet~:</bf>, entrez un court texte descriptif sur le propos de votre message.<p>
+Vous pouvez vous déplacer parmi ces champs en pressant la touche de tabulation «~TAB~» (aussi désignée par «~->|~») pour aller directement à la ligne suivante ou «~Shift-TAB~» pour revenir en arrière. Enfin, pressez encore «~TAB~» dans le dernier champ et vous serez dans le corps du message prêt à l'éditer.<p>
+Si vous avez sélectionné un fichier de signature dans la configuration du compte utilisé, il sera déjà dans le corps du message. Vous pouvez alors écrire votre courrier. Lorsque c'est fait, vous pouvez soit cliquer sur le bouton <bf>Envoyer</bf>, soit le bouton <bf>Envoi différé</bf>, soit le bouton <bf>Brouillon</bf> dans la barre d'outils. <bf>Envoyer</bf> tente d'envoyer le message immédiatement. <bf>Envoi différé</bf> le placera dans le dossier <bf>File d'attente</bf> et enfin <bf>Brouillon</bf> le placera dans le dossier <bf>Brouillon</bf>.
 </sect1>
-<sect1>Repondre à un Message<p>
+<sect1>Répondre à un message<p>
 <!-- added 2001/07/19 -->
-Pour répondre à un message, vous utilisez la fonction "répondre". Dans Sylpheed, vous l'activez soit par le bouton "Répondre" ou en pressant Alt-R.<p>
-Une nouvelle fenêtre de message sera créée, avec l'adresse du destinataire et le sujet déjà composé pour vous. La plupart des choses décrites dans Composer un nouveau message sont aussi applicables à cette fenêtre.
+Pour répondre à un message, utilisez la fonction <bf>Répondre</bf>. Dans Sylpheed, vous l'activez soit par le bouton <bf>Répondre</bf> soit en pressant «~Alt-R~».<p>
+Lors d'une réponse, une nouvelle fenêtre de composition est créée avec les champs du destinataire et du sujet déjà remplis pour vous. La plupart des fonctionnalités décrites dans la section «~Composer un nouveau message~» sont aussi applicables à cette fenêtre.
 <!-- end add 2001/07/19 -->
 </sect1>
-<sect1>Répondre au message avec la citation<p>
+<sect1>Répondre en citant le message<p>
 <!-- added 2001/07/19 -->
-Si vous voulez que Sylpheed mette en citation le texte auquel vous êtes en train de répondre, vous avez besoin d'aller dans le menu de Configuration. Là, vous sélectionnez les préférences communes, allez dans l'onglet Composition et validez la boîte "Citer les messages lors de la réponse". Vous pouvez aussi éditer la marque de citation (la marque mise devant chaque ligne citée dans le courrier de réponse) et l'attribut de réponse (qui est placé de vant le texte de réponse).
+Si vous voulez que Sylpheed cite le message auquel vous êtes en train de répondre, allez dans le menu de <bf>Configuration -> Configuration générale</bf>, puis dans l'onglet <bf>Composition</bf> validez l'option <bf>Citer le message en répondant</bf>. Vous pouvez aussi y définir le préfixe de la citation (la marque mise devant chaque ligne citée dans le courrier de réponse) ainsi que le texte introduisant la citation.
+
 <!-- end add 2001/07/19 -->
 </sect1>
-<sect1>Faires uisvre les Messages<p>
+<sect1>Transférer un message<p>
 <!-- added 2001/07/19 -->
-Faire suivre les messages signifie : vous envoyez le message complet, incluant les en-têtes (l'adresse de l'émetteur, la date d'envoi, etc.) à quelqu'un d'autre. Pour ceci, vous pressez sur le bouton "Faire suivre" ou vous pressez Ctrl-F. Une nouvelle fenêtre de message est créée, contenant le texte du message sélectionné. Vous pouvez alors fournir le(s) nom(s) des destinataires du message comme pour la composition d'un nouveau message, peut être ajouter quelques lignes et l'envoyer.
+Transférer un message (reçu) signifie envoyer à une tierce personne le message au complet y compris les en-têtes (l'adresse de l'expéditeur, la date d'envoi, etc.). Pour cela, pressez le bouton <bf>Transférer</bf> ou utilisez la combinaison des touches «~Ctrl-F~». Une nouvelle fenêtre de message est créée contenant le texte du message sélectionné. Vous pouvez alors fournir le(s) nom(s) des destinataires du message, de la même manière que pour la composition d'un nouveau message. Vous pouvez même ajouter quelques lignes avant de l'envoyer.
 <!-- end add 2001/07/19 -->
 </sect1>
 </sect>

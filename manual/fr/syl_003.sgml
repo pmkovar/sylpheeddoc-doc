@@ -1,10 +1,10 @@
 <!-- added 2001/07/20 -->
-<sect>Guide pour créer un nouveau compte de courrier électronique.<p>
-<sect1>Obtenir les nouvelles dans l'urgence.<p>
+<sect>Guide pour créer un nouveau compte pour groupes de discussion (<em>news</em>)<p>
+<sect1>Obtenir les nouvelles dans l'urgence<p>
 <p>
-Dans le menu de configuration, sélectionnez "Create new account"
+Dans le menu de configuration, sélectionnez <bf>Création d'un nouveau compte...</bf>.
 <p>
-Dans l'onglet "Base", entrez les données nécessaires. Vous devez nommer le compte, entrer votre nom et votre adresse e-mail, etc. Pour se connecter aux nouvelles, veuillez sélectionner "News (NNTP)" dans la boîte Protocole.
+Dans l'onglet de configuration <bf>Générale</bf>, entrez les données nécessaires~: donnez un nom au compte, puis entrez votre nom et votre adresse email, etc. S'agissant d'un compte pour groupes de discussions, sélectionnez ensuite <bf>News (NNTP)</bf> dans le menu <bf>Protocole</bf>.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -12,13 +12,13 @@ Dans l'onglet "Base", entrez les données nécessaires. Vous devez nommer le compt
 </figure>
 
 <p>
-Entrez les informations sur le serveur de nouvelles.
+Puis, entrez le nom du serveur dans le champ <bf>Serveur de groupes de discussion</bf>.
 <p>
-Passez l'onglet "Recevoir".
+Ignorez l'onglet <bf>Réception</bf>.
 <p>
-Dans l'onglet "Envoi", vous pouvez configurer quelques informations supplémentaires.
+Dans l'onglet <bf>Envoi</bf>, vous pouvez configurer quelques informations supplémentaires.
 <p>
-Dans l'onglet "Composition", vous pouvez définir votre fichier de signature.
+Ensuite, dans l'onglet <bf>Composition</bf>, vous pouvez définir votre fichier de signature.
 
 <figure loc="here">
 <ph vspace="1cm">
@@ -26,9 +26,9 @@ Dans l'onglet "Composition", vous pouvez définir votre fichier de signature.
 </figure>
 
 <p>
-Dans l'onglet "Avancé", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Vous n'avez normalement pas besoin d'y toucher.
+Dans l'onglet de configuration <bf>Avancée</bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Mais vous n'avez normalement pas besoin d'y toucher.
 <p>
-Fermez les boîtes de dialogue, cliquez avec le bouton droit de la souris sur la nouvelle branche de Nouvelles dans le panneau des répertoires et sélectionnez "Subscribe to newsgroups". Si cela n'est pas déjà fait, une liste de groupes sera téléchargée du serveur. Arrivé à ce point, vous devriez vous débrouiller, bonne chance.
+Enfin, fermez les boîtes de dialogue, cliquez avec le bouton droit de la souris sur la nouvelle branche <bf>News</bf> dans l'arborescence des dossiers et sélectionnez <bf>Inscription aux groupes de discussion...</bf>. Si cela n'est pas déjà fait, une liste des groupes disponibles sera téléchargée du serveur. Arrivé à ce point, vous devriez vous débrouiller sans difficultés, bonne chance.
 <!-- end added 2001/07/20 -->
 </sect1>
 </sect>

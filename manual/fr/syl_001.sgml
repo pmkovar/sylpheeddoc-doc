@@ -2,16 +2,16 @@
 <article>
     <title>Guide de l'utilisateur Sylpheed
     <author>
-	    Paul Kater (paul@nlpagan.net)
-	    Nick Selby
-       Francois Barriere (traduction)
+	    Paul Kater (paul@nlpagan.net),
+	    Nick Selby,
+            traduction de François Barrière
     <abstract>
-       Guide de l'utilisateur basé sur Sylpheed-0.7.3
+       Guide de l'utilisateur pour Sylpheed-0.7.3
     </abstract>
 
 <toc>
 
-<sect>Qu'est ce que Sylpheed?
+<sect>Qu'est-ce que Sylpheed~?
 
 <p>
 <figure loc="here">
@@ -20,7 +20,7 @@
 </figure>
 
 
-<sect1>Introduction à Sylpheed.
+<sect1>Introduction à Sylpheed
 <p>
 Sylpheed est un client de messagerie et de nouvelles (interface 
 utilisateur pour la gestion, la lecture et l'écriture de nouvelles et 
@@ -28,26 +28,26 @@ de courriels).
 Il fonctionne sur n'importe quelle distribution Linux, ou système
 compatible Unix.
 <p>
-La puissance de Sylpheed provient du fait qu'il
+La puissance de Sylpheed provient du fait qu'il est
 <itemize>
-<item>neécessite peu de ressources système
-<item>est très rapide
-<item>intuitif
-<item>simple a utiliser
-<item>très complet
-<item>avec un interface agréable et sophistiquée
+<item>peu gourmand en ressources système~;
+<item>très rapide~;
+<item>intuitif~;
+<item>simple à utiliser~;
+<item>très complet~;
+<item>doté d'une interface agréable et sophistiquée.
 </itemize>
 </sect1>
 
 <sect1>L'interface
 <p>
-L'apparence et l'interface sont semblables à celle de la plupart des clients
-de messagerie pour Windows, tel que Outlook Express, Becky!, et Datula.
-L'interface est aussi conçue pour simuler les messageries de Emacsen,
-et la plupart des commandes sont accessibles au clavier.
+L'apparence et l'interface sont semblables à celles de la plupart des clients
+de messagerie pour Windows, tels que Outlook Express, Becky! et Datula.
+L'interface est aussi conçue pour simuler les messageries des Emacsen,
+et la plupart des commandes sont accessibles par le clavier.
 <p>
 Les messages sont stockés au format MH, et vous serez capable de l'utiliser
-avec n'importe quel autre outil de messagerie basé sur le format MH 5 tel
+avec n'importe quel autre outil de messagerie basé sur le format MH (tel
 que Mew). Vous pouvez aussi utiliser fetchmail et/ou procmail ainsi que
 des programmes extérieurs à Sylpheed pour recevoir et trier vos messages
 (comme inc ou imget).
@@ -55,7 +55,7 @@ des programmes extérieurs à Sylpheed pour recevoir et trier vos messages
 
 <sect1>Principales caractéristiques
 <p>
-Sont actuellement inclus:
+Les caractéristiques suivantes sont actuellement incluses~:
 <itemize>
 <item>un nombre de comptes de messagerie illimité
 <item>l'affichage par fil de discussion
@@ -64,88 +64,91 @@ Sont actuellement inclus:
 <item>l'affichage intégré des images
 <item>le support de X-Face 
 <item>la possibilité d'utiliser un éditeur externe
-<item>la mise en attente des messages (envoi)
-<item>La fonction de brouillon 
-<item>La césure de ligne
-<item>Les liens cliquables
-<item>Un carnet d'adresses XML
-<item>La gestion des nouveaux messages, des message non lus
-<item>Le support de répertoires MH multiples
-<item>Des raccourcis claviers compatibles Mew/Wanderlust
-<item>Les fonctions de lecteur de nouvelles
-<item>L'impression
-<item>Le support UIDL
-<item>L'authentification APOP pour le protocole POP3
-<item>Le support AUTH SMTP
-<item>Le support IPv6
-<item>Le support Autoconf, automake 
-<item>Le support i18n de messages par gettext (affichage des messages dans votre langue)
-<item>le support de nombreuses langues et jeux de characteres, y compris UTF-8 (Unicode), via libjconv 
+<item>la mise en file d'attente des messages pour l'envoi
+<item>la fonction de brouillon 
+<item>la césure de ligne
+<item>les liens URL cliquables
+<item>un carnet d'adresses sauvegardé sous un format XML
+<item>un carnet d'adresses avec accès à un serveur LDAP
+<item>un carnet d'adresses JPilot (pour les assistants personnels Palm) 
+<item>la gestion des nouveaux messages, des message non lus
+<item>le support de plusieurs répertoires MH
+<item>des raccourcis claviers compatibles Mew/Wanderlust
+<item>les fonctions de lecteur de nouvelles
+<item>l'impression
+<item>le support UIDL
+<item>l'authentification APOP pour le protocole POP3
+<item>le support AUTH SMTP
+<item>le support IPv6
+<item>la confidentialité et la sécurité via GPG pour encrypter et signer
+<item>le support Autoconf, automake 
+<item>le support i18n de messages par gettext (affichage des messages dans votre langue)
+<item>le support de nombreuses langues et plusieurs jeux de caractères, y compris UTF-8 (Unicode), via libjconv 
 <!-- added 2001/07/19 -->
-<item>La compatibilité IMAP4
+<item>la compatibilité IMAP4
 </itemize>
 Cette liste n'est pas complète, mais vous donne un aperçu des possibilités
 principales de Sylpheed.
 </sect1>
 
 <sect1>Méthodes de gestion des messages
-
-
-Il y a plusieurs façons de gérer les messages. La plus connue est de <tt>ne pas les gérer</tt><p>
-Beaucoup de personnes recoivent un grand nombre de messages et les laissent dans
-le dossier << Réception >>.
-Ce qui devient, après un certain temps ingérable. Essayez de trouver ce message
-important que vous avez reçu il y a 5 jours, parmis 5000 autres messages.
-Meme triés par date, cela peut vous prendre un temps considérable pour le trouver.
 <p>
 
-Pour cela il y a les <tt>dssiers et boites aux lettres</tt>
+Il y a plusieurs façons de gérer les messages. La plus connue est celle qui consiste à <em>ne pas les gérer</em>.<p>
+Beaucoup de personnes reçoivent un grand nombre de messages et les laissent dans
+le dossier «~Réception~».
+Cela devient, après un certain temps, ingérable. Essayez de trouver ce message
+important que vous avez reçu il y a cinq jours parmi 5000 autres messages.
+Même triés par date, cela peut vous prendre un temps considérable pour le retrouver.
 <p>
 
-Tout au long de ce manuel, vous apprendrez a créer des boites aux lettres
-et des dossiers qui peuvent contenir encore d'autres boites aux lettres.
-A quoi cela sert-il?
+Pour cela il y a les <bf><it>dossiers</it></bf> et les <bf><it>boîtes aux lettres</it></bf>.
 <p>
 
-A trier. Vous pourvez stocker dans chaques boite aux lettres différents types
-de messages. Supposons que vous soyez membre d'un club et que vous receviez 
-une trentaine de messages de ce club chaque jours. Il est bon de créer une
-boite aux lettres pour ces messages, de cette façon lorsqu'un nouveau message
-de ce club arrive vous pouvez le classer dans cette boite aux lettres.
-De cette façon vous savez que tous vos message concernant ce club
-se trouvent a un seul endroit.
+Tout au long de ce manuel, vous apprendrez à créer des boîtes aux lettres
+et des dossiers qui peuvent contenir encore d'autres boîtes aux lettres.
+À quoi cela sert-il?
 <p>
 
-Vous trouvez cela fastidieux? Déplacer 30 messages par jours dans cette
-voite aux lettres alors qu'ils arrivent tout au long de la journée?
-Bien sur que cela est fastidieux, vous pouvez meme etre sur de rater
-le message le plus important!
+À trier. Vous pouvez stocker dans chaque boîte aux lettres différents types
+de messages. Supposons que vous soyez membre d'un club et que vous receviez  chaque jour
+une trentaine de messages de ce club. Il est bon de créer une
+boîte aux lettres pour ces messages, ainsi, lorsqu'un nouveau message
+de ce club arrive vous pouvez le classer dans cette boîte aux lettres.
+De cette façon, vous savez que tous vos messages concernant ce club
+se trouvent en un seul endroit.
 <p>
 
-Pour celaaussi il y a une solution, cela s'appelle <tt>les filtres</tt>.
+Vous trouvez cela fastidieux~? Déplacer 30 messages par jour dans cette
+boîte aux lettres alors qu'ils arrivent tout le long de la journée?
+Bien sûr que cela est fastidieux. Vous pouvez même être sûr de rater
+le message le plus important~!
+<p>
+
+Pour cela aussi il y a une solution, cela s'appelle <bf><it>les filtres</it></bf>.
 <p>
 Les filtres permettent d'automatiser le processus de tri des messages.
-Plus loin dans ce manuel vous apprendrez a définir des filtres afin
-de ne plus avoir a déplacer un a un vos messages.
+Plus loin dans ce manuel vous apprendrez à définir des filtres afin
+de ne plus avoir à déplacer un à un vos messages.
 <p>
 
 <sect2>
 
-Bien, mais quelle est la différence entre une boite aux lettres et un dossier?
+Bien, mais quelle est la différence entre une boîte aux lettres et un dossier?
 <p>
 C'est comme sur votre disque dur, vous créez des répertoires dans
-lesquels vous placer d'autres répertoires et des fichiers.
+lesquels vous placez d'autres répertoires et des fichiers.
 <p>
-Dans le cas de Sylpheed, vous créez une boite aux lettres dans laquelle vous
-pouvez placer d'autres boite aux lettres qui doivent etre groupées. Par example,
-vous pouvez créer une boite aux lettres qui contienne toutes les boites aux lettres
-pour toutes les listes de diffusion auquelles vous etes abonné.
+Dans le cas de Sylpheed, vous créez une boîte aux lettres dans laquelle vous
+pouvez placer d'autres boîtes aux lettres qui doivent être groupées. Par exemple,
+vous pouvez créer une boîte aux lettres qui contienne toutes les boîtes aux lettres
+pour toutes les listes de diffusion auquelles vous êtes abonné.
 <p>
-Il est peut-etre nécessaire de clarifier les choses un peu. Pour Sylpheed
-une boite aux lettres n'est rien d'autre qu'un répertoire, et dans ce répertoire vous pouvez
-créer d'autres répertoires, mais qusi des fichiers, et Sylpheed place chaque messqge dans un
+Il est peut-être nécessaire de clarifier les choses un peu. Pour Sylpheed
+une boîte aux lettres n'est rien d'autre qu'un répertoire, et dans ce répertoire vous pouvez
+créer d'autres répertoires, mais aussi des fichiers, et Sylpheed place chaque message dans un
 fichier distinct.
-Ci-dessous un example de boites aux lettres:
+Ci-dessous un exemple de boîtes aux lettres~:
 <p>
 
 <figure loc="here">
@@ -153,16 +156,16 @@ Ci-dessous un example de boites aux lettres:
 <img src="snapshots/folder_tree.png">
 </figure>
 
-Comme vous pouvez le voir, il n'y a pas vraiment de limite a la façon d'organiser
-vos boites aux lettres. Du moment que vous avez de la place sur votre disque dur,
-cous pouvez créer des boites aux lettres dans d'autres boites aux lettres.
+Comme vous pouvez le voir, il n'y a pas vraiment de limites à la façon d'organiser
+vos boîtes aux lettres. Du moment que vous avez de la place sur votre disque dur,
+vous pouvez créer des boîtes aux lettres dans d'autres boîtes aux lettres.
 <p>
-Bien sur vous devez rester sensé lorsque vous créez vos boites aux lettres.
-Garder tous vos messages a un seul endroit n'est pas une bonne idée, mais créer
-un labyrinthe de boites aux lettres n'est pas mieux!
+Bien sûr, vous devez rester raisonnable lorsque vous créez vos boîtes aux lettres.
+Garder tous vos messages en un seul endroit n'est pas une bonne idée, mais créer
+un labyrinthe de boîtes aux lettres n'en est pas une meilleure~!
 </sect1>
 
-<sect1>Orientation du dévelopement
+<sect1>Orientation du développement
 <p>
 Cette section n'a pas encore été écrite (soyez patient).
 </sect1>
