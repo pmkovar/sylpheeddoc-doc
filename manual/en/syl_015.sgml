@@ -75,6 +75,8 @@ In this section you will find a few pieces of information that might be handy in
 <sect1>Data Format of Address Book<p>
 The addressbook is located in ~/.sylpheed. It is named addressbook.xml.
 The general format of the addressbook is:<p>
+
+<code>
 &lt addressbook &gt<p>
  &lt common_address &gt<p>
     &lt group name="Common addresses" &gt<p>
@@ -86,6 +88,7 @@ The general format of the addressbook is:<p>
     &lt /group &gt<p>
  &lt /common_address &gt<p>
 &lt /addressbook &gt
+</code>
 
 </sect1>
 <!-- end add 2001/07/21 -->

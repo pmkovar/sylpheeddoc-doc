@@ -11,6 +11,12 @@
 
 <sect>What is Sylpheed?
 
+<p>
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/full_split.png">
+</figure>
+
 <sect1>Introduction to Sylpheed.
 <p>
 Sylpheed is a fast e-mail and news client. It will run on just about any Linux or Unix compliant system.
@@ -50,6 +56,8 @@ Currently implemented features are:
 <item>Line-wrapping 
 <item>Clickable URI 
 <item>XML-based addressbook 
+<item>LDAP addressbook 
+<item>Jpilot addressbook (for Palm types handhelds)
 <item>Newly arrived and unread message management 
 <item>Multiple MH folder support 
 <item>Mew/Wanderlust compatible key bindings 
@@ -59,6 +67,7 @@ Currently implemented features are:
 <item>APOP authentication 
 <item>SMTP AUTH support
 <item>IPv6 support 
+<item>GPG encryption and signature
 <item>Autoconf, automake support 
 <item>Support of i18n of messages by gettext 
 <item>Supports many locales, including UTF-8 (Unicode), when using libjconv 
@@ -83,20 +92,12 @@ This is actually the exact same thing as you do on your harddisk. You create dir
 In the case of Sylpheed, you can create a mailbox in which you can put more mailboxes that somehow belong together. For example, you could create a mailbox (folder) that contains the mailboxes for all the mailing lists you belong to.<p>
 A word of clarification is perhaps in need here. In Sylpheed, a maillbox is nothing more than a directory. And in a directory you can create a new directory. But also files. And Sylpheed stores each e-mail in a separate file on disk.
 An example of how a mailbox tree could look is<p>
-Inbox<p>
-Outbox<p>
-Draft<p>
-Queue<p>
-Trash<p>
-Kite club<p>
-Mailing lists<p>
-|---Linux mails<p>
-|---Sylpheed<p>
-|------|---Sylpheed claws<p>
-|------|---Sylpheed docs<p>
-|------|---Sylpheed mail<p>
-|---Vi mailing list<p>
-|---XFree mails<p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/folder_tree.png">
+</figure>
+
 As you can see, there is no real limit to the way you can set up your mailboxes. As long as you have diskspace available, you can create mailboxes and mailboxes within mailboxes.<p>
 Of course, you should observe some common sense when you start creating mailboxes. To keep all mail in one place is not a good idea, but to create a maze of mailboxes is not a good idea either!
 </sect2>

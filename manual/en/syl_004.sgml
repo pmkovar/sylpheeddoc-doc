@@ -15,6 +15,8 @@ Optionally you need:
 <item>libcompface (for X-Face)
 <item>libjconv (for I18N)
 <item>GPGME (for GnuPG)
+<item>OpenLDAP (for LDAP connection)
+<item>Jpilot (for Palm addressbook use)
 <item>the equivalent of GTK+-devel and Xfree86-devel. (Otherwise ./configure will fail.)
 </itemize>
 Notice: Sylpheed may be unstable depending on the environment. Please use the newest version of libraries if possible.
@@ -74,6 +76,9 @@ Notice: Sylpheed may be unstable depending on the environment. Please use the ne
 <sect1>Nuts and bolts of installation
 <p>
 <itemize>
+<item>Download the latest version of the Sylpheed package from
+<url url="http://sylpheed.good-day.net/" name="http://sylpheed.good-day.net/">
+</item>
 <item>Untar the sourcefiles to a new directory
 <item>tar -xvfz sylpheed-.tar.gz (for tar.gz)
 <item>tar -xvfI sylpheed-.tar.bz2 (for tar.bz2) 
@@ -96,7 +101,8 @@ With an internet connection :
 <p>
 apt-get install sylpheed (to install it with a internet connection)
 <p>
-Without internet connection, fetch the debian package for example on http://packages.debian.org/unstable/mail/sylpheed.html
+Without internet connection, fetch the debian package for example on
+<url url="http://packages.debian.org/unstable/mail/sylpheed.html" name="http://packages.debian.org/unstable/mail/sylpheed.html">
 <p>
 dpkg -i sylpheedx.x.x-1i386.deb
 <p>
@@ -115,13 +121,14 @@ Using the ports
 <p>
 Get the sylpheed port on :
 <p>
-ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail
+<url url="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail" name="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail">
 <p>
 then, as root: pkg-add sylpheed-0.x.x.tgz
 <p>
 using the ports with compiling:
 <p>
-first, update your port, fetch it on http://www.freebsd.org/ports/mail.html
+first, update your port, fetch it on 
+<url url="http://www.freebsd.org/ports/mail.html" name ="http://www.freebsd.org/ports/mail.html">
 <p>
 cd /usr/ports/mail/sylpheed
 <p>

@@ -1,5 +1,11 @@
 <sect>Address Book
 <p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/address_book.png">
+</figure>
+
 In the address book, accessible through Alt-A, the Addressbook button, or through the tool menu, you store e-mail addresses of the people and places you want to write more often.<p>
 
 <sect1>Adding and Deleting Addresses<p>

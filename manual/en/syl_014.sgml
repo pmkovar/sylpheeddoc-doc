@@ -6,6 +6,12 @@ In here you will find a tabbed window that offers the following possibility to c
 </sect1>
 <sect1>Description of Each Entry<p>
 In the third tab, "Compose", the following settings can be changed:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_compose.png">
+</figure>
+
 <itemize>
 <item>Quoting the original text of a message
 <item>Define the quoting character that is put in front of each line of text.
@@ -18,6 +24,12 @@ In the third tab, "Compose", the following settings can be changed:
 <item>Indicate if e-mail text should be wrapped or not. If you choose not to select wrapping, then the lines you wrote will not be chopped up by carriage return/line feed characters.
 </itemize>
 In the fourth tab, "Display", you can set or unset the following options:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_display.png">
+</figure>
+
 <itemize>
 <item><tt>Font.</tt> You can set the font that is used to display the messages.
 <item><tt>Translate header name.</tt> This options changes the behaviour of the different headers.
@@ -30,6 +42,12 @@ In the fourth tab, "Display", you can set or unset the following options:
 <item><tt>Set display item.</tt> This button allows you to select the specific columns that will be shown in the summary view.
 </itemize>
 Next to these options, there is the message tab, in which you can set the following choices:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_message.png">
+</figure>
+
 <itemize>
 <item><tt>Enable colorization.</tt> When you enable this option, you can define with what colors the message text and the quotings will be displayed.
 <item><tt>Display 2-byte alphabet and numeric with 1 character.</tt> This option is necessary for double-byte languages as Japanese and Chinese.
@@ -41,6 +59,12 @@ Next to these options, there is the message tab, in which you can set the follow
 <item><tt>Smooth scroll.</tt> Enabling this box will make the text in the message view scroll in a smooth, sliding way. For the eye this can be pleasing, it is a personal preference.
 </itemize>
 The tab "Interface" allows even more customization of Sylpheed. This tab features:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_interface.png">
+</figure>
+
 <itemize>
 <item>Opening the first unread message when you enter a folder.
 <item>Automatically move focus to the inbox after new mail was received.
@@ -53,6 +77,12 @@ The tab "Interface" allows even more customization of Sylpheed. This tab feature
 <item>Warn you when exiting Sylpheed when there are still messages queued to be sent.
 </itemize>
 Finally there is the "Other" tab. In here you can define the programs you want as helper applications for Sylpheed.
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_other.png">
+</figure>
+
 <itemize>
 <item><tt>The web browser.</tt> Here you can enter the name of your favorite web browser (Netscape, Opera, Mozilla, Lynx etc.). Add the %s parameter to the command so Sylpheed knows it has to provide the text you clicked on as the URL that the browser has to visit.
 <item><tt>Printing.</tt> Here you can define the program that should be used to print. Default is lpr, and the %s is the name of the temporary file that Sylpheed creates for lpr to print.

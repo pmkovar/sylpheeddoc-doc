@@ -14,6 +14,12 @@ contains this OR does NOT contain that" etc. It's very cool.
 <sect2>Finding The Filter Setting Dialog<p>
 The filter settings dialog is located in the Configuration menu, under the title 
 "Filter Setting". You may also use establish a keyboard shortcut (see Keyboard Shortcuts). 
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/filters.png">
+</figure>
+
 </sect2>
 <sect2>Setting Up Filters<p>
 Operator(s) and Processing instructions combine to create a Filter Rule.
