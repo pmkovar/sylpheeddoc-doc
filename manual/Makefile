@@ -5,6 +5,9 @@
 #
 ######################################################################
 # $Log: Makefile,v $
+# Revision 1.6  2002/03/30 21:30:16  fbarriere
+# Modified to build the HTML directory locally.
+#
 # Revision 1.5  2002/03/20 21:26:29  fbarriere
 # Now just a wrapper around the unique Makefile you should find
 # in the parent directory.
@@ -22,6 +25,7 @@
 # Created.
 #
 ######################################################################
+HERE := $(shell pwd)
 
 .DEFAULT:
-	$(MAKE) -C .. ALL_TYPES=manual $@
+	$(MAKE) -C .. ALL_TYPES=manual HTML_DIR=$(HERE)/HTML $@
