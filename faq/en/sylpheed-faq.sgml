@@ -194,7 +194,7 @@ line will move to a separate new line, leaving one or
 two words from the previous line "hanging there" alone.
 E.g.
 <verb>
-     This is a long line
+     This is a long line that
      is wrapped.
 </verb>
 <p>
@@ -207,6 +207,8 @@ Now you add one word in the first line:
 <p>
 This would cause you a lot of manual reformatting to get
 a presentable mail again.
+<p>
+Note: As of Sylpheed 0.8.0., active wordwrap has been implemented. You can turn it on in Common Preferences->Compose->wrap on input.
 </sect1>
 
 <sect1>
