@@ -1,81 +1,83 @@
-<sect>Anpassung<p>
-Sylpheed bietet eine Vielzahl von Möglichkeiten, die Oberfläche den eigenen Bedürftnissen entsprechend anzupassen.
-<sect1>Allgemeine Einstellungen<p>
-Über &quot;Einstellungen&quot; -&gt; &quot;Allgemeine Einstellungen...&quot; gelangt man in einen Dialog, in welchem man in mehreren Reitern folgende Optionen verändern kann:
+<sect>Newsgroups - das Usenet<p>
+Was sind Newsgroups?
 
+Newsgroups sind Diskussionsforen, deren Beiträge (&quot;Postings&quot;) sich in der Regel delokalisiert auf einer Reihe von &quot;Newsservern&quot; befinden. Diese bilden das sogenannte &quot;Usenet&quot;.
+Diskutiert wird hierbei über fast jede menschenerdenkliche Thematik. Über Weinbau, Gebrauchtwagen, Quantendynamik oder Lokalpolitik.
+
+Will man sich diese Informationsquelle erschließen, sollte man sich bewußt sein daß sich das Konzept sehr von persönlichen E-Mails unterscheidet, und eher Mailinglisten ähnelt.
+
+Wichtige Links für das deutschsprachige Usenet:
+
+Netiquette
+
+<url url="http://www.kirchwitz.de/~amk/dni/netiquette" name="http://www.kirchwitz.de/~amk/dni/netiquette">
+
+Deutsche Newsgroups (de.*)
+
+<url url="http://www.dana.de/mod/" name="http://www.dana.de/mod/">
+
+Österreichische Newsgroups (at.*)
+
+<url url="http://www.usenet.at/" name="http://www.usenet.at/">
+
+Schweizer Newsgroups (ch.*)
+
+<url url="http://www.use-net.ch/Usenet/index_de.html" name="http://www.use-net.ch/Usenet/index_de.html">
+
+<sect1>Hinzufügen und Löschen von Servern<p>
+<sect2>Einen Newsserver hinzufügen<p>
+Um einen Newsserver hinzuzufügen, wählt man in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot;.
+Dem Newsaccount kann man einen beliebigen Namen geben. Unter diesem Namen wird der Account wie eine Mailbox in der Ablagenübersicht angezeigt.
+
+Im &quot;Einfach&quot; Reiter, im Bereich &quot;Persönliche Information&quot;, gibt man seinen Namen, E-Mail-Adresse, und falls gewünscht Organisation an.
+
+Im Bereich &quot;Serverdaten&quot; wählt man &quot;News (NNTP)&quot; als Protokoll. Als nächstes benötigt man die Adresse des Newsservers. Das ist meist entweder ein lokaler Newsserver wie leafnode, der Newsserver des Providers, ein frei zugänglicher Newsserver, oder ein Newsserver einer Firma oder Organisation die ihre eigenen, lokalen Newsgroups anbietet.
+
+Falls der Newsserver eine Beglaubigung verlangt, aktiviert man &quot;Dieser Server benötigt Beglaubigung&quot;, und trägt Benutzernamen und Passwort ein.
+
+Im &quot;Empfangen&quot; Reiter kann man unter &quot;Hole alle&quot; die Abfrage neuer Nachrichten über &quot;Empfange von allen Accounts&quot; aktivieren, oder deaktivieren.
+
+Der &quot;Senden&quot; Reiter erlaubt einige Einstellungen:
+<itemize>
+<item>Ob man dem Posting eine Kopfzeile mit dem Datum hinzufügen will
+<item>Ob Sylpheed eine &quot;Nachrichten-ID&quot; erzeugen soll
+<item>Ob man benutzerdefinierte Kopfzeilen einfügen will (zum Beispiel ein X-Face)
+</itemize>
+Die nächste Option findet Anwendung wenn man Usenet-Postings mit einer E-Mail beantworten will. Wenn der Mail-Server SMTP Beglaubigung benötigt, können die Daten hier eingetragen werden.
+
+Im &quot;Verfassen&quot; Reiter kann eine Signatur-Datei gewählt werden, oder auch direkt eine Umleitung der Standardausgabe, beispielsweise ist hier &quot;|uptime&quot; sehr beliebt. Für E-Mail-Antworten auf Usenet-Postings können hier auch Adressen für &quot;Cc&quot; (Carbon copy, Kopie), &quot;Bcc&quot; (Blind carbon copy, diskrete Kopie), oder &quot;Antwort auf&quot; voreinstellt werden.
+
+Im &quot;Speziell&quot; Reiter kann man den Port angeben, an welchem Sylpheed mit dem Newsserver kommuniziert. Voreingestellt ist 119, und nur in den seltensten Fällen muß dies geändert werden.
+
+Nun drückt man auf &quot;OK&quot;, und der Account ist eingerichtet! Am Ablagebaum wurde ein neuer Ordner angelegt, mit dem Namen den man dem Account gegeben hat, und (News) dahinter.
+</sect2>
+<sect2>Entfernen eines News-Accounts<p>
+Einen News-Account kann man wieder löschen, indem man auf den News-Ordner rechtsklickt, und &quot;News-Account entfernen&quot; wählt. Nach dem Bestätigen wird der Account mit allen seinen Dateien entfernt.
+</sect2>
 </sect1>
-<sect1>Beschreibung der Optionen<p>
-Im Reiter &quot;Verfassen&quot; können folgende Einstellungen angepasst werden:
+<sect1>Abonnieren und Abbestellen von Newsgroups<p>
+Okay. Jetzt wird's ernst. Als Erstes lassen wir Sylpheed die Gruppenliste des Newsservers laden. Ein Rechtsklick auf den neuen News-Ordner, dann wählt man &quot;Newsgroup abonnieren...&quot;. 
 
-<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_compose.png"></figure>
+Sylpheed meldet, daß es die Gruppenliste lädt. Natürlich kommen im Laufe der Zeit neue Gruppen zur Liste hinzu, und alte verschwinden. Mit dem &quot;Erneuern&quot;-Knopf kann man deshalb jederzeit eine neue Gruppenliste vom Newsserver herunterladen.
 
-<itemize>
-<item>Unterschriftentrenner (Signaturtrennzeichen): Viele Anwendungen setzen hier &quot;-- &quot; voraus. Das automatische Einfügen kann ein-, oder ausgeschalten werden.
-<item>Starte externen Editor automatisch: Hier kann man einen externen Editor, den man im Reiter &quot;Weiteres&quot; angibt, beim Schreiben von Nachrichten automatisch starten lassen. Beim Verlassen des Editors wird der Nachrichtentext übernommen.
-<item>Stufen der Rückgängigmachung: gibt an, wieviele Arbeitsschritte Sylpheed sich für &quot;Bearbeiten&quot; -&gt; &quot;Rückgängig&quot; merken soll.
-<item>Zeilenumbruch nach x Zeichen: In vielen Anwendungen werden zwischen 75 und 80 Zeichen pro Zeile dargestellt, bei längeren Zeilen erfolgt unkontrolliertes Umbrechen ("Kamm"). 72 ist ein guter Wert.
-<item>Zitat umbrechen: passt die Formatierung des zitierten Textes dem Zeilenumbruch an.
-<item>Zeilenumbruch vor dem Senden: Verhindert Überlängen automatisch.
-<item>Wähle automatisch den Account für die Antworten: erkennt den Account anhand der E-Mail-Adresse.
-<item>Zitiere Nachricht in der Antwort: fügt Text der ursprünglichen Nachricht mit Zitatzeichen in die Antwort ein.
-</itemize>
+Inzwischen ist die Gruppenliste geladen, und wird in einem Fenster angezeigt. Man kann nun interessante Gruppen suchen, zum Beispiel mit den Suchbegriffen &quot;*linux*&quot;, &quot;*unix*&quot; oder &quot;*bsd*&quot;.
+Nun wählt man eine oder mehrere Newsgroups, die man abonnieren möchte, und drückt &quot;OK&quot;.
+Der Gruppenname erscheint nun im Newsordner als Ablage. Wenn man nun auf diese neue Ablage klickt, lädt Sylpheed die Kopfzeilen (Betreff, Von, etc) der am Server in dieser Gruppe vorhandenen Postings. Manche Gruppen haben VIELE Postings, also kann das ein wenig dauern.
+</sect1>
+<sect1>Postings lesen und schreiben<p>
+Sobald Postings in der News-Ablage erscheinen, kann man sie durch Anklicken herunterladen und lesen. Normalerweise geht das recht schnell, insbesondere bei einem lokalen Newsserver.
 
-Im Reiter &quot;Anzeige&quot; können folgende Einstellungen angepasst werden:
+Möchte man auf ein Posting antworten, drückt man den &quot;Nachricht beantworten&quot;-Knopf, &quot;Nachricht&quot; -&gt; &quot;Antwort&quot;, oder das entsprechende Tastaturkürzel.
+Ein Fenster öffnet sich, mit dem Namen der Newsgroup im &quot;Newsgroups&quot;-Feld, und gemäß den Einstellungen zitiertem Text. Nun kann man drauflos schreiben, dann abschicken, und bald wird die ganze Welt wissen, was man zu jenem Thema zu sagen hat.
 
-<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_display.png"></figure>
+Eine neue Nachricht zu verfassen ist genauso einfach. Man drückt den &quot;Neue Nachricht verfassen&quot;-Knopf, &quot;Nachricht&quot; -&gt; &quot;Verfasse neue Nachricht&quot;, oder das entsprechende Tastaturkürzel.
+Der Name der Newsgroup erscheint im &quot;Newsgroups&quot;-Feld, und man kann sein Posting schreiben.
+<sect2>Eine Bemerkung zu Binärdateien<p>
+In manchen Newsgroups, deren Namen oft &quot;binary&quot;, &quot;binarios&quot; oder ähnlich enthalten, dürfen Postings auch Binärdateien enthalten. Das können Programme, Bilder, Audiodateien, etc. sein. Oft werden diese als UUkodierte Dateien gepostet. Sollte Sylpheed solche Dateien nicht automatisch dekodieren können, oder wenn es sich um mehrteilige Nachrichten handelt, speichert man die Nachricht(en) als Textdatei(en), bevor man sie mit der entsprechenden Software dekodieren kann. UUkodierte Dateien sehen üblicherweise etwa so aus:
 
-<itemize>
-<item>Schriftart: Hier kann die Schriftart für die Nachrichtenansicht gewählt werden.
-<item>Übersetze Kopfzeilennamen: Passt die Namen der Kopfzeilen der Sprache an.
-<item>Zeige Anzahl der ungelesenen E-Mails: Erlaubt die Anzeige der Anzahl ungelesener Nachrichten direkt hinter dem Namen der Ablage.
-<item>Zeige Empfänger in "Von:"-Zeile: Um bei Nachrichten, die man selbst geschrieben hat, den Empfänger in der Ablagenübersicht anzuzeigen.
-<item>Benutze horizontalen Scrollbar: Schaltet die horizontale Laufleiste unterhalb der Ablageninhaltsansicht an, oder aus. Wenn ausgeschaltet, kann man nicht nach rechts scrollen um überlange Betreff-Zeilen zu lesen.
-<item>Threads entfalten: Wenn diese Option gewählt ist, und Ansicht in Threads aktiviert ist, werden sie zusammengefaltet dargestellt, mit einem vorangestellten "+"-Zeichen. Andernfalls wird der gesamte Baum angezeigt.
-<item>Zeige ungelesene Nachrichten mit dicker Schrift: Mit dieser Option werden ungelesene Nachrichten in der Ablageninhaltsansicht mit dicker Schrift dargestellt.
-<item>Datumsformat: Hier kann man das Datumsformat anpassen. Mit dem "..."-Knopf kann man sich eine Liste der möglichen Symbole anzeigen lassen, inklusive Vorschau.
-<item>Setze Einträge der Ablageninhaltsansicht...: Mit diesem Knopf kann man die in den Spalten der Ablagenübersicht angezeigten Informationen auswählen.
-</itemize>
+begin 666 sundown.jpg
 
-Der Reiter &quot;Nachricht&quot; bietet folgende Einstellungen:
-
-<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_message.png"></figure>
-
-<itemize>
-<item>Benutze Farben für Nachrichten: Für Nachrichtentext, verschiedene Ebenen zitierten Textes und URIs können Farben gewählt werden.
-<item>Stelle 2-byte Alphabet und Zahlen mit 1-byte Zeichen dar: Wird benötigt für 2-byte Sprachen wie Japanisch oder Chinesisch.
-<item>Zeige Kopfzeilenleiste über Nachrichtenansicht: Mit dieser Option werden die Kopfzeilen &quot;Von:&quot;, &quot;An:&quot; und &quot;Betreff:&quot; in einem eigenen Bereich oberhalb der Nachricht angezeigt.
-<item>Zeige kurze Kopfzeilen in der Nachrichtenansicht: Hier kann man die Kopfzeilen angeben, die in der Nachrichtenansicht angezeigt werden sollen. Über den &quot;Bearbeiten&quot;-Knopf gelangt man in einen Dialog, in welchem man sich eine Liste der gewünschten Kopfzeilen erstellen kann. 
-<item>Zeilenabstand: Hier gibt man an, wieviele Pixel Abstand Sylpheed zwischen zwei Textzeilen in der Nachrichtenansicht verwenden soll.
-<item>Halte Abstand vom Anfang: Rückt am Anfang einer neuen Zeile in der Nachrichtenansicht etwas ein. Kann bei langen E-Mails nützlich sein.
-<item>Scroll: Halbe Seite: Normalerweise bewirkt die Leertaste das Weiterblättern um eine Seite. Hier kann man einstellen, daß nur eine halbe Seite weitergescrollt werden soll.
-<item>Fließendes Scrollen: Hier kann angegeben werden, daß die Leertaste statt zu blättern fließend scrollt. Kann hübsch aussehen, ist aber langsamer.
-</itemize>
-
-Der Reiter &quot;Benutzerschnittstelle&quot; bietet folgende Einstellungen:
-
-<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_interface.png"></figure>
-
-<itemize>
-<item>Erste Nachricht anzeigen beim Öffnen einer Ablage
-<item>Wechsle zu Inbox nach dem Empfang neuer E-Mail
-<item>Sofort ausführen beim Bewegen oder Löschen von Nachrichten
-<item>Zeige Empfangen-Dialog: Immer, nur wenn ein Fenster aktiv ist, oder nie
-<item>Adresse ins Ziel einfügen bei Doppelklick
-<item>Tastenkombinationen wählen: Wechselt zwischen Vorgabesets der Tastaturkürzel
-</itemize>
-
-Schließlich gibt es noch den Reiter &quot;Weiteres&quot;. Hier können Hilfsanwendungen für Sylpheed angegeben werden.
-
-<figure loc="here"><ph vspace="1cm"><img src="snapshots/pref_other.png"></figure>
-
-<itemize>
-<item>&quot;Internet-Browser&quot;: Hier kann man seinen Lieblings-Internet-Browser eintragen (galeon, konqueror, skipstone, lynx, mozilla, opera, netscape, etc). Mit dem %s Parameter wird die URL an den Browser weitergegeben.
-<item>&quot;Drucken&quot;: Hier wird das für den Druck zuständige Programm angegeben. Voreingestellt ist lpr, und %s ist der Name der temporären Datei, die Sylpheed für den Druck verwendet.
-<item>&quot;Editor&quot;: Hier kann man einen externen Editor angeben, mit welchem man seine E-Mails schreibt, zum Beispiel vi, emacs oder gedit. Für textbasierte Editoren wie vi muß ein Terminalfenster angegeben werden, wie <tt>xterm -e vi %s</tt>. Auch hier ist %s der Name der temporären Datei, die Sylpheed für die Eingabe anlegt.
-<item>Nachfrage beim Beenden: Öffnet beim Beenden ein Dialogfeld zur Bestätigung.
-<item>Leere Papierkorb beim Beenden: Entleert den Papierkorb automatisch.
-<item>Frage vor dem Leeren: Öffnet beim Leeren des Papierkorbs ein Dialogfeld zur Bestätigung.
-<item>Warnen, wenn wartende Nachrichten vorhanden: Öffnet beim Beenden ein Dialogfeld zur Bestätigung, falls noch Nachrichten in der Queue-Ablage sind.
-</itemize>
+gefolgt von einem hübsch formatierten Block von Zeichen.
+</sect2>
 </sect1>
 </sect>

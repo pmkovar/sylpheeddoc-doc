@@ -1,83 +1,38 @@
-<sect>Newsgroups - das Usenet<p>
-Was sind Newsgroups?
+<sect>Umgang mit MIME-Typen
+<sect1>Wie Sylpheed MIME-Typen erkennt<p>
+(Wir danken Adriaan Penning f&uuml;r diesen Abschnitt!)
 
-Newsgroups sind Diskussionsforen, deren Beiträge (&quot;Postings&quot;) sich in der Regel delokalisiert auf einer Reihe von &quot;Newsservern&quot; befinden. Diese bilden das sogenannte &quot;Usenet&quot;.
-Diskutiert wird hierbei über fast jede menschenerdenkliche Thematik. Über Weinbau, Gebrauchtwagen, Quantendynamik oder Lokalpolitik.
+Zwei Dateien, &quot;mime.types&quot; und &quot;mailcap&quot;, sind daf&uuml;r zust&auml;ndig den MIME-Typ eines Anhangs zu erkennen, und die daf&uuml;r zust&auml;ndige Anwendung.
+Die Datei "mime.types" entscheidet auch &uuml;ber den MIME-Typ eines Anhangs, den man beim Verfassen einer Nachricht anheftet. Die Datei besteht aus Zeilen wie:
 
-Will man sich diese Informationsquelle erschließen, sollte man sich bewußt sein daß sich das Konzept sehr von persönlichen E-Mails unterscheidet, und eher Mailinglisten ähnelt.
+application/pdf pdf
 
-Wichtige Links für das deutschsprachige Usenet:
+Sylpheed sucht nach dieser Datei in SYSCONFDIR (wird beim Kompilieren bestimmt), und $HOME/.sylpheed/
 
-Netiquette
+Wenn diese Datei nicht existiert, oder im falschen Format, so verwendet Sylpheed &quot;application/octet-stream&quot; als MIME-Typ, was es dem Empfänger erschweren kann zu entscheiden, mit welcher Anwendung er den Anhang öffnen soll.
 
-<url url="http://www.kirchwitz.de/~amk/dni/netiquette" name="http://www.kirchwitz.de/~amk/dni/netiquette">
+Um die voreingestellte Anwendung zu ändern, die von Sylpheed zum Öffnen des Anhangs verwendet wird, sucht und editiert man die mailcap Datei, /etc/mailcap oder $HOME/.mailcap
 
-Deutsche Newsgroups (de.*)
+Wenn man zum Beispiel pdf-Dateien mit xpdf öffnen möchte, fügt man folgende Zeile /$HOME/.mailcap hinzu:
 
-<url url="http://www.dana.de/mod/" name="http://www.dana.de/mod/">
-
-Österreichische Newsgroups (at.*)
-
-<url url="http://www.usenet.at/" name="http://www.usenet.at/">
-
-Schweizer Newsgroups (ch.*)
-
-<url url="http://www.use-net.ch/Usenet/index_de.html" name="http://www.use-net.ch/Usenet/index_de.html">
-
-<sect1>Hinzufügen und Löschen von Servern<p>
-<sect2>Einen Newsserver hinzufügen<p>
-Um einen Newsserver hinzuzufügen, wählt man in &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot;.
-Dem Newsaccount kann man einen beliebigen Namen geben. Unter diesem Namen wird der Account wie eine Mailbox in der Ablagenübersicht angezeigt.
-
-Im &quot;Einfach&quot; Reiter, im Bereich &quot;Persönliche Information&quot;, gibt man seinen Namen, E-Mail-Adresse, und falls gewünscht Organisation an.
-
-Im Bereich &quot;Serverdaten&quot; wählt man &quot;News (NNTP)&quot; als Protokoll. Als nächstes benötigt man die Adresse des Newsservers. Das ist meist entweder ein lokaler Newsserver wie leafnode, der Newsserver des Providers, ein frei zugänglicher Newsserver, oder ein Newsserver einer Firma oder Organisation die ihre eigenen, lokalen Newsgroups anbietet.
-
-Falls der Newsserver eine Beglaubigung verlangt, aktiviert man &quot;Dieser Server benötigt Beglaubigung&quot;, und trägt Benutzernamen und Passwort ein.
-
-Im &quot;Empfangen&quot; Reiter kann man unter &quot;Hole alle&quot; die Abfrage neuer Nachrichten über &quot;Empfange von allen Accounts&quot; aktivieren, oder deaktivieren.
-
-Der &quot;Senden&quot; Reiter erlaubt einige Einstellungen:
-<itemize>
-<item>Ob man dem Posting eine Kopfzeile mit dem Datum hinzufügen will
-<item>Ob Sylpheed eine &quot;Nachrichten-ID&quot; erzeugen soll
-<item>Ob man benutzerdefinierte Kopfzeilen einfügen will (zum Beispiel ein X-Face)
-</itemize>
-Die nächste Option findet Anwendung wenn man Usenet-Postings mit einer E-Mail beantworten will. Wenn der Mail-Server SMTP Beglaubigung benötigt, können die Daten hier eingetragen werden.
-
-Im &quot;Verfassen&quot; Reiter kann eine Signatur-Datei gewählt werden, oder auch direkt eine Umleitung der Standardausgabe, beispielsweise ist hier &quot;|uptime&quot; sehr beliebt. Für E-Mail-Antworten auf Usenet-Postings können hier auch Adressen für &quot;Cc&quot; (Carbon copy, Kopie), &quot;Bcc&quot; (Blind carbon copy, diskrete Kopie), oder &quot;Antwort auf&quot; voreinstellt werden.
-
-Im &quot;Speziell&quot; Reiter kann man den Port angeben, an welchem Sylpheed mit dem Newsserver kommuniziert. Voreingestellt ist 119, und nur in den seltensten Fällen muß dies geändert werden.
-
-Nun drückt man auf &quot;OK&quot;, und der Account ist eingerichtet! Am Ablagebaum wurde ein neuer Ordner angelegt, mit dem Namen den man dem Account gegeben hat, und (News) dahinter.
-</sect2>
-<sect2>Entfernen eines News-Accounts<p>
-Einen News-Account kann man wieder löschen, indem man auf den News-Ordner rechtsklickt, und &quot;News-Account entfernen&quot; wählt. Nach dem Bestätigen wird der Account mit allen seinen Dateien entfernt.
-</sect2>
+application/pdf ; xpdf %s
 </sect1>
-<sect1>Abonnieren und Abbestellen von Newsgroups<p>
-Okay. Jetzt wird's ernst. Als Erstes lassen wir Sylpheed die Gruppenliste des Newsservers laden. Ein Rechtsklick auf den neuen News-Ordner, dann wählt man &quot;Newsgroup abonnieren...&quot;. 
+</sect>
+<sect>Konvertieren anderer Mailordnerformate in Sylpheeds MH-Format
+<sect1>Importieren von Mbox-Ordnern<p>
+Sylpheed kann Nachrichten im Mbox-Format aus dem Dateimen&uuml; heraus importieren. Zun&auml;chst erzeugt man einen Ordner in den die Nachrichten kommen sollen, dann w&auml;hlt man &quot;Datei&quot; -&gt; &quot;Importiere Mbox Datei&quot;. &Uuml;ber &quot;Ausw&auml;hlen...&quot; w&auml;hlt man nun den Ordner in Sylpheed, und dr&uuml;ckt &quot;OK&quot;. Und schon werden die Nachrichten importiert.
 
-Sylpheed meldet, daß es die Gruppenliste lädt. Natürlich kommen im Laufe der Zeit neue Gruppen zur Liste hinzu, und alte verschwinden. Mit dem &quot;Erneuern&quot;-Knopf kann man deshalb jederzeit eine neue Gruppenliste vom Newsserver herunterladen.
-
-Inzwischen ist die Gruppenliste geladen, und wird in einem Fenster angezeigt. Man kann nun interessante Gruppen suchen, zum Beispiel mit den Suchbegriffen &quot;*linux*&quot;, &quot;*unix*&quot; oder &quot;*bsd*&quot;.
-Nun wählt man eine oder mehrere Newsgroups, die man abonnieren möchte, und drückt &quot;OK&quot;.
-Der Gruppenname erscheint nun im Newsordner als Ablage. Wenn man nun auf diese neue Ablage klickt, lädt Sylpheed die Kopfzeilen (Betreff, Von, etc) der am Server in dieser Gruppe vorhandenen Postings. Manche Gruppen haben VIELE Postings, also kann das ein wenig dauern.
+Das war einfach, nicht wahr?
 </sect1>
-<sect1>Postings lesen und schreiben<p>
-Sobald Postings in der News-Ablage erscheinen, kann man sie durch Anklicken herunterladen und lesen. Normalerweise geht das recht schnell, insbesondere bei einem lokalen Newsserver.
-
-Möchte man auf ein Posting antworten, drückt man den &quot;Nachricht beantworten&quot;-Knopf, &quot;Nachricht&quot; -&gt; &quot;Antwort&quot;, oder das entsprechende Tastaturkürzel.
-Ein Fenster öffnet sich, mit dem Namen der Newsgroup im &quot;Newsgroups&quot;-Feld, und gemäß den Einstellungen zitiertem Text. Nun kann man drauflos schreiben, dann abschicken, und bald wird die ganze Welt wissen, was man zu jenem Thema zu sagen hat.
-
-Eine neue Nachricht zu verfassen ist genauso einfach. Man drückt den &quot;Neue Nachricht verfassen&quot;-Knopf, &quot;Nachricht&quot; -&gt; &quot;Verfasse neue Nachricht&quot;, oder das entsprechende Tastaturkürzel.
-Der Name der Newsgroup erscheint im &quot;Newsgroups&quot;-Feld, und man kann sein Posting schreiben.
-<sect2>Eine Bemerkung zu Binärdateien<p>
-In manchen Newsgroups, deren Namen oft &quot;binary&quot;, &quot;binarios&quot; oder ähnlich enthalten, dürfen Postings auch Binärdateien enthalten. Das können Programme, Bilder, Audiodateien, etc. sein. Oft werden diese als UUkodierte Dateien gepostet. Sollte Sylpheed solche Dateien nicht automatisch dekodieren können, oder wenn es sich um mehrteilige Nachrichten handelt, speichert man die Nachricht(en) als Textdatei(en), bevor man sie mit der entsprechenden Software dekodieren kann. UUkodierte Dateien sehen üblicherweise etwa so aus:
-
-begin 666 sundown.jpg
-
-gefolgt von einem hübsch formatierten Block von Zeichen.
-</sect2>
+<sect1>Importieren von Ordnern aus Windowsprogrammen (Becky!, AL-Mail, Outlook Express4, etc.)<p>
+Eine gute Hilfe f&uuml;r das Importieren von Nachrichten dieser und &auml;hnlicher Mailprogramme ist das Programm mbx2mbox auf sourceforge.net. Das Projekt befindet sich auf 
+<url url="http://mbx2mbox.sourceforge.net" name ="http://mbx2mbox.sourceforge.net.">
+</sect1>
+<sect1>Importieren von dbx-Ordnern aus Outlook Express 5<p>
+Eine gute Hilfe f&uuml;r das Importieren von Nachrichten dieses und &auml;hnlicher Mailprogramme ist das Programm mbx2mbox auf sourceforge.net. Das Projekt befindet sich auf 
+<url url="http://mbx2mbox.sourceforge.net" name="http://mbx2mbox.sourceforge.net.">
+</sect1>
+<sect1>Exportieren von Sylpheeds Mailablagen in eine Mbox-Datei<p>
+Sylpheed kann Mailablagen im Mbox-Format direkt mit &quot;Datei&quot; -&gt; &quot;Exportiere in Mbox-Datei...&quot; exportieren, wobei man den Namen der Mbox-Datei w&auml;hlen oder eingeben kann.
 </sect1>
 </sect>
