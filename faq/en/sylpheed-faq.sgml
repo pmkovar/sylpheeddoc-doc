@@ -4,7 +4,7 @@
     <author>Paul Kater (paul@nlpagan.net)
     and Jens Oberender (j.obi@troja.net)
     <abstract>
-       Sylpheed FAQ (for version 0.6.1)
+       Sylpheed FAQ (for version 0.6.4)
     </abstract>
 <toc>
 <p>
@@ -217,7 +217,11 @@ menu.
 
 <sect1>
 Q24  Can I use procmail to sort my mails with the MH mail handling?<p>
-A.   Yes. Check man procmail for details.
+A.   Yes. Just make sure that you add /. to the end of a rule so procmail knows you are filtering into an MH mail folder. Example:<p>
+<tt>0:</tt><p>
+<tt>* ^Subject:.*sylpheed</tt><p>
+<tt>  sylpheedmail/.</tt><p>
+Check man procmail for details.
 </sect1>
 
 <sect1>
@@ -353,6 +357,11 @@ A.  In the settings part of the program, write
 
 <sect1>Q14 How do I enable GPG support in Sylpheed?<p>
 A.  When compiling Sylpheed, make sure you add <tt>--enable-gpgme</tt> in the ./configure command.
+When that completes successfully, there is a "privacy" section in the Common preferences.
+</sect1>
+
+<sect1>Q15 Mutt does not recognize Sylpheed's MH structure<p>
+A. For this to work you need to use the "touch" command in every MH folder. "touch" the file .xmhcache and Mutt should do just fine.
 </sect1>
 
 </sect>
