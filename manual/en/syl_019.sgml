@@ -1,37 +1,56 @@
-<sect>About This Document
+<sect>Information
 
-<sect1>Copyright Notice<p>
-Copyright (C) 2001 Hiroyuki Yamamoto<p>
-This program has been placed in the GPL.
+<sect1>Websites on Sylpheed<p>
+Here are some links to the Sylpheed FAQ in other languages:<p>
+<itemize>
+<item><url url="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html" name="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html">, courtesy of francois Barrière
+<item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">, SYLPHEED FAQ in Japanese, courtesy of WAKAI "SilverRain" Kazunao
+<item><url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html">, SYLPHEED FAQ in Italian, courtesy of Maurizio Codogno
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.html" name="http://www.synconet.de/privhome/rs/sylpheed_faq.html">, SYLPHEED FAQ in German (HTML-Version)
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.txt" name="http://www.synconet.de/privhome/rs/sylpheed_faq.txt">, the german text-only version, both courtesy of Ralf Schiffers.
+<item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">, SYLPHEED FAQ in Greek courtesy of Theofilos Intzoglou.
+<item><url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl">, SYLPHEED FAQ in Polish courtesy of Przemyslaw Sulek.
+<item>A spanish version of the FAQ is written by Marcelo Ramos:
+<url url="http://www.geocities.com/hackpando/sylpheedfaq.html" name="http://www.geocities.com/hackpando/sylpheedfaq.html">, HTML version,
+<url url="http://www.geocities.com/hackpando/sylpheedfaq.txt" name="http://www.geocities.com/hackpando/sylpheedfaq.txt">, Text version
+<item>In addition, the spanish FAQ is also available from Ricardo Mones Lastra: 
+<url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es/" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es/">, Linked HTML
+<url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi">,  (Device independent)
+<url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps">, the Spanish FAQ as a Postscript file.
+<item><url url="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html" name="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html">, the turkish FAQ for Sylpheed is available, thanks to the translating of Doruk Fisek.
+<item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="http://hem.passagen.se/webplats/sylpheed-faq-se.html">, the Swedish FAQ, courtesy of Mattias Stergren
+</itemize>
 </sect1>
-<sect1>GNU General Public License<p>
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details. You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+<sect1>Mailing Lists<p>
+If you want to stay up to date on Sylpheed, and want to talk about the program with other users, you can join the mailing list.<p>
+Send a mail to sylpheed-ctl@good-day.net that says<p>
+<tt>subscribe Your Name</tt><p>
+in the body.<p>
+The server returns the mail once for the first registration request that asks the confirmation: "May I put you on this mailing list?" that includes the following phrase (this number is merely an example).<p>
+<tt>confirm 84682771 Anne Shirley</tt><p>
+This is a precaution for mischief like subscribing you to the list against your wish.<p>
+If you received the entry confirmation mail, send a mail that includes the phrase:<p>
+<tt>confirm Password(a number) Your Name</tt><p>
+to the address for registration: sylpheed-ctl@good-day.net again. Then, it is considered that you have confirmed the registration and you are registered to the server.<p>
+The address for posting to the list is sylpheed@good-day.net.<p>
+Notice: If you lost the mail that says<p>
+confirm Password(a number) Your Name<p>
+or you became confused and want to do from start, do them over from the start, in other words, send<p>
+<tt>subscribe Anne Shirley</tt><p>
+to sylpheed-ctl@good-day.net again.<p>
+<sect2>How to unsubscribe.<p>
+Send a mail to sylpheed-ctl@good-day.net that says<p>
+<tt>unsubscribe</tt><p>
+in the body.<p>
+</sect2>
+<!-- added aug. 13, 2001 -->
 </sect1>
-<!-- add 2001/07/21 -->
-<sect1>Where to Get the Latest Version of This Document<p>
-You can find the latest version of this document on the site of the Sylpheed documentation project at
+<sect1>Anonymous CVS<p>
+This section has not been written yet.
+</sect1>
 
-<url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
-
-Here FAQ and manual are uploaded as HTML pages, and in form of SGML files within the CVS repository.
-</sect1>
-<sect1>Ending Remark<p>
-I wish to thank everyone involved in the Sylpheed project.<p>
-Hiroyuki Yamamoto and all the other developers for the fabulous program they have created.<p>
-Francois Barriere who helped me become friends with the CVS system.<p>
-All the help I received from everyone on the Sylpheed mailing list while writing the FAQ and this manual.<p>
-Nick Selby, for offering his well appreciated assistance in writing along in this manual.<p>
-All the people around the world who work hard on keeping the manual and FAQ up to date<p>
-And Linus Torvald, who got us a great operating system! ;-)
-<!-- end add 2001/07/21 -->
+<!-- added 2001/09/05 -->
+<sect1>How to tell another program to use Sylpheed as e-mail program<p>
+If you wish to use Sylpheed from within for example Netscape or Opera, then you need to go to the `preferences` section, then choose `applications` and in the email client part, you need to enter <tt>sylpheed --compose</tt>.
 </sect1>
 </sect>
-
