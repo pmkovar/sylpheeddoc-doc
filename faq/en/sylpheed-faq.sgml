@@ -4,7 +4,7 @@
     <author>Paul Kater (paul@nlpagan.net)
     and Jens Oberender (j.obi@troja.net)
     <abstract>
-       Sylpheed FAQ (for version 0.5.2)
+       Sylpheed FAQ (for version 0.5.3)
     </abstract>
 <toc>
 <p>
@@ -68,7 +68,8 @@ A.   Autocollection works since this version. If you need it
 <sect1>
 Q08  Does Sylpheed have mail filtering?<p>
 A.   Yes. You can find it in Configuration -> common
-     preferences -> filtering tab.
+     preferences -> filtering tab.<p>
+	 Please note that filtering is not yet implemented for IMAP accounts.
 </sect1>
 
 <sect1>
@@ -188,9 +189,9 @@ A.   Word wrapping is a bit peculiar perhaps. You can type
 <sect1>
 Q22 Where can I find the latest FAQ on Sylpheed?<p>
 A.   Go to <tt>http://nlpagan.net/sylpheedfaq.htm</tt> where the
-     english FAQ is maintained. There you can also find
-     links to the FAQ in other languages.
-     <bf>New Address???</bf>
+     english FAQ is available in english. There you can also find
+     links to the FAQ in other languages.<p>
+     You can also go to http://www.sourceforge.net and check out the faq and manual from the sylpheeddoc project. Both documents are available in multiple languages there and usually contain the latest updates.
 </sect1>
 
 <sect1>
@@ -435,13 +436,13 @@ A.   As of 0.4.65 you can. The options are:
 </sect1>
 
 <sect1>
-Q10  Why can?t I see the compface pictures?<p>
+Q10  Why can't I see the compface pictures?<p>
 A.   You need to enable displaying of the header pane in the
      general preferences
 </sect1>
 
 <sect1>
-Q11  I still can?t see the pictures. Why not?<p>
+Q11  I still can't see the pictures. Why not?<p>
 A.   You may not have compiled in Compface support. See Qxx
      in the Installation/Configuration section.
 </sect1>

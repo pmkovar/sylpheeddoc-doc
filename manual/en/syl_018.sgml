@@ -1,0 +1,31 @@
+<sect>About This Document
+
+<sect1>Copyright Notice<p>
+This section has not been written yet.
+</sect1>
+<sect1>GNU General Public License<p>
+This section has not been written yet.
+</sect1>
+<!-- add 2001/07/21 -->
+<sect1>Where to Get the Latest Version of This Document<p>
+You can find the latest version of this document on the sort of official Sylpheed manual pages at http://nlpagan.net/sylman/index.html.<p>
+Here the manual is uploaded as HTML pages. From this page you can download these pages as a tar.gz file for offline browsing on your own computer.<p>
+You can also tap into the CVS repository at http://sourceforge.net and look for the project "sylpheeddoc". The document is stored there as an SGML file, you will need the SGML tools for this!
+</sect1>
+<sect1>Ending Remark<p>
+I wish to thank everyone involved in the Sylpheed project.<p>
+Hiroyuki Yamamoto and all the other developers for the fabulous program they have created.<p>
+Francois Barriere who helped me become friends with the CVS system.<p>
+All the help I received from everyone on the Sylpheed mailing list while writing the FAQ and this manual.<p>
+Nick Selby, for offering his well appreciated assistance in writing along in this manual.<p>
+All the people around the world who work hard on keeping the manual and FAQ up to date<p>
+And Linus Torvald, who got us a great operating system! ;-)
+<!-- end add 2001/07/21 -->
+</sect1>
+<sect1>Change Log<p>
+This section has not been written yet.
+</sect1>
+
+</sect>
+
+</article>

@@ -1,0 +1,189 @@
+<sect>Going through the parts of Sylpheed
+
+<sect1>The menu options of Sylpheed.
+<p>
+The menu in Sylpheed is the primary entry to all the things you can do with Sylpheed. The menu structure gives you following options:
+<sect2>File menu
+<p>
+<itemize>
+<item>Add mailbox: this option lets you add a new MH mail-directory. It will generate IN, OUT, QUEUE, DRAFT and TRASH mailfolders inside the new mailbox.
+<item>Update folder tree: rescans the entire tree of existing mailboxes to reflect the correct state (usually won't be necessary).
+<item>Folder: lets you add, rename or delete a mailfolder.
+<item>Import mbox file...: lets you import an mbox file (like created by Pine) into an MH mailbox.
+<item>Export to mbox file: lets you export an MH mailbox to an mbox file.
+<item>Empty trash: obviously, this will empty the trash folder.
+<item>Save as: lets you save the selected e-mail to a plain textfile on disk.
+<item>Print: lets you print the selected e-mail to a printer.
+<item>Close: ends Sylpheed.
+<item>Exit: also ends Sylpheed.
+</itemize>
+</sect2>
+<sect2>Edit menu<p>
+<itemize>
+<item>copy: lets you copy the selected text to a buffer, from where you can paste it into a different place. Shortcut: Ctrl-C
+<item>select all: selects all the text in the current window. Shortcut: Ctrl-A
+<item>search: searches the current window for text you enter. Shortcut: Ctrl-S
+</itemize>
+</sect2>
+<sect2>View menu<p>
+The view menu allows you to change the way that Sylpheed appears. You can set different windows separately (folder view, messages etc.), enable or disable the statusbar and so on.<p>
+<itemize>
+<item>Folder tree: not implemented yet
+<item>Message view: not implemented yet
+<item>Toolbar: sets how you want to see the toolbar. Icons and text, or one of these.
+<item>Status bar: show it or hide it.
+<item>Separate folder tree: selects between having the folder tree attached to the main window, or floating separately.
+<item>Separate message view: selects between having the selected message in the summary pane attached to the main window, or floating separately.
+<item>Code set: allows you to select what codeset you want to use for your e-mails.
+</itemize>
+</sect2>
+<sect2>Message menu<p>
+Here you find the following options:
+<itemize>
+<item>Receive new mail: this will collect all new mail for your default mail-identity.
+<item>Receive from all accounts: Sylpheed will poll all defined mail-identities for new mail.
+<item>Send queued messages: all the messages that you put into the "Queue" folder will now be sent off.
+<item>Compose new message: allows you to write a new e-mail message.
+<item>Reply: an e-mail message will be created with the sender of the selected message in the summary pane as recipient. Depending on the settings, your signature will be added to the mail, and the original mail text will be quoted.
+<item>Reply to all: as Reply, but the recipients will be all e-mail addresses in the original messages (including the ones in the cc: part).
+<item>Forward: a message will be created with the original message in the summary pane as text. You can then enter a recipient e-mail address, edit the text if you want, and send it.
+<item>Forward as attachment: as Forward, but the message text will sent along as a separate textfile.
+<item>Move: lets you move the message to a different folder. You can select the destination folder from a browse-window.
+<item>Copy: as Move, only that the message is copied to the new folder, instead of moved.
+<item>Delete: lets you delete the message that is selected in the summary pane.
+<item>Mark: Gives a submenu: Mark/Unmark/Mark as read/Unmark as read. When you mark messages, you can do a specific action (e.g. move, delete) on all of the marked messages. You can unmark messages that you mistakenly marked. The other options do as they say, they mark or unmark a message as read.
+<item>Open in new window: This will open the message in the summary pane into a new window, allowing you to see more text at once.You can close this window by clicking the close button or pressing Escape.
+<item>View source: opens a new window with the message in it, including all message headers. You can close this window by clicking the close button or pressing Escape.
+<item>Show all header: opens a new window with only the message headers. You can close this window by clicking the close button or pressing Escape.
+<item>Reedit: this option is only available when you select a message in the Draft folder. You can then edit the draft message.
+</itemize>
+A note on functions like Move, Copy and Delete: if you did not specify to execute the commands immediately (in the configuration), you will have to select the "Execute" command. This is a button in the toolbar, and can also be found in the Summary menu.
+</sect2>
+<sect2>Summary menu<p>
+In the Summary menu you can perform all kinds of functions that are related to handling messages. The actions are done on the message summary pane.
+<itemize>
+<item>Delete duplicate messages: This will remove messages from the active folder that were sent twice to you. For example you received a message directly and through a mailing list at the same time.
+<item>Filter messages: you can use this option if you want to filter existing messages through a new filter you set up.
+<item>Execute: this option is needed if you did not set "execute immediately" in the preferences. "Execute" will then do the actions you want (e.g. Copy, Move, Filter etc.)
+<item>Update: refreshes the message pane view to reflect any changes.
+<item>Prev message: selects the previous message. Pine ex-users can also use "p".
+<item>Next message: select the next message. Pine ex-users can also use "n".
+<item>Next unread message: skips to the next unread message in the folder.
+<item>Go to other folder: allows you to open a new mail folder. You can use a browse window for this.
+<item>Sort: this option will allow you to sort the mail view in several ways. You can sort by date, by subject, by number (MH's internal message number is meant here) etc. Note that "Attract by subject" is different from sorting by subject. Attract by subject overlooks the "Re:" references in the subject. In that way messages are sorted in a more logical way.
+<item>Thread view: messages are linked together in a tree view, on subject.
+<item>Unthread view: undos the previous item.
+<item>Set display item: shows a dialog box in which you can check and uncheck the items you want to see in the summary pane.
+</itemize>
+</sect2>
+<sect2>Tool menu<p>
+In the Tool menu you will find 2 options (upto version 0.4.66). It is the address book and the log window.<p>
+In the address book, as you may expect, you can store the e-mail addresses that you want to save. You can create folders within the address book, to keep addresses together.<p>
+In the log window, you can see what Sylpheed is doing. Keeping track of things in that way is very good when you suspect there is something wrong. You can paste the info of the log window into an e-mail and send it to the developer or the mailing list.
+</sect2>
+
+<sect2>Configuration menu<p>
+In the Configuration menu, clearly, you can set up Sylpheed the way you want it to work and react.
+<itemize>
+
+<item>Common preferences: in this option you will be presented a dialog in which you can select a number of tabs. Each tab represents a specific set of settings in Sylpheed. In the next chapter, these dialog options are explained in more detail.
+
+<item>Filtering: this option shows you a dialog in which you can set up the filtering rules that you want Sylpheed to process on receiving new e-mails. You first specify on which part(s) of the e-mail Sylpheed has to check, and then you tell Sylpheed what to do. You can move the message to a different directory (including trash to get rid of spam mail). Selecting the destination folder is possible through a browser window that comes up when you press "Select..."<p>
+You can choose not to receive the e-mail. Note that this will leave the message on the mailserver of your provider, the message will not be removed!<p>
+When you press the "Register" button, the filter rule is added to the list of rules. Do you select "Substitute", then the selected rule is replaced by the information of the setting entered. "Delete" in the end will delete the selected filtering rule.<p>
+Please note that you can set up 2 selections for a rule, which can be "OR'd" or "AND'd". OR means that one of the 2 selections will have to match for the rule to be executed. AND means that both selections have to match before an action is performed.<p>
+To the right of the selection rules you see buttons called UP and DOWN. You can move rules up and down in the list. This will often trigger different behaviour in the selections, so consider the order in which you set the rules.
+<item>Preferences per account: here you can set the specifics for the account you are currently using. Should mail be deleted after fetching, what is the server it comes from, etc. Basically it is the same dialog form as shown in setting up a new account.
+<item>Create new account: here you name the account (each account has a recognizable name), you set up your name and e-mail address etc. You set up the type of server you access (POP4, IMAP4, local mailbox, newsserver) and where the downloaded messages have to go (default folder is the inbox). In the RECEIVE tab you select or unselect options, in SEND you can set up how to send your messages. In COMPOSE you can point to a specific signature file, and in ADVANCED you can set up alternate ports for the server, if these exist. (Do not mess with these unless you are sure you have to!!)
+<item>Edit accounts: here you can select one of the accounts you created, from a list, and edit the information about them. Note that you cannot edit an account for which you are writing a message at the same time. This to ensure data integrity.
+<item>Change current account: here you can select what account you want to use, to write a message.
+</itemize>
+</sect2>
+
+<sect2>Help menu<p>
+This menu lets you look at the (japanese for now) manual, and you can also see the "about" info, who wrote Sylpheed.
+</sect2>
+
+</sect1>
+
+<sect1>Context menu
+<p>
+You can pull up context menus (through clicking button2) for the folder tree and the summary pane. (windows users: button2 is the right mouse button.)
+<p>
+In the folder view you can add, rename and remove folders through the context menu.<p>
+In the message summary you can do a host of things from the context menu, like viewing message headers, opening a message in a separate window (also possible by double clicking on a message) etc.
+</sect1>
+
+<sect>Dialogs and views<p>
+<sect1>Folder view <p>
+The folder view shows you all the mail folders that you have created, in a tree-like structure. If you want to see the headers of the messages in a specific folder, just click the name of the folder once, and in the summary view you can see the messages in the selected mail folder.<p>
+When you see a + sign in front of a folder name, that means the folder branch of that part of the tree is 'collapsed'. You can expand that part by clicking the + sign. In that same manner you can also collapse the - sign in front of an expanded branch of the folder tree.<p>
+Special folders:<p>
+Draft: here you store messages that you want to send out more often, or you want to work on some more. Using the 'reedit' option from the message menu, you can edit the message further.<p>
+Trash: in here all your deleted messages go. Depending on the common preferences setting, this box is or is not emptied when you end Sylpheed.
+</sect1>
+
+<sect1>Summary view <p>
+The summary pane can show you many things. You can select what you want to see from the Summary menu, selecting the option "Set display item". A list of all options is:
+<itemize>
+<item>Mark: shows if the message is marked.
+<item>Unread: shows if the message is read or not
+<item>MIME: shows MIME attachments
+<item>Number: shows the MH number of the message
+<item>Size: the size of the entire message including attachments
+<item>Date: the date of sending by the sender
+<item>From: who sent the message
+<item>Subject: what the message is about
+</itemize>
+You can sort the summary view in many ways, by clicking the button that is above the column. Click once to sort going up (a-z), click once more to sort going down (z-a).<p>
+If you think the size of a column is not right, you can adjust that by placing the mouse cursor next to the button of the column you want to adjust, press mouebutton1 (left button) and drag the column to the width you want it to have.<p>
+Select a message by clicking on it with the mouse. Once the summary pane has the focus of the program, you can also move up and down in the list through the cursor keys, or pressing "p"(revious) and "n"(ext) as in Pine.
+</sect1>
+
+<sect1>Message view <p>
+In the message view you can read the message that you selected in the summary pane. If you entered the summary pane without selecting a message, the message view will be empty. At the top of the message view some info is presented about the message you are reading, as well as some statistics on the selected folder.<p>
+You can scroll up and down in the message by using the arrow keys (after clicking inside the message), or by using the scrollbar.
+</sect1>
+
+<sect1>Common preferences<p>
+The Common Preferences, found in the Configuration menu, shows you the following tabs:
+<sect2>Receive tab<p>
+In here you can set up how to receive messages.
+<itemize>
+<item>You can define a special program to pick up messages from the default unix mailbox. Usually this is not used, but you can use it. Actually, this information may be wrong. If someone knows better, please let me know.
+<item>Local spool lets you define where your local mailbox is located. You can also tell Sylpheed whether or not to filter the incoming messages from that mail spool file.
+<item>Autocheck new mail. When you check this option, Sylpheed will check if there is new mail on the set interval.
+<item>Check new mail on startup means that Sylpheed will immediately look for new mail on all the selected accounts when it loads.
+<item>In the news section you can specify how many articles should be downloaded when opening a newsgroup.
+</itemize>
+</sect2>
+</sect1>
+
+<sect1>Setting up an account/changing an account<p>
+In order to set up an account in Sylpheed, in the configuration menu you select "Create new account". If you want to change the settings of an existing account, you select the "Edit accounts..." option from the configuration menu, and there you select the account you want to change. After that you press "edit". Then a dialog appears in which you can enter or update the following areas:
+<p>
+<sect2>Basic tab<p>
+In the "Basic" tab you name the account. This is to make identifying the account easier.<p>
+Choose a name that tells something about the account, like the name of the ISP, mailbox or news-server you are setting up.  You can select this account to be the default account ("Usually used").<p>
+Enter your name and e-mail address, and if you have one, the organization that you use Sylpheed for.
+In the Protocol box you select the type of service that this account will be using. The flavors you can choose are: POP3 normal, POP3 APOP auth, IMAP4, NNTP news or None (local).
+In the "inbox" field you can enter the mail folder where the mail for this account will be stored in. This option is disabled when you set up an NNTP News account.<p>
+For POP3 and IMAP services you can then specify the server where your mail is stored. Details about this name, and also the name that goes into the field for "SMPT server (send)" should be given to you by your ISP.<p>
+For a local unix mailbox, the "Server for receiving" is disabled, since the mail will be received for you.<p>
+The fields for User ID and Password will also be disabled for accounts that do no deal with POP3 or IMAP services. Otherwise you can enter the login name and password for the e-mail server with your ISP here. Usually these are the same as your login name and password to access the dial-in service, but this is not standard. If in doubt, contact the helpdesk of your ISP.  <p>
+</sect2>
+<sect2>Receive tab<p>
+<p>
+The "Receive" tab is only used for POP3 accounts. Here you specify if the mails that were successfully retrieved should be removed from the server. You can also tell Sylpheed to get all the messages there, not only the ones you already received (in case you leave your messages on the server). The third option enables this account to be included when mail is checked for "all accounts" (see the message menu for this), and if the incoming messages should immediately be filtered when received.
+</sect2>
+<sect2>Send tab <p>
+In the "Send" tab you can set up some more settings.
+</sect2>
+<sect2>Compose tab <p>
+In the "Compose" tab you can define your signature file.
+</sect2>
+<sect2>Advanced tab<p>
+In the "Advanced" tab you can edit the portnumbers for the servers you will be using. This normally will need no change.
+</sect2>
+</sect1>
+</sect>

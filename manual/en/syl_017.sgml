@@ -1,0 +1,50 @@
+<sect>Information
+
+<sect1>Websites on Sylpheed<p>
+Here are some links to the Sylpheed FAQ in other languages:<p>
+<itemize>
+<item>Sylpheed FAQ in french: http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html, courtesy of DINH V. Hoa
+<item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm, SYLPHEED FAQ in Japanese, courtesy of WAKAI "SilverRain" Kazunao
+<item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html, SYLPHEED FAQ in Italian, courtesy of Maurizio Codogno
+<item>http://www.synconet.de/privhome/rs/sylpheed_faq.html, SYLPHEED FAQ in German (HTML-Version)
+<item>http://www.synconet.de/privhome/rs/sylpheed_faq.txt, the german text-only version, both courtesy of Ralf Schiffers.
+<item>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html, SYLPHEED FAQ in Greek courtesy of Theofilos Intzoglou.
+<item>http://sylpheed.republika.pl, SYLPHEED FAQ in Polish courtesy of Przemyslaw Sulek.
+<item>A spanish version of the FAQ is written by Marcelo Ramos:
+http://www.geocities.com/hackpando/sylpheedfaq.html, HTML version,
+http://www.geocities.com/hackpando/sylpheedfaq.txt, Text version
+<item>In addition, the spanish FAQ is also available from Ricardo Mones Lastra: 
+http://www.aic.uniovi.es/mones/sylpheed/faq-es/, Linked HTML
+http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi,  (Device independent)
+http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps, the Spanish FAQ as a Postscript file.
+<item>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html, the turkish FAQ for Sylpheed is available, thanks to the translating of Doruk Fisek.
+<item>http://hem.passagen.se/webplats/sylpheed-faq-se.html, the Swedish FAQ, courtesy of Mattias Stergren
+</itemize>
+</sect1>
+<sect1>Mailing Lists<p>
+If you want to stay up to date on Sylpheed, and want to talk about the program with other users, you can join the mailing list.<p>
+Send a mail to sylpheed-ctl@good-day.net that says<p>
+subscribe Your Name<p>
+in the body.<p>
+The server returns the mail once for the first registration request that asks the confirmation: "May I put you on this mailing list?" that includes the following phrase (this number is merely an example).<p>
+confirm 84682771 Anne Shirley<p>
+This is a precaution for mischief like subscribing you to the list against your wish.<p>
+If you received the entry confirmation mail, send a mail that includes the phrase:<p>
+confirm Password(a number) Your Name<p>
+to the address for registration: sylpheed-ctl@good-day.net again. Then, it is considered that you have confirmed the registration and you are registered to the server.<p>
+The address for posting to the list is sylpheed@good-day.net.<p>
+Notice: If you lost the mail that says<p>
+confirm Password(a number) Your Name<p>
+or you became confused and want to do from the first, do them over from `the first', in other words, send<p>
+subscribe Anne Shirley<p>
+How to unsubscribe.<p>
+Send a mail to sylpheed-ctl@good-day.net that says<p>
+unsubscribe<p>
+in the body.<p>
+<!-- added aug. 13, 2001 -->
+</sect1>
+<sect1>Anonymous CVS<p>
+This section has not been written yet.
+</sect1>
+
+</sect>

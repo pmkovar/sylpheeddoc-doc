@@ -1,0 +1,82 @@
+<!doctype linuxdoc system>
+<article>
+    <title>Sylpheed User's Manual
+    <author>Paul Kater (paul@nlpagan.net)
+	    Nick Selby
+    <abstract>
+       Sylpheed User's Manual for Sylpheed-0.5.3
+    </abstract>
+
+<toc>
+
+<sect>What is Sylpheed?
+
+<sect1>Introduction to Sylpheed.
+<p>
+Sylpheed is a fast e-mail and news client. It will run on just about any Linux or Unix compliant system.
+<p>
+The power of Sylpheed is that it is
+<itemize>
+<item>light on resources
+<item>very fast
+<item>intuitive for most people
+<item>easy to work with
+<item>loaded with features
+<item>graceful and sophisticated in its interface
+</itemize>
+</sect1>
+
+<sect1>Interface
+<p>
+The appearance and interface are similar to some popular e-mail clients for Windows, such as Outlook Express, Becky!, and Datula. The interface is also designed to emulate the mailers on Emacsen, and almost all commands are accessible with the keyboard.
+<p>
+The messages are managed by MH format, and you'll be able to use it together with another mailer based on MH format (like Mew). You can also utilize fetchmail or/and procmail, and external programs for receiving (like inc or imget).
+i
+</sect1>
+
+<sect1>Main features
+<p>
+Currently implemented features are: 
+<itemize>
+<item>Unlimited multiple account handling
+<item>Thread display
+<item>Filtering 
+<item>MIME (attachments) 
+<item>built-in image view 
+<item>X-Face support 
+<item>External editor support 
+<item>Message queueing 
+<item>Draft message function 
+<item>Line-wrapping 
+<item>Clickable URI 
+<item>XML-based addressbook 
+<item>Newly arrived and unread message management 
+<item>Multiple MH folder support 
+<item>Mew/Wanderlust compatible key bindings 
+<item>News reader function 
+<item>Printing 
+<item>UIDL support 
+<item>APOP authentication 
+<item>SMTP AUTH support
+<item>IPv6 support 
+<item>Autoconf, automake support 
+<item>Support of i18n of messages by gettext 
+<item>Supports many locales, including UTF-8 (Unicode), when using libjconv 
+<!-- added 2001/07/19 -->
+<item>IMAP4 compliant
+</itemize>
+This list is not complete, but this will at least show you the most common features in Sylpheed.
+</sect1>
+
+<sect1>Methods for managing messages
+<p>
+This section has not been written yet.
+</sect1>
+
+<sect1>Features for the future
+<p>
+This section has not been written yet.
+</sect1>
+
+</sect>
+

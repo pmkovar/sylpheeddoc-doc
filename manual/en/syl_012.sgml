@@ -1,0 +1,17 @@
+<sect>Conversion of Other Mail Format into Sylpheed (MH Format)
+
+<sect1>Importing Messages of mbox Format<p>
+<!-- added 2001/07/20 -->
+Sylpheed lets you import messages of the Mbox format from the File menu. First you create the mail folder where you want the messages to end up in, then you select File->import Mbox file. Use the browse function to select the Mbox file and the Sylpheed mail folder, and press Ok. And voila, there is your mail, imported.<p>
+That was easy, wasn't it?
+</sect1>
+
+<sect1>Importing from Windows Mailers (Becky!, AL-Mail, Outlook Express4, etc.)<p>
+For import possibilities of the mail folders of these and more mail programs you can download the program mbx2mbox at sourceforge.net. The project is located at http://mbx2mbox.sourceforge.net.
+</sect1>
+<sect1>Importing dbx Format of Outlook Express 5<p>
+For import possibilities of the mail folders of these and more mail programs you can download the program mbx2mbox at sourceforge.net. The project is located at http://mbx2mbox.sourceforge.net.
+</sect1>
+<!-- End added 2001/07/21 -->
+</sect>
+

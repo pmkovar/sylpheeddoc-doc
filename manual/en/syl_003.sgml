@@ -1,0 +1,22 @@
+<!-- added 2001/07/20 -->
+<sect>Quick-guide for news setup<p>
+<sect1>Getting news in a hurry.<p>
+<p>
+In the configuration menu, select "Create new account"
+<p>
+In the "Basic" tab, enter the relevant data. You name the account, enter your name and e-mail address, etc. To connect to news, in the Protocol box you select "News (NNTP)".
+<p>
+Enter the newsserver information.
+<p>
+Skip the "Receive" tab.
+<p>
+In the "Send" tab you can set up some more settings.
+<p>
+In the "Compose" tab you can define your signature file.
+<p>
+In the "Advanced" tab you can edit the portnumbers for the servers you will be using. This normally will need no change.
+<p>
+Close the dialogs, right click the new News folder in the folder pane and select "Subscribe to newsgroups". If not done already, a list of groups will be downloaded from the server. From there you will find your way, so good luck!
+<!-- end added 2001/07/20 -->
+</sect1>
+</sect>
