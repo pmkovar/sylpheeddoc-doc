@@ -28,7 +28,7 @@ La puissance de Sylpheed provient du fait qu'il
 <item>intuitif
 <item>simple a utiliser
 <item>très complet
-<item>avec un interface agrèable et sophistiquée
+<item>avec un interface agréable et sophistiquée
 </itemize>
 </sect1>
 
@@ -36,7 +36,7 @@ La puissance de Sylpheed provient du fait qu'il
 <p>
 L'apparence et l'interface sont semblables à celle de la plupart des clients
 de messagerie pour Windows, tel que Outlook Express, Becky!, et Datula.
-L'interface est aussi concue pour simuler les messageries de Emacsen,
+L'interface est aussi conçue pour simuler les messageries de Emacsen,
 et la plupart des commandes sont accessibles au clavier.
 <p>
 Les messages sont stockés au format MH, et vous serez capable de l'utiliser
@@ -60,15 +60,15 @@ Sont actuellement inclus:
 <item>la mise en attente des messages (envoi)
 <item>La fonction de brouillon 
 <item>La césure de ligne
-<item>Les URL exécutables
-<item>Un carnet d'adresse XML
-<item>La gestion des nouveaux messages, des message non lu
-<item>Le support de répertoires MH multiple
-<item>Des racourcis claviers compatibles Mew/Wanderlust
+<item>Les liens cliquables
+<item>Un carnet d'adresses XML
+<item>La gestion des nouveaux messages, des message non lus
+<item>Le support de répertoires MH multiples
+<item>Des raccourcis claviers compatibles Mew/Wanderlust
 <item>Les fonctions de lecteur de nouvelles
 <item>L'impression
 <item>Le support UIDL
-<item>L'authentification APOP
+<item>L'authentification APOP pour le protocole POP3
 <item>Le support AUTH SMTP
 <item>Le support IPv6
 <item>Le support Autoconf, automake 
@@ -77,7 +77,7 @@ Sont actuellement inclus:
 <!-- added 2001/07/19 -->
 <item>La compatibilité IMAP4
 </itemize>
-Cette liste n'est pas complete, mais vous donne un aperçu des possibilitees
+Cette liste n'est pas complète, mais vous donne un aperçu des possibilités
 principales de Sylpheed.
 </sect1>
 
@@ -86,7 +86,7 @@ principales de Sylpheed.
 Cette section n'a pas encore été écrite (soyez patient).
 </sect1>
 
-<sect1>Fututres developements
+<sect1>Orientation du dévelopement
 <p>
 Cette section n'a pas encore été écrite (soyez patient).
 </sect1>

@@ -1,7 +1,7 @@
 
 <sect>Guide rapide pour la configuration du courrier.
 
-<sect1>Configuration pour la lecture de votre boîte aux lettres Unix dans l'urgence
+<sect1>Configuration rapide pour la lecture du courrier de votre boîte aux lettres Unix
 <p>
 Dans le menu de configuration, sélectionnez "Créer un nouveau compte"
 <p>
@@ -9,32 +9,34 @@ Dans l'onglet "Basic", veuillez entrer les données nécessaires. Nommez le compte
 <p>
 Lorsque vous sélectionnez cette option, le "Server for receiving" est grisé car il n'est plus utile. Vous pouvez aussi entrer le serveur à utiliser pour l'envoi (SMTP) dans cet onglet.
 <p>
-L'onglet "Receive" n'est pas utilisé dans cette configuration car vous ne demandez pas (((((( polling)))))) un serveur, vos courriers vous sont envoyés.
+L'onglet "Recevoir" n'est pas utilisé dans cette configuration car vous ne récupérez pas votre courrier sur un serveur, vos courriers vous sont envoyés.
 <p>
-Dans l'onglet "Send", vous pouvez configurer quelques nouveaux éléments.
+Dans l'onglet "Envoi", vous pouvez configurer quelques nouveaux éléments.
 <p>
 Dans l'onglet "Compose", vous pouvez définir votre fichier de signature.
 <p>
-Dans l'onglet "Advanced", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Ceci ne devrait pas changer.
+Dans l'onglet "Avancé", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Vous n'avez normalement pas besoin d'y toucher.
 <p>
-C'est la base que vous avez besoin pour démarrer en utilisant Sylpheed pour les boîtes aux lettres locales. Vous pouvez presser Alt-I ou sélectionner "Message -> receive new mail" et voir si vous avez de nouveaux courriers !
+C'est la configuration qui sera nécessaire à sylpheed pour 
+accéder à votre boîte aux lettres locale. Vous pouvez presser Alt-I ou sélectionner "Message -> receive new mail" et voir si vous avez de nouveaux courriers !
 </sect1>
-<sect1>Configurations pour lire du courrier POP3 dans l'urgence
+<sect1>Configuration rapide pour lire le courrier à partir d'un serveur POP3.
 <p>
 Dans le menu de configuration, sélectionnez "Create new account"
 <p>
-Dans l'onglet "Basic", entrez les données nécessaires. Vous devez nommer le compte, entrer votre nom et votre adresse e-mail, etc. Vous pouvez sélectionner ce compte pour ête celui par défaut avec ("Usually used"). Pour contrôler votre courrier POP3, vous devez sélectionner "POP3 (normal)" dans la boîte Protocol.
+Dans l'onglet "Base", entrez les données nécessaires. Vous devez nommer le compte, entrer votre nom et votre adresse e-mail, etc. Vous pouvez sélectionner ce compte pour ête celui par défaut avec ("Usually used"). Pour contrôler votre courrier POP3, vous devez sélectionner "POP3 (normal)" dans la boîte Protocol.
 <p>
 Entrer les informations serveur pour "Server for receiving". Vous pouvez alors entrer le serveur pour l'envoi (SMTP) dans cet onglet.
 <p>
-Dans l'onglet "Receive", pouvez définir quelques sélections ou préférences que vous souhaiteriez utiliser.
+Dans l'onglet "Recevoir", pouvez définir quelques sélections ou préférences que vous souhaiteriez utiliser.
 <p>
-Dans l'onglet "Send", vous pouvez configurer quelques éléments supplémentaires.
+Dans l'onglet "Envoi", vous pouvez configurer quelques éléments supplémentaires.
 <p>
-Dans l'onglet "Compose", vous pouvez définir votre fichier de signature.
+Dans l'onglet "Composition", vous pouvez définir votre fichier de signature.
 <p>
-Dans l'onglet "Advanced", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Ceci ne nécessitera pas normalement de changement.
+Dans l'onglet "Avancé", vous pouvez éditer les numéros de ports des serveurs que vous allez utiliser. Ceci ne nécessitera pas normalement de changement.
 <p>
-C'est la base dont vous avez besoin pour démarrer en utilisant Sylpheed pour les boîtes aux lettres POP3. Vous pouvez presser Alt-I ou sélectionner "Message -> receive new mail" et voir si vous avez de nouveaux courriers !
+C'est la configuration qui sera nécessaire à sylpheed pour 
+accéder à votre boîte aux lettres via POP3.. Vous pouvez presser Alt-I ou sélectionner "Message -> receive new mail" et voir si vous avez de nouveaux courriers !
 </sect1>
 </sect>
