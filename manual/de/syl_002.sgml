@@ -1,4 +1,20 @@
 <sect>Kurzanleitung E-Mail einrichten
+<sect1>Sylpheed zum ersten Mal starten<p>
+Beim ersten Start von Sylpheed wird man in einem Dialog
+durch die grundlegenden Schritte der Konfiguration geführt.
+In einem Pop-up Fenster wird man zunächst nach dem Verzeichnis
+gefragt, in welchem Sylpheed Nachrichten und Ablagen verwalten soll.
+Dieses Verzeichnis wird im Benutzerverzeichnis angelegt (oder unter
+Windows in C:\windows\Application Data\Sylpheed).
+Der voreingestellte Name für das Verzeichnis ist "Mail".
+
+<figure loc="here"><ph vspace="1cm"><img src="snapshots/wizard_1.png"></figure>
+
+Als nächstes gelangt man zu den Accounteinstellungen.
+Abhängig vom verwendeten Mailserver (lokale Unix Mailbox oder
+POP3 Account) vervollständigt man die Konfiguration wie im Folgenden
+beschrieben.
+</sect1>
 <sect1>Schnellinstallation einer Unix Mailbox<p>
 <itemize>
 <item>In der Menüleiste &quot;Einstellungen&quot; -&gt; &quot;Neuen Account erstellen...&quot; wählen.
