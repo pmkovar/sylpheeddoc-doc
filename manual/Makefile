@@ -10,6 +10,9 @@
 #
 ######################################################################
 # $Log: Makefile,v $
+# Revision 1.4  2002/03/12 20:41:45  nikai
+# sgml2html language support
+#
 # Revision 1.3  2001/09/01 00:20:09  mones
 # Deleted my stupid revision comment. I shouldn't play with cvs late night...
 #
@@ -22,13 +25,13 @@
 ######################################################################
 
 SGML_TOOL     := /usr/bin/sgml2html
-SGML_TOOL_OPT :=
+SGML_TOOL_OPT := --language=$(LANG1)
 #SGML_TOOL_OPT := --imagebuttons
 
 #
 #  Defines the list of languages to process.
 #
-LANGS         := en fr es
+LANGS         := en fr es de
 
 #
 #  Where are the HTML pages:

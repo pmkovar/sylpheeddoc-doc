@@ -10,6 +10,9 @@
 #
 ######################################################################
 # $Log: Makefile,v $
+# Revision 1.2  2002/03/12 20:41:44  nikai
+# sgml2html language support
+#
 # Revision 1.1  2001/12/03 21:38:46  fbarriere
 # Created, added 'release' target.
 #
@@ -20,13 +23,13 @@
 TODAY         := $(shell date "+%d%m%y")
 
 SGML_TOOL     := /usr/bin/sgml2html
-SGML_TOOL_OPT :=
+SGML_TOOL_OPT := --language=$(LANG1)
 #SGML_TOOL_OPT := --imagebuttons
 
 #
 #  Defines the list of languages to process.
 #
-LANGS         := en fr es
+LANGS         := en fr es de
 
 #
 #  Where are the HTML pages:
