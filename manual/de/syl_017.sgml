@@ -1,17 +1,15 @@
 <sect>Weitere Informationen
-
-<sect1>Websites über Sylpheed
-<p>
+<sect1>Websites über Sylpheed<p>
 Hier befinden sich Sylpheed FAQs in verschiedenen Sprachen:
-<p>
+
 <itemize>
 <item><url url="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html" name="http://sylpheeddoc.sourceforge.net/fr/faq/sylpheed-faq.html">, französische Sylpheed FAQ, von Francois Barrière
 <item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">, japanische Sylpheed FAQ, Wakai &quot;SilverRain&quot; Kazunao
 <item><url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html">, italienische Sylpheed FAQ, Maurizio Codogno
 <item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.html" name="http://www.synconet.de/privhome/rs/sylpheed_faq.html">, deutsche Sylpheed FAQ (HTML-Version), Ralf Schiffers
 <item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.txt" name="http://www.synconet.de/privhome/rs/sylpheed_faq.txt">, deutsche Sylpheed FAQ (Textversion), Ralf Schiffers
-<item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">, griechische Sylpheed FAQ, Theofilos Intzoglou.
-<item><url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl">, polnische Sylpheed FAQ, Przemyslaw Sulek.
+<item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">, griechische Sylpheed FAQ, Theofilos Intzoglou
+<item><url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl">, polnische Sylpheed FAQ, Przemyslaw Sulek
 <item>Eine spanische Version der Sylpheed FAQ, von Marcelo Ramos:
 <url url="http://www.geocities.com/hackpando/sylpheedfaq.html" name="http://www.geocities.com/hackpando/sylpheedfaq.html">, HTML-Version,
 <url url="http://www.geocities.com/hackpando/sylpheedfaq.txt" name="http://www.geocities.com/hackpando/sylpheedfaq.txt">, Textversion
@@ -23,44 +21,40 @@ Hier befinden sich Sylpheed FAQs in verschiedenen Sprachen:
 <item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="http://hem.passagen.se/webplats/sylpheed-faq-se.html">, die schwedische Sylpheed FAQ, Mattias Stergren
 </itemize>
 </sect1>
-
-<sect1>Mailinglisten
-<p>
+<sect1>Mailinglisten<p>
 Wenn man die neuesten Entwicklungen von Sylpheed verfolgen will, oder mit anderen Benutzern über das Programm diskutieren möchte, kann man sich der Mailingliste anschließen.
-<p>
+
 Man schickt eine E-Mail ohne Betreff an sylpheed-ctl@good-day.net mit dem Inhalt
-<p>
+
 <tt>subscribe Vorname Nachname</tt>
-<p>
+
 Um zu verhindern, daß man gegen seinen Willen in die Mailingliste eingetragen wird, erhält man nun zunächst eine E-Mail, in der man aufgefordert wird das Abonnement zu bestätigen. Am besten antwortet man darauf allein mit folgendem in der E-Mail enthaltenen Text (Nummer und Name nur als Beispiel):
-<p>
+
 <tt>confirm 84682771 Anne Shirley</tt>
-<p>
+
 also
-<p>
+
 <tt>confirm &lt;Nummer&gt; &lt;Name&gt;</tt>
-<p>
+
 als Antwort, bzw. an sylpheed-ctl@good-day.net
-<p>
+
 Nun ist man in der Mailingliste eingetragen. Die E-Mail-Adresse, um an die Liste zu schreiben, ist sylpheed@good-day.net
-<p>
+
 Bemerkung: Wenn man die E-Mail verliert, in der &quot;confirm &lt;Nummer&gt; &lt;Name&gt;&quot; enthalten ist, bevor man bestätigt hat, und man nochmal mit dem Abonnieren von Vorne anfangen möchte, ist das kein Problem. Man schickt einfach wieder eine E-Mail ohne Betreff an sylpheed-ctl@good-day.net mit dem Inhalt
-<p>
+
 <tt>subscribe Vorname Nachname</tt>
 <sect2>Wie man die Mailingliste abbestellt<p>
-Um die Mailingliste wieder abzubestellen, schickt man eine E-Mail ohne Betreff an sylpheed-ctl@good-day.net mit dem Inhalt<p>
-<tt>unsubscribe</tt><p>
-</sect2>
+Um die Mailingliste wieder abzubestellen, schickt man eine E-Mail ohne Betreff an sylpheed-ctl@good-day.net mit dem Inhalt
 
+<tt>unsubscribe</tt>
+</sect2>
 </sect1>
 <!--
 <sect1>Anonymer CVS-Zugang
 <p>
 </sect1>
 -->
-
-<sect1>Wie man ein anderes Programm konfiguriert, um Sylpheed als Emailprogramm zu verwenden
-<p>
+<sect1>Wie man ein anderes Programm konfiguriert, um Sylpheed als Emailprogramm zu verwenden<p>
 Wenn man Sylpheed als Mailprogramm in seinem Webbrowser konfigurieren möchte (etwa Galeon, Konqueror, Mozilla, Skipstone, Opera, Netscape, etc), so kann man das für gewöhnlich in den Einstellungen des Browsers machen. Als E-Mail-Programm gibt man dort <tt>sylpheed --compose</tt> an.
 </sect1>
 </sect>
