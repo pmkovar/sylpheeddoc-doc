@@ -1,0 +1,24 @@
+<sect>FAQ<p>
+You can find the latest, updated, FAQ (Frequently Asked Questions list) at 
+<url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
+
+<sect1>Unread News Messages
+</sect1>
+<sect1>Using MSN Mail Accounts
+</sect1>
+<sect1>Changing Fonts on Menu, etc.<p>
+If you want to change the font that shows the menu of Sylpheed, this is controlled by the window manager that you are using. You have to go into the setup of the window manager (KDE, Gnome, XFCE) and change the font to your desired one.<p>
+Changing the font of the views of Sylpheed is done by selecting "Common preferences" in the Configuration menu. There you select the "Display" tab, and in the first section of the window you can browse the fonts available on your computer.
+</sect1>
+<sect1>Changing Key Binding of Short-Cut Key<p>
+Sylpheed's graphical interface is based on GTK. This means that it is very simple to change the key binding (shortcut key, hotkey) for menu items. If you are used to a certain key combination from another program, you can tell Sylpheed to use that same key combination.<p>
+The procedure is very simple. Suppose you want to change the key binding for getting new mail (message menu) from Alt-I to Ctrl-M.<p>
+<itemize>
+<item>Open the message menu with the mouse or by pressing Alt-M
+<item>Select the "get new mail" option (do not click it, this will activate the function!). If you use the mouse, just move the mouse cursor over the option.
+<item>Now you press Ctrl-M. You will immediately see the new key combination appear on the menu.
+</itemize>
+Congratulations, you have just changed a key binding. This way you can change all the options that you want. Do note that it is best to use just the alt, shift and ctrl key combinations. Several functions within Sylpheed are called up by one-key actions which are programmed in.
+</sect1>
+
+</sect>

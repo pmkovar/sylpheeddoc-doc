@@ -1,0 +1,18 @@
+<sect>Recieving Messages
+
+<sect1>Using POP Reception Function in Sylpheed<p>
+<!-- added 2001/07/19 -->
+Receiving messages from a POP server is very easy, once you set up Sylpheed the proper way. You can refer to the section "Setting up an account" on how to do this.<p>
+Once you are connected to the internet, or by another network that gives you access to the POP server, simply press the "Get new mail" button (or press Alt-I) and Sylpheed will connect to the server to fetch your new mail. Once this is retrieved, any filters you may have set up will be executed and then the folder pane will show you, marked in bold, which folder/mailbox contains new messages.
+<!-- end addition 2001/07/19 -->
+</sect1>
+<sect1>Using Other Programs such as fetchmail<p>
+<!-- added 2001/07/19 -->
+Although it is not within the scope of this manual, a bit of information on fetchmail or getmail.<p>
+You need to have either of these programs installed, and configured correctly. See the man pages/README files of the appropriate program on doing this.<p>
+After setting the program up, you can invoke it, either by hand or through CRON, to get your mail. The mail will usually be downloaded into /var/spool/mail/your_user_id. You can then tell Sylpheed, through an account that looks in your local unix mailbox, to get mail from there. For this you press the "Get mail" button, or press "Alt-I".
+<!-- end addition 2001/07/19 -->
+</sect1>
+
+</sect>
+

@@ -1,0 +1,37 @@
+<sect>About This Document
+
+<sect1>Copyright Notice<p>
+Copyright (C) 2001 Hiroyuki Yamamoto<p>
+This program has been placed in the GPL.
+</sect1>
+<sect1>GNU General Public License<p>
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+</sect1>
+<!-- add 2001/07/21 -->
+<sect1>Where to Get the Latest Version of This Document<p>
+You can find the latest version of this document on the site of the Sylpheed documentation project at
+
+<url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
+
+Here FAQ and manual are uploaded as HTML pages, and in form of SGML files within the CVS repository.
+</sect1>
+<sect1>Ending Remark<p>
+I wish to thank everyone involved in the Sylpheed project.<p>
+Hiroyuki Yamamoto and all the other developers for the fabulous program they have created.<p>
+Francois Barriere who helped me become friends with the CVS system.<p>
+All the help I received from everyone on the Sylpheed mailing list while writing the FAQ and this manual.<p>
+Nick Selby, for offering his well appreciated assistance in writing along in this manual.<p>
+All the people around the world who work hard on keeping the manual and FAQ up to date<p>
+And Linus Torvald, who got us a great operating system! ;-)
+<!-- end add 2001/07/21 -->
+</sect1>
+</sect>
+

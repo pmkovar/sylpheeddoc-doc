@@ -1,0 +1,23 @@
+<sect>Handling MIME types
+
+<sect1>How Sylpheed checks for Mime types<p>
+
+(Thanks to Adriaan Penning for writing this!)<p>
+
+Two files, mime.types and mailcap, are involved in determining the mime type of an attachment, and the application associated with that mime type. The mime.types file is used to determine the mimetype of attachments you add when composing a message. The mime.types file consists of lines like:<p>
+
+application/pdf                    pdf<p>
+
+Sylpheed looks for this file in SYSCONFDIR (determined at compile time), /etc/ and $HOME/.sylpheed/ 
+
+If this file doesn't exist or has the wrong format, every attachment will have 	`application/octet-stream' as it's mime type, so the recipients mail client may not know what application to use to view the attachment.
+
+To change the default application that sylpheed uses to view an attachment that	somebody mailed you, look for a mailcap file like /etc/mailcap or $HOME/.mailcap
+
+For example, you can add a line like this in $HOME/.mailcap if you want to view pdf	files with xpdf:<p>
+
+application/pdf ; xpdf %s
+
+</sect1>
+</sect>
+

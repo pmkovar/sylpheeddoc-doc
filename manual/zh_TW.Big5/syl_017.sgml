@@ -1,0 +1,95 @@
+<sect>Reference<p>
+<!-- Added 2001/07/21 -->
+In this section you will find a few pieces of information that might be handy in making Sylpheed more clear for you in respect to the used shortcut keys, and a layout of the format of the address book.
+<sect1>Short-Cut Key List<label id="shortcut"><p>
+<sect2>One-key shortcuts:<p>
+<itemize>
+<item>a: create a new message
+<item>d: delete the selected message
+<item>f: forward the selected message#
+<item>g: go to a specific folder through a browsing dialog
+<item>n: jump to the next message/next part of a multipart message
+<item>p: jump to the previous message/previous part of a multipart message
+<item>v: switch on/off the message view
+<item>w: same as a
+<item>y: Opens save as... dialog
+</itemize>
+</sect2>
+<sect2>Shortcuts to the File menu:<p>
+<itemize>
+<item>Alt-F: open FILE menu
+<item>Alt-P: print
+<item>Alt-W: close
+<item>Alt-Q: exit
+</itemize>
+</sect2>
+<sect2>Shortcuts to the Edit menu<p>
+<itemize>
+<item>Alt-E: open EDIT menu
+<item>Ctrl-C: copy
+<item>Ctrl-A: select all
+<item>Ctrl-S: search
+</itemize>
+</sect2>
+<sect2>Shortcuts to the View menu<p>
+<itemize>
+<item>Alt-V: open VIEW menu
+</itemize>
+<sect2>Shortcuts to the Message menu<p>
+<itemize>
+<item>Alt-M: open MESSAGE menu
+<item>Alt-I: check mail for current account
+<item>Shift-Alt-I: Check mail for all accounts
+<item>Alt-N: compose new message
+<item>Alt-R: reply to message
+<item>Ctrl-Alt-R: reply to sender (contrary to reply to e.g. mailing list)
+<item>Shift-Alt-R: reply to all (includes all addresses in To: and Cc:)
+<item>Ctrl-F: forward message
+<item>Shift-Ctrl-F: forward message as attachment
+<item>Alt-O: move message
+<item>Alt-D: delete message
+<item>Shift-Ctrl-N: open message in new window
+<item>Ctrl-U: view message source
+<item>Ctrl-H: show all message headers
+</itemize>
+</sect2>
+<sect2>Shortcuts to the Summary menu<p>
+<itemize>
+<item>Alt-S: open SUMMARY menu<p>
+<item>Alt-X: execute (pending commands, only useful when commands are not executed immediately)
+<item>Alt-U: update view
+<item>Alt-G: go to other folder
+<item>Ctrl-T: thread view
+<item>Shift-Ctrl-T: unthread view
+</itemize>
+</sect2>
+<sect2>Shortcuts to the Tool menu<p>
+<itemize>
+<item>Alt-T: open tool menu
+<item>Alt-A: open addressbook
+<item>Alt-L: open logfile
+</itemize>
+</sect2>
+</sect1>
+
+<sect1>Data Format of Address Book<p>
+The addressbook is located in ~/.sylpheed. It is named addressbook.xml.
+The general format of the addressbook is:<p>
+
+<code>
+&lt addressbook &gt<p>
+ &lt common_address &gt<p>
+    &lt group name="Common addresses" &gt<p>
+    &lt item &gt<p>
+     &lt name &gt Paul &lt /name &gt<p>
+     &lt address &gt paul@nlpagan.net &lt /address &gt<p>
+     &lt remarks &gt Writes Sylph. manual &lt /remarks &gt<p>
+	&lt /item &gt<p>
+    &lt /group &gt<p>
+ &lt /common_address &gt<p>
+&lt /addressbook &gt
+</code>
+
+</sect1>
+<!-- end add 2001/07/21 -->
+</sect>

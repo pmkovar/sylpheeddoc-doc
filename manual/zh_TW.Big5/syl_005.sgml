@@ -1,0 +1,24 @@
+
+<sect>Starting and quitting Sylpheed
+
+<sect1>Starting Sylpheed
+<p>
+Starting Sylpheed can be done by typing "sylpheed" on a prompt in a terminal and pressing Enter. You can also add Sylpheed to a menu in KDE or Gnome, or create a shortcut to it on the desktop, if your window manager allows that.
+<p>
+When you first start Sylpheed, the program will ask you where you want to store the mails that you downloaded. You can accept the default ($HOME/Mail) or set up your own mail folder.
+<p>
+Sylpheed will then load with it's default settings. The way to change these are written about further on in this manual.
+</sect1>
+
+<sect1>Quitting Sylpheed
+<p>
+Ending Sylpheed can be done in several ways:
+<itemize>
+<item>Select "quit" from the File menu
+<item>Press Ctrl-Q
+<item>Click the "program close" button in the titlebar.
+</itemize>
+</sect1>
+
+</sect>
+
