@@ -1,227 +1,628 @@
-<sect>À la découverte de Sylpheed
+<sect>Les options du menu de Sylpheed
+<p>
+Le menu de Sylpheed est le point d'entrée à toutes les opérations 
+que vous pouvez réaliser avec Sylpheed. La structure du menu est 
+la suivante~:
 
-<sect1>Les options du menu de Sylpheed
-<p>
-Le menu de Sylpheed est le point d'entrée à toutes les opérations que vous pouvez réaliser avec Sylpheed. La structure du menu est la suivante~:
-<sect2>Menu <bf>Fichier</bf>
+<sect1>Menu <bf>Fichier</bf>
 <p>
 <itemize>
-<item><bf>Ajouter une boîte aux lettres...</bf>~: cette option vous permet d'ajouter un nouveau répertoire de courrier MH. Il générera  automatiquement dans la nouvelle boîte aux lettres les dossiers des courriers reçus (<bf>Réception</bf>),  envoyés (<bf>Envoyés</bf>), en attente d'envoi (<bf>File d'attente</bf>), brouillons (<bf>Brouillon</bf>) et des courriers supprimés (<bf>Corbeille</bf>).
-<item><bf>Mise à jour de l'arbre des répertoires</bf>~: il relit l'arbre complet des boîtes aux lettres existantes pour qu'elles reflètent l'état correct (ce n'est pas nécessaire habituellement).
-<item><bf>Dossiers</bf>~: vous pouvez y ajouter, renommer ou effacer des dossiers de courrier.
-<item><bf>Importer un fichier mbox...</bf>~: vous pouvez importer des fichiers mbox (comme ceux créés par Pine) dans une boîte aux lettres MH.
-<item><bf>Exporter vers un fichier mbox...</bf>~: vous pouvez exporter une boîte aux lettres MH vers un fichier mbox.
-<item><bf>Vider la corbeille</bf>~: évidemment, ceci videra le dossier de la poubelle.
-<item><bf>Sauvergarder comme...</bf>~: vous pouvez sauvegarder les messages sélectionnés dans un fichier texte pur sur le disque dur.
-<item><bf>Imprimer...</bf>~: vous pouvez imprimer les messages sélectionnés vers une imprimante.
-<item>Fermer : arrête Sylpheed.
-<item><bf>Quitter</bf>~: arrête aussi Sylpheed.
+	  <item>
+	        <bf>Ajouter une boîte aux lettres...</bf>~: cette option vous permet d'ajouter 
+	        un nouveau répertoire de courrier MH. Il générera  automatiquement dans la 
+	        nouvelle boîte aux lettres les dossiers des courriers reçus (<bf>Réception</bf>),  
+	        envoyés (<bf>Envoyés</bf>), en attente d'envoi (<bf>File d'attente</bf>), 
+	        brouillons (<bf>Brouillon</bf>) et des courriers supprimés (<bf>Corbeille</bf>).
+	  </item>
+	  <item>
+	        <bf>Mise à jour de l'arbre des répertoires</bf>~: il relit l'arbre complet des 
+	        boîtes aux lettres existantes pour qu'elles reflètent l'état correct (ce 
+	        n'est pas nécessaire habituellement).
+	  </item>
+	  <item>
+	        <bf>Dossiers</bf>~: vous pouvez y ajouter, renommer ou effacer des dossiers de courrier.
+	        <itemize>
+	            <item>
+		          <bf>Créer un nouveau dossier...</bf>~: Créer un nouveau dossier! Avant 
+		          d'utiliser cette option vous devez sélectionner un dossier, parmi ceux 
+		          de l'arbre des dossiers, où sera créé votre nouveau dossier.
+		    </item>
+	            <item>
+		          <bf>Renommer le dossier...</bf>~: Permet de changer le nom du dossier 
+		          sélectionné.
+		    </item>
+	            <item>
+		          <bf>Supprimer le dossier</bf>~: Supprime le dossier sélectionné ainsi que 
+		          tous les messages qu'il contenait.
+		    </item>
+	     </itemize>
+	  </item>
+	  <item>
+	        <bf>Importer un fichier mbox...</bf>~: vous pouvez importer des fichiers mbox 
+	        (comme ceux créés par Pine) dans une boîte aux lettres MH.
+	  </item>
+	  <item>
+	        <bf>Exporter vers un fichier mbox...</bf>~: vous pouvez exporter une boîte aux 
+	        lettres MH vers un fichier mbox.
+	  </item>
+	  <item>
+	        <bf>Vider la corbeille</bf>~: évidemment, ceci videra le dossier de la poubelle.
+	  </item>
+	  <item>
+	        <bf>Sauvergarder comme...</bf>~: vous pouvez sauvegarder les messages sélectionnés 
+	        dans un fichier texte pur sur le disque dur.
+	  </item>
+	  <item>
+	        <bf>Imprimer...</bf>~: vous pouvez imprimer les messages sélectionnés vers une imprimante.
+	  </item>
+	  <item>
+	        <bf>Quitter</bf>~: arrête Sylpheed.
+	  </item>
 </itemize>
-</sect2>
-<sect2>Menu <bf>Édition</bf><p>
+</sect1>
+
+<sect1>Menu <bf>Édition</bf>
+<p>
 <itemize>
-<item><bf>Copier</bf>~: vous pouvez copier le texte sélectionné vers un tampon, à partir duquel vous pouvez le coller dans une zone différente. Raccourci~: Ctrl-C
-<item><bf>Tout sélectionner</bf>~: sélectionne tout le texte dans la fenêtre courante. Raccourci~: Ctrl-A
-<item><bf>Chercher dans le message...</bf>~: cherche la fenêtre courante un texte que vous choisissez. Raccourci~: Ctrl-S
+	  <item>
+	          <bf>Copier</bf>~: vous pouvez copier le texte sélectionné 
+	          vers un tampon, à partir duquel vous pouvez le coller dans 
+	          une zone différente. 
+	          Raccourci~: Ctrl-C
+	  </item>
+	  <item>
+	          <bf>Tout sélectionner</bf>~: sélectionne tout le texte dans 
+	          la fenêtre courante. 
+	          Raccourci~: Ctrl-A
+	  </item>
+	  <item>
+	          <bf>Chercher dans le message...</bf>~: cherche dans la fenêtre 
+	          courante un texte que vous choisissez. 
+	          Raccourci~: Ctrl-F
+	  </item>
+	  <item>
+	          <bf>Chercher dans le dossier...</bf>~: recherche un message selon
+	          le contenu des champs A, De, Sujet, champs d'en-tête ou corps du
+	          message. La recherche commence à partir du message sélectionné
+	          dans le dossier sélectionné.
+	          Raccourci~: Shift-Ctrl-F
+	  </item>
 </itemize>
-</sect2>
-<sect2>Menu <bf>Vue</bf> <p>
-Le menu <bf>Vue</bf> vous permet de changer la manière dont Sylpheed apparaît. Vous pouvez sélectionner un jeu différent de fenêtres séparément (vue de dossiers, messages, etc.), valider ou désactiver la barre de d'état et ainsi de suite.<p>
+</sect1>
+
+<sect1>Menu <bf>Vue</bf> 
+<p>
+Le menu <bf>Vue</bf> vous permet de changer la manière dont Sylpheed apparaît. 
+Vous pouvez sélectionner un jeu différent de fenêtres séparément (vue de dossiers, messages, etc.), 
+valider ou désactiver la barre d'état et ainsi de suite.
+Il contient aussi les commandes pour activer/désactiver l'affichage de certaines parties
+du message courant, les outils pour trier les messages du dossier sélectionné selon différents
+critères.
+<p>
 <itemize>
-<item><bf>Arbre des répertoires</bf>~: pas encore implémenté
-<item><bf>Vue des message</bf>~: pas encore implémenté
-<item><bf>Barre d'outils</bf>~: configure L'apparence de la barre d'outils~:avec icône et texte ou l'un des deux.
-<item><bf>Barre d'état</bf>~: la montre ou la cache.
-<item><bf>Arbre de répertoire séparé</bf>~: sélectionne entre avoir l'arbre des répertoires attaché à la fenêtre principale ou le laisser flotter séparément.
-<item><bf>Séparer la vue du message</bf>~: sélectionne entre avoir le message sélectionné dans le cadre du sommaire dans la fenêtre principale ou flottant séparément.
-<item><bf>Jeux de caractères</bf>~: vous pouvez sélectionner le jeu de caractère que vous voulez utiliser pour afficher les messages reçus.
+	    <item>
+	            <bf>Afficher ou cacher</bf>~: vous permet de choisir les parties de
+	            l'interface utilisateur de sylpheed que vous voulez afficher.
+	            <itemize>
+		            <item>
+	                            <bf>Arbre des répertoires</bf>~: pas encore implémenté.
+		            </item>
+		            <item>
+		                    <bf>Vue des message</bf>~: Montre ou cache la fenêtre des
+                                    messages. Lorsqu'elle est cachée, les messages sont affichés
+                                    dans une fenêtre séparée. Pour lire un message double-cliquez
+                                    dessus dans la fenêtre de résumé. Le message est alors oouvert
+                                    dans une nouvelle fenêtre. Vous pouvez fermer cette derbière
+                                    en appuyant sur la touche Echap.
+		            </item>
+		            <item>
+		                    <bf>Barre d'outils</bf>~: configure L'apparence de la 
+		                    barre d'outils~: avec icône et texte ou l'un des deux.
+		                    <itemize>
+		                            <item>
+		                                    <bf>Icônes et textes</bf>~: la barre d'outils
+                                                    est affichée avec les icônes et leur texte.
+		                            </item>
+		                            <item>
+		                                    <bf>Icônes seulement</bf>~: la barre d'outils
+		                                    est affichée avec les icônes seulement.
+		                            </item>
+		                            <item>
+		                                    <bf>Textes seulement</bf>~: la barre d'outils
+		                                    est affichée avec le texte, mais sans les icônes.
+		                            </item>
+		                            <item>
+		                                    <bf>Pas de barre d'outils</bf>~: la barre d'outils
+		                                    n'est pas affichée.
+		                            </item>
+		            </item>
+		            <item>
+		                    <bf>Barre d'état</bf>~: la montre ou la cache.
+		            </item>
+		    </itemize>
+	    </item>
+	    <item>
+	            <bf>Arbre de répertoire séparé</bf>~: 
+	            sélectionne entre avoir l'arbre des répertoires attaché à la fenêtre principale 
+	            ou le laisser flotter séparément.
+	    </item>
+	    <item>
+	            <bf>Séparer la vue du message</bf>~: permet le choix entre avoir le message sélectionné 
+	            du cadre du sommaire dans la fenêtre principale ou l'avoir dans une fenêtre flottante séparée.
+	    </item>
+	    <item>
+	            <bf>Trier</bf>~:  permet l'affichage trié des messages du dossier sélectionné. Chaque option
+	            effectue le tri par ordre décroissant et peux être inversée en choisissant à nouveau la même
+	            option du menu (l'ordre s'inverse à chaque fois que l'on choisi la même option du menu).
+	            <itemize>
+			    <item>
+		                   <bf>Trier par numéro</bf>~: trie les messages sur la base de leur numéro MH.
+		            </item>
+		            <item>
+		                   <bf>Trier par taille</bf>~: trie les messages selon leur taille.
+		            </item>
+		            <item>  
+		                   <bf>Trier par date</bf>~: trie les messages en fonction de leur date.
+		            </item>
+		            <item>
+		                   <bf>Trier par expéditeur</bf>~: trie les messages dans l'ordre alphabétique
+                                   sur l'adresse de l'expéditeur (champ De).
+		            </item>
+		            <item>
+		                   <bf>Trier par sujet</bf>~: trie les messages par ordre alphabétique du sujet.
+		            </item>
+		            <item>
+		                   <bf>Trier par couleur</bf>~: trie les messages selon leur couleur. Lisez l'aide du
+                                   menu contextuel plus bas pour en savoir davantage sur la manière d'affecter une couleur
+                                   à un message.
+		            </item>
+		            <item>
+		                   <bf>Trier par marque</bf>~: sépare les messages marqués de ceux non marqués. Lisez
+                                   l'aide du menu contextuel pour savoir comment marquer un message.
+		            </item>
+		            <item>
+		                   <bf>Trier par non lu</bf>~: sépare les messages lus de ceux non lus.
+		            </item>
+		            <item>
+		                   <bf>Trier par piece jointe</bf>~: sépare les messages qui ont une ou plusieurs pièces
+                                    jointes de ceux qui n'en n'ont pas.
+		            </item>
+		            <item>
+		                   <bf>Ne pas trier</bf>~: ne trie pas les messages.
+		            </item>
+		            <item>
+		                   <bf>Ordre croissant</bf>~: le tri des messages s'effectue par ordre croissant. 
+                                   Lorsque vous sélectionnez cette option, une petite flèche s'affiche dans la
+		                   colonne triée reflétant ce choix.
+		            </item>
+		            <item>
+		                   <bf>Ordre décroissant</bf>~: le tri des messages s'effectue par ordre décroissant.
+		            </item>
+		            <item>
+		                   <bf>Attirer par sujet</bf>~: place les messages ayant des sujets similaires ou identiques
+                                   les uns à cotés des autres.
+		            </item>
+	      </itemize>
+	    </item>
+	    <item>
+	            <bf>Vue par fil de discussion</bf>~: active ou désactive la vue par fil de discussion. 
+	            Lorsque l'option est activée, tous les messages d'une même discussion 
+                    (discussion générée par les réponses successives aux messages) sont 
+                    représentés dans un arbre représentant cette discussion. Chaque branche 
+                    de l'arbre peut être ouverte ou fermée en utilisant le plus (+) ou le 
+                    moins (-) qui la compose. Les fils de discussion sont basés sur les 
+                    champs In-Reply-To et Reference de l'en-tête des messages. Ainsi, ne 
+                    commencez jamais une nouvelle conversation en répondant à un ancien 
+                    message, cela aurait pour effet de raccrocher votre message à la branche 
+                    de l'ancienne conversation, sans rapport avec la nouvelle. 
+	            Raccourci~: Ctrl-T
+	    </item>
+	    <item>
+                    <bf>Déployer les fils de discussion</bf>~: lorsque la vue par fil de discussion est
+	            activée, cette option permet de développer tous les fils de discussion du dossier
+                    ouvert.
+	    </item>
+	    <item>
+	            <bf>Compacter les fils de discussion</bf>~: lorsque la vue par fil de discussion est
+                    activée, cette option permet de réduire tous les fils de discussion du dossier 
+                    ouvert
+	    </item>
+	    <item>
+	            <bf>Choix des éléments affichés...</bf>~: utilisez cette option pour choisir 
+                    les éléments à afficher dans la fenêtre résumé. Vous pouvez également changer
+                    ces paramêtres dans les préférences générales.
+	    </item>
+	    <item>
+	            <bf>Aller à</bf>~: permet la navigation d'un message à un autre grâce aux 
+                    différents critères du sous menu.
+	            <itemize>
+		            <item>
+		                    <bf>Message précédent</bf>~: va au message précédent du dossier
+                                    ouvert en cours.
+                                    Raccourci~: P
+		            </item>
+		            <item>
+                                    <bf>Message suivant</bf>~: va au message suivant du dossier
+                                    ouvert en cours.
+		                    Raccourci~: N
+		            </item>
+		            <item>
+		                    <bf>Non lu précédent</bf>~: va au message non lu précédent du
+                                    dossier ouvert en cours.
+                                    Raccourci~: Shift-P
+		            </item>
+		            <item>
+		                    <bf>Non lu suivant</bf>~: va au message non lu suivant du
+                                    dossier ouvert en cours.
+		                    Raccourci~: Shift-N
+		            </item>
+		            <item>
+		                    <bf>Message nouveau précédent</bf>~: va au nouveau message 
+                                    précédent du dossier ouvert en cours.
+		            </item>
+		            <item>
+		                    <bf>Message nouveau suivant</bf>~: va au nouveau message
+		                    suivant du dossier ouvert en cours.
+		            </item>
+		            <item>
+		                    <bf>Marqué précédent</bf>~: va au message marqué précédent
+                                    du dossier ouvert en cours.
+		            </item>
+		            <item>
+		                    <bf>Marqué suivant</bf>~: va au message marqué suivant du 
+                                    dossier ouvert en cours.
+		            </item>
+		            <item>
+		                    <bf>Colorié précédent</bf>~: va au message colorié précédent
+                                    du dossier ouvert en cours.
+		            </item>
+		            <item>
+		                    <bf>Colorié suivant</bf>~: va au message colorié suivant du
+                                    dossier ouvert en cours.
+		            </item>
+		            <item>
+		                    <bf>Autre dossier...</bf>~: chane le dossier ouvert en cours.
+                                    Choisissez dans l'arbre des dossier de la nouvelle fenêtre qui 
+		                    s'affiche le dossier que vous voulez ouvrir.
+		            </item>
+		    </itemize>  
+	    </item>
+	    <item>
+	            <bf>Jeux de caractères</bf>~: vous pouvez sélectionner le jeu de caractères que 
+	            vous voulez utiliser pour vos messages. Ce jeu de caractères sera utilisé lorsque 
+                    vous enverrez vos messages. Notez que Sylpheed essaiera toujours d'utiliser le 
+                    jeu de caractères le plus compatible avex les carcatères utilisés dans votre 
+                    message, ainsi, a moins que vous n'utilisiez des caractères spéciaux du jeu de 
+                    caractère latin-1 dans votre message (NDT~: les accents), le jeu sélectionné 
+	            sera défini comme étant du 7bits ASCII même si vous avez sélectionné le jeu de 
+                    caractères ISO-8859-1.
+                    L'option d'auto détection laisse Sylpheed détecter automatiquement le jeu de 
+                    caractères à utiliser en fonction des caractères contenus dans les messages.
+	    </item>
+	    <item>
+	            <bf>Ouvrir dans une nouvelle fenêtre</bf>~: ouvre le message sélectionné dans
+                    une nouvelle fenêtre. Cette nouvelle fenêtre peut être fermée en pressant la 
+                    touche Echap.
+	            Raccourci~: Ctrl-Alt-N
+	    </item>
+	    <item>
+	            <bf>Voir le source du message</bf>~: ouvre une nouvelle fenêtre et affiche le
+                    source complet du message (sans aucune mise en forme et avec toutes les 
+                    en-têtes).
+	            Raccourci~: Ctrl-U
+	    </item>
+	    <item>
+	            <bf>Afficher tous les en-têtes</bf>~: Active ou désactive l'affichage, dans le
+                    message, de la totalité des en-têtes.
+	            Raccourci~: Ctrl-H
+	    </item>
+	    <item>
+	            <bf>Mettre à jour</bf>~: met à jour la fenêtre du résumé.
+	            Raccourci~: Ctrl-Alt-U
+	    </item>           
 </itemize>
-</sect2>
-<sect2>Menu <bf>Message</bf><p>
+</sect1>
+
+<sect1>Menu <bf>Message</bf>
+<p>
 Ici, vous pouvez trouver les options suivantes~:
+
 <itemize>
-<item><bf>Relever le courrier</bf>~: ceci permet de collecter tous les nouveaux courriers dans votre boîte aux lettres personnelle.
-<item><bf>Relever le courrier de tous les comptes</bf>~: Sylpheed scrutera toutes les identités de comptes définies pour les nouveaux courriers.
-<item><bf>Envoyer les messages en file d'attente</bf>~: envoie tous les messages que vous avez mis dans le dossier <bf>File d'attente</bf>.
-<item><bf>Composer un nouveau message</bf>~: vous pouvez écrire un nouveau courrier.
-<item><bf>Répondre</bf>~: un courrier sera créé avec l'expéditeur du message sélectionné dans le champ du destinataire. En fonction de la configuration, votre signature sera ajoutée au courrier et le texte de courrier original sera décalé.
-<item><bf>Répondre à tous</bf>~: comme <bf>Répondre</bf> mais les destinataires seront toutes les adresses du courrier original (incluant ceux dans la partie cc:).
-<item><bf>Transférer</bf>~: un message sera créé avec le message original dans le corps du texte. Vous pouvez alors entrer une adresse de destinataire, éditer le texte si vous le souhaitez et l'envoyer.
-<item><bf>Transférer comme attachement</bf> : comme <bf>Transférer</bf> mais le texte du message sera envoyé attaché comme un fichier texte séparé.
-<item><bf>Déplacer</bf>~: vous pourrez déplacer le message vers un répertoire différent. Vous pouvez sélectionner le répertoire de destination depuis la fenêtre de navigation.
-<item><bf>Copier</bf>~: comme pour Déplacer, seul le message est copié dans le nouveau répertoire, au lieu d'être déplacé.
-<item><bf>Supprimer</bf>~: vous pouvez effacer le message qui est sélectionné dans le tableau du sommaire.
-<item><bf>Marquer</bf>~: Vous obtenez un sous-menu~: <bf>Marquer</bf>, <bf>Démarquer</bf>, <bf>Marquer comme lu</bf>, <bf>Démarquez comme lu</bf>. Lorsque vous marquez les messages, vous pouvez faire des actions spécifiques (<em>i.e.</em> déplacer, effacer) sur tous les messages marqués. Vous pouvez démarquer les messages que vous avez marqués par erreur. Les autres options font ce qu'indiquent leur nom, elles marquent ou démarquent un message comme lu.
-<item><bf>Ouvrir dans une nouvelle fenêtre</bf>~: Ceci ouvrira le message du tableau du sommaire dans une nouvelle fenêtre, vous permettant de voir plus de texte en une fois. Vous pouvez fermer cette fenêtre en cliquant le bouton de fermeture ou en pressant sur la touche d'échappement.
-<item><bf>Voir le source du message</bf>~: ouvrir une nouvelle fenêtre avec le message dedans, incluant tous les en-têtes de message. Vous pouvez fermer cette fenêtre en cliquant sur le bouton de fermeture ou en pressant la touche d'échappement.
-<item><bf>Afficher tous les en-têtes</bf>~: cela ouvre une nouvelle fenêtre avec seulement les en-têtes du message. Vous pouvez fermer cette fenêtre en cliquant sur le bouton de fermeture ou en pressant la touche d'échappement.
-<item><bf>Rééditer</bf>~: cette option est seulement disponible lorsque vous sélectionnez un message dans le répertoire <bf>Brouillon</bf>. Vous pouvez alors éditer le message brouillon.
+          <item>
+	          <bf>Relever le courrier</bf>~: ceci permet de collecter tous les nouveaux courriers
+                  dans votre boîte aux lettres personnelle.
+                  Raccourci~: Ctrl-I
+	  </item>
+	  <item>
+	          <bf>Relever le courrier de tous les comptes</bf>~: Sylpheed scrutera toutes les 
+                  identités de comptes définies pour les nouveaux courriers.
+                  Raccourci~: Shift-Ctrl-I
+	  </item>
+	  <item>
+	          <bf>Interrompre la relève du courrier</bf>~: arrête la réception des nouveaux 
+                  messages.
+	  <item>
+                  <bf>Envoyer les messages en file d'attente</bf>~: envoie tous les messages que vous
+                   avez mis dans le dossier <bf>File d'attente</bf>.
+	  </item>
+	  <item>
+                  <bf>Composer un nouveau message</bf>~: vous pouvez écrire un nouveau courrier.
+          </item>
+	  <item>
+	          <bf>Répondre</bf>~: un courrier sera créé avec l'expéditeur du message sélectionné 
+                  dans le champ du destinataire. En fonction de la configuration, votre signature 
+                  sera ajoutée au courrier et le texte de courrier original sera décalé.
+          </item>
+	  <item>
+	          <bf>Répondre à tous</bf>~: comme <bf>Répondre</bf> mais les destinataires seront 
+                  toutes les adresses du courrier original (incluant ceux dans la partie cc:).
+          </item>
+          <item>
+	          <bf>Répondre à l'auteur</bf>~: comme <bf>Répondre</bf> mais l'adresse du 
+                  destinataire est celle de l'en-tête "De" et non celle de l'en-tête "Répondre à".
+	  </item>
+	  <item>
+                  <bf>Transférer</bf>~: un message sera créé avec le message original dans le corps
+                  du texte. Vous pouvez alors entrer une adresse de destinataire, éditer le texte si
+                  vous le souhaitez et l'envoyer.
+          </item>
+	  <item>
+                  <bf>Transférer comme attachement</bf>~: comme <bf>Transférer</bf> mais le texte du
+                  message sera envoyé attaché comme un fichier texte séparé.
+	  </item>
+	  <item>
+	          <bf>Rediriger</b>~: envoyer à nouveau le message sélectionné à quelqu'un d'autre.
+                  En comparaison avec un transfert, le message n'est pas marqué comme ayant été
+                  transféré et l'auteur est l'auteur du message original.
+          </item>
+	  <item>
+	          <bf>Rééditer</bf>~: vous laisse ouvrir n'importe quel message déjà envoyé en mode
+                  d'édition (NDT : donc de le modifier) afin de l'expédier à nouveau.
+	  </item>
+	  <item>
+                  <bf>Déplacer</bf>~: vous pourrez déplacer le message vers un répertoire différent. 
+                  Vous pouvez sélectionner le répertoire de destination depuis la fenêtre de 
+                  navigation.
+          </item>
+	  <item>
+	          <bf>Copier</bf>~: comme pour Déplacer, seul le message est copié dans le nouveau 
+	          répertoire, au lieu d'être déplacé.
+	  </item>
+	  <item>
+	          <bf>Supprimer</bf>~: vous pouvez effacer le message qui est sélectionné dans le 
+	          tableau du sommaire.
+	  </item>
+	  <item>
+	          <bf>Marquer</bf>~: Vous obtenez un sous-menu~: <bf>Marquer</bf>, 
+                  <bf>Démarquer</bf>, <bf>Marquer comme lu</bf>, <bf>Démarquez comme lu</bf>. 
+                  Lorsque vous marquez les messages, vous pouvez faire des actions spécifiques 
+                  (<em>i.e.</em> déplacer, effacer) sur tous les messages marqués. Vous pouvez 
+                  démarquer les messages que vous avez marqués par erreur. Les autres options font 
+                  ce qu'indiquent leur nom, elles marquent ou démarquent un message comme lu.
+	  </item>
 </itemize>
-Note sur les fonctions comme <bf>Déplacer</bf>, <bf>Copier</bf> et <bf>Effacer</bf> : si vous ne spécifiez pas d'exécuter les commandes immédiatement (dans la configuration), vous aurez à sélectionner la commande <bf>Exécuter</bf>. C'est un bouton dans la barre d'outils et la commande peut être aussi trouvée dans le menu <bf>Sommaire</bf>.
-</sect2>
-<sect2>Menu <bf>Sommaire</bf><p>
-Dans le menu <bf>Sommaire</bf>, vous pouvez effectuer tous les types de fonctions qui sont liées au traitement des messages. Les actions sont effectuées sur les messages dans la fenêtre du sommaire des messages.
+
+Note sur l'utilisation des fonctions Déplacer, Copier et Supprimer~: si vous n'avez pas choisi 
+d'exécuter immédiatement les commandes dans les options de configuration, vous devrez 
+sélectionner la commande "Exécuter". Il s'agit d'un bouton de la barre d'outils qui se trouve 
+également dans le menu <bf>Outils</bf>.
+</sect1>
+
+<sect1>Menu <bf>Outils</bf>
+<p>
+Dans le menu <bf>Outils</bf> se trouvent les fonctions de control de filtres, le fonctions du carnet
+ d'adresse et la fenêtre permettant le contrôle des logs.
+
 <itemize>
-<item><bf>Supprimer les messages en double</bf>~: Ceci enlèvera les messages du répertoire actif qui vous ont été envoyés deux fois. Par exemple, vous recevez un message directement et par le biais d'une liste de diffusion en même temps.
-<item><bf>Filtrer les messages</bf>~: vous pouvez utiliser cette option si vous souhaitez filtrer les messages existants vers un nouveau filtre que vous avez configuré.
-<item><bf>Exécuter</bf>~: cette option est nécessaire si vous n'avez pas configuré <bf>exécuter immediatement</bf> dans les préférences. <bf>Exécuter</bf> effectuera les actions que vous souhaitez (e.g. copier, déplacer, filtrer, etc.)
-<item><bf>Mettre à jour</bf>~: rafraîchit la vue des fenêtres de messages pour refléter tous changements.
-<item><bf>Message précédent</bf>~: sélectionne le message précédent. Les anciens utilisateurs de Pine peuvent aussi utiliser la touche «~p~».
-<item><bf>Message suivant</bf>~: sélectionne le message suivant. Les anciens utilisateurs de Pine peuvent aussi utiliser «~n~».
-<item><bf>Message non lu suivant</bf>~: sélectionne le message non lu suivant dans le dossier.
-<item><bf>Autre dossier...</bf>~: vous pouvez ouvrir un nouveau dossier de courrier. Vous pouvez utiliser une fenêtre de navigation pour ce faire.
-<item><bf>Trier</bf>~: cette option vous permettra de trier les vues de courriers de différentes manières. Vous pouvez trier par date, par sujet, par numéros (on parle ici des numéros internes des messages MH), etc. Notez que <bf>Attirer par sujet</bf> est différent de trier par sujet. Attirer par sujet écrase le «~Re~:~» références dans le sujet. De cette manière, les messages sont triés d'une manière plus logique.
-<item><bf>Vue par fil de conversation</bf>~: les messages sont liés ensemble dans un arbre de vue, sur des sujets.
-<item><bf>Vue sans fil de discussion</bf>~: défait l'objet précédent.
-<item><bf>Choix des éléments affichés...</bf>~: montre une boîte de dialogue dans laquelle vous pouvez activer et désactiver les objets que vous voulez voir dans la fenêtre du sommaire.
-Dans la version 0.6.4, vous pouvez aussi déterminer l'ordre dans lequel les colonnes de la fenêtre du sommaire doivent être affichées.
+	<item>
+	        <bf>Carnet d'adresse</bf>~: ouvre la fenêtre du carnet d'adresse. Raccourci~: 
+	        Shift-Ctrl-A
+	</item>
+	<item>
+	        <bf>Ajouter l'auteur dans le carnet d'adresse</bf>~: ajoute l'auteur du message
+	        sélectionné à l'un de vos carnet d'adresse. Une fenêtre s'ouvre pour que vous
+	        choisissiez le carnet d'adresse dans lequel vous voulez sauvegarder l'adresse de
+	        l'auteur du message.
+	</item>
+	<item>
+	        <bf>Filtrer les messages</bf>~: Applique les règles de filtrage aux messages de la
+                boîte aux lettres de Réception.
+	</item>
+	<item>
+	        <bf>Créer une règle de filtrage</bf>~: crée une nouvelle règle basée sur le message
+                sélectionné.
+	        <itemize>
+	                <item>
+                                <bf>Automatiquement</bf>~: ouvre la fenêtre de création de règles 
+		                pour définir une nouvelle règle.
+		        </item>
+	                <item>
+		                <bf>Avec "De"</bf>~: ouvre la fenêtre de création de règles et 
+		                rempli le champ "de" du filtre afin de construire un filtre basé
+		                sur l'auteur du message sélectionné.
+		        </item>
+	                <item>
+		                <bf>Avec "A"</bf>~: ouvre la fenêtre de création de règles et 
+		                rempli le champ "A" du filtre afin de construire un filtre basé
+		                sur le destinataire du message sélectionné.
+		        </item>
+	                <item>
+		                <bf>Avec "Sujet"</bf>~: ouvre la fenêtre de création de règles et 
+		                rempli le champ "sujet" du filtre afin de construire un filtre basé
+		                sur le sujet du message sélectionné.
+		        </item>
+	        </itemize>
+	</item>
+	<item>
+	        <bf>Supprimer les messages en double</bf>~: cette option détruit les messages du
+                dossier en cours qui vont ont été envoyés en double. Par exemple vous recevez un
+	        message directement and via une liste de diffusion dans le même temps.
+	</item>
+	<item>
+	        <bf>Actions</bf>~: ce menu est vide jusqu'a ce que vous définissiez des actions
+	        (voyez l'aide du menu <bf>Configuration</bf> ci dessous).
+	</item>
+	<item>
+	        <bf>Exécuter</bf>~: exécute toutes les commandes <bf>Déplacer</bf>, 
+	        <bf>Supprimer</bf> et <bf>Copier</bf> en attente. Seulement valable si l'option
+                d'exécution immédiate est désactivée dans les préférences générales. Raccourci~: X
+	</item>
+	<item>
+	        <bf>Fenêtre de log</bf>~: ouvre la fenêtre de <em>log</em>. Dans cette fenêtre vous pouvez
+                voir ce que fait Sylpheed. Ces traces vous permettent de contrôler ce qui ce passe
+                quand vous suspectez que quelque chose ne vas pas. Vous pouver copier-coller les 
+	        informations dans un message électronique et l'envoyer aux développeurs ou à la
+                liste de diffusion.
+	</item>
 </itemize>
-</sect2>
-<sect2>Menu <bf>Outils</bf><p>
-Dans le menu <bf>Outils</bf>, vous allez trouver deux options (jusqu'à la version 0.6.4). C'est le carnet d'adresses et la fenêtre de <em>log</em>.<p>
-Dans le carnet d'adresses, comme vous pouvez le souhaiter, vous pouvez stocker les adresses email que vous souhaitez garder. Vous pouvez créer des répertoires dans le carnet, pour garder des adresses ensemble.<p>
-Dans la fenêtre de <em>log</em> (journal de bord), vous pouvez voir ce que Sylpheed fait. Garder une trace des choses de cette manière est important lorsque vous suspectez des anomalies. Vous pouvez coller les informations de la fenêtre de <em>log</em> dans un courrier et l'envoyer aux développeurs dans la liste de diffusion.
-</sect2>
 
-<sect2>Menu de <bf>Configuration</bf><p>
-Dans le menu <bf>Configuration</bf>, clairement, vous pouvez configurer Sylpheed de la manière dont vous voulez qu'il travaille et réagisse.
+Dans la fenêtre de <em>log</em> (journal de bord), vous pouvez voir ce que Sylpheed fait. Garder une
+ trace des choses de cette manière est important lorsque vous suspectez des anomalies. Vous pouvez 
+coller les informations de la fenêtre de <em>log</em> dans un courrier et l'envoyer aux développeurs 
+dans la liste de diffusion.
+</sect1>
+
+<sect1>Menu de <bf>Configuration</bf>
+<p>
+Dans le menu <bf>Configuration</bf>, clairement, vous pouvez configurer Sylpheed de la manière 
+dont vous voulez qu'il travaille et réagisse.
+
 <itemize>
-
-<item><bf>Préférences générales...</bf>~: dans cette option, il vous sera présenté un dialogue dans lequel vous pouvez sélectionner un certain nombre d'onglets. Chaque onglet représente un jeu spécifique de configurations dans Sylpheed. Dans le chapitre suivant, ces options de dialogue sont expliquées avec plus de détails.
-
-<item><bf>Options de filtrage...</bf>~: cette option vous montre un dialogue dans lequel vous pouvez configurer les règles de filtrage que Sylpheed appliquera à la réception des courriers. Vous spécifiez d'abord quelle(s) partie(s) de votre courrier Sylpheed doit contrôler et ensuite vous indiquez à Sylpheed quoi faire. Vous pouvez déplacer les messages vers un répertoire différent (incluant la corbeille pour se débarrasser des <em>spams</em>). Le dossier de destination est sélectionnable dans  une fenêtre de navigation qui apparaît lorsque vous pressez le bouton <bf>Sélection...</bf><p>
-Vous pouvez aussi choisir de ne pas récupérer les courriers. Notez que cela laissera le message sur le serveur de courrier de votre prestataire, le message n'y sera pas détruit~!<p>
-Lorsque vous pressez le bouton <bf>Enregistrer</bf>, la règle de filtrage est ajoutée à la liste des règles. Si vous sélectionnez <bf>Remplacer</bf>, alors la règle sélectionnée est remplacée par l'information des configurations entrées. Enfin, le bouton <bf>Supprimer</bf> permet de détruire les règles de filtrage sélectionnées.<p>
-Veuillez noter que vous pouvez configurer deux conditions pour une même règle. Elles peuvent être combinées par l'une des opérations logiques <bf>ou</bf> ou <bf>et</bf>. L'opération <bf>ou</bf> signifie qu'au moins une des deux conditions doit être satisfaite pour que la règle soit exécutée. L'opération <bf>et</bf> signifie que les deux conditions doivent être satisfaites simultanément pour que l'action soit effectuée.<p>
-À droite de la liste des règles se trouvent les boutons appelés <bf>Plus haut</bf> et <bf>Plus bas</bf>. Grâce à eux, vous pouvez déplacer dans la liste les règles vers le haut ou vers le bas pour les réordonner. Ceci affectera l'ordre d'exécution des règles et a en générale une incidence sur le résultat final du filtrage, veuillez donc prendre en compte l'ordre dans lequel vous arrangez les règles.
-<item><bf>Configuration du compte actuel...</bf>~: ici, vous pouvez configurer les options du compte que vous utilisez actuellement, par exemple pour décider si le courrier doit être effacé après traitement, ou de quel serveur il provient, etc. Cette fenêtre de configuration est la même que celle utilisée lors de la création d'un nouveau compte.
-<item><bf>Création d'un nouveau compte...</bf>~: ici vous donnez un nom au nouveau compte à créer (chaque compte
-possède un nom reconnaissable), vous configurez votre nom et une adresse de courrier, etc. Vous configurez le type de serveur pour lequel vous avez un accès (POP3, IMAP4, boîte de courrier local, serveur de nouvelles) et où doivent aller les messages téléchargés (le répertoire par défaut est inbox). Dans l'onglet <bf>Réception</bf> vous pouvez activer ou désactiver certaines options, dans l'onglet <bf>Envoi</bf>, vous pouvez configurer la manière d'envoyer vos messages. Dans l'onglet <bf>Composition</bf>, vous pouvez désigner un fichier de signature spécifique et dans <bf>Avancée</bf>, vous pouvez configurer explicitement les ports pour les serveurs utilisés. (Ne vous compliquez la vie pas avec ceux-ci, à moins que vous ne soyez sûr d'être obligés de le faire~!!)
-<item><bf>Édition des comptes...</bf>~: ici, vous pouvez sélectionner à partir d'une liste un des comptes que vous avez créés pour en modifier la configuration. Notez que si vous êtes en train de composer un message vous ne pouvez pas éditer le compte que vous utilisez pour ce message. Cela permet d'assurer de l'intégrité des données.
-<item><bf>Choisir un autre compte</bf>~: ici, vous pouvez sélectionner quel compte vous voulez utiliser pour écrire des messages.
+	  <item>
+	          <bf>Préférences générales...</bf>~: dans cette option, il vous 
+                  sera présenté un dialogue dans lequel vous pouvez sélectionner 
+                  un certain nombre d'onglets. Chaque onglet représente un jeu 
+                  spécifique de configurations dans Sylpheed. Dans le chapitre 
+                  suivant, ces options de dialogue sont expliquées avec plus de 
+                  précision.
+	  </item>
+	  <item>
+	          <bf>Options de filtrage...</bf>~: cette option vous montre un 
+                  dialogue dans lequel vous pouvez configurer les règles de 
+                  filtrage que Sylpheed appliquera à la réception des courriers. 
+                  Vous spécifiez d'abord quelle(s) partie(s) de votre courrier 
+                  Sylpheed doit contrôler et ensuite vous indiquez à Sylpheed 
+                  quoi faire. Vous pouvez déplacer les messages vers un 
+                  répertoire différent (incluant la corbeille pour se 
+                  débarrasser des <em>spams</em>). Le dossier de destination est
+                  sélectionnable dans une fenêtre de navigation qui apparaît 
+                  lorsque vous pressez le bouton <bf>Sélection...</bf>
+	          <p>
+	          Vous pouvez aussi choisir de ne pas récupérer les courriers. 
+                  Notez que cela laissera le message sur le serveur de courrier 
+                  de votre prestataire, le message n'y sera pas détruit~!
+                  <p>
+		  Lorsque vous pressez le bouton <bf>Enregistrer</bf>, la règle 
+                  de filtrage est ajoutée à la liste des règles. Si vous 
+                  sélectionnez <bf>Remplacer</bf>, alors la règle sélectionnée 
+                  est remplacée par l'information des configurations entrées. 
+                  Enfin, le bouton <bf>Supprimer</bf> permet de détruire les 
+                  règles de filtrage sélectionnées.
+		  <p>
+                  Notez que vous pouvez configurer deux conditions pour une même
+		  règle. Elles peuvent être combinées par l'une des opérations 
+		  logiques <bf>ou</bf> ou <bf>et</bf>. L'opération <bf>ou</bf> 
+		  signifie qu'au moins une des deux conditions doit être 
+		  satisfaite pour que la règle soit exécutée. L'opération 
+		  <bf>et</bf> signifie que les deux conditions doivent être 
+		  satisfaites simultanément pour que l'action soit effectuée.
+		  <p>
+		  À droite de la liste des règles se trouvent les boutons 
+		  appelés <bf>Plus haut</bf> et <bf>Plus bas</bf>. Grâce à eux, 
+		  vous pouvez déplacer dans la liste les règles vers le haut ou
+		  vers le bas pour les réordonner. Ceci affectera l'ordre 
+		  d'exécution des règles et a en générale une incidence sur le 
+		  résultat final du filtrage, veuillez donc prendre en compte 
+                  l'ordre dans lequel vous arrangez les règles.
+	  </item>
+	  <item>
+	          <bf>Modèles...</bf>~: Vous permet la création d'un nouveau
+                  modèle de message. Lorsque vous composez un nouveau message
+                  vous pouvez utiliser l'un des modèles que vous avez définis.
+	          Les modèles peuvent contenir des caractères spéciaux qui sont
+                  remplacés, afin de créer un texte dynamique, quand le modèle 
+                  est utilisé. Cliquez sur le bouton <bf>Symboles</bf> pour voir
+                  les caractères spéciaux disponibles.
+	  </item>
+	  <item>
+	          <bf>Actions...</bf>~: vous permet la création de nouvelles 
+                  commandes qui seront alors ajoutées au menu 'Outils/Actions'.
+	          Une Action est une commande qui s'exéctue sur une partie du
+                  message, le corps du message ou le fichier complet du message.
+                  L'exécution de cette commande peut se produire en arrière plan 
+                  lorsqu'elle est utilisée comme un filtre (elle lit, modifie et 
+                  remplace un message).
+	  </item>
+	  <item>
+	          <bf>Configuration du compte actuel...</bf>~: ici, vous pouvez
+	          configurer les options du compte que vous utilisez 
+                  actuellement, par exemple pour décider si le courrier doit 
+                  être effacé après traitement, ou de quel serveur il provient, 
+                  etc. Cette fenêtre de configuration est la même que celle 
+                  utilisée lors de la création d'un nouveau compte.
+	  </item>  
+	  <item>
+	          <bf>Création d'un nouveau compte...</bf>~: ici vous donnez un
+                  nom au nouveau compte à créer (chaque compte possède un nom 
+                  reconnaissable), vous configurez votre nom et une adresse de 
+                  courrier, etc. Vous configurez le type de serveur pour lequel 
+                  vous avez un accès (POP3, IMAP4, boîte de courrier local, 
+	          serveur de nouvelles) et où doivent aller les messages 
+	          téléchargés (le répertoire par défaut est inbox). Dans 
+                  l'onglet <bf>Réception</bf> vous pouvez activer ou désactiver
+	          certaines options, dans l'onglet <bf>Envoi</bf>, vous pouvez 
+	          configurer la manière d'envoyer vos messages. Dans l'onglet 
+                  <bf>Composition</bf>, vous pouvez désigner un fichier de 
+                  signature spécifique et dans <bf>Avancée</bf>, vous pouvez 
+                  configurer explicitement les ports pour les serveurs utilisés.
+                  (Ne vous compliquez la vie pas avec ceux-ci, à moins que vous 
+                  ne soyez sûr d'être obligés de le faire~!!)
+	  </item>
+	  <item>
+	          <bf>Édition des comptes...</bf>~: ici, vous pouvez 
+	          sélectionner à partir d'une liste un des comptes que vous avez
+                  créés pour en modifier la configuration. Notez que si vous 
+                  êtes en train de composer un message vous ne pouvez pas éditer 
+                  le compte que vous utilisez pour ce message. Cela permet 
+                  d'assurer de l'intégrité des données.
+	  </item>
+	  <item>
+	          <bf>Choisir un autre compte</bf>~: ici, vous pouvez 
+                  sélectionner quel compte vous voulez utiliser pour écrire des 
+                  messages.
+	          Si vous avez activé la barre d'état (dans le menu 
+                  <bf>Vue</bf>), le nom du compte courant est alors affiché en 
+                  bas à droite de la fenêtre de Sylpheed (dans la barre d'état)
+                  et peut être changé en cliquant dessus (un menu contenant la 
+                  liste de vos comptes apparaît).
+	  </item>
 </itemize>
-</sect2>
+</sect1>
 
-<sect2>Menu d'<bf>Aide</bf><p>
-Ce menu vous permet d'accéder au manuel (japonais jusqu'à présent) et vous pouvez aussi voir des informations sur l'auteur et la version de Sylpheed dans le menu <bf>À propos</bf>.
-</sect2>
+<sect1>Menu d'<bf>Aide</bf>
+<p>
+Ce menu vous permet d'accéder au manuelet à la FAQ de Sylpheed. Vous pouvez 
+aussi voir des informations sur l'auteur et la version de Sylpheed dans le 
+menu <bf>À propos</bf>.
+<p>
 
 </sect1>
+
 
 <sect1>Menu contextuel
 <p>
-La fenêtre des dossiers ainsi que celle du sommaire disposent chacune d'un menu contextuel que vous pouvez dérouler en cliquant sur le bouton 2 de la souris. (Utilisateurs de windows~: le bouton 2 est le bouton droit de la souris.)
+La fenêtre des dossiers ainsi que celle du sommaire disposent chacune d'un menu
+contextuel que vous pouvez dérouler en cliquant sur le bouton 2 de la souris. 
+(Utilisateurs de windows~: le bouton 2 est le bouton droit de la souris.)
 <p>
-Dans la vue des dossiers, vous pouvez ajouter, renommer et enlever des dossiers par le menu contextuel.<p>
-Dans le sommaire des messages, vous pouvez faire beaucoup de choses à partir du menu contextuel, comme voir les en-têtes du message, ouvrir un message dans une fenêtre séparée (c'est aussi possible en double cliquant sur un message), etc.
-</sect1>
-
-<sect>Vues et dialogues<p>
-
-<figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/all_with_image.png">
-</figure>
-
-<sect1>Vue des dossiers <p>
-La vue des dossiers vous montre une arborescence de tous les dossiers de courriers que vous avez créés. Cliquez une fois sur le nom d'un dossier dans la vue du sommaire pour voir les messages qui y sont stockés.<p>
-Lorsque vous voyez le signe <bf>+</bf> devant le nom du dossier, cela signifie que la branche de cette partie de l'arbre est cachée. C'est-à-dire que ce dossier renferme d'autres dossiers. Vous pouvez déployer cette branche en cliquant sur le signe <bf>+</bf>  pour pouvoir voir la liste des dossiers qu'elle contient. De la même manière, vous pouvez aussi refermer la branche en cliquant sur le signe <bf>-</bf> devant un dossier.<p>
-Dossiers spéciaux<p>
-<bf>Brouillon</bf>~: ici, vous pouvez stocker les messages que vous voulez envoyer plus souvent ou sur lesquels vous voulez encore travailler. En utilisant la fonction <bf>Rééditer</bf> dans le menu <bf>Message</bf>, vous pouvez de nouveau éditer le message.<p>
-<bf>Corbeille</bf>~: c'est ici que vont tous les messages supprimés. En fonction de la configuration des préférences générales, la corbeille est ou n'est pas vidée lorsque vous quittez Sylpheed.
-</sect1>
-
-<sect1>Vue du sommaire<p>
-La fenêtre du sommaire montre un certain nombre d'informations. Vous pouvez choisir celles que vous voulez voir dans le menu <bf>Sommaire -> Choix des éléments affichés...</bf>. Voici une liste de toutes les options disponibles~:
-<itemize>
-<item><bf>Marque</bf>~: montre si le message est marqué~;
-<item><bf>Non lu</bf>~: montre si le message est lu ou pas~;
-<item><bf>MIME</bf>~: montre si le message contient des pièces jointes en MIME~;
-<item><bf>Numéro</bf>~: montre le numéro MH du message~;
-<item><bf>Taille</bf>~: montre la taille du message complet incluant les pièces jointes~;
-<item><bf>Date</bf>~: montre la date d'envoi par l'expéditeur~;
-<item><bf>De</bf>~: montre l'expéditeur qui a envoyé le message~;
-<item><bf>Sujet</bf>~: montre le sujet du message.
-</itemize>
-Le sommaire peut être trié en cliquant sur le bouton contenant le titre de la colonne. Cliquez une première fois pour trier dans un sens (a-z), cliquez une seconde fois pour l'autre sens (z-a).<p>
-Si la taille de la colonne n'est pas suffisante, placez le curseur de la souris sur le bord droit du titre de la colonne que vous voulez ajuster, pressez ensuite sur le bouton 1 (gauche) de la souris et tirez la colonne jusqu'à ce qu'elle ait la taille désirée.<p>
-Pour naviguer entre les messages, sélectionnez-en un en cliquant dessus avec la souris. Cela rendra en outre la fenêtre du sommaire active et vous pouvez alors vous déplacer vers le haut ou vers le bas dans la liste avec les touches de curseur ou en pressant «~p~» (pour <em>previous</em>, précédent) et «~n~» (pour <em>next</em>, suivant) comme dans Pine.
-</sect1>
-
-<sect1>Vue du message <p>
-Dans la vue du message, vous pouvez lire le message que vous avez sélectionné dans la fenêtre du sommaire. Si vous entrez dans la fenêtre du sommaire sans sélectionner de message, la vue de message sera vide. Au dessus de celle-ci quelques informations sont affichées concernant le courrier que vous êtes en train de lire ainsi que quelques statistiques sur le dossier sélectionné.<p>
-Vous pouvez dérouler le contenu message vers le haut ou vers le bas en utilisant les touches fléchées après avoir cliqué à l'intérieur du message ou en utilisant la barre d'ascenseur.
-</sect1>
-
-<sect1>Préférences générales<p>
-La fenêtre des préférences générales obtenue à partir du menu <bf>Configuration -> Préférences générales...</bf> dispose des onglets suivants~:
-<sect2>Onglet de <bf>Réception</bf><p>
-Ici, vous pouvez configurer comment recevoir les messages.
-
-<figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/pref_receive.png">
-</figure>
-
-<itemize>
-<item>Vous pouvez y définir un <bf>Programme externe</bf> pour récupérer les messages à partir de la boîte aux lettres Unix par défaut. Habituellement, ce n'est pas nécessaire mais vous pouvez l'utiliser. (En fait, cette information peut être inexacte. Si quelqu'un en sait plus, qu'il me le fasse savoir.)
-<item>Le <bf>Spool local</bf> vous laisse définir le fichier qui contient votre boîte aux lettres locale. Vous pouvez aussi dire à Sylpheed de filtrer ou non les messages provenant de ce fichier.
-<item><bf>Relève automatique du courrier</bf>~: lorsque vous validez cette option, Sylpheed contrôlera régulièrement s'il y a de nouveaux courriers. Vous devez alors spécifier la périodicité.
-<item><bf>Relever le courrier au démarrage</bf> signifie que Sylpheed cherchera immédiatement les nouveaux courriers sur les comptes sélectionnés lorsqu'il est chargé.
-<item>Dans la section <bf>Article de groupes de discussion</bf>, vous pouvez spécifier le nombre maximal d'articles qui peuvent être téléchargés lors de l'ouverture d'un groupe de discussion.
-</itemize>
-</sect2>
-</sect1>
-
-<sect1>Configurer un compte/modifier un compte<p>
-Pour créer un nouveau compte dans Sylpheed, sélectionnez le menu <bf>Configuration -> Création d'un nouveau compte...</bf>. Si vous voulez modifier les options d'un compte existant, sélectionnez plutôt l'option <bf>Édition des comptes...</bf> dans le menu <bf>Configuration</bf>. Ensuite, sélectionnez le compte que vous voulez changer et enfin choisissez <bf>Éditer</bf> pour que la fenêtre de configuration du compte apparaîsse. Celle-ci propose des options réparties dans les sections suivantes~:
+Dans la vue des dossiers, vous pouvez ajouter, renommer et enlever des dossiers
+par le menu contextuel. Vous pouvez aussi définir les propriétés des dossiers
+(par exemple définir le dossier sélectionné comme étant le dossier de Réception,
+d'envoi, poubelle, ...).
 <p>
-<sect2>Section <bf>Générale</bf><label id="Générale"><p>
-
-<figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/account_basic.png">
-</figure>
-
-Dans l'onglet de configuration <bf>Générale</bf>, vous pouvez donner un nom au compte. Ceci est pour rendre l'identification du compte plus facile.<p>
-Choisissez un nom représentatif du compte, comme le nom du fournisseur, la boîte aux lettres ou les serveurs de groupes de discussion que vous allez utiliser. Vous pouvez définir ce compte comme celui qui sera utilisé par défaut en cochant l'option <bf>Définir comme compte par défaut</bf>.<p>
-Entrez ensuite votre nom et votre adresse email et, si vous en avez une, l'organisation dans laquelle vous utilisez Sylpheed.
-Dans la boîte de protocole, sélectionnez le type de service que ce compte utilisera. Vous pouvez choisir parmi~: <bf>POP3 (normal)</bf>, <bf>POP3 (APOP auth)</bf>, <bf>IMAP4</bf>, <bf>News (NNTP)</bf> ou <bf>Aucun (local)</bf>.
-Dans le champ <bf>inbox</bf>, vous pouvez entrer le répertoire de courrier où le courrier pour ce compte sera stocké. Cette option est désactivée lorsque vous configurez un compte pour groupes de discussions (<em>news</em> NNTP).<p>
-Pour les services POP3 et IMAP, vous pouvez spécifier le serveur dans lequel votre courrier est stocké. Les détails sur ce nom et aussi le nom qui va dans le champ de <bf>Serveur SMPT (envoi)</bf> doivent vous être fournis par votre fournisseur d'accès.<p>
-Pour une boîte aux lettres Unix locale, le <bf>Serveur pour la réception</bf> est désactivé, car c'est votre machine qui reçoit directement les messages.<p>
-Les champs pour le <bf>Nom d'utilisateur</bf> et le <bf>Mot de passe</bf> seront aussi désactivés pour les comptes qui n'utilisent pas les services POP3 ou IMAP. Pour ces derniers, vous pouvez entrer le nom d'utilisateur et le mot de passe pour le serveur de courrier de votre fournisseur. Habituellement, ce sont les mêmes que votre nom de connexion et votre mot de passe pour accéder aux services de connexion mais cela dépend du fournisseur d'accès. En cas de doute, contactez le service support de clientèle de votre fournisseur.  <p>
-</sect2>
-<sect2>Section de <bf>Réception</bf><label id="Réception"><p>
-
-<figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/account_pop_receive.png">
-</figure>
-
-<p>
-L'onglet <bf>Réception</bf> n'est utilisé que pour les comptes POP3. Ici, vous pouvez spécifier si les courriers qui ont été récupérés avec succès doivent être supprimés du serveur. L'option <bf>Réception de tous les messages du serveur</bf> vous permet d'obliger Sylpheed de relever non seulement les nouveaux messages mais aussi tous ceux qui ont déjà été lus (récupérés mais pas supprimés)  et qui se trouvent encore sur le serveur. L'option <bf>'Tout relever' relève le courrier pour ce compte</bf> ajoute ce compte à la liste des comptes qui sont vérifiés lorsque le bouton <bf>Tout relever</bf> de la barre d'outils est activé ou si le menu <bf>Message -> Relever le courrier de tous les comptes</bf> est sélectionné.  Vous pouvez aussi spécifier ici si les messages récupérés doivent être immédiatement filtrés lors de la réception.
-</sect2>
-<sect2>Section <bf>Envoyer</bf><label id="Envoyer"> <p>
-
-<figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/account_send.png">
-</figure>
-
-Dans l'onglet <bf>Envoi</bf>, vous pouvez configurer quelques options supplémentaires pour les messages que vous envoyez.
-</sect2>
-<sect2>Section <bf>Composition</bf><label id="Composition"> <p>
-
-<figure loc="here">
-<ph vspace="1cm">
-<img src="snapshots/account_compose.png">
-</figure>
-
-Dans l'onglet <bf>Composition</bf>, vous pouvez définir votre fichier de signature, entre autres.
-</sect2>
-<sect2>Section <bf>Avancée</bf><label id="Avancée"><p>
-Dans l'onglet de la configuration <bf>Avancée</bf>, vous pouvez éditer les numéros des ports des serveurs que vous allez utiliser. Ceci n'est pas nécessaire, en général.
-</sect2>
+Dans le sommaire des messages, vous pouvez faire beaucoup de choses à partir du 
+menu contextuel, comme voir les en-têtes du message, ouvrir un message dans une 
+fenêtre séparée (c'est aussi possible en double cliquant sur un message), etc.
 </sect1>
-</sect>
+
+
