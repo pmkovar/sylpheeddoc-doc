@@ -16,7 +16,7 @@ To succesfully compile Sylpheed, you need at least:
 	Note: it is reported that Sun C will not compile Sylpheed.
 </item>
 </itemize>
-Optionally you need:
+Optionally you need:<label id="option_libraries">
 <itemize>
 <item>
 	<url url="http://sourceforge.net/project/showfiles.php?group_id=2" name="Imlib">
@@ -182,6 +182,55 @@ Notice: Sylpheed may be unstable depending on the environment. Please use the ne
 </itemize>
 <p>
 If the make process has completed, run "make install" (as root), to install the program and the supportfiles
+
+<sect2>Compiling Sylpheed with options<label id="compile_sylpheed">
+<p>
+You can choose to compile Sylpheed with some optional features enabled.
+Use <it>./configure --help</it> to list configuration syntax and options.
+<p>
+The following optional features can be enabled:
+
+<itemize>
+	<item>
+		<it>Jpilot</it>: to use you PDA addressbook with Sylpheed. You will
+		need the <it>Jpilot</it> library (and <it>pilot-link</it>, too).
+		Enable this option with the <it>--enable-jpilot</it> configure switch.
+	</item>
+	<item>
+		<it>GnuPG</it>: Sylpheed can encrypt and sign your messages (also decrypt
+		and verify the signatures of the incoming messages) using GnuPG.
+		GnuPG follows the OpenPGP standard and is compatible with PGP.
+		To enable this feature, you need to install GnuPG and GPGME (interface
+		library to GnuPG).
+		Enable this option with the <it>--enable-gpgme</it> configure switch.
+	</item>
+	<item>
+		<it>LDAP</it>: Sylpheed can connect to a LDAP server in order to
+		query mail addresses. To enable this feature you will need the
+		OpenLDAP library.
+		Enable this option with the <it>--enable-ldap</it> configure switch.
+	</item>
+	<item>
+		<it>X-Faces</it>: you can create a small picture (of your face, or
+		of anything else) that will be sent in the header of your mails.
+		This option is enabled if the compface library is found and
+		can be disabled using the <it>--disable-compface</it> configure switch.
+	</item>
+	<item>
+		Images can appear "inline" (embedded in the message window, without
+		the need of an external viewer) if Sylpheed is compiled
+		with either the <it>gdk-pixbuf</it> or the <it>imlib</it> library.
+		You can choose the library (if both are installed) by using the
+		<it>--disable-gdk-pixbuf</it> or <it>--disable-imlib</it> configure switch.
+	</item>
+</itemize>
+
+All these features require additional libraries and tools that may not be part
+of your distribution. You can find them at the addresses listed at the beginning
+of this chapter, <ref id="option_libraries" name="here">.
+
+</sect2>
+
 </sect1>
 
 <sect1>Installation on Linux using RPM
