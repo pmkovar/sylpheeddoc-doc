@@ -19,32 +19,32 @@ Q01 Existent-ils des FAQ dans d'autres langues~?<p>
 A. Oui, voici les liens vers les différentes traductions~:
 <itemize>
 <item>La version de référence en anglais à~: 
-	http://nlpagan.net/sylpheedfaq.htm
-<item>http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm~: 
+	<url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm">
+<item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">~: 
 	SYLPHEED FAQ en japonais, traduit par WAKAI «~SilverRain~» Kazunao
-<item>http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html~: 
+<item><url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html">~: 
 	SYLPHEED FAQ en italien traduit par Maurizio Codogno
-<item>http://www.synconet.de/privhome/rs/sylpheed_faq.html~: 
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.html" name="http://www.synconet.de/privhome/rs/sylpheed_faq.html">~: 
 	SYLPHEED FAQ en allemand (version HTML)
-<item>http://www.synconet.de/privhome/rs/sylpheed_faq.txt~: 
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.txt" name="http://www.synconet.de/privhome/rs/sylpheed_faq.txt">~: 
 	la version allemande, texte seulement. Ces deux versions sont de Ralf Schiffers.
-<item>http://www.cs.uoi.gr/~csst9910/el_sylfaq.html~: 
+<item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">~: 
 	SYLPHEED FAQ en grec, de Theofilos Intzoglou.
-<item>http://sylpheed.republika.pl~: 
+<item><url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl">~: 
 	SYLPHEED FAQ en polonais, de Przemyslaw Sulek.
-<item>http://www.geocities.com/hackpando/sylpheedfaq.html~: 
+<item><url url="http://www.geocities.com/hackpando/sylpheedfaq.html" name="http://www.geocities.com/hackpando/sylpheedfaq.html">~: 
 	version HTML par Marcelo Ramos, aussi~:
-<item>http://www.geocities.com/hackpando/sylpheedfaq.txt~: 
+<item><url url="http://www.geocities.com/hackpando/sylpheedfaq.txt" name="http://www.geocities.com/hackpando/sylpheedfaq.txt">~: 
 	version texte
-<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es/~:
+<item><url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es/" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es/">~:
 	 version HTML, par Ricardo Mones Lastra, ainsi que
-<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi~: 
+<item><url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.dvi">~: 
 	FAQ-es.dvi (Device independent)
-<item>http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps~: 
+<item><url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps" name="http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps">~: 
 	La traduction en espagnol, en postscript.
-<item>http://linux.fisek.com.tr/dfisek/sylpheed-sss.html~: 
+<item><url url="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html" name="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html">~: 
 	Une version turque est disponible grâce à Doruk Fisek.
-<item>http://hem.passagen.se/webplats/sylpheed-faq-se.html~: 
+<item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="http://hem.passagen.se/webplats/sylpheed-faq-se.html">~: 
 	La version suédoise de Mattias Stergren.
 </itemize>
 </sect1>
@@ -64,7 +64,7 @@ conçu pour être~:
 
 <sect1>
 Q03 Où trouver Sylpheed~?<p>
-A. Vous pouvez le télécharger à partir de <tt>http://sylpheed.good-day.net</tt>
+A. Vous pouvez le télécharger à partir de <url url="http://sylpheed.good-day.net" name="http://sylpheed.good-day.net">
 À partir de cette page, vous trouverez des liens pour télécharger
 les sources, mais aussi les RPMs (pour les distributions Redhat et Mandrake)
 les paquetages DEB pour la distribution Debian, et des installations pour
@@ -167,7 +167,7 @@ A.   Parce qu'il a été conçu pour cela~!
 <sect1>
 Q18  Où puis-je trouver les derniers patches pour Sylpheed~?<p>
 A.   La page web des patches pour Sylpheed se trouve à l'adresse~: 
-<tt>http://www.teledix.net/sylpheed/</tt>
+<url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/">
 (Voir aussi la section concernant l'installation pour plus de
 détails sur l'installation des patches)
 </sect1>
@@ -175,7 +175,7 @@ détails sur l'installation des patches)
 <sect1>
 Q19  Comment puis-je envoyer un patch, signaler un bug, parler de Sylpheed avec d'autres personnes~?<p>
 A.   Pour parler à d'autres (fans de Sylpheed), rejoignez la liste de diffusion
-de Sylpheed à~: <tt>http://sylpheed.good-day.net</tt>.
+de Sylpheed à~: <url url="http://sylpheed.good-day.net" name="http://sylpheed.good-day.net">.
 Notez qu'il existe une liste en japonais et une autre en anglais,
 sélectionnez la bonne~!
 Si vous avez créé un patch et que vous voulez que le monde
@@ -221,12 +221,12 @@ finalement obtenir un message bien formaté.
 
 <sect1>
 Q22 Où puis-je trouver la dernière version de la FAQ Sylpheed~?<p>
-A.   Sur <tt>http://nlpagan.net/sylpheedfaq.htm</tt> vous trouverez
+A.   Sur <url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm"> vous trouverez
 la version anglaise (version de référence) dans laquelle vous trouverez
 des liens vers les différentes traductions.
 <p>
 Vous pouvez aussi obtenir les FAQ et manuels à partir de 
-<tt>http://www.sourceforge.net</tt> dans le projet sylpheeddoc.
+<url url="http://www.sourceforge.net" name="http://www.sourceforge.net"> dans le projet sylpheeddoc.
 Ce projet contient les versions les plus à jour des différentes
 traductions de ces documents.
 </sect1>
@@ -386,7 +386,7 @@ Q12  Comment créer ma propre image 'compface'~?<p>
 A.   Le paquetage <tt>faces</tt> contient un programme appelé xbm2ikon, qui
 convertit une image xbm 48x48 au format nécessaire pour compface.
 Grâce à Jeff Dairiki, vous pouvez avoir un cours complet sur cela à
-l'adresse~: http://www.dairiki.org/xface/
+l'adresse~: <url url="http://www.dairiki.org/xface/" name="http://www.dairiki.org/xface/">
 
 </sect1>
 
