@@ -34,17 +34,16 @@ La puissance de Sylpheed provient du fait qu'il est
 <item>très rapide~;
 <item>intuitif~;
 <item>simple à utiliser~;
-<item>très complet~;
+<item>doté de nombreuses de fonctionnalités~;
 <item>doté d'une interface agréable et sophistiquée.
 </itemize>
 </sect1>
 
 <sect1>L'interface
 <p>
-L'apparence et l'interface sont semblables à celles de la plupart des clients
+L'apparence et l'interface sont semblables à celles de quelques clients
 de messagerie pour Windows, tels que Outlook Express, Becky! et Datula.
-L'interface est aussi conçue pour simuler les messageries des Emacsen,
-et la plupart des commandes sont accessibles par le clavier.
+L'interface est aussi conçue pour simuler les clients de messagerie des différents Emacs, et la plupart des commandes sont aussi accessibles par le clavier.
 <p>
 Les messages sont stockés au format MH, et vous serez capable de l'utiliser
 avec n'importe quel autre outil de messagerie basé sur le format MH (tel
@@ -57,24 +56,24 @@ des programmes extérieurs à Sylpheed pour recevoir et trier vos messages
 <p>
 Les caractéristiques suivantes sont actuellement incluses~:
 <itemize>
-<item>un nombre de comptes de messagerie illimité
-<item>l'affichage par fil de discussion
+<item>un nombre illimité de comptes de messagerie
+<item>l'affichage par fil de conversation
 <item>le filtrage des messages
-<item>MIME (pièces jointes) 
+<item>le support du format MIME pour les pièces jointes
 <item>l'affichage intégré des images
 <item>le support de X-Face 
 <item>la possibilité d'utiliser un éditeur externe
 <item>la mise en file d'attente des messages pour l'envoi
 <item>la fonction de brouillon 
-<item>la césure de ligne
-<item>les liens URL cliquables
+<item>la justification des messages composés
+<item>les liens URI cliquables
 <item>un carnet d'adresses sauvegardé sous un format XML
 <item>un carnet d'adresses avec accès à un serveur LDAP
 <item>un carnet d'adresses JPilot (pour les assistants personnels Palm) 
-<item>la gestion des nouveaux messages, des message non lus
+<item>la gestion des nouveaux messages et des message non lus
 <item>le support de plusieurs répertoires MH
 <item>des raccourcis claviers compatibles Mew/Wanderlust
-<item>les fonctions de lecteur de nouvelles
+<item>une fonction de lecteur de nouvelles
 <item>l'impression
 <item>le support UIDL
 <item>l'authentification APOP pour le protocole POP3
@@ -96,7 +95,7 @@ principales de Sylpheed.
 
 Il y a plusieurs façons de gérer les messages. La plus connue est celle qui consiste à <em>ne pas les gérer</em>.<p>
 Beaucoup de personnes reçoivent un grand nombre de messages et les laissent dans
-le dossier «~Réception~».
+le dossier <bf>Réception</bf>.
 Cela devient, après un certain temps, ingérable. Essayez de trouver ce message
 important que vous avez reçu il y a cinq jours parmi 5000 autres messages.
 Même triés par date, cela peut vous prendre un temps considérable pour le retrouver.
@@ -167,7 +166,7 @@ un labyrinthe de boîtes aux lettres n'en est pas une meilleure~!
 
 <sect1>Orientation du développement
 <p>
-Cette section n'a pas encore été écrite (soyez patient).
+Ceci est un chapitre spécial. Comme tous les programmes ayant ouvert leur code source, vous, utilisateur de Sylpheed, pouvez demander vous-même les fonctionnalités dont vous avez besoin.  La meilleure méthode consiste à rejoindre une des plusieurs listes de diffusion (<em>mailing lists</em>) concernant Sylpheed.  Vous trouverez dans la section «~Information~» de ce manuel comment vous pouvez vous y inscrire.
 </sect1>
 
 </sect>

@@ -6,9 +6,7 @@
 
 Deux fichiers, <tt>mime.types</tt> et <tt>mailcap</tt> sont utilisés pour
 déterminer le type MIME d'une pièce jointe ainsi que l'application associée
-a ce type.
-Le fichier <tt>mime.types</tt> est utilisé pour déterminer le type MIME d'une
-pièce jointe que vous ajoutez lors de la composition d'un message.
+à ce type.  Le fichier <tt>mime.types</tt> est utilisé pour déterminer le type MIME d'une pièce jointe que vous ajoutez lors de la composition d'un message.
 Le fichier <tt>mime.types</tt> contient des lignes telles que:
 
 <code>
@@ -17,20 +15,14 @@ application/pdf                    pdf
 
 <p>
 
-Sylpheed recherche ce fichier dans le répertoire définit par la variable
-<tt>SYSCONFDIR</tt> (définit a la compilation), <tt>/etc</tt> et
-<tt>$HOME/.sylpheed/</tt>.
-Si ce fichier n'existe pas ou n'est pas au bon format, toutes les pièces
-jointes auront le type << application/octet-stream >>, et le destinataire
-du message ne saura pas quelle application utiliser pour voir ces pièces
-jointes.
+Sylpheed recherche ce fichier dans le répertoire défini par la variable <tt>SYSCONFDIR</tt> (définie à la compilation), dans <tt>/etc</tt> et enfin dans <tt>$HOME/.sylpheed/</tt>.
+Si ce fichier n'existe pas ou n'est pas dans le bon format, toutes les pièces jointes auront le type <tt>application/octet-stream</tt> et le destinataire du message ne saura pas quelle application utiliser pour voir ces pièces jointes.
 
-Pour définir l'application a utiliser pour visualiser une pièce jointe,
-éditer le fichier mailcap (<tt>/etc/mailcap</tt> or <tt>$HOME/.mailcap</tt>).
+Pour définir l'application à utiliser pour visualiser une pièce jointe, il suffit d'éditer le fichier mailcap (<tt>/etc/mailcap</tt> ou <tt>$HOME/.mailcap</tt>).
 
-Par example, vous devrez ajouter les lignes suivantes dans le fichier
+Par example, vous devez ajouter les lignes suivantes dans le fichier
 <tt>$HOME/.mailcap</tt> pour utiliser xpdf pour visualiser les fichiers au
-format PDF:
+format PDF~:
 
 <code>
 
@@ -41,35 +33,30 @@ application/pdf ; xpdf %s
 </sect1>
 </sect>
 
-<sect>Conversion des autres formats de courriers dans Sylpheed (format MH)
+<sect>Importation et exportation de courriers
 
-<sect1>Importer des messages au format mbox<p>
+<sect1>Importer des messages au format MBOX<p>
 <!-- added 2001/07/20 -->
-Sylpheed vous permet d'importer des messages au format Mbox à partir du menu 
-Fichier. Vous devez d'abord créer un répertoire de courriers où vous souhaitez 
-que les messages soient installés, puis vous sélectionnez Fichier->importer 
-les fichiers Mbox. Utilisez la fonction de navigation pour sélectionner le 
-fichier Mbox et le répertoire de couriiers de Sylpheed et pressez Ok. Et 
-voila, vos courriers sont importés.<p>
+Sylpheed vous permet d'importer des messages au format MBOX à partir du menu 
+<bf>Fichier</bf>. Mais d'abord, vous devez d'abord créer un dossier dans lequel vous souhaitez que les messages soient installés. Ensuite, sélectionnez <bf>Fichier -> Importer un fichier mbox...</bf>. Utilisez la fonction de navigation pour sélectionner le 
+fichier MBOX et le dossier destinataire et pressez <bf>Ok</bf>. Et 
+voilà, vos courriers sont importés.<p>
 C'était facile, n'est ce pas ?
 </sect1>
 
-<sect1>Importer depuis les lecteurs de courriers Windows (Becky!, AL-Mail, 
+<sect1>Importer depuis les clients de messageries sous Windows (Becky!, AL-Mail, 
 Outlook Express4, etc.)<p>
-Pour les possibilités d'importation des répertoires de courriers de ces 
-derniers et d'autres programmes de courriers, vous pouvez télécharger le 
-programme mbx2mbox sur sourceforge.net. Le projet est situé sur 
+Pour pouvoir importer des répertoires de courriers
+de certains clients de messageries fonctionnant sous Windows, vous pouvez utiliser le programme mbx2mbox situé à l'adresse
 <url url="http://mbx2mbox.sourceforge.net" name="http://mbx2mbox.sourceforge.net">.
 </sect1>
 
 <!-- End added 2001/07/21 -->
 <!-- start add 2001/09/04 -->
-<sect1>Exporter du format MH de Sylpheed vers mbox<p>
-Sylpheed offre une manière d'exporter une boîte aux lettres au format standard 
-par le menu Fichier. Sélectionnez simplement l'option "Exporter vers un 
-fichier mbox..." et vous pouvez sélectionner le répertoire à exporter 
-(assisté par un dialogue de navigation) et sélectionnez aussi ou entrez le nom 
-du fichier mbox que vous voulez générer.
+<sect1>Exporter le format MH de Sylpheed vers un fichier MBOX<p>
+Sylpheed offre la possibilité d'exporter un de ses dossiers vers le format standard MBOX. Sélectionnez pour cela le menu <bf>Fichier -> Exporter vers un 
+fichier mbox...</bf>, puis sélectionnez le dossier à exporter 
+et enfin choisissez le nom du fichier à générer.
 <!-- end add 2001/09/04 -->
 </sect>
 
