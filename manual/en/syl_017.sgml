@@ -24,27 +24,33 @@ http://www.aic.uniovi.es/mones/sylpheed/faq-es.ps, the Spanish FAQ as a Postscri
 <sect1>Mailing Lists<p>
 If you want to stay up to date on Sylpheed, and want to talk about the program with other users, you can join the mailing list.<p>
 Send a mail to sylpheed-ctl@good-day.net that says<p>
-subscribe Your Name<p>
+<tt>subscribe Your Name</tt><p>
 in the body.<p>
 The server returns the mail once for the first registration request that asks the confirmation: "May I put you on this mailing list?" that includes the following phrase (this number is merely an example).<p>
-confirm 84682771 Anne Shirley<p>
+<tt>confirm 84682771 Anne Shirley</tt><p>
 This is a precaution for mischief like subscribing you to the list against your wish.<p>
 If you received the entry confirmation mail, send a mail that includes the phrase:<p>
-confirm Password(a number) Your Name<p>
+<tt>confirm Password(a number) Your Name</tt><p>
 to the address for registration: sylpheed-ctl@good-day.net again. Then, it is considered that you have confirmed the registration and you are registered to the server.<p>
 The address for posting to the list is sylpheed@good-day.net.<p>
 Notice: If you lost the mail that says<p>
 confirm Password(a number) Your Name<p>
-or you became confused and want to do from the first, do them over from `the first', in other words, send<p>
-subscribe Anne Shirley<p>
-How to unsubscribe.<p>
+or you became confused and want to do from start, do them over from the start, in other words, send<p>
+<tt>subscribe Anne Shirley</tt><p>
+to sylpheed-ctl@good-day.net again.<p>
+<sect2>How to unsubscribe.<p>
 Send a mail to sylpheed-ctl@good-day.net that says<p>
-unsubscribe<p>
+<tt>unsubscribe</tt><p>
 in the body.<p>
+</sect2>
 <!-- added aug. 13, 2001 -->
 </sect1>
 <sect1>Anonymous CVS<p>
 This section has not been written yet.
 </sect1>
 
+<!-- added 2001/09/05 -->
+<sect1>How to tell another program to use Sylpheed as e-mail program<p>
+If you wish to use Sylpheed from within for example Netscape or Opera, then you need to go to the `preferences` section, then choose `applications` and in the email client part, you need to enter <tt>sylpheed --compose</tt>.
+</sect1>
 </sect>

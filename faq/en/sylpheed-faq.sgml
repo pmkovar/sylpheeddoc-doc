@@ -464,4 +464,13 @@ Q11  I still can't see the pictures. Why not?<p>
 A.   You may not have compiled in Compface support. See Q11
      in the Installation/Configuration section.
 </sect1>
+
+<sect1>
+Q12  Why does the URL Launcher not launch my webbrowser?<p>
+A.   You need to double-click the url.
+</sect1>
+<sect1>Q13 Attachments with spaces in the name won't open!<p>
+A.   When you try to launch a helper application, like an image viewer, with an attachment that has spaces in the name, put quotes around the %s
+parameter. Example: gedit '%s'
+</sect1>
 </article>
