@@ -1,22 +1,151 @@
 <sect>Handling MIME types
 
-<sect1>How Sylpheed checks for Mime types<p>
+<sect1>How Sylpheed checks for Mime types
 
-(Thanks to Adriaan Penning for writing this!)<p>
+<p>
+When attaching a file to a message (composing a new message), the
+MIME type of the attached file is choosen based on the file extension
+from the mapping list defined in the <it>mime.types</it> file(s).
+Sylpheed defines its MIME type mapping table by loading the
+system wide MIME types file, then the user file.
+The systeme file is <it>SYSCONFDIR/mime.types</it> (SYSCONFDIR can
+be defined a compile time), or if it does not exist, <it>/etc/mime.types</it>.
+The user file is <it>$HOME/.sylpheed/mime.types</it>.
+<p>
+A <it>mime.types</it> file consist of one MIME type definition per line,
+each definition line starting with the name of the MIME type, followed by
+a space separated list of the corresponding file extensions.
+The file can contain empty lines, and comments start with the <tt>#</tt>
+character and close at line's end.
+<p>
+Following is a typical <it>mime.types</it> file (an extract of mine):
 
-Two files, mime.types and mailcap, are involved in determining the mime type of an attachment, and the application associated with that mime type. The mime.types file is used to determine the mimetype of attachments you add when composing a message. The mime.types file consists of lines like:<p>
+<verb>
+# This file controls what Internet media types are sent to the client for
+# given file extension(s).  Sending the correct media type to the client
+# is important so they know how to handle the content of the file.
+# The Internet media type registry is at 
+# <ftp://ftp.iana.org/in-notes/iana/assignments/media-types/>.
 
-application/pdf                    pdf<p>
+# MIME type			Extension
+application/mac-binhex40	hqx
+application/mac-compactpro	cpt
+application/msword		doc
+application/pdf			pdf
+application/postscript		ai eps ps
+application/rtf			rtf
+application/x-bcpio		bcpio
+application/x-bzip2		bz2
+application/x-csh		csh
+application/x-gtar		gtar
+application/x-gzip		gz tgz
+application/x-kword		kwd kwt
+application/x-kspread		ksp
+application/x-kpresenter	kpr kpt
+application/x-kchart		chrt
+application/x-latex		latex
+application/x-sh		sh
+application/x-shar		shar
+application/x-shockwave-flash	swf
+application/x-tar		tar
+application/x-tcl		tcl
+application/x-tex		tex
+application/x-texinfo		texinfo texi
+application/x-troff		t tr roff
+application/x-troff-man		man
+application/zip			zip
+audio/mpeg			mpga mp2 mp3
+audio/x-aiff			aif aiff aifc
+audio/x-wav			wav
+image/gif			gif
+image/ief			ief
+image/jpeg			jpeg jpg jpe
+image/png			png
+image/tiff			tiff tif
+text/plain			asc txt
+text/rtf			rtf
+text/sgml			sgml sgm
+text/xml			xml
+video/mpeg			mpeg mpg mpe
+video/x-msvideo			avi
+text/html			html htm
 
-Sylpheed looks for this file in SYSCONFDIR (determined at compile time), /etc/ and $HOME/.sylpheed/ 
+</verb>
 
-If this file doesn't exist or has the wrong format, every attachment will have 	`application/octet-stream' as it's mime type, so the recipients mail client may not know what application to use to view the attachment.
+<p>
+If the file can be found or has the wrong format, Sylpheed will assume
+the default MIME type for all the attachments: <it>application/octet-stream</it>.
+In such a case, the recipients mail client may not know what application 
+to use to view the attachment.
 
-To change the default application that sylpheed uses to view an attachment that	somebody mailed you, look for a mailcap file like /etc/mailcap or $HOME/.mailcap
+</sect1>
 
-For example, you can add a line like this in $HOME/.mailcap if you want to view pdf	files with xpdf:<p>
+<sect1>How Sylpheed handles attachments (reception)
+<p>
+When opening an attachment (select the attachment, right click and select
+<it>Open</it>) Sylpheed uses one of the following methods to determine
+the application to launch:
 
-application/pdf ; xpdf %s
+<itemize>
+	<item>
+		The attachment is an image: the application is the one defined by the
+		<it>mime_image_viewer</it> variable of the common preferences configuration
+		file (<it>$HOME/.sylpheed/sylpheedrc</it>). If no application is defined, or
+		if the format of the definition is not valid, the default application
+		command is <it>display</it> (ImageMagick viewer).
+	</item>
+	<item>
+		The attachment is a sound file: the application is the one defined by the
+		<it>mime_audio_player</it> variable of the common preferences configuration
+		file (<it>$HOME/.sylpheed/sylpheedrc</it>). If no application is defined, or
+		if the format of the definition is not valid, the default application
+		command is <it>play</it>.
+	</item>
+	<item>
+		The attachment is a HTML file: the application is the one defined by the
+		<it>uri_cmd</it> variable of the common preferences configuration
+		file (<it>$HOME/.sylpheed/sylpheedrc</it>). This can also be changed in the
+		<it>Common preferences</it>, by changing the <it>Web browser</it> defined
+		in the <it>Other</it> tab.
+	</item>
+	<item>
+		Any other attachment type: Sylpheed relies on <it>metamail</it> to use
+		the correct application (Sylpheed starts <it>metamail</it> giving it
+		the attachment file and the MIME type taken from the mail).
+	</item>
+</itemize>
+
+<p>
+The binding of the applications to each MIME type is defined in the
+<it>mailcap</it> file. The systeme wide file is <it>/etc/mailcap</it>, 
+while the user file is <it>$HOME/.mailcap</it>.
+
+<p>
+In the mailcap file, there is one definition per line, big lines
+can be broken by escaping the newline with a <it>\</it> character,
+the first element of the line is the MIME type, then a semi-colon,
+(<it>;</it>), and finally the application to launch.
+The application part (right side of the semi-colon) can contain several
+shell commands separated by an escaped semi-colon (<it>\;</it>) and
+the <it>%s</it> string is replaced by the name of the file when
+launching the command.
+
+<p>
+Following is a typical <it>mailcap</it> file (an extract of mine):
+
+<verb>
+
+image/*; ee %s
+
+video/mpeg; gtv %s
+video/*; xanim %s
+
+application/pdf; xpdf %s
+
+text/html; dillo %s
+
+</verb>
+
 
 </sect1>
 </sect>
