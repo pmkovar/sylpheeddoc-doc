@@ -3,7 +3,7 @@
 
 <sect1>Démarrer Sylpheed
 <p>
-Démarrer Sylpheed peut être fait en saisissant "sylpheed" avec le prompt d'une terminal et en pressant Entrée. Vous pouvez aussi ajouter Sylpheed à un menu dans KDE ou Gnome, ou lui créer un raccourci sur le bureau si votre gestionnaire de fenêtres le permet.
+Démarrer Sylpheed peut être fait en tapant "sylpheed" dans le prompt d'un terminal et en pressant Entrée. Vous pouvez aussi ajouter Sylpheed à un menu dans KDE ou Gnome, ou lui créer un raccourci sur le bureau si votre gestionnaire de fenêtres le permet.
 <p>
 Lorsque vous démarrez Sylpheed, le programme vous demandera où vous souhaitez stocker les courriers que vous avez téléchargés. Vous pouvez accepter la valeur par défaut ($HOME/Mail) ou configurer votre propre répertoire de courriers.
 <p>

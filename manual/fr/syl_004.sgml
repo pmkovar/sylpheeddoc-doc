@@ -6,9 +6,9 @@
 Pour réussir la compilation de Sylpheed, vous avez au moins besoin de :
 <itemize>
 <item>Tout Unix compatible POSIX UNIX ou des OS similaires i.e. Linux, FreeBSD, Solaris
-<item>Un compilateur ANSI C récent (gcc 2.7.2.3 devrait aussi fonctionner). Note : le C Sun ne compilera pas Sylpheed.
+<item>Un compilateur ANSI C récent (gcc 2.7.2.3 devrait aussi fonctionner). Note : le compilateur C de Sun ne compilera pas Sylpheed.
 </itemize>
-Optionellement, vous avez besoin de :
+Optionnellement, vous avez besoin de :
 <itemize>
 <item>Imlib ou gdk-pixbuf (pour la visualisation des image intégrée)
 <item>libcompface (pour X-Face)
@@ -73,12 +73,12 @@ Note: Sylpheed peut être instable en fonction de l'environnement. Veuillez utili
 <sect1>Éléments et points clés de l'installation
 <p>
 <itemize>
-<item>Untar les fichiers sources dans un nouveau répertoire
+<item>Décompressez les fichiers sources dans un nouveau répertoire
 <item>tar -xvfz sylpheed-.tar.gz (pour tar.gz)
 <item>tar -xvfI sylpheed-.tar.bz2 (pour tar.bz2) 
 <item>cd vers le nouveau répertoire sylpheed 
 <item>Lancez ./configure pour contrôler votre environnement et créer les Makefiles d'installation
-<item>Lancez le programme 'make' qui compilera les sources. Ne faites pas cette étape s'il existe des erreurs fatales dans la précédente. FLes erreurs fatales indiquent que des éléments manquent de manière à compiler Sylpheed correctement. 
+<item>Lancez le programme 'make' qui compilera les sources. Ne passez pas à cette étape s'il existe des erreurs fatales dans la précédente. FLes erreurs fatales indiquent que des éléments manquent de manière à compiler Sylpheed correctement. 
 </itemize>
 <p>
 Si le processus make est terminé, lancez "make install" (en tant que root), pour installer le programme et les fichiers de support
@@ -93,7 +93,7 @@ Comme root, lancez la commande "rpm -ivh " sur le fichier RPM que vous avez télé
 <p>
 Avec une connexion internet :
 <p>
-apt-get installe sylpheed (pour l'installer avec une connexion internet)
+apt-get install sylpheed (pour l'installer avec une connexion internet)
 <p>
 Sans connexion internet, récupérez le paquet debian, par exemple sur http://packages.debian.org/unstable/mail/sylpheed.html
 <p>
@@ -112,13 +112,13 @@ dans le menu principal, choisissez "Configure" -> "Packages" -> "mail", puis "sy
 <p>
 Utiliser les portages
 <p>
-Allez chercher le portage de sylpheed sur :
+Allez chercher le port de sylpheed sur :
 <p>
 ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail
 <p>
 puis, en tant que root : pkg-add sylpheed-0.x.x.tgz
 <p>
-en utilisant les portages avec compilation :
+en utilisant les ports avec compilation :
 <p>
 mettez d'abord votre portage à jour, traitez-le sur http://www.freebsd.org/ports/mail.html
 <p>
