@@ -1,24 +1,95 @@
-<sect>FAQ<p>
-You can find the latest, updated, FAQ (Frequently Asked Questions list) at 
-<url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
-
-<sect1>Unread News Messages
-</sect1>
-<sect1>Using MSN Mail Accounts
-</sect1>
-<sect1>Changing Fonts on Menu, etc.<p>
-If you want to change the font that shows the menu of Sylpheed, this is controlled by the window manager that you are using. You have to go into the setup of the window manager (KDE, Gnome, XFCE) and change the font to your desired one.<p>
-Changing the font of the views of Sylpheed is done by selecting "Common preferences" in the Configuration menu. There you select the "Display" tab, and in the first section of the window you can browse the fonts available on your computer.
-</sect1>
-<sect1>Changing Key Binding of Short-Cut Key<p>
-Sylpheed's graphical interface is based on GTK. This means that it is very simple to change the key binding (shortcut key, hotkey) for menu items. If you are used to a certain key combination from another program, you can tell Sylpheed to use that same key combination.<p>
-The procedure is very simple. Suppose you want to change the key binding for getting new mail (message menu) from Alt-I to Ctrl-M.<p>
+<sect>Reference<p>
+<!-- Added 2001/07/21 -->
+In this section you will find a few pieces of information that might be handy in making Sylpheed more clear for you in respect to the used shortcut keys, and a layout of the format of the address book.
+<sect1>Short-Cut Key List<label id="shortcut"><p>
+<sect2>One-key shortcuts:<p>
 <itemize>
-<item>Open the message menu with the mouse or by pressing Alt-M
-<item>Select the "get new mail" option (do not click it, this will activate the function!). If you use the mouse, just move the mouse cursor over the option.
-<item>Now you press Ctrl-M. You will immediately see the new key combination appear on the menu.
+<item>a: create a new message
+<item>d: delete the selected message
+<item>f: forward the selected message#
+<item>g: go to a specific folder through a browsing dialog
+<item>n: jump to the next message/next part of a multipart message
+<item>p: jump to the previous message/previous part of a multipart message
+<item>v: switch on/off the message view
+<item>w: same as a
+<item>y: Opens save as... dialog
 </itemize>
-Congratulations, you have just changed a key binding. This way you can change all the options that you want. Do note that it is best to use just the alt, shift and ctrl key combinations. Several functions within Sylpheed are called up by one-key actions which are programmed in.
+</sect2>
+<sect2>Shortcuts to the File menu:<p>
+<itemize>
+<item>Alt-F: open FILE menu
+<item>Alt-P: print
+<item>Alt-W: close
+<item>Alt-Q: exit
+</itemize>
+</sect2>
+<sect2>Shortcuts to the Edit menu<p>
+<itemize>
+<item>Alt-E: open EDIT menu
+<item>Ctrl-C: copy
+<item>Ctrl-A: select all
+<item>Ctrl-S: search
+</itemize>
+</sect2>
+<sect2>Shortcuts to the View menu<p>
+<itemize>
+<item>Alt-V: open VIEW menu
+</itemize>
+<sect2>Shortcuts to the Message menu<p>
+<itemize>
+<item>Alt-M: open MESSAGE menu
+<item>Alt-I: check mail for current account
+<item>Shift-Alt-I: Check mail for all accounts
+<item>Alt-N: compose new message
+<item>Alt-R: reply to message
+<item>Ctrl-Alt-R: reply to sender (contrary to reply to e.g. mailing list)
+<item>Shift-Alt-R: reply to all (includes all addresses in To: and Cc:)
+<item>Ctrl-F: forward message
+<item>Shift-Ctrl-F: forward message as attachment
+<item>Alt-O: move message
+<item>Alt-D: delete message
+<item>Shift-Ctrl-N: open message in new window
+<item>Ctrl-U: view message source
+<item>Ctrl-H: show all message headers
+</itemize>
+</sect2>
+<sect2>Shortcuts to the Summary menu<p>
+<itemize>
+<item>Alt-S: open SUMMARY menu<p>
+<item>Alt-X: execute (pending commands, only useful when commands are not executed immediately)
+<item>Alt-U: update view
+<item>Alt-G: go to other folder
+<item>Ctrl-T: thread view
+<item>Shift-Ctrl-T: unthread view
+</itemize>
+</sect2>
+<sect2>Shortcuts to the Tool menu<p>
+<itemize>
+<item>Alt-T: open tool menu
+<item>Alt-A: open addressbook
+<item>Alt-L: open logfile
+</itemize>
+</sect2>
 </sect1>
 
+<sect1>Data Format of Address Book<p>
+The addressbook is located in ~/.sylpheed. It is named addressbook.xml.
+The general format of the addressbook is:<p>
+
+<code>
+&lt addressbook &gt<p>
+ &lt common_address &gt<p>
+    &lt group name="Common addresses" &gt<p>
+    &lt item &gt<p>
+     &lt name &gt Paul &lt /name &gt<p>
+     &lt address &gt paul@nlpagan.net &lt /address &gt<p>
+     &lt remarks &gt Writes Sylph. manual &lt /remarks &gt<p>
+	&lt /item &gt<p>
+    &lt /group &gt<p>
+ &lt /common_address &gt<p>
+&lt /addressbook &gt
+</code>
+
+</sect1>
+<!-- end add 2001/07/21 -->
 </sect>
