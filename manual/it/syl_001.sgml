@@ -1,0 +1,134 @@
+<!doctype linuxdoc system>
+<article>
+    <title>Manual Utente per Sylpheed
+    <author>Paul Kater (paul@nlpagan.net)
+	    Nick Selby
+	    traduzione a cura di
+	    Flavio Boniforti (bonnyfused@tiscali.it)
+    <abstract>
+       Manuale Utente per Sylpheed-0.8.10
+    </abstract>
+
+<toc>
+
+<p>
+Copyright (c) 2003 <it>Flavio Boniforti</it>
+E' concesso copiare, distribuire e/o modificare questo documento
+nei termini previsti dalla licenza "GNU Free Documentation License" versione 1.1
+o qualsiasi versione successiva pubblicata dalla Free Software Foundation;
+senza sezioni invarianti, senza copertine fronte/retro.
+Una copia della licenza è inclusa nella sezione 
+<ref id="GNU Free Documentation License" name="section"> intitolata
+"GNU Free Documentation License".
+</p>
+
+<p>
+La lista dei membri del <it>team della documentazione di Sylpheed</it> è
+presente in <ref id="Team della documentazione di Sylpheed" name="appendix">.
+
+
+<sect>Cos'è Sylpheed?
+
+<p>
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/full_split.png">
+</figure>
+
+<sect1>Introduczione a Sylpheed.
+<p>
+Sylpheed è un client di posta e di news molto veloce. Funziona su quasi ogni sistema di tipo Linux/Unix.
+<p>
+Sylpheed è potente poichè è
+<itemize>
+<item>leggero in termini di risorse
+<item>molto veloce
+<item>intuitivo
+<item>facile da usare
+<item>dotato di numerose funzionalità
+<item>dotato di un'interfaccia adeguata e sofisticata
+</itemize>
+</sect1>
+
+<sect1>Interfaccia
+<p>
+L'apparenza e l'interfaccia sono simili ad alcuni client di posta diffusi in ambiente 
+Windows, quali ad esempio Outlook Express, Becky!, e Datula. L'interfaccia è altresì 
+simile ai vari tipi di Emacs e quasi tutti i comandi sono accessibili da tastiera.
+<p>
+I messaggi sono salvati in nel formato MH ed è possibile usare anche 
+altri client di posta basati sullo stesso formato (p. es. Mew). E' anche 
+possibile utilizzare fetchmail e/o procmail, oltre a programmi esterni per 
+la ricezione (p. es. inc o imget).
+</sect1>
+
+<sect1>Caratteristiche principali
+<p>
+Funzionalità attualmente incluse: 
+<itemize>
+<item>gestione di un numero illimitato di account
+<item>visualizzazione dei thread
+<item>filtraggio dei messaggi
+<item>supporto del formato MIME per gli allegati
+<item>visualizzatore incorporato di immagini
+<item>supporto per X-Face
+<item>supporto per editor esterni
+<item>invio differito di messaggi (accodamento)
+<item>utilizzo di "bozze" per i messaggi
+<item>utilizzo di modelli di messaggio
+<item>giustificazione del testo nei messaggi composti
+<item>hyperlink cliccabili (URI)
+<item>rubrica basata su XML
+<item>rubrica con accesso LDAP
+<item>rubrica Jpilot (per dispositivi palmari)
+<item>gestione messaggi nuovi e non letti
+<item>supporto per cartelle MH multiple
+<item>scorciatoie da tastiera compatibili con Mew/Wanderlust
+<item>lettore di news integrato
+<item>stampa
+<item>supporto UIDL
+<item>autenticazione APOP
+<item>supporto SMTP AUTH
+<item>supporto IPv6
+<item>sicurezza mediante GPG per codifica e firma dei messaggi
+<item>supporto per autoconf ed automake
+<item>supporto di i18n dei messaggi mediante gettext 
+<item>supporto di numerose lingue, compreso UTF-8 (Unicode), mediante libjconv 
+<!-- added 2001/07/19 -->
+<item>compatibilità IMAP4
+</itemize>
+Questa lista non è completa, ma consente una panoramica 
+sulle funzioni principali di Sylpheed.
+</sect1>
+
+<sect1>Metodi per la gestione dei messaggi<p>
+<!-- added 2001/09/06 -->
+Esistono diversi metodi per gestire i messaggi. Il più conosciuto è <tt>non gestirli affatto.</tt><p>
+Troppe persone ricevono moltissime e-mail e le lasciano tutte nella cartella "In entrata", la quale dopo qualche tempo diventa ingestibile. Immaginate di dover scovare un messaggio importante ricevuto 5 giorni fa, in una cartella che contiene oltre 5000 messaggi. Anche se fossero ordinati cronologicamente, ci vorrebbe parecchio tempo prima di recuperare tale e-mail.<p>
+A questo scopo esistono le <tt>cartelle</tt> e le <tt>cassette di posta</tt>.<p>
+Procedendo nella lettura di questo manuale, imparerete a creare cassette di posta ed anche cartelle che possono contenere più cassette di posta. A cosa servono?<p>
+Semplicemente a mantenere ordine. In cassette di posta differenti si possono depositare messaggi di diverso tipo. Supponiamo che siate membro di un club dal quale ricevete circa 30 e-mail al giorno. Ecco che può essere utile creare una cassetta di posta per contenere tali e-mail. Così quando ricevete un messaggio dal club, lo spostate nella relativa cassetta di posta. In questo modo avete la certezza di poter localizzare le e-mail provenienti dal club.<p>
+E' noioso spostare 30 e-mail al giorno in una cartella quando questi vengono ricevuti in momenti casuali della giornata? Certo che lo è! Bene, anche a questo proposito esiste una soluzione, e si chiama <tt>filtraggio della posta</tt>.<p>
+I filtri possono automatizzare il processo di spostamento delle e-mail nelle varie cartelle. Più avanti in questo manuale imparerete anche ad impostare correttamente i filtri, in modo che non vi toccherà più perdere del tempo per spostare manualmente i messaggi.<p>
+<sect2>D'accordo, ma che differenza c'è tra una cartella ed una cassetta di posta?<p>
+E' esattamente la stessa cosa che fate con il vostro disco fisso. Vengono create delle directory all'interno delle quali è possibile inserire file ed altre directory.<p>
+Nel caso di Sylpheed, è possibile creare una cassetta di posta nella quale si possono creare alte cassette di posta che in qualche modo sono collegate tra di loro. Ad esempio, si può creare una cartella che contenga le cassette di posta per le liste di distribuzione alle quali si è iscritti.<p>
+E' però necessario un chiarimento. In Sylpheed una cassetta di posta non è altro che una directory. In una directory è possibile creare altre directory, oltre che salvarci dei file. Sylpheed salva ogni singolo mesaggio in un file separato.
+Un esempio di un albero di cartelle è qui:<p>
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/folder_tree.png">
+</figure>
+
+Come si può notare, non esiste un limite al modo di impostare la struttura. Finchè lo spazio su dusco lo consente, è possibile continuare ad espandere la struttura ad albero.<p>
+Ovviamente è necessaria una dose di buonsenso nel creare le cartelle. Mantenere tutti i dati in un solo posto non è una buona idea, ma neppure crearsi un dedalo di cartelle lo è!
+</sect2>
+</sect1>
+
+<sect1>Caratteristiche previste in futuro<p>
+Questo è un capitolo particolare. Come per tutti i programmi open source, molte caratteristiche possono essere richieste dall'utente stesso. Il modo migliore per unirsi al gruppo è sottoscrivere una lista di distribuzione relativa a Sylpheed. A questo scopo consultate la sezione Informazioni del manuale.
+</sect1>
+
+</sect>
+
