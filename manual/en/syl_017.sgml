@@ -1,80 +1,223 @@
-<sect>Reference<p>
-<!-- Added 2001/07/21 -->
-In this section you will find a few pieces of information that might be handy in making Sylpheed more clear for you in respect to the used shortcut keys, and a layout of the format of the address book.
-<sect1>Short-Cut Key List<label id="shortcut"><p>
-<sect2>One-key shortcuts:<p>
-<itemize>
-<item>a: create a new message
-<item>d: delete the selected message
-<item>f: forward the selected message#
-<item>g: go to a specific folder through a browsing dialog
-<item>n: jump to the next message/next part of a multipart message
-<item>p: jump to the previous message/previous part of a multipart message
-<item>v: switch on/off the message view
-<item>w: same as a
-<item>y: Opens save as... dialog
-</itemize>
+
+<sect>References, tips and tricks
+<p>
+In this section you will find a few pieces of information 
+that might be handy in making Sylpheed more clear for you 
+in respect to the used shortcut keys, and a layout of 
+the format of the address book.
+
+<sect1>Short-Cut Key List<label id="shortcut">
+
+<sect2>Shortcuts to the File menu:
+<p>
+	<itemize>
+		<item>
+			Ctrl-S: Save-As
+		</item>
+		<item>
+			Ctrl-Q: exit
+		</item>
+	</itemize>
 </sect2>
-<sect2>Shortcuts to the File menu:<p>
-<itemize>
-<item>Alt-F: open FILE menu
-<item>Alt-P: print
-<item>Alt-W: close
-<item>Alt-Q: exit
-</itemize>
+
+<sect2>Shortcuts to the Edit menu
+<p>
+	<itemize>
+		<item>
+			Ctrl-C: copy
+		</item>
+		<item>
+			Ctrl-A: select all
+		</item>
+		<item>
+			Ctrl-F: Find in current message
+		</item>
+		<item>
+			Shift-Ctrl-F: Search messages
+		</item>
+	</itemize>
 </sect2>
-<sect2>Shortcuts to the Edit menu<p>
-<itemize>
-<item>Alt-E: open EDIT menu
-<item>Ctrl-C: copy
-<item>Ctrl-A: select all
-<item>Ctrl-S: search
-</itemize>
+
+<sect2>Shortcuts to the View menu
+<p>
+	<itemize>
+		<item>
+			V: show or hide message view.
+		</item>
+		<item>
+			Ctrl-T: turn on and off thread display.
+		</item>
+		<item>
+			P: open previous message (in current folder).
+		</item>
+		<item>
+			N: open next message (in current folder).
+		</item>
+		<item>
+			Shift-P: open previous unread message.
+		</item>
+		<item>
+			Shift-N: open next unread message.
+		</item>
+		<item>
+			G: change the current folder.
+		</item>
+		<item>
+			Ctrl-Alt-N: open the selected message in a new window.
+		</item>
+		<item>
+			Ctrl-U: view the message source.
+		</item>
+		<item>
+			Ctrl-H: toggle the header display (turn it on and off).
+		</item>
+		<item>
+			Ctrl-Alt-U: update the sumary view.
+		</item>
+	</itemize>
 </sect2>
-<sect2>Shortcuts to the View menu<p>
-<itemize>
-<item>Alt-V: open VIEW menu
-</itemize>
-<sect2>Shortcuts to the Message menu<p>
-<itemize>
-<item>Alt-M: open MESSAGE menu
-<item>Alt-I: check mail for current account
-<item>Shift-Alt-I: Check mail for all accounts
-<item>Alt-N: compose new message
-<item>Alt-R: reply to message
-<item>Ctrl-Alt-R: reply to sender (contrary to reply to e.g. mailing list)
-<item>Shift-Alt-R: reply to all (includes all addresses in To: and Cc:)
-<item>Ctrl-F: forward message
-<item>Shift-Ctrl-F: forward message as attachment
-<item>Alt-O: move message
-<item>Alt-D: delete message
-<item>Shift-Ctrl-N: open message in new window
-<item>Ctrl-U: view message source
-<item>Ctrl-H: show all message headers
-</itemize>
+
+<sect2>Shortcuts to the Message menu
+<p>
+	<itemize>
+		<item>
+			Ctrl-I: get new mail (for current account).
+		</item>
+		<item>
+			Shift-Ctrl-I: get new mail (for all accounts).
+		</item>
+		<item>
+			Ctrl-M: compose a new message.
+		</item>
+		<item>
+			Ctrl-R: reply to message (reply to sender only).
+		</item>
+		<item>
+			Shift-Ctrl-R: reply to all (includes all addresses 
+			in To: and Cc:).
+		</item>
+		<item>
+			Ctrl-L: reply to mailing list.
+		</item>
+		<item>
+			Ctrl-Alt-F: forward message
+		</item>
+		<item>
+			Ctrl-O: move message
+		</item>
+		<item>
+			Shift-Ctrl-O: copy message
+		</item>
+		<item>
+			Ctrl-D: delete message
+		</item>
+		<item>
+			Shift-*: mark selected message.
+		</item>
+		<item>
+			U: unmark selected message.
+		</item>
+		<item>
+			Shift-!: mark selected message as unread.
+		</item>
+	</itemize>
 </sect2>
-<sect2>Shortcuts to the Summary menu<p>
-<itemize>
-<item>Alt-S: open SUMMARY menu<p>
-<item>Alt-X: execute (pending commands, only useful when commands are not executed immediately)
-<item>Alt-U: update view
-<item>Alt-G: go to other folder
-<item>Ctrl-T: thread view
-<item>Shift-Ctrl-T: unthread view
-</itemize>
+
+<sect2>Shortcuts to the Tool menu
+<p>
+	<itemize>
+		<item>
+			Shift-Ctrl-A: open addressbook.
+		</item>
+		<item>
+			X: execute (execute pending moves and deletes).
+		<item>
+			Shift-Ctrl-L: open log window.
+	</itemize>
 </sect2>
-<sect2>Shortcuts to the Tool menu<p>
-<itemize>
-<item>Alt-T: open tool menu
-<item>Alt-A: open addressbook
-<item>Alt-L: open logfile
-</itemize>
-</sect2>
+
 </sect1>
 
-<sect1>Data Format of Address Book<p>
-The addressbook is located in ~/.sylpheed. It is named addressbook.xml.
-The general format of the addressbook is:<p>
+<sect1>Changing Key Binding of Short-Cut Key
+<p>
+Sylpheed's graphical interface is based on GTK. This means 
+that it is very simple to change the key binding 
+(shortcut key, hotkey) for menu items. If you are used to 
+a certain key combination from another program, you can tell 
+Sylpheed to use that same key combination.
+<p>
+The procedure is very simple. Suppose you want to change the 
+key binding for getting new mail (message menu) from Alt-I 
+to Ctrl-M.
+<p>
+
+<itemize>
+	<item>
+		Open the message menu with the mouse or by 
+		pressing Alt-M
+	</item>
+	<item>
+		Select the "get new mail" option (do not click it, 
+		this will activate the function!). If you use the
+		mouse, just move the mouse cursor over the option.
+	</item>
+	<item>
+		Now you press Ctrl-M. You will immediately see the 
+		new key combination appear on the menu.
+	</item>
+</itemize>
+
+Congratulations, you have just changed a key binding. 
+This way you can change all the options that you want. 
+Do note that it is best to use just the alt, shift and 
+ctrl key combinations. Several functions within Sylpheed 
+are called up by one-key actions which are programmed in.
+
+<sect2>Predefined shortcuts
+<p>
+	You can also choose among predefined shortcuts lists,
+	from the preference settings. Open the <it>Common preferences</it>
+	window, choose the <it>Interface</it> tab, click the 
+	<it>Set key bindings</it> button. Select one of the predefined
+	set of key bindings from the list found in the new window
+	that pops up.
+</sect2>
+
+</sect1>
+
+<sect1>Changing Fonts on Menu, etc.
+
+<p>
+If you want to change the font that shows the menu of Sylpheed, 
+this is controlled by the window manager that you are using. 
+You have to go into the setup of the window manager (KDE, Gnome, XFCE) 
+and change the font to your desired one.
+
+<p>
+Changing the font of the views of Sylpheed is done by selecting 
+<tt>Common preferences</tt> in the Configuration menu. There you select 
+the <tt>Display</tt> tab, and in the first section of the window you 
+can browse the fonts available on your computer.
+
+</sect1>
+
+<sect1>How to tell another program to use Sylpheed as e-mail program
+
+<p>
+If you wish to use Sylpheed from within for example Netscape or Opera, 
+then you need to go to the `preferences` section, then choose 
+`applications` and in the email client part, you need to enter 
+<tt>sylpheed --compose</tt>.
+
+</sect1>
+
+<sect1>Data Format of Address Book
+<p>
+The addressbook is located in ~/.sylpheed. It is named 
+addressbook.xml. As you may guess it from its extension, 
+the format is XML.
+The general format of the addressbook is:
+<p>
 
 <code>
 &lt addressbook &gt<p>
@@ -91,5 +234,5 @@ The general format of the addressbook is:<p>
 </code>
 
 </sect1>
-<!-- end add 2001/07/21 -->
+
 </sect>

@@ -49,8 +49,4 @@ in the body.<p>
 This section has not been written yet.
 </sect1>
 
-<!-- added 2001/09/05 -->
-<sect1>How to tell another program to use Sylpheed as e-mail program<p>
-If you wish to use Sylpheed from within for example Netscape or Opera, then you need to go to the `preferences` section, then choose `applications` and in the email client part, you need to enter <tt>sylpheed --compose</tt>.
-</sect1>
 </sect>
