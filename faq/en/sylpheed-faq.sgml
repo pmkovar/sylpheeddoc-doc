@@ -378,7 +378,12 @@ A.   The faces package contains a program called xbm2ikon script,
 <sect1>
 Q14 How can I tell my browser/newsclient/other program to use Sylpheed as e-mail program?<p>
 A.  In the settings part of the program, write
-       <tt>sylpheed --compose</tt>
+       <tt>sylpheed --compose</tt><p>
+Specific options for typical browsers:
+<itemize>
+<item>Opera: <tt>sylpheed --compose [mailto:%t][?subject=%s]
+</tt></item>
+</itemize>
 </sect1>
 
 <sect1>Q15 How do I enable GPG support in Sylpheed?<p>
