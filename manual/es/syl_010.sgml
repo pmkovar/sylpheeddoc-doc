@@ -2,46 +2,30 @@
 <sect>Componiendo mensajes
 <!-- mones -->
 <sect1>Creando un mensaje nuevo<p>
-Cuando comienze a escribir un mensaje nuevo aparecerá un bonito diálogo en el cual podrá introducir una gran
-variedad de información. En la línea Desde: encontrará una lista desplegable donde podrá seleccionar la
-cuenta de correo a utilizar para el envío.<p>
-En las partes Para:, Cc: o Bcc:, podrá escribir la dirección de correo del destinatario. Puede introducir
-varias direcciones, siempre y cuando estén separadas por comas. Una utilidad importante en este punto es
-el botón "Dirección". Cuando se pulsa aparece el libro de direcciones, donde se puede seleccionar una dirección,
-pulsar uno de los botones "Para:", "Cc:" o "Bcc:" y Sylpheed rellenará la línea seleccionada con la dirección.
-El botón "Bcc:" puede aparecer deshabilitado. Para que esté disponible deberá añadir la línea Bcc: al mensaje.
-Esto se puede hacer a través del menu Mensaje y marcando la opción Bcc.
+Cuando comienze a escribir un mensaje nuevo aparecerá un bonito diálogo en el cual podrá introducir una gran variedad de información. En la línea Desde: encontrará una lista desplegable donde podrá seleccionar la
+cuenta de correo a utilizar para el envío.
+<p>
+En las partes Para:, Cc: o Bcc:, podrá escribir la dirección de correo del destinatario. Puede introducir varias direcciones, siempre y cuando estén separadas por comas. Una utilidad importante en este punto es el botón "Dirección". Cuando se pulsa aparece el libro de direcciones, donde se puede seleccionar una dirección, pulsar uno de los botones "Para:", "Cc:" o "Bcc:" y Sylpheed rellenará la línea seleccionada con la dirección. El botón "Bcc:" puede aparecer deshabilitado. Para que esté disponible deberá añadir la línea Bcc: al mensaje. Esto se puede hacer a través del menu Mensaje y marcando la opción Bcc.
 <p>
 En la línea del Asunto introducirá una breve descripción sobre lo que tratará el mensaje.
 <p>
-Se puede mover entre las distintas líneas mediante la tecla TABulador (para ir a la línea siguiente) y
-Mayúsculas-TABulador (para ir a la línea anterior). Cuando se pulsa TABulador en la última línea se moverá
-al cuerpo del mensaje.
+Se puede mover entre las distintas líneas mediante el tabulador (para ir a la línea siguiente) y Mays-Tab (para ir a la línea anterior). Cuando se pulsa el tabulador en la última línea se moverá al cuerpo del mensaje.
 <p>
-Si seleccionó un fichero de firma en la conficuración de la cuenta activa ya aparecerá su contenido en el
-texto del mensaje. Podrá ahora escribir su mensaje y al finalizar podrá pulsar alguno de los botones:
-Enviar, Enviar después o Borrador, de la barra de herramientas. Enviar intenta enviar el mensaje inmediatamente,
-mientras que Enviar después lo coloca en la carpeta Cola y Borrador lo coloca en la carpeta Borrador.
+Si seleccionó un fichero de firma en la conficuración de la cuenta activa ya aparecerá su contenido en el texto del mensaje. Podrá ahora escribir su mensaje y al finalizar podrá pulsar alguno de los botones: Enviar, Enviar después o Borrador, de la barra de herramientas. Enviar intenta enviar el mensaje inmediatamente, mientras que Enviar después lo coloca en la carpeta Cola y Borrador lo coloca en la carpeta Borrador.
 </sect1>
+
 <sect1>Respondiendo a un mensaje
 <p>
-Para responder a un mensaje se usa la función "Responder". En Sylpheed se activa mediante el botón "Responder"
-o pulsando las teclas Alt-R.
+Para responder a un mensaje se usa la función "Responder". En Sylpheed se activa mediante el botón "Responder" o pulsando las teclas Alt-R.
 <p>
-Se creará una nueva ventana de composición, con la dirección de correo del destinatario y el asunto ya preparados.
-La mayor parte de las cosas descritas en Creando un mensaje nuevo son válidas también para esta ventana.
+Se creará una nueva ventana de composición, con la dirección de correo del destinatario y el asunto ya preparados. La mayor parte de las cosas descritas en Creando un mensaje nuevo son válidas también para esta ventana.
 </sect1>
+
 <sect1>Respondiendo a un mensaje con citación<p>
-Si quiere que Sylpheed cite el texto al que está respondiendo será necesario ir al menú de Configuración.
-En él seleccionará Preferencias comunes, y en la pestaña Componer marcará la casilla "Citar mensaje al responder".
-También podrá editar la marca de citación (la marca que se coloca al principio de cada línea citada en el
-mensaje de respuesta) y a quien corresponde la respuesta (que se coloca delante del texto respondido).
+Si quiere que Sylpheed cite el texto al que está respondiendo será necesario ir al menú de Configuración. En él seleccionará Preferencias comunes, y en la pestaña Componer marcará la casilla "Citar mensaje al responder". También podrá editar la marca de citación (la marca que se coloca al principio de cada línea citada en el mensaje de respuesta) y a quien corresponde la respuesta (que se coloca delante del texto respondido).
 </sect1>
+
 <sect1>Reenviando mensajes<p>
-Reenviar un mensaje significa enviar el mensaje completo, incluyendo cabeceras (dirección del remitente, fecha de
-envio, etc.), a otra persona. Para ello se pulsa el botón "Reenviar" o las teclas Ctrl-F. Se creará una nueva
-ventana de composición con el texto del mensaje seleccionado. Podrá entonces proporcionar el nombre o nombres de
-los destinatarios del mensaje tal y como si estuviera componiendo un mensaje nuevo, y quizás añadir alguna línea
-al mismo, y posteriormente enviarlo a donde proceda.
+Reenviar un mensaje significa enviar el mensaje completo, incluyendo cabeceras (dirección del remitente, fecha de envio, etc.), a otra persona. Para ello se pulsa el botón "Reenviar" o las teclas Ctrl-F. Se creará una nueva ventana de composición con el texto del mensaje seleccionado. Podrá entonces proporcionar el nombre o nombres de los destinatarios del mensaje tal y como si estuviera componiendo un mensaje nuevo, y quizás añadir alguna línea al mismo, y posteriormente enviarlo a donde proceda.
 </sect1>
 </sect>
