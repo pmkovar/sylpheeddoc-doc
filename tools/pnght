@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# Hooray! My first little bash script. Look, how ugly it is.
+#
+# What it does: some HTML postprocessing
+#
+#   (1) it will extract height information from png images
+#       in $doc/manual/$lang/snapshots/
+#   (2) it will paste this information into the htmls
+#       in $doc/manual/HTML/$lang/
+#   (3) it will strip <FIGURE>, <PH> and </FIGURE> tags
+#       which aren't legal in HTML 3.2
+#   (4) and will strip empty lines
+
+doc=~/sites/sylpheed/doc
+lang=de
+
+# modify to your needs. enjoy. nikai.
+
+rm $doc/manual/HTML/par*.tmp
+cd $doc/manual/$lang/snapshots/
+for x in *.png
+do
+ echo $x $(($(hexdump -o -s 22 -n 1 $x | sed -e 's/[0-9][0-9][0-9][0-9][0-9][0-9][0-9]//g') * 256 + $(hexdump -o -s 23 -n 1 $x | sed -e 's/[0-9][0-9][0-9][0-9][0-9][0-9][0-9]//g'))) >> $doc/manual/HTML/par1.tmp
+done
+sed -e 's/[.]png//g' $doc/manual/HTML/par1.tmp >> $doc/manual/HTML/par.tmp
+cd $doc/manual/HTML/$lang/
+pen=$(awk '{print $1}' $doc/manual/HTML/par.tmp)
+for y in $pen
+do
+ peh=$(awk '($1==y) {print $2}' y=$y $doc/manual/HTML/par.tmp)
+ for x in *.html
+ do
+  z="s/\/$y.png\">/\/$y.png\"height=\"$peh\">/g"
+  sed -e $z -e 's/\"height/\" height/g' -e 's/<PH[^>]*>//g' -e 's/<[/]*FIG[^>]*>//g' -e '/^$/d' $x > $x.tmp
+  mv $x.tmp $x
+ done
+done
+rm $doc/manual/HTML/par*.tmp
