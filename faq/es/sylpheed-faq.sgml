@@ -9,7 +9,7 @@ Ricardo Mones Lastra <tt>&lt;mones@aic.uniovi.es&gt;</tt>
 </author>
 
 <abstract>
-  Preguntas más frecuentes (FAQ) de Sylpheed para la versión 0.6.4
+  Preguntas más frecuentes (FAQ) de Sylpheed para la versión 0.6.6 - 
   basado en el documento original en inglés de Paul Kater (paul@nlpagan.net)
   y Jens Oberender (j.obi@troja.net)
 </abstract>
@@ -53,6 +53,7 @@ FreeBSD.
 </p>
 </sect1>
 
+r
 <!-- gi.Q04 -->
 <sect1>¿Quién ha realizado Sylpheed?
 <p>
@@ -284,6 +285,19 @@ R.: Si! Al actualizar a
 <p>
 R.: Simplemente pulse "Alt+U" o seleccione ``Actualizar`` del menú ``Resumen``.
 </p>
+</sect1>
+
+<!-- gi.Q27   -->
+<sect1>¿Por qué no puedo usar <tt>gvim</tt> como editor externo?
+<p>
+R.: Si desea utilizar <tt>gvim</tt> como editor externo es necesario
+lanzarlo con la opción de no-fork <tt>-f</tt>, es decir, en el cuadro
+de diálogo el comando deberá ser <tt>gvim -f %s</tt>. Si no se hace así
+el editor realiza un fork, abriendo el fichero en el proceso hijo, y 
+cuando se sale del editor los cambios realizados se pierden, y no se
+muestra nada en la ventana de composición.
+</p>
+(Cortesía de Ed Collins)
 </sect1>
 
 </sect>
