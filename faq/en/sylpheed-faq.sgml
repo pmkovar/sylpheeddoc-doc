@@ -4,7 +4,7 @@
     <author>Paul Kater (paul@nlpagan.net)
     and Jens Oberender (j.obi@troja.net)
     <abstract>
-       Sylpheed FAQ (for version 0.6.6)
+       Sylpheed FAQ (for version 0.7.3)
     </abstract>
 <toc>
 <p>
@@ -374,6 +374,12 @@ A. For this to work you need to use the "touch" command in every MH folder. "tou
 A. In case this happens, you can easily fix that by adding the following to /etc/mime.types:<p>
 <tt>image/gif              gif</tt>
 </sect1>
+
+<sect1>Q17 How can I make Sylpheed notify me when new mail arrives?<p>
+A. For this you can do several things:<p>
+* Look at the Sylpheed patch page at http://www.teledix.net/sylpheed/ for a new mail patch.<p>
+* Download Gkrellm or a similar program that is able to notify you of new incoming mail. Gkrellm is available at http://www.gkrellm.net
+
 </sect>
 
 <sect>
