@@ -10,13 +10,14 @@
 #
 ######################################################################
 # $Log: Makefile,v $
+# Revision 1.3  2001/09/01 00:20:09  mones
+# Deleted my stupid revision comment. I shouldn't play with cvs late night...
+#
 # Revision 1.2  2001/09/01 00:11:12  mones
 # added Spanish to list of generated languages
 #
 # Revision 1.1  2001/08/29 21:31:27  fbarriere
 # Created.
-# Revision 1.2  2001/09/01 02:18:00  mones
-# Added es to LANGS.
 #
 ######################################################################
 
