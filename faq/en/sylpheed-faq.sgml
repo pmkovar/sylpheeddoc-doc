@@ -28,7 +28,7 @@ A. Yes. Here are links to several translations:
 <item><url url="http://www.aic.uniovi.es/mones/sylpheed/faq-es/" name="Linked HTML">, by Ricardo Mones Lastra, as well as
 <item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="Swedish FAQ">, courtesy of Mattias Stergren
 </itemize>
-You can download this faq in text format from <url url="http://nlpagan.net/sylpheedfaq.tar.gz" name="nlpagan.net">
+You can download this FAQ from <url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
 </sect1>
 
 <sect1>
@@ -199,10 +199,7 @@ a presentable mail again.
 
 <sect1>
 Q22 Where can I find the latest FAQ on Sylpheed?<p>
-A.   Go to <tt><url url="http://nlpagan.net/sylpheed.htm" name="the sylpheed FAQ/Manual page"></tt> where the
-english FAQ is available in english. There you can also find
-links to the FAQ in other languages.<p>
-You can also go to <url url="http://www.sourceforge.net" name="Sourceforge.net"> and check out the faq and manual from the sylpheeddoc project. Both documents are available in multiple languages there and usually contain the latest updates.
+A. Go to <url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net"> and check out the FAQ and manual from the sylpheeddoc project. Both documents are available in multiple languages there and usually contain the latest updates.
 </sect1>
 
 <sect1>
