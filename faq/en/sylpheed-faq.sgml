@@ -5,7 +5,7 @@
     and Jens Oberender (j.obi@troja.net)
 	 Maintained by François Barrière (barriere.francois@libertysurf.fr)
     <abstract>
-       Sylpheed FAQ (for version 0.7.3)
+       Sylpheed FAQ (for version 0.8.0)
     </abstract>
 <toc>
 
@@ -396,6 +396,12 @@ A. In case this happens, you can easily fix that by adding the following to /etc
 A. For this you can do several things:<p>
 * Look at the Sylpheed patch page at <url url="http://www.thewildbeast.co.uk/sylpheed/" name="http://www.thewildbeast.co.uk/sylpheed/"> for a new mail patch.<p>
 * Download Gkrellm or a similar program that is able to notify you of new incoming mail. Gkrellm is available at <url url="http://www.gkrellm.net" name="the Gkrellm page">
+</sect1>
+
+<sect1>Q19 Can I use a spell checker with Sylpheed?<p>
+A. Yes. You can use ispell for this. In Common Preferences, in the spot where you can define an alternative editor (as long as you do not use that, of course), you enter "xterm -e ispell %s". Do not enter the quotes.
+With this set up, you can have spell checked when writing an e-mail by hitting the "Editor" button in the compose window.<p>
+Note that you can enter the xterm type of your choice, so wterm, eterm and aterm should also work, as long as they are installed on your system.</sect1>
 
 </sect>
 
