@@ -74,10 +74,11 @@ In the Summary menu you can perform all kinds of functions that are related to h
 <item>Thread view: messages are linked together in a tree view, on subject.
 <item>Unthread view: undos the previous item.
 <item>Set display item: shows a dialog box in which you can check and uncheck the items you want to see in the summary pane.
+As of version 0.6.4 you can also determine the order in which the columns of the summary menu are displayed.
 </itemize>
 </sect2>
 <sect2>Tool menu<p>
-In the Tool menu you will find 2 options (upto version 0.4.66). It is the address book and the log window.<p>
+In the Tool menu you will find 2 options (upto version 0.6.4). It is the address book and the log window.<p>
 In the address book, as you may expect, you can store the e-mail addresses that you want to save. You can create folders within the address book, to keep addresses together.<p>
 In the log window, you can see what Sylpheed is doing. Keeping track of things in that way is very good when you suspect there is something wrong. You can paste the info of the log window into an e-mail and send it to the developer or the mailing list.
 </sect2>

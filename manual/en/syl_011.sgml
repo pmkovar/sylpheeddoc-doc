@@ -137,4 +137,9 @@ Please note that, at time of writing, Sylpheed does -NOT YET- has filtering of I
 <!-- end added 2001/07/22 -->
 <p>
 </sect1>
+<sect1>Filtering mail with Procmail<p>
+If you feel that Sylpheed has not enough options to perform filtering for you, then you can look at Sylpheed Claws which has more options for filtering. You can find the Claws version (the cutting edge, experimental version of Sylpheed) sylpheed-claws.sourceforge.net.<p>
+Another option, if you do not want to work with an experimental version of Sylpheed, is Procmail. Procmail is a powerful mail filtering program that is triggered from the Mail Transport Agent (i.e. Sendmail, Postfix, Qmail). Procmail is called by default from these programs after receiving e-mail.<p>
+The trick to procmail is to tell it that mail has to be filtered into MH mail folders. This is not difficult though.<p>
+Normally procmail moves mail into MBOX format, this is one large file containing all mails in a folder. MH uses separate files for each e-mail. All you need to do is point the destination of a procmail rule to &lt;destination folder&gt;/.  It is the "slash dot" that does the trick.
 </sect>
