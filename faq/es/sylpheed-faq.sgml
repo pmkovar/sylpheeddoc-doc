@@ -254,13 +254,7 @@ y dejar presentable el correo de nuevo.
 <!-- gi.Q22 -->
 <sect1>¿Dónde puedo encontrar el último FAQ de Sylpheed?
 <p>
-R.: Puedes encontrar el FAQ y el manual buscando el proyecto sylpheeddoc en <url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">. También podrás encontrar enlaces a ambos documentos en otros idiomas, habitualmente con las últimas actualizaciones. </p>
-<p>
-También puedes visitar <url url="http://www.sourceforge.net" name="http://www.sourceforge.net">
-y buscar las páginas del manual y el FAQ en el proyecto sylpheeddoc. Ambos documentos están
-disponibles en diversos idiomas y habitualmente incluyen las últimas
-actualizaciones.
-</p>
+R.: Puedes encontrar el FAQ y el manual buscando en el proyecto sylpheeddoc en <url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">. También podrás encontrar enlaces a ambos documentos en otros idiomas, habitualmente con las últimas actualizaciones. </p>
 </sect1>
 
 <!-- gi.Q23 -->
