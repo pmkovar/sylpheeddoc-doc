@@ -1,0 +1,300 @@
+
+<sect>Installazione
+
+<sect1>Requisiti
+<p>
+Al fine di poter compilare Sylpheed è necessario avere almeno:
+<itemize>
+<item>Un qualsiasi sistema UNIX compatibile POSIX o sistemi simili quali Linux, FreeBSD, Solaris
+<item>
+	<url name="GTK+" url="http://www.gtk.org/">
+	1.2.6 o successivo
+</item>
+<item>
+	Un compilatore ANSI C recente
+	(<url name="gcc" url="http://gcc.gnu.org/"> 2.7.2.3 dovrebbe funzionare) 
+	Nota: il compilatore C su Sun non riuscirà a compilare Sylpheed.
+</item>
+</itemize>
+Opzionalmente possono essere utili:<label id="option_libraries">
+<itemize>
+<item>
+	<url url="http://sourceforge.net/project/showfiles.php?group_id=2" name="Imlib">
+	o
+	<url url="http://ftp.gnome.org/pub/GNOME/unstable/sources/gdk-pixbuf/" name="gdk-pixbuf">
+	(per la visualizzazione integrata delle immagini)
+</item>
+<item>
+	<url name="libcompface" url="ftp://ftp.cs.indiana.edu/pub/faces/compface/">
+	(per X-Face)
+</item>
+<item>
+	<url name="libjconv" url="http://www.kondara.org/libjconv/">
+	(per i set di caratteri non latini)
+</item>
+<item>
+	<url name="GPGME" url="http://www.gnupg.org/gpgme.html">
+	e
+	<url name="GNUPG" url="http://www.gnupg.org/">
+	(per la crittografia e la firma)
+</item>
+<item>
+	<url name="OpenSSL" url="http://www.openssl.org/">
+	(per il supporto SSL)
+</item>
+<item>
+	<url name="OpenLDAP" url="http://www.openldap.org/">
+	(per la connettività LDAP)
+</item>
+<item>
+	il supporto per IPv6 può essere disabilitato (se il sistema lo supporta)
+</item>
+<item>
+	<url name="Jpilot" url="http://www.jpilot.org/">
+	(per l'utilizzo della rubrica di Palm)
+</item>
+<item>l'equivalente di GTK+-devel e Xfree86-devel (in caso contrario ./configure fallirà)
+</itemize>
+<p>
+Nota: Sylpheed potrebbe risultare instabile in relazione all'ambiente operativo. Si prega di usare sempre le versioni più recenti delle varie librerie, quando possibile.
+</sect1>
+
+<sect1>Ambienti operativi riconosciuti validi per Sylpheed
+<p>
+<itemize>
+<item>Debian GNU/Linux unstable (sid) (glibc 2.2.5) (ambiente di sviluppo) 
+<item>Debian GNU/Linux testing (woody) (glibc 2.2.5)
+<item>Debian GNU/Linux 2.2 (potato) (glibc 2.1.3) 
+<item>Kondara MNU/Linux (glibc 2.1.x) 
+<item>Kondara MNU/Linux 1.2
+<item>Kondara MNU/Linux 2.0
+<item>Vine Linux 1.1 (glibc 2.0.x + libwcsmbs) 
+<item>Vine Linux 2.0 (glibc 2.1.x) (Intel, PPC) 
+<item>Vine Linux 2.1 
+<item>Vine Linux 2.1.5
+<item>Laser5 Linux 6.0 (glibc 2.1.x)
+<item>Laser5 Linux 6.2 (glibc 2.1.x)
+<item>Laser5 Linux 6.4 (glibc 2.1.x)
+<item>TurboLinux 4.0 (glibc 2.0.7 + libwcsmbs) 
+<item>TurboLinux 6.0 (glibc 2.1.2) 
+<item>TurboLinux 7.0 (glibc 2.2.x) 
+<item>Miracle Linux Standard Edition Version1.0 
+<item>Miracle Linux for PostgreSQL Version1.0 
+<item>Miracle Linux for Samba Version1.0 
+<item>RedHat Linux 5.2 (glibc 2.0.7) 
+<item>RedHat Linux 6.0 
+<item>RedHat Linux 6.1 + Helix GNOME (glibc 2.1.x) 
+<item>RedHat Linux 6.2 / 6.2J (glibc 2.1.x) 
+<item>RedHat Linux 7.0 / 7.0J 
+<item>RedHat Linux 7.1
+<item>RedHat Linux 7.2
+<item>LinuxPPC2000 + Yukikaze(Japanization kit) 
+<item>Linux2000G (Intel, PowerPC) 
+<item>HOLON Linux 2.0 (Intel / PPC) 
+<item>Linux for PPC Japanese Edition 2.0 (glibc 2.1.x) 
+<item>Linux for PPC Japanese Edition 3.0 (glibc 2.1.x) 
+<item>Linux MLD4
+<item>Linux MLD5 
+<item>Plamo Linux 2.0 
+<item>Plamo Linux 2.1
+<item>Slackware 7.0 
+<item>Slackware 7.1 
+<item>Slackware 8.0 
+<item>Linux Mandrake 7.0
+<item>Linux Mandrake 7.1
+<item>Linux Mandrake 7.2
+<item>Linux Mandrake 8.0
+<item>Linux Mandrake 8.1
+<item>SuSE Linux 6.3 (glibc 2.1.2) 
+<item>SuSE Linux 6.4
+<item>SuSE Linux 7.0
+<item>SuSE Linux 7.1
+<item>SuSE Linux 7.2
+<item>SuSE Linux 7.3
+<item>OpenLinux 2.3 (glibc 2.1.1 -> 2.1.3) 
+<item>Caldera OpenDesktop 2.4 
+<item>Caldera Workstation 3.1
+<item>Conectiva Linux 4.0
+<item>Conectiva Linux 5.0
+<item>Conectiva Linux 7.0
+<item>Vector Linux 1.5 
+<item>Yellow Dog Linux 2.0 (glibc 2.2.1)
+<item>Yellow Dog Linux 2.1 (PowerPC)
+<item>ASP Linux 7.2 (glibc 2.2.4)
+<item>Redmond Linux (Lycoris)
+</itemize>
+
+<itemize>
+<item>FreeBSD release 3.2
+<item>FreeBSD release 3.4
+<item>FreeBSD release 4.0
+<item>FreeBSD release 4.1
+<item>FreeBSD release 4.2
+<item>FreeBSD release 4.3
+<item>FreeBSD release 4.4
+<item>FreeBSD release 4.5
+<item>FreeBSD release 5.0
+<item>NetBSD 1.4.2 
+<item>NetBSD 1.5 + XPG4DL 
+<item>NetBSD 1.5.1
+<item>NetBSD 1.5.2
+<item>OpenBSD 2.7 
+<item>OpenBSD 2.8 (i386) 
+<item>OpenBSD 2.9
+<item>OpenBSD 3.0
+<item>BSD/OS 4.0.1 
+</itemize>
+
+<itemize>
+<item>Solaris 2.5
+<item>Solaris 2.5.1
+<item>Solaris 2.6
+<item>Solaris 7
+<item>Solaris 8
+<item>IRIX 6.3
+<item>IRIX 6.4
+<item>IRIX 6.5, 6.5.8m
+<item>HP-UX 10.20 
+<item>HP-UX 11.00
+<item>HP-UX 11i
+<item>Tru64 Unix 5.0 (OSF1 v5.0)
+<item>SCO UnixWare 7
+<item>Mac OS X 10.1.3 (Darwin 5.3) + XDarwin (senza supporto per XLocale) + libxpg4 
+</itemize>
+
+<itemize>
+<item>Windows (MSVC + GTK+ per win32), in corso
+</itemize>
+</sect1>
+
+<sect1>Punti chiave dell'installazione
+<p>
+<itemize>
+<item>Scaricare l'ultima versione di Sylpheed da
+<url url="http://sylpheed.good-day.net/" name="http://sylpheed.good-day.net/">
+</item>
+<item>Decomprimere i sorgenti in una nuova directory
+<item>tar -xvfz sylpheed-.tar.gz (per tar.gz)
+<item>tar -xvfI sylpheed-.tar.bz2 (per tar.bz2) 
+<item>cd nella nuova directory sylpheed-
+<item>./configure per configurare l'ambiente operativo e creare i "makefile" per l'installazione
+<item>Eseguire 'make' per compilare i sorgenti. Non eseguire questo passaggio se si sono presentati errori fatali al passaggio precedente. Errori fatali indicano la mancanza di componenti per poter compilare correttamente Sylpheed.
+</itemize>
+<p>
+Al termine del processo di 'make' eseguire "make install" (come root) per installare il programma ed i relativi file.
+
+<sect2>Compilare Sylpheed con opzioni personalizzate<label id="compile_sylpheed">
+<p>
+E' possibile compilare Sylpheed con alcune caratteristiche opzionali aggiuntive.
+<it>./configure --help</it> elencherà la lista delle opzioni e la loro sintassi.
+<p>
+Le seguenti opzioni possono essere attivate:
+
+<itemize>
+	<item>
+		<it>Jpilot</it>: per usare la rubrica del vostro palmare con Sylpheed.
+		Sarà necessario avere la libreria <it>Jpilot</it> (e <it>pilot-link</it>).
+		Attivare questa opzione mediante <it>--enable-jpilot</it>.
+	</item>
+	<item>
+		<it>GnuPG</it>: Sylpheed può crittografare e firmare i messaggi (oltre a 
+		poter verificare le firme dei messaggi ricevuti) usando GnuPG.
+		GnuPG seuge lo standard OpenPGP ed è compatibile con PGP.
+		Per attivare questa opzione è necessario installare GnuPG e GPGME (libreria
+		d'intercfaccia per GnuPG).
+		Attivare questa opzione mediante <it>--enable-gpgme</it>.
+	</item>
+	<item>
+		<it>LDAP</it>: Sylpheed può connettersi ad un server LDAP server per
+		richiedere indirizzi e-mail.
+		Per attivare questa caratteristica è necessario disporre della
+		libreria OpenLDAP.
+		Attivare questa opzione mediante <it>--enable-ldap</it>.
+	</item>
+	<item>
+		<it>X-Faces</it>: è possibile creare una piccola immagine che sarà
+		inviata insieme all'intestazione dei messaggi in uscita.
+		Questa opzione viene attivata se è presente la libreria compface
+		e può essere disabilitata mediante <it>--disable-compface</it>.
+	</item>
+	<item>
+		Le immagini possono apparire "incluse" (all'interno del messaggio stesso, 
+		senza l'utilizzo di un visualizzatore esterno) se Sylpheed è compilato 
+		con la libreria <it>gdk-pixbuf</it> oppure la libreria <it>imlib</it>.
+		E' possibile disabilitare singolarmente tali librerie mediante 
+		<it>--disable-gdk-pixbuf</it> oppure <it>--disable-imlib</it>.
+	</item>
+</itemize>
+
+Tutte queste caratteristiche necessitano di librerie aggiuntive e tool che possono non 
+far parte della vostra distribuzione.
+Possono però essere scaricate agli indirizzi indicati all'inizio del presente capitolo, <ref id="option_libraries" name="qui">.
+
+</sect2>
+
+</sect1>
+
+<sect1>Installazione su Linux mediante RPM
+<p>
+Come utente root eseguire il comando "rpm -ivh" sul file scaricato. Non appena l'installazione è terminata, Sylpheed è pronto all'uso. 
+</sect1>
+
+<sect1>Installazione su Debian Linux
+<p>
+Con una connessione ad Internet:
+<p>
+apt-get install sylpheed
+<p>
+In assenza di connessione Internet:
+<p>
+scaricare il pacchetto da
+<url url="http://packages.debian.org/unstable/mail/sylpheed.html" name="http://packages.debian.org/unstable/mail/sylpheed.html">
+<p>
+dpkg -i sylpheedx.x.x-1i386.deb
+<p>
+dpkg --install sylpheedx.x.x-1i386.deb
+</sect1>
+
+<sect1>Installazione su FreeBSD
+<p>
+utilizzanto /stand/sysinstall (interfaccia basata su menu):
+<p>
+eseguire "/stand/sysinstall" come utente root
+<p>
+nel menu principale selezionare "Configura" -> "Pacchetti" -> "posta", quindi "sylpheed";
+tornare alla lista dei "Pacchetti", selezionare "Installa"
+<p>
+Usando i "port"
+<p>
+Scaricare il port di sylpheed:
+<p>
+<url url="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail" name="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail">
+<p>
+poi, come utente root: pkg-add sylpheed-0.x.x.tgz
+<p>
+usare i "port" con la compilazione:
+<p>
+prima di tutto, aggiornare il proprio "port", scaricandolo da
+<url url="http://www.freebsd.org/ports/mail.html" name ="http://www.freebsd.org/ports/mail.html">
+<p>
+cd /usr/ports/mail/sylpheed
+<p>
+make
+<p>
+Se va a buon fine, eseguire "make install"
+<p>
+Nel caso in cui fallisse, scaricare il pacchetto (dalla stessa pagina)
+e salvarlo in /usr/ports/distfiles/
+dopodichè:
+<itemize>
+<item>cd /usr/ports/mail/sylpheed
+<item>make
+<item>make install
+</itemize>
+<p>
+Volete una versione più aggiornata?
+<p>
+Utilizzate semplicemente il metodo standard Unix (vedi "Punti chiave dell'installazione")
+</sect1>
+
+</sect>

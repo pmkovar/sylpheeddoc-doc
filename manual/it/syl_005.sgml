@@ -1,0 +1,24 @@
+
+<sect>Avvio ed arresto di Sylpheed
+
+<sect1>Avviare Sylpheed
+<p>
+E' possibile avviare Sylpheed digitando "sylpheed" in una finestra di terminale e premendo Invio, oppure crearsi un collegamento in un menu di KDE o Gnome o sul relativo desktop.
+<p>
+Al primo avvio, Sylpheed chiederà di specificare la locazione in cui salvare i messaggi. Il valore predefinito è "Mail" (che corrisponde a $HOME/Mail) oppure crearsi una propria cartella.
+<p>
+A questo punto Sylpheed continuerà il caricamento con le impostazioni predefinite. Per modificare queste impostazioni si rimanda all'apposito capitolo del presente manuale.
+</sect1>
+
+<sect1>Arrestare Sylpheed
+<p>
+L'arresto di Sylpheed si può ottenere in diversi modi:
+<itemize>
+<item>Selezionando "Uscita" dal menu "File
+<item>Premendo Ctrl-Q
+<item>Cliccando sulla "X" nella barra del titolo in altro a destra
+</itemize>
+</sect1>
+
+</sect>
+
