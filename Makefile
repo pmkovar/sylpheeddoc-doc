@@ -6,11 +6,19 @@
 #  correspond to your installation) the SGML_TOOL variable
 #  (using SGML_TOOL=<path-to-sgml2html> on the make command
 #  line).
-#  FILTER_IMAGES must be set to something (anything you want)
-#  to generate HTML pages without images. This works only if
-#  the images SGML start and end tags are on separate lines
-#  and alone on their lines (the filter is a quick and dirty sed).
-#  The other vars can be left to their default values.
+#
+######################################################################
+#
+#  FILTER_IMAGES is deprecated, use TARGET_TYPE instead. TARGET_TYPE
+#  is used to defined the target for the doc to build: either with
+#  images and directory names as file prefix for the web site 
+#  (TARGET_TYPE=WEB) or without any screenshot and with file names to
+#  fit the Sylpheed source code file name (to generate the doc to
+#  include in the Sylpheed distribution).
+#  TARGET_TYPE can be 'WEB' or any other value (including the null
+#  string).
+#  The default is 'WEB', so if you do not provide anything on the make
+#  command line, the web site version is built.
 #
 ######################################################################
 #
@@ -27,7 +35,11 @@
 #  should only build the spanish faq.
 #
 ######################################################################
+#
 # $Log: Makefile,v $
+# Revision 1.3  2002/08/27 19:35:36  fbarriere
+# Changed FILTER_IMAGE, added the TARGET_TYPE switch, added packages generation part.
+#
 # Revision 1.2  2002/03/30 21:24:00  fbarriere
 # Modified to build the HTML directory locally (when launched from
 # a sub-directory), corrected the image filter (this one should
@@ -36,7 +48,6 @@
 # Revision 1.1  2002/03/20 21:17:00  fbarriere
 # New and unique Makefile for all the docs.
 #
-#
 ######################################################################
 
 SGML_TOOL     := /usr/bin/sgml2html
@@ -44,9 +55,30 @@ SGML_TOOL_OPT := --language=$(LANG1)
 #SGML_TOOL_OPT := --imagebuttons
 
 #
-#  Remove the images while generating the HTML output.
+#  Final result type: WEB (with images and original names),
+#  or any other value for a version using he file names
+#  that fits the Sylpheed code and without the images.
 #
-FILTER_IMAGES :=
+TARGET_TYPE   := WEB
+
+#
+#  Derive some settings from the TARGET_TYPE:
+#
+ifeq ($(TARGET_TYPE), WEB)
+	FILTER_IMAGES :=
+	TARGET_NAME   := $(DOC_TYPE)
+else
+	FILTER_IMAGES := YES_MY_LORD
+	ifeq ($(DOC_TYPE), manual)
+		TARGET_NAME   := sylpheed
+	else
+		ifeq ($(DOC_TYPE), faq)
+			TARGET_NAME   := sylpheed-faq
+		else
+			TARGET_NAME   := $(DOC_TYPE)
+		endif
+	endif
+endif
 
 #
 #  Some usual shell commands with some arguments...
@@ -55,6 +87,9 @@ REMOVE        := /bin/rm -rf
 COPY          := /bin/cp -r 
 MAKEDIR       := /bin/mkdir -p 
 CAT           := /bin/cat 
+TAR_CREATE    := /bin/tar cvfz 
+
+TAR_SUFFIX    := tar.gz
 
 # ####################################################
 #  Edits under this point are not recommended.
@@ -94,7 +129,7 @@ SED_CMD_FILE  := $(ROOT_DIR)/tools/filter_images.sed
 #  Defines the list of languages to process.
 #
 LANG_tmp      := $(shell ls)
-FILTER_OUT    := CVS Makefile HTML tools
+FILTER_OUT    := CVS Makefile HTML tools packages
 
 ALL_TYPES     := $(filter-out $(FILTER_OUT), $(LANG_tmp))
 LANGS         := $(filter-out $(FILTER_OUT), $(LANG_tmp))
@@ -128,7 +163,7 @@ ifneq ($(SOURCE_FILES), )
          index=$$[$$index + 1];\
       done;\
    )
-   html_doc_TARGETS := $(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml $(addprefix $(HTML_DIR)/, $(SCREENSHOTS))
+   html_doc_TARGETS := $(HTML_DIR)/$(LANG1)/$(TARGET_NAME).sgml $(addprefix $(HTML_DIR)/, $(SCREENSHOTS))
 endif
 
 #
@@ -147,7 +182,12 @@ endif
 #  document type (manual, faq,...), then for each language.
 #
 
-all:
+all: all_docs prep
+
+prep:
+	@ $(MAKEDIR) $(HTML_DIR) $(PACKAGE_DIR)
+
+all_docs:
 	@ for ONE_TYPE in $(ALL_TYPES);\
 	do \
 		echo "### Making all_langs in $$ONE_TYPE...";\
@@ -168,15 +208,15 @@ all_langs:
 			LANG1=$$ONE_LANG \
 			DOC_TYPE=$(DOC_TYPE) \
 			ROOT_DIR=$(ROOT_DIR) \
-			html_doc;\
+			html_doc ;\
 	done;
 
 html_doc: $(html_doc_TARGETS)
 
-$(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml: $(SOURCE_FILES)
-	@ echo "######### Building $(HTML_DIR)$(LANG1)/$(DOC_TYPE).sgml"
+$(HTML_DIR)/$(LANG1)/$(TARGET_NAME).sgml: $(SOURCE_FILES)
+	@ echo "######### Building $(HTML_DIR)/$(LANG1)/$(TARGET_NAME).sgml"
 	@ $(MAKEDIR) $(HTML_DIR)/$(LANG1)
-	@ $(CAT) $(SOURCE_FILES) | $(FILTER) > $(HTML_DIR)/$(LANG1)/$(DOC_TYPE).sgml
+	@ $(CAT) $(SOURCE_FILES) | $(FILTER) > $(HTML_DIR)/$(LANG1)/$(TARGET_NAME).sgml
 	@ echo "######### Building html file..."
 	@ cd $(HTML_DIR)/$(LANG1); $(SGML_TOOL) $(SGML_TOOL_OPT) $@; cd $(HERE)
 
@@ -188,7 +228,42 @@ $(addprefix $(HTML_DIR)/, $(SCREENSHOTS)): $(HTML_DIR)/$(LANG1)/$(SHOTS_DIR)/%.p
 	fi;
 	@ echo "######### Importing: $<"
 	@ $(COPY) $< $@
-	
+
+#
+#  Build tar packages of the docs:
+#
+
+packages:
+	@ for ONE_TYPE in $(ALL_TYPES);\
+	do \
+		echo "### Making packages for $$ONE_TYPE...";\
+		$(MAKE) \
+			-f $(ROOT_DIR)/Makefile \
+			-C $(HTML_DIR)/$$ONE_TYPE \
+			DOC_TYPE=$$ONE_TYPE \
+			ROOT_DIR=$(ROOT_DIR) \
+			all_package;\
+	done;
+
+all_package:
+	@ for ONE_LANG in $(LANGS);\
+	do \
+		echo "###### Making package in $(DOC_TYPE)/$$ONE_LANG...";\
+		$(MAKE) \
+			-f $(ROOT_DIR)/Makefile \
+			-C $(HTML_DIR)/$$ONE_TYPE/$$ONE_LANG \
+			LANG1=$$ONE_LANG \
+			DOC_TYPE=$(DOC_TYPE) \
+			ROOT_DIR=$(ROOT_DIR) \
+			package ;\
+	done;
+
+package:
+	@ echo "######### Building package"
+	@ $(TAR_CREATE) $(PACKAGE_DIR)/$(DOC_TYPE)_$(LANG1)_$(TODAY).$(TAR_SUFFIX) -C $(HERE) .
+
+
+# ####################################################
 #
 #  Usual clean target:
 #
