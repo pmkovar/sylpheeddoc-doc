@@ -9,7 +9,7 @@ Ricardo Mones Lastra <tt>&lt;mones@aic.uniovi.es&gt;</tt>
 </author>
 
 <abstract>
-  Preguntas más frecuentes (FAQ) de Sylpheed para la versión 0.6.1
+  Preguntas más frecuentes (FAQ) de Sylpheed para la versión 0.6.4
   basado en el documento original en inglés de Paul Kater (paul@nlpagan.net)
   y Jens Oberender (j.obi@troja.net)
 </abstract>
@@ -259,7 +259,11 @@ correos y selecciona ``Importar de fichero mbox`` en el menú
 <!-- gi.Q24 -->
 <sect1>¿Se puede usar procmail para ordenar los correos con el manejo de correo MH?
 <p>
-R.: Si, comprueba la página de man del procmail para los detalles.
+R.: Si. Asegúrate de añadir /. al final de las reglas para que procmail sepa que esta filtrando hacia una carpeta de correo estilo MH. Ejemplo:<p>
+<tt>0:</tt><p>
+<tt>* ^Subject:.*sylpheed</tt><p>
+<tt>  sylpheedmail/.</tt><p>
+Comprueba la página del manual de procmail para más detalles.
 </p>
 </sect1>
 
@@ -428,6 +432,14 @@ R.: En la sección de configuración del programa correspondiente escriba:
 <p>
 R.: Cuando compile Sylpheed asegúrese de añadir la opción <tt>--enable-gpgme</tt> al
 comando <tt>./configure<tt>
+Cuando la compilación termine correctamente aparecerá en el diálogo de Preferencias comunes una sección de "Privacidad".
+</p>
+</sect1>
+
+<!-- ic.Q15 -->
+<sect1>Mutt no reconoce la estructura de carpetas MH de Sylpheed
+<p>
+R.:  Deberá hacer <tt>touch .xmhcache</tt> en todas y cada una de las cada carpetas MH, y Mutt funcionará correctamente.
 </p>
 </sect1>
 
