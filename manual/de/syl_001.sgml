@@ -5,7 +5,7 @@
   <newline>Nick Selby
   <newline>Nicolas Kaiser (nikai@nikai.net)
  <abstract>
-  Handbuch für Sylpheed version 0.7.4
+  Handbuch für Sylpheed Version 0.7.4
  </abstract>
 
 <toc>
@@ -42,7 +42,7 @@ Zu den bereits integrierten Funktionen gehören:
 <item>X-Face Anzeige 
 <item>Unterstützung externer Editoren
 <item>Warteschlange für E-Mails und News
-<item>Entwurfablage
+<item>Entwurfsablage
 <item>Intelligenter Zeilenumbruch
 <item>Klickbare URI
 <item>XML-basiertes Adressbuch
