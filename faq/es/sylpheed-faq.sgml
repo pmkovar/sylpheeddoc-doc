@@ -1,18 +1,18 @@
-<!--  -->
-<!--  Spanish translation for Sylpheed FAQ (http://nlpagan.net/sylpheedfaq.htm) -->
-<!--  This translation is (C) 2001 by Ricardo Mones Lastra   -->
-<!--  -->
 <!doctype linuxdoc system>
 <article>
-
-
 <title>
-Preguntas Más Frecuentes (FAQ) de Sylpheed versión 0.5.3
+Preguntas Más Frecuentes (FAQ) de Sylpheed
 </title>
 
 <author>
 Ricardo Mones Lastra <tt>&lt;mones@aic.uniovi.es&gt;</tt>
 </author>
+
+<abstract>
+  Preguntas más frecuentes (FAQ) de Sylpheed para la versión 0.6.1
+  basado en el documento original en inglés de Paul Kater (paul@nlpagan.net)
+  y Jens Oberender (j.obi@troja.net)
+</abstract>
 
 <!--  General information -->
 <sect>
@@ -21,9 +21,8 @@ Información general
 <!-- gi.Q01 -->
 <sect1>¿Están disponibles los FAQs en otros idiomas?
 <p>
-R.: Si, al final de este documento encontrará los
-enlaces a varias traducciones ya disponibles, entre las
-que se incluye Inglés, Francés, Italiano y Japonés.
+R.: Si, al final de este documento, en la sección de créditos
+encontrará los enlaces a varias traducciones disponibles.
 </p>
 </sect1>
 
@@ -82,7 +81,7 @@ importar un fichero <tt>mbox</tt> en Sylpheed.
 <!-- gi.Q07 -->
 <sect1>¿Por qué no funciona la recolección automática de correo?
 <p>
-R.: La recolección automática funciona desde esta versión. Si la
+R.: La recolección automática funciona desde la versión 0.5.1. Si la
 necesita o la quiere deberá actualizarse.
 </p>
 </sect1>
@@ -121,6 +120,8 @@ R.: Si, IPv6 está completamente soportado en Sylpheed.
 <sect1>¿Soporta Sylpheed encriptación como GPG?
 <p>
 R.: Si. GPG está implementado y funciona correctamente.
+Para activarlo en Sylpheed vea la pregunta 14 en la sección
+de Instalación.
 </p>
 </sect1>
 
@@ -419,7 +420,14 @@ imagen en formato xbm puede utilizar un programa gráfico como el Gimp.
 utilize Sylpheed como cliente de correo?
 <p>
 R.: En la sección de configuración del programa correspondiente escriba:
-<tt> sylpheed --compose</tt>
+      <tt> sylpheed --compose</tt>
+</p>
+
+<!-- ic.Q14 -->
+<sect1>¿Cómo puedo habilitar el soporte de GPG en Sylpheed?
+<p>
+R.: Cuando compile Sylpheed asegúrese de añadir la opción <tt>--enable-gpgme</tt> al
+comando <tt>./configure<tt>
 </p>
 </sect1>
 
@@ -553,6 +561,22 @@ las ``Preferencias generales``.
 <p>
 R.: Quizás no haya compilado el soporte para Compface. Vea la pregunta 
 relativa a faces en la sección de Instalación/Configuración.
+</p>
+</sect1>
+
+<!-- if.Q12 -->
+<sect1>¿Por qué el lanzador de URLs no lanza mi navegador web?
+<p>
+R.: Es necesario que haga doble-click con el ratón sobre la URL.
+</p>
+</sect1>
+
+<!-- if.Q13 -->
+<sect1>Los ficheros adjuntos con espacios en el nombre no se abren!
+<p>
+R.: Cuándo intente lanzar una aplicación auxiliar, como un visor de imágenes, con un adjunto que tenga
+espacios en el nombre ponga comillas simples alrededor del parámetro <tt>%s</tt>. 
+Por ejemplo: <tt>gedit '%s'</tt>
 </p>
 </sect1>
 
