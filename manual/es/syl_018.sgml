@@ -1,13 +1,51 @@
 <sect>Información adicional
 <!-- mones -->
 <sect1>Páginas Web sobre Sylpheed<p>
-Esta sección aun no ha sido escrita en el original.
+Aquí van algunos enlaces al FAQ de Sylpheed en otros lenguajes:<p>
+<itemize>
+<item><url url="http://nlpagan.net/sylpheedfaq.htm" name="http://nlpagan.net/sylpheedfaq.htm"> : FAQ original en Inglés, cortesía de Paul Kater, Jens Oberender y otros
+<item><url url="http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html" name="http://www.enseirb.fr/~dinh/sylpheed/sylpheed-FAQ-fr.html"> : FAQ de Sylpheed en Francés, cortesía de Dinh V. Hoa
+<item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm"> : FAQ de Sylpheed en Japonés, cortesía de Wakai "SilverRain" Kazunao
+<item><url url="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html" name="http://beatles.cselt.it/~mau/sylpheed/sylpheedfaq.html"> : FAQ de Sylpheed en Italiano, cortesía de Maurizio Codogno
+<item><url url="http://www.synconet.de/privhome/rs/sylpheed_faq.html" name="http://www.synconet.de/privhome/rs/sylpheed_faq.html"> : FAQ de Sylpheed en Alemán (HTML) y <url url="http://www.synconet.de/privhome/rs/sylpheed_faq.txt" name="http://www.synconet.de/privhome/rs/sylpheed_faq.txt"> (solo texto), ambos cortesía de Ralf Schiffers
+<item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html"> : FAQ de Sylpheed en Griego, cortesía de Theofilos Intzoglou
+<item><url url="http://sylpheed.republika.pl" name="http://sylpheed.republika.pl"> : FAQ de Sylpheed en Polaco, cortesía de Przemyslaw Sulek
+<item><url url="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html" name="http://linux.fisek.com.tr/dfisek/sylpheed-sss.html"> : FAQ de Sylpheed en turco, cortesía de Doruk Fisek
+<item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="http://hem.passagen.se/webplats/sylpheed-faq-se.html"> : FAQ de Sylpheed en Sueco, cortesía de Mattias Stergren
+</itemize>
 </sect1>
+
 <sect1>Listas de correo<p>
-Esta sección aun no ha sido escrita en el original.
+Si quieres estar al día en lo referente a Sylpheed y quieres hablar con otros usuarios sobre el programa te puedes unir a la lista de correo.<p>
+Envia un mensaje a <tt>sylpheed-ctl@good-day.net</tt> que diga<p>
+<tt>subscribe Tu Nombre</tt><p>
+en el texto del mensaje.<p>
+El servidor te devolverá el correo una vez para la primera solicitud de registro pidiendote confirmación: "Puedo ponerte en esta lista de correo?" (en inglés) y que incluira un texto de estilo siguiente (es sólo un ejemplo).<p>
+<tt>confirm 84682771 Anne Shirley</tt><p>
+Esto es una precaución para evitar que alguien te suscriba a la lista en contra de tu voluntad.<p>
+Si recibiste el mensaje de confirmación de admisión, envia un mensaje que incluya el texto:<p>
+<tt>confirm Contraseña(un número) Tu Nombre</tt><p>
+a la dirección de registro: <tt>sylpheed-ctl@good-day.net</tt> de nuevo. Entonces se considerará que has confirmado el registro y pasarás a estar registrado en el servidor.<p>
+La dirección para enviar mensajes a la lista es <tt>sylpheed@good-day.net</tt>.<p>
+Nota: si pierdes el correo que dice<p>
+<tt>confirm Contraseña(un número) Tu Nombre</tt><p>
+o estas confuso y quieres empezar desde el principio, entonces empieza otra vez de nuevo, en otras palabras, envia<p>
+<tt>subscribe Tu Nombre</tt><p>
+a <tt>sylpheed-ctl@good-day.net</tt> otra vez.
+
+<sect2>Como desuscribirse.<p>
+Envia un mensaje a <tt>sylpheed-ctl@good-day.net</tt> que ponga<p>
+<tt>unsubscribe</tt><p>
+en el texto del mensaje.
+</sect2>
 </sect1>
+
 <sect1>CVS Anónimo<p>
 Esta sección aun no ha sido escrita en el original.
+</sect1>
+
+<sect1>Cómo decirle a otro programa que use Sylpheed como programa de correo<p>
+Si deseas usar Sylpheed desde, por ejemplo, Netscape o Opera, necesitas ir a la sección de `preferencias`, elegir `aplicaciones` y en la parte del cliente de correo necesitarás introducir <tt>sylpheed --compose</tt>. 
 </sect1>
 
 </sect>

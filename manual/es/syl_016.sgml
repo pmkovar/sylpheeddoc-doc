@@ -1,9 +1,8 @@
 
 <sect>Referencia<p>
 <!-- mones -->
-En esta sección encontrará alguna información que podría ser de ayuda para
-hacer más claro el uso de Sylpheed respecto a los atajos del teclado
-utilizados, así como una visión del formato del libro de direcciones.
+En esta sección encontrará alguna información que podría ser de ayuda para hacer más claro el uso de Sylpheed respecto a los atajos del teclado utilizados, así como una visión del formato del libro de direcciones.
+
 <sect1>Lista de atajos de teclado<p>
 <sect2>Atajos de una sola tecla:<p>
 <itemize>
@@ -18,29 +17,33 @@ utilizados, así como una visión del formato del libro de direcciones.
 <item>y: abre el diálogo "Salvar como..."
 </itemize>
 </sect2>
+
 <sect2>Atajos para el menú Fichero:<p>
 <itemize>
-<item>Alt-F: abrir el menu Fichero <!-- open FILE menu -->
+<item>Alt-F: abrir el menu Fichero
 <item>Alt-P: imprimir
 <item>Alt-W: cerrar
 <item>Alt-Q: salir
 </itemize>
 </sect2>
+
 <sect2>Atajos para el menú Editar:<p>
 <itemize>
-<item>Alt-E: abrir el menu Editar <!-- open EDIT menu -->
+<item>Alt-E: abrir el menu Editar
 <item>Ctrl-C: copiar
 <item>Ctrl-A: seleccionar todo
 <item>Ctrl-S: buscar
 </itemize>
 </sect2>
+
 <sect2>Atajos para el menú Ver:<p>
 <itemize>
-<item>Alt-V: abrir el menú Ver <!-- open VIEW menu -->
+<item>Alt-V: abrir el menú Ver
 </itemize>
+
 <sect2>Atajos para el menú Mensaje:<p>
 <itemize>
-<item>Alt-M: abrir el menu Mensaje <!-- open MESSAGE menu -->
+<item>Alt-M: abrir el menu Mensaje
 <item>Alt-I: comprobar el correo en la cuenta actual
 <item>Shift-Alt-I: comprobar el correo en todas las cuentas
 <item>Alt-N: componer un mensaje nuevo
@@ -56,9 +59,10 @@ utilizados, así como una visión del formato del libro de direcciones.
 <item>Ctrl-H: ver todas las cabeceras del mensaje
 </itemize>
 </sect2>
+
 <sect2>Atajos al menú Resumen<p>
 <itemize>
-<item>Alt-S: abrir el menú Resumen <!-- open SUMMARY menu -->
+<item>Alt-S: abrir el menú Resumen
 <item>Alt-X: ejecutar (comandos pendientes, solo es útil cuando los comandos no se ejecutan inmediatamente)
 <item>Alt-U: actualizar vista
 <item>Alt-G: ir a otra carpeta 
@@ -66,6 +70,7 @@ utilizados, así como una visión del formato del libro de direcciones.
 <item>Shift-Ctrl-T: vista plana (desactiva la vista jerárquica)
 </itemize>
 </sect2>
+
 <sect2>Atajos al menu Herramientas<p>
 <itemize>
 <item>Alt-T: abrir el menu Herramientas <!-- open tool menu -->
@@ -76,9 +81,10 @@ utilizados, así como una visión del formato del libro de direcciones.
 </sect1>
 
 <sect1>Formato de datos del libro de direcciones<p>
-El libro de direcciones es un fichero localizado en el directorio
-~/.sylpheed, cuyo nombre es addressbook.xml.
+El libro de direcciones es un fichero localizado en el directorio <tt>~/.sylpheed</tt>, cuyo nombre es <tt>addressbook.xml</tt>.
 El formato general del libro de direcciones es el siguiente:<p>
+
+<code>
 &lt addressbook &gt<p>
  &lt common_address &gt<p>
     &lt group name="Direcciones comunes" &gt<p>
@@ -90,6 +96,7 @@ El formato general del libro de direcciones es el siguiente:<p>
     &lt /group &gt<p>
  &lt /common_address &gt<p>
 &lt /addressbook &gt
+</code>
 
 </sect1>
 </sect>

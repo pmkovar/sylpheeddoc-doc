@@ -1,16 +1,31 @@
 
 <sect>FAQ
 <!-- mramos -->
+<!-- mones 2002/03/22 -->
 <p>
-Puedes encontrar la última FAQ actualizada (lista de Preguntas Frecuentes) en http://nlpagan.net/sylpheedfaq.htm.
+Puedes encontrar la última FAQ actualizada (lista de Preguntas Frecuentes) en
+<url url="http://nlpagan.net/sylpheed-faq.html" name="http://nlpagan.net/sylpheed-faq.html">.
 
 <sect1>Mensajes de Noticias (news) no leídos
 </sect1>
+
 <sect1>Usando Cuentas de Correo MSN
 </sect1>
-<sect1>Cambiando las Fuentes en el Menú, etc.
+
+<sect1>Cambiando las Fuentes en el Menú, etc.<p>
+Si quieres cambiar las fuentes que aparecen en los menús de Sylpheed dependerá del gestor de ventanas que estes usando. Tendrás que ir a la configuración de tu gestor de ventanas (KDE, Gnome, XFCE) y cambiar la fuente por la que desees.<p>
+Para cambiar la fuente en las ventanas de Sylpheed deberás seleccionar "Preferencias comunes" del menú de Configuración, después la pestaña "Ver" y en la primera sección de la ventana podrás establecer la fuente de entre las que tengas disponibles en tu ordendador.
 </sect1>
-<sect1>Modificando las asociaciones de teclas de los atajos de teclado
+
+<sect1>Modificando las asociaciones de teclas de los atajos de teclado<p>
+El interfaz gráfico de Sylpheed esta basado en GTK. Esto significa que es muy fácil cambiar las asociaciones de teclas (atajos del teclado o teclas sensibles) para los elementos de los menús. Si estas acostumbrado a alguna combinación de teclas de otro programa puedes indicarle a Sylpheed que use la misma combinación de teclas.<p>
+El procedimiento es muy simple. Supongamos que deseas cambiar la asociacion para traer el correo nuevo (menú Mensaje) de Alt-I a Ctrl-M.<p>
+<itemize>
+<item>Abre el menú Mensaje con el ratón o pulsando Alt-M
+<item>Selecciona la opción "Recibir correo nuevo" (¡no pulses en ella! si no se activaría la función). Si estás usando el ratón simplemente coloca el puntero sobre la opción para seleccionarla.
+<item>Ahora pulsa Ctrl-M. Verás que inmediatamente la nueva combinación aparece reflejada en el menú.
+</itemize>
+Felicidades, acabas de cambiar una asociación de teclas. De la misma manera podrás cambiar todas las opciones que quieras. Te darás cuenta de que lo mejor es usar solamente combinaciones con Alt, Mays y Ctrl. Varias funciones de Sylpheed se llaman con una sola tecla, pero esas están ya programadas (y no se pueden modificar ni establecer con este método).
 </sect1>
 
 </sect>

@@ -1,23 +1,46 @@
 
+<sect>Gestionando tipos MIME
+<!-- mones 2002/03/22 -->
+<sect1>Como se comprueban los tipos MIME en Sylpheed<p>
+
+(Gracias a Adriaan Penning por escribir esto)<p>
+
+Existen dos ficheros, <tt>mime.types</tt> y <tt>mailcap</tt>, involucrados en la determinación del tipo MIME de un adjunto y la aplicación asociada con ese tipo MIME. El fichero <tt>mime.types</tt> se utiliza para determinar el tipo MIME de los adjuntos que añades a los mensajes que tu creas. El fichero consta de líneas del estilo siguiente:<p>
+
+application/pdf                    pdf<p>
+
+Sylpheed busca este fichero en <tt>SYSCONFDIR</tt> (determinado en tiempo de compilación), en <tt>/etc/</tt> y en <tt>$HOME/.sylpheed</tt> 
+
+Si este fichero no existe o tiene un formato incorrecto todos los adjuntos tendrán `application/octet-stream' como tipo MIME, por lo que el cliente de correo del destinatario no sabrá que aplicación puede utilizar para visualizar el adjunto.
+
+Para cambiar aplicación que Sylpheed utiliza por defecto para ver un adjunto que te hayan enviado busca un fichero mailcap como <tt>/etc/mailcap</tt> o <tt>$HOME/.mailcap</tt>
+
+Por ejemplo, puedes añadir línea como esta en tu <tt>$HOME/.mailcap</tt> si quieres ver los archivos PDF con xpdf:<p>
+
+application/pdf ; xpdf %s
+
+</sect1>
+</sect>
+
 <sect>Conversión de Otros Formatos de Correo a Sylpheed (Formato MH)
 <!-- mramos -->
-<sect1>Importando Mensajes de Formato mbox<p>
-Sylpheed te permite importar mensajes de formato Mbox desde el menú Fichero.
-Primero creas la carpeta de correo donde quieres que los mensajes se
-almacenen, luego seleccionas Fichero --> Importar fichero mbox. Utiliza la
-función "Seleccionar" para seleccionar el fichero Mbox y la carpeta de correo
-de Sylpheed y pulsa Aceptar. Y voila, allí está tu correo, importado.<p>
+<!-- mones 2002/03/22 -->
+<sect1>Importando mensajes en formato mbox<p>
+Sylpheed te permite importar mensajes con formato mbox desde el menú Fichero. Primero creas la carpeta de correo donde quieres que los mensajes se almacenen, luego seleccionas Fichero->Importar fichero mbox. Utiliza la función "Seleccionar" para seleccionar el fichero mbox y la carpeta de correo de Sylpheed y pulsa Aceptar. Y <i>voilá</i>, allí está tu correo, importado.<p>
 Fué fácil, ¿no?
 </sect1>
 
 <sect1>Importando desde Clientes de correo de Windows (Becky!, AL-Mail, Outlook Express4, etc.)<p>
-Para posibilitar la importación de las carpetas de correo de estos y otro
-programas de correo puedes descargar el programa mbx2mbox en sourceforge.net.
-El proyecto está ubicado en http://mbx2mbox.sourceforge.net.
+Para posibilitar la importación de las carpetas de correo de estos y otros programas de correo puedes descargar el programa mbx2mbox en sourceforge.net. El proyecto está ubicado en
+<url url="http://mbx2mbox.sourceforge.net" name ="http://mbx2mbox.sourceforge.net">.
 </sect1>
-<sect1>Importando el Formato dbx de Outlook Express 5<p>
-Para posibilitar la importación de las carpetas de correo de estos y otro
-programas de correo puedes descargar el programa mbx2mbox en sourceforge.net.
-El proyecto está ubicado en http://mbx2mbox.sourceforge.net.
+
+<sect1>Importando el formato dbx de Outlook Express 5<p>
+Para posibilitar la importación de las carpetas de correo de estos y otros programas de correo puedes descargar el programa mbx2mbox en sourceforge.net. El proyecto está ubicado en
+<url url="http://mbx2mbox.sourceforge.net" name="http://mbx2mbox.sourceforge.net">.
+</sect1>
+
+<sect1>Exportando desde el format MH de Sylpheed a formato mbox<p>
+Sylpheed ofrece la posibilidad de exportar un buzón al formato estándar mbox a través del menú Fichero. Simplemente selecciona la opción "Exportar a fichero mbox..." y podrás seleccionar la carpeta que desees exportar (asistido por un diálogo de búsqueda) y también seleccionar o introducir el nombre del fichero mbox que desees generar.
 </sect1>
 </sect>

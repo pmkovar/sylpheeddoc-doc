@@ -1,36 +1,33 @@
-<sect>Acerca de Este Documento
+<sect>Acerca de éste documento
 <!-- mramos -->
+<!-- mones 2002/03/22 -->
+
 <sect1>Aviso de Copyright<p>
-Ésta sección no ha sido escrita todavía en el original.
-</sect1>
-<sect1>Licencia Pública General GNU<p>
-Ésta sección no ha sido escrita todavía en el original.
-</sect1>
-<sect1>Donde Obtener la Última Versión de Este Documento<p>
-Puedes encontrar la última versión de este documento, una especie de páginas
-de manual oficiales de Sylpheed en http://nlpagan.net/sylman/index.html.<p>
-Aquí el manual está almacenado como páginas HTML. Desde ésa página puedes
-descargar estas páginas como un fichero tar.gz para navegarlo fuera de línea
-en tu propia computadora.<p>
-También puedes ingresar al repositorio CVS en http://sourceforge.net y buscar
-el proyecto "sylpheeddoc". El documento es almacenado allí como un fichero
-SGML, necesitarás las SGMLtools para ésto!
-</sect1>
-<sect1>Comentario Final<p>
-Quiero agradecer a todos los involucrados en el proyecto Sylpheed.<p>
-A Hiroyuki Yamamoto y a todos los otros desarrolladores del fabuloso programa
-que ellos han creado.<p>
-A Francois Barriere que me ayudó a ser amigo del sistema CVS.<p>
-Toda la ayuda que recibí de todos en la lista de correo de Sylpheed mientras
-escribía la FAQ y este manual.<p>
-A Nick Selby, por ofrecer su muy apreciada asistencia en la redacción de este
-manual.<p>
-A Linux Torvalds, quien nos brindó un gran sistema operativo! ;-)
-</sect1>
-<sect1>Lista de Cambios<p>
-Ésta sección no ha sido escrita todavía.
+Copyright (C) 2001 Hiroyuki Yamamoto<p>
+Este programa ha sido hecho bajo GPL.
 </sect1>
 
+<sect1>Licencia Pública General GNU<p>
+Este programa es software libre; puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation; tanto en versión 2, u (opcionalmente) cualquier versión posterior. Este programa es distribuido con la esperanza de que sea util, pero SIN NINGUNA GARANTÍA; ni siquiera la garantía implícita de COMERCIALIDAD o ADECUACIÓN PARA ALGÚN PROPÓSITO PARTICULAR. Vease la GNU General Public License para más detalles. Usted debería haber recibido una copia de la GNU General Public License junto con este programa; en caso contrario, escriba a la Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.<p>
+
+N. del T.: Este texto se ofrece a título informativo. A efectos legales la única licencia GPL válida es la versión en Inglés.
+</sect1>
+
+<sect1>Donde Obtener la Última Versión de Este Documento<p>
+Puedes encontrar la última versión de este documento, una especie de páginas de manual oficiales de Sylpheed en
+<url url="http://nlpagan.net/sylman/index.html" name="http://nlpagan.net/sylman/index.html">.<p>
+Aquí el manual está almacenado como páginas HTML. Desde ésa página puedes descargar estas páginas como un fichero tar.gz para verlo fuera de línea en tu propia computadora.<p>
+También puedes ir al repositorio CVS en <url url="http://sourceforge.net" name="http://sourceforge.net"> y buscar el proyecto "sylpheeddoc". El documento está almacenado allí como un fichero SGML, ¡necesitarás las SGMLtools para ésto!
+</sect1>
+
+<sect1>Comentario Final<p>
+Quiero agradecer a todos los involucrados en el proyecto Sylpheed.<p>
+A Hiroyuki Yamamoto y a todos los otros desarrolladores del fabuloso programa que ellos han creado.<p>
+A Francois Barriere que me ayudó a ser amigo del sistema CVS.<p>
+Toda la ayuda que recibí de todos en la lista de correo de Sylpheed mientras escribía la FAQ y este manual.<p>
+A Nick Selby, por ofrecer su muy apreciada asistencia en la redacción de este manual.<p>
+A Linux Torvalds, quien nos brindó un gran sistema operativo! ;-)
+</sect1>
 </sect>
 
 </article>

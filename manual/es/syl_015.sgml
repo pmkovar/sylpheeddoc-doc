@@ -2,50 +2,58 @@
 <sect>Personalización (Configuración general)<p>
 <!-- mramos -->
 <!-- mones 2001/12/27 -->
-Sylpheed ofrece muchas posibilidades de configurar su interfaz para
-adaptarse a sus gustos personales.</p>
+<!-- mones 2002/03/22 -->
+Sylpheed ofrece muchas posibilidades de configurar su interfaz para adaptarse a sus gustos personales.</p>
 
 <sect1>Ventana de Configuración general<p>
-Para realizar cambios en la interfaz de Sylpheed es necesario abrir la
-opción "Preferencias comunes" en el menu de Configuración.<p>
-Aparecerá un cuadro de diálogo con diversas pestañas que le permitirán
-configurar Sylpheed.
+Para realizar cambios en la interfaz de Sylpheed es necesario abrir la opción "Preferencias comunes" en el menu de Configuración.<p>
+Aparecerá un cuadro de diálogo con diversas pestañas que le permitirán configurar Sylpheed.
 </sect1>
+
 <sect1>Descripción de Cada Entrada<p>
-En la tercera pestaña, Componer, se pueden cambiar las siguientes
-configuraciones:
+En la tercera pestaña, Componer, se pueden cambiar las siguientes configuraciones:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_compose.png">
+</figure>
+
 <itemize>
 <item>Si se desea citar el texto original de un mensaje.
 <item>El carácter que será colocado delante de cada línea de texto citada.
 <item>El texto que aparecera encabezando el texto citado.
-<item>El separador para la firma (opcional), el grupo de caracteres que se
-coloca delante del texto de la firma.
+<item>El separador para la firma (opcional), el grupo de caracteres que se coloca delante del texto de la firma.
 <item>Si desea o no insertar la firma automáticamente.
-<item>Definir si la cuenta que recibió el mensaje debe ser usada 
-automáticamente como la cuenta desde la que responder al mensaje. 
-Esto también influye en la firma que se seleccionará.
+<item>Definir si la cuenta que recibió el mensaje debe ser usada automáticamente como la cuenta desde la que responder al mensaje. Esto también influye en la firma que se seleccionará.
 <item>La posición de la línea a partir de la cual se debe recortar el texto.
-<item>Si el texto citado debe ser también recortado.
-<item>Indicar si el texto del correo debe ser recortado o no. Si escoge no
-recortar, las líneas no serán truncadas por caracteres de retorno de carro
+<item>Si el texto citado deberá ser también recortado.
+<item>Indicar si el texto del correo debe ser recortado o no. Si escoge no recortar, las líneas no serán truncadas por caracteres de retorno de carro.
 </itemize>
 En la cuarta pestaña, Ver, se pueden habilitar o no las siguientes opciones:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_display.png">
+</figure>
+
 <itemize>
-<item><tt>Fuente</tt> Se pueden establecer las fuentes que se usarán para
-visualizar los mensajes.
-<item><tt>Traducir cabeceras</tt> Esta opción permite que aparezcan en español los nombres de las cabeceras más comunes.
-<item><tt>Ver el número de no leídos</tt> Habilita que aparezca el número de
-mensajes sin leer que hay en cada carpeta al lado del nombre.
+<item><tt>Fuente</tt> Se pueden establecer las fuentes que se usarán para visualizar los mensajes.
+<item><tt>Traducir cabeceras</tt> Esta opción permite que aparezcan en castellano los nombres de las cabeceras más comunes.
+<item><tt>Ver el número de no leídos</tt> Habilita que aparezca el número de mensajes sin leer que hay en cada carpeta al lado del nombre.
 <item><tt>Mostrar destinatario</tt> Con esta opción Sylpheed mostrará el destinatario en la columna del remitente en el caso de que el que haya enviado el mensaje sea usted mismo.
-<item><tt>Habilitar barra de desplazamiento</tt> Permite que aparezca o no la barra de desplazamiento debajo del resumen de cabeceras. Si esta deshabilitada no
-podrá desplazar el contenido de la ventana para ver los asuntos de los mensajes si son demasiado largos.
+<item><tt>Habilitar barra de desplazamiento</tt> Permite que aparezca o no la barra de desplazamiento debajo del resumen de cabeceras. Si esta deshabilitada no podrá desplazar el contenido de la ventana para ver los asuntos de los mensajes si son demasiado largos.
 <item><tt>Expandir hilos</tt> Si esta deshabilitada esta opción y esta habilitada la vista jerárquica de mensajes los hilos aparecerán colapsados con un signo '+' delante. Si se habilita los hilos se desplegarán automáticamente.
 <item><tt>Ver mensajes no leídos en negrita<tt> Con esta casilla los mensajes del resumen de cabeceras que aún no hayan sido leídos apareceran con una fuente más gruesa. Deshabilitando la opción todos aparecerán con la misma fuente.
 <item><tt>Formato de fecha</tt> Esta opción permite cambiar la manera en que aparece la fecha en los mensajes de correo. Pulsando el botón '...' se abrirá una nueva ventana informativa con los códigos que se pueden utilizar para dar formato a la fecha. A medida que se cambie la cadena de formato se mostrará debajo una muestra del aspecto que tomará la fecha.
 <item><tt>Elementos visibles</tt> Este botón permite especificar que elementos aparecerán en la vista resumen de las cabeceras.
 </itemize>
-
 Al lado de estas opciones está la pestaña de Mensaje, se pueden encontrar las siguientes opciones:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_message.png">
+</figure>
+
 <itemize>
 <item><tt>Permitir colores</tt> Como su nombre indica, permite definir que colores se utilizarán para ver el texto, el texto citado y las URLs.
 <item><tt>Mostrar alfabetos de 2 bytes con 1 carácter.</tt> Esta opción es necesaria para lenguajes codificados en caracteres de 16 bits, como el Japonés y el Chino.
@@ -56,8 +64,13 @@ Al lado de estas opciones está la pestaña de Mensaje, se pueden encontrar las si
 <item><tt>Desplazar media página.</tt> Cuando este activa, el texto de la ventana de mensaje solo se desplazará media página, en vez de una página completa, al pulsar la barra espaciadora.
 <item><tt>Desplazamiento suave.</tt> Habilitando esta casilla hará que el texto en la ventana de mensaje se desplaze mas suavemente, deslizándose en vez de saltar. Puede ser más agradable a la vista, es una cuestión de gustos personales.
 <itemize>
-
 La pestaña "Interfaz" permite incluso una mayor personalización de Sylpheed. Esta pestaña contiene:
+
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_interface.png">
+</figure>
+
 <itemize>
 <item>Abrir el primer mensaje no leído al abrir una carpeta.
 <item>Abrir la carpeta de entrada automáticamente despues de recibir correo nuevo.
@@ -70,11 +83,15 @@ La pestaña "Interfaz" permite incluso una mayor personalización de Sylpheed. Est
 vaciarla realmente.
 <item>Avisar, cuando se esta cerrando Sylpheed, que hay mensajes en la cola para enviar.
 </itemize>
+Finalmente existe la pestaña "Otras" donde se pueden definir los programas que se quieren utilizar como aplicaciones de ayuda a Sylpheed.
 
-Finalmente existe la pestaña "Otras" donde se pueden definir los programas que
-se quieren utilizar como aplicaciones de ayuda a Sylpheed.
+<figure loc="here">
+<ph vspace="1cm">
+<img src="snapshots/pref_other.png">
+</figure>
+
 <itemize>
-<item><tt>Visor web externo.</tt> Aquí se puede introducir el nombre de tu navegador web favorito (Netscape, Opera, Mozilla, Lynx etc.). Añade el parámetro %s al comando para que Sylpheed sepa donde tiene que proporcionar el texto de la URL pulsada que el navegador tiene que visitar.
+<item><tt>Navegador web.</tt> Aquí se puede introducir el nombre de tu navegador web favorito (Netscape, Opera, Mozilla, Lynx etc.). Añade el parámetro %s al comando para que Sylpheed sepa donde tiene que proporcionar el texto de la URL pulsada que el navegador tiene que visitar.
 <item><tt>Impresión.</tt> Aquí se puede definir el programa que se debe usar para imprimir. El predeterminado es lpr, y la %s es el nombre del fichero temporal que Sylpheed crea para que lpr imprima.
 <item><tt>Editor externo.</tt> Se puede seleccionar un editor externo con el que escribir los correos, por ejemplo vi, emacs o gedit. Hay que recordar que para editores en modo texto como vi, hace falta definir la ventana terminal donde se van a ejecutar, p.ej. <tt>xterm -e vi %s</tt>. Si no el editor no tendrá ningún lugar donde poder aparecer. Aquí el parámetro %s es de nuevo el nombre del fichero temporal que Sylpheed crea para recoger el texto escrito.
 </itemize>
