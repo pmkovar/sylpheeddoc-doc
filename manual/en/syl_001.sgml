@@ -4,7 +4,7 @@
     <author>Paul Kater (paul@nlpagan.net)
 	    Nick Selby
     <abstract>
-       Sylpheed User's Manual for Sylpheed-0.7.3
+       Sylpheed User's Manual for Sylpheed-0.7.5
     </abstract>
 
 <toc>
@@ -34,10 +34,15 @@ The power of Sylpheed is that it is
 
 <sect1>Interface
 <p>
-The appearance and interface are similar to some popular e-mail clients for Windows, such as Outlook Express, Becky!, and Datula. The interface is also designed to emulate the mailers on Emacsen, and almost all commands are accessible with the keyboard.
+The appearance and interface are similar to some popular e-mail clients for 
+Windows, such as Outlook Express, Becky!, and Datula. The interface is 
+also designed to emulate the mailers on Emacsen, and almost all commands 
+are accessible with the keyboard.
 <p>
-The messages are managed by MH format, and you'll be able to use it together with another mailer based on MH format (like Mew). You can also utilize fetchmail or/and procmail, and external programs for receiving (like inc or imget).
-i
+The messages are managed by MH format, and you'll be able to use it 
+together with another mailer based on MH format (like Mew). You can 
+also utilize fetchmail or/and procmail, and external programs for 
+receiving (like inc or imget).
 </sect1>
 
 <sect1>Main features
@@ -53,6 +58,7 @@ Currently implemented features are:
 <item>External editor support 
 <item>Message queueing 
 <item>Draft message function 
+<item>Template
 <item>Line-wrapping 
 <item>Clickable URI 
 <item>XML-based addressbook 
