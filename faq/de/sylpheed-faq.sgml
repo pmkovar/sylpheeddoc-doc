@@ -203,30 +203,34 @@ Antwort: Beim ersten Start von Sylpheed muß man angeben, wo man seine Nachrichte
 
 Beim ersten Start werden auch automatisch Konfigurationsdateien im Verzeichnis $HOME/.sylpheed/ angelegt.
 </sect1>
-<sect1>
-Frage 03: Wie konfiguriere ich einen Account?<p>
+<sect1>Frage 03: Warum schlägt das Erstellen einer Mailbox fehl?<p>
+Antwort: Sylpheed meldet sich mit einer derartigen Fehlermeldung, wenn es in der Mailbox seine notwendigen Ablagen (Inbox, Outbox, ..) nicht erstellen kann. Das ist etwa der Fall, wenn sich dort bereits Dateien mit dem selben Dateinamen befinden.
+
+Ein häufiger Grund dafür ist die Migration von KMail zu Sylpheed. In diesem Fall kann man entweder ein Backup der Dateien erstellen und sie umbenennen, oder einfach eine neue Mailbox unter anderem Namen anlegen.
+</sect1>
+<sect1>Frage 04: Wie konfiguriere ich einen Account?<p>
 Antwort: Accounts können über &quot;Einstellungen -&gt; Neuen Account erstellen...&quot; eingerichtet werden.
 </sect1>
-<sect1>Frage 04: Wie viele Accounts kann ich in Sylpheed konfigurieren?<p>
+<sect1>Frage 05: Wie viele Accounts kann ich in Sylpheed konfigurieren?<p>
 Antwort: Sehr, sehr viele. Begrenzende Faktoren sind nur Festplattenkapazität, verwendetes Filesystem oder ähnliches.
 </sect1>
-<sect1>Frage 05: Warum löscht Sylpheed meine E-Mails nicht, wenn ich &quot;Nachricht -&gt; Löschen&quot; drücke? Ich definiere einen Filter, aber Sylpheed filtert nicht. Ich habe eine Nachricht in eine andere Ablage verschoben, aber sie bewegt sich nicht.<p>
+<sect1>Frage 06: Warum löscht Sylpheed meine E-Mails nicht, wenn ich &quot;Nachricht -&gt; Löschen&quot; drücke? Ich definiere einen Filter, aber Sylpheed filtert nicht. Ich habe eine Nachricht in eine andere Ablage verschoben, aber sie bewegt sich nicht.<p>
 Antwort: Man muß auf &quot;Ausführen&quot; klicken, oder in &quot;Einstellungen -&gt; Allgemeine Einstellungen&quot;, Reiter &quot;Benutzerschnittstelle&quot;, &quot;Sofort Ausführen beim Bewegen oder Löschen&quot; wählen.
 </sect1>
-<sect1>Frage 06: Kann ich spezielle Adressen/Ports für meine Mailserver/Newsserver verwenden?<p>
+<sect1>Frage 07: Kann ich spezielle Adressen/Ports für meine Mailserver/Newsserver verwenden?<p>
 Antwort: Ja, das geht. In den Accounteinstellungen können im Reiter "Einfach" die Adresse, und im Reiter "Speziell" die genauen Ports angegeben werden.
 </sect1>
-<sect1>Frage 07: Kann Sylpheed Nachrichten in Threads darstellen?<p>
+<sect1>Frage 08: Kann Sylpheed Nachrichten in Threads darstellen?<p>
 Antwort: Ja. Man kann diese Option in "Ansicht -> Threads einschalten" ein- und ausschalten.
 </sect1>
-<sect1>Frage 08: Kann ich meine E-Mails in mehreren Ebenen von Unterablagen verwalten?<p>
+<sect1>Frage 09: Kann ich meine E-Mails in mehreren Ebenen von Unterablagen verwalten?<p>
 Antwort: Sicher. Das ist kein Problem.
 </sect1>
-<sect1>Frage 09: Warum verschickt Sylpheed meine Nachrichten nicht?<p>
+<sect1>Frage 10: Warum verschickt Sylpheed meine Nachrichten nicht?<p>
 Antwort: Man muß zumindest einen Account konfigurieren, um Nachrichten senden zu können.
 (Beim Installieren im LAN, nur mit lokaler Unix Mailbox, kann man darauf leicht vergessen).
 </sect1>
-<sect1>Frage 10: Wie wende ich einen Patch an, nachdem ich ihn heruntergeladen habe?<p>
+<sect1>Frage 11: Wie wende ich einen Patch an, nachdem ich ihn heruntergeladen habe?<p>
 Antwort: Man kopiert den Patch ins Verzeichnis der Sylpheed-Sourcen, dann wendet man ihn wie folgt an:
 
 <tt>&percnt; patch -p0 &lt; irgendein.patch</tt>
@@ -240,28 +244,28 @@ Nun das Kommando <tt>./autogen.sh</tt>, man löscht die Datei <tt>/config.cache</
 
 Dann ruft man <tt>./configure</tt> mit den gewünschten Optionen auf (für die verfügbaren Optionen <tt>./configure --help</tt>), schließlich <tt>make</tt>.
 </sect1>
-<sect1>Frage 11: Wie kompiliere ich Sylpheed mit compface Unterstützung (X-Faces)?<p>
+<sect1>Frage 12: Wie kompiliere ich Sylpheed mit compface Unterstützung (X-Faces)?<p>
 Antwort: Man benötigt <tt>libcompface</tt>, um Sylpheed mit compface Unterstützung kompilieren zu können.
 </sect1>
-<sect1>Frage 12: Wie kann ich ein eigenes compface Bild (X-Face) erzeugen?<p>
+<sect1>Frage 13: Wie kann ich ein eigenes compface Bild (X-Face) erzeugen?<p>
 Antwort: Es gibt verschiedene Anwendungen für das Konvertieren, wie das xbm2ikon Script aus dem faces-Paket, oder gif2xface aus den claws-tools.
 
 Außerdem existiert dank Jeff Dairiki eine Online-Konvertierung, zusammen mit einem kompletten X-Face-Kurs auf <url url="http://www.dairiki.org/xface/" name="http://www.dairiki.org/xface/">.
 </sect1>
-<sect1>Frage 13: Wie kann ich meinem Browser/einer anderen Anwendung ermöglichen, Sylpheed als als E-Mail-Programm zu verwenden?<p>
+<sect1>Frage 14: Wie kann ich meinem Browser/einer anderen Anwendung ermöglichen, Sylpheed als als E-Mail-Programm zu verwenden?<p>
 Antwort:  In den Einstellungen der anderen Anwendung gibt man <tt>sylpheed --compose</tt> an.
 </sect1>
-<sect1>Frage 14: Wie bekomme ich GPG-Unterstützung in Sylpheed?<p>
+<sect1>Frage 15: Wie bekomme ich GPG-Unterstützung in Sylpheed?<p>
 Antwort: Mit einer aktuellen Version von GPGME gibt man beim Kompilieren von Sylpheed <tt>--enable-gpgme</tt> in der ./configure Anweisung an. Nach erfolgreichem Kompilieren sind die Reiter der &quot;Allgemeinen Einstellungen&quot; um den Reiter &quot;Privat&quot; bereichert.
 </sect1>
-<sect1>Frage 15: Mutt erkennt Sylpheed's MH-Struktur nicht!<p>
+<sect1>Frage 16: Mutt erkennt Sylpheed's MH-Struktur nicht!<p>
 Antwort: In diesem Fall sollte man den Befehl &quot;touch&quot; auf die Datei .xmhcache anwenden, die sich in jeder MH Ablage befindet. Dann sollte Mutt die Struktur erkennen können.
 </sect1>
-<sect1>Frage 16: Das Öffnen einer GIF-Datei in Sylpheed erzeugt einen Segmentation Fault.<p>
+<sect1>Frage 17: Das Öffnen einer GIF-Datei in Sylpheed erzeugt einen Segmentation Fault.<p>
 Antwort: Das kann durch folgenden Eintrag in /etc/mime.types behoben werden:<p>
 <tt>image/gif              gif</tt>
 </sect1>
-<sect1>Frage 17: Wie kann ich mich von Sylpheed benachrichtigen lassen, wenn neue Nachrichten ankommen?<p>
+<sect1>Frage 18: Wie kann ich mich von Sylpheed benachrichtigen lassen, wenn neue Nachrichten ankommen?<p>
 Antwort: Dafür gibt es verschiedene Möglichkeiten:
 <itemize>
 <item>Es gibt einen Patch für Sylpheed auf <url url="http://www.teledix.net/sylpheed/" name="http://www.teledix.net/sylpheed/"> um neue Nachrichten anzuzeigen.
