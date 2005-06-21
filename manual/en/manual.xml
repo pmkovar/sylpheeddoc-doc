@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!ENTITY __mod1__e92d5uax SYSTEM "manual_001.xml">
+]>
+<book>
+  <title>Sylpheed user's manual</title>
+
+  <bookinfo>
+    <abstract>
+      <para></para>
+    </abstract>
+
+    <copyright>
+      <year>2005</year>
+
+      <holder>The Sylpheed documentation team</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>Permission is granted to copy, distribute and/or modify this
+      document under the terms of the GNU Free Documentation License, Version
+      1.1 or any later version published by the Free Software Foundation; with
+      no Invariant Sections, with no Front-Cover Texts, and no Back-Cover
+      Texts. A copy of the license is included in the section entitled "GNU
+      Free Documentation License".</para>
+    </legalnotice>
+
+    <author>
+      <firstname>Francois</firstname>
+
+      <surname>Barriere</surname>
+
+      <affiliation>
+        <address>
+					<email>barriere.francois@libertysurf.fr</email>
+				</address>
+      </affiliation>
+    </author>
+
+    <revhistory>
+      <!-- ******************************************************************************** -->
+
+      <revision>
+        <revnumber>2.1</revnumber>
+
+        <date>2005/XX/XX</date>
+
+        <authorinitials>FBe</authorinitials>
+
+        <revremark>Ported to DocBook/XML.</revremark>
+      </revision>
+
+      <!-- ******************************************************************************** -->
+    </revhistory>
+  </bookinfo>
+
+  &__mod1__e92d5uax;
+
+</book>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <chapter>
+    <title>What is Sylpheed?</title>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/full_split.png" format="PNG" />
+      </imageobject>
+    </mediaobject>
+
+    <section>
+      <title>Introduction to Sylpheed</title>
+
+      <para>Sylpheed is a fast e-mail and news client. It will run on just
+      about any Linux or Unix compliant system.</para>
+
+      <para>Sylpheed is:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Light on system resources.</para>
+        </listitem>
+
+        <listitem>
+          <para>Very fast.</para>
+        </listitem>
+
+        <listitem>
+          <para>easy to learn and operate, due to its graceful and
+          sophisticated interface.</para>
+        </listitem>
+
+        <listitem>
+          <para>Loaded with features.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Main features</title>
+
+      <para>This list is not complete, but the most common features of
+      Sylpheed are:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Unlimited multiple account handling</para>
+        </listitem>
+
+        <listitem>
+          <para>Thread display</para>
+        </listitem>
+
+        <listitem>
+          <para>Filtering</para>
+        </listitem>
+
+        <listitem>
+          <para>MIME (attachments)</para>
+        </listitem>
+
+        <listitem>
+          <para>built-in image view</para>
+        </listitem>
+
+        <listitem>
+          <para>X-Face support</para>
+        </listitem>
+
+        <listitem>
+          <para>External editor support</para>
+        </listitem>
+
+        <listitem>
+          <para>Message queueing</para>
+        </listitem>
+
+        <listitem>
+          <para>Draft message function</para>
+        </listitem>
+
+        <listitem>
+          <para>Template</para>
+        </listitem>
+
+        <listitem>
+          <para>Line-wrapping</para>
+        </listitem>
+
+        <listitem>
+          <para>Clickable URI</para>
+        </listitem>
+
+        <listitem>
+          <para>XML-based addressbook</para>
+        </listitem>
+
+        <listitem>
+          <para>LDAP addressbook</para>
+        </listitem>
+
+        <listitem>
+          <para>Jpilot addressbook (for Palm types handhelds)</para>
+        </listitem>
+
+        <listitem>
+          <para>Newly arrived and unread message management</para>
+        </listitem>
+
+        <listitem>
+          <para>Multiple MH folder support</para>
+        </listitem>
+
+        <listitem>
+          <para>Mew/Wanderlust compatible key bindings</para>
+        </listitem>
+
+        <listitem>
+          <para>News reader function</para>
+        </listitem>
+
+        <listitem>
+          <para>Printing</para>
+        </listitem>
+
+        <listitem>
+          <para>UIDL support</para>
+        </listitem>
+
+        <listitem>
+          <para>APOP authentication</para>
+        </listitem>
+
+        <listitem>
+          <para>SMTP AUTH support</para>
+        </listitem>
+
+        <listitem>
+          <para>IPv6 support</para>
+        </listitem>
+
+        <listitem>
+          <para>GPG encryption and signature</para>
+        </listitem>
+
+        <listitem>
+          <para>Autoconf, automake support</para>
+        </listitem>
+
+        <listitem>
+          <para>Support of i18n of messages by gettext</para>
+        </listitem>
+
+        <listitem>
+          <para>Supports many locales, including UTF-8 (Unicode), when using
+          libjconv</para>
+        </listitem>
+
+        <listitem>
+          <para>IMAP4 compliant</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Methods for managing messages</title>
+
+      <para>There are several ways to manage messages. The best known is
+      <quote>not at all</quote>.</para>
+
+      <para>Many people receive an unmanageable amount of e-mail, which
+      usually ends up in the INBOX folder, ignored and forgotten. If you are
+      one of these people, you are constantly trying to locate that one
+      important email you got 5 days ago in a inbox that contains more than
+      5000 messages. Locating one email out of very many unsorted messages is
+      always a time-consuming and frustrating experience.</para>
+
+      <para>Sylpheed helps this situation with its mailfolders and
+      mailboxes.</para>
+
+      <para>Different mailboxes can store different kinds of mails. Suppose
+      you are a member of a kiting club, and you get at least 30 e-mails per
+      day from that club. You can create a separate kiting club mailbox, in
+      which you can move any e-mail that comes from this club. You will always
+      have all your kiting e-mails in one place.</para>
+
+      <para>Tedious, you say, to move 30 mails a day to that box, when email
+      comes in at random moments? It is certain that you will miss that very
+      important email about transport to the kiting ground where you will have
+      the contest of biggest and most beautiful kite!</para>
+
+      <para>Well, for this situation there is also a solution- filters.</para>
+
+      <para>Filters can automate the process of moving e-mails to new
+      mailboxes. Further on in this manual you will also learn about setting
+      up filters, so you do not have to manually move these kiting e-mails to
+      the kiting club mailbox.</para>
+
+      <section>
+        <title>Okay, so what is the difference between a mailbox and a
+        mailfolder?</title>
+
+        <para>This is the same way you organize information on your harddisk.
+        You create directories in which you put files or more
+        directories.</para>
+
+        <para>In Sylpheed, you can create mailboxes within mailboxes For
+        example, you could create a mailbox (folder) that contains the
+        mailboxes for all the different mailing lists to which you belong
+        .</para>
+
+        <para>A word of clarification- In Sylpheed, a maillbox is nothing more
+        than a directory. In a directory you can create either a new directory
+        or files. Sylpheed stores each e-mail in a separate file on disk. An
+        example of how a mailbox tree could look is</para>
+
+        <para><mediaobject>
+            <imageobject>
+              <imagedata fileref="snapshots/folder_tree.png" format="PNG" />
+            </imageobject>
+          </mediaobject> As you can see, there is no real limit to the way you
+        can set up your mailboxes. As long as you have diskspace available,
+        you can create mailboxes and mailboxes within mailboxes.</para>
+
+        <para>Of course, you should observe some common sense when you start
+        creating mailboxes. It is not a good idea to keep all mail in one
+        place but to create a maze of mailboxes is not a good idea
+        either!</para>
+      </section>
+    </section>
+  </chapter>
