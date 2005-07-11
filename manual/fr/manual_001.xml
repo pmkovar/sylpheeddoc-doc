@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <chapter>
+    <title>Qu'est-ce que Sylpheed&thinsp;?</title>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/full_split.png" format="PNG" />
+      </imageobject>
+    </mediaobject>
+
+    <section>
+      <title>Introduction  à Sylpheed</title>
+
+      <para>Sylpheed est un client de messagerie qui permet également la consultation des groupes de discussions usenet.  Il fonctionne parfaitement sur toute distribution Linux ou système compatible Unix.</para>
+
+      <para>Sylpheed est&nbsp;:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Gentil avec les ressources de votre système&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>Très rapide&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>facile à prendre en main grâce à son interface toute aussi agréable que sophistiquée&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>débordant de fonctionnalités&thinsp;;</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Principales caractéristiques</title>
+
+      <para>Cette liste n'est pas exhaustive mais les fonctionnalités les plus courantes de Sylpheed sont les suivantes&nbsp;:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>support d'un nombre illimité de comptes de messageries&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>affichage par fil de discussion&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>filtrage des messages&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support du format MIME pour les pièces jointes&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>affichage intégré des images&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support de X-Face (Ndt&nbsp;: petites images en noir et blanc)&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>possibilité d'utiliser un éditeur externe&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>mise en file d'attente des messages (Ndt&nbsp;: pour l'envoi ultérieur)&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>possibilité de faire des brouillons lors de la rédaction des messages&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>utilisation de modèles&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>justification des messages&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>liens URI cliquables&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>carnet d'adresses basé sur le format XML&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>carnet d'adresses connectable à un serveur LDAP&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>carnet d'adresses synchronisable avec Jpilot (pour les assistants personnels de type Palm)&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>gestion des nouveaux messages et des messages non lus&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support de plusieurs répertoires de format MH&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>raccourcis claviers compatibles Mew/Wanderlust&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>lecture des nouvelles issues des groupes de discussion usenet&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>impression&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support de l'UIDL&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>authentification APOP (Ndt&nbsp;: pour le protocole POP3)&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support de SMTP AUTH (Ndt&nbsp;: pour l'envoi de messages)&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support d'IPv6&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>confidentialité et sécurité grâce à GPG qui permet de crypter et signer les messages&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support d'autoconf et d'automake&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support de i18n pour les messages (grâce à gettext)&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>support de nombreuses langues et jeux de caractères, y compris UTF-8 (Unicode) (grâce à libjconv)&thinsp;;</para>
+        </listitem>
+
+        <listitem>
+          <para>compatible avec le protocole IMAP4&thinsp;;</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Méthodes pour gérer les messages</title>
+
+      <para>
+       Il y a plusieurs façons de gérer les messages. La plus connue est
+       celle qui consiste à <emphasis>ne pas les gérer</emphasis>.
+      </para>
+
+      <para>
+       Beaucoup de gens reçoivent un grand nombre de messages qui finissent
+       généralement dans le dossier <quote>Réception</quote> oubliés et 
+       ignorés. Si vous vous reconnaissez c'est que vous cherchez constamment
+       le message important que vous avez reçu 5 jours auparavant dans cette
+       fichue boite de réception qui contient plus de 5000 messages. Trouver
+       un courriel parmi des milliers de messages non triés est une tâche
+       frustrante qui prend toujours beaucoup trop de temps.
+      </para>
+
+      <para>
+       La possibilité offerte par Sylpheed d'avoir plusieurs boîtes
+       aux lettres et plusieurs dossiers peut permettre de s'en sortir.
+      </para>
+
+      <para>
+       Différentes boîtes aux lettres peuvent stocker différents type de
+       messages. Supposons que vous soyez membre d'un club et que vous
+       receviez chaque jour une trentaine de messages de ce club. Il sera
+       bon de créer une boîte aux lettres séparée dans laquelle vous pourrez
+       placer vos messages qui proviennent de ce club. De cette façon tous
+       vos messages concernant ce club seront toujours dans ce dossier.
+      </para>
+
+      <para>
+       Trouvez vous cela fastidieux de déplacer 30 messages arrivant au
+       hasard tout au long de la journée&thinsp;? Il se pourrait même
+       que vous manquiez le message concernant l'organisation du
+       transport vers votre club pour la compétition annuelle que vous
+       attendez tant&thinsp;!
+      </para>
+
+      <para>
+       Eh bien pour cela aussi il existe une solution simple qui se
+       chargera de le faire pour vous automatiquement&nbsp;: les filtres.
+      </para>
+
+      <para>
+       Les filtres permettent d'automatiser le tri des messages. Plus loin
+       dans ce manuel vous apprendrez à définir des filtres afin de ne plus
+       avoir à déplacer à la main un à un vos messages .
+      </para>
+
+      <section>
+        <title>
+         Bien, mais quelle est la différence entre une boîte aux 
+         lettres et un dossier&thinsp;?
+        </title>
+
+        <para>
+         C'est la façon dont vous organisez votre information sur votre
+         disque dur&nbsp;: vous créez des répertoires dans lesquels vous
+         placez des fichiers ou d'autres répertoires.
+        </para>
+
+        <para>
+         Dans Sylpheed il est possile de créer des boîtes aux lettres,
+         éventuellement contenues dans d'autres. Par exemple vous pouvez
+         créer une boîte aux lettres (un répertoire) qui contient toutes
+         les boîtes aux lettres correspondant aux listes de diffussion
+         auxquelles vous êtes abonné.
+        </para>
+
+        <para>A word of clarification- In Sylpheed, a maillbox is nothing more
+        than a directory. In a directory you can create either a new directory
+        or files. Sylpheed stores each e-mail in a separate file on disk. An
+        example of how a mailbox tree could look is</para>
+
+        <para>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="snapshots/folder_tree.png" format="PNG" />
+           </imageobject>
+         </mediaobject>
+         Comme vous pouvez le constater il n'y a pas vraiment de limites à la 
+         façon d'organiser ou de créer vos boîtes aux lettres. Vous pouvez en 
+         créer tant que vous avez de l'espace disque disponible.
+        </para>
+
+        <para>
+         Il va sans dire que lorsque vous commencer à créer vos boîtes
+         aux lettres le <quote>bon sens</quote> doit vous guider.
+         En effet, autant il n'est pas raisonnable de garder tous vous
+         messages en un seul endroit autant créer un labyrinthe contenant
+         une multitude de bôites aux lettres n'est pas une meilleure 
+         idée&thinsp;!
+        </para>
+      </section>
+    </section>
+  </chapter>

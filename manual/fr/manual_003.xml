@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+  <title>Guide rapide de configuration d'un compte de groupes de discussions</title>
+
+  <section>
+    <title>Obtenir les nouvelles rapidement.</title>
+
+    <para>
+     Dans le menu de configuration sélectionnez <quote>Création d'un
+     nouveau compte ...</quote>
+     </para>
+
+    <para>
+     Dans l'onglet <quote>Général</quote> entrez les données 
+     nécessaires&nbsp;: donnez un nom à votre nouveau compte, entrez votre
+     nom et votre adresse de messagerie, etc... . Afin de créer un compte de
+     groupe de discussion choisissez dans la boîte de défilement 
+     <quote>Protocole</quote> l'option <quote>News (NNTP)</quote>.
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_news_basic.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Entrez les informations concernant le serveur de groupe de 
+     discussion (par exemple news.free.fr).
+    </para>
+
+    <para>
+     Passez l'onglet <quote>Réception</quote>.
+    </para>
+
+    <para>
+     Dans l'onglet <quote>Envoyer</quote> vous pouvez définir encore 
+     d'autres paramètres.
+    </para>
+
+    <para>
+     Dans l'onglet <quote>Composition</quote> vous pouvez définir quel 
+     fichier sera utilisé pour votre signature (Ndt&nbsp;: en bas des
+     messages que vous enverrez).
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_compose.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Dans l'onglet <quote>Avancée</quote> vous pouvez choisir les différents
+     ports que Sylpheed utilisera pour communiquer avec les serveurs. En temps
+     normal il n'est pas nécessaire de changer ces paramètres.
+    </para>
+
+    <para>
+     Finalement fermez les boîtes de dialogues et cliquez avec le bouton
+     droit de la souris sur le nouveau répertoire ainsi créé et 
+     sélectionnez <quote>Inscription aux groupes de discussion...</quote>.
+     Si cela n'est pas déjà fait, Sylpheed chargera une liste des groupes de
+     discussions auxquels vous pourrez vous abonner (à partir de ce serveur).
+     Arrivé à ce point, vous devriez vous débrouiller sans difficultés, bonne
+     chance&thinsp;!
+    </para>
+  </section>
+</chapter>

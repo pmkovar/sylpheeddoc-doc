@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!ENTITY __mod1__e92d5uax SYSTEM "manual_001.xml">
+]>
+<book>
+  <title>Guide de l'utilisateur Sylpheed</title>
+
+  <bookinfo>
+    <abstract>
+      <para></para>
+    </abstract>
+
+    <copyright>
+      <year>2005</year>
+
+      <holder>L'équipe de documentation de Sylpheed</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>Permission est donnée de copier, distribuer, et/ou modifier ce
+document selon les termes de la Licence de Documentation Libre GNU
+(<emphasis>GNU Free Documentation License</emphasis>), Version 1.1 ou toute
+version ultérieurement publiée par la Free Software Foundation; sans
+section invariantes, sans textes de couverture ni quatrième de couverture. 
+Une copie de la licence est comprise dans la section nommée "GNU Free 
+Documentation License".</para>
+    </legalnotice>
+
+    <author>
+      <firstname>François</firstname>
+      <surname>Barriere</surname>
+      <affiliation>
+        <address>
+	         <email>barriere POINT francois CHEZ libertysurf POINT fr</email>
+	</address>
+      </affiliation>
+    </author>
+    <othercredit role="traduction" class="translator">
+      <firstname>Olivier</firstname>
+      <surname>Delhomme</surname>
+      <contrib>Adaptation française</contrib>
+      <affiliation>
+        <address>
+	         <email>olivier POINT delhomme CHEZ free POINT fr</email>
+	</address>
+      </affiliation>
+    </othercredit>
+
+    <revhistory>
+      <!-- ******************************************************************************** -->
+      <revision>
+        <revnumber>2.1.fr.1.0</revnumber>
+        <date>07/07/2005</date>
+        <authorinitials>OD</authorinitials>
+        <revremark>Première adaptation française</revremark>
+      </revision>
+
+      <revision>
+        <revnumber>2.1</revnumber>
+        <date>2005/XX/XX</date>
+        <authorinitials>FBe</authorinitials>
+        <revremark>Mise au format DocBook/XML. (Ported to DocBook/XML.)</revremark>
+      </revision>
+      <!-- ******************************************************************************** -->
+    </revhistory>
+  </bookinfo>
+
+  &__mod1__e92d5uax;
+
+</book>

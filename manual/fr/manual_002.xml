@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+  <title>Guide rapide de configuration</title>
+
+  <section>
+    <title>Premier démarrage de Sylpheed</title>
+
+    <para>
+     Lorsque vous démarrez sylpheed pour la première fois, vous êtes
+     guidé à travers les étapes de configuration basiques.
+     Tout d'abord, une fenêtre vous demande de définir le répertoire
+     que Sylpheed utilisera pour sauvegarder les messages et les boîtes 
+     aux lettres. Ce répertoire sera créé dans votre propre répertoire 
+     </emphasis>home</emphasis> (ou sous 
+     C:\windows\Application Data\Sylpheed sous windows). Par défaut le 
+     nom de ce répertoire est <quote>Mail</quote>.
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/wizard_1.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Ensuite, la fenêtre de configuration du compte apparaît.
+     Avant de continuer reportez vous aux sections (ci dessous) 
+     correspondant à votre configuration (Boîte aux lettres Unix locale
+     ou compte POP). 
+    </para>
+  </section>
+
+  <section>
+    <title>Configuration rapide de votre boîtes aux lettres locale Unix</title>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+         Dans le menu <quote>configuration</quote> sélectionnez <quote>
+         Création d'un nouveau compte</quote>
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+         Dans l'onglet <quote>Général</quote> donnez un nom à votre compte.
+         Vous pouvez faire en sorte que ce compte soit celui par défaut (cochez 
+         la case <quote>Définir comme compte par défaut</quote>). 
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>Entrez votre nom et votre adresse de messagerie électronique</para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Pour sélectionner votre boîte aux lettres unix locale choisissez
+          <quote>Aucun (local)</quote> dans la boîte de défilement <quote>
+          Protocole</quote>.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+         Lorsque vous sélectionnez cette option, la boîte de dialogue 
+         <quote>Serveur de réception</quote> devient grisée et inutilisable
+         étant donné que cette information n'est pas nécessaire pour ce type
+         de configuration. Dans cet onglet vous pouvez aussi renseigner la 
+         boîte de saisie concernant l'envoi des messages (celle nommée 
+         <quote>Serveur SMTP (envoi)</quote>, par exemple&nbsp;: 
+         smtp.free.fr).
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <para>
+     Vous pouvez laisser les autres paramètres de cet onglet à leurs
+     valeurs par défaut.
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_basic.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     L'onglet <quote>Réception</quote> n'est pas utilisé dans cette 
+     configuration puisque vos messages vous sont déjà délivrés localement.
+    </para>
+
+    <para>
+     Dans l'onglet <quote>Envoyer</quote> vous pouvez choisir les en-têtes et
+     configurer, si besoin, vos paramètres d'authentification sur le serveur SMTP
+     (Ndt&nbsp;: pour l'envoi des messages).
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_send.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Dans l'onglet <quote>Composition</quote> vous pouvez définir quel 
+     fichier sera utilisé pour votre signature (Ndt&nbsp;: en bas des
+     messages que vous enverrez).
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_compose.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Dans l'onglet <quote>Avancée</quote> vous pouvez choisir les différents
+     ports que Sylpheed utilisera pour communiquer avec les serveurs. En temps
+     normal il n'est pas nécessaire de changer ces paramètres.
+    </para>
+
+    <para>
+     Voici basiquement tout ce dont vous avez besoin de savoir pour démarrer
+     Sylpheed correctement configuré pour les boîtes aux lettres locales.
+     Vous pouvez utiliser le raccourci clavier <quote>Ctrl+I</quote> ou
+     sélectionner le menu <quote>Message -> Relever le courrier</quote> 
+     pour voir si vous avez de nouveaux messages&thinsp;!
+    </para>
+  </section>
+
+  <section>
+    <title>Configuration rapide pour votre compte POP3</title>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+         Dans le menu de configuration choisissez <quote>Créer un nouveau
+         compte</quote>
+       </para>
+      </listitem>
+
+      <listitem>
+        <para>
+         Dans l'onglet <quote>Général</quote> donnez un nom à votre compte.
+         Vous pouvez faire en sorte que ce compte soit celui par défaut (cochez 
+         la case <quote>Définir comme compte par défaut</quote>).
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>Entrez votre nom et votre adresse de messagerie électronique.</para>
+      </listitem>
+
+      <listitem>
+        <para>
+         Pour sélectionner votre boîte aux lettres POP3 choisissez
+         <quote>POP3</quote> dans la boîte de défilement <quote>Protocole</quote>.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+         Entrez les informations concernant le serveur qui contient votre
+         compte POP3 dans la boîte de saisie <quote>Serveur de réception
+         </quote> (par exemple&nbsp;: pop.free.fr). Dans cet onglet vous
+          pouvez aussi renseigner la boîte de saisie concernant l'envoi des 
+          messages (celle nommée <quote>Serveur SMTP (envoi)</quote>, par
+          exemple&nbsp;: smtp.free.fr).
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <para>
+     Vous pouvez laisser les autres paramètres de cet onglet à leurs
+     valeurs par défaut.
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_pop_basic.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>L'onglet <quote>Réception</quote> offre de nombreuses options
+     avancées pour la configuration du POP3.
+   </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_pop_receive.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Dans l'onglet <quote>Envoyer</quote> vous pouvez choisir les en-têtes et
+     configurer, si besoin, vos paramètres d'authentification sur le serveur SMTP
+     (Ndt&nbsp;: pour l'envoi des messages).
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_send.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Dans l'onglet <quote>Composition</quote> vous pouvez définir quel 
+     fichier sera utilisé pour votre signature (Ndt&nbsp;: en bas des
+     messages que vous enverrez).
+    </para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/account_compose.png" />
+      </imageobject>
+    </mediaobject>
+
+    <para>
+     Dans l'onglet <quote>Avancée</quote> vous pouvez choisir les différents
+     ports que Sylpheed utilisera pour communiquer avec les serveurs. En temps
+     normal il n'est pas nécessaire de changer ces paramètres.
+    </para>
+
+    <para>
+     Voici basiquement tout ce dont vous avez besoin de savoir pour démarrer
+     Sylpheed correctement configuré pour les boîtes aux lettres locales.
+     Vous pouvez utiliser le raccourci clavier <quote>Ctrl+I</quote> ou
+     sélectionner le menu <quote>Message -> Relever le courrier</quote> 
+     pour voir si vous avez de nouveaux messages&thinsp;!
+    </para>
+  </section>
+</chapter>
