@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!ENTITY faq001 SYSTEM "faq_001.xml">
+<!ENTITY faq002 SYSTEM "faq_002.xml">
+<!ENTITY faq003 SYSTEM "faq_003.xml">
+]>
+<book>
+  <title>Sylpheed FAQ</title>
+
+  <bookinfo>
+    <abstract>
+      <para></para>
+    </abstract>
+
+    <copyright>
+      <year>2005</year>
+      <holder>The Sylpheed documentation team</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>
+       Permission is granted to copy, distribute and/or modify this
+       document under the terms of the GNU Free Documentation License, Version
+       1.1 or any later version published by the Free Software Foundation; with
+       no Invariant Sections, with no Front-Cover Texts, and no Back-Cover
+       Texts. A copy of the license is included in the section entitled "GNU
+       Free Documentation License".
+      </para>
+    </legalnotice>
+
+    <author>
+      <firstname>Paul</firstname>
+      <surname>Kater</surname>
+      <affiliation>
+        <address><email>paul AT nlpagan DOT net</email></address>
+      </affiliation>
+    </author> 
+    <author>
+      <firstname>Jens</firstname>
+      <surname>Oberender</surname>
+      <affiliation>
+        <address><email>j DOT obi AT troja DOT net</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>François</firstname>
+      <surname>Barriere</surname>
+      <affiliation>
+        <address><email>barriere DOT francois AT libertysurf DOT fr</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Olivier</firstname>
+      <surname>Delhomme</surname>
+      <affiliation>
+        <address><email>olivier DOT delhomme AT free DOT fr</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Ricardo</firstname>
+      <surname>Mones</surname>
+      <affiliation>
+        <address><email>mones AT mones DOT org</email></address>
+      </affiliation>
+    </author> 
+    <revhistory>
+      <!-- ******************************************************************************** -->
+      <revision>
+        <revnumber>2.1</revnumber>
+        <date>2005/07/08</date>
+        <authorinitials>OD</authorinitials>
+        <revremark>Ported to DocBook/XML.</revremark>
+      </revision>
+      <!-- ******************************************************************************** -->
+    </revhistory>
+  </bookinfo>
+
+ <para>
+  En estas preguntas frecuentes las cuestiones que comiencen con la 
+  letra <quote>C</quote> (en lugar de la habitual <quote>P</quote>)
+  son relativas a características que solo se encuentran en la versión
+  <quote>Claws</quote> de Sylpheed.
+ </para>
+
+ &faq001;
+ &faq002;
+ &faq003;
+ 
+</book>
