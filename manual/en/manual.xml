@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
-<!ENTITY __mod1__e92d5uax SYSTEM "manual_001.xml">
+<!ENTITY __chapter__001 SYSTEM "manual_001.xml">
+<!ENTITY __chapter__002 SYSTEM "manual_002.xml">
+<!ENTITY __chapter__003 SYSTEM "manual_003.xml">
+<!ENTITY __chapter__004 SYSTEM "manual_004.xml">
+<!ENTITY __chapter__005 SYSTEM "manual_005.xml">
+<!ENTITY __license SYSTEM "fdl.xml">
 ]>
 <book>
   <title>Sylpheed user's manual</title>
@@ -18,12 +23,12 @@
     </copyright>
 
     <legalnotice>
-      <para>Permission is granted to copy, distribute and/or modify this
-      document under the terms of the GNU Free Documentation License, Version
-      1.1 or any later version published by the Free Software Foundation; with
-      no Invariant Sections, with no Front-Cover Texts, and no Back-Cover
-      Texts. A copy of the license is included in the section entitled "GNU
-      Free Documentation License".</para>
+      <para>Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.2
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License".</para>
     </legalnotice>
 
     <author>
@@ -55,6 +60,12 @@
     </revhistory>
   </bookinfo>
 
-  &__mod1__e92d5uax;
+  &__chapter__001;
+  &__chapter__002;
+  &__chapter__003;
+  &__chapter__004;
+  &__chapter__005;
 
+  &__license;
+  
 </book>
