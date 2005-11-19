@@ -1,5 +1,585 @@
 <?xml version="1.0" encoding="ISO-8859-15"?>
   <chapter>
+   <qandaset>
+   <qandadiv id="faq-general">
     <title>FAQ Sylpheed - Informations générales</title>
-   
+
+   <qandaentry>
+    <question id="faq-languages">
+      <para>
+        Existe-t-il des FAQ dans d'autres langues&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+       Oui, voici les liens vers les différentes traductions&nbsp;:
+
+        <itemize>
+         <item><ulink
+url="http://sylpheeddoc.sourceforge.net/fr/faq/faq.html">Sylpheed FAQ
+en Français</ulink> Traduite par Olivier Delhomme.</item>
+         <item><ulink
+url="http://sylpheeddoc.sourceforge.net/de/faq/faq.html">Sylpheed FAQ
+en Allemand</ulink> Traduite par Nicolas Kaiser.</item>
+         <item><ulink
+url="http://sylpheeddoc.sourceforge.net/es/faq/faq.html">Sylpheed FAQ
+en Espagnol</ulink> Traduite par Ricardo Mones Lastra.</item>
+         <item><ulink
+url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">Sylpheed
+FAQ en Japonais</ulink> gracieusement offert par WAKAI "SilverRain" Kazunao.</item>
+         <item><ulink
+url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">Sylpheed FAQ En Grecque</ulink> gracieusement offert par Theofilos Intzoglou.</item>
+         <item><ulink
+url="http://hem.passagen.se/webplats/sylpheed-faq-se.html">Sylpheed
+FAQ en Suédois</ulink>, gracieusement offert par Mattias Stergren.</item>
+         <item><ulink
+url="http://sylpheed.goodhorse.idv.tw/faq/sylpheed-faq.html">Sylpheed
+FAQ en Chinois Traditionnel</ulink>, gracieusement offert par Franklin.</item>
+        </itemize>
+        Vous pouvez télécharger cette FAQ depuis <ulink url="http://sylpheeddoc.sf.net">http://sylpheeddoc.sf.net</ulink>
+      </para>
+    </answer>
+  </qandaentry>
+
+  <qandaentry>
+    <question id="faq-what-sylpheed">
+      <para>
+        Qu'est-ce que Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Sylpheed est un client de messagerie électronique (E-mail)
+basé sur la bibliothèque Gtk+, fonctionnant sur X-window, conçu pour
+être rapide et doté&nbsp:
+        <itemize>
+         <item>d'une interface agréable et simple à utiliser&nbsp;;</item>
+         <item>d'une configuration simple et intuitive&nbsp;;</item>
+         <item>de nombreuses fonctionnalités.</item>
+        </itemize>
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-get-sylpheed">
+      <para>
+        Où trouver Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+        Vous pouvez le télécharger depuis <ulink
+        url="http://sylpheed.good-day.net">sylpheed.good-day.net</ulink>
+        À partir de cette page, vous trouverez des liens pour télécharger
+        les sources, mais aussi les RPMs (pour les distributions Redhat et Mandrake)
+        les paquetages DEB pour la distribution Debian, et des installations pour
+        Solaris et FreeBSD.
+      </para>
+    </answer>
+  </qandaentry>
+
+  <qandaentry>
+    <question id="faq-writes-sylpheed">
+      <para> 
+         Qui écrit Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Hiroyuki Yamamoto (<literal>hiro-y@kcn.ne.jp</literal>)
+      </para>
+    </answer>
+  </qandaentry>
+
+  <qandaentry>
+    <question id="faq-sylpheed-name">
+      <para>
+         Que signifie le nom, Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Il signifie «&nbsp;léger&nbsp;», comme l'air et vient du nom de l'esprit des vents,
+         le Sylphe.
+      </para>
+    </answer>
+  </qandaentry>
+
+  <qandaentry>
+    <question id="faq-sylpheed-store-mail">
+      <para>
+        Comment Sylpheed stocke-t-il les messages&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+        Les messages sont stockés dans des fichiers au format MH
+        (utilisé par MH et EMH). Les formats Maildir et mbox, ne sont pas
+        encore supportés, bien qu'il soit possible d'importer un fichier
+        mbox dans une boîte aux lettres Sylpheed.
+      </para>
+    </answer>
+  </qandaentry>
+
+  <qandaentry>
+    <question id="faq-auto-collection-sylpheed">
+      <para>
+        Pourquoi l'auto-collection des messages ne fonctionne-t-elle pas&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+        l'autocollection ne fonctionne que depuis la version 0.5.1, si vous en avez besoin,
+        songez à mettre à jour votre installation de Sylpheed.
+      </para>
+    </answer>
+  </qandaentry>
+
+  <qandaentry>
+    <question id="faq-filtering-sylpheed">
+      <para>
+         Sylpheed peut-il filtrer les messages&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Oui. Vous trouverez cela dans le menu Configuration-&gt; Filtres.
+        Le filtrage n'est pas possible pour les comptes IMAP, pour le moment.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-imap-sylpheed">
+      <para> 
+         Sylpheed peut-il gérer des comptes IMAP&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Oui et ce à partir de la version 0.4.99.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-local-unix-sylpheed">
+      <para>
+         Sylpheed peut-il accéder à une boîte aux lettres locale Unix&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Oui.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-ipv6-sylpheed">
+      <para>
+         Est-ce que Sylpheed supporte IPv6&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Oui, IPv6 est complètement supporté par Sylpheed.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-encryption-gpg-sylpheed">
+      <para>
+         Est-ce que Sylpheed supporte le cryptage, comme GPG&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Oui. GPG est supporté et fonctionne correctement.
+         Voir la question Q.14 dans la section 'installation' pour
+         savoir comment activer cette fonction.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-mime-types-sylpheed">
+      <para>
+         Comment Sylpheed vérifie-t-il les types MIME&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+          Sylpheed utilise le même type de vérification que Mutt.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-html-sylpheed">
+      <para>
+         Puis-je écrire des messages au format HTML avec Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Non. Une discussion autour de ce sujet a eu lieu, et il en
+         est ressorti que cette fonctionnalité n'est pas désirée.
+         Si vous souhaitez quand même envoyer de l'HTML, vous pouvez
+         joindre une page HTML à votre message. De nombreux patches ont été créés
+         pour améliorer la gestion du HTML par Sylpheed. Vous pouvez trouver
+         ces patches sur la page web des patches pour Sylpheed (voir plus loin
+         dans ce document).
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-completion-adress-sylpheed">
+      <para>
+         Sylpheed peut-il compléter les noms du champ «&nbsp;destinataire&nbsp;»&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+        Oui. Lorsque vous cherchez un nom qui commence par «&nbsp;<literal>don</literal>&nbsp;»,
+        entrez «&nbsp;<literal>don</literal>&nbsp;» (sans les guillemets) puis tapez la touche
+        TAB. Cela affichera le nom correct lorsqu'un seul «&nbsp;don&nbsp;» existe
+        dans votre carnet d'adresses. Sinon, une liste vous sera proposée
+        et vous pourrez sélectionner le nom que vous cherchez, par exemple
+        Donald Duck, ou Don Johnson. Les adresses de messagerie commençant
+        par «&nbsp;<literal>don</literal>&nbsp;» seront aussi incluses dans la liste (comme par exemple
+        «&nbsp;<literal>don.giovanni@maffia.org</literal>&nbsp;»).
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-tab-error-sylpheed">
+      <para>
+          Bien, mais lorsque je tape la touche TAB, j'obtiens un message d'erreur.
+      </para>
+    </question>
+    <answer>
+      <para>
+        Lorsque vous utilisez la recherche de nom, vérifiez que votre carnet
+        d'adresses contient des noms. S'il est vide, ou qu'aucune correspondance
+        ne peut être trouvée, Sylpheed ne peut rien compléter.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-sylpheed-fast">
+      <para>
+          Pourquoi Sylpheed est-il si rapide&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Parce qu'il a été conçu pour cela&thinsp;!
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-patches-sylpheed">
+      <para>
+           Où puis-je trouver les derniers patches pour Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+        La page web des patches pour Sylpheed se trouve à l'adresse&nbsp;:
+        <ulink url="http://www.thewildbeast.co.uk/sylpheed/">http://www.thewildbeast.co.uk/sylpheed/</ulink>
+        (voir aussi la section concernant l'installation pour plus de
+        détails sur l'installation des patches)
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-send-patches-sylpheed">
+      <para>
+          Comment puis-je envoyer un patch, signaler un bug, parler de Sylpheed avec d'autres personnes&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para> 
+        Pour parler à d'autres (fans de Sylpheed), rejoignez la liste de diffusion
+        de Sylpheed à&nbsp;: <ulink url="http://sylpheed.good-day.net">http://sylpheed.good-day.net</ulink>.
+        Notez qu'il existe une liste en japonais et une autre en anglais,
+        sélectionnez la bonne&thinsp;!
+        Si vous avez créé un patch et que vous voulez que le monde
+        le sache, prenez contact avec le gestionnaire de la page des
+        patches pour Sylpheed à&nbsp;: <literal>sylpheed@thewildbeast.co.uk</literal>  
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-content-type-header-sylpheed">
+      <para>
+         Quand j'envoie un message, l'en-tête définit le contenu comme
+         étant en US-ASCII même lorsque je spécifie d'utiliser du ISO-8859-1&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Si aucun caractère  ISO-8859-1 (>= 0x80) n'est utilisé dans le corps du
+         message, Sylpheed définit automatiquement le type de contenu (dans
+         l'en-tête du message) comme utilisant le jeu de caractères US-ASCII.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-word-wrap-sylpheed">
+      <para>
+         Pourquoi la césure semble ne pas fonctionner&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+        La mise en page est un peu bizarre, peut-être. En fait,
+        vous pouvez entrer des lignes aussi longues que vous voulez&thinsp;; au moment
+        d'envoyer le message, Sylpheed commence par mettre en page le message
+        au nombre de caractères (par ligne) maximum que vous avez défini.
+        C'est mieux pensé que vous ne le croyez. Une fois formatée (des retours
+        à la ligne sont insérés dans le texte), si vous ajoutez quelque chose
+        au début de votre phrase, le reste de la phrase passera à la ligne,
+        laissant quelques mots seuls entre deux lignes (provenant de la
+        première ligne).
+
+        Par exemple&nbsp;:
+        <verb>
+           C'est une longue ligne
+           qui est formatée.    
+        </verb>
+     
+        Maintenant, en ajoutant, un mot à la première ligne&nbsp;:
+        <verb>
+           C'est une très longue
+           ligne
+           qui est formatée.
+        </verb>
+
+        Cela peut nécessiter un très grand nombre de remises en forme pour
+        finalement obtenir un message bien formaté.
+
+        Note: depuis la version 0.8.0 de Sylpheed la césure
+              active a été implémentée. Il est possible de
+              l'activer via la boîte de dialogue «&nbsp;Préférences&nbsp;»
+              dans le menu «&nbsp;Composition&nbsp;» fenêtre «&nbsp;Justification 
+              du message&nbsp;».
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-faq-sylpheed">
+      <para>
+         Où puis-je trouver la dernière version de la FAQ Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Sur <ulink url="http://nlpagan.net/sylpheed-faq.html">http://nlpagan.net/sylpheed-faq.html<ulink> vous trouverez
+         la version anglaise (version de référence) dans laquelle vous trouverez
+         des liens vers les différentes traductions.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-import-mbox-sylpheed">
+      <para>
+         Puis-je importer une bal mbox dans un dossier Sylpheed (MH)&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+        Oui. Vous devez juste créer ou sélectionner le dossier dans lequel
+vous souhaitez insérer vos messages, puis sélectionner dans le menu
+«&nbsp;Fichier&nbsp;», l'entrée «&nbsp;Importer un fichier mbox&hellip;&nbsp;».
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-procmail-use-sylpheed">
+      <para>
+         Puis-je utiliser procmail pour trier mes messages&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Oui. Vous devez simplement vérifier que vous avez ajouté /. à la
+fin de chaque règle, afin que procmail sache que vous filtrez dans 
+des dossiers MH. Par exemple&nbsp;:
+         <literal>0:</literal>
+         <literal>* ^Subject:.*sylpheed</literal>
+         <literal>  sylpheedmail/.</literal>
+         Voir le manuel de procmail pour plus de détails.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-upgrade-sylpheed">
+      <para>
+        Lors des mises à jour de Sylpheed, dois-je faire attention à quelquechose&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+            Oui&thinsp;!
+          <itemize>
+            <item>Mise à jour vers 0.4.50&nbsp;: vous devez reconfigurer les newsgroups.</item>
+            <item>Mise à jour vers 0.4.63&nbsp;: vous devez définir la couleur des URLs dans le menu
+                     de configuration.</item>
+            <item>Mise à jour vers 0.4.65&nbsp;: certaines entrées des menus ont été déplacées.</item>
+            <item>Mise à jour vers 0.7.3&nbsp;: de nombreux raccourcis
+                    clavier ont changés</item>
+          </itemize>
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-update-views-sylpheed">
+      <para>
+         Comment mettre à jour rapidement les différentes vues dans Sylpheed&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Utilisez Alt-U ou sélectionnez «&nbsp;mettre à jour&nbsp;» dans le menu «&nbsp;Résumé&nbsp;».
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-gvim-external-editor-sylpheed">
+      <para>
+        Pourquoi ne puis-je pas utiliser gvim comme éditeur&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Pour utiliser gvim comme éditeur il est nécessaire de le lancer avec
+         l'option -f (no-fork). Dans la fenêtre de configuration, vous devez saisir&nbsp;:
+         «&nbsp;gvim -f %s&nbsp;». Sans cela, l'éditeur démarre un nouveau process, ouvre un
+         fichier et lorsque vous sortez de l'éditeur les changements sont perdus et
+         ne sont pas intégrés dans la fenêtre de composition.
+         (Merci à Ed Collins&thinsp;!)
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-quote-messages-sylpheed">
+      <para>
+         Est-il possible de ne citer que quelques parties d'un message
+original dans ma réponse&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Oui en sélectionnant la partie désirée dans la vue texte et
+         en choisissant «&nbsp;répondre&nbsp;».
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-not-quoting-sylpheed">
+      <para>
+         Puis-je répondre sans faire aucune citation&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Cliquez avec le bouton droit de la souris sur
+         le bouton «&nbsp;Répondre&nbsp;» de la barre d'outils et
+         choisissez «&nbsp;Répondre sans citer le message&nbsp;»
+         (cela fonctionne également avec «&nbsp;Transférer&nbsp;»).
+         Astuce&nbsp;: Vous pouvez aussi définir des raccourcis
+                  clavier pour ces fonctions.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-selective-download-sylpheed-claws">
+      <para>
+         Comment fonctionne le téléchargement sélectif&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+          Il y a deux façons de l'utiliser.
+          <itemize>
+           <item>
+             Manuellement&nbsp;: Ouvrez le menu «&nbsp;Outils/Téléchargement
+             sélectif&nbsp;» et choisissez «&nbsp;Télécharger&nbsp;» pour récupérer
+             les en-têtes des messages. Par la suite sélectionnez les
+             messages à détruire et appuyez sur le bouton «&nbsp;Supprimer&nbsp;».
+           </item>
+           <item>
+             Automatiquement&nbsp;:
+             Créez une règle de filtrage -gloable- pour détruire les
+             messages sur le serveur. Si vous choisissez «&nbsp;Téléchargement 
+             sélectif&nbsp;» tous les messages qui obéissent à cette règle
+             seront marqués pour la destruction.
+            </item>
+          </itemize>
+             Note: Par défaut le téléchargement sélectif télécharge
+                   uniquement les nouveaux messages (non lus). Si
+                   vous désirez traiter les messages lus aussi vous
+                   devez utiliser «&nbsp;Télécharger tous les messages&nbsp;».
+      </para>
+    </answer>
+  </qandaentry>
+
+
+   <qandaentry>
+    <question id="faq-two-filter-options-sylpheed-claws">
+      <para>
+         Pourquoi existe-il deux options de filtres&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+          «&nbsp;paramétrage des filtres&nbsp;» est l'option traditionnelle avec
+          moins de possibilités.
+          L'option «&nbsp;Filtrage&nbsp;» est nouvelle dans sylpheed-claws et
+          aussi plus puissante. Elle risque de remplacer l'option
+          traditionnelle dans le futur.
+          Astuce : Pour convertir vos anciennes règles de filtrage
+                   dans le nouveau format vous pouvez utiliser le script
+                   «&nbsp;filter_conv.pl&nbsp;» que vous trouverez dans le sous répertoire
+                   «&nbsp;tools&nbsp;» des sources de sylpheed-claws.
+      </para>
+    </answer>
+  </qandaentry>
+
+   <qandaentry>
+    <question id="faq-use-both-filter-sylpheed-claws">
+      <para>
+         Puis-je utiliser les deux options à la fois&thinsp;?
+      </para>
+    </question>
+    <answer>
+      <para>
+         Non, dès que vous définissez une nouvelle règle de filtrage,
+         les «&nbsp;filtres&nbsp;» traditionnels seront ignorés. 
+      </para>
+    </answer>
+  </qandaentry>
+
+   </qandadiv>
+   </qandaset>   
   </chapter>

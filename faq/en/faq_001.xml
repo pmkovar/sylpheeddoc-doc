@@ -28,15 +28,17 @@
        Yes. Here are links to several translations:
 
         <itemize>
-         <item><url url="http://sylpheeddoc.sourceforge.net/fr/faq/faq.html" name="SYLPHEED FAQ in French"> Translated by Olivier Delhomme.</item>
-         <item><url url="http://sylpheeddoc.sourceforge.net/de/faq/faq.html" name="SYLPHEED FAQ in German"> Translated by Nicolas Kaiser.</item>
-         <item><url url="http://sylpheeddoc.sourceforge.net/es/faq/faq.html" name="SYLPHEED FAQ in Spanish"> Translated by Ricardo  Mones Lastra.</item>
-         <item><url url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm" name="SYLPHEED FAQ in Japanese"> courtesy of WAKAI "SilverRain" Kazunao.</item>
-         <item><url url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html" name="SYLPHEED FAQ in Greek"> courtesy of Theofilos Intzoglou.</item>
-         <item><url url="http://hem.passagen.se/webplats/sylpheed-faq-se.html" name="Swedish FAQ">, courtesy of Mattias Stergren.</item>
-         <item><url url="http://sylpheed.goodhorse.idv.tw/faq/sylpheed-faq.html" name="Traditional Chinese FAQ">, courtesy of Franklin.</item>
+         <item><ulink url="http://sylpheeddoc.sourceforge.net/fr/faq/faq.html">Sylpheed FAQ in French</ulink> Translated by Olivier Delhomme.</item>
+         <item><ulink url="http://sylpheeddoc.sourceforge.net/de/faq/faq.html">Sylpheed FAQ in German</ulink> Translated by Nicolas Kaiser.</item>
+         <item><ulink url="http://sylpheeddoc.sourceforge.net/es/faq/faq.html">Sylpheed FAQ in Spanish</ulink> Translated by Ricardo  Mones Lastra.</item>
+         <item><ulink url="http://silver.lacmhacarh.gr.jp/sylpheed/sylpheedfaq-ja.htm">Sylpheed FAQ in Japanese</ulink> courtesy of WAKAI "SilverRain" Kazunao.</item>
+         <item><ulink url="http://www.cs.uoi.gr/~csst9910/el_sylfaq.html">Sylpheed FAQ in Greek</ulink> courtesy of Theofilos Intzoglou.</item>
+         <item><ulink
+url="http://hem.passagen.se/webplats/sylpheed-faq-se.html">Sylpheed FAQ in Swedish</ulink>, courtesy of Mattias Stergren.</item>
+         <item><ulink
+url="http://sylpheed.goodhorse.idv.tw/faq/sylpheed-faq.html">Sylpheed FAQ in Traditional Chinese</ulink>, courtesy of Franklin.</item>
         </itemize>
-        You can download this FAQ from <url url="http://sylpheeddoc.sf.net" name="http://sylpheeddoc.sf.net">
+        You can download this FAQ from <ulink url="http://sylpheeddoc.sf.net">http://sylpheeddoc.sf.net</ulink>
       </para>
     </answer>
   </qandaentry>
@@ -69,9 +71,7 @@
     </question>
     <answer>
       <para>
-        You can download it from <tt><url
-        url="http://sylpheed.good-day.net"
-        name="sylpheed.good-day.net"></tt> There are links to download
+        You can download it from <literal><ulink url="http://sylpheed.good-day.net">sylpheed.good-day.net</ulink></literal> There are links to download
         the tarball sources,  and  also links to  sites  where you can
         download  RPM's (for Redhat and   Mandrake), DEB packages for
         Debian, and installations for Solaris and FreeBSD.
@@ -87,7 +87,7 @@
     </question>
     <answer>
       <para>
-         Hiroyuki Yamamoto (<tt>hiro-y@kcn.ne.jp</tt>)
+         Hiroyuki Yamamoto (<literal>hiro-y@kcn.ne.jp</literal>)
       </para>
     </answer>
   </qandaentry>
@@ -243,14 +243,14 @@
     </question>
     <answer>
       <para>
-         Yes. When you search for a name that starts with "<tt>don</tt>",
-         type "<tt>don</tt>" (without the quotes) and press the TAB key.
+         Yes. When you search for a name that starts with "<literal>don</literal>",
+         type "<literal>don</literal>" (without the quotes) and press the TAB key.
          This will show you the correct name (when only one "don"
          exists in your addressbook. Otherwise a dropdown list
          appears, which allows you to select the name you want.
          E.g. Donald Duck, Don Johnson. But also e-mail addresses
-         starting with "<tt>don</tt>" will appear in the list (like
-         "<tt>don.giovanni@maffia.org</tt>").
+         starting with "<literal>don</literal>" will appear in the list (like
+         "<literal>don.giovanni@maffia.org</literal>").
       </para>
     </answer>
   </qandaentry>
@@ -293,8 +293,7 @@
     <answer>
       <para>
          The Sylpheed Patch homepage:
-         <tt><url url="http://www.thewildbeast.co.uk/sylpheed/" 
-      name="http://www.thewildbeast.co.uk/sylpheed/"></tt>
+         <literal><ulink url="http://www.thewildbeast.co.uk/sylpheed/">http://www.thewildbeast.co.uk/sylpheed/</ulink></literal>
          (Also see section on Installation on how to install a patch)
       </para>
     </answer>
@@ -309,11 +308,11 @@
     <answer>
       <para>
          To talk to others, you should join the Sylpheed mailing
-         list at <tt>http://sylpheed.good-day.net</tt>. Note that there is
+         list at <literal>http://sylpheed.good-day.net</literal>. Note that there is
          a japanese and an english list, so pick the right one!
          If you have made a patch that you want the world to know
          of, please get in touch with the manager of the Sylpheed
-         Patch homepage, at <tt>sylpheed@thewildbeast.co.uk</tt>
+         Patch homepage, at <literal>sylpheed@thewildbeast.co.uk</literal>
       </para>
     </answer>
   </qandaentry>
@@ -382,8 +381,7 @@
     </question>
     <answer>
       <para>
-          Go to <url url="http://sylpheeddoc.sf.net" 
-       name="http://sylpheeddoc.sf.net"> and check out 
+          Go to <ulink url="http://sylpheeddoc.sf.net">http://sylpheeddoc.sf.net</ulink> and check out 
           the FAQ and manual from the sylpheeddoc project. Both
           documents are available in multiple languages there and
           usually contain the latest updates.
@@ -416,9 +414,9 @@
       <para>
          Yes. Just make sure that you add /. to the end of a rule so
          procmail knows you are filtering into an MH mail folder. Example:
-         <tt>0:</tt>
-         <tt>* ^Subject:.*sylpheed</tt>
-         <tt>  sylpheedmail/.</tt>
+         <literal>0:</literal>
+         <literal>* ^Subject:.*sylpheed</literal>
+         <literal>  sylpheedmail/.</literal>
          Check man procmail for details.
       </para>
     </answer>
