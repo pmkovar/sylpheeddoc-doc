@@ -1,0 +1,8 @@
+2009-08-11  Petr Kovar  <pknbe@volny.cz>
+
+	* ChangeLog: Add the file.
+
+2009-08-11  Petr Kovar  <pknbe@volny.cz>
+
+	* setup.mk.fc: Add the setup.mk template suited for Fedora.
+	* tools/*.xsl: Slightly updated to fix the build process.
