@@ -4,11 +4,11 @@
 
 <!-- Import original style sheet: chunk.xsl (multi-page) or docbook.xsl (one page) -->
 
-  <xsl:import href="/usr/share/sgml/docbook/xsl-stylesheets-1.66.1/fo/docbook.xsl"/>
+  <xsl:import href="/usr/share/sgml/docbook/xsl-stylesheets/fo/docbook.xsl"/>
 
 <!-- ******************************************************************
    -
-   -  Load the common custimzation layer:
+   -  Load the common customization layer:
    -
    - ******************************************************************
    -->
@@ -19,13 +19,13 @@
 
 <!-- ******************************************************************
    -
-   -  Custimization starts here:
+   -  Customization starts here:
    -
    - ******************************************************************
    -->
 
 <!--
-   - Trial: use FOP extensions. Put here the stuf to generate PDF using FOP.
+   - Trial: use FOP extensions. Put here the stuff to generate PDF using FOP.
    -->
 <xsl:param name="fop.extensions">1</xsl:param>
 <xsl:param name="xep.extensions">1</xsl:param>

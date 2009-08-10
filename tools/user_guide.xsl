@@ -4,11 +4,11 @@
 
 <!-- Import original style sheet: chunk.xsl (multi-page) or docbook.xsl (one page) -->
 
-  <xsl:import href="/usr/share/sgml/docbook/xsl-stylesheets-1.66.1/html/docbook.xsl"/>
+  <xsl:import href="/usr/share/sgml/docbook/xsl-stylesheets/html/docbook.xsl"/>
 
 <!-- ******************************************************************
    -
-   -  Load the common custimzation for HTML:
+   -  Load the common customization for HTML:
    -
    - ******************************************************************
    -->
@@ -23,7 +23,7 @@
 
 <!-- ******************************************************************
    -
-   -  Custimization starts here:
+   -  Customization starts here:
    -
    - ******************************************************************
    -->

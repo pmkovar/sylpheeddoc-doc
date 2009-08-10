@@ -1,0 +1,82 @@
+######################################################################
+#  XSLT processing setup:
+#  =====================
+#
+#  As this setup may change based on your install and distro, I put
+#  all this into a separate file. This one is an example (the one
+#  I use) and must be modified to fit your config.
+#  By keeping it separate, we can modify the main Makefile without
+#  breaking the config and avoid the switches.
+#
+#  For now it only supports Saxon+Fop+Jai+Java. I would like to include
+#  the support for xsltproc (sablotron and xalan) for HTML output only.
+#  If someone has the time and wants to add this, go ahead!
+#
+#  The difference between setup.mk and setup.mk.fc is that the former
+#  one has been adjusted to meet the requirements of the Fedora Linux
+#  distribution. Only the latter one is used by Makefile, however.
+#
+######################################################################
+
+#
+#  JAVA: for Saxon (xslt processor) and FOP (PDF generator)
+#
+JAVA_HOME     ?= /usr/bin
+JAVACMD       ?= $(JAVA_HOME)/java
+
+#
+#  XSLT processors: Saxon.
+#
+SAXON_HOME    ?= /usr/share/java
+SAXON_JAR     ?= $(SAXON_HOME)/saxon.jar:$(SAXON_HOME)/saxon-jdom.jar
+
+#
+#  XML catalog resolver and setting: for Saxon only
+#
+RES_CLASSPATH ?= /usr/share/java/xml-commons-resolver.jar
+
+#
+#  DOCBOOK XSL extension for Saxon:
+#
+EXT_CLASSPATH ?= $(SAXON_HOME)/saxon-6.5.5.jar
+
+#
+#  Formatting object processor: PDF generation only
+#
+FOP_HOME 	  ?= /usr/share/java
+FOP_CLASSPATH ?= $(FOP_HOME)/fop.jar
+FOP_CLASSPATH ?= $(FOP_CLASSPATH):$(FOP_HOME)/avalon-framework.jar
+FOP_CLASSPATH ?= $(FOP_CLASSPATH):$(FOP_HOME)/batik-all.jar
+
+#
+#  JAI: Java Advance Image lib: Saxon only
+#
+JAIHOME       ?= /usr/share/jai-bin
+JAI_CLASSPATH ?= $(JAIHOME)/lib/jai_core.jar:$(JAIHOME)/lib/jai_codec.jar:$(JAIHOME)/lib/mlibwrapper_jai.jar
+
+#
+#  Final CLASSPATH for java:
+#
+CLASSPATH      := $(SAXON_JAR):$(RES_CLASSPATH):$(EXT_CLASSPATH):$(JAI_CLASSPATH):$(FOP_CLASSPATH)
+
+#
+# Bin libraries: for JAI
+#
+LD_LIBRARY_PATH += /opt/jai-bin/lib
+
+#  Extra options for catalog handling:
+#CATALOG_OPTS = "-x org.apache.xml.resolver.tools.ResolvingXMLReader -y org.apache.xml.resolver.tools.ResolvingXMLReader -r org.apache.xml.resolver.tools.CatalogResolver"
+CATALOG_OPTS := 
+
+#
+#  DocBook stylesheets: common to all XSLT processors:
+#
+DOCBOOK_XSL   ?= /usr/share/sgml/docbook/xsl-stylesheets
+
+# Make the HTML
+HTML_CMD = $(JAVACMD) -cp "$(EXT_CLASSPATH)" com.icl.saxon.StyleSheet \
+	$(CATALOG_OPTS) \
+	-o $@ \
+	$< \
+	$(CHUNKS_STYLESHEET)
+#	root.filename=all_in_one_page

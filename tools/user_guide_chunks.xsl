@@ -4,11 +4,11 @@
 
 <!-- Import original style sheet: chunk.xsl (multi-page) or docbook.xsl (one page) -->
 
-	<xsl:import href="/usr/share/sgml/docbook/xsl-stylesheets-1.66.1/html/chunk.xsl"/>
+	<xsl:import href="/usr/share/sgml/docbook/xsl-stylesheets/html/chunk.xsl"/>
 
 <!-- ******************************************************************
    -
-   -  Load the common custimzation for HTML:
+   -  Load the common customization for HTML:
    -
    - ******************************************************************
    -->
@@ -21,7 +21,7 @@
 	<xsl:param name="page.margin.inner">10in</xsl:param>
 	<xsl:param name="page.margin.outer">10in</xsl:param>
 
-	<xsl:param name="generate.legalnotice.link" select="1"/>
+	<xsl:param name="generate.legalnotice.link" select="0"/>
 
 <!-- ******************************************************************
    -
@@ -36,7 +36,7 @@
 
 <!-- New top-level file name: index.html is reserved for the index  -->
 
-<xsl:param name="root.filename" select="'user_guide'"/>
+<xsl:param name="root.filename" select="'sylpheed'"/>
 
 <!-- Yes we use the chunker: splits the output into several files. -->
 
@@ -44,7 +44,7 @@
 
 <!-- Chunk only the first level of chapter/sections -->
 
-<xsl:param name="chunk.section.depth" select="1"/>
+<xsl:param name="chunk.section.depth" select="0"/>
 
 <!-- Generate a separate chunk for the first element of each section -->
 
@@ -52,7 +52,7 @@
 
 <!-- Do not use the ID as filename: they contain forbidden chars -->
 
-<xsl:param name="use.id.as.filename" select="'0'"/>
+<xsl:param name="use.id.as.filename" select="'1'"/>
 
 <!-- Use the following extension for output files: .html -->
 
@@ -62,9 +62,9 @@
 
 <xsl:param name="html.extra.head.links" select="1"/>
 
-<!-- Use graphics in navigation headers/footers -->
+<!-- Do not use graphics in navigation headers/footers -->
 
-<xsl:param name="navig.graphics" select="1"/>
+<xsl:param name="navig.graphics" select="0"/>
 <xsl:param name="navig.graphics.extension" select="'.png'"/>
 <xsl:param name="navig.graphics.path">images/</xsl:param>
 
