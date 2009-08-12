@@ -1,0 +1,4 @@
+2009-08-12  Petr Kovar  <pknbe@volny.cz>
+
+	* *.xml: Finished porting to DocBook XML.
+	* ChangeLog: Add the file.

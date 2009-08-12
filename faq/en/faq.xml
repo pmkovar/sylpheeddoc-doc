@@ -1,82 +1,90 @@
-<?xml version="1.0" encoding="ISO-8859-15"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
-"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
-<!ENTITY faq001 SYSTEM "faq_001.xml">
-<!ENTITY faq002 SYSTEM "faq_002.xml">
-<!ENTITY faq003 SYSTEM "faq_003.xml">
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!ENTITY __faq__001 SYSTEM "faq_001.xml">
+<!ENTITY __faq__002 SYSTEM "faq_002.xml">
+<!ENTITY __faq__003 SYSTEM "faq_003.xml">
+<!ENTITY __faq__004 SYSTEM "faq_004.xml">
+<!ENTITY __license SYSTEM "fdl.xml">
 ]>
 <book>
   <title>Sylpheed FAQ</title>
-
   <bookinfo>
     <abstract>
-      <para></para>
+      <para>This document contains answers to various questions which are frequently asked by Sylpheed users.</para>
     </abstract>
-
     <copyright>
-      <year>2005</year>
-      <holder>The Sylpheed documentation team</holder>
+      <year>2009</year>
+      <holder>The Sylpheed Documentation Team</holder>
     </copyright>
-
     <legalnotice>
       <para>
        Permission is granted to copy, distribute and/or modify this
        document under the terms of the GNU Free Documentation License, Version
-       1.1 or any later version published by the Free Software Foundation; with
+       1.2 or any later version published by the Free Software Foundation; with
        no Invariant Sections, with no Front-Cover Texts, and no Back-Cover
-       Texts. A copy of the license is included in the section entitled "GNU
-       Free Documentation License".
+       Texts. A copy of the license is included in the section entitled &quot;GNU
+       Free Documentation License&quot;.
       </para>
     </legalnotice>
-
     <author>
       <firstname>Paul</firstname>
       <surname>Kater</surname>
       <affiliation>
-        <address><email>paul AT nlpagan DOT net</email></address>
+        <address>
+          <email>paul AT nlpagan DOT net</email>
+        </address>
       </affiliation>
-    </author> 
+    </author>
     <author>
       <firstname>Jens</firstname>
       <surname>Oberender</surname>
       <affiliation>
-        <address><email>j DOT obi AT troja DOT net</email></address>
+        <address>
+          <email>j DOT obi AT troja DOT net</email>
+        </address>
       </affiliation>
     </author>
     <author>
-      <firstname>Fran�ois</firstname>
+      <firstname>François</firstname>
       <surname>Barriere</surname>
       <affiliation>
-        <address><email>barriere DOT francois AT libertysurf DOT fr</email></address>
+        <address>
+          <email>barriere DOT francois AT libertysurf DOT fr</email>
+        </address>
       </affiliation>
     </author>
     <author>
       <firstname>Olivier</firstname>
       <surname>Delhomme</surname>
       <affiliation>
-        <address><email>olivier DOT delhomme AT free DOT fr</email></address>
+        <address>
+          <email>olivier DOT delhomme AT free DOT fr</email>
+        </address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Petr</firstname>
+      <surname>Kovář</surname>
+      <affiliation>
+        <address>
+          <email>pknbe AT volny DOT cz</email>
+        </address>
       </affiliation>
     </author>
     <revhistory>
-      <!-- ******************************************************************************** -->
-      <revision>
+<!-- ******************************************************************************** -->      <revision>
         <revnumber>2.1</revnumber>
         <date>2005/07/08</date>
         <authorinitials>OD</authorinitials>
-        <revremark>Ported to DocBook/XML.</revremark>
+        <revremark>Ported to DocBook XML.</revremark>
       </revision>
-      <!-- ******************************************************************************** -->
-    </revhistory>
+      <revision>
+        <revnumber>2.2</revnumber>
+        <date>2009/08/12</date>
+        <authorinitials>PK</authorinitials>
+        <revremark>Finished porting to DocBook XML.</revremark>
+      </revision>
+<!-- ******************************************************************************** -->    </revhistory>
   </bookinfo>
-
- <para>
-  In this FAQ, the question starting with the <quote>C</quote> letter
-  (instead of the  usual <quote>Q</quote>) concern features that are 
-  only present in the <quote>claws</quote> branch of Sylpheed.
- </para>
-
- &faq001;
- &faq002;
- &faq003;
-
-</book>
+<!-- missing outdated remark about Sylpheed and Claws -->&__faq__001;&__faq__002;&__faq__003;&__faq__004;&__license;</book>
