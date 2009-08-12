@@ -1,161 +1,125 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<chapter>
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-2">
   <title>Quick-guide to mail setup</title>
-
   <section>
     <title>Starting Sylpheed for the first time</title>
-
     <para>When starting Sylpheed for the first time, you will be guided
     through the first basic steps of the setup. First a pop-up window will
     show up and you will be asked to define the directory Sylpheed will use to
     store your messages and folders. This directory will be created under your
     home directory (or under C:\windows\Application Data\Sylpheed on windows).
-    The default name for this directory is "Mail".</para>
-
+    The default name for this directory is &quot;Mail&quot;.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/wizard_1.png" />
+        <imagedata fileref="snapshots/wizard_1.png"/>
       </imageobject>
     </mediaobject>
-
     <para>Then the account preferences window shows up. Based on your
     configuration (local UNIX mailbox or POP account), read one of the
     following sections for the next steps of the configuration.</para>
   </section>
-
   <section>
     <title>Setup for reading your Unix mailbox in a hurry</title>
-
     <itemizedlist>
       <listitem>
-        <para>In the configuration menu, select "Create new account".</para>
+        <para>In the configuration menu, select &quot;Create new account&quot;.</para>
       </listitem>
-
       <listitem>
         <para>In the Basic tab, name the account. You can select this account
-        to be the default account ("Usually used").</para>
+        to be the default account (&quot;Usually used&quot;).</para>
       </listitem>
-
       <listitem>
         <para>Enter your name and e-mail address.</para>
       </listitem>
-
       <listitem>
         <para>To select your local unix mailbox, in the Protocol box you
-        select "None (local)".</para>
+        select &quot;None (local)&quot;.</para>
       </listitem>
-
       <listitem>
-        <para>When you select this option, the "Server for receiving" is
+        <para>When you select this option, the &quot;Server for receiving&quot; is
         greyed out, since this is not relevant. You can enter the server to
         send (SMTP) in this tab also.</para>
       </listitem>
     </itemizedlist>
-
     <para>Settings in the remaining tabs can usually be left at default
     values.</para>
-
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_basic.png" />
+        <imagedata fileref="snapshots/account_basic.png"/>
       </imageobject>
     </mediaobject>
-
     <para>The Receive tab is not used in this setup, since you are not polling
     a server, your mail is delivered to you.</para>
-
     <para>In the Send tab you can select headers and SMTP
     authentication.</para>
-
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_send.png" />
+        <imagedata fileref="snapshots/account_send.png"/>
       </imageobject>
     </mediaobject>
-
     <para>In the Compose tab you can define your signature file.</para>
-
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_compose.png" />
+        <imagedata fileref="snapshots/account_compose.png"/>
       </imageobject>
     </mediaobject>
-
     <para>In the Advanced tab you can edit the portnumbers for the servers you
     will be using. This normally will need no change.</para>
-
     <para>This is basically everything you need to start using Sylpheed for
-    local mailboxes. You can select "Message -&gt; receive new mail" or press
+    local mailboxes. You can select &quot;Message -&gt; receive new mail&quot; or press
     the shortcut and see if there is new mail!</para>
   </section>
-
   <section>
     <title>Setup for reading POP3 mail in a hurry</title>
-
     <itemizedlist>
       <listitem>
-        <para>In the configuration menu, select "Create new account".</para>
+        <para>In the configuration menu, select &quot;Create new account&quot;.</para>
       </listitem>
-
       <listitem>
         <para>In the Basic tab, name the account. You can select this account
-        to be the default account ("Usually used").</para>
+        to be the default account (&quot;Usually used&quot;).</para>
       </listitem>
-
       <listitem>
         <para>Enter your name and e-mail address.</para>
       </listitem>
-
       <listitem>
-        <para>To check your POP3 mail, in the Protocol box you select "POP3
-        (normal)".</para>
+        <para>To check your POP3 mail, in the Protocol box you select &quot;POP3
+        (normal)&quot;.</para>
       </listitem>
-
       <listitem>
-        <para>Enter the server information for "Server for receiving". You can
+        <para>Enter the server information for &quot;Server for receiving&quot;. You can
         then enter the server to send (SMTP) in this tab.</para>
       </listitem>
     </itemizedlist>
-
     <para>Settings in the remaining tabs can usually be left at default
     values.</para>
-
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_pop_basic.png" />
+        <imagedata fileref="snapshots/account_pop_basic.png"/>
       </imageobject>
     </mediaobject>
-
     <para>The Receive tab offers advanced POP3 options.</para>
-
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_pop_receive.png" />
+        <imagedata fileref="snapshots/account_pop_receive.png"/>
       </imageobject>
     </mediaobject>
-
     <para>In the Send tab you can select headers and SMTP
     authentication.</para>
-
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_send.png" />
+        <imagedata fileref="snapshots/account_send.png"/>
       </imageobject>
     </mediaobject>
-
     <para>In the Compose tab you can define your signature file.</para>
-
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_compose.png" />
+        <imagedata fileref="snapshots/account_compose.png"/>
       </imageobject>
     </mediaobject>
-
     <para>In the Advanced tab you can edit the portnumbers for the servers you
     will be using. This normally will need no change.</para>
-
     <para>This is basically everything you need to start using Sylpheed for
-    POP3 mailsystems. You select "Message -&gt; receive new mail" or press the
+    POP3 mailsystems. You select &quot;Message -&gt; receive new mail&quot; or press the
     shortcut and see if there is new mail!</para>
   </section>
 </chapter>

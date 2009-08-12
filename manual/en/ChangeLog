@@ -1,3 +1,7 @@
+2009-08-12  Petr Kovar  <pknbe@volny.cz>
+
+	* *.xml: Finished porting to DocBook XML.
+
 2004-03-22
 
 	* In syl_001.sgml, included the changes submitted by 

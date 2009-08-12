@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-19">
+  <title>Information</title>
+  <section>
+    <title>Websites on Sylpheed</title>
+    <para>
+Here are some links to the Sylpheed FAQ in other languages:</para>
+<!-- missing links itemizedlist -->  </section>
+  <section>
+    <title>Mailing Lists</title>
+    <para>
+If you want to stay up to date on Sylpheed, and want to talk about the program with other users, you can join the mailing list.</para>
+    <para>
+Send a mail to sylpheed-ctl@good-day.net that says</para>
+    <para>
+<guilabel>subscribe Your Name</guilabel></para>
+    <para>
+in the body.</para>
+    <para>
+The server returns the mail once for the first registration request that asks the confirmation: &quot;May I put you on this mailing list?&quot; that includes the following phrase (this number is merely an example).</para>
+    <para>
+<guilabel>confirm 84682771 Anne Shirley</guilabel></para>
+    <para>
+This is a precaution for mischief like subscribing you to the list against your wish.</para>
+    <para>
+If you received the entry confirmation mail, send a mail that includes the phrase:</para>
+    <para>
+<guilabel>confirm Password(a number) Your Name</guilabel></para>
+    <para>
+to the address for registration: sylpheed-ctl@good-day.net again. Then, it is considered that you have confirmed the registration and you are registered to the server.</para>
+    <para>
+The address for posting to the list is sylpheed@good-day.net.</para>
+    <para>
+Notice: If you lost the mail that says</para>
+    <para>
+confirm Password(a number) Your Name</para>
+    <para>
+or you became confused and want to do from start, do them over from the start, in other words, send</para>
+    <para>
+<guilabel>subscribe Anne Shirley</guilabel></para>
+    <para>
+to sylpheed-ctl@good-day.net again.</para>
+  </section>
+  <section>
+    <title>How to unsubscribe.</title>
+    <para>
+Send a mail to sylpheed-ctl@good-day.net that says</para>
+    <para>
+<guilabel>unsubscribe</guilabel></para>
+    <para>
+in the body.</para>
+<!-- added aug. 13, 2001 -->  </section>
+  <section>
+    <title>Anonymous CVS</title>
+    <para>
+This section has not been written yet.</para>
+  </section>
+</chapter>

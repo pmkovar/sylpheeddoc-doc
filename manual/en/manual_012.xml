@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-12">
+  <title>Address Book</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="snapshots/address_book..png"/>
+    </imageobject>
+  </mediaobject>
+  <para>
+In the address book, accessible through Shift-Ctrl-A, 
+the Addressbook button, or through the &quot;Tools&quot; menu, you 
+store e-mail addresses of the people and places you want 
+to write more often.
+</para>
+  <para>
+If the options have been compiled into Sylpheed, the
+address book can connect to a LDAP server for address
+lookup, and you can use the address book stored on your
+Palm PDA.
+</para>
+  <section>
+    <title>Adding and Deleting Addresses </title>
+    <para>
+Adding an address to the address book is quite easy too. 
+Rightclick the folder or group you want to add the address 
+to, select &quot;new address&quot; and fill in the dialog that comes 
+up. You can also directly click the Add button in the 
+address book window, and the dialog comes up. In this 
+case the address is moved into the folder/group that is 
+selected at the moment of adding.
+</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/address_book_basic..png"/>
+      </imageobject>
+    </mediaobject>
+    <para>
+In the &quot;Basic data&quot; tab, you can fill the first
+and last name and provide a nickname. The &quot;Display name&quot;
+will be used by the &quot;Name&quot; column of the address book
+window.
+</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/address_book_address..png"/>
+      </imageobject>
+    </mediaobject>
+    <para>
+In the &quot;E-Mail address&quot; tab, fill the address field
+and use the &quot;Add&quot; button to add the address to the list.
+An alias can also be assigned to this address and used
+when searching for an address.
+Several addresses can be assigned to the same person
+in your address book by repeating the sequence described
+above. The addresses can then be sorted by using the 
+&quot;Move up&quot; and &quot;Move down&quot; buttons. The address on the top
+will be the first one listed in the address book main window.
+</para>
+    <para>
+Deleting an address is equally simple. Find the address, 
+click it once, and press the Delete button.
+</para>
+  </section>
+  <section>
+    <title>Folders and Groups </title>
+    <para>
+You can use groups and folders to organize your address
+book into categories, hierarchies and aliases.
+The folders are used to generate a hierarchical organization
+and contain the actual addresses, while the groups are
+used to group together addresses that lives in separate
+folders.
+</para>
+    <para>
+Sounds complicated, so let&apos;s see an example: consider
+your workmates, they are arnaud (arnaud@company.com),
+sandra (sandra@company.com), xavier (xavier@company.com)
+and the chief, helene (helene@company.com). You can
+create a folder named <guilabel>myGroup</guilabel>, create the entries
+for all your workmates in this folder. Now you can create one
+groupe named <guilabel>jokes</guilabel> that includes all but the boss
+to use when sending your daily jokes, another one named
+<guilabel>team</guilabel> that includes everybody for the usual group
+(serious) communication, and a third group named
+<guilabel>reports</guilabel> that includes the boss, and the one working 
+with you on some projects for the weekly reports.
+</para>
+    <para>
+To generate this kind of addresses organization
+you only need to create the entries once, then when
+creating groups you can select among the existing entries
+to fill the groups.
+</para>
+    <para>
+The address book, like the mail folders, can be expanded 
+into an entire tree of sections. For this you right-click 
+on the folder where you want to add a new folder, and 
+select &quot;new folder&quot;. Then you can enter a descriptive 
+name for the folder, click Ok, and your folder is created.
+</para>
+    <para>
+In this same way you can create a new group in a folder. 
+Right-click on the folder, select &quot;new group&quot;, enter a name 
+for it, and that&apos;s it.
+</para>
+    <para>
+The group settings window pops up in order to fill the group
+with addresses. Use the two arrows to add to or remove from
+the group the selected address.
+Once the group contains the list of addresses you want it to
+contain, click the &quot;OK&quot; button to close the window.
+</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="snapshots/address_book_group..png"/>
+      </imageobject>
+    </mediaobject>
+  </section>
+  <section>
+    <title>Combination with Message Composition Window </title>
+    <para>
+You can either enter the first letters of an address
+(or alias) in the <guilabel>To:</guilabel> or <guilabel>Cc:</guilabel> field
+of the composition window and press the TAB key to
+let Sylpheed do the completion or open the address book,
+select addresses from there and use the <guilabel>To:</guilabel>
+and <guilabel>Cc:</guilabel> buttons to copy the selected addresses
+into the corresponding fields of the composition window.
+</para>
+    <para>
+When using the completion mode, when one or more address
+matches the start you have entered, a dropdown list appears.
+Select the correct address from this list and press enter
+to complete the composition window&apos;s field.
+</para>
+    <para>
+In completion mode, the search is made on the E-mail
+address and on the alias. The other fields of the
+address book entry are not used (name, nickname,...).
+</para>
+    <para>
+When the address book is opened, if you select a group,
+using the <guilabel>To:</guilabel> or <guilabel>Cc:</guilabel> buttons will
+copy all the addresses of the selected group into the
+corresponding field of the composition window.
+</para>
+    <para>
+Using our previous example, you can select the <guilabel>jokes</guilabel>
+group when sending you morning jokes, and the <guilabel>reports</guilabel>
+one when sending your weekly reports...
+</para>
+  </section>
+  <section>
+    <title>Using your PDA addressbook (with Jpilot) </title>
+    <para>
+Sylpheed can optionally use your PDA addressbook. This option is
+available if you have compiled Sylpheed with the support of Jpilot.
+For more details regarding the compilation of Sylpheed with (or without)
+optional features, see the compilation section.
+</para>
+    <para>
+Sylpheed uses the Jpilot side copy of your address book, so you do
+not need to put your PDA on the craddle to find an address (but do
+not forget to synchronize).
+</para>
+    <para>
+In order to use your PDA&apos;s addressbook in Sylpheed, open the addressbook
+window, select the <computeroutput>JPilot</computeroutput> icon in the left tree view,
+use the <computeroutput>File -&gt; New Jpilot</computeroutput> menu entry and choose a name for
+this addressbook.
+Define the name of the Jpilot addressbook file (usually in:
+<guilabel>~/.jpilot/AddressDB.pdb</guilabel>) and press <computeroutput>OK</computeroutput>.
+You can use one (or more) of the custom fields to store alternate
+Email addresses for the same person.
+</para>
+    <para>
+Now you can browse your PDA addressbook. Sylpheed only has read
+access to this addressbook, so you can&apos;t modify your PDA addressbook
+from Sylpheed.
+</para>
+  </section>
+  <section>
+    <title>LDAP server connection </title>
+    <para>Contributed by Tom Hollins.
+</para>
+    <para>
+In order to add an LDAP server to the sylpheed program, you will click 
+on the <guilabel>Tools</guilabel> menu item, then click on <guilabel>Address book</guilabel>.
+Sylpheed will open the address book window.
+Select (click once) the <guilabel>LDAP Server</guilabel> line located in the left window 
+pane of the address book.
+Now Click on the <guilabel>File</guilabel> menu item.
+Click on the <guilabel>New server</guilabel> menu item.
+Sylpheed opens a dialog box with standard LDAP text entry boxes.
+</para>
+    <para>
+We&apos;ll assume you work for <computeroutput>Spacely Sprockets Corporation</computeroutput>. This will be 
+used in the examples below.
+</para>
+    <para>
+The <guilabel>NAME</guilabel> line is the name you want to give to the LDAP server. It can 
+be anything but you should select, roughly the one that helps you to 
+identify it quickly. If you are doing this at a company, just enter 
+&quot;Spacely LDAP&quot; without the quotation marks.
+</para>
+    <para>
+The <guilabel>HOSTNAME</guilabel> line is the human name of the server from the DNS lookup 
+entry, OR the IP address of the LDAP server (important if the LDAP 
+server is used for authentication). So your company may have a server 
+called <computeroutput>ldap.spacely.com</computeroutput>. Your company may use something like 10.0.0.200. 
+Either of these should work. 
+NOTE: if you are a home user, you can specify &quot;localhost&quot; (no quotes) 
+or 127.0.0.1 as your hostname if your LDAP server runs on the same 
+machine as your mail client. Sylpheed automatically assumes a local 
+configuration and does this for you. I include this in case your 
+configuration is changing back to a local.
+</para>
+    <para>
+The <guilabel>PORT</guilabel> entry shouldn&apos;t have to be modified unless your IT department 
+has changed this. The normal port for LDAP is 389. 
+</para>
+    <para>
+The <guilabel>SEARCH BASE</guilabel> text entry need not concern you since you can click 
+the <guilabel>Check Server</guilabel> button on this dialog box. After clicking this 
+button the <guilabel>SEARCH BASE</guilabel> will be automatically filled in.
+The following paragraph gets technical and can be skipped for the 
+faint of heart.
+</para>
+    <para>
+For the sake of clarity, this is the DN (distinguished name) of the 
+LDAP server with only the DC entries. So for our example the LDAP 
+server has been setup with a DN = dc=spacely, dc=com. We would type 
+into the <guilabel>SEARCH BASE</guilabel> line (without quotes) &quot;dc=spacely, dc=com&quot;. 
+I hope this is clear for the technically minded.
+</para>
+    <para>
+If your LDAP server allows anonymous binding and you do not have &quot;virtual&quot; 
+LDAP domains then you should be able to click on the <guilabel>OK</guilabel> button.
+Now click once on the entry for your server so that it becomes highlighted.
+Click once in the <guilabel>NAME</guilabel> text entry field below the right pane.
+Enter someone&apos;s first name.
+Click once on the <guilabel>Lookup</guilabel> button. It should work. Below the lookup 
+button is a status line which will tell you whether you have an error 
+or not. Also, while it is searching it will blink (a good sign because 
+this means the login to the server worked).
+If it does work you can skip the rest of this discussion.
+</para>
+    <para>
+If your LDAP server does not allow anonymous binding then you will 
+need to look at the top of the dialog box and find the &quot;tab&quot; marked 
+<guilabel>Extended</guilabel> and click it once.
+You may need to enter the top level DN because you may have an LDAP 
+server which is setup with multiple virtual domains. Your IT guy 
+needs to get involved here by telling you what the DN really is 
+along with, maybe, its password. It really depends upon how it is 
+setup. Maybe the DN includes a CN (common name). 
+So for our example (and in the OpenLDAP examples) you have entered 
+a DN = cn=manager, dc=spacely, dc=com. 
+In the <guilabel>BIND DN</guilabel> text entry box enter (without quotes) 
+&quot;cn=manager, dc=spacely, dc=com&quot;. 
+In the <guilabel>PASSWORD</guilabel> text entry box enter just the password itself no 
+equals sign or anything.
+Click the <guilabel>OK</guilabel> and try the test lookup above.
+</para>
+    <para>
+If you are still experiencing a problem, then it may be the 
+search criteria you are using or the attributes used by your 
+LDAP server.
+</para>
+    <para>
+The attributes&quot; of the server are &quot;field names&quot; that are being 
+searched. The acceptable fields are automatically entered for 
+the Sylpheed defaults, and they are <guilabel>(&amp;(mail=*)(cn=%s*))</guilabel>. I will 
+use words to now describe that line, just in case it is hard for 
+you to figure out what is entered here: left open parenthesis, 
+ampersand, left open parenthesis, the word mail (or any attribute 
+in LDAP speak or called field in database speak), an equal sign, 
+an asterisk (means search all), right closing parenthesis, left 
+open parenthesis, the letters &quot;cn&quot;, an equal sign,a percent sign, 
+the letter &quot;s&quot;, an asterisk, right closing parenthesis, right 
+closing parenthesis.
+While not necessarily the best criteria it should work, but only 
+if your IT department has formatted the Common Name (CN) the way 
+you are searching for it. 
+The entry essentially states &quot;search on ALL email addresses, and 
+the common name starts with&quot; (whatever you have typed into the 
+lookup field). 
+Another way to test this is to work through the alphabet and enter 
+one character only, and see if this retrieves some entries. Once 
+you see some entries you will understand how to effectively search.
+If this doesn&apos;t work then you will need to get someone from your 
+IT department involved. The &quot;mail&quot; or &quot;cn&quot; either isn&apos;t used in a 
+normal way, doesn&apos;t exist, or it is stored some way that can not 
+be debugged in a document like this one.
+</para>
+    <para>
+Additional searching for people who get some results but not exactly 
+what they want:
+Try using and asterisk before your search criteria. This will say 
+to the LDAP server &quot;I want you to return all entries where this 
+text exists anywhere in the CN field&quot;.
+By now you should realize that if you are entering this asterisk 
+all the time then you right click your LDAP server entry in the 
+left pane and choose <guilabel>Edit</guilabel> from the pop-up menu. Click on the 
+<guilabel>Extended</guilabel> tab and change that first line to have an asterisk 
+before the percent sign. I use this since I don&apos;t always know 
+whether the name was entered as a formal name like Thomas or 
+informal like Tom.
+</para>
+    <para>
+If you still can&apos;t do anything with LDAP then there is a proxy 
+between you and the LDAP server that your IT department has to 
+address, or there is something about the &quot;attributes&quot; (fields) 
+of your LDAP database you will need to enter into that extended 
+tab of the LDAP server edit dialog box.
+</para>
+  </section>
+</chapter>

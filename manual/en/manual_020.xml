@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-20">
+  <title>About This Document</title>
+  <section>
+    <title>Copyright Notice</title>
+    <para>
+Copyright (C) 2001 Hiroyuki Yamamoto</para>
+    <para>
+This program has been placed in the GPL.</para>
+  </section>
+  <section>
+    <title>GNU General Public License</title>
+    <para>
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+</para>
+  </section>
+<!-- add 2001/07/21 -->  <section>
+    <title>Where to Get the Latest Version of This Document</title>
+    <para>
+You can find the latest version of this document on the site of the Sylpheed documentation project at</para>
+    <para><ulink url="http://sylpheeddoc.sf.net">http://sylpheeddoc.sf.net&quot;</ulink></para>
+    <para>Here FAQ and manual are uploaded as HTML pages, and in form of SGML files within the CVS repository.</para>
+  </section>
+  <section>
+    <title>Ending Remark</title>
+    <para>
+I wish to thank everyone involved in the Sylpheed project.</para>
+    <para>
+Hiroyuki Yamamoto and all the other developers for the fabulous program they have created.</para>
+    <para>
+Francois Barriere who helped me become friends with the CVS system.</para>
+    <para>
+All the help I received from everyone on the Sylpheed mailing list while writing the FAQ and this manual.</para>
+    <para>
+Nick Selby, for offering his well appreciated assistance in writing along in this manual.</para>
+    <para>
+All the people around the world who work hard on keeping the manual and FAQ up to date</para>
+    <para>
+And Linus Torvald, who got us a great operating system! ;-)
+<!-- end add 2001/07/21 --></para>
+  </section>
+</chapter>

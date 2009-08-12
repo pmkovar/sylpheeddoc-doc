@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-14">
+  <title>Handling MIME types</title>
+  <section>
+    <title>How Sylpheed checks for Mime types </title>
+    <para>
+When attaching a file to a message (composing a new message), the
+MIME type of the attached file is choosen based on the file extension
+from the mapping list defined in the <computeroutput>mime.types</computeroutput> file(s).
+Sylpheed defines its MIME type mapping table by loading the
+system wide MIME types file, then the user file.
+The systeme file is <computeroutput>SYSCONFDIR/mime.types</computeroutput> (SYSCONFDIR can
+be defined a compile time), or if it does not exist, <computeroutput>/etc/mime.types</computeroutput>.
+The user file is <computeroutput>$HOME/.sylpheed/mime.types</computeroutput>.
+</para>
+    <para>
+A <computeroutput>mime.types</computeroutput> file consist of one MIME type definition per line,
+each definition line starting with the name of the MIME type, followed by
+a space separated list of the corresponding file extensions.
+The file can contain empty lines, and comments start with the <guilabel>#</guilabel>
+character and close at line&apos;s end.
+</para>
+    <para>
+Following is a typical <computeroutput>mime.types</computeroutput> file (an extract of mine):
+
+<literallayout>
+# This file controls what Internet media types are sent to the client for
+# given file extension(s).  Sending the correct media type to the client
+# is important so they know how to handle the content of the file.
+# The Internet media type registry is at 
+# ftp://ftp.iana.org/in-notes/iana/assignments/media-types/.
+
+# MIME type   Extension
+application/mac-binhex40 hqx
+application/mac-compactpro cpt
+application/msword  doc
+application/pdf   pdf
+application/postscript  ai eps ps
+application/rtf   rtf
+application/x-bcpio  bcpio
+application/x-bzip2  bz2
+application/x-csh  csh
+application/x-gtar  gtar
+application/x-gzip  gz tgz
+application/x-kword  kwd kwt
+application/x-kspread  ksp
+application/x-kpresenter kpr kpt
+application/x-kchart  chrt
+application/x-latex  latex
+application/x-sh  sh
+application/x-shar  shar
+application/x-shockwave-flash swf
+application/x-tar  tar
+application/x-tcl  tcl
+application/x-tex  tex
+application/x-texinfo  texinfo texi
+application/x-troff  t tr roff
+application/x-troff-man  man
+application/zip   zip
+audio/mpeg   mpga mp2 mp3
+audio/x-aiff   aif aiff aifc
+audio/x-wav   wav
+image/gif   gif
+image/ief   ief
+image/jpeg   jpeg jpg jpe
+image/png   png
+image/tiff   tiff tif
+text/plain   asc txt
+text/rtf   rtf
+text/sgml   sgml sgm
+text/xml   xml
+video/mpeg   mpeg mpg mpe
+video/x-msvideo   avi
+text/html   html htm
+
+</literallayout>
+
+</para>
+    <para>
+If the file can be found or has the wrong format, Sylpheed will assume
+the default MIME type for all the attachments: <computeroutput>application/octet-stream</computeroutput>.
+In such a case, the recipients mail client may not know what application 
+to use to view the attachment.
+</para>
+  </section>
+  <section>
+    <title>How Sylpheed handles attachments (reception) </title>
+    <para>
+When opening an attachment (select the attachment, right click and select
+<computeroutput>Open</computeroutput>) Sylpheed uses one of the following methods to determine
+the application to launch:</para>
+    <itemizedlist>
+      <listitem>
+        <para>
+  The attachment is an image: the application is the one defined by the
+  <computeroutput>mime_image_viewer</computeroutput> variable of the common preferences configuration
+  file (<computeroutput>$HOME/.sylpheed/sylpheedrc</computeroutput>). If no application is defined, or
+  if the format of the definition is not valid, the default application
+  command is <computeroutput>display</computeroutput> (ImageMagick viewer).
+ </para>
+      </listitem>
+      <listitem>
+        <para>
+  The attachment is a sound file: the application is the one defined by the
+  <computeroutput>mime_audio_player</computeroutput> variable of the common preferences configuration
+  file (<computeroutput>$HOME/.sylpheed/sylpheedrc</computeroutput>). If no application is defined, or
+  if the format of the definition is not valid, the default application
+  command is <computeroutput>play</computeroutput>.
+ </para>
+      </listitem>
+      <listitem>
+        <para>
+  The attachment is a HTML file: the application is the one defined by the
+  <computeroutput>uri_cmd</computeroutput> variable of the common preferences configuration
+  file (<computeroutput>$HOME/.sylpheed/sylpheedrc</computeroutput>). This can also be changed in the
+  <computeroutput>Common preferences</computeroutput>, by changing the <computeroutput>Web browser</computeroutput> defined
+  in the <computeroutput>Other</computeroutput> tab.
+ </para>
+      </listitem>
+      <listitem>
+        <para>
+  Any other attachment type: Sylpheed relies on <computeroutput>metamail</computeroutput> to use
+  the correct application (Sylpheed starts <computeroutput>metamail</computeroutput> giving it
+  the attachment file and the MIME type taken from the mail).
+ </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+The binding of the applications to each MIME type is defined in the
+<computeroutput>mailcap</computeroutput> file. The systeme wide file is <computeroutput>/etc/mailcap</computeroutput>, 
+while the user file is <computeroutput>$HOME/.mailcap</computeroutput>.</para>
+    <para>
+In the mailcap file, there is one definition per line, big lines
+can be broken by escaping the newline with a <computeroutput>\</computeroutput> character,
+the first element of the line is the MIME type, then a semi-colon,
+(<computeroutput>;</computeroutput>), and finally the application to launch.
+The application part (right side of the semi-colon) can contain several
+shell commands separated by an escaped semi-colon (<computeroutput>\;</computeroutput>) and
+the <computeroutput>%s</computeroutput> string is replaced by the name of the file when
+launching the command.</para>
+    <para>
+Following is a typical <computeroutput>mailcap</computeroutput> file (an extract of mine):</para>
+    <literallayout>
+
+image/*; ee %s
+
+video/mpeg; gtv %s
+video/*; xanim %s
+
+application/pdf; xpdf %s
+
+text/html; dillo %s
+
+</literallayout>
+  </section>
+</chapter>

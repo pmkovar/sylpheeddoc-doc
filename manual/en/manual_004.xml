@@ -1,532 +1,402 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<chapter>
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-4">
   <title id="chap_installation">Installation</title>
-
   <section id="required_environment">
     <title>Required environment</title>
-
     <para>To succesfully compile Sylpheed, you need at least:</para>
-
     <itemizedlist>
       <listitem>
         <para>Any POSIX compliant UNIX or similar OS, eg. Linux, FreeBSD,
         Solaris.</para>
       </listitem>
-
       <listitem>
-        <para>A recent ANSI C compiler, like <ulink
-        url="http://gcc.gnu.org/">GCC</ulink>. Note: it is reported that Sun C
+        <para>A recent ANSI C compiler, like <ulink url="http://gcc.gnu.org/">GCC</ulink>. Note: it is reported that Sun C
         can not compile Sylpheed.</para>
       </listitem>
-
       <listitem>
         <para>The <ulink url="http://www.gtk.org/">Gtk+</ulink> library, with
         a 2.4.0 or better version (v2.6.0 or better is recommended).</para>
       </listitem>
     </itemizedlist>
-
     <para>Optionally you need:</para>
-
     <itemizedlist>
       <listitem>
-        <para><ulink
-        url="http://ftp.gnome.org/pub/GNOME/unstable/sources/gdk-pixbuf/">Gdk-pixbuf</ulink>
+        <para><ulink url="http://ftp.gnome.org/pub/GNOME/unstable/sources/gdk-pixbuf/">Gdk-pixbuf</ulink>
         for the built-in image viewer.</para>
       </listitem>
-
       <listitem>
-        <para><ulink
-        url="ftp://ftp.cs.indiana.edu/pub/faces/compface/">libcompface</ulink>
+        <para><ulink url="ftp://ftp.cs.indiana.edu/pub/faces/compface/">libcompface</ulink>
         for X-Face icons.</para>
       </listitem>
-
       <listitem>
         <para><ulink url="http://www.kondara.org/libjconv/">libjconv</ulink>
         for non latin character sets.</para>
       </listitem>
-
       <listitem>
         <para><ulink url="http://www.gnupg.org/gpgme.html">GPGME</ulink> and
         <ulink url="http://www.gnupg.org/">GNUPG</ulink> for encryption and
         signature.</para>
       </listitem>
-
       <listitem>
         <para><ulink url="http://www.openssl.org/">OpenSSL</ulink> for SSL
         support.</para>
       </listitem>
-
       <listitem>
         <para><ulink url="http://www.openldap.org/">OpenLDAP</ulink> to
         connect to a LDAP directory server.</para>
       </listitem>
-
       <listitem>
         <para>The IPv6 support can be turned on (if your system supports it)
         without any additional library.</para>
       </listitem>
-
       <listitem>
         <para><ulink url="http://www.jpilot.org/">Jpilot</ulink> for Palm
         addressbook use.</para>
       </listitem>
-
       <listitem>
         <para>The equivalent of Gtk+-devel and Xfree86-devel, otherwise
         .configure will fail.</para>
       </listitem>
     </itemizedlist>
-
     <para>Notice: Sylpheed may be unstable depending on the environment.
     Please use the newest version of libraries if possible.</para>
   </section>
-
   <section id="environment_known_valid">
     <title>Environments known as valid for Sylpheed</title>
-
     <itemizedlist>
       <listitem>
         <para>Debian GNU/Linux (sid, glibc 2.3.2) (development
         environment)</para>
       </listitem>
-
       <listitem>
         <para>Debian GNU/Linux (amd64/sid, glibc 2.3.2)</para>
       </listitem>
-
       <listitem>
         <para>Debian GNU/Linux (sarge, glibc 2.3.2)</para>
       </listitem>
-
       <listitem>
         <para>Debian GNU/Linux 3.0 (woody) (glibc 2.2.5)</para>
       </listitem>
-
       <listitem>
         <para>Debian GNU/Linux 2.2 (potato) (glibc 2.1.3)</para>
       </listitem>
-
       <listitem>
         <para>Kondara MNU/Linux (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>Kondara MNU/Linux 1.2</para>
       </listitem>
-
       <listitem>
         <para>Kondara MNU/Linux 2.0</para>
       </listitem>
-
       <listitem>
         <para>Vine Linux 1.1 (glibc 2.0.x + libwcsmbs)</para>
       </listitem>
-
       <listitem>
         <para>Vine Linux 2.0 (glibc 2.1.x) (Intel, PPC)</para>
       </listitem>
-
       <listitem>
         <para>Vine Linux 2.1</para>
       </listitem>
-
       <listitem>
         <para>Vine Linux 2.1.5, 2.5, 2.6, 3.0</para>
       </listitem>
-
       <listitem>
         <para>Laser5 Linux 6.0 (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>Laser5 Linux 6.2 (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>Laser5 Linux 6.4 (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>TurboLinux 4.0 (glibc 2.0.7 + libwcsmbs)</para>
       </listitem>
-
       <listitem>
         <para>TurboLinux 6.0 (glibc 2.1.2)</para>
       </listitem>
-
       <listitem>
         <para>TurboLinux 7.0 (glibc 2.2.x)</para>
       </listitem>
-
       <listitem>
         <para>Miracle Linux Standard Edition Version1.0</para>
       </listitem>
-
       <listitem>
         <para>Miracle Linux for PostgreSQL Version1.0</para>
       </listitem>
-
       <listitem>
         <para>Miracle Linux for Samba Version1.0</para>
       </listitem>
-
       <listitem>
         <para>RedHat Linux 5.2 (glibc 2.0.7)</para>
       </listitem>
-
       <listitem>
         <para>RedHat Linux 6.0</para>
       </listitem>
-
       <listitem>
         <para>RedHat Linux 6.1 + Helix GNOME (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>RedHat Linux 6.2 / 6.2J (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>RedHat Linux 7.0 / 7.0J</para>
       </listitem>
-
       <listitem>
         <para>RedHat Linux 7.1, 7.2, 7.3</para>
       </listitem>
-
       <listitem>
         <para>RedHat Linux 8.0, 9.0</para>
       </listitem>
-
       <listitem>
         <para>Fedora core 2, 3</para>
       </listitem>
-
       <listitem>
         <para>LinuxPPC2000 + Yukikaze(Japanization kit)</para>
       </listitem>
-
       <listitem>
         <para>Linux2000G (Intel, PowerPC)</para>
       </listitem>
-
       <listitem>
         <para>HOLON Linux 2.0 (Intel / PPC)</para>
       </listitem>
-
       <listitem>
         <para>Linux for PPC Japanese Edition 2.0 (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>Linux for PPC Japanese Edition 3.0 (glibc 2.1.x)</para>
       </listitem>
-
       <listitem>
         <para>Linux MLD4</para>
       </listitem>
-
       <listitem>
         <para>Linux MLD5</para>
       </listitem>
-
       <listitem>
         <para>Plamo Linux 2.0</para>
       </listitem>
-
       <listitem>
         <para>Plamo Linux 2.1</para>
       </listitem>
-
       <listitem>
         <para>Slackware 7.0</para>
       </listitem>
-
       <listitem>
         <para>Slackware 7.1</para>
       </listitem>
-
       <listitem>
         <para>Slackware 8.0</para>
       </listitem>
-
       <listitem>
         <para>Linux Mandrake 7.0</para>
       </listitem>
-
       <listitem>
         <para>Linux Mandrake 7.1</para>
       </listitem>
-
       <listitem>
         <para>Linux Mandrake 7.2</para>
       </listitem>
-
       <listitem>
         <para>Linux Mandrake 8.0</para>
       </listitem>
-
       <listitem>
         <para>Linux Mandrake 8.1, 9.0, 9.1, 10.0</para>
       </listitem>
-
       <listitem>
         <para>SuSE Linux 6.3 (glibc 2.1.2)</para>
       </listitem>
-
       <listitem>
         <para>SuSE Linux 6.4</para>
       </listitem>
-
       <listitem>
         <para>SuSE Linux 7.0</para>
       </listitem>
-
       <listitem>
         <para>SuSE Linux 7.1</para>
       </listitem>
-
       <listitem>
         <para>SuSE Linux 7.2</para>
       </listitem>
-
       <listitem>
         <para>SuSE Linux 7.3, 8.0, 8.1, 8.2</para>
       </listitem>
-
       <listitem>
         <para>OpenLinux 2.3 (glibc 2.1.1 -&gt; 2.1.3)</para>
       </listitem>
-
       <listitem>
         <para>Caldera OpenDesktop 2.4</para>
       </listitem>
-
       <listitem>
         <para>Caldera Workstation 3.1</para>
       </listitem>
-
       <listitem>
         <para>Conectiva Linux 4.0</para>
       </listitem>
-
       <listitem>
         <para>Conectiva Linux 5.0</para>
       </listitem>
-
       <listitem>
         <para>Conectiva Linux 7.0</para>
       </listitem>
-
       <listitem>
         <para>Vector Linux 1.5</para>
       </listitem>
-
       <listitem>
         <para>Yellow Dog Linux 2.0 (glibc 2.2.1)</para>
       </listitem>
-
       <listitem>
         <para>Yellow Dog Linux 2.1 (PowerPC)</para>
       </listitem>
-
       <listitem>
         <para>ASP Linux 7.2 (glibc 2.2.4)</para>
       </listitem>
-
       <listitem>
         <para>Redmond Linux (Lycoris)</para>
       </listitem>
     </itemizedlist>
-
     <itemizedlist>
       <listitem>
         <para>FreeBSD release 3.2</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 3.4</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 4.0</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 4.1</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 4.2</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 4.3</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 4.4</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 4.5</para>
       </listitem>
-
       <listitem>
         <para>FreeBSD release 5.0</para>
       </listitem>
-
       <listitem>
         <para>NetBSD 1.4.2</para>
       </listitem>
-
       <listitem>
         <para>NetBSD 1.5 + XPG4DL</para>
       </listitem>
-
       <listitem>
         <para>NetBSD 1.5.1</para>
       </listitem>
-
       <listitem>
         <para>NetBSD 1.5.2</para>
       </listitem>
-
       <listitem>
         <para>OpenBSD 2.7</para>
       </listitem>
-
       <listitem>
         <para>OpenBSD 2.8 (i386)</para>
       </listitem>
-
       <listitem>
         <para>OpenBSD 2.9</para>
       </listitem>
-
       <listitem>
         <para>OpenBSD 3.0</para>
       </listitem>
-
       <listitem>
         <para>BSD/OS 4.0.1</para>
       </listitem>
     </itemizedlist>
-
     <itemizedlist>
       <listitem>
         <para>Solaris 2.5</para>
       </listitem>
-
       <listitem>
         <para>Solaris 2.5.1</para>
       </listitem>
-
       <listitem>
         <para>Solaris 2.6</para>
       </listitem>
-
       <listitem>
         <para>Solaris 7, 8, 9</para>
       </listitem>
-
       <listitem>
         <para>IRIX 6.3</para>
       </listitem>
-
       <listitem>
         <para>IRIX 6.4</para>
       </listitem>
-
       <listitem>
         <para>IRIX 6.5, 6.5.8m</para>
       </listitem>
-
       <listitem>
         <para>HP-UX 10.20</para>
       </listitem>
-
       <listitem>
         <para>HP-UX 11.00</para>
       </listitem>
-
       <listitem>
         <para>HP-UX 11i</para>
       </listitem>
-
       <listitem>
         <para>Tru64 Unix 5.0 (OSF1 v5.0)</para>
       </listitem>
-
       <listitem>
         <para>SCO UnixWare 7</para>
       </listitem>
-
       <listitem>
         <para>Mac OS X 10.1.3 (Darwin 5.3) + XDarwin (without XLocale support)
         + libxpg4</para>
       </listitem>
     </itemizedlist>
-
     <itemizedlist>
       <listitem>
         <para>Windows (MSVC + GTK+ for win32), in progress</para>
       </listitem>
     </itemizedlist>
   </section>
-
   <section id="nuts_and_bolts_of_installation">
     <title>Nuts and bolts of installation</title>
-
     <para><itemizedlist>
         <listitem>
-          <para>Dowload the latest Sylpheed package from: <ulink
-          url="http://sylpheed.good-day.net/">http://sylpheed.good-day.net/</ulink></para>
+          <para>Dowload the latest Sylpheed package from: <ulink url="http://sylpheed.good-day.net/">http://sylpheed.good-day.net/</ulink></para>
         </listitem>
-
         <listitem>
           <para>Untar the source file into a new directory.</para>
         </listitem>
-
         <listitem>
           <para><command>tar xvfz sylpheed-&lt;version&gt;.tar.gz</command>
           (for a tar.gz package).</para>
         </listitem>
-
         <listitem>
           <para><command>tar xvfj sylpheed-&lt;version&gt;.tar.bz2</command>
           (for a bzip2 package).</para>
         </listitem>
-
         <listitem>
           <para>Change to the sylpheed directory.</para>
         </listitem>
-
         <listitem>
           <para>Run the configure script (<command>./configure</command>) to
           check your environment and create the installation make
           files.</para>
         </listitem>
-
         <listitem>
           <para>Run the make program which will compile the sources. Do not
           proceed with this step if there are fatal errors in the previous
           step. Fatal errors indicate that things are missing inorder to
           compile Sylpheed properly.</para>
         </listitem>
-      </itemizedlist>If the make process has completed, run <command>make
-    install</command> (as root), to install the program and the support
+      </itemizedlist>If the make process has completed, run <command>make install</command> (as root), to install the program and the support
     files.</para>
-
     <section id="nuts_and_bolts__compiling_with_options">
       <title>Compiling Sylpheed with options</title>
-
       <para>You can choose to compile Sylpheed with some optional features
       enabled. Use <command>./configure --help</command> to list configuration
       syntax and options.</para>
-
       <para>The following optional features can be enabled:</para>
-
       <itemizedlist>
         <listitem>
           <para><application>Jpilot</application>: to use your PDA addressbook
@@ -534,7 +404,6 @@
           too). Enable this option with the <option>--enable-jpilot</option>
           configure switch.</para>
         </listitem>
-
         <listitem>
           <para><application>GnuPG</application>: Sylpheed can encrypt and
           sign your messages (and also decrypt and verify the signature of the
@@ -544,14 +413,12 @@
           option with the <option>--disable-gpgme</option> configure
           switch.</para>
         </listitem>
-
         <listitem>
           <para><application>LDAP</application>: Sylpheed can connect to a
           LDAP server in order to query mail addresses. To enable this feature
           you will need the OpenLDAP library. Enable this option with the
           <option>--enable-ldap</option> configure switch.</para>
         </listitem>
-
         <listitem>
           <para><application>X-Faces</application>: you can create a small
           picture (of your face, or of anything else) that will be sent in the
@@ -559,13 +426,11 @@
           library is found and can be disabled using the
           <option>--disable-compface</option> configure switch.</para>
         </listitem>
-
         <listitem>
           <para>Images can appear inline (embedded in the message window,
           without the need of an external viewer) if Sylpheed is compiled with
           the gdk-pixbuf library.</para>
         </listitem>
-
         <listitem>
           <para><application>SSL</application>: Sylpheed can encrypt its
           connection to the mail server using SSL, if the OpenSSL library is
@@ -573,106 +438,72 @@
           <option>--disable-ssl</option> configure switch. </para>
         </listitem>
       </itemizedlist>
-
       <para>All these features require additional libraries and tools that may
       not be part of your distribution. You can find them at the addresses
       listed at the beginning of this chapter, here.</para>
     </section>
-
     <section id="nuts_and_bolts__installing_rpm">
       <title>Installation on Linux using RPM</title>
-
       <para>As root, run the rpm -ivh command on the RPM file you downloaded.
       As soon as this process is comlete you can run Sylpheed as a normal
       user.</para>
     </section>
-
     <section id="nuts_and_bolts__installing_debian">
       <title>Installation on Debian Linux</title>
-
       <para>With an internet connection: apt-get install sylpheed</para>
-
       <para>Without an internet connection, fetch the debian package, for
-      example on: <ulink
-      url="http://packages.debian.org/unstable/mail/sylpheed.html">http://packages.debian.org/unstable/mail/sylpheed.html</ulink>,
+      example on: <ulink url="http://packages.debian.org/unstable/mail/sylpheed.html">http://packages.debian.org/unstable/mail/sylpheed.html</ulink>,
       then:</para>
-
       <para><command>dpkg -i sylpheedx.x.x-1i386.deb</command></para>
-
       <para><command>dpkg --install sylpheedx.x.x-1i386.deb</command></para>
     </section>
-
     <section id="nuts_and_bolts__installing_gentoo">
       <title>Installation on Gentoo Linux</title>
-
       <para>Use the standard ebuild for the portage tree and select the
       options with the use flags:</para>
-
       <itemizedlist>
         <listitem>
           <para>crypt: to enable the gpgme option.</para>
         </listitem>
-
         <listitem>
           <para>ldap: to enable to use of the OpenLDAP library.</para>
         </listitem>
-
         <listitem>
           <para>pda: to turn on the use of the Jpilot link.</para>
         </listitem>
-
         <listitem>
           <para>ssl: to use openssl encryption.</para>
         </listitem>
-
         <listitem>
           <para>xface: to enable the X-Faces support.</para>
         </listitem>
       </itemizedlist>
     </section>
-
     <section id="nuts_and_bolts__installing_freebsd">
       <title>Installation on FreeBSD</title>
-
       <para>Using the <command>/stand/sysinstall</command> tool (it is a menu
       based interface):</para>
-
       <para>run /<command>stand/sysinstall</command> as root</para>
-
       <para>In the main menu choose
       <guimenu>configure</guimenu>-&gt;<guisubmenu>Packages</guisubmenu>-&gt;<guimenuitem>mail</guimenuitem>,
       then <guimenuitem>Sylpheed</guimenuitem>. Back to the packages list
       choose <guimenuitem>install</guimenuitem>.</para>
-
-      <para>Using the ports: get the Sylpheed port on <ulink
-      url="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail">ftp://ftp.freesd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail</ulink></para>
-
+      <para>Using the ports: get the Sylpheed port on <ulink url="ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail">ftp://ftp.freesd.org/pub/FreeBSD/ports/i386/packages-4.3-release/mail</ulink></para>
       <para>Then as root: <command>pkg-add sylpheed-x.x.x.tgz</command></para>
-
       <para>Using the ports and compiling: first update your port, fetch it on
-      <ulink
-      url="ftp://www.freebsd.org/ports/mail.html">http://www.freebsd.org/ports/mail.html</ulink>,
+      <ulink url="ftp://www.freebsd.org/ports/mail.html">http://www.freebsd.org/ports/mail.html</ulink>,
       </para>
-
       <para><command>cd /usr/ports/mail/sylpheed</command></para>
-
       <para><command>make</command></para>
-
       <para>If it succeds, type <command>make install</command>.</para>
-
       <para>In case it fails, fetch the required package if necessary (on the
       same page), put the package file in
       <filename>/usr/ports/distfiles/</filename>, then: </para>
-
       <para><command>cd /usr/ports/mail/sylpheed</command></para>
-
       <para><command>make</command></para>
-
       <para><command>make install</command></para>
-
       <para>Need a more up-to-date version? Just use the Unix standard method
-      (see <link linkend="nuts_and_bolts_of_installation">Nuts and bolts of
-      installation</link>)</para>
+      (see <link linkend="nuts_and_bolts_of_installation">Nuts and bolts of installation</link>)</para>
     </section>
   </section>
 </chapter>

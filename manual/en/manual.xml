@@ -1,71 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
-"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
 <!ENTITY __chapter__001 SYSTEM "manual_001.xml">
 <!ENTITY __chapter__002 SYSTEM "manual_002.xml">
 <!ENTITY __chapter__003 SYSTEM "manual_003.xml">
 <!ENTITY __chapter__004 SYSTEM "manual_004.xml">
 <!ENTITY __chapter__005 SYSTEM "manual_005.xml">
+<!ENTITY __chapter__006 SYSTEM "manual_006.xml">
+<!ENTITY __chapter__007 SYSTEM "manual_007.xml">
+<!ENTITY __chapter__008 SYSTEM "manual_008.xml">
+<!ENTITY __chapter__009 SYSTEM "manual_009.xml">
+<!ENTITY __chapter__010 SYSTEM "manual_010.xml">
+<!ENTITY __chapter__011 SYSTEM "manual_011.xml">
+<!ENTITY __chapter__012 SYSTEM "manual_012.xml">
+<!ENTITY __chapter__013 SYSTEM "manual_013.xml">
+<!ENTITY __chapter__014 SYSTEM "manual_014.xml">
+<!ENTITY __chapter__015 SYSTEM "manual_015.xml">
+<!ENTITY __chapter__016 SYSTEM "manual_016.xml">
+<!ENTITY __chapter__017 SYSTEM "manual_017.xml">
+<!ENTITY __chapter__018 SYSTEM "manual_018.xml">
+<!ENTITY __chapter__019 SYSTEM "manual_019.xml">
+<!ENTITY __chapter__020 SYSTEM "manual_020.xml">
 <!ENTITY __license SYSTEM "fdl.xml">
 ]>
 <book>
-  <title>Sylpheed user's manual</title>
-
+  <title>Sylpheed User&apos;s Manual</title>
   <bookinfo>
     <abstract>
-      <para></para>
+      <para>Sylpheed User&apos;s Manual authored by the Sylpheed Documentation Team deals with both the basic and advanced usage description of Sylpheed.</para>
     </abstract>
-
     <copyright>
-      <year>2005</year>
-
-      <holder>The Sylpheed documentation team</holder>
+      <year>2009</year>
+      <holder>The Sylpheed Documentation Team</holder>
     </copyright>
-
     <legalnotice>
       <para>Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.2
     or any later version published by the Free Software Foundation;
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the section entitled "GNU
-    Free Documentation License".</para>
+    A copy of the license is included in the section entitled &quot;GNU
+    Free Documentation License&quot;.</para>
     </legalnotice>
-
     <author>
-      <firstname>Fran�ois</firstname>
-
-      <surname>Barriere</surname>
-
+      <firstname>Paul</firstname>
+      <surname>Kater</surname>
       <affiliation>
         <address>
-					<email>barriere.francois@libertysurf.fr</email>
-				</address>
+          <email>paul AT nlpagan DOT net</email>
+        </address>
       </affiliation>
     </author>
-
+    <author>
+      <firstname>Nick</firstname>
+      <surname>Selby</surname>
+      <affiliation>
+        <address>
+          <email>sylpheed AT nickselby DOT com</email>
+        </address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Francois</firstname>
+      <surname>Barriere</surname>
+      <affiliation>
+        <address>
+          <email>barriere DOT francois AT libertysurf DOT fr</email>
+        </address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Petr</firstname>
+      <surname>Kovář</surname>
+      <affiliation>
+        <address>
+          <email>pknbe AT volny DOT cz</email>
+        </address>
+      </affiliation>
+    </author>
     <revhistory>
-      <!-- ******************************************************************************** -->
-
-      <revision>
+<!-- ******************************************************************************** -->      <revision>
         <revnumber>2.1</revnumber>
-
-        <date>2005/XX/XX</date>
-
+        <date>2006/01/15</date>
         <authorinitials>FBe</authorinitials>
-
-        <revremark>Ported to DocBook/XML.</revremark>
+        <revremark>Ported to DocBook XML.</revremark>
       </revision>
-
-      <!-- ******************************************************************************** -->
-    </revhistory>
+      <revision>
+        <revnumber>2.2</revnumber>
+        <date>2009/08/12</date>
+        <authorinitials>PK</authorinitials>
+        <revremark>Finished porting to DocBook XML.</revremark>
+      </revision>
+<!-- ******************************************************************************** -->    </revhistory>
   </bookinfo>
-
-  &__chapter__001;
-  &__chapter__002;
-  &__chapter__003;
-  &__chapter__004;
-  &__chapter__005;
-
-  &__license;
-  
-</book>
+&__chapter__001;&__chapter__002;&__chapter__003;&__chapter__004;&__chapter__005;&__chapter__006;&__chapter__007;&__chapter__008;&__chapter__009;&__chapter__010;&__chapter__011;&__chapter__012;&__chapter__013;&__chapter__014;&__chapter__015;&__chapter__016;&__chapter__017;&__chapter__018;&__chapter__019;&__chapter__020;&__license;</book>

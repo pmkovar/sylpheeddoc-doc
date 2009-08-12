@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-17">
+  <title>References, tips and tricks</title>
+  <para>
+In this section you will find a few pieces of information 
+that might be handy in making Sylpheed more clear for you 
+in respect to the used shortcut keys, and a layout of 
+the format of the address book.</para>
+  <section>
+    <title id="shortcut">Short-Cut Key List</title>
+    <section>
+      <title>Shortcuts to the File menu: </title>
+      <itemizedlist>
+        <listitem>
+          <para>
+   Ctrl-S: Save-As
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-Q: exit
+  </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Shortcuts to the Edit menu </title>
+      <itemizedlist>
+        <listitem>
+          <para>
+   Ctrl-C: copy
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-A: select all
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-F: Find in current message
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-Ctrl-F: Search messages
+  </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Shortcuts to the View menu </title>
+      <itemizedlist>
+        <listitem>
+          <para>
+   V: show or hide message view.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-T: turn on and off thread display.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   P: open previous message (in current folder).
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   N: open next message (in current folder).
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-P: open previous unread message.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-N: open next unread message.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   G: change the current folder.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-Alt-N: open the selected message in a new window.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-U: view the message source.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-H: toggle the header display (turn it on and off).
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-Alt-U: update the sumary view.
+  </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Shortcuts to the Message menu </title>
+      <itemizedlist>
+        <listitem>
+          <para>
+   Ctrl-I: get new mail (for current account).
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-Ctrl-I: get new mail (for all accounts).
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-M: compose a new message.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-R: reply to message (reply to sender only).
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-Ctrl-R: reply to all (includes all addresses 
+   in To: and Cc:).
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-L: reply to mailing list.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-Alt-F: forward message
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-O: move message
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-Ctrl-O: copy message
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Ctrl-D: delete message
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-*: mark selected message.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   U: unmark selected message.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-!: mark selected message as unread.
+  </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Shortcuts to the Tool menu </title>
+      <itemizedlist>
+        <listitem>
+          <para>
+   Shift-Ctrl-A: open addressbook.
+  </para>
+        </listitem>
+        <listitem>
+          <para>
+   X: execute (execute pending moves and deletes).</para>
+        </listitem>
+        <listitem>
+          <para>
+   Shift-Ctrl-L: open log window.
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </section>
+  <section>
+    <title>Changing Key Binding of Short-Cut Key </title>
+    <para>
+Sylpheed&apos;s graphical interface is based on GTK. This means 
+that it is very simple to change the key binding 
+(shortcut key, hotkey) for menu items. If you are used to 
+a certain key combination from another program, you can tell 
+Sylpheed to use that same key combination.
+</para>
+    <para>
+The procedure is very simple. Suppose you want to change the 
+key binding for getting new mail (message menu) from Alt-I 
+to Ctrl-M.
+</para>
+    <itemizedlist>
+      <listitem>
+        <para>
+  Open the message menu with the mouse or by 
+  pressing Alt-M
+ </para>
+      </listitem>
+      <listitem>
+        <para>
+  Select the &quot;get new mail&quot; option (do not click it, 
+  this will activate the function!). If you use the
+  mouse, just move the mouse cursor over the option.
+ </para>
+      </listitem>
+      <listitem>
+        <para>
+  Now you press Ctrl-M. You will immediately see the 
+  new key combination appear on the menu.
+ </para>
+      </listitem>
+    </itemizedlist>
+    <para>Congratulations, you have just changed a key binding. 
+This way you can change all the options that you want. 
+Do note that it is best to use just the alt, shift and 
+ctrl key combinations. Several functions within Sylpheed 
+are called up by one-key actions which are programmed in.</para>
+    <section>
+      <title>Predefined shortcuts </title>
+      <para>
+ You can also choose among predefined shortcuts lists,
+ from the preference settings. Open the <computeroutput>Common preferences</computeroutput>
+ window, choose the <computeroutput>Interface</computeroutput> tab, click the 
+ <computeroutput>Set key bindings</computeroutput> button. Select one of the predefined
+ set of key bindings from the list found in the new window
+ that pops up.</para>
+    </section>
+  </section>
+  <section>
+    <title>Changing Fonts on Menu, etc. </title>
+    <para>
+If you want to change the font that shows the menu of Sylpheed, 
+this is controlled by the window manager that you are using. 
+You have to go into the setup of the window manager (KDE, Gnome, XFCE) 
+and change the font to your desired one.</para>
+    <para>
+Changing the font of the views of Sylpheed is done by selecting 
+<guilabel>Common preferences</guilabel> in the Configuration menu. There you select 
+the <guilabel>Display</guilabel> tab, and in the first section of the window you 
+can browse the fonts available on your computer.</para>
+  </section>
+  <section>
+    <title>How to tell another program to use Sylpheed as e-mail program </title>
+    <para>
+If you wish to use Sylpheed from within for example Netscape or Opera, 
+then you need to go to the `preferences` section, then choose 
+`applications` and in the email client part, you need to enter 
+<guilabel>sylpheed --compose</guilabel>.</para>
+  </section>
+  <section>
+    <title>Data Format of Address Book </title>
+    <para>
+The addressbook is located in ~/.sylpheed. It is named 
+addressbook.xml. As you may guess it from its extension, 
+the format is XML.
+The general format of the addressbook is:
+</para>
+    <literallayout>
+&lt; addressbook &gt; &lt;p&gt;
+ &lt; common_address &gt;&lt;p&gt;
+    &lt; group name=&quot;Common addresses&quot; &gt;&lt;p&gt;
+    &lt; item &gt;&lt;p&gt;
+     &lt; name &gt; Paul &lt; /name &gt;&lt;p&gt;
+     &lt; address &gt; paul@nlpagan.net &lt; /address &gt;&lt;p&gt;
+     &lt; remarks &gt; Writes Sylph. manual &lt; /remarks &gt;&lt;p&gt;
+ &lt; /item &gt;&lt;p&gt;
+    &lt; /group &gt;&lt;p&gt;
+ &lt; /common_address &gt;&lt;p&gt;
+&lt; /addressbook &gt;
+</literallayout>
+  </section>
+</chapter>

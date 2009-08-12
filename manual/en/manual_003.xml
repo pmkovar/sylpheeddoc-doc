@@ -1,41 +1,29 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<chapter>
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-3">
   <title>Quick-guide for news setup</title>
-
   <section>
     <title>Getting news in a hurry.</title>
-
-    <para>In the configuration menu, select "Create new account"</para>
-
-    <para>In the "Basic" tab, enter the relevant data. You name the account,
+    <para>In the configuration menu, select &quot;Create new account&quot;</para>
+    <para>In the &quot;Basic&quot; tab, enter the relevant data. You name the account,
     enter your name and e-mail address, etc. To connect to news, in the
-    Protocol box you select "News (NNTP)".</para>
-
+    Protocol box you select &quot;News (NNTP)&quot;.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_news_basic.png" />
+        <imagedata fileref="snapshots/account_news_basic.png"/>
       </imageobject>
     </mediaobject>
-
     <para>Enter the newsserver information.</para>
-
-    <para>Skip the "Receive" tab.</para>
-
-    <para>In the "Send" tab you can set up some more settings.</para>
-
-    <para>In the "Compose" tab you can define your signature file.</para>
-
+    <para>Skip the &quot;Receive&quot; tab.</para>
+    <para>In the &quot;Send&quot; tab you can set up some more settings.</para>
+    <para>In the &quot;Compose&quot; tab you can define your signature file.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_compose.png" />
+        <imagedata fileref="snapshots/account_compose.png"/>
       </imageobject>
     </mediaobject>
-
-    <para>In the "Advanced" tab you can edit the portnumbers for the servers
+    <para>In the &quot;Advanced&quot; tab you can edit the portnumbers for the servers
     you will be using. This normally will need no change.</para>
-
     <para>Close the dialogs, right click the new News folder in the folder
-    pane and select "Subscribe to newsgroups". If not done already, a list of
+    pane and select &quot;Subscribe to newsgroups&quot;. If not done already, a list of
     groups will be downloaded from the server. From there you will find your
     way, so good luck!</para>
   </section>

@@ -1,0 +1,730 @@
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-6">
+  <title>The menu options of Sylpheed</title>
+  <para>
+The menu in Sylpheed is the primary entry to all the things 
+you can do with Sylpheed. The menu structure gives you following 
+options:
+</para>
+  <section>
+    <title>File menu</title>
+    <itemizedlist>
+      <listitem>
+        <para>
+  <computeroutput>Add mailbox:</computeroutput> this option lets you add a new MH mail-directory. 
+  It will generate IN, OUT, QUEUE, DRAFT and TRASH mailfolders 
+  inside the new mailbox.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Check for new messages in all folders:</computeroutput> rescans the entire tree 
+  of existing mailboxes to reflect the correct state (usually 
+  won&apos;t be necessary).</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Folder:</computeroutput> lets you add, rename or delete a mailfolder.</para>
+        <itemizedlist>
+          <listitem>
+            <para>
+    <computeroutput>Create new folder:</computeroutput> to create a new folder. You must select
+    the top level node of the folder tree of a sub folder before
+    using this menu entry, in order to define the location of the
+    new folder to create.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Rename folder:</computeroutput> change the name of the selected folder.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Delete folder:</computeroutput> delete the selected folder (also delete the
+    messages contained in the selected folder).</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Import mbox file...:</computeroutput> lets you import an mbox file 
+  (like created by Pine) into an MH mailbox.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Export to mbox file:</computeroutput> lets you export an MH mailbox to an mbox file.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Empty trash:</computeroutput> obviously, this will empty the trash folder.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Save as:</computeroutput> lets you save the selected e-mail to a plain textfile 
+  on disk.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Print:</computeroutput> lets you print the selected e-mail to a printer.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Exit:</computeroutput> ends Sylpheed.</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>Edit menu </title>
+    <itemizedlist>
+      <listitem>
+        <para>
+  <computeroutput>copy:</computeroutput> lets you copy the selected text to a buffer, 
+  from where you can paste it into a different place. 
+  Shortcut: Ctrl-C</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>select all:</computeroutput> selects all the text in the current window. 
+  Shortcut: Ctrl-A</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>select thread:</computeroutput> selects all the messages of the current thread.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Find in current message:</computeroutput> searches a string in the current message.
+  Shortcut: Ctrl-F</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>search messages:</computeroutput> searches a message based on its  To, From, Subject
+  header fields or body content. Start searching from the selected
+  message, in the selected folder. 
+  Shortcut: Shift-Ctrl-F</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>View menu </title>
+    <para>
+The view menu allows you to change the way that Sylpheed appears. 
+You can set different windows separately (folder view, messages etc.), 
+enable or disable the statusbar and so on.
+It contains also the commands to toggle the display of some parts
+of the current message, or sort the messsages in the selected folder
+based on different attributes.
+</para>
+    <itemizedlist>
+      <listitem>
+        <para>
+  <computeroutput>Show or hide:</computeroutput> let you control the parts of the Sylpheed user interface 
+  you want to display.</para>
+        <itemizedlist>
+          <listitem>
+            <para>
+    <computeroutput>Folder tree:</computeroutput> not implemented yet</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Message view:</computeroutput> show or hide the message pane. When hidden, the
+    messages are displayed in a separate window. To read a message
+    double click in the summary pane. The message is then opened in
+    a new window. You can close this new window by pressing the escape
+    key.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Toolbar:</computeroutput> sets how you want to see the toolbar. Icons and text, 
+    or one of these.</para>
+            <itemizedlist>
+              <listitem>
+                <para>
+      <computeroutput>Icon and Text:</computeroutput> show icons and text in the toolbar.</para>
+              </listitem>
+              <listitem>
+                <para>
+      <computeroutput>Icon:</computeroutput> only display the icons, do not display the text
+      below them.</para>
+              </listitem>
+              <listitem>
+                <para>
+      <computeroutput>Text:</computeroutput> only the text, hide the icons.</para>
+              </listitem>
+              <listitem>
+                <para>
+      <computeroutput>None:</computeroutput> hide the toolbar.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Status bar:</computeroutput> show it or hide it.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Separate folder tree:</computeroutput> selects between having the folder tree 
+  attached to the main window, or floating separately.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Separate message view:</computeroutput> selects between having the selected 
+  message in the summary pane attached to the main window, or 
+  floating separately.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Sort:</computeroutput> controls the way the messages are sorted in the selected
+  folder. Each option sorts the messages in descending order (the
+  bigger one being on the top of the summary pane), and can be
+  reversed by selecting the same menu entry a second time (each
+  time you select the same menu entry the order is reversed).</para>
+        <itemizedlist>
+          <listitem>
+            <para>
+    <computeroutput>Sort by number:</computeroutput> sort the message based on their MH number.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by size:</computeroutput> sort the message on their size.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by date:</computeroutput> sort the messages based on their date.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by from:</computeroutput> the messages are sorted by their sender address
+    (From field, sorted alphabetically).</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by recipient:</computeroutput> the messages are sorted by their recipient
+    (sorted alphabetically).</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by subject:</computeroutput> the messages are sorted by their subject
+    (sorted alphabetically).</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by color label:</computeroutput> sort the messages based on their color.
+    Read the context menu description below to find how to assign
+    colors to messages.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by mark:</computeroutput> separate marked and unmarked messages. Read the 
+    context menu description below to find how to mark messages.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by unread:</computeroutput> separate read and unread messages.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Sort by attachment:</computeroutput> separate messages with and without attachment.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Don&apos;t sort:</computeroutput> do not sort the messages.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Ascending:</computeroutput> sort the messages in ascending order. If the field used
+    to sort the messages is displayed in the summary view, a little
+    arrow on the right side of the corresponding summay column header
+    reflects the sort order you select from the menu.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Descending:</computeroutput> sort the messages in descending order.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Attract by subject:</computeroutput> move close to each other the messages
+    having the same subject (or a close subject).</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Thread view:</computeroutput> turn the threaded view on or off. When turned on the
+  messages of the same thread (the same discussion generated by replying
+  to each other mail) are grouped as a tree representing the discussion
+  flow. Each reply being linked to its orignal message. Each branch can
+  be open or closed by using the small plus or minus sign next to it.
+  The threads are based on the In-Reply-To and Reference fields of the
+  mail header, so never start a new conversation by replying to an
+  old message, this will add your new mail to the old unrelated thread.
+  Shortcut: Ctrl-T</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Expand all threads:</computeroutput> if the threaded view is selected, expand all the
+  threads in the opened folder.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Collapse all threads:</computeroutput> if the threaded view is selected, collapse all the
+  threads in the opened folder.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Set display item:</computeroutput> use it to change the list of items to display
+  in the summary view. This setting can also be changed through
+  the common preferences.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Go to:</computeroutput> use it to navigate from message to message based on the
+  sub-menu criterias.</para>
+        <itemizedlist>
+          <listitem>
+            <para>
+    <computeroutput>Prev. message:</computeroutput> go to the previous message in the current
+    folder.
+    Shortcut: P</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Next message:</computeroutput> go to the next message in the current
+    folder.
+    Shortcut: N</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Prev. unread:</computeroutput> go to the previous unread message.
+    Shortcut: Shift-P</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Next unread:</computeroutput> go to the next unread message.
+    Shortcut: Shift-N</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Prev. new:</computeroutput> go to the previous new message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Next new:</computeroutput> go to the next new message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Prev. marked:</computeroutput> go to the previous marked message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Next marked:</computeroutput> go to the next marked message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Prev. labeled:</computeroutput> go to the previous labeled message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Next labeled:</computeroutput> go to the next labeled message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Other folder:</computeroutput> change the current folder. Opens a new window
+    with the folder tree, and open the selected folder.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Code set:</computeroutput> allows you to select what codeset you want to use 
+  for your e-mails. This codeset will be used when sending
+  mails. Note Sylpheed will always try to use the more compatible
+  codeset based on the characters used in your message, so unless
+  you use special latin-1 characters in your mail, the encoding
+  will be defined as 7bits ASCII even if you have selected the
+  ISO-8859-1 character set.
+  The auto-detect option let Sylpheed automatically detect the
+  character set based on the content of the messages.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Open in new window:</computeroutput> open the selected message in a new window.
+  This new window can be closed by pressing the escape key.
+  Shortcut: Ctrl-Alt-N</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Message source:</computeroutput> opens a new window and display the complete
+  source of the message in it (without any formatting and with
+  all the header fields).
+  Shortcut: Ctrl-U</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Show all header:</computeroutput> toggles on and off the display of the complete
+  message header.
+  Shortcut: Ctrl-H</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Update summary:</computeroutput> update the Sylpheed window.
+  Shortcut: Ctrl-Alt-U</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>Message menu </title>
+    <para>
+Here you find the following options:</para>
+    <itemizedlist>
+      <listitem>
+        <para>
+  <computeroutput>Get new mail:</computeroutput> this will collect all new mail for your 
+  default mail-identity.
+  Shortcut: Ctrl-I</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Get from all accounts:</computeroutput> Sylpheed will poll all defined 
+  mail-identities for new mail.
+  Shortcut: Shift-Ctrl-I</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Cancel receiving:</computeroutput> stop the new mails reception.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Send queued messages:</computeroutput> all the messages that you put into 
+  the &quot;Queue&quot; folder will now be sent off.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Compose new message:</computeroutput> allows you to write a new e-mail 
+  message.
+  Shortcut: Ctrl-M</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Reply:</computeroutput> an e-mail message will be created with the sender 
+  of the selected message in the summary pane as recipient. 
+  Depending on the settings, your signature will be added 
+  to the mail, and the original mail text will be quoted.
+  If a part of the original mail is selected, only this
+  part will be quoted in the reply.
+  Shortcut: Ctrl-R</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Reply to</computeroutput> </para>
+        <itemizedlist>
+          <listitem>
+            <para>
+    <computeroutput>all:</computeroutput> as Reply, but the recipients will be all 
+    e-mail addresses in the original messages (including 
+    the ones in the cc: part).
+    Shortcut: Shift-Ctrl-R</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>sender:</computeroutput> as Reply.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>Mailing list:</computeroutput> reply to the mailing list. To use
+    when replying to a mailing list (unless you want to reply
+    only to the poster of the message).
+    Shortcut: Ctrl-L</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>
+  Reply to sender: as Reply, but the recipient is the address
+  defined in the Sender header field (not the Reply-To address).</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Forward:</computeroutput> a message will be created with the original 
+  message in the summary pane as text. You can then 
+  enter a recipient e-mail address, edit the text if 
+  you want, and send it.
+  Shortcut: Ctrl-Alt-F</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Forward as attachment:</computeroutput> as Forward, but the message 
+  text will sent along as a separate textfile.
+  Shortcut: Shift-Ctrl-Alt-F</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Redirect:</computeroutput> re-send the selected message to someone else. Compared
+  to a forward, the message is not marked as forwarded, and the sender
+  is the original mail sender.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Re-edit:</computeroutput> lets you open all already sent message in
+  edition mode to re-send it.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Move:</computeroutput> lets you move the message to a different folder. 
+  You can select the destination folder from a browse-window.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Copy:</computeroutput> as Move, only that the message is copied to the 
+  new folder, instead of moved.
+  Shortcut: Shift-Ctrl-O</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Delete:</computeroutput> lets you delete the message that is selected 
+  in the summary pane.
+  Shortcut: Ctrl-D</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Mark:</computeroutput> Gives a submenu: <computeroutput>Mark/Unmark/Mark as read/Unmark as read</computeroutput>. When you mark messages, you can do a specific 
+  action (e.g. move, delete) on all of the marked messages. 
+  You can unmark messages that you mistakenly marked. 
+  The other options do as they say, they mark or unmark 
+  a message as read, and mark all read, marks all the messages
+  of the current folder as read.</para>
+      </listitem>
+    </itemizedlist>
+    <para>
+A note on functions like Move, Copy and Delete: if you did not 
+specify to execute the commands immediately (in the configuration), 
+you will have to select the <computeroutput>Execute</computeroutput> command. This is a button 
+in the toolbar, and can also be found in the Summary menu.</para>
+  </section>
+  <section>
+    <title>Tool menu </title>
+    <para>
+In the Tool menu are grouped the filters control, address book
+access and log window control.</para>
+    <itemizedlist>
+      <listitem>
+        <para>
+  <computeroutput>Address book:</computeroutput> opens the address book window.
+  Shortcut: Shift-Ctrl-A</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Add sender to address book:</computeroutput> adds the sender of the selected
+  message to one of your address books. When selected a window
+  opens to let you select the target address book.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Filter messages:</computeroutput> apply the filter rules to the messages
+  of the inbox.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Create filter rule:</computeroutput> create a new filter rule based on the
+  selected message.</para>
+        <itemizedlist>
+          <listitem>
+            <para>
+    <computeroutput>Automatically:</computeroutput> open the filter rules creation window
+    to define a new rule.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>By From:</computeroutput> opens the filter rules creation window and
+    fills the filter settings fields to build a filter based
+    on the sender of the selected message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>By To:</computeroutput> opens the filter rules creation window and
+    fills the filter settings fields to build a filter based
+    on the receiver of the selected message.</para>
+          </listitem>
+          <listitem>
+            <para>
+    <computeroutput>By Subject:</computeroutput> opens the filter rules creation window and
+    fills the filter settings fields to build a filter based
+    on the subject of the selected message.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Actions:</computeroutput> this menu is empty until you define some actions (see the
+  configuration menu description).</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Delete duplicated messages:</computeroutput> This will remove messages from the 
+  active folder that were sent twice to you. For example you 
+  received a message directly and through a mailing list at 
+  the same time.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Execute:</computeroutput> execute all the pending move, delete, and copy commands.
+  Only if execute immediately is off in the common preferences.
+  Shortcut: X</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Log window:</computeroutput> opens the log window. In the log window, you 
+  can see what Sylpheed is doing. Keeping track of things 
+  in that way is very good when you suspect there is something 
+  wrong. You can paste the info of the log window into an 
+  e-mail and send it to the developer or the mailing list.
+  Shortcut: Shift-Ctrl-L</para>
+      </listitem>
+    </itemizedlist>
+    <para>
+In the log window, you can see what Sylpheed is doing. Keeping 
+track of things in that way is very good when you suspect there 
+is something wrong. You can paste the info of the log window 
+into an e-mail and send it to the developer or the mailing list.</para>
+  </section>
+  <section>
+    <title>Configuration menu </title>
+    <para>
+In the Configuration menu, clearly, you can set up Sylpheed 
+the way you want it to work and react.</para>
+    <itemizedlist>
+      <listitem>
+        <para>
+  <computeroutput>Common preferences:</computeroutput> in this option you will be 
+  presented a dialog in which you can select a number 
+  of tabs. Each tab represents a specific set of settings 
+  in Sylpheed. In the next chapter, these dialog options 
+  are explained in more detail.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Filter setting:</computeroutput> this option shows you a dialog in which you 
+  can set up the filtering rules that you want Sylpheed 
+  to process on receiving new e-mails. You first specify 
+  on which part(s) of the e-mail Sylpheed has to check, 
+  and then you tell Sylpheed what to do. You can move the 
+  message to a different directory (including trash to get 
+  rid of spam mail). Selecting the destination folder is 
+  possible through a browser window that comes up when you 
+  press &quot;Select...&quot;
+  </para>
+        <para>
+  You can choose not to receive the e-mail. Note that 
+  this will leave the message on the mailserver of your 
+  provider, the message will not be removed!
+  </para>
+        <para>
+  When you press the &quot;Register&quot; button, the filter 
+  rule is added to the list of rules. Do you select 
+  &quot;Substitute&quot;, then the selected rule is replaced by the 
+  information of the setting entered. &quot;Delete&quot; in the end 
+  will delete the selected filtering rule.
+  </para>
+        <para>
+  Please note that you can set up two selections for a rule, 
+  which can be &quot;OR&apos;d&quot; or &quot;AND&apos;d&quot;. OR means that one of the 
+  two selections will have to match for the rule to be 
+  executed. AND means that both selections have to match 
+  before an action is performed.
+  </para>
+        <para>
+  To the right of the selection rules you see buttons 
+  called UP and DOWN. You can move rules up and down in 
+  the list. This will often trigger different behaviour 
+  in the selections, so consider the order in which 
+  you set the rules.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Template:</computeroutput> let your create a new message template.
+  When composing a new message you can then used one
+  of the defined templates and insert it (or use it to
+  completely replace the content of your mail).
+  The templates can contain some special characters
+  that are replaced when the template is used in order
+  to create a dynamic text. Use the symbols button on
+  the templates definition window to see the list of
+  the available symbols.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Actions:</computeroutput> let your create new commands to be added to the
+  &apos;Tools/Actions&apos; menu. An action is a command that processes
+  the select part of a message, the message body or the complete
+  message file. It can be a background process, used as a filter
+  (reads, modifies and replaces a message),...</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Preferences for current account:</computeroutput> here you can set the 
+  specifics for the account you are currently using. 
+  Should mail be deleted after fetching, what is the 
+  server it comes from, etc. Basically it is the same 
+  dialog form as shown in setting up a new account.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Create new account:</computeroutput> here you name the account (each 
+  account has a recognizable name), you set up your name 
+  and e-mail address etc. You set up the type of server 
+  you access (POP4, IMAP4, local mailbox, newsserver) 
+  and where the downloaded messages have to go (default 
+  folder is the inbox). In the RECEIVE tab you select or 
+  unselect options, in SEND you can set up how to send 
+  your messages. In COMPOSE you can point to a specific 
+  signature file, and in ADVANCED you can set up alternate 
+  ports for the server, if these exist. (Do not mess 
+  with these unless you are sure you have to!!)</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Edit accounts:</computeroutput> here you can select one of the accounts 
+  you created, from a list, and edit the information about 
+  them. Note that you cannot edit an account for which 
+  you are writing a message at the same time. This to 
+  ensure data integrity.</para>
+      </listitem>
+      <listitem>
+        <para>
+  <computeroutput>Change current account:</computeroutput> here you can select what 
+  account you want to use, to write a message.
+  If you have enabled the status bar (in the view menu),
+  the name of the current account is shown in the bottom
+  right corner of the Sylpheed window (in the status bar)
+  and can be changed by a click on it (then a menu appears
+  and lists all your accounts).</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>Help menu </title>
+    <para>
+This menu lets you look at the manual and FAQ of Sylpheed, 
+and you can also see the &quot;about&quot; info, who wrote Sylpheed.
+</para>
+  </section>
+  <section>
+    <title>Context menu </title>
+    <para>
+You can pull up context menus (through clicking button2) for 
+the folder tree and the summary pane. (windows users: button2 
+is the right mouse button.)
+</para>
+    <para>
+In the folder view you can add, rename and remove folders 
+through the context menu. You can also set the folder
+properties (define the selected folder as an inbox, outbox,
+trash, ...).
+</para>
+    <para>
+In the message summary you can do a host of things from the 
+context menu, like viewing message headers, opening a message 
+in a separate window (also possible by double clicking on a 
+message) etc...
+</para>
+  </section>
+</chapter>

@@ -1,0 +1,710 @@
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-8">
+  <title>Sylpheed configuration</title>
+  <para>
+All the configuration settings of Sylpheed are accessible from
+the <computeroutput>Configuration</computeroutput> menu and consist of common settings
+(<computeroutput>Common preferences</computeroutput>, <computeroutput>Filter settings</computeroutput>, 
+<computeroutput>Template</computeroutput> and <computeroutput>actions</computeroutput>) and account specific
+settings.
+</para>
+  <para>
+With Sylpheed, there is no limit to the number of accounts
+you can create. You can create new accounts for each of your
+mail account, but also to change the default behaviour of 
+Sylpheed. As folders can be attached to accounts, the account
+specific part of the configuration automatically change based
+on the current folder (you can have a different signature when
+replying to messages from different folders).</para>
+  <section>
+    <title>Common preferences </title>
+    <para>
+The Common Preferences, found in the Configuration menu, controls
+the window layout and the different options of the graphical
+interface of Sylpheed. Depending on some compile time switches
+(and on the availability of some extra libraries), some tabs
+may be included (or not) in your version of Sylpheed. These tabs
+are not listed here but are described (or will be described) in
+the sections covering the optional features they control (like the
+<computeroutput>Privacy</computeroutput> tab for the GnuPG interface).</para>
+    <section>
+      <title>Receive tab </title>
+      <para>
+In here you can set up how to receive messages.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_receive..png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  You can define a special program to pick up messages from 
+  the default unix mailbox. Usually this is not used, but 
+  you can use it. Actually, this information may be wrong. 
+  If someone knows better, please let me know.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Local spool</computeroutput> lets you define where your local mailbox is 
+  located. You can also tell Sylpheed whether or not to 
+  filter the incoming messages from that mail spool file.
+  The spool directory defined here is used by all the accounts
+  of the <computeroutput>local</computeroutput> type, by default it is set to the
+  standard UNIX mailbox location.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Autocheck new mail</computeroutput>. When you check this option, Sylpheed 
+  will check if there is new mail on the set interval.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Check new mail on startup</computeroutput> means that Sylpheed will 
+  immediately look for new mail on all the selected accounts 
+  when it loads.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Update all local folders after incorporation</computeroutput>
+  Well, if you know the use of this option, feel free to
+  write this part...
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  In the news section you can specify how many articles 
+  should be downloaded when opening a newsgroup.
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Send tab </title>
+      <para>
+In here you can set up how to send messages.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_send..png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  You can choose to use an external program (like sendmail) for
+  sending mail. By default no external program is necessary
+  and Sylpheed can directly send the outgoing messages to a
+  SMTP server.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  The sent messages can be saved in the outbox (<computeroutput>Sent</computeroutput> 
+  folder), the name of the outbox folder can be specified
+  for each account (see the account setting section).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  The outgoing codeset selection can be changed to force
+  the definition of the character set used in sent mails.
+  The default and recommended value is <computeroutput>automatic</computeroutput>,
+  so Sylpheed determines the codeset when sending each
+  message.
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Compose tab </title>
+      <para>
+Controls the composition window&apos;s behaviour...</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_compose.png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  You can change the signature separator and choose to insert
+  it automatically (unless your signature file already contains
+  this separator). Leave it as it is by default (unless you really
+  need to change it, and are ready to face a religion war), a lot
+  of mail clients rely on this separator to cut the signature when
+  quoting mails, and this one is accepted as the standard one.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  If you hate the editor that comes with Sylpheed, you can choose
+  to automatically start an editor of your choice when composing
+  new messages (the editor can be defined in the <computeroutput>Other</computeroutput> tab).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  The <computeroutput>wrap</computeroutput> settings defines how Sylpheed will wrap long
+  lines. You can choose to wrap quoted messages, wrap as you type,
+  or wrap when sending. You can also change the maximum line length.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  The <computeroutput>reply</computeroutput> settings let you control the way you will reply
+  to mails. If <computeroutput>Automatically select account(...)</computeroutput> is set,
+  the account used when replying to a message is automatically
+  selected based on the folder the original message is in (as you
+  where already told, accounts can be attached to folders).
+  If <computeroutput>Quote message when replying</computeroutput> is selected, when hiting
+  the <computeroutput>Reply</computeroutput> button, the composition window pops up and is
+  filled with either the complete message you are replying to (if
+  nothing is selected in the body of this message) or the selected
+  part of its body. When this option is not selected, the composition
+  window is always empty, and you must cut-and-paste the parts of
+  the original message you want to quote manually.
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Quote tab </title>
+      <para>
+In here you can control the quotation of your replies and forwarded
+messages.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_quote.png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  You can individually define the quotation mark that appears
+  at the beginning of each quoted line when replying and forwarding
+  a message.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  You can also define the text that appears before and after the 
+  quotation. The format of the quotation contains placeholders for
+  parts of the original message that are explains in the window
+  that appears when hiting the <computeroutput>Description of symbols</computeroutput>
+  button.
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Display tab </title>
+      <para>
+In here you can control the display options of Sylpheed.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_display..png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  You can change the font used to display the messages. Pressing
+  the button next to the font name field will open the font selection
+  window, then you can select among all the available fonts.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Turning on the translation of the header fields will change the
+  content of the header summary (between the summary and the message
+  pane), and use the localized header fields name based on the
+  selected language (selected by the &apos;LANG&apos; environment variable).
+  This setting will only take effect the next time you will start
+  Sylpheed.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Selecting <computeroutput>Display unread next to folder name</computeroutput> will add
+  the number of unread messages next to the folder name in the
+  folder pane (so you can minimize the width of the folder pane
+  and hide the unread column).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  You can also control the content of the summary pane. If you choose
+  to display the recipient name for the mail you send, in the <computeroutput>From</computeroutput>
+  column, for any mail you have sent, the name of the recipient will
+  appear preceded by an arrow (the characters sequence: --&gt;).
+  The <computeroutput>Expand threads</computeroutput> controls the initial state of the message
+  threads when opening a folder (expanded or collapsed).
+  The <computeroutput>Set display item of summary</computeroutput> button opens a selection
+  window that contains all the available items to display in the
+  left column, the currently selected items in the right column.
+  Items can be added or removed using the two arrows that appears
+  between the columns. Using the <computeroutput>up</computeroutput> and <computeroutput>down</computeroutput> buttons
+  on the right side of the window, you can change the display order
+  of the selected item in the summary window (from left to right).
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Message tab </title>
+      <para>
+The message tab controls the message window options.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_message..png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  The message text can use colours to highlight the different levels
+  of quotation and URIs. The colours can be changed by using the
+  colours selection dialog that pops up when pressing the <computeroutput>Edit</computeroutput>
+  button next to the <computeroutput>Enable coloration of messages</computeroutput> toggle.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  The display of the header summary between the summary and message
+  panes can also be turned on and off (<computeroutput>Display header pane above message view</computeroutput> dialog).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Display short header on message view</computeroutput> and the <computeroutput>Edit</computeroutput>
+  button next to it, control the inclusion of some header fields
+  in the message view. If the message coloration has been turned on,
+  the addresses that appear in the header part of the message view
+  are highlighted as URIs.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  The <computeroutput>Line space</computeroutput> setting controls the lines spacing of the
+  message view.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Leave space on head</computeroutput>. Checking this box will make the 
+  start of new lines (unwrapped, where the writer has pressed 
+  the Enter/Return key) indent a few pixels. This can be useful 
+  to read larger e-mails.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Scroll half page</computeroutput>. When enabled, the text in the message 
+  view will only scroll half a page instead of a whole page when 
+  pressing the space bar.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Smooth scroll</computeroutput>. Enabling this box will make the text 
+  in the message view scroll in a smooth, sliding way. For the 
+  eye this can be pleasing, it is a personal preference.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Select the <computeroutput>Resize attached image</computeroutput> if you want all the
+  images (attachment) to be resized to fit in the message window.
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Interface tab </title>
+      <para>
+The interface tab controls the Sylpheed&apos;s Graphical User Interface
+behaviour.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_interface..png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  The <computeroutput>Open message when cursor keys are pressed</computeroutput> toggles controls
+  the opening of the messages while you go through them in the summary
+  pane using the cursor (up and down arrows) keys. If this toggle is on,
+  each time you press the <computeroutput>down</computeroutput> (or <computeroutput>up</computeroutput>) key in the
+  summary window, the current message changes and the content of the
+  message view changes to the content of the newly selected message.
+  Otherwise, the content of the message view does not change unless you
+  press enter (then the message view contains the content of the selected
+  message).
+  This does not change the behaviour of the left mouse button (always selects
+  and open the pointed message).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Open first unread message when entering a folder</computeroutput> if selected,
+  when opening a folder, the message view will contain the first unread
+  message of this folder (or the latest message in the order the folder
+  uses for sorting messages). If not selected, the message view remains
+  empty until a message is selected (by changing the current message with
+  the cursor keys or with the left mouse button).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Only marks message read when open in new window</computeroutput> leaves the
+  selected message unread (but display it in the message view) until you
+  open it in a new window (double click the left mouse button).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  If <computeroutput>Execute immediately when moving or deleting messages</computeroutput> is not
+  selected, a new button appears in the button bar marked <computeroutput>Execute</computeroutput>.
+  When deleting or moving messages, they are first marked as deleted or
+  moved but Sylpheed does not move or delete them until you press the 
+  <computeroutput>Execute</computeroutput> button (or the <computeroutput>Execute</computeroutput> entry of the 
+  <computeroutput>Tools</computeroutput> menu).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  The <computeroutput>Receive dialog</computeroutput> settings controls the dialog that pops
+  up (if you have set <computeroutput>Show receive dialog</computeroutput> to <computeroutput>always</computeroutput>)
+  when receiving new mails.
+  The default is to open a pop up window upon reception error unless
+  you select the <computeroutput>Dont&apos;t pop up error dialog (...)</computeroutput> toggle.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+   <computeroutput>The Set key bindings</computeroutput> button when pressed, opens a selection
+   window that contains a list of pre-defined key bindings (<computeroutput>Mew</computeroutput>, 
+   <computeroutput>Mutt</computeroutput>, <computeroutput>Old Sylpheed</computeroutput>) to change all the key bindings
+   at once. The key bindings can also be changed one by one as described in
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+    <section>
+      <title>Other tab </title>
+      <para>
+The other tab contains the settings that does not fit the
+previous categories.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/pref_other..png"/>
+        </imageobject>
+      </mediaobject>
+      <itemizedlist>
+        <listitem>
+          <para>
+  <computeroutput>Web browser</computeroutput>. Here you can enter the name of your favorite 
+  web browser (Netscape, Opera, Mozilla, Lynx etc.). Add the %s parameter 
+  to the command so Sylpheed knows it has to provide the text you clicked 
+  on as the URL that the browser has to visit.
+  The arrow next to the text field can be used to display a scrolling
+  list of predefined URL browsing command lines.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Printing</computeroutput>. Here you can define the program that should be used 
+  to print. Default is lpr, and the %s is the name of the temporary file 
+  that Sylpheed creates for lpr to print.
+  When using the <computeroutput>File-&gt;Print</computeroutput> menu entry to print the selected
+  message, a text window pops up to allow you to change the command
+  used to print.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>External editor</computeroutput>. You can select an external editor to write 
+  your e-mails with, for example vi, emacs or gedit. Note that for 
+  text-based editors like vi, you need to define a terminal window, 
+  e.g. <guilabel>xterm -e vi %s</guilabel>. Otherwise there is no place that the 
+  editor will be able to show up. Here too, the %s parameter is the 
+  name of a temporary file that is created by Sylpheed.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Add address to destination (...)</computeroutput> when selected,
+  double clicking an e-mail address (in the address book,
+  when the composition window is opened) can be used to add 
+  this address to the <computeroutput>To:</computeroutput> field.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Confirming if you want to exit Sylpheed (or just exit quietly).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Cleaning the trashbox when exiting Sylpheed.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Have Sylpheed ask you to clean the trash before it is done.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Warn you when exiting Sylpheed when there are still messages 
+  queued to be sent.
+ </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </section>
+  <section>
+    <title>Setting up an account/changing an account </title>
+    <para>
+In order to set up an account in Sylpheed, in the <computeroutput>Configuration</computeroutput>
+menu you select <computeroutput>Create new account</computeroutput>. If you want to change the 
+settings of an existing account and this account is the current
+one, in the <computeroutput>Configuration</computeroutput> menu select <computeroutput>Preferences for current account</computeroutput>, otherwise select <computeroutput>Edit accounts...</computeroutput>.
+There you select the account you want to change. After that you press 
+<computeroutput>edit</computeroutput>. Then a dialog appears in which you can enter or update 
+the following areas:
+</para>
+    <section>
+      <title id="Basic">Basic tab </title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/account_basic..png"/>
+        </imageobject>
+      </mediaobject>
+      <para>In the &quot;Basic&quot; tab you name the account. This is to make identifying 
+the account easier. The name is then used in the <computeroutput>Change current account</computeroutput>
+part of the <computeroutput>Configuration</computeroutput> menu, or in menu found in the lower 
+right corner of the main window (used to quickly switch to another account).
+</para>
+      <para>
+Choose a name that tells something about the account, like the 
+name of the ISP, mailbox or news-server you are setting up.  
+You can select this account to be the default account (&quot;Usually used&quot;).
+The default account can also be defined from the <computeroutput>Edit accounts</computeroutput>
+window (toggle the <computeroutput>D</computeroutput> column next to the account name).
+</para>
+      <para>
+Enter your name and e-mail address, and if you have one, the 
+organization that you use Sylpheed for.
+In the Protocol box you select the type of service that this 
+account will be using. The flavors you can choose are: <computeroutput>POP3 normal</computeroutput>, 
+<computeroutput>POP3 APOP auth</computeroutput>, <computeroutput>IMAP4</computeroutput>, <computeroutput>NNTP news</computeroutput> or <computeroutput>None (local)</computeroutput>.
+</para>
+      <para>
+For POP3 and IMAP services you can then specify the server where 
+your mail is stored. Details about this name, and also the name 
+that goes into the field for <computeroutput>SMTP server (send)</computeroutput> should be given 
+to you by your ISP.
+</para>
+      <para>
+For a local unix mailbox, the <computeroutput>Server for receiving</computeroutput> is disabled, 
+since the mail will be received for you.
+</para>
+      <para>
+The fields for <computeroutput>User ID</computeroutput> and <computeroutput>Password</computeroutput> will also be
+disabled for accounts that do no deal with POP3 or IMAP services.
+Otherwise you can enter the login name and password for the e-mail
+server with your ISP here. Usually these are the same as your login 
+name and password to access the dial-in service, but this is 
+not standard. If in doubt, contact the helpdesk of your ISP.</para>
+      <section>
+        <title>Passwords: </title>
+        <para>
+The password is not printed in the entry field (replaced by stars) but
+is stored in plaintext in the Sylpheed configuration files. The Sylpheed
+configuration directory (~/.sylpheed) is only readable by &apos;owner&apos;, and
+not by &apos;group&apos; and &apos;other&apos;, do not change these access rights.</para>
+      </section>
+    </section>
+    <section>
+      <title id="Receive">Receive tab</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/account_pop_receive..png"/>
+        </imageobject>
+      </mediaobject>
+      <para>The <computeroutput>Receive</computeroutput> tab is only used for POP3 accounts. Here you
+specify if the mails that were successfully retrieved should be removed 
+from the server. You can also tell Sylpheed to get all the 
+messages there, not only the ones you already received (in case 
+you leave your messages on the server).
+You can choose to leave the messages on the server during a selectable
+number of days (then remove them).
+</para>
+      <para>
+You can also define a limit for the size of the messages to
+download. Any message bigger than this limit will not be
+downloaded.
+</para>
+      <para>
+You can also choose to filter messages on receiving, if not
+set, the messages are only filtered when you use the filter
+entry of the Tools menu.
+</para>
+      <para>
+The default inbox defines the folder that receives the incoming
+(and not filtered) messages for this account.
+You can define a different folder as inbox for each of your
+accounts.
+</para>
+      <para>
+If the <computeroutput>Get all checks for messages on this account</computeroutput> is turned
+off, when using the <computeroutput>Get all</computeroutput> menu entry (or toolbar button)
+this account will not be checked. To check for new mails for
+this account, you must select the account, then use the <computeroutput>Get</computeroutput>
+toolbar button (or menu entry).
+</para>
+    </section>
+    <section>
+      <title id="Send">Send tab</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/account_send..png"/>
+        </imageobject>
+      </mediaobject>
+      <para>In the <computeroutput>Send</computeroutput> tab you can define the settings that apply 
+to sending mails.
+</para>
+      <para>
+You can choose to add the date field to the messages you send,
+generate a unique message identifier, or add custom header
+fields.
+
+</para>
+      <para>
+If your SMTP server needs authentication, define the user ID and
+password to use in this tab. You can also choose to first authenticate with
+POP3 before sending.</para>
+      <section>
+        <title>X-face pictures: </title>
+        <para>
+The user defined header field should be set up to contain your
+X-face picture.
+Thanks to Jeff Dairiki, you can have a complete online course in this. 
+Visit <ulink url="http://www.dairiki.org/xface/">this page</ulink> for the details.</para>
+      </section>
+    </section>
+    <section>
+      <title id="Compose">Compose tab</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/account_compose..png"/>
+        </imageobject>
+      </mediaobject>
+      <para>In the <computeroutput>Compose</computeroutput> tab you can define your signature file, 
+choose to always copy someone when sending mails (you can
+choose to always copy your boss, or yourself), and define the
+Reply-To field for the current account.</para>
+    </section>
+    <section>
+      <title id="Privacy">Privacy tab</title>
+      <para>
+This tab is only available when Sylpheed has been compiled
+with GPGME and GNUPG (for signature and encryption).
+
+</para>
+      <para>
+With this tab you can choose the keys to use when signing
+or encrypting mails for this account.</para>
+    </section>
+    <section>
+      <title id="Advanced">Advanced tab </title>
+      <para>
+The Advanced tab contains some settings you normally do
+not need to change (unless you really know what you are
+doing).</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/account_advanced..png"/>
+        </imageobject>
+      </mediaobject>
+      <para>
+You can change the default SMTP or POP3 ports used when
+connecting to your mail server, define a domain name to
+use when sending a mail. Some ISP (or mail relays) reject
+mails without a valid domain name.
+</para>
+      <para>
+The default folders for the sent messages, drafts and
+trash can be defined here. If not changed the current account
+will use the default folders.</para>
+    </section>
+    <section>
+      <title>Attaching accounts to folders </title>
+      <para>
+Pressing the right mouse button over a folder (in the folder pane), 
+and selecting the <computeroutput>Properties</computeroutput> entry will open the folder properties
+form. In this form, in the <computeroutput>General</computeroutput> tab you can see (but not modify)
+the folder name and the corresponding directory path (relative to the mail
+directory). In the <computeroutput>Compose</computeroutput> tab:</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="snapshots/folder_prop_compose..png"/>
+        </imageobject>
+      </mediaobject>
+      <para>You can select the account, choose to apply this setting also to
+the sub-folders.
+You can also force the address used when sending mail (to force a mailing
+list address, for example), choose to send a copy of the sent mails
+to a list of addresses different from the default one defined for the
+selected account.</para>
+    </section>
+    <section>
+      <title>Using accounts in the real life </title>
+      <para>
+Accounts can, of course be used to retrieve mails from different ISPs,
+separate your personal and professional messages, but also to make your
+life easier.
+You can define different accounts just to change your address (as sender),
+your signature, change the sent folder, etc...
+Here is a summary of the account specific settings, feel free to
+find your own use for them:</para>
+      <itemizedlist>
+        <listitem>
+          <para>
+  Sender name, address and organization. Signature, extra header
+  fields.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Leave or remove message from server (usefull for debug).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Incoming mails filtering and size limit.
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  Default field (<computeroutput>Reply-To</computeroutput>:, <computeroutput>Cc:</computeroutput>, <computeroutput>Bcc:</computeroutput>).
+ </para>
+        </listitem>
+        <listitem>
+          <para>
+  <computeroutput>Draft</computeroutput>, <computeroutput>Trash</computeroutput> and <computeroutput>Sent</computeroutput> folders.
+ </para>
+        </listitem>
+      </itemizedlist>
+      <para>By attaching accounts to folders, you can control all these settings
+on a folder basis, but you can also change the <computeroutput>To:</computeroutput>, <computeroutput>Cc:</computeroutput>, 
+<computeroutput>Bcc:</computeroutput>, and <computeroutput>Reply-To:</computeroutput> for each folder (overrides the account
+settings).</para>
+    </section>
+  </section>
+</chapter>

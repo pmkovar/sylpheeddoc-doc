@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<chapter>
-  <title id="chap_starting">Dialogs and views</title>
-
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-7">
+  <title>Dialogs and views</title>
   <para>
     The appearance of the Sylpheed windows is controlled by
     a Gtk+ theme (as Sylpheed is based on the Gtk+ toolkit).
     Read the Gtk+ or your distribution documentation to find
     how to change the Gtk+ theme.
   </para>
-
   <section>
     <title>Folder view</title>
-
     <para>
       The folder view shows you all the mail folders that you have created, 
       in a tree-like structure. If you want to see the headers of the messages 
@@ -20,7 +16,7 @@
     </para>
     <para>
       When you see a + sign in front of a folder name, that means the folder 
-      branch of that part of the tree is 'collapsed'. You can expand that 
+      branch of that part of the tree is &apos;collapsed&apos;. You can expand that 
       part by clicking the + sign. In that same manner you can also collapse 
       the - sign in front of an expanded branch of the folder tree.
     </para>
@@ -30,119 +26,121 @@
     </para>
     <para>
       The folder window can be detached from the main Sylpheed window
-      by selecting the menu action: <tt>View -> Separate folder tree</tt>.
+      by selecting the menu action: <guilabel>View -&gt; Separate folder tree</guilabel>.
       When exiting the current state of the folder window (attached or 
       detached) is saved to be restored when re-starting Sylpheed.
       To re-attach the folder window, de-select the menu entry.
     </para>
-
     <section>
-	   <title>Special folders</title>
-
+      <title>Special folders</title>
       <para>
         Draft: here you store messages that you want to send out more often, 
-        or you want to work on some more. Using the 'reedit' option from the 
+        or you want to work on some more. Using the &apos;reedit&apos; option from the 
         message menu, you can edit the message further.
       </para>
-		<para>
+      <para>
         Trash: in here all your deleted messages go. Depending on the common 
         preferences setting, this box is or is not emptied when you end Sylpheed.
       </para>
-		<para>
+      <para>
         Sent: in here are saved the messages you send (enabled by a
         common preference setting and the folder can be changed by an account
         preference setting).
       </para>
-		<para>
+      <para>
         Queue: this folder contains the composed messaged waiting to
         be sent (with Sylpheed message sending can be delayed).
       </para>
-		
     </section>
   </section>
-
   <section>
     <title>Summary view</title>
-
     <para>
       The summary pane can show you many things. You can select what you 
       want to see from the Summary menu, selecting the option 
       Set display item. A list of all options is:
     </para>
     <itemizedlist>
-      <listitem>Mark: shows if the message is marked.</listitem>
-      <listitem>Unread: shows if the message is read or not</listitem>
-      <listitem>MIME: shows MIME attachments</listitem>
-      <listitem>Number: shows the MH number of the message</listitem>
-      <listitem>Size: the size of the entire message including attachments</listitem>
-      <listitem>Date: the date of sending by the sender</listitem>
-      <listitem>From: who sent the message</listitem>
-      <listitem>Subject: what the message is about</listitem>
+      <listitem>
+        <para>Mark: shows if the message is marked.</para>
+      </listitem>
+      <listitem>
+        <para>Unread: shows if the message is read or not</para>
+      </listitem>
+      <listitem>
+        <para>MIME: shows MIME attachments</para>
+      </listitem>
+      <listitem>
+        <para>Number: shows the MH number of the message</para>
+      </listitem>
+      <listitem>
+        <para>Size: the size of the entire message including attachments</para>
+      </listitem>
+      <listitem>
+        <para>Date: the date of sending by the sender</para>
+      </listitem>
+      <listitem>
+        <para>From: who sent the message</para>
+      </listitem>
+      <listitem>
+        <para>Subject: what the message is about</para>
+      </listitem>
     </itemizedlist>
-
     <para>
       You can sort the summary view in many ways, by clicking the button 
       that is above the column. Click once to sort going up (a-z), click 
       once more to sort going down (z-a).
     </para>
-
     <para>
-		If you think the size of a column is not right, you can adjust that 
-		by placing the mouse cursor next to the button of the column you 
-		want to adjust, press mousebutton1 (left button) and drag the 
-		column to the width you want it to have.
+  If you think the size of a column is not right, you can adjust that 
+  by placing the mouse cursor next to the button of the column you 
+  want to adjust, press mousebutton1 (left button) and drag the 
+  column to the width you want it to have.
     </para>
-
     <para>
-		Select a message by clicking on it with the mouse. Once the summary 
-		pane has the focus of the program, you can also move up and down 
-		in the list through the cursor keys, or pressing "p"(revious) and 
-		"n"(ext) as in Pine.
+  Select a message by clicking on it with the mouse. Once the summary 
+  pane has the focus of the program, you can also move up and down 
+  in the list through the cursor keys, or pressing &quot;p&quot;(revious) and 
+  &quot;n&quot;(ext) as in Pine.
     </para>
   </section>
-
   <section>
-		<title>Message view</title>
-
+    <title>Message view</title>
     <para>
-		In the message view you can read the message that you selected in 
-		the summary pane. If you entered the summary pane without selecting 
-		a message, the message view will be empty. At the top of the 
-		message view some info is presented about the message you are 
-		reading, as well as some statistics on the selected folder.
+  In the message view you can read the message that you selected in 
+  the summary pane. If you entered the summary pane without selecting 
+  a message, the message view will be empty. At the top of the 
+  message view some info is presented about the message you are 
+  reading, as well as some statistics on the selected folder.
     </para>
-
     <para>
-		You can scroll up and down in the message by using the arrow keys 
-		(after clicking inside the message), or by using the scrollbar.
+  You can scroll up and down in the message by using the arrow keys 
+  (after clicking inside the message), or by using the scrollbar.
     </para>
-
     <para>
-		The size of the message and summary views can be adjusted by dragging
-		(with the left mouse button down) the handle that appears between
-		the two panes.
+  The size of the message and summary views can be adjusted by dragging
+  (with the left mouse button down) the handle that appears between
+  the two panes.
     </para>
-
     <para>
-		The small arrow located just below the summary pane scrollbar can
-		be used to detach the message view. When clicked, the summary view
-		is extended down to the bottom of the Sylpheed window, and the messages
-		are displayed is a separate window (when you double click them in the
-		summary pane). This state is not saved on exit, and the message window
-		can be restored below the summary one by clicking again the small arrow.
+  The small arrow located just below the summary pane scrollbar can
+  be used to detach the message view. When clicked, the summary view
+  is extended down to the bottom of the Sylpheed window, and the messages
+  are displayed is a separate window (when you double click them in the
+  summary pane). This state is not saved on exit, and the message window
+  can be restored below the summary one by clicking again the small arrow.
     </para>
-
     <para>
-		When the current message contains attachments, two tabs
-		are displayed in the message window. Selecting the first one makes
-		the message window display the text body of the message, while selecting
-		the second tab makes the message window display the attachment part
-		of the message. In the latter case, the message window is splitted
-		in two parts, the top one contains the attachments as a tree
-		with the MIME type, size and file name of each part, while the bottom
-		part contains the content of the selected attachment (if the attachment
-		is an image and Sylpheed has been compiled with the gdk-pixbuf or
-		the imlib library).
+  When the current message contains attachments, two tabs
+  are displayed in the message window. Selecting the first one makes
+  the message window display the text body of the message, while selecting
+  the second tab makes the message window display the attachment part
+  of the message. In the latter case, the message window is splitted
+  in two parts, the top one contains the attachments as a tree
+  with the MIME type, size and file name of each part, while the bottom
+  part contains the content of the selected attachment (if the attachment
+  is an image and Sylpheed has been compiled with the gdk-pixbuf or
+  the imlib library).
     </para>
   </section>
 </chapter>

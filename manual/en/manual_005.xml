@@ -1,51 +1,41 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<chapter>
-	<title id="chap_starting">Starting and quitting Sylpheed</title>
-
-	<section id="starting_sylpheed">
-		<title>Starting Sylpheed</title>
-
-		<para>
-			Starting Sylpheed can be done by typing <command>sylpheed</command>
-			on a prompt in a terminal and pressing Enter. You can also
-			add Sylpheed to a menu in KDE or Gnome, or create a shortcut
-			to it on the desktop, if your window manager allows that.
-		</para>
-	
-		<para>
-			When you first start Sylpheed, the program will ask you where 
-			you want to store the mails that you downloaded. You can accept 
-			the default (<filename>$HOME/Mail</filename>) or set up your own 
-			mail folder.
-		</para>
-
-		<para>
-			Sylpheed will then load with it's default settings. The way to 
-			change these are written about further on in this manual.
-		</para>
-
-		<para>
-		</para>
-
-	</section>
-
-	<section id="quitting_sylpheed">
-		<title>Quitting Sylpheed</title>
-
-		<para>
-			Ending Sylpheed can be done in several ways:
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>Select "quit" from the File menu.</para>
-			</listitem>
-			<listitem>
-				<para>Press Ctrl-Q</para>
-			</listitem>
-			<listitem>
-				<para>Click the "program close" button in the titlebar.</para>
-			</listitem>
-		</itemizedlist>
-
-	</section>
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-5">
+  <title id="chap_starting">Starting and quitting Sylpheed</title>
+  <section id="starting_sylpheed">
+    <title>Starting Sylpheed</title>
+    <para>
+   Starting Sylpheed can be done by typing <command>sylpheed</command>
+   on a prompt in a terminal and pressing Enter. You can also
+   add Sylpheed to a menu in KDE or Gnome, or create a shortcut
+   to it on the desktop, if your window manager allows that.
+  </para>
+    <para>
+   When you first start Sylpheed, the program will ask you where 
+   you want to store the mails that you downloaded. You can accept 
+   the default (<filename>$HOME/Mail</filename>) or set up your own 
+   mail folder.
+  </para>
+    <para>
+   Sylpheed will then load with it&apos;s default settings. The way to 
+   change these are written about further on in this manual.
+  </para>
+    <para>
+  </para>
+  </section>
+  <section id="quitting_sylpheed">
+    <title>Quitting Sylpheed</title>
+    <para>
+   Ending Sylpheed can be done in several ways:
+  </para>
+    <itemizedlist>
+      <listitem>
+        <para>Select &quot;quit&quot; from the File menu.</para>
+      </listitem>
+      <listitem>
+        <para>Press Ctrl-Q</para>
+      </listitem>
+      <listitem>
+        <para>Click the &quot;program close&quot; button in the titlebar.</para>
+      </listitem>
+    </itemizedlist>
+  </section>
 </chapter>
