@@ -7,7 +7,7 @@
 #
 ######################################################################
 #
-#  TARGET_TYPE is used to defined the target for the doc to build:
+#  TARGET_TYPE is used to define the target for the doc to build:
 #  either with images, for the web site (TARGET_TYPE=WEB) or without
 #  any screenshot (to generate the doc to include in the Sylpheed
 #  distribution).
@@ -24,13 +24,19 @@
 #  build in the command line of the make. Examples:
 #
 #  'make manual'           => will make the manual in all languages.
-#  'make manual/en'        => Will build the english manual.
-#  'make faq/en faq/es'    => Will build the english and spanish FAQ.
-#  'make faq/en manual/en' => Will build the english FAQ and manual.
+#  'make manual/en'        => Will build the English manual.
+#  'make faq/en faq/es'    => Will build the English and Spanish FAQ.
+#  'make faq/en manual/en' => Will build the English FAQ and manual.
 #
 ######################################################################
 #
 # $Log: Makefile,v $
+# Revision 1.6  2009/08/12 19:37:33  pknbe
+# Makefile: Add the 'faq_chunks.xsl' stylesheet. tools/faq_chunks.xsl: Add chunk stylesheet for FAQ.
+#
+# Revision 1.6  2009/08/12 17:25:00  pknbe
+# Added the 'faq_chunks.xsl' stylesheet
+#
 # Revision 1.5  2005/06/21 20:29:32  fbarriere
 # Changed the Makefile to the new DocBook version of the doc
 #
@@ -52,7 +58,7 @@
 
 #
 #  Final result type: WEB (with images and original names),
-#  or any other value for a version using he file names
+#  or any other value for a version using the file names
 #  that fits the Sylpheed code and without the images.
 #
 TARGET_TYPE   := WEB
@@ -120,6 +126,7 @@ SCREENSHOTS   := $(addprefix $(HTML_DIR)/,$(shell ls */*/$(SHOTS_DIR)/*png))
 #  Java and DocBook setup:
 #
 include $(ROOT_DIR)/setup.mk
+#include $(ROOT_DIR)/setup.mk.fc
 
 #
 #  XSLT stylesheets:
@@ -127,6 +134,7 @@ include $(ROOT_DIR)/setup.mk
 CHUNKS_STYLESHEET := $(ROOT_DIR)/tools/user_guide_chunks.xsl
 SINGLE_STYLESHEET := $(ROOT_DIR)/tools/user_guide.xsl
 FO_PDF_STYLESHEET := $(ROOT_DIR)/tools/user_guide_fo.xsl
+FAQ_CHUNKS_STYLESHEET := $(ROOT_DIR)/tools/faq_chunks.xsl
 HTML_STYLESHEET   := sylpheeddoc.css
 
 #

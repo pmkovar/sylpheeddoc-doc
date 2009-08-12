@@ -1,3 +1,8 @@
+2009-08-12  Petr Kovar  <pknbe@volny.cz>
+
+	* Makefile: Add the 'faq_chunks.xsl' stylesheet.
+	* tools/faq_chunks.xsl: Add chunk stylesheet for FAQ.
+
 2009-08-11  Petr Kovar  <pknbe@volny.cz>
 
 	* ChangeLog: Add the file.
