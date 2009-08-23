@@ -1,3 +1,7 @@
+2009-08-23  Petr Kovar  <pknbe@volny.cz>
+
+	* *.xml: First round of very basic FAQ updates.
+
 2009-08-12  Petr Kovar  <pknbe@volny.cz>
 
 	* *.xml: Finished porting to DocBook XML.

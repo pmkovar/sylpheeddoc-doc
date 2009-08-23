@@ -1,43 +1,40 @@
-<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-3">
+<?xml version='1.0' encoding='UTF-8'?>
+<chapter id="sylpheed-faq-3">
   <title>Sylpheed FAQ - Interface</title>
   <qandaset>
     <qandadiv id="faq-interface">
       <title>Interface</title>
       <qandaentry>
         <question>
-          <para>
-Q01  How do I make Sylpheed display my language?
+          <para>How do I make Sylpheed display my language?
 </para>
         </question>
         <answer>
-          <para>You have to set some environment variables such as
+          <para>You have to set some environment variables, such as
      <computeroutput>LANG,LC_CTYPE, LC_MESSAGES</computeroutput> to your local language.
-     Usually <computeroutput>LANG</computeroutput> (or <computeroutput>LC_ALL</computeroutput>) is sufficient.
+     Usually <computeroutput>LANG</computeroutput> (or <computeroutput>LC_ALL</computeroutput>) is sufficient. Note that modern distributions and operating systems do this for you automatically.
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q02  I don&apos;t like the default font. Can I change that?
+          <para>I don&apos;t like the default font. Can I change that?
 </para>
         </question>
         <answer>
-          <para>Yes. In Configuration-&gt;common preferences under the
-     &quot;Display&quot; tab.
+          <para>Yes. In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, under the
+     &quot;<guimenuitem>Display</guimenuitem>&quot; tab.
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q03  There are too many columns in the message list!!
+          <para>There are too many columns in the message list!
 </para>
         </question>
         <answer>
-          <para>In Configuration-&gt;common preferences under the
-     &quot;Display&quot; tab you can press the button &quot;Set display
-     item of summary&quot;. That pops up a screen with all the
+          <para>In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, under the
+     &quot;<guimenuitem>Display</guimenuitem>&quot; tab you can press the button &quot;<guibutton>Set display item of summary...</guibutton>&quot;. That pops up a screen with all the
      options you can show or leave out of the message
      list.
 </para>
@@ -45,30 +42,28 @@ Q03  There are too many columns in the message list!!
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q04  Can I use a different editor to write my mails?
+          <para>Can I use a different editor to write my mails?
 </para>
         </question>
         <answer>
-          <para>You can. In Configuration-&gt;common preferences under
-     the &quot;Other&quot; tab you can define your editor of choice.
+          <para>You can. In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, under
+     the &quot;<guimenuitem>Details</guimenuitem>&quot; and <guimenuitem>External commands</guimenuitem> tabs, you can define your editor of choice.
      Remember, if you want to use a command line editor
      like vi or emacs, to write the name of the shell
      (term, term, rxvt) with the -e parameter in front of
-     the editor. E.g.: <computeroutput>rxvt -e vi %s</computeroutput>
+     the editor. E.g.: <computeroutput>rxvt -e vi %s</computeroutput>. Also, make sure that you have checked <guilabel>Automatically launch the external editor</guilabel> in <guimenuitem>Common preferences</guimenuitem>, <guimenuitem>Compose</guimenuitem> and <guimenuitem>Editor</guimenuitem> tab, if you want the editor of your choise to be launched every time you begin composing a message. 
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q05  How to change the font size in the Sylpheed interface?
+          <para>How to change the font size in the Sylpheed interface?
 </para>
         </question>
         <answer>
-          <para>You can set the GTK+ font by <computeroutput>$HOME/.gtkrc</computeroutput>, or
-     <computeroutput>$HOME/.gtkrc.mine</computeroutput>,
-     (which is included by <computeroutput>$HOME/.gtkrc</computeroutput>).
+          <para>You can set the GTK+ font by <filename>$HOME/.gtkrc</filename>, or
+     <filename>$HOME/.gtkrc.mine</filename>,
+     (which is included by <filename>$HOME/.gtkrc</filename>).
      For example:
      <computeroutput>style &quot;default&quot; { font = &quot;-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1 &quot; } widget_class &quot;*&quot; style &quot;default&quot;</computeroutput>
 </para>
@@ -76,21 +71,19 @@ Q05  How to change the font size in the Sylpheed interface?
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q06  Sylpheed saves my outgoing mail (in Outbox). Can I make it stop doing that?
+          <para>Sylpheed saves my outgoing mail (in Outbox). Can I make it stop doing that?
 </para>
         </question>
         <answer>
-          <para>In Configuration-&gt;common preferences there&apos;s a
-     checkbox &quot;Save sent message to outbox&quot;. Uncheck it,
+          <para>In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, there&apos;s a
+     checkbox &quot;<guilabel>Save sent message to outbox</guilabel>&quot;. Uncheck it,
      and it&apos;s solved.
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q07  How can I change the key-bindings (hot-keys) in Sylpheed?
+          <para>How can I change the key-bindings (hot-keys) in Sylpheed?
 </para>
         </question>
         <answer>
@@ -110,14 +103,13 @@ Q07  How can I change the key-bindings (hot-keys) in Sylpheed?
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q08  Can I close windows without the mouse?
+          <para>Can I close windows without the mouse?
 </para>
         </question>
         <answer>
-          <para>Of course!! Not all windows, but by pressing ESCape,
+          <para>Of course! Not all windows, but by pressing <keycap>Escape</keycap>,
      you can close the addressbook, the window of viewing
-     a mail-source (message-&gt;view source), the window of
+     a mail source (<guimenu>View</guimenu>-&gt;<guimenuitem>Message source</guimenuitem>), the window of
      viewing the headers, and several others. Just give
      it a try and you will find all of them.
 </para>
@@ -125,8 +117,7 @@ Q08  Can I close windows without the mouse?
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q09  Can I change the way the date is displayed in the message summary?
+          <para>Can I change the way the date is displayed in the message summary?
 </para>
         </question>
         <answer>
@@ -136,68 +127,60 @@ Q09  Can I change the way the date is displayed in the message summary?
      %A = full weekday name   %a = short month name
      %B = full month name     %b = short month name
      %H = hours in 24-clock   %I = hours in 12-clock
-     For more information go to the configuration menu,
-     select Common preferences / Display and move the
-     mouse cursor over the input box for the date display
-     format.
+     For more information, go to the <guimenu>Configuration</guimenu> menu,
+     select <guimenuitem>Common preferences</guimenuitem> -&gt; <guimenuitem>Display</guimenuitem> tab -&gt; <guimenuitem>General</guimenuitem> tab and choose the <guibutton>...</guibutton> labeled button.
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q10  Why can&apos;t I see the compface pictures?
+          <para>Why can&apos;t I see the compface pictures?
 </para>
         </question>
         <answer>
           <para>You need to enable displaying of the header pane in the
-     general preferences
+     general preferences.
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q11  I still can&apos;t see the pictures. Why not?
+          <para>I still can&apos;t see the pictures. Why not?
 </para>
         </question>
         <answer>
-          <para>You may not have compiled in Compface support. See Q11
-     in the Installation/Configuration section.
+          <para>You may not have compiled in Compface support. See  the appropriate question in the Installation/Configuration section.
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q12  Why does the URL Launcher not launch my webbrowser?
+          <para>Why does the URL launcher not launch my web browser?
 </para>
         </question>
         <answer>
-          <para>You need to double-click the url.
+          <para>You need to double click the URL.
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q13 Attachments with spaces in the name won&apos;t open!
+          <para>Attachments with spaces in the name won&apos;t open!
 </para>
         </question>
         <answer>
           <para>When you try to launch a helper application, like an image viewer, with an attachment that has spaces in the name, put quotes around the %s
-parameter. Example: gedit &apos;%s&apos;
+parameter. Example: <command>gedit &apos;%s&apos;</command>
 </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
-          <para>
-Q14. Where is the Bcc when I compose a mail?
+          <para>Where is the Bcc when I compose a mail?
 </para>
         </question>
         <answer>
-          <para>Open Configuration -&gt; Preferences for current account -&gt; Compose. There you can check the Bcc checkbox and optionally enter an e-mail address.
+          <para>Open <guimenu>Configuration</guimenu> -&gt; <guimenuitem>Preferences for current account...</guimenuitem> -&gt; <guimenuitem>Compose</guimenuitem> tab. There you can check the <guilabel>Bcc</guilabel> checkbox and optionally enter an e-mail address.
 </para>
         </answer>
       </qandaentry>
