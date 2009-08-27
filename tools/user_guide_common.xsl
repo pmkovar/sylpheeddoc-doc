@@ -67,13 +67,14 @@
 
 <xsl:param name="label.from.part">0</xsl:param>
 
-<!-- Generate ToC for book, article, chapter and appendix -->
+<!-- Generate ToC for book, article, chapter, qandaset and appendix -->
 
 <xsl:param name="generate.toc">
 	appendix toc
 	article toc
 	book toc,figure
 	chapter toc
+	qandaset  toc
 </xsl:param>
 
 <!-- Indent between levels of the ToC..: 10       -->

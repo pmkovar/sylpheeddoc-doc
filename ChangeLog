@@ -1,3 +1,7 @@
+2009-08-27  Petr Kovar  <pknbe@volny.cz>
+
+	* tools/user_guide_common.xsl: Generate ToC also for qandaset.
+
 2009-08-12  Petr Kovar  <pknbe@volny.cz>
 
 	* Makefile: Add the 'faq_chunks.xsl' stylesheet.
