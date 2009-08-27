@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-1">
-  <title>Sylpheed FAQ - General Information</title>
-  <qandaset>
-    <qandadiv id="faq-general">
-      <title>General Information</title>
+<title>Sylpheed FAQ - General Information</title>
+<qandaset id="faq-general">
+<?dbhtml cellspacing="13px" ?>
 <!--   
    <qandaentry>
     <question id="">
@@ -508,12 +507,12 @@
         </question>
         <answer>
           <para>The current members of the Sylpheed Documentation Project are:</para>
-          <literallayout>
+          <programlisting>
 Francois Barriere      fbarriere@users.sourceforge.net
 Petr Kovar             pknbe@users.sourceforge.net
-</literallayout>
+</programlisting>
           <para>Below is the list of former members of the Sylpheed Documentation Project. Big thank you goes to all of them!</para>
-          <literallayout>
+          <programlisting>
 Martin   Bretschneider furbour@users.sourceforge.net
 Olivier  Delhomme      dup@users.sourceforge.net
 Doruk    Fisek         dobidik@users.sourceforge.net
@@ -525,9 +524,9 @@ Jens     Oberender     jobi@users.sourceforge.net
 Marcelo  Ramos         hackpando@users.sourceforge.net
 Guido    Rudolphi      malatesta@users.sourceforge.net
 Frank    Weng          fweng@users.sourceforge.net
-</literallayout>
+</programlisting>
         </answer>
-      </qandaentry>
-    </qandadiv>
-  </qandaset>
+</qandaentry>
+</qandaset>
 </chapter>
+

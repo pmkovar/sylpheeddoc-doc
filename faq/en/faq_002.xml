@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-2">
-  <title>Sylpheed FAQ - Installation and Configuration</title>
-  <qandaset>
-    <qandadiv id="faq-installation">
-      <title>Installation and Configuration</title>
+<title>Sylpheed FAQ - Installation and Configuration</title>
+<qandaset id="faq-installation">
+<?dbhtml cellspacing="13px" ?>
       <qandaentry>
         <question>
           <para>What does it take to compile Sylpheed?
@@ -315,25 +314,16 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
      them into the <filename>ac</filename> directory and run <filename>autogen.sh</filename> again.</para>
           <para>
      If there are still some <filename>.m4</filename> files not found (e.g. those from GTK+), try
-     to run </para>
-          <literallayout>
-     % locate m4 | less
-</literallayout>
-          <para>
-     or</para>
-          <literallayout>
-     % locate aclocal | less
-</literallayout>
-          <para>to find additional directories containing those macros. If you find e.g. a
+     to run <command>% locate m4 | less</command> or <command>% locate aclocal | less</command> to find additional directories containing those macros. If you find e.g. a
      <filename>gtk.m4</filename> in <filename>/opt/gnome/share/aclocal</filename>, change following line in
      <filename>autogen.sh</filename> from</para>
-          <literallayout>
+          <programlisting>
      aclocal -I ac \
-</literallayout>
+</programlisting>
           <para>     to</para>
-          <literallayout>
+          <programlisting>
      aclocal -I ac -I /opt/gnome/share/aclocal \
-</literallayout>
+</programlisting>
           <para>and run it again.
 </para>
         </answer>
@@ -500,6 +490,6 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
 </para>
         </answer>
       </qandaentry>
-    </qandadiv>
-  </qandaset>
+</qandaset>
 </chapter>
+

@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <chapter id="sylpheed-faq-3">
-  <title>Sylpheed FAQ - Interface</title>
-  <qandaset>
-    <qandadiv id="faq-interface">
-      <title>Interface</title>
+<title>Sylpheed FAQ - Interface</title>
+<qandaset id="faq-interface">
+<?dbhtml cellspacing="13px" ?>
       <qandaentry>
         <question>
           <para>How do I make Sylpheed display my language?
@@ -121,13 +120,13 @@
 </para>
         </question>
         <answer>
-          <para>As of 0.4.65 you can. The options are:
+          <para>As of 0.4.65 you can. The options are:</para><programlisting>
      %y = year in numbers     %m = month in number
      %d = day in numbers      %c = date/time for locale
      %A = full weekday name   %a = short month name
      %B = full month name     %b = short month name
-     %H = hours in 24-clock   %I = hours in 12-clock
-     For more information, go to the <guimenu>Configuration</guimenu> menu,
+     %H = hours in 24-clock   %I = hours in 12-clock</programlisting>
+     <para>For more information, go to the <guimenu>Configuration</guimenu> menu,
      select <guimenuitem>Common preferences</guimenuitem> -&gt; <guimenuitem>Display</guimenuitem> tab -&gt; <guimenuitem>General</guimenuitem> tab and choose the <guibutton>...</guibutton> labeled button.
 </para>
         </answer>
@@ -184,6 +183,5 @@ parameter. Example: <command>gedit &apos;%s&apos;</command>
 </para>
         </answer>
       </qandaentry>
-    </qandadiv>
-  </qandaset>
+</qandaset>
 </chapter>

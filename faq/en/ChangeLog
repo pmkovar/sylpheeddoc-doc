@@ -1,3 +1,9 @@
+2009-08-27  Petr Kovar  <pknbe@volny.cz>
+
+	* *.xml: Better formatting of qandaset tables. Still using
+	the shade.verbatim parameter for the IE compatibility's sake.
+	qandaset TOCs are now generated in each FAQ chunk.
+
 2009-08-23  Petr Kovar  <pknbe@volny.cz>
 
 	* *.xml: First round of very basic FAQ updates.
