@@ -30,20 +30,16 @@
 
 <xsl:param name="insert.xref.page.number">1</xsl:param>
 
-
 <!-- =================================================================
    -  HTML: Use HTML stylesheet with the output:
    - =================================================================
    -->
 
-<xsl:param name="html.stylesheet"     >user_guides.css</xsl:param>
-<xsl:param name="html.stylesheet.type">text/css</xsl:param>
 <xsl:param name="css.decoration"      >1</xsl:param>
 
 <!-- Show revision flag as class attribute for CSS decoration -->
 
 <xsl:param name="show.revisionflag">0</xsl:param>
-
 
 <!-- =================================================================
    -  Automatically generated parts: ToC, numbering, index,....
@@ -85,7 +81,6 @@
 <!-- Depth of sections in ToC..........: not used -->
 <!-- Generate the index................: true     -->
 
-
 <xsl:param name="toc.indent.width"          >10</xsl:param>
 <xsl:param name="autotoc.label.separator"   >.  </xsl:param>
 <xsl:param name="bridgehead.in.toc"         >0</xsl:param>
@@ -105,7 +100,6 @@
 	<xsl:attribute name="space-after.optimum" >1em</xsl:attribute>
 	<xsl:attribute name="space-after.maximum" >2em</xsl:attribute>
 </xsl:attribute-set>
-
 
 <!-- =================================================================
    -  Generic decoration and rendering:
@@ -218,7 +212,6 @@
 	<xsl:attribute name="background-color">#E0E0E0</xsl:attribute>
 </xsl:attribute-set>
 
-
 <!-- blockquote rendering: -->
 
 <xsl:attribute-set name="blockquote.properties">
@@ -267,7 +260,6 @@
 
 <xsl:param name="funcsynopsis.style">ansi</xsl:param>
 
-
 <!-- =================================================================
    -  Tables layout and properties:
    - =================================================================
@@ -290,5 +282,14 @@
 <xsl:param name="default.table.width">18cm</xsl:param>
 <xsl:param name="nominal.table.width">18cm</xsl:param>
 
+<!-- =================================================================
+   -  Nice (X)HTML output:
+   - =================================================================
+   -->
+
+<xsl:param name="make.valid.html" select="1"></xsl:param>
+<xsl:param name="html.cleanup" select="1"></xsl:param>
+<!-- xsl:param name="chunker.output.doctype-public">-//W3C//DTD HTML 4.01 Transitional//EN</xsl:param -->
+<!-- xsl:param name="chunker.output.doctype-system">http://www.w3.org/TR/html4/loose.dtd</xsl:param -->
 
 </xsl:stylesheet>

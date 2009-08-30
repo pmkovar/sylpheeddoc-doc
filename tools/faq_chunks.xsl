@@ -1,4 +1,7 @@
 <?xml version='1.0'?>
+<!DOCTYPE xsl:stylesheet [
+<!ENTITY css SYSTEM "faq.css">
+]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 version='1.0'>
 
@@ -72,5 +75,21 @@
 <!-- Show next and previous sections titles in nav bars -->
 
 <xsl:param name="navig.showtitles">1</xsl:param>
+
+<!-- Auto label qandadiv -->
+
+<xsl:param name="qandadiv.autolabel" select="1"></xsl:param>
+
+<!-- Add CSS stylesheet content to the HTML header -->
+
+<xsl:template name="user.head.content">
+<style type="text/css">
+&css;
+</style>
+</xsl:template>
+
+<!-- Nice HTML output -->
+
+<xsl:param name="chunker.output.indent">yes</xsl:param>
 
 </xsl:stylesheet>
