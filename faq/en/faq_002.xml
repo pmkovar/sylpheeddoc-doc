@@ -1,14 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-2">
-<title>Sylpheed FAQ - Installation and Configuration</title>
-<qandaset id="faq-installation">
-<?dbhtml cellspacing="13px" ?>
-      <qandaentry>
-        <question>
-          <para>What does it take to compile Sylpheed?
+  <title>Sylpheed FAQ - Installation and Configuration</title>
+  <qandaset id="faq-installation">
+<?dbhtml cellspacing="13px" ?>    <qandaentry>
+      <question>
+        <para>What does it take to compile Sylpheed?
 </para>
-        </question>
-        <answer>
-          <para>Any POSIX compliant UNIX or similar OS, e.g. Linux,
+      </question>
+      <answer>
+        <para>Any POSIX compliant UNIX or similar OS, e.g. Linux,
 FreeBSD, Solaris.
 GTK+ 2.4.0 or later (GTK+ 2.6.0 or later
 is recommended).
@@ -17,162 +16,168 @@ work).
 Note: it is reported that Sun C will not compile
 Sylpheed.
 Optionally:</para>
-          <itemizedlist>
-            <listitem>
-              <para>compface (for X-Face)</para>
-            </listitem>
-            <listitem>
-              <para>GPGME (for GnuPG)</para>
-            </listitem>
-            <listitem>
-              <para>OpenSSL for SSL support</para>
-            </listitem>
-            <listitem>
-              <para>GtkSpell for a spell checking feature</para>
-            </listitem>
-            <listitem>
-              <para>JPilot</para>
-            </listitem>
-            <listitem>
-              <para>LDAP</para>
-            </listitem>
-            <listitem>
-              <para>the equivalent of GTK+-devel and Xfree86-devel</para>
-            </listitem>
-            <listitem>
-              <para>you may also require flex (lex) and bison
+        <itemizedlist>
+          <listitem>
+            <para>compface (for X-Face)</para>
+          </listitem>
+          <listitem>
+            <para>GPGME (for GnuPG)</para>
+          </listitem>
+          <listitem>
+            <para>OpenSSL for SSL support</para>
+          </listitem>
+          <listitem>
+            <para>GtkSpell for a spell checking feature</para>
+          </listitem>
+          <listitem>
+            <para>JPilot</para>
+          </listitem>
+          <listitem>
+            <para>LDAP</para>
+          </listitem>
+          <listitem>
+            <para>the equivalent of GTK+-devel and Xfree86-devel</para>
+          </listitem>
+          <listitem>
+            <para>you may also require flex (lex) and bison
 (yacc).</para>
-            </listitem>
-          </itemizedlist>
-          <para>Otherwise ./configure will fail.
+          </listitem>
+        </itemizedlist>
+        <para>Otherwise ./configure will fail.
 See also the <filename>INSTALL</filename> file that is being distributed with the Sylpheed tarball.</para>
-          <para>Note that as Sylpheed now supports the Windows platform, you can also compile it using <ulink url="http://www.mingw.org/">MinGW</ulink>.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How do I set up Sylpheed?
+        <para>Note that as Sylpheed now supports the Windows platform, you can also compile it using <ulink url="http://www.mingw.org/">MinGW</ulink>.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I set up Sylpheed?
 </para>
-        </question>
-        <answer>
-          <para>When you run Sylpheed for the first time, it will
+      </question>
+      <answer>
+        <para>When you run Sylpheed for the first time, it will
 ask you where you want to store your mailboxes. The
 default is <filename>$HOME/Mail</filename>. You can change this to
 anything you like as long as it is a valid directory
 name.</para>
-          <para>Please note: When Sylpheed is executed for the first time, it automatically creates the configuration files under <filename>$HOME/.sylpheed-2.0/</filename>, and asks you the location of mailbox. The default is <filename>$HOME/Mail</filename>. If some files which are non-MH format already exist on the directory, you will have to specify another location.
+        <para>Please note: When Sylpheed is executed for the first time, it automatically creates the configuration files under <filename>$HOME/.sylpheed-2.0/</filename>, and asks you the location of mailbox. The default is <filename>$HOME/Mail</filename>. If some files which are non-MH format already exist on the directory, you will have to specify another location.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Why did the creation of the mailbox fail?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Why did the creation of the mailbox fail?
 </para>
-        </question>
-        <answer>
-          <para>Sylpheed reports such an error if it can&apos;t create the default
-mailboxes (inbox, outbox, etc ...). This can be because <filename>&lt;homedir&gt;/Mail</filename>
+      </question>
+      <answer>
+        <para>Sylpheed reports such an error if it can&apos;t create the default
+mailboxes (inbox, outbox, etc ...). This can be because <filename>$HOME/Mail</filename>
 already contains files with the same names. This occurs when switching from
 Kmail to Sylpheed, in this case backup and remove the existing Mail
 directory or use another name for the Sylpheed mail directory.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How do I set up an account?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I set up an account?
 </para>
-        </question>
-        <answer>
-          <para>After loading Sylpheed for the first time, you can
-add an e-mail account by clicking the
-&quot;<guimenu>Configuration</guimenu>&quot; menu. Select the option &quot;<guimenuitem>Create new account</guimenuitem>&quot; and fill in the appropriate fields.
+      </question>
+      <answer>
+        <para>After loading Sylpheed for the first time, you can
+add an e-mail account by clicking the<guimenu>Configuration</guimenu> menu. Select the option <guimenuitem>Create new account</guimenuitem> and fill in the appropriate fields.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How many accounts can I set up in Sylpheed?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How many accounts can I set up in Sylpheed?
 </para>
-        </question>
-        <answer>
-          <para>The number is unlimited. The limit is reached when
+      </question>
+      <answer>
+        <para>The number is unlimited. The limit is reached when
 your computer stops responding.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Why does Sylpheed not delete my mails when I press &quot;Delete&quot;? I set a filter, and Sylpheed does not filter. I moved a mail to a different mailbox and it did not move.
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Why does Sylpheed not delete my mails when I press &quot;Delete&quot;? I set a filter, and Sylpheed does not filter. I moved a mail to a different mailbox and it did not move.
 </para>
-        </question>
-        <answer>
-          <para>You have to click the &quot;<guiicon>Execute</guiicon>&quot; button.
+      </question>
+      <answer>
+        <para>You have to click the <guiicon>Execute</guiicon> button.
 The other solution: in the configuration settings
-(<guimenuitem>Common preferences</guimenuitem> -&gt; <guimenuitem>Details</guimenuitem> tab -&gt; <guimenuitem>Interface</guimenuitem> tab) you have to
-check the &quot;<guilabel>Execute immediately when moving or deleting messages</guilabel>&quot; box.
+(<menuchoice>
+            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Details</guimenuitem>
+            <guimenuitem>Interface</guimenuitem>
+          </menuchoice>), you have to
+check the <guilabel>Execute immediately when moving or deleting messages</guilabel> box.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Can I set up special addresses/ports for my mailserver/newsserver?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Can I set up special addresses/ports for my mailserver/newsserver?
 </para>
-        </question>
-        <answer>
-          <para>Yes, you can. In the configuration per account you
+      </question>
+      <answer>
+        <para>Yes, you can. In the configuration per account you
 can specify the exact port addresses you want to use.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Does Sylpheed have options for threading messages?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Does Sylpheed have options for threading messages?
 </para>
-        </question>
-        <answer>
-          <para>Yes. You can switch it on and off in the <guimenu>View</guimenu>
-     menu, just select &quot;<guimenuitem>Thread view</guimenuitem>&quot; or press <keycap>Ctrl+T</keycap>.
+      </question>
+      <answer>
+        <para>Yes. You can switch it on and off in the <guimenu>View</guimenu>
+     menu, just select <guimenuitem>Thread view</guimenuitem> or press <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>T</keycap>
+          </keycombo>.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Can I create multiple levels of subfolders to store mail?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Can I create multiple levels of subfolders to store mail?
 </para>
-        </question>
-        <answer>
-          <para>Absolutely. This is no problem.
+      </question>
+      <answer>
+        <para>Absolutely. This is no problem.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Why isn&apos;t Sylpheed sending my mail out?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Why isn&apos;t Sylpheed sending my mail out?
 </para>
-        </question>
-        <answer>
-          <para>You need to create at least one account in order to
+      </question>
+      <answer>
+        <para>You need to create at least one account in order to
      send. (This is a wonderful gotcha on LAN installs
      with only a local mailbox feed).
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How do I apply a patch after downloading it?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I apply a patch after downloading it?
 </para>
-        </question>
-        <answer>
-          <para>Copy patch to sylpheed directory.
+      </question>
+      <answer>
+        <para>Copy patch to sylpheed directory.
      Apply the patch as follows:</para>
-          <para>
+        <para>
      <command>% patch -p0 &lt; some.patch</command></para>
-          <para>
+        <para>
      Or, if it&apos;s gzipped:</para>
-          <para>
+        <para>
      <command>% gzip -dc some.patch.gz | patch -p0</command></para>
-          <para>
+        <para>
      Run <filename>./autogen.sh</filename>, remove the generated <filename>/config.cache</filename>
      file (unless you want to install in prefix
      <filename>/usr/local</filename>).
@@ -180,316 +185,319 @@ can specify the exact port addresses you want to use.
      then <filename>make</filename>.
      (Text as found on the former Sylpheed patches page.)
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How do I compile in support for compface pictures?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I compile in support for compface pictures?
 </para>
-        </question>
-        <answer>
-          <para>You have to have a package called <computeroutput>libcompface</computeroutput>
+      </question>
+      <answer>
+        <para>You have to have a package called <computeroutput>libcompface</computeroutput>
      installed, so this is available for compiling into
      Sylpheed. Note that the exact name of the package depends on  OS or distribution you use.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How do I make my own compface image?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I make my own compface image?
 </para>
-        </question>
-        <answer>
-          <para>The faces package contains a program called xbm2ikon script,
+      </question>
+      <answer>
+        <para>The faces package contains a program called xbm2ikon script,
  which converts a 48x48 xbm to the format suitable for
  compface. Thanks to Jeff Dairiki, you can have a complete online course in this. Visit <ulink url="http://www.dairiki.org/xface/">this page</ulink> for the details.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I tell my browser/newsclient/other program to use Sylpheed as e-mail program?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I tell my browser/newsclient/other program to use Sylpheed as e-mail program?
 </para>
-        </question>
-        <answer>
-          <para> In the settings part of the program, write
+      </question>
+      <answer>
+        <para> In the settings part of the program, write
        <computeroutput>sylpheed --compose</computeroutput></para>
-          <para>
+        <para>
 Specific options for typical browsers:</para>
-          <itemizedlist>
-            <listitem>
-              <para>Opera: <computeroutput>sylpheed --compose [mailto:%t][?subject=%s] </computeroutput></para>
-            </listitem>
-            <listitem>
-              <para>Galeon: <computeroutput>sylpheed --compose &quot;mailto:%t?subject=%s&quot;</computeroutput></para>
-            </listitem>
-          </itemizedlist>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How do I enable GPG support in Sylpheed?
+        <itemizedlist>
+          <listitem>
+            <para>Opera: <computeroutput>sylpheed --compose [mailto:%t][?subject=%s] </computeroutput></para>
+          </listitem>
+          <listitem>
+            <para>Galeon: <computeroutput>sylpheed --compose &quot;mailto:%t?subject=%s&quot;</computeroutput></para>
+          </listitem>
+        </itemizedlist>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I enable GPG support in Sylpheed?
 </para>
-        </question>
-        <answer>
-          <para> When compiling Sylpheed, make sure you add <computeroutput>--enable-gpgme</computeroutput> in the ./configure command.
+      </question>
+      <answer>
+        <para> When compiling Sylpheed, make sure you add <parameter>--enable-gpgme</parameter> in the <command>./configure</command> command.
 When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> section in the <guimenuitem>Common Preferences</guimenuitem>.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Mutt does not recognize Sylpheed&apos;s MH structure
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Mutt does not recognize Sylpheed&apos;s MH structure
 </para>
-        </question>
-        <answer>
-          <para>For this to work you need to use the <command>touch</command> command in every MH folder. &quot;<command>touch</command>&quot; the file <filename>.xmhcache</filename> and Mutt should do just fine.
+      </question>
+      <answer>
+        <para>For this to work you need to use the <command>touch</command> command in every MH folder. &quot;<command>touch</command>&quot; the file <filename>.xmhcache</filename> and Mutt should do just fine.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Viewing a GIF file within Sylpheed causes a segmentation fault.
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Viewing a GIF file within Sylpheed causes a segmentation fault.
 </para>
-        </question>
-        <answer>
-          <para>In case this happens, you can easily fix that by adding the following to /etc/mime.types:</para>
-          <para>
-<computeroutput>image/gif gif</computeroutput>
+      </question>
+      <answer>
+        <para>In case this happens, you can easily fix that by adding the following to <filename>/etc/mime.types</filename>:</para>
+        <programlisting>image/gif gif</programlisting>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I make Sylpheed notify me when new mail arrives?
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I make Sylpheed notify me when new mail arrives?
+      </question>
+      <answer>
+        <para>Download Gkrellm or a similar program that is able to notify you of new incoming mail. Gkrellm is available at <ulink url="http://www.gkrellm.net">the Gkrellm page</ulink>.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Can I use a spell checker with Sylpheed?
 </para>
-        </question>
-        <answer>
-          <para>Download Gkrellm or a similar program that is able to notify you of new incoming mail. Gkrellm is available at <ulink url="http://www.gkrellm.net">the Gkrellm page</ulink>.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Can I use a spell checker with Sylpheed?
+      </question>
+      <answer>
+        <para>Yes. You need to have GtkSpell installed prior to Sylpheed compilation. The support for GtkSpell is enabled by default in  <command>configure</command>. (If you want to disable it, make sure you add <parameter>--disable-gtkspell</parameter> in the <command>./configure</command> command.)</para>
+        <para>The GtkSpell option is not supported in Sylpheed for Windows (yet), so you will have no spell checking under this OS.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I make Sylpheed send my compface image in the mails?
 </para>
-        </question>
-        <answer>
-          <para>Yes. You need to have GtkSpell installed prior to Sylpheed compilation. The support for GtkSpell is enabled by default in  <computeroutput>configure</computeroutput>. (If you want to disable it, make sure you add <computeroutput>--disable-gtkspell</computeroutput> in the <command>./configure</command> command.)</para>
-          <para>The GtkSpell option is not supported in Sylpheed for Windows (yet), so you will have no spell checking under this OS.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I make Sylpheed send my compface image in the mails?
+      </question>
+      <answer>
+        <para>In the <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Preferences for current account...</guimenuitem>
+            <guimenuitem>Send</guimenuitem>
+          </menuchoice> check <guilabel>Add user-defined header</guilabel> and press <guibutton>Edit</guibutton> button. A dialog appears, add a header named &quot;X-Face&quot; and fill the value field with your face data. Note that if you paste the data from a terminal into the field, some spurious newlines can be added, and these can mangle your face, be careful.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>I checked out the sources using SVN and can&apos;t find any configure script.
 </para>
-        </question>
-        <answer>
-          <para>In the <guimenu>Configuration</guimenu> menu, <guimenuitem>Preferences for current account...</guimenuitem>, <guimenuitem>Send</guimenuitem> tab, check <guilabel>Add user-defined header</guilabel> and press <guibutton>Edit</guibutton> button. A dialog appears, add a header named &quot;X-Face&quot; and fill the value field with your face data. Note that if you paste the data from a terminal into the field, some spurious newlines can be added, and these can mangle your face, be careful.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>I checked out the sources using SVN and can&apos;t find any configure script.
-</para>
-        </question>
-        <answer>
-          <para>The SVN versions are meant to be used by developers rather than &quot;normal&quot;
+      </question>
+      <answer>
+        <para>The SVN versions are meant to be used by developers rather than &quot;normal&quot;
      users, so the source (or binary) distributions are easier to use.</para>
-          <para>
-     - Yeah, but the latest features from SVN really look sexy...</para>
-          <para>
-     You need to generate the configure script by running <filename>autogen.sh</filename>.
+        <blockquote>
+          <para>Yeah, but the latest features from SVN really look sexy...</para>
+        </blockquote>
+        <para>You need to generate the configure script by running <filename>autogen.sh</filename>.
      Be sure to have autoconf and automake packages installed for this.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Running &quot;autogen.sh&quot; gives error messages that &quot;AM_PATH_GDK_PIXBUF&quot; or
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Running &quot;autogen.sh&quot; gives error messages that &quot;AM_PATH_GDK_PIXBUF&quot; or
      &quot;AM_PATH_(whatever)&quot; is not found.
 </para>
-        </question>
-        <answer>
-          <para>There are some *.m4 files in the <filename>ac/missing</filename> directory. Try to copy
+      </question>
+      <answer>
+        <para>There are some <filename>*.m4</filename> files in the <filename>ac/missing</filename> directory. Try to copy
      them into the <filename>ac</filename> directory and run <filename>autogen.sh</filename> again.</para>
-          <para>
+        <para>
      If there are still some <filename>.m4</filename> files not found (e.g. those from GTK+), try
      to run <command>% locate m4 | less</command> or <command>% locate aclocal | less</command> to find additional directories containing those macros. If you find e.g. a
      <filename>gtk.m4</filename> in <filename>/opt/gnome/share/aclocal</filename>, change following line in
      <filename>autogen.sh</filename> from</para>
-          <programlisting>
-     aclocal -I ac \
-</programlisting>
-          <para>     to</para>
-          <programlisting>
-     aclocal -I ac -I /opt/gnome/share/aclocal \
-</programlisting>
-          <para>and run it again.
+        <programlisting>     aclocal -I ac \</programlisting>
+        <para>     to</para>
+        <programlisting>     aclocal -I ac -I /opt/gnome/share/aclocal \</programlisting>
+        <para>and run it again.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>I don&apos;t want to compile in support for ... any longer, but after running
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>I don&apos;t want to compile in support for ... any longer, but after running
      &quot;configure&quot;, those libraries are still used.
 </para>
-        </question>
-        <answer>
-          <para>Remove the <filename>config.cache</filename> file and run <command>./configure</command> again. You should
-     also use &quot;make clean&quot; to avoid undefined references.
+      </question>
+      <answer>
+        <para>Remove the <filename>config.cache</filename> file and run <command>./configure</command> again. You should
+     also use <command>make clean</command> to avoid undefined references.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I select different applications to open with specific MIME types?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I select different applications to open with specific MIME types?
 </para>
-        </question>
-        <answer>
-          <para>The MIME-type-&gt;application associations are kept in <filename>/etc/mailcap</filename>.
+      </question>
+      <answer>
+        <para>The MIME-type to application associations are kept in <filename>/etc/mailcap</filename>.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I change the suggested mimetype for attachments?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I change the suggested mimetype for attachments?
 </para>
-        </question>
-        <answer>
-          <para>The extension-&gt;MIME-type associations are kept in <filename>/etc/mime.types</filename>
+      </question>
+      <answer>
+        <para>The extension to MIME-type associations are kept in <filename>/etc/mime.types</filename>
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>The folderlist is not updated after I manually moved/copied folders.
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>The folderlist is not updated after I manually moved/copied folders.
 </para>
-        </question>
-        <answer>
-          <para>You need to update Sylpheeds cache. Right click on the mailbox and choose
-     &quot;<guimenuitem>Rebuild folder tree</guimenuitem>&quot;.
+      </question>
+      <answer>
+        <para>You need to update Sylpheeds cache. Right click on the mailbox and choose
+     <guimenuitem>Rebuild folder tree</guimenuitem>.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I revert original settings, e.g. for fonts, keybindings, etc.?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I revert original settings, e.g. for fonts, keybindings, etc.?
 </para>
-        </question>
-        <answer>
-          <para>Sylpheed keeps its configuration files in <filename>$HOME/.sylpheed-2.0/sylpheedrc</filename> and creates default
+      </question>
+      <answer>
+        <para>Sylpheed keeps its configuration files in <filename>$HOME/.sylpheed-2.0/sylpheedrc</filename> and creates default
      entries, if none are found. So the easiest way is to quit Sylpheed,
      temporarily renaming your <filename>$HOME/.sylpheed-2.0</filename> e.g. to <filename>*.bak</filename> and restarting
      Sylpheed in order to get default entries.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>What environment variables have effect on Sylpheed?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>What environment variables have effect on Sylpheed?
 </para>
-        </question>
-        <answer>
-          <para>Here are the most common variables:</para>
-          <itemizedlist>
-            <listitem>
-              <para>HOME
+      </question>
+      <answer>
+        <para>Here are the most common variables:</para>
+        <itemizedlist>
+          <listitem>
+            <para><envar>HOME</envar>
       - location of <filename>.sylpheed-2.0</filename> (config directory) and default folder for Mailboxes.</para>
-              <para>LANG,</para>
-            </listitem>
-            <listitem>
-              <para>LC_ALL,</para>
-            </listitem>
-            <listitem>
-              <para>LC_CTYPE,</para>
-            </listitem>
-            <listitem>
-              <para>LC_MESSAGES - locale settings, e.g. language and date format.</para>
-            </listitem>
-          </itemizedlist>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Special characters (e.g. umlauts) are not displayed correctly.
+          </listitem>
+          <listitem>
+            <para><envar>LANG</envar>,</para>
+          </listitem>
+          <listitem>
+            <para><envar>LC_ALL</envar>,</para>
+          </listitem>
+          <listitem>
+            <para><envar>LC_CTYPE</envar>,</para>
+          </listitem>
+          <listitem>
+            <para><envar>LC_MESSAGES</envar> - locale settings, e.g. language and date format.</para>
+          </listitem>
+        </itemizedlist>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Special characters (e.g. umlauts) are not displayed correctly.
 </para>
-        </question>
-        <answer>
-          <para>In most cases, this is caused by fonts that use an unsuitable encoding on a not Unicode-based system. (On a Unicode-based system, fonts should support all thinkable characters for the vast majority of languages.)</para>
-          <para>Choose <guimenu>Configuration</guimenu> -&gt; <guimenuitem>Common preferences</guimenuitem> -&gt; <guimenuitem>Display</guimenuitem> tab -&gt; <guimenuitem>General</guimenuitem> tab, and click the button right to  <guilabel>Text font</guilabel>. Now, a special dialog appears that allows you to pick a desirable font family, style, and size.</para>
-          <para>You should also make sure that your environment variables regarding locale
+      </question>
+      <answer>
+        <para>In most cases, this is caused by fonts that use an unsuitable encoding on a not Unicode-based system. (On a Unicode-based system, fonts should support all thinkable characters for the vast majority of languages.)</para>
+        <para>Choose <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Display</guimenuitem>
+            <guimenuitem>General</guimenuitem>
+          </menuchoice>, and click the button right to  <guilabel>Text font</guilabel>. Now, a special dialog appears that allows you to pick a desirable font family, style, and size.</para>
+        <para>You should also make sure that your environment variables regarding locale
      settings have sensible values.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I convert my old mailbox/adressbook from (some mailclient).
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I convert my old mailbox/adressbook from (some mailclient).
 </para>
-        </question>
-        <answer>
-          <para>In the source distribution, you can find some scripts in the &quot;<filename>tools</filename>&quot;
-     subdirectory, maybe your application is supported. You can also try to
+      </question>
+      <answer>
+        <para>You can  try to
      export your old mailbox to MH,  MBOX or EML format.</para>
-          <para>
-     Tip: Take a look at the <guimenuitem>Add sender to address book...</guimenuitem> item from the <guimenu>Tools</guimenu>
+        <tip>
+          <para>Take a look at the <guimenuitem>Add sender to address book...</guimenuitem> item from the <guimenu>Tools</guimenu>
      menu, it could be a useful alternative or addition, when importing your old
-     contacts.
+     contacts.</para>
+        </tip>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>What config files are there, and what are they used for?
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>What config files are there, and what are they used for?
-</para>
-        </question>
-        <answer>
-          <para>Sylpheeds config files can be found in <filename>$HOME/.sylpheed-2.0</filename>. They are in plain
+      </question>
+      <answer>
+        <para>Sylpheeds config files can be found in <filename>$HOME/.sylpheed-2.0</filename>. They are in plain
      text format and quite easy to understand, so don&apos;t fear to take a look
      into them using a texteditor.</para>
-          <itemizedlist>
-            <listitem>
-              <para><filename>sylpheedrc</filename>      - main configuration: nearly all options from the
+        <itemizedlist>
+          <listitem>
+            <para><filename>sylpheedrc</filename>      - main configuration: nearly all options from the
                         settings window, e.g. mailbox location, font
                         entries, etc.</para>
-            </listitem>
-            <listitem>
-              <para><filename>accountrc</filename>       - settings for POP/IMAP/NNTP accounts</para>
-            </listitem>
-            <listitem>
-              <para><filename>actionsrc</filename>       - user-defined actions</para>
-            </listitem>
-            <listitem>
-              <para><filename>addrbook-*.xml</filename>  - contents of your addressbook</para>
-            </listitem>
-            <listitem>
-              <para><filename>customheaderrc</filename>  - contains user-defined header lines</para>
-            </listitem>
-            <listitem>
-              <para><filename>dispheaderrc</filename>    - headers to display above the mail body</para>
-            </listitem>
-            <listitem>
-              <para><filename>filter.xml</filename>        -  filter settings</para>
-            </listitem>
-            <listitem>
-              <para><filename>folderlist.xml</filename>  -  folder specific settings, e.g. hiding
+          </listitem>
+          <listitem>
+            <para><filename>accountrc</filename>       - settings for POP/IMAP/NNTP accounts</para>
+          </listitem>
+          <listitem>
+            <para><filename>actionsrc</filename>       - user-defined actions</para>
+          </listitem>
+          <listitem>
+            <para><filename>addrbook-*.xml</filename>  - contents of your addressbook</para>
+          </listitem>
+          <listitem>
+            <para><filename>customheaderrc</filename>  - contains user-defined header lines</para>
+          </listitem>
+          <listitem>
+            <para><filename>dispheaderrc</filename>    - headers to display above the mail body</para>
+          </listitem>
+          <listitem>
+            <para><filename>filter.xml</filename>        -  filter settings</para>
+          </listitem>
+          <listitem>
+            <para><filename>folderlist.xml</filename>  -  folder specific settings, e.g. hiding
                         read messages, sort order, etc.</para>
-            </listitem>
-            <listitem>
-              <para><filename>menurc</filename>          - Key bindings</para>
-            </listitem>
-          </itemizedlist>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>What to do when printing an e-mail prints off the paper?
+          </listitem>
+          <listitem>
+            <para><filename>menurc</filename>          - Key bindings</para>
+          </listitem>
+        </itemizedlist>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>What to do when printing an e-mail prints off the paper?
 </para>
-        </question>
-        <answer>
-          <para>You can use enscript for this. Use <command>enscript %s</command> to print everything on one page, or <command>enscript -U2 %s</command> for printing two logical pages on one physical page.
+      </question>
+      <answer>
+        <para>You can use enscript for this. Use <command>enscript %s</command> to print everything on one page, or <command>enscript -U2 %s</command> for printing two logical pages on one physical page.
 </para>
-        </answer>
-      </qandaentry>
-</qandaset>
+      </answer>
+    </qandaentry>
+  </qandaset>
 </chapter>
-

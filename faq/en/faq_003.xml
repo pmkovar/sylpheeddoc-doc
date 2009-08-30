@@ -1,187 +1,217 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<chapter id="sylpheed-faq-3">
-<title>Sylpheed FAQ - Interface</title>
-<qandaset id="faq-interface">
-<?dbhtml cellspacing="13px" ?>
-      <qandaentry>
-        <question>
-          <para>How do I make Sylpheed display my language?
+<?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-3">
+  <title>Sylpheed FAQ - Interface</title>
+  <qandaset id="faq-interface">
+<?dbhtml cellspacing="13px" ?>    <qandaentry>
+      <question>
+        <para>How do I make Sylpheed display my language?
 </para>
-        </question>
-        <answer>
-          <para>You have to set some environment variables, such as
-     <computeroutput>LANG,LC_CTYPE, LC_MESSAGES</computeroutput> to your local language.
-     Usually <computeroutput>LANG</computeroutput> (or <computeroutput>LC_ALL</computeroutput>) is sufficient. Note that modern distributions and operating systems do this for you automatically.
+      </question>
+      <answer>
+        <para>You have to set some environment variables, such as
+     <envar>LANG</envar>, <envar>LC_CTYPE</envar>, <envar>LC_MESSAGES</envar> to your local language.
+     Usually <envar>LANG</envar> (or <envar>LC_ALL</envar>) is sufficient. Note that modern distributions and operating systems do this for you automatically.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>I don&apos;t like the default font. Can I change that?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>I don&apos;t like the default font. Can I change that?
 </para>
-        </question>
-        <answer>
-          <para>Yes. In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, under the
-     &quot;<guimenuitem>Display</guimenuitem>&quot; tab.
+      </question>
+      <answer>
+        <para>Yes. In <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences</guimenuitem>
+          </menuchoice>, under the
+     <guimenuitem>Display</guimenuitem> tab.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>There are too many columns in the message list!
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>There are too many columns in the message list!
-</para>
-        </question>
-        <answer>
-          <para>In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, under the
-     &quot;<guimenuitem>Display</guimenuitem>&quot; tab you can press the button &quot;<guibutton>Set display item of summary...</guibutton>&quot;. That pops up a screen with all the
+      </question>
+      <answer>
+        <para>In <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences</guimenuitem>
+          </menuchoice>, under the
+     <guimenuitem>Display</guimenuitem> tab you can press the button <guibutton>Set display item of summary...</guibutton>. That pops up a screen with all the
      options you can show or leave out of the message
-     list.
+     list.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Can I use a different editor to write my mails?
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Can I use a different editor to write my mails?
-</para>
-        </question>
-        <answer>
-          <para>You can. In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, under
-     the &quot;<guimenuitem>Details</guimenuitem>&quot; and <guimenuitem>External commands</guimenuitem> tabs, you can define your editor of choice.
+      </question>
+      <answer>
+        <para>You can. In <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences</guimenuitem>
+          </menuchoice>, under
+     the <guimenuitem>Details</guimenuitem> and <guimenuitem>External commands</guimenuitem> tabs, you can define your editor of choice.
      Remember, if you want to use a command line editor
      like vi or emacs, to write the name of the shell
-     (term, term, rxvt) with the -e parameter in front of
-     the editor. E.g.: <computeroutput>rxvt -e vi %s</computeroutput>. Also, make sure that you have checked <guilabel>Automatically launch the external editor</guilabel> in <guimenuitem>Common preferences</guimenuitem>, <guimenuitem>Compose</guimenuitem> and <guimenuitem>Editor</guimenuitem> tab, if you want the editor of your choise to be launched every time you begin composing a message. 
+     (term, term, rxvt) with the <parameter>-e</parameter> parameter in front of
+     the editor. E.g.: <command>rxvt -e vi %s</command>. Also, make sure that you have checked <guilabel>Automatically launch the external editor</guilabel> in <menuchoice>
+            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Compose</guimenuitem>
+            <guimenuitem>Editor</guimenuitem>
+          </menuchoice>, if you want the editor of your choise to be launched every time you begin composing a message. 
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How to change the font size in the Sylpheed interface?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How to change the font size in the Sylpheed interface?
 </para>
-        </question>
-        <answer>
-          <para>You can set the GTK+ font by <filename>$HOME/.gtkrc</filename>, or
+      </question>
+      <answer>
+        <para>You can set the GTK+ font by <filename>$HOME/.gtkrc</filename>, or
      <filename>$HOME/.gtkrc.mine</filename>,
      (which is included by <filename>$HOME/.gtkrc</filename>).
      For example:
      <computeroutput>style &quot;default&quot; { font = &quot;-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1 &quot; } widget_class &quot;*&quot; style &quot;default&quot;</computeroutput>
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Sylpheed saves my outgoing mail (in Outbox). Can I make it stop doing that?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Sylpheed saves my outgoing mail (in Outbox). Can I make it stop doing that?
 </para>
-        </question>
-        <answer>
-          <para>In <guimenu>Configuration</guimenu>-&gt;<guimenuitem>Common preferences</guimenuitem>, there&apos;s a
-     checkbox &quot;<guilabel>Save sent message to outbox</guilabel>&quot;. Uncheck it,
+      </question>
+      <answer>
+        <para>In <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences</guimenuitem>
+          </menuchoice>, there&apos;s a
+     checkbox <guilabel>Save sent message to outbox</guilabel>. Uncheck it,
      and it&apos;s solved.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>How can I change the key-bindings (hot-keys) in Sylpheed?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I change the key-bindings (hot-keys) in Sylpheed?
 </para>
-        </question>
-        <answer>
-          <para>That is very simple. Suppose you want to assign a
+      </question>
+      <answer>
+        <para>That is very simple. Suppose you want to assign a
      shortcut key to a function, e.g. sending all mail
-     out should start when you press Ctrl-Y. Click the
-      Message&apos; menu and move the mouse over &quot;Send all
-     messages&quot;. Now you press Ctrl-Y. Immediately the menu
+     out should start when you press <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Y</keycap>
+          </keycombo>. Click the
+      <guimenu>Message</guimenu> menu and move the mouse over <guimenuitem>Send all messages</guimenuitem>. Now you press <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Y</keycap>
+          </keycombo>. Immediately the menu
      text is updated and the function is in place. Please
-     note that a previous function that Ctrl-Y was
+     note that a previous function that <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>Y</keycap>
+          </keycombo> was
      assigned to, will no longer have a shortcut key. If
      you want to remove the key binding, do the same
-     thing, but press the &quot;delete&quot; key on the menu-item.
+     thing, but press the <keycap>Delete</keycap> key on the menu item.
      Then the key binding is removed.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Can I close windows without the mouse?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Can I close windows without the mouse?
 </para>
-        </question>
-        <answer>
-          <para>Of course! Not all windows, but by pressing <keycap>Escape</keycap>,
+      </question>
+      <answer>
+        <para>Of course! Not all windows, but by pressing <keycap>Escape</keycap>,
      you can close the addressbook, the window of viewing
-     a mail source (<guimenu>View</guimenu>-&gt;<guimenuitem>Message source</guimenuitem>), the window of
+     a mail source (<menuchoice>
+            <guimenu>View</guimenu>
+            <guimenuitem>Message source</guimenuitem>
+          </menuchoice>), the window of
      viewing the headers, and several others. Just give
      it a try and you will find all of them.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Can I change the way the date is displayed in the message summary?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Can I change the way the date is displayed in the message summary?
 </para>
-        </question>
-        <answer>
-          <para>As of 0.4.65 you can. The options are:</para><programlisting>
-     %y = year in numbers     %m = month in number
+      </question>
+      <answer>
+        <para>As of 0.4.65 you can. The options are:</para>
+        <programlisting>     %y = year in numbers     %m = month in number
      %d = day in numbers      %c = date/time for locale
      %A = full weekday name   %a = short month name
      %B = full month name     %b = short month name
      %H = hours in 24-clock   %I = hours in 12-clock</programlisting>
-     <para>For more information, go to the <guimenu>Configuration</guimenu> menu,
-     select <guimenuitem>Common preferences</guimenuitem> -&gt; <guimenuitem>Display</guimenuitem> tab -&gt; <guimenuitem>General</guimenuitem> tab and choose the <guibutton>...</guibutton> labeled button.
+        <para>For more information, go to the <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Display</guimenuitem>
+            <guimenuitem>General</guimenuitem>
+          </menuchoice>  and choose the <guibutton>...</guibutton> labeled button.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Why can&apos;t I see the compface pictures?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Why can&apos;t I see the compface pictures?
 </para>
-        </question>
-        <answer>
-          <para>You need to enable displaying of the header pane in the
+      </question>
+      <answer>
+        <para>You need to enable displaying of the header pane in the
      general preferences.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>I still can&apos;t see the pictures. Why not?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>I still can&apos;t see the pictures. Why not?
 </para>
-        </question>
-        <answer>
-          <para>You may not have compiled in Compface support. See  the appropriate question in the Installation/Configuration section.
+      </question>
+      <answer>
+        <para>You may not have compiled in Compface support. See  the appropriate question in the Installation and Configuration section.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Why does the URL launcher not launch my web browser?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Why does the URL launcher not launch my web browser?
 </para>
-        </question>
-        <answer>
-          <para>You need to double click the URL.
+      </question>
+      <answer>
+        <para>You need to double click the URL.
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Attachments with spaces in the name won&apos;t open!
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Attachments with spaces in the name won&apos;t open!
 </para>
-        </question>
-        <answer>
-          <para>When you try to launch a helper application, like an image viewer, with an attachment that has spaces in the name, put quotes around the %s
+      </question>
+      <answer>
+        <para>When you try to launch a helper application, like an image viewer, with an attachment that has spaces in the name, put quotes around the <parameter>%s</parameter>
 parameter. Example: <command>gedit &apos;%s&apos;</command>
 </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Where is the Bcc when I compose a mail?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Where is the Bcc when I compose a mail?
 </para>
-        </question>
-        <answer>
-          <para>Open <guimenu>Configuration</guimenu> -&gt; <guimenuitem>Preferences for current account...</guimenuitem> -&gt; <guimenuitem>Compose</guimenuitem> tab. There you can check the <guilabel>Bcc</guilabel> checkbox and optionally enter an e-mail address.
-</para>
-        </answer>
-      </qandaentry>
-</qandaset>
+      </question>
+      <answer>
+        <para>Open <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Preferences for current account...</guimenuitem>
+            <guimenuitem>Compose</guimenuitem>
+          </menuchoice>. There you can check the <guilabel>Bcc</guilabel> checkbox and optionally enter an e-mail address.</para>
+      </answer>
+    </qandaentry>
+  </qandaset>
 </chapter>

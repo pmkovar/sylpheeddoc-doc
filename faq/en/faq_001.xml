@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-1">
-<title>Sylpheed FAQ - General Information</title>
-<qandaset id="faq-general">
-<?dbhtml cellspacing="13px" ?>
-<!--   
+  <title>Sylpheed FAQ - General Information</title>
+  <qandaset id="faq-general">
+<?dbhtml cellspacing="13px" ?><!--   
    <qandaentry>
     <question id="">
       <para>
@@ -13,227 +12,227 @@
       </para>
     </answer>
   </qandaentry>
--->      <qandaentry>
-        <question id="faq-languages">
-          <para>
+-->    <qandaentry>
+      <question id="faq-languages">
+        <para>
         Are there FAQ&apos;s in other languages?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
        Yes. Here are links to several translations:</para>
-          <itemizedlist>
-            <listitem>
-              <para><ulink url="http://sylpheeddoc.sourceforge.net/fr/faq/faq.html">Sylpheed FAQ in French</ulink>, translated by Olivier Delhomme.</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://sylpheeddoc.sourceforge.net/de/faq/faq.html">Sylpheed FAQ in German</ulink>, translated by Nicolas Kaiser.</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://sylpheeddoc.sourceforge.net/es/faq/faq.html">Sylpheed FAQ in Spanish</ulink>, translated by Ricardo  Mones Lastra.</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://sylpheeddoc.sourceforge.net/zh_TW.Big5/sylpheed-faq.html">Sylpheed FAQ in Traditional Chinese</ulink>, courtesy of Franklin.</para>
-            </listitem>
-          </itemizedlist>
-          <para>
+        <itemizedlist>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/fr/faq/faq.html">Sylpheed FAQ in French</ulink>, translated by Olivier Delhomme.</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/de/faq/faq.html">Sylpheed FAQ in German</ulink>, translated by Nicolas Kaiser.</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/es/faq/faq.html">Sylpheed FAQ in Spanish</ulink>, translated by Ricardo  Mones Lastra.</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/zh_TW.Big5/sylpheed-faq.html">Sylpheed FAQ in Traditional Chinese</ulink>, courtesy of Franklin.</para>
+          </listitem>
+        </itemizedlist>
+        <para>
         You can always download this FAQ from <ulink url="http://sylpheeddoc.sf.net">http://sylpheeddoc.sf.net</ulink>.</para>
-          <para>Did not found your language in the list? Would you like to contribute with a new translation to the Sylpheed Documentation Project? Then please contact the Project members at <ulink url="http://sylpheeddoc.sourceforge.net/">their website</ulink>. Thank you.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-what-sylpheed">
-          <para>
+        <para>Did not found your language in the list? Would you like to contribute with a new translation to the Sylpheed Documentation Project? Then please contact the Project members at <ulink url="http://sylpheeddoc.sourceforge.net/">their website</ulink>. Thank you.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-what-sylpheed">
+        <para>
         What is Sylpheed?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
         Sylpheed is  an e-mail client (and news  reader)  based on GTK+,
         running on the X Window System, and aiming for:</para>
-          <itemizedlist>
-            <listitem>
-              <para>Quick response</para>
-            </listitem>
-            <listitem>
-              <para>Graceful, and sophisticated interface</para>
-            </listitem>
-            <listitem>
-              <para>Easy configuration, intuitive operation</para>
-            </listitem>
-            <listitem>
-              <para>Abundant features</para>
-            </listitem>
-          </itemizedlist>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-get-sylpheed">
-          <para>
+        <itemizedlist>
+          <listitem>
+            <para>Quick response</para>
+          </listitem>
+          <listitem>
+            <para>Graceful, and sophisticated interface</para>
+          </listitem>
+          <listitem>
+            <para>Easy configuration, intuitive operation</para>
+          </listitem>
+          <listitem>
+            <para>Abundant features</para>
+          </listitem>
+        </itemizedlist>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-get-sylpheed">
+        <para>
         Where can I get Sylpheed?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
         You can download it from <literal>
-              <ulink url="http://sylpheed.sraoss.jp/en/">http://sylpheed.sraoss.jp/en/</ulink>
-            </literal> There are links to download
+            <ulink url="http://sylpheed.sraoss.jp/en/">http://sylpheed.sraoss.jp/en/</ulink>
+          </literal> There are links to download
         the tarball sources,  and  also links to  sites  where you can
         download  RPM&apos;s (for Redhat and   Mandrake), DEB packages for
         Debian, and installations for Solaris and FreeBSD.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-writes-sylpheed">
-          <para> 
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-writes-sylpheed">
+        <para> 
          Who writes Sylpheed?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Hiroyuki Yamamoto <email>hiro-y@kcn.ne.jp</email>.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-sylpheed-name">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-sylpheed-name">
+        <para>
          What does the name Sylpheed mean?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          It means &apos;light weight&apos;, like air. This comes from the
          name of the wind spirits, the Sylphs.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-sylpheed-store-mail">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-sylpheed-store-mail">
+        <para>
          How does Sylpheed store mails?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Mails are stored in the MH mailfile format as used by MH
          and EMH. Maildir,  mbox, and eml formats are not (yet)
          supported, although it is possible to import an mbox
          file or an eml file into a Sylpheed mailbox.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-auto-collection-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-auto-collection-sylpheed">
+        <para>
         Why does the auto collection of mail not work?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
           Autocollection works since version 0.5.1. If you need it
           or want it, you should upgrade.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-filtering-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-filtering-sylpheed">
+        <para>
          Does Sylpheed have mail filtering?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes. You can find it in <guimenu>Configuration</guimenu> -&gt; <guimenuitem>Filter settings...</guimenuitem></para>
-          <para>
+        <para>
          Please note that filtering is not yet implemented for IMAP accounts.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-imap-sylpheed">
-          <para> 
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-imap-sylpheed">
+        <para> 
          Can Sylpheed handle IMAP mail?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes. As of version 0.4.99 IMAP is supported.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-local-unix-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-local-unix-sylpheed">
+        <para>
          Can Sylpheed handle local unix mailboxes?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-ipv6-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-ipv6-sylpheed">
+        <para>
          Can Sylpheed handle IPv6?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes, IPv6 is fully supported in Sylpheed.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-encryption-gpg-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-encryption-gpg-sylpheed">
+        <para>
          Does Sylpheed support encryption like GPG?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes. GPG is implemented and works fine. For activating it in Sylpheed, 
          see the appropriate question in the Installation section.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-mime-types-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-mime-types-sylpheed">
+        <para>
          How does Sylpheed check for MIME types?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
           Sylpheed uses the Mutt type of mime checking.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-html-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-html-sylpheed">
+        <para>
          Does Sylpheed allow me to write HTML styled messages?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          No. A discussion has gone around over this topic, and
          the outcome was that HTML mail is not wanted. If you
          really need to send HTML, you can of course attach a
          webpage to an e-mail.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-completion-adress-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-completion-adress-sylpheed">
+        <para>
          Does Sylpheed have name completion in the address fields?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes. When you search for a name that starts with &quot;<literal>don</literal>&quot;,
          type &quot;<literal>don</literal>&quot; (without the quotes) and press the <keycap>Tab</keycap> key.
          This will show you the correct name (when only one &quot;don&quot;
@@ -243,84 +242,84 @@
          starting with &quot;<literal>don</literal>&quot; will appear in the list (like
          &quot;<literal>don.giovanni@maffia.org</literal>&quot;).
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-tab-error-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-tab-error-sylpheed">
+        <para>
          Fine, but when I hit the Tab key I get an error message.
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          When you want to use name completion, make sure that
          there are names in your address book. If there are no
          names, even Sylpheed has a hard time completing
          something.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-sylpheed-fast">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-sylpheed-fast">
+        <para>
          Why is Sylpheed so fast?
       </para>
-        </question>
-        <answer>
-          <para>That&apos;s what it is designed for!
+      </question>
+      <answer>
+        <para>That&apos;s what it is designed for!
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-patches-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-patches-sylpheed">
+        <para>
           Where can I get the current patches for Sylpheed?
       </para>
-        </question>
-        <answer>
-          <para>In most cases, current patches are being posted by Sylpheed users and contributors to the <ulink url="http://www.sraoss.jp/mailman/listinfo/sylpheed">Sylpheed mailing list <email>sylpheed@sraoss.jp</email></ulink>.
+      </question>
+      <answer>
+        <para>In most cases, current patches are being posted by Sylpheed users and contributors to the <ulink url="http://www.sraoss.jp/mailman/listinfo/sylpheed">Sylpheed mailing list </ulink><email>sylpheed@sraoss.jp</email>.
          (Also, see the Installation section on how to install a patch.)
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-send-patches-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-send-patches-sylpheed">
+        <para>
          How can I send in patches, report bugs, talk about Sylpheed with others?
       </para>
-        </question>
-        <answer>
-          <para>To talk to others, you should join the Sylpheed mailing
+      </question>
+      <answer>
+        <para>To talk to others, you should join the Sylpheed mailing
          list at <ulink url="http://www.sraoss.jp/mailman/listinfo/sylpheed">
-              <literal>http://www.sraoss.jp/mailman/listinfo/sylpheed</literal>
-            </ulink>. Note that there is
+            <literal>http://www.sraoss.jp/mailman/listinfo/sylpheed</literal>
+          </ulink>. Note that there is
          a Japanese and an English list, so pick the right one!
          If you have made a patch that you want the world to know
          of, please post it either to the mailing list, or contact the Sylpheed author, Hiroyuki Yamamoto <email>hiro-y@kcn.ne.jp</email>. </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-content-type-header-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-content-type-header-sylpheed">
+        <para>
          When I send mail, the Content-Type header says the mail is in
          US-ASCII, even when I specified ISO-8859-1?
       </para>
-        </question>
-        <answer>
-          <para>If ISO-8859-1 characters (&gt;= 0x80) are not used in the
+      </question>
+      <answer>
+        <para>If ISO-8859-1 characters (&gt;= 0x80) are not used in the
          message body, Sylpheed will automatically set the
          charset value in the Content-Type header as US-ASCII.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-word-wrap-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-word-wrap-sylpheed">
+        <para>
          Why does it look like word wrap is not working?
       </para>
-        </question>
-        <answer>
-          <para>Word wrapping is a bit peculiar perhaps. You can type
+      </question>
+      <answer>
+        <para>Word wrapping is a bit peculiar perhaps. You can type
          lines as long as you like. By the time you send or queue
          a mail with long lines, Sylpheed will first wrap the
          lines to the line length you set up, and then the mail
@@ -330,45 +329,44 @@
          line will move to a separate new line, leaving one or
          two words from the previous line &quot;hanging there&quot; alone.
          E.g.
-        <literallayout>
-           This is a long line that
-           is wrapped.
-        </literallayout>Now you add one word in the first line:
-        <literallayout>
-           This is a very long line
+        <literallayout>           This is a long line that
+           is wrapped.        </literallayout>Now you add one word in the first line:
+        <literallayout>           This is a very long line
            that
-           is wrapped
-        </literallayout>This would cause you a lot of manual reformatting to get
+           is wrapped        </literallayout>This would cause you a lot of manual reformatting to get
         a presentable mail again.
 
         Note: As of Sylpheed 0.8.0., active wordwrap has been
-        implemented. You can turn it on in Common 
-        Preferences-&gt;Compose-&gt;wrap on input.
+        implemented. You can turn it on in <menuchoice>
+            <guisubmenu>Common Preferences</guisubmenu>
+            <guimenuitem>Compose</guimenuitem>
+            <guimenuitem>Editor</guimenuitem>
+            <guilabel>Wrap on input</guilabel>
+          </menuchoice>.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-import-mbox-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-import-mbox-sylpheed">
+        <para>
          Can I import a mbox into Sylpheed&apos;s MH mailfolders?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
         Yes, just create/select the folder you want your
-        mails in, and select &quot;<guimenuitem>Import mbox file...</guimenuitem>&quot; in the <guimenu>File</guimenu>
-        menu.
-      </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-procmail-use-sylpheed">
-          <para>
+        mails in, and select <guimenuitem>Import mbox file...</guimenuitem> in the <guimenu>File</guimenu>
+        menu.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-procmail-use-sylpheed">
+        <para>
          Can I use procmail to sort my mails with the MH mail handling?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes. Just make sure that you add /. to the end of a rule so
          procmail knows you are filtering into an MH mail folder. Example:
          <literal>0:</literal>
@@ -376,144 +374,122 @@
          <literal> sylpheedmail/.</literal>
          Check man procmail for details.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-upgrade-sylpheed">
-          <para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-upgrade-sylpheed">
+        <para>
          When I upgrade Sylpheed, are there things I should be aware of?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
            Yes!</para>
-          <itemizedlist>
-            <listitem>
-              <para>Upgrade to 0.4.50: you should reconfigure your newsgroup settings</para>
-            </listitem>
-            <listitem>
-              <para>Upgrade to 0.4.63: you should set the URL string colors from the <guimenu>Configuration</guimenu> menu</para>
-            </listitem>
-            <listitem>
-              <para>Upgrade to 0.4.65: some menu items have been moved</para>
-            </listitem>
-            <listitem>
-              <para>Upgrade to 0.7.3: many keybindings have changed</para>
-            </listitem>
-          </itemizedlist>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-update-views-sylpheed">
-          <para>How can I quickly update the views in Sylpheed?
+        <itemizedlist>
+          <listitem>
+            <para>Upgrade to 0.4.50: you should reconfigure your newsgroup settings</para>
+          </listitem>
+          <listitem>
+            <para>Upgrade to 0.4.63: you should set the URL string colors from the <guimenu>Configuration</guimenu> menu</para>
+          </listitem>
+          <listitem>
+            <para>Upgrade to 0.4.65: some menu items have been moved</para>
+          </listitem>
+          <listitem>
+            <para>Upgrade to 0.7.3: many keybindings have changed</para>
+          </listitem>
+        </itemizedlist>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-update-views-sylpheed">
+        <para>How can I quickly update the views in Sylpheed?
       </para>
-        </question>
-        <answer>
-          <para>
-         Just press <keycap>Alt-U</keycap> or select <guimenuitem>Update summary</guimenuitem> from the <guimenu>View</guimenu> menu.
+      </question>
+      <answer>
+        <para>
+         Just press <keycombo>
+            <keycap>Alt</keycap>
+            <keycap>U</keycap>
+          </keycombo>or select <guimenuitem>Update summary</guimenuitem> from the <guimenu>View</guimenu> menu.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-gvim-external-editor-sylpheed">
-          <para>Why can&apos;t I use gvim as external editor?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-gvim-external-editor-sylpheed">
+        <para>Why can&apos;t I use gvim as external editor?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          If one wishes to use gvim as an external editor it&apos;s
-         necessary to start it with the no-fork option <literal>-f</literal>, i.e. 
+         necessary to start it with the no-fork option <command>-f</command>, i.e. 
          in the configuration dialog box you need to enter  
-         <literal>gvim -f %s</literal>. If not the editor forks and open up a 
+         <command>gvim -f %s</command>. If not the editor forks and open up a 
          separate file and when one quits the editor the changes
          are lost and don&apos;t show up in the composer window.
          (Thanks, Ed Collins!)
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-quote-messages-sylpheed">
-          <para>Can I quote just parts of the original message when replying?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-quote-messages-sylpheed">
+        <para>Can I quote just parts of the original message when replying?
       </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
          Yes, select the part in the textview and choose <guiicon>Reply</guiicon>.
       </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-not-quoting-sylpheed">
-          <para>Can I reply without quoting at all?
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-not-quoting-sylpheed">
+        <para>Can I reply without quoting at all?
       </para>
-        </question>
-        <answer>
-          <para>You need to disable quoting by editing the reply format under <guimenu>Configuration</guimenu> -&gt; <guimenuitem>Common preferences</guimenuitem> -&gt; <guimenuitem>Compose</guimenuitem> tab -&gt; <guimenuitem>Format</guimenuitem> tab
+      </question>
+      <answer>
+        <para>You need to disable quoting by editing the reply format under <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Compose tab</guimenuitem>
+            <guimenuitem>Format tab</guimenuitem>
+          </menuchoice> 
           (also works with 
-         forward format which is available below the reply format).</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-selective-download-sylpheed-claws">
-          <para>How does selective download work?
+         forward format which you can see below the reply format in the configuration dialog).</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question id="faq-faq-sylpheed">
+        <para>Where can I find the latest FAQ on Sylpheed?
       </para>
-        </question>
-        <answer>
-          <para>
-          There are two ways using it.</para>
-          <itemizedlist>
-            <listitem>
-              <para>Manually: Open <guimenu>Tools</guimenu> -&gt; <guimenuitem>Selective download</guimenuitem> and 
-            choose &quot;Fetch&quot; to retrieve the mail headers. Afterwards, 
-            select the mails to delete and pres the remove button.</para>
-            </listitem>
-            <listitem>
-              <para>Automatic: Create a -global- filtering rule to 
-            delete mails on server. If you then choose &quot;Selective
-            download&quot;, all mails that conform to this rule are marked 
-            for deletion.</para>
-            </listitem>
-          </itemizedlist>
-          <para>Note: By default, selective download only retrieves new (unread) messages.
-        If you want to process the read mails also, you need to set &quot;retrieve
-        all messages&quot;.
-      </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question id="faq-faq-sylpheed">
-          <para>Where can I find the latest FAQ on Sylpheed?
-      </para>
-        </question>
-        <answer>
-          <para>
+      </question>
+      <answer>
+        <para>
           Go to <ulink url="http://sylpheeddoc.sf.net">http://sylpheeddoc.sf.net</ulink> and check out 
           the FAQ and manual from the sylpheeddoc project. Both
           documents are available in multiple languages there and
           usually contain the latest updates. Also see the question about available language versions at the top of this section.      </para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>I have found an error and/or outdated information in this document!</para>
-        </question>
-        <answer>
-          <para>Please report any errors, misleading and/or outdated information to the <ulink url="http://sylpheeddoc.sourceforge.net/">Sylpheed Documentation Project</ulink>. You can see the list of Project members in the following question, so you can also contact them directly.</para>
-        </answer>
-      </qandaentry>
-      <qandaentry>
-        <question>
-          <para>Who are the members of the Sylpheed Documentation Project?</para>
-        </question>
-        <answer>
-          <para>The current members of the Sylpheed Documentation Project are:</para>
-          <programlisting>
-Francois Barriere      fbarriere@users.sourceforge.net
-Petr Kovar             pknbe@users.sourceforge.net
-</programlisting>
-          <para>Below is the list of former members of the Sylpheed Documentation Project. Big thank you goes to all of them!</para>
-          <programlisting>
-Martin   Bretschneider furbour@users.sourceforge.net
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>I have found an error and/or outdated information in this document!</para>
+      </question>
+      <answer>
+        <para>Please report any errors, misleading and/or outdated information to the <ulink url="http://sylpheeddoc.sourceforge.net/">Sylpheed Documentation Project</ulink>. You can see the list of Project members in the following question, so you can also contact them directly.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Who are the members of the Sylpheed Documentation Project?</para>
+      </question>
+      <answer>
+        <para>The current members of the Sylpheed Documentation Project are:</para>
+        <programlisting>Francois Barriere      fbarriere@users.sourceforge.net
+Petr Kovar             pknbe@users.sourceforge.net</programlisting>
+        <para>Below is the list of former members of the Sylpheed Documentation Project. Big thank you goes to all of them!</para>
+        <programlisting>Martin   Bretschneider furbour@users.sourceforge.net
 Olivier  Delhomme      dup@users.sourceforge.net
 Doruk    Fisek         dobidik@users.sourceforge.net
 Melvin   Hadasht       mhadasht@users.sourceforge.net
@@ -523,10 +499,8 @@ Ricardo  Mones Lastra  mones@users.sourceforge.net
 Jens     Oberender     jobi@users.sourceforge.net
 Marcelo  Ramos         hackpando@users.sourceforge.net
 Guido    Rudolphi      malatesta@users.sourceforge.net
-Frank    Weng          fweng@users.sourceforge.net
-</programlisting>
-        </answer>
-</qandaentry>
-</qandaset>
+Frank    Weng          fweng@users.sourceforge.net</programlisting>
+      </answer>
+    </qandaentry>
+  </qandaset>
 </chapter>
-
