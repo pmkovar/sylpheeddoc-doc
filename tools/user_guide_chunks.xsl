@@ -72,4 +72,8 @@
 
 <xsl:param name="navig.showtitles">1</xsl:param>
 
+<!-- Nice HTML output -->
+
+<xsl:param name="chunker.output.indent">yes</xsl:param>
+
 </xsl:stylesheet>

@@ -20,7 +20,7 @@
 <xsl:param name="header.rule"               >1</xsl:param>
 <xsl:param name="footer.rule"               >1</xsl:param>
 
-<xsl:param name="admon.graphics"            >1</xsl:param>
+<xsl:param name="admon.graphics"            >0</xsl:param>
 
 <!-- URL rendering:                          -->
 

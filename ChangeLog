@@ -1,3 +1,8 @@
+2009-09-04  Petr Kovar  <pknbe@volny.cz>
+
+	* tools/user_guide_chunks.xsl: Nice HTML output.
+	* tools/user_guide_common.xsl: Nuke DocBook graphics.
+
 2009-08-27  Petr Kovar  <pknbe@volny.cz>
 
 	* tools/faq.css: Add the file with CSS decorations for FAQ.
