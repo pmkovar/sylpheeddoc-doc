@@ -1,3 +1,12 @@
+2009-09-18  Petr Kovar  <pknbe@volny.cz>
+
+	* tools/faq.css: Add formatting for 'pre' elements.
+	* tools/faq_chunks.xsl: Just list the chapter titles in the
+	book ToC.
+	* tools/user_guide_common.xsl: Transfer in HTML deprecated
+	verbatim formatting.
+	* tools/user_guide_fo.xsl: Ditto.
+
 2009-09-04  Petr Kovar  <pknbe@volny.cz>
 
 	* tools/user_guide_chunks.xsl: Nice HTML output.

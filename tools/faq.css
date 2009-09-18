@@ -1,1 +1,7 @@
-.question {font-size: 16px; font-weight: bold}
+pre.programlisting, pre.screen {
+background-color : #e0e0e0;
+padding : 0.2cm;
+}
+.question {
+font-weight : bold;
+}

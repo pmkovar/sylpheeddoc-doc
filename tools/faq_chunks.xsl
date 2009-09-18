@@ -17,8 +17,6 @@
    -->
 
 	<xsl:include href="user_guide_common.xsl"/>
-	<!-- xsl:include href="faq_common.xsl"/ -->
-	<!-- xsl:include href="html_titlepage.xsl"/ -->
 
 	<xsl:param name="page.margin.top">10in</xsl:param>
 	<xsl:param name="page.margin.bottom">10in</xsl:param>
@@ -91,5 +89,28 @@
 <!-- Nice HTML output -->
 
 <xsl:param name="chunker.output.indent">yes</xsl:param>
+
+<!-- Just list the chapter titles in the book ToC -->
+
+<xsl:template match="preface|chapter|appendix|article" mode="toc">
+  <xsl:param name="toc-context" select="."/>
+
+  <xsl:choose>
+    <xsl:when test="local-name($toc-context) = 'book'">
+      <xsl:call-template name="subtoc">
+        <xsl:with-param name="toc-context" select="$toc-context"/>
+        <xsl:with-param name="nodes" select="foo"/>
+      </xsl:call-template>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:call-template name="subtoc">
+        <xsl:with-param name="toc-context" select="$toc-context"/>
+        <xsl:with-param name="nodes"
+              select="section|sect1|glossary|bibliography|index
+                     |bridgehead[$bridgehead.in.toc != 0]"/>
+      </xsl:call-template>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
 
 </xsl:stylesheet>

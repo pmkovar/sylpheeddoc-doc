@@ -207,11 +207,6 @@
 	<xsl:attribute name="text-align">left</xsl:attribute>
 </xsl:attribute-set>
 
-<xsl:param name="shade.verbatim">1</xsl:param>
-<xsl:attribute-set name="shade.verbatim.style">
-	<xsl:attribute name="background-color">#E0E0E0</xsl:attribute>
-</xsl:attribute-set>
-
 <!-- blockquote rendering: -->
 
 <xsl:attribute-set name="blockquote.properties">
