@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
 <!ENTITY __faq__001 SYSTEM "faq_001.xml">
 <!ENTITY __faq__002 SYSTEM "faq_002.xml">
 <!ENTITY __faq__003 SYSTEM "faq_003.xml">
@@ -9,7 +10,11 @@
   <title>Sylpheed FAQ</title>
   <bookinfo>
     <abstract>
-      <para>This document contains answers to various questions which are frequently asked by Sylpheed users. It consists of three sections providing general information, information on Sylpheed installation and configuration, and on Sylpheed interface.</para>
+      <para>This document contains answers to various questions, which are
+       frequently asked by Sylpheed users. It consists of three sections providing
+       general information, information on Sylpheed installation and configuration,
+       and on Sylpheed interface.
+      </para>
     </abstract>
     <copyright>
       <year>2009</year>
@@ -29,7 +34,7 @@
       <surname>Kater</surname>
 <!-- affiliation>
         <address>
-          <email>paul AT nlpagan DOT net</email>
+          <email>paul at nlpagan.net</email>
         </address>
       </affiliation -->    </author>
     <author>
@@ -37,15 +42,15 @@
       <surname>Oberender</surname>
 <!-- affiliation>
         <address>
-          <email>j DOT obi AT troja DOT net</email>
+          <email>j.obi at troja.net</email>
         </address>
       </affiliation -->    </author>
     <author>
-      <firstname>François</firstname>
+      <firstname>Francois</firstname>
       <surname>Barriere</surname>
 <!-- affiliation>
         <address>
-          <email>barriere DOT francois AT libertysurf DOT fr</email>
+          <email>barriere.francois at libertysurf.fr</email>
         </address>
       </affiliation -->    </author>
     <author>
@@ -53,15 +58,15 @@
       <surname>Delhomme</surname>
 <!-- affiliation>
         <address>
-          <email>olivier DOT delhomme AT free DOT fr</email>
+          <email>olivier.delhomme at free.fr</email>
         </address>
       </affiliation -->    </author>
     <author>
       <firstname>Petr</firstname>
-      <surname>Kovář</surname>
+      <surname>Kovar</surname>
 <!-- affiliation>
         <address>
-          <email>pknbe AT volny DOT cz</email>
+          <email>pknbe at volny.cz</email>
         </address>
       </affiliation -->    </author>
     <revhistory>
@@ -73,10 +78,10 @@
       </revision>
       <revision>
         <revnumber>2.2</revnumber>
-        <date>2009/08/12</date>
+        <date>2009/09/18</date>
         <authorinitials>PK</authorinitials>
-        <revremark>Finished porting to DocBook XML.</revremark>
+        <revremark>Finished porting to DocBook XML, updated many questions across the document to conform with Sylpheed 2.7.1.</revremark>
       </revision>
 <!-- ******************************************************************************** -->    </revhistory>
   </bookinfo>
-<!-- missing outdated remark about Sylpheed and Claws -->&__faq__001;&__faq__002;&__faq__003;&__license;</book>
+&__faq__001;&__faq__002;&__faq__003;&__license;</book>

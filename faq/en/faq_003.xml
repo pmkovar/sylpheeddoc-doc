@@ -21,7 +21,7 @@
       <answer>
         <para>Yes. In <menuchoice>
             <guimenu>Configuration</guimenu>
-            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Common preferences...</guimenuitem>
           </menuchoice>, under the
      <guimenuitem>Display</guimenuitem> tab.</para>
       </answer>
@@ -34,9 +34,9 @@
       <answer>
         <para>In <menuchoice>
             <guimenu>Configuration</guimenu>
-            <guimenuitem>Common preferences</guimenuitem>
-          </menuchoice>, under the
-     <guimenuitem>Display</guimenuitem> tab you can press the button <guibutton>Set display item of summary...</guibutton>. That pops up a screen with all the
+            <guimenuitem>Common preferences...</guimenuitem>
+          </menuchoice> under the
+     <guimenuitem>Display</guimenuitem> tab, you can press the button <guibutton>Set display item of summary...</guibutton>. That pops up a screen with all the
      options you can show or leave out of the message
      list.</para>
       </answer>
@@ -55,11 +55,12 @@
      Remember, if you want to use a command line editor
      like vi or emacs, to write the name of the shell
      (term, term, rxvt) with the <parameter>-e</parameter> parameter in front of
-     the editor. E.g.: <command>rxvt -e vi %s</command>. Also, make sure that you have checked <guilabel>Automatically launch the external editor</guilabel> in <menuchoice>
+     the editor. E.g.: <command>rxvt -e vi %s</command>.</para>
+        <para>Also, make sure that you have checked <guilabel>Automatically launch the external editor</guilabel> in <menuchoice>
             <guimenuitem>Common preferences</guimenuitem>
             <guimenuitem>Compose</guimenuitem>
             <guimenuitem>Editor</guimenuitem>
-          </menuchoice>, if you want the editor of your choise to be launched every time you begin composing a message. 
+          </menuchoice>, if you want the editor of your choice to be launched every time you begin composing a message. 
 </para>
       </answer>
     </qandaentry>
@@ -69,12 +70,15 @@
 </para>
       </question>
       <answer>
-        <para>You can set the GTK+ font by <filename>$HOME/.gtkrc</filename>, or
-     <filename>$HOME/.gtkrc.mine</filename>,
-     (which is included by <filename>$HOME/.gtkrc</filename>).
-     For example:
-     <computeroutput>style &quot;default&quot; { font = &quot;-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1 &quot; } widget_class &quot;*&quot; style &quot;default&quot;</computeroutput>
-</para>
+        <para>You can set the GTK+ font by <filename>$HOME/.gtkrc-2.0</filename>, or
+     <filename>$HOME/.gtkrc-2.0.mine</filename>,
+     (which is included by <filename>$HOME/.gtkrc-2.0</filename>).
+     For example:</para>
+        <programlisting>style &quot;default&quot; {
+       font = &quot;-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1 &quot;
+}
+widget_class &quot;*&quot; style &quot;default&quot;
+</programlisting>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -85,7 +89,7 @@
       <answer>
         <para>In <menuchoice>
             <guimenu>Configuration</guimenu>
-            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Common preferences...</guimenuitem>
           </menuchoice>, there&apos;s a
      checkbox <guilabel>Save sent message to outbox</guilabel>. Uncheck it,
      and it&apos;s solved.
@@ -94,7 +98,7 @@
     </qandaentry>
     <qandaentry>
       <question>
-        <para>How can I change the key-bindings (hot-keys) in Sylpheed?
+        <para>How can I change the key bindings (hotkeys) in Sylpheed?
 </para>
       </question>
       <answer>
@@ -116,8 +120,14 @@
      assigned to, will no longer have a shortcut key. If
      you want to remove the key binding, do the same
      thing, but press the <keycap>Delete</keycap> key on the menu item.
-     Then the key binding is removed.
-</para>
+     Then the key binding is removed.</para>
+        <para>Also see <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences...</guimenuitem>
+            <guimenuitem>Details</guimenuitem>
+            <guimenuitem>Interface</guimenuitem>
+            <guilabel>Set key bindings...</guilabel>
+          </menuchoice> where you are able to reset the Default key bindings, or use other predefined key bindings.</para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -127,7 +137,7 @@
       </question>
       <answer>
         <para>Of course! Not all windows, but by pressing <keycap>Escape</keycap>,
-     you can close the addressbook, the window of viewing
+     you can close the address book, the window of viewing
      a mail source (<menuchoice>
             <guimenu>View</guimenu>
             <guimenuitem>Message source</guimenuitem>
@@ -155,7 +165,7 @@
             <guimenuitem>Display</guimenuitem>
             <guimenuitem>General</guimenuitem>
           </menuchoice>  and choose the <guibutton>...</guibutton> labeled button.
-</para>
+For more options, see <command>man 3 strftime</command>.</para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -186,7 +196,12 @@
       </question>
       <answer>
         <para>You need to double click the URL.
-</para>
+Also, check that you have configured your web browser correctly in <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences...</guimenuitem>
+            <guimenuitem> Details</guimenuitem>
+            <guimenuitem>External commands</guimenuitem>
+          </menuchoice>. </para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -210,7 +225,40 @@ parameter. Example: <command>gedit &apos;%s&apos;</command>
             <guimenu>Configuration</guimenu>
             <guimenuitem>Preferences for current account...</guimenuitem>
             <guimenuitem>Compose</guimenuitem>
-          </menuchoice>. There you can check the <guilabel>Bcc</guilabel> checkbox and optionally enter an e-mail address.</para>
+          </menuchoice>. There you can check the <guilabel>Bcc</guilabel> checkbox and optionally enter an email address.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I change the toolbar?</para>
+      </question>
+      <answer>
+        <para>Go to <menuchoice>
+            <guimenu>View</guimenu>
+            <guimenuitem>Customize toolbar...</guimenuitem>
+          </menuchoice> and select items from the <guilabel>Available items</guilabel> list to be displayed on the toolbar. You can modify the order by using the <guibutton>Up</guibutton> or <guibutton>Down</guibutton> button. The customization dialog also offers you to revert your modifications to default.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Why isn&apos;t the next message displayed when I delete a message? </para>
+      </question>
+      <answer>
+        <para>Go to <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences...</guimenuitem>
+            <guimenuitem>Details</guimenuitem>
+            <guimenuitem>Interface</guimenuitem>
+          </menuchoice>, and select <guilabel>Always open messages in summary when selected</guilabel>. </para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How can I remove mailing list information from Subject headers?</para>
+      </question>
+      <answer>
+        <para>Very often, when you are subscribed to a mailing list, you will store each message from that list in a folder dedicated to that list. Depending on remote software solution and configuration,  mailing lists tend to include some words in the Subject header to identify the messages, optionally accompanied with a message number, for instance <literal>[sylpheed:33101]</literal>. These additions do not provide useful info if you have organized your folders as described, but Sylpheed allows you to disable displaying the additions in  summary, and/or, if you wish, delete the additions on reply.</para>
+        <para>To do that, right-click on a folder from the folder tree, and select  <guimenuitem>Properties...</guimenuitem> In the <guilabel>Folder properties</guilabel> dialog, check <guilabel>Don&apos;t display [...] or (...) at the beginning of subject in summary</guilabel>, or <guilabel>Delete [...] or (...) at the beginning of subject on reply</guilabel>, respectively.</para>
       </answer>
     </qandaentry>
   </qandaset>

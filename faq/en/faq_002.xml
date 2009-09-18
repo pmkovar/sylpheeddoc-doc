@@ -12,10 +12,12 @@ FreeBSD, Solaris.
 GTK+ 2.4.0 or later (GTK+ 2.6.0 or later
 is recommended).
 A recent ANSI C compiler (gcc 2.7.2.3 should also
-work).
-Note: it is reported that Sun C will not compile
-Sylpheed.
-Optionally:</para>
+work).</para>
+        <note>
+          <para>It is reported that Sun C will not compile
+Sylpheed.</para>
+        </note>
+        <para>Optionally:</para>
         <itemizedlist>
           <listitem>
             <para>compface (for X-Face)</para>
@@ -56,11 +58,13 @@ See also the <filename>INSTALL</filename> file that is being distributed with th
       <answer>
         <para>When you run Sylpheed for the first time, it will
 ask you where you want to store your mailboxes. The
-default is <filename>$HOME/Mail</filename>. You can change this to
+default is <filename>$HOME/Mail</filename> (or <filename>%APPDATA%\Sylpheed\Mailboxes\Mail</filename> under Windows). You can change this to
 anything you like as long as it is a valid directory
 name.</para>
-        <para>Please note: When Sylpheed is executed for the first time, it automatically creates the configuration files under <filename>$HOME/.sylpheed-2.0/</filename>, and asks you the location of mailbox. The default is <filename>$HOME/Mail</filename>. If some files which are non-MH format already exist on the directory, you will have to specify another location.
+        <note>
+          <para>When Sylpheed is executed for the first time, it automatically creates the configuration files under <filename>$HOME/.sylpheed-2.0/</filename> (or <filename>%APPDATA%\Sylpheed\</filename> under Windows), and asks you the location of mailbox. As stated above, the default is <filename>$HOME/Mail</filename>, or <filename>%APPDATA%\Sylpheed\Mailboxes\Mail</filename> under Windows. If some files, which are non-MH format, already exist on the directory, you will have to specify another location.
 </para>
+        </note>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -70,8 +74,8 @@ name.</para>
       </question>
       <answer>
         <para>Sylpheed reports such an error if it can&apos;t create the default
-mailboxes (inbox, outbox, etc ...). This can be because <filename>$HOME/Mail</filename>
-already contains files with the same names. This occurs when switching from
+mailboxes (inbox, outbox, etc.). This can be because <filename>$HOME/Mail</filename>
+(or <filename>%APPDATA%\Sylpheed\Mailboxes\Mail</filename> under Windows) already contains files with the same names. This occurs when switching from
 Kmail to Sylpheed, in this case backup and remove the existing Mail
 directory or use another name for the Sylpheed mail directory.
 </para>
@@ -84,7 +88,7 @@ directory or use another name for the Sylpheed mail directory.
       </question>
       <answer>
         <para>After loading Sylpheed for the first time, you can
-add an e-mail account by clicking the<guimenu>Configuration</guimenu> menu. Select the option <guimenuitem>Create new account</guimenuitem> and fill in the appropriate fields.
+add an email account by clicking the <guimenu>Configuration</guimenu> menu. Select the option <guimenuitem>Create new account</guimenuitem> and fill in the appropriate fields.
 </para>
       </answer>
     </qandaentry>
@@ -101,6 +105,17 @@ your computer stops responding.
     </qandaentry>
     <qandaentry>
       <question>
+        <para>Can I set up an account for sending mail only?</para>
+      </question>
+      <answer>
+        <para>Yes, set up a new account using <menuchoice>
+            <guimenuitem>Configuration</guimenuitem>
+            <guimenuitem>Create new Account...</guimenuitem>
+          </menuchoice>  and set the Protocol to None (local).</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
         <para>Why does Sylpheed not delete my mails when I press &quot;Delete&quot;? I set a filter, and Sylpheed does not filter. I moved a mail to a different mailbox and it did not move.
 </para>
       </question>
@@ -108,7 +123,7 @@ your computer stops responding.
         <para>You have to click the <guiicon>Execute</guiicon> button.
 The other solution: in the configuration settings
 (<menuchoice>
-            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Common preferences...</guimenuitem>
             <guimenuitem>Details</guimenuitem>
             <guimenuitem>Interface</guimenuitem>
           </menuchoice>), you have to
@@ -122,7 +137,11 @@ check the <guilabel>Execute immediately when moving or deleting messages</guilab
 </para>
       </question>
       <answer>
-        <para>Yes, you can. In the configuration per account you
+        <para>Yes, you can. Under <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Preferences for current account...</guimenuitem>
+            <guimenuitem>Advanced</guimenuitem>
+          </menuchoice>, you
 can specify the exact port addresses you want to use.
 </para>
       </answer>
@@ -213,20 +232,20 @@ can specify the exact port addresses you want to use.
     </qandaentry>
     <qandaentry>
       <question>
-        <para>How can I tell my browser/newsclient/other program to use Sylpheed as e-mail program?
+        <para>How can I tell my browser/newsclient/other program to use Sylpheed as email program?
 </para>
       </question>
       <answer>
         <para> In the settings part of the program, write
-       <computeroutput>sylpheed --compose</computeroutput></para>
+       <command>sylpheed --compose</command></para>
         <para>
 Specific options for typical browsers:</para>
         <itemizedlist>
           <listitem>
-            <para>Opera: <computeroutput>sylpheed --compose [mailto:%t][?subject=%s] </computeroutput></para>
+            <para>Opera: <command>sylpheed --compose [mailto:%t][?subject=%s] </command></para>
           </listitem>
           <listitem>
-            <para>Galeon: <computeroutput>sylpheed --compose &quot;mailto:%t?subject=%s&quot;</computeroutput></para>
+            <para>Galeon: <command>sylpheed --compose &quot;mailto:%t?subject=%s&quot;</command></para>
           </listitem>
         </itemizedlist>
       </answer>
@@ -324,9 +343,9 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
      to run <command>% locate m4 | less</command> or <command>% locate aclocal | less</command> to find additional directories containing those macros. If you find e.g. a
      <filename>gtk.m4</filename> in <filename>/opt/gnome/share/aclocal</filename>, change following line in
      <filename>autogen.sh</filename> from</para>
-        <programlisting>     aclocal -I ac \</programlisting>
+        <programlisting>aclocal -I ac \</programlisting>
         <para>     to</para>
-        <programlisting>     aclocal -I ac -I /opt/gnome/share/aclocal \</programlisting>
+        <programlisting>aclocal -I ac -I /opt/gnome/share/aclocal \</programlisting>
         <para>and run it again.
 </para>
       </answer>
@@ -365,24 +384,24 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
     </qandaentry>
     <qandaentry>
       <question>
-        <para>The folderlist is not updated after I manually moved/copied folders.
+        <para>The folder list is not updated after I manually moved/copied folders.
 </para>
       </question>
       <answer>
-        <para>You need to update Sylpheeds cache. Right click on the mailbox and choose
+        <para>You need to update Sylpheed cache. Right click on the mailbox and choose
      <guimenuitem>Rebuild folder tree</guimenuitem>.
 </para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>How can I revert original settings, e.g. for fonts, keybindings, etc.?
+        <para>How can I revert original settings, e.g. for fonts, key bindings, etc.?
 </para>
       </question>
       <answer>
-        <para>Sylpheed keeps its configuration files in <filename>$HOME/.sylpheed-2.0/sylpheedrc</filename> and creates default
+        <para>Sylpheed keeps its configuration files in <filename>$HOME/.sylpheed-2.0/sylpheedrc</filename> (or <filename>%APPDATA%\Sylpheed\sylpheedrc</filename> under Windows) and creates default
      entries, if none are found. So the easiest way is to quit Sylpheed,
-     temporarily renaming your <filename>$HOME/.sylpheed-2.0</filename> e.g. to <filename>*.bak</filename> and restarting
+     temporarily renaming your <filename>$HOME/.sylpheed-2.0</filename> (or <filename>%APPDATA%\Sylpheed\sylpheedrc</filename>) e.g. to <filename>*.bak</filename> and restarting
      Sylpheed in order to get default entries.
 </para>
       </answer>
@@ -423,7 +442,7 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
         <para>In most cases, this is caused by fonts that use an unsuitable encoding on a not Unicode-based system. (On a Unicode-based system, fonts should support all thinkable characters for the vast majority of languages.)</para>
         <para>Choose <menuchoice>
             <guimenu>Configuration</guimenu>
-            <guimenuitem>Common preferences</guimenuitem>
+            <guimenuitem>Common preferences...</guimenuitem>
             <guimenuitem>Display</guimenuitem>
             <guimenuitem>General</guimenuitem>
           </menuchoice>, and click the button right to  <guilabel>Text font</guilabel>. Now, a special dialog appears that allows you to pick a desirable font family, style, and size.</para>
@@ -433,7 +452,7 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
     </qandaentry>
     <qandaentry>
       <question>
-        <para>How can I convert my old mailbox/adressbook from (some mailclient).
+        <para>How can I convert my old mailbox/adress book from (some mail client).
 </para>
       </question>
       <answer>
@@ -452,9 +471,9 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
 </para>
       </question>
       <answer>
-        <para>Sylpheeds config files can be found in <filename>$HOME/.sylpheed-2.0</filename>. They are in plain
+        <para>Sylpheed config files can be found in <filename>$HOME/.sylpheed-2.0</filename> (under Windows, the path is <filename>%APPDATA%\Sylpheed</filename>). They are in plain
      text format and quite easy to understand, so don&apos;t fear to take a look
-     into them using a texteditor.</para>
+     into them using a text editor.</para>
         <itemizedlist>
           <listitem>
             <para><filename>sylpheedrc</filename>      - main configuration: nearly all options from the
@@ -468,7 +487,7 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
             <para><filename>actionsrc</filename>       - user-defined actions</para>
           </listitem>
           <listitem>
-            <para><filename>addrbook-*.xml</filename>  - contents of your addressbook</para>
+            <para><filename>addrbook-*.xml</filename>  - contents of your address book</para>
           </listitem>
           <listitem>
             <para><filename>customheaderrc</filename>  - contains user-defined header lines</para>
@@ -491,7 +510,47 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
     </qandaentry>
     <qandaentry>
       <question>
-        <para>What to do when printing an e-mail prints off the paper?
+        <para>How do I change the location of user profile directory under Windows?</para>
+      </question>
+      <answer>
+        <para>The configuration files and the mailboxes are saved under the following
+location (<filename>%APPDATA%\Sylpheed</filename>) by default:</para>
+        <para><itemizedlist>
+            <listitem>
+              <para>Windows 2000/XP:
+<filename>C:\Documents and Settings\<replaceable>(user name)</replaceable>\Application Data\Sylpheed</filename></para>
+            </listitem>
+            <listitem>
+              <para>Windows Vista:
+<filename>C:\Users\<replaceable>(user name)</replaceable>\AppData\Sylpheed</filename></para>
+            </listitem>
+          </itemizedlist></para>
+        <para>If you want to change the location of the configuration files, you can
+specify it by the command line option <parameter>--configdir &quot;<replaceable>directory name</replaceable>&quot;</parameter>.
+Create a shortcut of <filename>sylpheed.exe</filename>, and append the option to the link target
+like the following:
+
+</para>
+        <screen>&quot;C:\Program Files\Sylpheed\sylpheed.exe&quot; --configdir &quot;D:\Sylpheed&quot;</screen>
+        <para>If <filename>sylpheed.ini</filename> file exists at the same location as <filename>sylpheed.exe</filename>, it will be
+loaded at startup. With this approach, you can make Sylpheed completely portable
+independent of drive letters etc., and you can install it in removable media
+such as USB memory.
+ </para>
+        <note>
+          <para>The installer version, and GnuPG and GPGME use registry.</para>
+        </note>
+        <para>The sample INI file is included in the Sylpheed for Windows installation package as <filename>sample-sylpheed.ini</filename>.
+Please copy or rename it to use.
+<literal>ipcport</literal> specifies the port number of socket for IPC (default is 50215).
+<literal>configdir</literal> specifies the location of configuration files as a relative
+path from the folder in which <filename>sylpheed.exe</filename> is located, or an absolute path.</para>
+        <para>(The text above is a slightly modified excerpt from the <filename>README-win32.txt</filename> file, which you should find within the <filename>C:\Program Files\Sylpheed</filename> directory.)</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>What to do when printing an email prints off the paper?
 </para>
       </question>
       <answer>

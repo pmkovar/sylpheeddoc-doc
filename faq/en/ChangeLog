@@ -1,3 +1,8 @@
+2009-09-18  Petr Kovar  <pknbe@volny.cz>
+
+	* *.xml: Updated several questions across the FAQ to conform
+	with Sylpheed 2.7.1, added couple of new ones.
+
 2009-08-31  Petr Kovar  <pknbe@volny.cz>
 
 	* *.xml: Even better formatting of qandaset tables. Markup
