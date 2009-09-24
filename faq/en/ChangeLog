@@ -1,3 +1,9 @@
+2009-09-24  Petr Kovar  <pknbe@volny.cz>
+
+	* faq.xml: Change revision numbers to respect 'beta' and
+	'stable'.
+	* faq_001.xml: Fix typo, thanks to Randy Dunlap.
+
 2009-09-18  Petr Kovar  <pknbe@volny.cz>
 
 	* *.xml: Updated several questions across the FAQ to conform

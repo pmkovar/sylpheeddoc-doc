@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
 <!ENTITY __faq__001 SYSTEM "faq_001.xml">
 <!ENTITY __faq__002 SYSTEM "faq_002.xml">
@@ -71,14 +70,14 @@
       </affiliation -->    </author>
     <revhistory>
 <!-- ******************************************************************************** -->      <revision>
-        <revnumber>2.1</revnumber>
+        <revnumber>1.9</revnumber>
         <date>2005/07/08</date>
         <authorinitials>OD</authorinitials>
         <revremark>Ported to DocBook XML.</revremark>
       </revision>
       <revision>
-        <revnumber>2.2</revnumber>
-        <date>2009/09/18</date>
+        <revnumber>2.0</revnumber>
+        <date>2009/09/24</date>
         <authorinitials>PK</authorinitials>
         <revremark>Finished porting to DocBook XML, updated many questions across the document to conform with Sylpheed 2.7.1.</revremark>
       </revision>
