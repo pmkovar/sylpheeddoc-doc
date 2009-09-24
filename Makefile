@@ -31,11 +31,12 @@
 ######################################################################
 #
 # $Log: Makefile,v $
+# Revision 1.7  2009/09/24 01:05:11  pknbe
+# Makefile: Add single-page stylesheet for FAQ.
+# tools/faq.xsl: Ditto.
+#
 # Revision 1.6  2009/08/12 19:37:33  pknbe
 # Makefile: Add the 'faq_chunks.xsl' stylesheet. tools/faq_chunks.xsl: Add chunk stylesheet for FAQ.
-#
-# Revision 1.6  2009/08/12 17:25:00  pknbe
-# Added the 'faq_chunks.xsl' stylesheet
 #
 # Revision 1.5  2005/06/21 20:29:32  fbarriere
 # Changed the Makefile to the new DocBook version of the doc
@@ -135,6 +136,7 @@ CHUNKS_STYLESHEET := $(ROOT_DIR)/tools/user_guide_chunks.xsl
 SINGLE_STYLESHEET := $(ROOT_DIR)/tools/user_guide.xsl
 FO_PDF_STYLESHEET := $(ROOT_DIR)/tools/user_guide_fo.xsl
 FAQ_CHUNKS_STYLESHEET := $(ROOT_DIR)/tools/faq_chunks.xsl
+FAQ_SINGLE_STYLESHEET := $(ROOT_DIR)/tools/faq.xsl
 HTML_STYLESHEET   := sylpheeddoc.css
 
 #

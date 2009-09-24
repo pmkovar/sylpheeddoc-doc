@@ -1,3 +1,8 @@
+2009-09-24  Petr Kovar  <pknbe@volny.cz>
+
+	* Makefile: Add single-page stylesheet for FAQ.
+	* tools/faq.xsl: Ditto.
+
 2009-09-18  Petr Kovar  <pknbe@volny.cz>
 
 	* tools/faq.css: Add formatting for 'pre' elements.
