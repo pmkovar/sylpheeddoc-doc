@@ -424,7 +424,7 @@ sylpheedmail/.
             <para>Upgrade to 0.7.3: many key bindings have changed</para>
           </listitem>
           <listitem>
-            <para>Upgrade to 2.2.3 or former on Windows: all configuration files such as mailboxes or bsfilter files are removed when performing the upgrade and/or uninstallation, so please be careful</para>
+            <para>Upgrade to 2.2.3 or former on Windows: all configuration files such as mailboxes or bsfilter files are removed when performing the upgrade and/or uninstallation, so please be careful and backup your data</para>
           </listitem>
         </itemizedlist>
         <para>You should always read the <filename>NEWS</filename> document (and also <filename>NEWS-<replaceable>x</replaceable>.0</filename> if you are upgrading from a very old version) that is included in the release tarballs. The NEWS can also be viewed on the <ulink url="http://sylpheed.sraoss.jp/en/news.html">appropriate Sylpheed website page</ulink>. </para>
