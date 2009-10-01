@@ -73,7 +73,7 @@
       </revision>
       <revision>
         <revnumber>2.0</revnumber>
-        <date>2009/10/01</date>
+        <date>2009/10/02</date>
         <authorinitials>PK</authorinitials>
         <revremark>Finished porting to DocBook XML, updated many questions across the document to conform with Sylpheed 2.7.1.</revremark>
       </revision>

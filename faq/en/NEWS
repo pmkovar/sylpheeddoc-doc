@@ -1,0 +1,42 @@
+Sylpheed FAQ revision 2.0 released on 2009-10-02
+================================================
+
+After a couple of dormant years, the Sylpheed FAQ has been officially released
+from the Sylpheed Documentation Project.
+
+You can view the FAQ either as a multi-page or single-page HTML document at:
+
+http://sylpheeddoc.sourceforge.net/en/doc_faq.html
+
+Or download it in a .tar.gz archive from:
+
+https://sourceforge.net/projects/sylpheeddoc/files/
+
+DocBook XML source files are available in the Project CVS repository, see:
+
+https://sourceforge.net/scm/?type=cvs&group_id=20952
+
+
+Changes over the past 6 years
+-----------------------------
+
+* Many questions across the document have been updated to conform with the
+  latest Sylpheed version 2.7.1
+* The document has been migrated from LinuxDoc SGML to DocBook XML
+* The document is now licensed under the terms of the GFDL 1.2 or later
+  (was 1.1 or later)
+* A copy of the GFDL 1.2 is now distributed with the FAQ
+
+All other information on the Sylpheed Documentation Project including how to
+contribute to the documentation effort is available at:
+
+http://sylpheeddoc.sourceforge.net/
+
+
+Contributors to this and previous releases
+------------------------------------------
+
+Paul Kater, Jens Oberender, Francois Barriere, Olivier Delhomme, Petr Kovar
+
+
+Enjoy!

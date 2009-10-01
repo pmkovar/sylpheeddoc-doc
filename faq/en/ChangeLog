@@ -1,3 +1,12 @@
+2009-10-02  Petr Kovar  <pknbe@volny.cz>
+
+	* NEWS: Add the file & prepare for the FAQ_EN_2_0 release.
+	* faq.xml: Prepare for the FAQ_EN_2_0 release.
+
+2009-10-02  Petr Kovar  <pknbe@volny.cz>
+
+	* faq_001.xml: Minor addition.
+
 2009-10-01  Petr Kovar  <pknbe@volny.cz>
 
 	* faq.xml: Expanded question about key bindings, and other minor
