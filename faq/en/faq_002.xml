@@ -315,6 +315,29 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
     </qandaentry>
     <qandaentry>
       <question>
+        <para>How can I get the newest source code from the Sylpheed Subversion (SVN) repository?</para>
+      </question>
+      <answer>
+        <para>Move to an appropriate directory, and after you run the command specified below, a source tree named <filename>trunk</filename> will be created under that directory:</para>
+        <para><command>svn checkout svn://sylpheed.sraoss.jp/sylpheed/trunk</command></para>
+        <para>The subdirectories under the <filename>sylpheed</filename> directory are  as follows:</para>
+        <itemizedlist>
+          <listitem>
+            <para><filename>trunk/</filename> - main tree</para>
+          </listitem>
+          <listitem>
+            <para><filename>branches/</filename> - miscellaneous experimental branches</para>
+          </listitem>
+          <listitem>
+            <para><filename>tags/</filename> - release-tagged branches</para>
+          </listitem>
+        </itemizedlist>
+        <para>To update to the newest source tree, run the following command in the target directory:</para>
+        <para><command>svn update</command></para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
         <para>I checked out the sources using SVN and can&apos;t find any configure script.
 </para>
       </question>
@@ -352,7 +375,7 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
     </qandaentry>
     <qandaentry>
       <question>
-        <para>I don&apos;t want to compile in support for ... any longer, but after running
+        <para>I don&apos;t want to compile in support for (...) any longer, but after running
      &quot;configure&quot;, those libraries are still used.
 </para>
       </question>
@@ -503,7 +526,7 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
                         read messages, sort order, etc.</para>
           </listitem>
           <listitem>
-            <para><filename>menurc</filename>          - Key bindings</para>
+            <para><filename>menurc</filename>          - key bindings</para>
           </listitem>
         </itemizedlist>
       </answer>

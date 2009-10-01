@@ -9,11 +9,7 @@
   <title>Sylpheed FAQ</title>
   <bookinfo>
     <abstract>
-      <para>This document contains answers to various questions, which are
-       frequently asked by Sylpheed users. It consists of three sections providing
-       general information, information on Sylpheed installation and configuration,
-       and on Sylpheed interface.
-      </para>
+      <para>This document contains answers to various questions, which are frequently asked by Sylpheed users. It consists of three sections providing general information, information on Sylpheed installation and configuration, and on Sylpheed interface.</para>
     </abstract>
     <copyright>
       <year>2009</year>
@@ -77,7 +73,7 @@
       </revision>
       <revision>
         <revnumber>2.0</revnumber>
-        <date>2009/09/24</date>
+        <date>2009/10/01</date>
         <authorinitials>PK</authorinitials>
         <revremark>Finished porting to DocBook XML, updated many questions across the document to conform with Sylpheed 2.7.1.</revremark>
       </revision>

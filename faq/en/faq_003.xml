@@ -102,7 +102,28 @@ widget_class &quot;*&quot; style &quot;default&quot;
 </para>
       </question>
       <answer>
-        <para>That is very simple. Suppose you want to assign a
+        <para>Unlike Sylpheed 1.x,  Sylpheed 2.x doesn&apos;t allow direct modification of the menu shortcuts by default. Nevertheless, you can use the following methods to configure them:</para>
+        <orderedlist>
+          <listitem>
+            <para><emphasis>Using GNOME 2.8 or later:</emphasis> run gconf-editor from <menuchoice>
+                <guimenu>Applications</guimenu>
+                <guisubmenu>System Tools</guisubmenu>
+                <guimenuitem>Configuration Editor</guimenuitem>
+              </menuchoice>. Select <menuchoice>
+                <guimenu>desktop</guimenu>
+                <guisubmenu>gnome</guisubmenu>
+                <guisubmenu>interface</guisubmenu>
+              </menuchoice> and check <guilabel>can-change-accels</guilabel> there.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis>Using GNOME before 2.8, or other environments:</emphasis> add the following line to the file <filename>~/.gtkrc-2.0</filename> (or create a new one, if it doesn&apos;t exist):</para>
+            <programlisting>gtk-can-change-accels = 1</programlisting>
+          </listitem>
+          <listitem>
+            <para>When Sylpheed is not running, directly edit <filename>~/.sylpheed-2.0/menurc</filename> with a text editor.</para>
+          </listitem>
+        </orderedlist>
+        <para>After that, the key binding change itself is very simple. Suppose you want to assign a
      shortcut key to a function, e.g. sending all mail
      out should start when you press <keycombo>
             <keycap>Ctrl</keycap>

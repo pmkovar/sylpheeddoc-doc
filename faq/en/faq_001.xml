@@ -51,7 +51,7 @@
       <answer>
         <para>
         Sylpheed is  an email client (and news  reader)  based on GTK+,
-        running on the X Window System, and aiming for:</para>
+        running on the X Window System or Microsoft Windows, and aiming for:</para>
         <itemizedlist>
           <listitem>
             <para>Quick response</para>
@@ -63,9 +63,20 @@
             <para>Easy configuration, intuitive operation</para>
           </listitem>
           <listitem>
+            <para>High reliability</para>
+          </listitem>
+          <listitem>
+            <para>Internationalization and multilingualization support</para>
+          </listitem>
+          <listitem>
             <para>Abundant features</para>
           </listitem>
         </itemizedlist>
+        <para>As the Sylpheed README file reads: The appearance and interface are similar to some popular e-mail clients for
+Windows, such as Outlook Express or Becky!. Many commands are accessible with
+the keyboard like the Emacs-based mailers such as Mew and Wanderlust.
+So you will be able to migrate to Sylpheed without much discomfort, even if
+you are accustomed to other mailers.</para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -118,8 +129,10 @@
          Mails are stored in the MH mailfile format as used by MH
          and EMH. Maildir,  mbox, and eml formats are not (yet)
          supported, although it is possible to import an mbox
-         file or an eml file into a Sylpheed mailbox.
-      </para>
+         file or an eml file into a Sylpheed mailbox.</para>
+        <para>You can manage your mails just with Sylpheed, or together with another mailer based on the MH format (e.g. Mew). The MH format has less possibility
+of losing mails on failures since one file corresponds to one mail. You can also utilize fetchmail
+and/or procmail, and external programs on receiving (like inc or imget).</para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -409,6 +422,9 @@ sylpheedmail/.
           </listitem>
           <listitem>
             <para>Upgrade to 0.7.3: many key bindings have changed</para>
+          </listitem>
+          <listitem>
+            <para>Upgrade to 2.2.3 or former on Windows: all configuration files such as mailboxes or bsfilter files are removed when performing the upgrade and/or uninstallation, so please be careful</para>
           </listitem>
         </itemizedlist>
         <para>You should always read the <filename>NEWS</filename> document (and also <filename>NEWS-<replaceable>x</replaceable>.0</filename> if you are upgrading from a very old version) that is included in the release tarballs. The NEWS can also be viewed on the <ulink url="http://sylpheed.sraoss.jp/en/news.html">appropriate Sylpheed website page</ulink>. </para>
