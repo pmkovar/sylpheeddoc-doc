@@ -1,3 +1,10 @@
+2010-03-22  Petr Kovar  <pknbe@volny.cz>
+
+	* faq.xml: Updated with regard to Sylpheed 3.0.1.
+	* faq_001.xml: Ditto.
+	* faq_002.xml: Ditto.
+	* faq_003.xml: Ditto.
+
 2009-10-02  Petr Kovar  <pknbe@volny.cz>
 
 	* NEWS: Add the file & prepare for the FAQ_EN_2_0 release.

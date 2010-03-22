@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-3">
   <title>Sylpheed FAQ - Interface</title>
-  <qandaset id="faq-interface">
-<?dbhtml cellspacing="13px" ?>    <qandaentry>
+  <qandaset id="faq-interface"><?dbhtml cellspacing="13px" ?>
+    <qandaentry>
       <question>
-        <para>How do I make Sylpheed display my language?
-</para>
+        <para>How do I make Sylpheed display my language?</para>
       </question>
       <answer>
         <para>You have to set some environment variables, such as
@@ -39,6 +38,23 @@
      <guimenuitem>Display</guimenuitem> tab, you can press the button <guibutton>Set display item of summary...</guibutton>. That pops up a screen with all the
      options you can show or leave out of the message
      list.</para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How do I disable or enable the alternating row colors in the message list?</para>
+      </question>
+      <answer>
+        <para>Under  UNIX, you can directly edit the appropriate hidden setting stored in the <filename>$HOME/.sylpheed-2.0/sylpheedrc</filename> configuration file by changing the setting value to 0, or 1, respectively (default is on, i.e. 1): </para>
+        <programlisting>enable_rules_hint=0</programlisting>
+        <tip>
+          <para>There are various other hidden settings that can be adjusted in your <filename>sylpheedrc</filename> configuration file, see the <filename>README</filename> file for details.</para>
+        </tip>
+        <para>The above does not work under Windows, however, so you have to edit the <filename>C:\Program Files\Sylpheed\share\themes\MS-Windows\gtk-2.0\gtkrc</filename> file and set the following setting to 1, or 0, respectively (default is off under Windows, i.e. 0):</para>
+        <programlisting>GtkTreeView::allow-rules = 1</programlisting>
+        <note>
+          <para>Since the hidden setting  described above is not stored within your user profile under Windows, it may be overwritten when installing a new version of Sylpheed. To avoid this at least partially, keep a backup copy of the <filename>gtkrc</filename> file somewhere safe.</para>
+        </note>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -102,7 +118,7 @@ widget_class &quot;*&quot; style &quot;default&quot;
 </para>
       </question>
       <answer>
-        <para>Unlike Sylpheed 1.x,  Sylpheed 2.x doesn&apos;t allow direct modification of the menu shortcuts by default. Nevertheless, you can use the following methods to configure them:</para>
+        <para>Unlike Sylpheed 1.x,  Sylpheed 2.x and 3.x doesn&apos;t allow direct modification of the menu shortcuts by default. Nevertheless, you can use the following methods to configure them:</para>
         <orderedlist>
           <listitem>
             <para><emphasis>Using GNOME 2.8 or later:</emphasis> run gconf-editor from <menuchoice>

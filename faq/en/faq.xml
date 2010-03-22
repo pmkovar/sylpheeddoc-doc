@@ -12,7 +12,7 @@
       <para>This document contains answers to various questions, which are frequently asked by Sylpheed users. It consists of three sections providing general information, information on Sylpheed installation and configuration, and on Sylpheed interface.</para>
     </abstract>
     <copyright>
-      <year>2009</year>
+      <year>2010</year>
       <holder>The Sylpheed Documentation Project.</holder>
     </copyright>
     <legalnotice>
@@ -64,8 +64,8 @@
           <email>pknbe at volny.cz</email>
         </address>
       </affiliation -->    </author>
-    <revhistory>
-<!-- ******************************************************************************** -->      <revision>
+    <revhistory><!-- ******************************************************************************** -->
+      <revision>
         <revnumber>1.9</revnumber>
         <date>2005/07/08</date>
         <authorinitials>OD</authorinitials>
@@ -77,6 +77,12 @@
         <authorinitials>PK</authorinitials>
         <revremark>Finished porting to DocBook XML, updated many questions across the document to conform with Sylpheed 2.7.1.</revremark>
       </revision>
-<!-- ******************************************************************************** -->    </revhistory>
+      <revision>
+        <revnumber>2.1</revnumber>
+        <date>2010/03/22</date>
+        <authorinitials>PK</authorinitials>
+        <revremark>Updated with regard to Sylpheed 3.0.1.</revremark>
+      </revision>
+    <!-- ******************************************************************************** --></revhistory>
   </bookinfo>
 &__faq__001;&__faq__002;&__faq__003;&__license;</book>

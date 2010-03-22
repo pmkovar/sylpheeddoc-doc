@@ -1,18 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-1">
   <title>Sylpheed FAQ - General Information</title>
-  <qandaset id="faq-general">
-<?dbhtml cellspacing="13px" ?><!--   
-   <qandaentry>
-    <question id="">
-      <para>
-      </para>
-    </question>
-    <answer>
-      <para>
-      </para>
-    </answer>
-  </qandaentry>
--->    <qandaentry>
+  <qandaset id="faq-general"><?dbhtml cellspacing="13px" ?>
+    <qandaentry>
       <question id="faq-languages">
         <para>
         Are there FAQ&apos;s in other languages?
@@ -72,7 +61,7 @@
             <para>Abundant features</para>
           </listitem>
         </itemizedlist>
-        <para>As the Sylpheed README file reads: The appearance and interface are similar to some popular e-mail clients for
+        <para>As the Sylpheed <filename>README</filename> file reads: The appearance and interface are similar to some popular e-mail clients for
 Windows, such as Outlook Express or Becky!. Many commands are accessible with
 the keyboard like the Emacs-based mailers such as Mew and Wanderlust.
 So you will be able to migrate to Sylpheed without much discomfort, even if
@@ -367,7 +356,7 @@ reporting bugs.</para>
         <para>You need to copy the <filename>sylpheed-2.0</filename> directory with your user profile, and your entire local mail archive. </para>
         <para>Under UNIX, the user profile is stored in <filename>$HOME/.sylpheed-2.0</filename> by default, and your local mail archive is by default located in <filename>$HOME/Mail</filename>. </para>
         <para>While under Windows 2000/XP, the user profile is stored in <filename>C:\Documents and Settings\<replaceable>(user name)</replaceable>\Application Data\Sylpheed</filename> by default, and your local mail archive is by default located in <filename>C:\Documents and Settings\<replaceable>(user name)</replaceable>\Application Data\Sylpheed\Mailboxes\Mail</filename>. </para>
-        <para>Under Windows Vista, the directory paths are <filename>C:\Users\<replaceable>(user name)</replaceable>\AppData\Sylpheed</filename>, and <filename>C:\Users\<replaceable>(user name)</replaceable>\AppData\Sylpheed\Mailboxes\Mail</filename>, respectively.</para>
+        <para>Under Windows Vista/Seven, the directory paths are <filename>C:\Users\<replaceable>(user name)</replaceable>\AppData\Roaming\Sylpheed</filename>, and <filename>C:\Users\<replaceable>(user name)</replaceable>\AppData\Roaming\Sylpheed\Mailboxes\Mail</filename>, respectively.</para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -504,6 +493,18 @@ sylpheedmail/.
           </menuchoice>).</para>
         <note>
           <para>You need to have bogofilter, bsfilter, or other spam filter properly installed on your system prior to the junk mail configuration in Sylpheed, unless you use Sylpheed for Windows, which comes with  bsfilter included in the installation program (since version 2.7.0).</para>
+        </note>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Are there any plug-ins extending standard Sylpheed functionality?</para>
+      </question>
+      <answer>
+        <para>Not yet, but they are planned, since Sylpheed 3.0, released in early 2010, and later supports a plug-in interface. In the future, some of the Sylpheed features  will be re-implemented as plug-ins, and, moreover, various other plug-ins will be released.</para>
+        <para>There is a page on the Sylpheed website dedicated to the <ulink url="http://sylpheed.sraoss.jp/en/plugin.html">plug-in interface</ulink>. Additionally,  the <filename>PLUGIN.txt</filename> file distributed directly with Sylpheed can provide you with some basic information on the topic.</para>
+        <note>
+          <para>If you are a developer interested in creating plug-ins for Sylpheed, see the <ulink url="http://sylpheed.sraoss.jp/wiki/index.php?PluginSpec">plug-in specification</ulink> on the Sylpheed wiki.</para>
         </note>
       </answer>
     </qandaentry>

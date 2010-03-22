@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-2">
   <title>Sylpheed FAQ - Installation and Configuration</title>
-  <qandaset id="faq-installation">
-<?dbhtml cellspacing="13px" ?>    <qandaentry>
+  <qandaset id="faq-installation"><?dbhtml cellspacing="13px" ?>
+    <qandaentry>
       <question>
-        <para>What does it take to compile Sylpheed?
-</para>
+        <para>What does it take to compile Sylpheed?</para>
       </question>
       <answer>
         <para>Any POSIX compliant UNIX or similar OS, e.g. Linux,
@@ -30,6 +29,9 @@ Sylpheed.</para>
           </listitem>
           <listitem>
             <para>GtkSpell for a spell checking feature</para>
+          </listitem>
+          <listitem>
+            <para>cURL for allowing Sylpheed to check for updates</para>
           </listitem>
           <listitem>
             <para>JPilot</para>
@@ -65,6 +67,7 @@ name.</para>
           <para>When Sylpheed is executed for the first time, it automatically creates the configuration files under <filename>$HOME/.sylpheed-2.0/</filename> (or <filename>%APPDATA%\Sylpheed\</filename> under Windows), and asks you the location of mailbox. As stated above, the default is <filename>$HOME/Mail</filename>, or <filename>%APPDATA%\Sylpheed\Mailboxes\Mail</filename> under Windows. If some files, which are non-MH format, already exist on the directory, you will have to specify another location.
 </para>
         </note>
+        <para>Furthermore, you need to <link linkend="faq-account-setup">create at least one account</link> to be able to receive or send messages.</para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -82,14 +85,23 @@ directory or use another name for the Sylpheed mail directory.
       </answer>
     </qandaentry>
     <qandaentry>
-      <question>
+      <question id="faq-account-setup">
         <para>How do I set up an account?
 </para>
       </question>
       <answer>
         <para>After loading Sylpheed for the first time, you can
-add an email account by clicking the <guimenu>Configuration</guimenu> menu. Select the option <guimenuitem>Create new account</guimenuitem> and fill in the appropriate fields.
-</para>
+add an email account by clicking the <guimenu>Configuration</guimenu> menu. Select the option <guimenuitem>Create new account</guimenuitem> and let the configuration assistant help you with the initial setup.
+In a few easy steps, the assistant allows you to conveniently configure your  POP3, IMAP4, or Gmail account.</para>
+        <tip>
+          <para>If you want later to change your account configuration, just select  <menuchoice>
+              <guimenuitem>Configuration</guimenuitem>
+              <guimenuitem>Preferences for current account...</guimenuitem>
+            </menuchoice>, or <menuchoice>
+              <guimenuitem>Configuration</guimenuitem>
+              <guimenuitem>Edit accounts...</guimenuitem>
+            </menuchoice></para>
+        </tip>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -108,9 +120,10 @@ your computer stops responding.
         <para>Can I set up an account for sending mail only?</para>
       </question>
       <answer>
-        <para>Yes, set up a new account using <menuchoice>
+        <para>Yes, add a new account using <menuchoice>
             <guimenuitem>Configuration</guimenuitem>
-            <guimenuitem>Create new Account...</guimenuitem>
+            <guimenuitem>Edit accounts...</guimenuitem>
+            <guibutton>Add</guibutton>
           </menuchoice>  and set the Protocol to None (local).</para>
       </answer>
     </qandaentry>
@@ -279,6 +292,53 @@ When that completes successfully, there is a <guimenuitem>Privacy</guimenuitem> 
       <answer>
         <para>In case this happens, you can easily fix that by adding the following to <filename>/etc/mime.types</filename>:</para>
         <programlisting>image/gif gif</programlisting>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>How Sylpheed checks for new mail?</para>
+      </question>
+      <answer>
+        <para>New mail can be retrieved either manually or automatically.</para>
+        <para>To check for new mail the manual way, you can:</para>
+        <orderedlist>
+          <listitem>
+            <para>Either press the <guibutton>Get </guibutton>button on the toolbar to incorporate new mail  for the current account only, or use the <guibutton>Get all</guibutton> button to incorporate new mail for all configured accounts.</para>
+          </listitem>
+          <listitem>
+            <para>Or choose <menuchoice>
+                <guimenu>File</guimenu>
+                <guimenuitem>Mailbox</guimenuitem>
+                <guimenuitem>Check for new messages</guimenuitem>
+              </menuchoice>, or <guimenuitem>Check for new messages in all mailboxes</guimenuitem>.</para>
+          </listitem>
+          <listitem>
+            <para>Or select <menuchoice>
+                <guimenu>Message</guimenu>
+                <guimenuitem>Receive</guimenuitem>
+                <guimenuitem>Get from current account</guimenuitem>
+              </menuchoice>, or <guimenuitem>Get from all accounts</guimenuitem>.</para>
+          </listitem>
+        </orderedlist>
+        <tip>
+          <para>If you have a POP3 account and  don&apos;t want to retrieve all the new messages stored on  remote server to your computer, you can manage your account remotely (e.g. open or delete individual messages) by choosing <menuchoice>
+              <guimenu>Message</guimenu>
+              <guimenuitem>Receive</guimenuitem>
+              <guimenuitem>Remote mailbox...</guimenuitem>
+            </menuchoice></para>
+        </tip>
+        <para>If you prefer autochecking for new mail instead, first of all, make sure that you have checked <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Common preferences...</guimenuitem>
+            <guimenuitem>Receive</guimenuitem>
+            <guilabel>Autocheck new mail every <replaceable>10</replaceable> minute(s)</guilabel>
+          </menuchoice>. Optionally, you can adjust the interval value (in minutes) as well.</para>
+        <para>Also check your settings under <menuchoice>
+            <guimenu>Configuration</guimenu>
+            <guimenuitem>Edit accounts...</guimenuitem>
+          </menuchoice> You will find this
+at the top:  <guilabel>Check the boxes on the &apos;G&apos; column to enable message retrieval by &apos;Get all&apos;</guilabel>. The setting applies on both manual  and automatic
+mail checks.</para>
       </answer>
     </qandaentry>
     <qandaentry>
@@ -544,8 +604,8 @@ location (<filename>%APPDATA%\Sylpheed</filename>) by default:</para>
 <filename>C:\Documents and Settings\<replaceable>(user name)</replaceable>\Application Data\Sylpheed</filename></para>
             </listitem>
             <listitem>
-              <para>Windows Vista:
-<filename>C:\Users\<replaceable>(user name)</replaceable>\AppData\Sylpheed</filename></para>
+              <para>Windows Vista/Seven:
+<filename>C:\Users\<replaceable>(user name)</replaceable>\AppData\Roaming\Sylpheed</filename></para>
             </listitem>
           </itemizedlist></para>
         <para>If you want to change the location of the configuration files, you can
