@@ -1,3 +1,9 @@
+2010-04-01  Petr Kovar  <pknbe@volny.cz>
+
+	* tools/user_guide.css: Add stylesheet for the User's Manual.
+	* tools/user_guide.xsl: Partially sync with the FAQ stylesheets.
+	* tools/user_guide_chunks.xsl: Ditto.
+
 2009-09-24  Petr Kovar  <pknbe@volny.cz>
 
 	* Makefile: Add single-page stylesheet for FAQ.
