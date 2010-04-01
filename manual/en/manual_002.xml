@@ -10,7 +10,7 @@
     The default name for this directory is &quot;Mail&quot;.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/wizard_1.png"/>
+        <imagedata fileref="snapshots/wizard_1.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>Then the account preferences window shows up. Based on your
@@ -44,7 +44,7 @@
     values.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_basic.png"/>
+        <imagedata fileref="snapshots/account_basic.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>The Receive tab is not used in this setup, since you are not polling
@@ -53,13 +53,13 @@
     authentication.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_send.png"/>
+        <imagedata fileref="snapshots/account_send.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>In the Compose tab you can define your signature file.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_compose.png"/>
+        <imagedata fileref="snapshots/account_compose.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>In the Advanced tab you can edit the portnumbers for the servers you
@@ -94,26 +94,26 @@
     values.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_pop_basic.png"/>
+        <imagedata fileref="snapshots/account_pop_basic.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>The Receive tab offers advanced POP3 options.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_pop_receive.png"/>
+        <imagedata fileref="snapshots/account_pop_receive.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>In the Send tab you can select headers and SMTP
     authentication.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_send.png"/>
+        <imagedata fileref="snapshots/account_send.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>In the Compose tab you can define your signature file.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_compose.png"/>
+        <imagedata fileref="snapshots/account_compose.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>In the Advanced tab you can edit the portnumbers for the servers you

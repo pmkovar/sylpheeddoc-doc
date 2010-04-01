@@ -2,9 +2,27 @@
   <title>Information</title>
   <section>
     <title>Websites on Sylpheed</title>
-    <para>
-Here are some links to the Sylpheed FAQ in other languages:</para>
-<!-- missing links itemizedlist -->  </section>
+    <para>Here are some links to the Sylpheed FAQ in other languages:</para>
+        <itemizedlist>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/fr/faq/faq.html">Sylpheed FAQ in French</ulink>, translated by Olivier Delhomme.</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/de/faq/faq.html">Sylpheed FAQ in German</ulink>, translated by Nicolas Kaiser.</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/es/faq/faq.html">Sylpheed FAQ in Spanish</ulink>, translated by Ricardo  Mones Lastra.</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://sylpheeddoc.sourceforge.net/zh_TW.Big5/sylpheed-faq.html">Sylpheed FAQ in Traditional Chinese</ulink>, courtesy of Franklin.</para>
+          </listitem>
+        </itemizedlist>
+        <para>
+        You can always download the English FAQ from the <ulink url="http://sylpheeddoc.sourceforge.net/en/faq/sylpheed-faq.html">Sylpheed Documentation Project website</ulink>.</para>
+        <note>
+          <para>Did not find your language in the list? Would you like to contribute with a new translation to the Sylpheed Documentation Project? Then please contact the Project members at <ulink url="http://sylpheeddoc.sourceforge.net/">their website</ulink>. Thanks in advance.</para>
+        </note>
+  </section>
   <section>
     <title>Mailing Lists</title>
     <para>
@@ -48,7 +66,7 @@ Send a mail to sylpheed-ctl@good-day.net that says</para>
 <guilabel>unsubscribe</guilabel></para>
     <para>
 in the body.</para>
-<!-- added aug. 13, 2001 -->  </section>
+  </section>
   <section>
     <title>Anonymous CVS</title>
     <para>

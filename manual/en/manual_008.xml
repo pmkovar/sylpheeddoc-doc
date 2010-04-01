@@ -32,7 +32,7 @@ the sections covering the optional features they control (like the
 In here you can set up how to receive messages.</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_receive..png"/>
+          <imagedata fileref="snapshots/pref_receive.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -88,7 +88,7 @@ In here you can set up how to receive messages.</para>
 In here you can set up how to send messages.</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_send..png"/>
+          <imagedata fileref="snapshots/pref_send.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -124,7 +124,7 @@ In here you can set up how to send messages.</para>
 Controls the composition window&apos;s behaviour...</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_compose.png"/>
+          <imagedata fileref="snapshots/pref_compose.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -177,7 +177,7 @@ In here you can control the quotation of your replies and forwarded
 messages.</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_quote.png"/>
+          <imagedata fileref="snapshots/pref_quote.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -205,7 +205,7 @@ messages.</para>
 In here you can control the display options of Sylpheed.</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_display..png"/>
+          <imagedata fileref="snapshots/pref_display.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -259,7 +259,7 @@ In here you can control the display options of Sylpheed.</para>
 The message tab controls the message window options.</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_message..png"/>
+          <imagedata fileref="snapshots/pref_message.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -329,7 +329,7 @@ The interface tab controls the Sylpheed&apos;s Graphical User Interface
 behaviour.</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_interface..png"/>
+          <imagedata fileref="snapshots/pref_interface.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -401,7 +401,7 @@ The other tab contains the settings that does not fit the
 previous categories.</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/pref_other..png"/>
+          <imagedata fileref="snapshots/pref_other.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <itemizedlist>
@@ -482,7 +482,7 @@ the following areas:
       <title id="Basic">Basic tab </title>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/account_basic..png"/>
+          <imagedata fileref="snapshots/account_basic.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <para>In the &quot;Basic&quot; tab you name the account. This is to make identifying 
@@ -534,7 +534,7 @@ not by &apos;group&apos; and &apos;other&apos;, do not change these access right
       <title id="Receive">Receive tab</title>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/account_pop_receive..png"/>
+          <imagedata fileref="snapshots/account_pop_receive.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <para>The <computeroutput>Receive</computeroutput> tab is only used for POP3 accounts. Here you
@@ -573,7 +573,7 @@ toolbar button (or menu entry).
       <title id="Send">Send tab</title>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/account_send..png"/>
+          <imagedata fileref="snapshots/account_send.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <para>In the <computeroutput>Send</computeroutput> tab you can define the settings that apply 
@@ -602,7 +602,7 @@ Visit <ulink url="http://www.dairiki.org/xface/">this page</ulink> for the detai
       <title id="Compose">Compose tab</title>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/account_compose..png"/>
+          <imagedata fileref="snapshots/account_compose.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <para>In the <computeroutput>Compose</computeroutput> tab you can define your signature file, 
@@ -629,7 +629,7 @@ not need to change (unless you really know what you are
 doing).</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/account_advanced..png"/>
+          <imagedata fileref="snapshots/account_advanced.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <para>
@@ -653,7 +653,7 @@ the folder name and the corresponding directory path (relative to the mail
 directory). In the <computeroutput>Compose</computeroutput> tab:</para>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="snapshots/folder_prop_compose..png"/>
+          <imagedata fileref="snapshots/folder_prop_compose.png" format="PNG"/>
         </imageobject>
       </mediaobject>
       <para>You can select the account, choose to apply this setting also to

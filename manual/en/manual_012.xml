@@ -2,7 +2,7 @@
   <title>Address Book</title>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="snapshots/address_book..png"/>
+      <imagedata fileref="snapshots/address_book.png" format="PNG"/>
     </imageobject>
   </mediaobject>
   <para>
@@ -30,7 +30,7 @@ selected at the moment of adding.
 </para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/address_book_basic..png"/>
+        <imagedata fileref="snapshots/address_book_basic.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>
@@ -41,7 +41,7 @@ window.
 </para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/address_book_address..png"/>
+        <imagedata fileref="snapshots/address_book_address.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>
@@ -111,7 +111,7 @@ contain, click the &quot;OK&quot; button to close the window.
 </para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/address_book_group..png"/>
+        <imagedata fileref="snapshots/address_book_group.png" format="PNG"/>
       </imageobject>
     </mediaobject>
   </section>

@@ -21,7 +21,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 </para>
   </section>
-<!-- add 2001/07/21 -->  <section>
+  <section>
     <title>Where to Get the Latest Version of This Document</title>
     <para>
 You can find the latest version of this document on the site of the Sylpheed documentation project at</para>
@@ -43,7 +43,6 @@ Nick Selby, for offering his well appreciated assistance in writing along in thi
     <para>
 All the people around the world who work hard on keeping the manual and FAQ up to date</para>
     <para>
-And Linus Torvald, who got us a great operating system! ;-)
-<!-- end add 2001/07/21 --></para>
+And Linus Torvald, who got us a great operating system! ;-)</para>
   </section>
 </chapter>

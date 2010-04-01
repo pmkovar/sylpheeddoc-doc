@@ -5,8 +5,7 @@ What is netnews?</para>
   <para>
 Netnews, also called Usenet, is a collection of &quot;news servers&quot; that contain a great deal of information. News, as it is called in short, can be about anything. About making your own wine, about old cars or radios. You name it, and there probably is a newsgroup about it.</para>
   <para>
-This is what we will set up here. Accessing newsgroups. Note that this is different from e-mails. You can almost compare it to a mailing list, but yet the concept is a bit different.
-<!-- added 2001/07/20 --></para>
+This is what we will set up here. Accessing newsgroups. Note that this is different from e-mails. You can almost compare it to a mailing list, but yet the concept is a bit different.</para>
   <section>
     <title>Adding and Deleting Servers</title>
     <section>
@@ -75,4 +74,4 @@ after which you will find nicely formatted blocks of characters that don&apos;t 
 </para>
     </section>
   </section>
-<!-- end add 2001/07/20 --></chapter>
+</chapter>

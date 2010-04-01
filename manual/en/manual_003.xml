@@ -8,7 +8,7 @@
     Protocol box you select &quot;News (NNTP)&quot;.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_news_basic.png"/>
+        <imagedata fileref="snapshots/account_news_basic.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>Enter the newsserver information.</para>
@@ -17,7 +17,7 @@
     <para>In the &quot;Compose&quot; tab you can define your signature file.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="snapshots/account_compose.png"/>
+        <imagedata fileref="snapshots/account_compose.png" format="PNG"/>
       </imageobject>
     </mediaobject>
     <para>In the &quot;Advanced&quot; tab you can edit the portnumbers for the servers

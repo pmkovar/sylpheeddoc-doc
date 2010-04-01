@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
 <!ENTITY __chapter__001 SYSTEM "manual_001.xml">
 <!ENTITY __chapter__002 SYSTEM "manual_002.xml">
 <!ENTITY __chapter__003 SYSTEM "manual_003.xml">
@@ -26,11 +26,11 @@
   <title>Sylpheed User&apos;s Manual</title>
   <bookinfo>
     <abstract>
-      <para>Sylpheed User&apos;s Manual authored by the Sylpheed Documentation Team deals with both the basic and advanced usage description of Sylpheed.</para>
+      <para>The Sylpheed User&apos;s Manual authored by the members of the Sylpheed Documentation Project deals with both the basic and advanced usage description of Sylpheed.</para>
     </abstract>
     <copyright>
-      <year>2009</year>
-      <holder>The Sylpheed Documentation Team</holder>
+      <year>2010</year>
+      <holder>The Sylpheed Documentation Project</holder>
     </copyright>
     <legalnotice>
       <para>Permission is granted to copy, distribute and/or modify this document
@@ -43,41 +43,41 @@
     <author>
       <firstname>Paul</firstname>
       <surname>Kater</surname>
-      <affiliation>
+      <!-- affiliation>
         <address>
           <email>paul AT nlpagan DOT net</email>
         </address>
-      </affiliation>
+      </affiliation -->
     </author>
     <author>
       <firstname>Nick</firstname>
       <surname>Selby</surname>
-      <affiliation>
+      <!-- affiliation>
         <address>
           <email>sylpheed AT nickselby DOT com</email>
         </address>
-      </affiliation>
+      </affiliation -->
     </author>
     <author>
       <firstname>Francois</firstname>
       <surname>Barriere</surname>
-      <affiliation>
+      <!-- affiliation>
         <address>
           <email>barriere DOT francois AT libertysurf DOT fr</email>
         </address>
-      </affiliation>
+      </affiliation -->
     </author>
     <author>
       <firstname>Petr</firstname>
-      <surname>Kovář</surname>
-      <affiliation>
+      <surname>Kovar</surname>
+      <!-- affiliation>
         <address>
           <email>pknbe AT volny DOT cz</email>
         </address>
-      </affiliation>
+      </affiliation -->
     </author>
-    <revhistory>
-<!-- ******************************************************************************** -->      <revision>
+    <revhistory><!-- ******************************************************************************** -->
+      <revision>
         <revnumber>2.1</revnumber>
         <date>2006/01/15</date>
         <authorinitials>FBe</authorinitials>
@@ -85,10 +85,10 @@
       </revision>
       <revision>
         <revnumber>2.2</revnumber>
-        <date>2009/08/12</date>
+        <date>2010/04/01</date>
         <authorinitials>PK</authorinitials>
         <revremark>Finished porting to DocBook XML.</revremark>
       </revision>
-<!-- ******************************************************************************** -->    </revhistory>
+    <!-- ******************************************************************************** --></revhistory>
   </bookinfo>
 &__chapter__001;&__chapter__002;&__chapter__003;&__chapter__004;&__chapter__005;&__chapter__006;&__chapter__007;&__chapter__008;&__chapter__009;&__chapter__010;&__chapter__011;&__chapter__012;&__chapter__013;&__chapter__014;&__chapter__015;&__chapter__016;&__chapter__017;&__chapter__018;&__chapter__019;&__chapter__020;&__license;</book>
