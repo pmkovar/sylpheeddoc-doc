@@ -1,3 +1,47 @@
+Sylpheed FAQ revision 2.1 released on 2010-04-14
+================================================
+
+New revision of Sylpheed FAQ has been officially released from the Sylpheed
+Documentation Project to reflect changes in Sylpheed 3.0.
+
+You can view the FAQ either as a multi-page or single-page HTML document at:
+
+http://sylpheeddoc.sourceforge.net/en/doc_faq.html
+
+Or download it in a .tar.gz or .zip archive from:
+
+https://sourceforge.net/projects/sylpheeddoc/files/
+
+DocBook XML source files are available in the Project CVS repository, see:
+
+https://sourceforge.net/scm/?type=cvs&group_id=20952
+
+
+Changes over the past 6 months
+------------------------------
+
+* New Q&A regarding new mail retrieval
+* New Q&A regarding Sylpheed plug-in interface
+* New Q&A on disabling/enabling the alternating row colors in the message list
+* Updated Q&A on setting up a new account
+* Corrected configuration directory paths under Windows Vista/Seven
+* Other minor edits throughout the document
+
+All other information on the Sylpheed Documentation Project including how to
+contribute to the documentation effort is available at:
+
+http://sylpheeddoc.sourceforge.net/
+
+
+Contributors to this and previous releases
+------------------------------------------
+
+Paul Kater, Jens Oberender, Francois Barriere, Olivier Delhomme, Petr Kovar
+
+
+Enjoy!
+
+
 Sylpheed FAQ revision 2.0 released on 2009-10-02
 ================================================
 

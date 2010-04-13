@@ -1,3 +1,11 @@
+2010-04-14  Petr Kovar  <pknbe@volny.cz>
+
+	* NEWS: Prepare for the FAQ_EN_2_1 release.
+	* faq.xml: Prepare for the FAQ_EN_2_1 release.
+	* faq_001.xml: Minor edits.
+	* faq_002.xml: Ditto.
+	* faq_003.xml: Ditto.
+
 2010-03-22  Petr Kovar  <pknbe@volny.cz>
 
 	* faq.xml: Updated with regard to Sylpheed 3.0.1.

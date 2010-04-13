@@ -64,8 +64,8 @@
           <email>pknbe at volny.cz</email>
         </address>
       </affiliation -->    </author>
-    <revhistory><!-- ******************************************************************************** -->
-      <revision>
+    <revhistory>
+<!-- ******************************************************************************** -->      <revision>
         <revnumber>1.9</revnumber>
         <date>2005/07/08</date>
         <authorinitials>OD</authorinitials>
@@ -79,10 +79,10 @@
       </revision>
       <revision>
         <revnumber>2.1</revnumber>
-        <date>2010/03/22</date>
+        <date>2010/04/14</date>
         <authorinitials>PK</authorinitials>
-        <revremark>Updated with regard to Sylpheed 3.0.1.</revremark>
+        <revremark>Updated with regard to Sylpheed 3.0.2.</revremark>
       </revision>
-    <!-- ******************************************************************************** --></revhistory>
+<!-- ******************************************************************************** -->    </revhistory>
   </bookinfo>
 &__faq__001;&__faq__002;&__faq__003;&__license;</book>

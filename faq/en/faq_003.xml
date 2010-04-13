@@ -1,21 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-3">
   <title>Sylpheed FAQ - Interface</title>
-  <qandaset id="faq-interface"><?dbhtml cellspacing="13px" ?>
-    <qandaentry>
+  <qandaset id="faq-interface">
+<?dbhtml cellspacing="13px" ?>    <qandaentry>
       <question>
         <para>How do I make Sylpheed display my language?</para>
       </question>
       <answer>
         <para>You have to set some environment variables, such as
      <envar>LANG</envar>, <envar>LC_CTYPE</envar>, <envar>LC_MESSAGES</envar> to your local language.
-     Usually <envar>LANG</envar> (or <envar>LC_ALL</envar>) is sufficient. Note that modern distributions and operating systems do this for you automatically.
-</para>
+     Usually <envar>LANG</envar> (or <envar>LC_ALL</envar>) is sufficient. Note that modern distributions and operating systems do this for you automatically.</para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>I don&apos;t like the default font. Can I change that?
-</para>
+        <para>I don&apos;t like the default font. Can I change that?</para>
       </question>
       <answer>
         <para>Yes. In <menuchoice>
@@ -27,8 +25,7 @@
     </qandaentry>
     <qandaentry>
       <question>
-        <para>There are too many columns in the message list!
-</para>
+        <para>There are too many columns in the message list!</para>
       </question>
       <answer>
         <para>In <menuchoice>
@@ -59,8 +56,7 @@
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Can I use a different editor to write my mails?
-</para>
+        <para>Can I use a different editor to write my mails?</para>
       </question>
       <answer>
         <para>You can. In <menuchoice>
@@ -76,14 +72,12 @@
             <guimenuitem>Common preferences</guimenuitem>
             <guimenuitem>Compose</guimenuitem>
             <guimenuitem>Editor</guimenuitem>
-          </menuchoice>, if you want the editor of your choice to be launched every time you begin composing a message. 
-</para>
+          </menuchoice>, if you want the editor of your choice to be launched every time you begin composing a message.</para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>How to change the font size in the Sylpheed interface?
-</para>
+        <para>How to change the font size in the Sylpheed interface?</para>
       </question>
       <answer>
         <para>You can set the GTK+ font by <filename>$HOME/.gtkrc-2.0</filename>, or
@@ -99,23 +93,20 @@ widget_class &quot;*&quot; style &quot;default&quot;
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Sylpheed saves my outgoing mail (in Outbox). Can I make it stop doing that?
-</para>
+        <para>Sylpheed saves my outgoing mail (in Outbox). Can I make it stop doing that?</para>
       </question>
       <answer>
         <para>In <menuchoice>
             <guimenu>Configuration</guimenu>
             <guimenuitem>Common preferences...</guimenuitem>
-          </menuchoice>, there&apos;s a
+          </menuchoice>, there is a
      checkbox <guilabel>Save sent message to outbox</guilabel>. Uncheck it,
-     and it&apos;s solved.
-</para>
+     and it&apos;s solved.</para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>How can I change the key bindings (hotkeys) in Sylpheed?
-</para>
+        <para>How can I change the key bindings (hotkeys) in Sylpheed?</para>
       </question>
       <answer>
         <para>Unlike Sylpheed 1.x,  Sylpheed 2.x and 3.x doesn&apos;t allow direct modification of the menu shortcuts by default. Nevertheless, you can use the following methods to configure them:</para>
@@ -169,8 +160,7 @@ widget_class &quot;*&quot; style &quot;default&quot;
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Can I close windows without the mouse?
-</para>
+        <para>Can I close windows without the mouse?</para>
       </question>
       <answer>
         <para>Of course! Not all windows, but by pressing <keycap>Escape</keycap>,
@@ -180,14 +170,12 @@ widget_class &quot;*&quot; style &quot;default&quot;
             <guimenuitem>Message source</guimenuitem>
           </menuchoice>), the window of
      viewing the headers, and several others. Just give
-     it a try and you will find all of them.
-</para>
+     it a try and you will find all of them.</para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Can I change the way the date is displayed in the message summary?
-</para>
+        <para>Can I change the way the date is displayed in the message summary?</para>
       </question>
       <answer>
         <para>As of 0.4.65 you can. The options are:</para>
@@ -207,29 +195,24 @@ For more options, see <command>man 3 strftime</command>.</para>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Why can&apos;t I see the compface pictures?
-</para>
+        <para>Why can&apos;t I see the compface pictures?</para>
       </question>
       <answer>
         <para>You need to enable displaying of the header pane in the
-     general preferences.
-</para>
+     general preferences.</para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>I still can&apos;t see the pictures. Why not?
-</para>
+        <para>I still can&apos;t see the pictures. Why not?</para>
       </question>
       <answer>
-        <para>You may not have compiled in Compface support. See  the appropriate question in the Installation and Configuration section.
-</para>
+        <para>You may not have compiled in Compface support. See  the appropriate question in the Installation and Configuration section.</para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Why does the URL launcher not launch my web browser?
-</para>
+        <para>Why does the URL launcher not launch my web browser?</para>
       </question>
       <answer>
         <para>You need to double click the URL.
@@ -243,19 +226,16 @@ Also, check that you have configured your web browser correctly in <menuchoice>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Attachments with spaces in the name won&apos;t open!
-</para>
+        <para>Attachments with spaces in the name won&apos;t open!</para>
       </question>
       <answer>
         <para>When you try to launch a helper application, like an image viewer, with an attachment that has spaces in the name, put quotes around the <parameter>%s</parameter>
-parameter. Example: <command>gedit &apos;%s&apos;</command>
-</para>
+parameter. Example: <command>gedit &apos;%s&apos;</command></para>
       </answer>
     </qandaentry>
     <qandaentry>
       <question>
-        <para>Where is the Bcc when I compose a mail?
-</para>
+        <para>Where is the Bcc when I compose a mail?</para>
       </question>
       <answer>
         <para>Open <menuchoice>

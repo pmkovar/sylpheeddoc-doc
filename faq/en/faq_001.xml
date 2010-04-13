@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><chapter id="sylpheed-faq-1">
   <title>Sylpheed FAQ - General Information</title>
-  <qandaset id="faq-general"><?dbhtml cellspacing="13px" ?>
-    <qandaentry>
+  <qandaset id="faq-general">
+<?dbhtml cellspacing="13px" ?>    <qandaentry>
       <question id="faq-languages">
         <para>
         Are there FAQ&apos;s in other languages?
