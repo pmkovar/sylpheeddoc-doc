@@ -9,6 +9,17 @@
         <para>You have to set some environment variables, such as
      <envar>LANG</envar>, <envar>LC_CTYPE</envar>, <envar>LC_MESSAGES</envar> to your local language.
      Usually <envar>LANG</envar> (or <envar>LC_ALL</envar>) is sufficient. Note that modern distributions and operating systems do this for you automatically.</para>
+        <para>Under UNIX, if you need to set e.g. the <envar>LANG</envar> environment variable manually, execute the following command (using <literal>sh</literal> or related shell):</para>
+        <para><command>export LANG=<replaceable>value</replaceable></command></para>
+        <para>Replace <replaceable>value</replaceable> with a valid ISO <ulink url="http://en.wikipedia.org/wiki/Language_code">language code</ulink> (e.g. <literal>en_GB</literal> for British English).</para>
+        <para>If you intend to set the displayed language manually under Windows, you can do so by creating the
+<envar>LANG</envar> environment variable with a valid ISO language code value under <menuchoice>
+            <guimenu>Control Panel</guimenu>
+            <guimenuitem>System</guimenuitem>
+            <guisubmenu>Advanced</guisubmenu>
+            <guibutton>Environment Variables</guibutton>
+          </menuchoice>.</para>
+        <para>Also see the <link linkend="faq-environment-variables">question</link> regarding environment variables that have effect on Sylpheed.</para>
       </answer>
     </qandaentry>
     <qandaentry>

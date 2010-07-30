@@ -510,7 +510,7 @@ sylpheedmail/.
     </qandaentry>
     <qandaentry>
       <question id="faq-faq-sylpheed">
-        <para>Where can I find the latest Sylpheed FAQ and manual?
+        <para>Where  I can find the latest Sylpheed FAQ and manual?
       </para>
       </question>
       <answer>
@@ -528,6 +528,17 @@ sylpheedmail/.
           </listitem>
         </itemizedlist>
         <para>Also see the question about available language versions at the top of this section.      </para>
+      </answer>
+    </qandaentry>
+    <qandaentry>
+      <question>
+        <para>Where I can obtain source code for this document?</para>
+      </question>
+      <answer>
+        <para>The source DocBook XML files  in which this document is  written can be obtained from a <ulink url="http://sylpheeddoc.cvs.sourceforge.net/sylpheeddoc/">public CVS repository</ulink> that is part of the Sylpheed Documentation Project. The  source files with all the necessary build system, XSL stylesheets, or snapshots are stored  under the &quot;<ulink url="http://sylpheeddoc.cvs.sourceforge.net/viewvc/sylpheeddoc/doc/">doc</ulink>&quot; module in the CVS repository and can be checked out through anonymous  CVS with the following commands (simply press  Enter  when prompted for a password):</para>
+        <para><command>cvs -d:pserver:anonymous@sylpheeddoc.cvs.sourceforge.net:/cvsroot/sylpheeddoc login</command></para>
+        <para><command>cvs -z3 -d:pserver:anonymous@sylpheeddoc.cvs.sourceforge.net:/cvsroot/sylpheeddoc co -P doc</command></para>
+        <para>The source files are also included in .tar.gz and .zip archives made available with each documentation release,  these can be downloaded from the <ulink url="http://sourceforge.net/projects/sylpheeddoc/files/">appropriate project page</ulink>. For more information on the used project infrastructure, please the <ulink url="http://sylpheeddoc.sourceforge.net/en/tools.html">project website</ulink>.</para>
       </answer>
     </qandaentry>
     <qandaentry>

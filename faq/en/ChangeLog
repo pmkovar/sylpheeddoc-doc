@@ -1,3 +1,13 @@
+2010-07-30  Petr Kovar  <pknbe@volny.cz>
+
+	* COPYING: Add a copy of the GFDL 1.2 to distribute it within release
+	tarball.
+	* LICENSE: Add a legal notice to distribute it within release tarball.
+	* faq_001.xml: First round of updates with regard to Sylpheed 3.1.
+	* faq_002.xml: Ditto.
+	* faq_003.xml: Ditto.
+	* sylpheed-faq.sgml: Remove old SGML FAQ document.
+
 2010-04-14  Petr Kovar  <pknbe@volny.cz>
 
 	* NEWS: Prepare for the FAQ_EN_2_1 release.
