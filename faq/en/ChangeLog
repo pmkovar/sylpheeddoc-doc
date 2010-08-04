@@ -1,3 +1,9 @@
+2010-08-04  Petr Kovar  <pknbe@volny.cz>
+
+	* faq_001.xml: Some fixes to the recent updates.
+	* faq_002.xml: Ditto.
+	* faq_003.xml: Ditto.
+
 2010-07-30  Petr Kovar  <pknbe@volny.cz>
 
 	* COPYING: Add a copy of the GFDL 1.2 to distribute it within release

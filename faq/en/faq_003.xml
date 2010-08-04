@@ -2,7 +2,7 @@
   <title>Sylpheed FAQ - Interface</title>
   <qandaset id="faq-interface">
 <?dbhtml cellspacing="13px" ?>    <qandaentry>
-      <question>
+      <question id="faq-display-language">
         <para>How do I make Sylpheed display my language?</para>
       </question>
       <answer>
