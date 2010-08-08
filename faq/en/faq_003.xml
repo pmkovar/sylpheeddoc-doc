@@ -249,7 +249,7 @@ parameter. Example: <command>gedit &apos;%s&apos;</command></para>
         <para>Execute command for my dynamic signature seems not to be working!</para>
       </question>
       <answer>
-        <para>Under Windows, if you have created e.g. a simple batch file  to  echo a line to be included in your dynamic signature, you need to execute the command (specified under <menuchoice>
+        <para>Under Windows, if you have created e.g. a simple batch file to echo a line to be included in your dynamic signature, you need to execute the command (specified under <menuchoice>
             <guimenu>Account preferences</guimenu>
             <guisubmenu>Compose</guisubmenu>
             <guimenuitem>Signature</guimenuitem>
@@ -257,7 +257,7 @@ parameter. Example: <command>gedit &apos;%s&apos;</command></para>
           </menuchoice>) using either forward slashes or double
 backslashes for paths, for example:</para>
         <para><command>cmd /c &apos;c:\\signature.bat&apos;</command></para>
-        <para>Note that it is also recommended to enclose  paths with single quotes, as is illustrated above.</para>
+        <para>Note that it is also recommended to enclose paths with single quotes, as is illustrated above.</para>
       </answer>
     </qandaentry>
     <qandaentry>
